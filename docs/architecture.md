@@ -414,3 +414,7 @@ nullity after Gate 106  = 3
 ```
 
 The next true gate must search for a canonical finite filtration/order selector and monotone threshold predicate.  Until that exists, the finite shell family is useful bookkeeping, not physical RG running.
+
+### Gate 107 — finite filtration/order selector and monotone threshold predicate search
+
+Gate 107 extends the Gate 106 shell projection family by asking whether the existing finite data select a canonical order or monotone threshold predicate. It constructs the status preorder, spectral-value ascending and descending filtrations, and shell-index cut predicates. The result is intentionally strict: all of these are compatible with the finite carrier, but no theorem selects orientation, cutoff, physical scale, or beta-matching rule. The only invariant safe predicate leaves continuum candidates as candidates, threshold-open modes open, and vacuum-frustration modes excluded. Physical constants and threshold-corrected beta coefficients remain sealed.
