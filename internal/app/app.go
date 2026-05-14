@@ -294,6 +294,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/topdownspectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalactionvariationalprinciple"
+	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalamplifierflavorsector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalboundaryviability"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalcouplingnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalnormalization"
@@ -728,6 +729,7 @@ func Run() error {
 		nativenondiagonaltexture.NativeNonDiagonalTextureFlavorOrientationSieveTheorem(),
 		nonunitaryprojectortexture.NonUnitaryProjectorKineticSafeFlavorTextureSieveTheorem(),
 		exponentialtauetatexture.ExponentialTauEtaTextureBGapMixingHierarchyAuditTheorem(),
+		topologicalamplifierflavorsector.TopologicalAmplifierBimoduleFlavorSectorSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
