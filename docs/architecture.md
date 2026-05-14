@@ -4736,3 +4736,11 @@ Within this arena, `tau_eta=diag(2,-2,1)` is a lawful diagonal source map. Its a
 ```
 
 so the texture algebra splits into a `3D` commutant and a `6D` off-diagonal complement. This exposes the precise arena where mixing must arise, while preserving the firewall: no non-commuting partner, finite action, CKM/PMNS, or mass spectrum is derived in Gate 261.
+
+## Gate 262 — TauEta Non-Commuting Partner / Finite Phase-Mixing Source Audit
+
+Gate 262 extends the direct flavor route opened by Gates 260-261. It keeps the closed `8_v` neutral-kernel route sealed and works entirely in the generation bilinear carrier `Hom(G_R,G_L) ≅ M_3(C)`.
+
+The exact triality cycle, reflection, and Hermitian combinations `C+C^T` and `i(C-C^T)` are audited against `tau_eta=diag(2,-2,1)`. They nontrivially populate the six-dimensional off-diagonal complement of `ad_tau`, so the finite core does contain raw non-commuting mixing algebra.
+
+The result remains a bridge/no-go rather than a physical Yukawa theorem. The triality operators are symmetry/label data, not selected finite amplitude sources. The `B_gap` ledger has no derived generation-endomorphism map, and Hopf phase residuals have no derived projection into the `M_3(C)` off-diagonal phase basis. CKM/PMNS, fermion masses, and empirical Yukawa data remain sealed.

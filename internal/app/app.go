@@ -199,6 +199,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/spinctwistedchirality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spontaneouscarrierseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/su2spinorlift"
+	"github.com/bagherbal/asha-engine/pkg/bridge/tauetamixingpartner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetaspatialtagging"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetaweakselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetayukawasourcemap"
@@ -534,6 +535,7 @@ func Run() error {
 		tauetaweakselector.SpatialS3SieveTauEtaTopologicalOrientationSelectorAuditTheorem(),
 		noncartanflavorvacuum.NonCartanFlavorVacuumOffDiagonalU12MixingAuditTheorem(),
 		tauetayukawasourcemap.DirectTauEtaYukawaSourceMapGenerationBilinearCarrierAuditTheorem(),
+		tauetamixingpartner.TauEtaNonCommutingPartnerFinitePhaseMixingSourceAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

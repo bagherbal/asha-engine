@@ -4580,3 +4580,32 @@ G_L ≅ C^3_L, G_R ≅ C^3_R, Hom(G_R,G_L) ≅ M_3(C)
 It proves that `tau_eta=(2,-2,1)` lawfully opens a diagonal signed `1⊕1⊕1` generation-breaking source map, and that `ad_tau` decomposes the texture algebra into a `3D` diagonal commutant plus a `6D` off-diagonal mixing complement with absolute gaps `{1,3,4}`.
 
 The gate does not derive a physical Yukawa matrix, CKM/PMNS, observed masses, numerical amplitudes, or a spectral-action normalization. It records `FAILED_ROUTE_NO_CANONICAL_NONCOMMUTING_PHASE_PARTNER_SELECTED` and points Gate 262 toward the finite non-commuting partner / phase-mixing source audit.
+
+## Gate 262 — TauEta Non-Commuting Partner / Finite Phase-Mixing Source Audit
+
+Gate 262 adds `pkg/bridge/tauetamixingpartner` and registers `TauEtaNonCommutingPartnerFinitePhaseMixingSourceAuditTheorem`.
+
+The gate inherits Gate 261's direct bilinear flavor carrier:
+
+```text
+Hom(G_R,G_L) ≅ M_3(C)
+tau_eta = diag(2,-2,1)
+ad_tau(E_ij) = (lambda_i-lambda_j)E_ij
+```
+
+It audits exact finite candidates for the missing non-commuting partner. Triality permutations and their Hermitian components do populate the full six-dimensional off-diagonal complement. In particular, `C+C^T` and `i(C-C^T)` expose exact Hermitian real/phase bases for raw mixing capacity.
+
+The gate still rejects them as physical Yukawa texture sources because they remain symmetry/label algebra without a finite action coefficient, amplitude selection rule, Hopf projection, or fermion-kind-dependent Yukawa map. `B_gap` is rejected as scalar-only, and Hopf phase residuals are rejected as representation-free for `M_3(C)` texture purposes.
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_TRIALITY_OPERATORS_POPULATE_AD_TAU_COMPLEMENT
+CONDITIONAL_SUPPORT_HERMITIAN_TRIALITY_PHASE_BASIS_EXPOSED
+FAILED_ROUTE_B_GAP_HAS_NO_GENERATION_ENDOMORPHISM
+FAILED_ROUTE_HOPF_PHASE_RESIDUALS_LACK_GENERATION_TEXTURE_MAP
+FAILED_ROUTE_NO_QUALIFIED_FINITE_MIXING_PARTNER_IDENTIFIED
+FAILED_ROUTE_CKM_PMNS_AND_FERMION_MASSES_STILL_BLOCKED
+```
+
+Gate 262 does not run the full internal suite or full package suite. The next gate must audit whether a finite Yukawa action functional or lawful Hopf projection can turn the exposed Hermitian triality basis into a qualified amplitude source.
