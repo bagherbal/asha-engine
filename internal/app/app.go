@@ -13,6 +13,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/betamatching"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betapermission"
 	"github.com/bagherbal/asha-engine/pkg/bridge/boundaryselector"
+	"github.com/bagherbal/asha-engine/pkg/bridge/branchselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokenaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokengaugefields"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokengeneratornorm"
@@ -236,6 +237,7 @@ func Run() error {
 		contactpropagator.ContactOverlapKineticSignLocalityPropagatorClassifierTheorem(),
 		contactfieldmap.ContactOverlapLocalFieldMapConstraintBRSTClassifierTheorem(),
 		betapermission.ContactOverlapRepresentationConstraintBetaPermissionFirewallTheorem(),
+		branchselector.ContactModeBranchSelectorConstructionAttemptTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

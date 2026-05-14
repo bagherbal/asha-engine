@@ -571,3 +571,54 @@ nullity after Gate 112  = 3
 ```
 
 The next true gate must either construct a finite constraint complex or construct a local bundle/field map for the contact-overlap carrier. Until that happens, threshold-corrected `Δb_i(L)`, physical `alpha`, physical `thetaW`, `M*`, `g_*`, and masses remain sealed.
+
+## Gate 113 — Contact-Mode Branch Selector / Finite Constraint Complex or Local Bundle Construction Attempt
+
+Gate 113 adds `pkg/bridge/branchselector`. Gate 112 made the beta-permission firewall executable, but left the seven contact partial-overlap modes unresolved. Gate 113 attempts the two honest continuations.
+
+The physical/local branch would require:
+
+```text
+finite contact overlap carrier
+→ local base space / locality functor
+→ fiber representation
+→ transition functions
+→ section map
+→ Lorentzian quadratic kinetic operator
+→ pole/residue theorem
+→ mass activation + decoupling
+```
+
+The nonphysical/constraint branch would require:
+
+```text
+finite contact overlap carrier
+→ chain groups
+→ canonical differential Q
+→ nilpotency Q² = 0
+→ ghost grading
+→ BRST pair/quartet assignment
+→ exactness or cohomology theorem
+→ supertrace/cancellation ledger
+```
+
+Current finite data supplies the contact carrier, but neither branch is complete. Several completions remain compatible with the finite evidence: scalar-doublet local fields, singlet local fields, a trivial differential, an arbitrary quartet pairing, or leaving the modes branch-open. Because those options lead to different beta consequences, none may be selected by convention.
+
+Gate 113 therefore proves the branch-selector obstruction:
+
+```text
+local-bundle complete rows       = 0 / 7
+constraint-complex complete rows = 0 / 7
+resolved contact modes          = 0 / 7
+contact threshold beta rows      = 0
+proven contact zero rows         = 0
+```
+
+The residual physical-flow nullity remains unchanged:
+
+```text
+nullity before Gate 113 = 3
+nullity after Gate 113  = 3
+```
+
+The next true gate should attempt a finite contact constraint differential / cohomology obstruction theorem. Until a canonical local bundle or constraint complex exists, threshold-corrected `Δb_i(L)`, physical `alpha`, physical `thetaW`, `M*`, `g_*`, and masses remain sealed.
