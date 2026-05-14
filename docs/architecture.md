@@ -2085,3 +2085,38 @@ negative: no canonical high/low orientation is selected
 negative: all six oriented assignments remain branch choices
 negative: scalar-shape closure, Yukawa amplitudes, generation texture, masses, CKM/PMNS, and physical constants remain underived
 ```
+
+### Gate 172 — triality-lifted Yukawa texture operator search
+
+Package: `pkg/bridge/trialitytexturelift`
+
+Gate 172 follows the Gate-171 kind-assignment obstruction. Rather than forcing the two high/two low contact scalar weights onto one-generation labels, it moves the scalar-shape target into the triality Yukawa arena. After Gate 26, the mass object is four finite generation matrices:
+
+```text
+Y_u, Y_d, Y_ν, Y_e ∈ Mat_3.
+```
+
+The gate audits six candidate routes:
+
+```text
+1. exact triality-invariant texture
+2. Higgs/contact diagonal generation spurion
+3. contact four-kind weights × generation identity
+4. separable contact-kind × diagonal-generation texture
+5. unconstrained four 3×3 Yukawa matrices
+6. required non-commuting finite texture pair
+```
+
+The result is negative but clarifying. Exact triality is canonical but gives only a `1+2` generation eigenpattern. The diagonal Higgs/contact spurion can split three generation weights, but it is not a canonical total Yukawa operator and produces no mixing. Contact-kind scalar weights can match the Gate-37 scalar-shape moment only conditionally and remain branch-selected. Separable products of kind weights and generation spurions are aligned/commuting, so they cannot derive CKM/PMNS. General four-matrix textures are large enough to fit anything but are not derived.
+
+Status:
+
+```text
+positive: the finite mass arena is identified as four 3×3 Yukawa matrices
+positive: the scalar-shape target is retained as one global moment constraint
+positive: exact triality and diagonal generation spurion are classified separately
+negative: no canonical non-commuting finite texture pair is found
+negative: no Yukawa amplitudes, masses, CKM, PMNS, or physical constants are derived
+```
+
+Gate 172 reframes the next obstruction: the engine needs at least two finite non-commuting generation-space texture operators before any mixing theorem is allowed.

@@ -1213,3 +1213,63 @@ residual nullity:                                3 -> 3
 ```
 
 The scalar-shape match from Gate 169 remains a meaningful finite target, but it is still conditional. The next theorem should move from one-generation kind labels to the generation/triality problem: whether Gate-26 triality plus the earlier Gate-28 to Gate-36 no-go machinery can provide a nontrivial Yukawa texture operator, rather than merely an assignment of two scalar weights to four one-generation kinds.
+
+## v1.70 — Gate 172: Triality-lifted Yukawa texture operator search
+
+Gate 172 adds `pkg/bridge/trialitytexturelift`.
+
+Gate 171 showed that the one-generation contact high/low assignment remains a six-branch choice. Gate 172 moves the problem into the correct mass arena: after the Gate-26 triality lift, the finite Dirac/Yukawa data are four generation matrices,
+
+```text
+Y_u, Y_d, Y_ν, Y_e ∈ Mat_3.
+```
+
+The gate audits whether existing finite data select these matrices, or at least a canonical operator tying the Gate-169 scalar-shape weights to generation/triality.
+
+Result: no canonical texture is selected.
+
+The candidate ledger is:
+
+```text
+exact triality-invariant texture:
+  canonical, but eigenpattern is 1+2 and kind-blind
+
+Higgs/contact diagonal generation spurion:
+  can split three generation weights, but is not a canonical total Yukawa operator and produces no mixing
+
+contact four-kind weights × generation identity:
+  conditionally matches the scalar-shape moment, but leaves generation masses degenerate and keeps six kind branches
+
+separable contact-kind × diagonal-generation texture:
+  combines both axes, but all kind matrices commute/share an eigenbasis; CKM/PMNS remain identity-level diagnostics
+
+unconstrained four 3×3 matrices:
+  large enough to fit masses and mixing, but not derived
+
+non-commuting finite texture pair:
+  required for CKM/PMNS, not found
+```
+
+Gate 172 theorem ledger:
+
+```text
+generation count:                         3
+fermion-kind blocks:                      4
+Yukawa texture matrices:                  4
+general real entries:                     36
+symmetric real entries:                   24
+triality-invariant parameters:            8
+full charge-allowed mixing maps:          72
+scalar-shape moment constraints:          1
+canonical generation-breaking operators:  0
+canonical non-commuting texture pairs:    0
+unique Yukawa texture selected:           false
+fermion masses derived:                   false
+CKM / PMNS derived:                       false
+physical constants derived:               false
+residual nullity:                         3 -> 3
+```
+
+The positive result is architectural: the engine now knows exactly what the mass problem is. It is not a gauge-ratio problem and not a contact-mode-classification problem. It is the problem of deriving four finite non-commuting 3×3 Yukawa matrices, with masses as singular values and CKM/PMNS as relative left-eigenbasis misalignments.
+
+Next gate: Gate 173 — finite non-commuting texture-pair search: audit available finite operators for two non-commuting generation-space textures, the minimal precondition for any CKM/PMNS theorem.
