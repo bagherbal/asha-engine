@@ -94,6 +94,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierz"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierzsign"
 	"github.com/bagherbal/asha-engine/pkg/bridge/filtration"
+	"github.com/bagherbal/asha-engine/pkg/bridge/finitebundlemap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockcontactkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockrepresentationtrace"
@@ -374,6 +375,7 @@ func Run() error {
 		thresholdorigindichotomy.ThresholdOriginDichotomyNewSectorContinuumBridgeAuditTheorem(),
 		continuumdecouplingbridge.ContinuumDecouplingBridgeAxiomInventoryHeatKernelPreflightTheorem(),
 		fourcyclechernweil.FiniteOrientedFourCycleChernWeilCarrierConstructionSearchTheorem(),
+		finitebundlemap.FiniteAlgebraicLocalFieldBundleMapConstructionSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
