@@ -10,6 +10,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomaly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomalykinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
+	"github.com/bagherbal/asha-engine/pkg/bridge/brokenmetric"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
@@ -194,6 +195,7 @@ func Run() error {
 		protectedconnection.ProtectedCarrierOperatorBFContactConnectionSearchTheorem(),
 		o3quotient.O3GaugeQuotientPhysicalOrientationAuditTheorem(),
 		quotientedcorrespondence.GaugeQuotientedProtectedBrokenCorrespondenceAuditTheorem(),
+		brokenmetric.BrokenImageMetricKineticNormalizationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

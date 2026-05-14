@@ -117,3 +117,10 @@ The gate keeps only quotient-safe data:
 The result is a strengthened but still bridge-level correspondence. The count/rank resonance survives the quotient, but the broken image metric is anisotropic, while the protected carrier currently has only the abstract Euclidean reference metric. Therefore no quotient-safe protected-to-broken intertwiner is derived yet.
 
 Next target: derive whether the broken-image anisotropy is physical kinetic data, gauge normalization data, or an artifact of diagnostic normalization.
+
+
+## Gate 92 — Broken-Image Metric / Kinetic Normalization Audit
+
+Gate 92 audits the anisotropic metric on the broken-generator image after the protected `O(3)` quotient. The raw diagnostic metric has charged eigenvalue `0.2833333333` and neutral eigenvalue `1.1333333333`, giving condition number `4`. The gate shows this anisotropy is exactly removable by normalizing the neutral broken generator by `1/2`, so the current anisotropy is not yet a physical W/Z mass prediction. It is unresolved gauge/scalar kinetic normalization data.
+
+The gate therefore preserves the structural Goldstone/gauge-eating signature while rejecting premature physical-mass claims. The next missing object is an action-selected gauge kinetic normalization or normalized broken-generator basis.
