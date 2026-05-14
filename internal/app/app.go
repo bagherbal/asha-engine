@@ -129,6 +129,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/resolventvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgfirewall"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalarbundlemap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcomplex"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcontactselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcovariant"
@@ -388,6 +389,7 @@ func Run() error {
 		scalarcontactselector.ScalarContactQuarticIdentificationSelectorObstructionTheorem(),
 		resolventvacuum.ResolventVacuumSpontaneousHiggsPairingTheorem(),
 		branchprojector.BranchwiseQuadraticIdempotentScalarProjectorTheorem(),
+		scalarbundlemap.ScalarBundleMapHphiProjectorIdentificationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
