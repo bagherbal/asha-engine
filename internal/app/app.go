@@ -27,6 +27,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactautaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactbundle"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactcohomology"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactdualcurrenttarget"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactdualpairing"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactembedding"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactfieldmap"
@@ -260,6 +261,7 @@ func Run() error {
 		contactrowsemantics.ContactRowSemanticsLocalVariableReconstructionTheorem(),
 		contactsource.ContactSemanticSourceCouplingObservableSelectorSearchTheorem(),
 		contactdualpairing.ContactSourceCurrentDualPairingNaturalityObstructionTheorem(),
+		contactdualcurrenttarget.ContactDualCurrentTargetEnlargementSevenRowCarrierSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

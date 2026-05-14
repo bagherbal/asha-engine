@@ -936,3 +936,8 @@ L = ln(M*/μ)
 ```
 
 The next gate should test whether a source-current dual pairing can provide a natural row-labeling obstruction or selector stronger than diagonal spectral diagnostics.
+
+
+### Gate 125 — contact dual-current target enlargement / seven-row carrier search
+
+Gate 125 tests whether the current/source target can be enlarged to a genuine seven-row contact carrier. The existing derived targets fail dimensionally or semantically: the uniform scalar target is 1D and row-blind, the contact electroweak block is 4D, the typed u(4)/Pati-Salam current inventory is 16D without a selected projection to seven, and the leptoquark current sector is 6D. Three seven-row carriers can be named — spectral R^7, anonymous contact R^7, and Fano R^7 — but none is a derived dual-current target. The spectral carrier is diagnostic only, the anonymous carrier stores cardinality without semantics, and the Fano carrier requires one of 7! hidden contact-to-Fano labelings. Therefore the contact beta firewall remains closed.
