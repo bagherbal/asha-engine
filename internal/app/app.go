@@ -49,6 +49,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coloredoctetportal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/complexifiedhilbertspace"
+	"github.com/bagherbal/asha-engine/pkg/bridge/complexsectorsourcephase"
 	"github.com/bagherbal/asha-engine/pkg/bridge/complexweightspacekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/conditionalhiggsmassrgtransport"
@@ -834,6 +835,7 @@ func Run() error {
 		familycoefficientselector.FamilyCoefficientSelectorConstrainedConnectionCurvatureSieveTheorem(),
 		familyboundarysourceaxiom.FamilyBoundaryConditionSectorSourceAxiomMinimalitySieveTheorem(),
 		minimalsectorsourceaxiom.MinimalSectorSourceAxiomConsistencyParameterCountingSieveTheorem(),
+		complexsectorsourcephase.ComplexSectorSourceCPPhaseAxiomSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

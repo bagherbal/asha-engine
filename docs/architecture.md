@@ -6078,3 +6078,21 @@ and therefore six real charged-sector coefficients. The mixing criterion is expl
 Thus nonzero real mixing capacity exists when sector coefficient rays differ. However, the determinant factor is not derived; it is boundary data. The real model also has no CKM CP phase. A complex phase/quadrature extension can add CP capacity, but raises the charged ledger to nine coefficients and still leaves values free.
 
 Gate 416 therefore records conditional parameter compression under an axiom but preserves the native flavor firewall: current ASHA still has no native sector-source boundary and `dim M_charged = 13` remains the honest native moduli count.
+
+### Gate 417 — Complex Sector-Source CP-Phase Axiom Sieve
+
+Gate 417 adds `pkg/bridge/complexsectorsourcephase` after Gate 416 showed that the minimal real sector-source axiom has real mixing capacity but no CKM CP phase. It treats the smallest complex/phase extension as an explicit quarantined axiom by adjoining the Hermitian shift quadrature
+
+```text
+Y_gen = i(S_gen - S_gen^T)
+```
+
+and auditing textures of the form
+
+```text
+M_s = a_s K_gen + b_s X_gen + c_s Y_gen.
+```
+
+The result is a precise CP-capacity theorem, not a flavor prediction. The `K/X/Y` family algebra spans the full three-family matrix capacity and admits nonzero CP-odd invariants for generic symbolic sector coefficients. But the coefficients `a_s`, `b_s`, and `c_s` remain boundary/source data, and neither CKM angles nor the CKM CP phase are predicted. The extension is compatible with gauge broadcast, `J`, `Gamma`, and first-order bookkeeping because it acts only on the family fiber, but compatibility does not make it native.
+
+Gate 417 therefore preserves the native ASHA flavor firewall. It gives a conditional nine-coefficient charged source ledger under an explicit axiom while keeping the honest native count `dim M_charged = 13`.

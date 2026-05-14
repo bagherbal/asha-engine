@@ -6424,3 +6424,22 @@ Gate 416 follows Gate 415 by treating the least-cost CKM/PMNS-capable charge-sec
 The result is precise. A minimal real charge-sector source has six charged-sector coefficients: two for each of the up, down, and charged-lepton sectors. It can create noncommuting real textures when the up/down coefficient rays are not parallel, but it has no CKM CP phase and the coefficient values remain boundary data. A complex/phase extension raises the charged ledger to nine coefficients and gives CP-capable texture algebra, but it adds another source coefficient and still predicts no physical angle. Therefore Gate 416 gives conditional parameter compression under an axiom, not a native reduction of the Gate-372 charged flavor firewall.
 
 Native ASHA remains at `dim M_charged = 13`. The next consistency test is Gate 417: audit the smallest complex sector-source phase/quadrature axiom and count its remaining free data without inserting observed Yukawa matrices.
+
+### Gate 417 — Complex Sector-Source CP-Phase Axiom Sieve
+
+Gate 417 follows Gate 416 by testing the smallest CP-capable extension of the minimal sector-source axiom. The package `pkg/bridge/complexsectorsourcephase` adds the Hermitian shift quadrature
+
+```text
+Y_gen = i(S_gen - S_gen^T)
+```
+
+to the already-audited family pair `K_gen` and `X_gen = S_gen + S_gen^T`. This gives symbolic charged-sector textures
+
+```text
+M_s = a_s K_gen + b_s X_gen + c_s Y_gen,
+    s in {up, down, charged-lepton}.
+```
+
+The gate confirms that the `K/X/Y` family generators have full three-family matrix capacity and can produce a nonzero CP-odd invariant such as `Im Tr([M_u,M_d]^3)`. Thus the complex phase extension is CKM/PMNS/CP-capable in the conditional axiom sense. However, the new phase coefficients are not derived by ASHA, no observed Yukawa data is used, no CKM angle or CP phase is predicted, and the axiom remains quarantined.
+
+Therefore Gate 417 records conditional CP-capable parameter compression under an explicit boundary axiom: the charged ledger is nine symbolic coefficients, but native ASHA remains at `dim M_charged = 13`.
