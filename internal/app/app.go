@@ -43,6 +43,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1kinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1nonfactor"
+	"github.com/bagherbal/asha-engine/pkg/bridge/u1orientation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1source"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
@@ -166,6 +167,7 @@ func Run() error {
 		u1kinetic.U1KineticMixingHessianSearchTheorem(),
 		u1source.ContactU1BLKineticSourceSearchTheorem(),
 		u1nonfactor.NonFactorizedAbelianActionSearchTheorem(),
+		u1orientation.ChiralOrientationalAbelianSourceSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
