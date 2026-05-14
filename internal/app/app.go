@@ -11,6 +11,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fieldmap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
+	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcomplex"
@@ -116,6 +117,7 @@ func Run() error {
 		scalarcomplex.ScalarComplexQuaternionicStructureSearchTheorem(),
 		condensate.CompositeHiggsCondensateDirectionAuditTheorem(),
 		looppotential.NativeOneLoopPotentialLedgerTheorem(),
+		loopoperator.FiniteLoopOperatorConstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
