@@ -211,6 +211,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingresidualstructure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matrixinvariantkoideaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
+	"github.com/bagherbal/asha-engine/pkg/bridge/modularkmsstateselection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modularspectralflowkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modulartimeflowvacuumselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/moritabimodulesearch"
@@ -740,6 +741,7 @@ func Run() error {
 		modulartimeflowvacuumselector.ModularTimeFlowVacuumSelectorExtensionAuditTheorem(),
 		modularspectralflowkernel.ModularSpectralFlowKernelVacuumAddressOperatorConstructionAuditTheorem(),
 		nontracialmodularstate.NontracialModularStateOriginVacuumDensityMatrixDerivationAuditTheorem(),
+		modularkmsstateselection.ModularKMSStateSelectionEntropyVariationalPrincipleAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
