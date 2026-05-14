@@ -2028,3 +2028,19 @@ conditional nullity: 2 -> 2
 The result identifies the scalar/contact mismatch as a genuine vacuum/selector obstruction, not a numerical accident. The quartic contact module is real, but the Higgs `2+2` degeneracy requires a symmetry-breaking selector not present in the current finite algebra.
 
 Recommended next gate: Gate 187 — scalar vacuum selector / spontaneous `2+2` pairing source audit.
+
+## v1.99 — Gate 201: Inverse B-sector deformation / threshold prediction audit
+
+Gate 201 adds `pkg/bridge/inversebsectordeformation`. Gate 200 showed that pure Standard Model one-loop running does not close the bottom-up convergence triangle under the quarantined Z-pole comparison. Gate 201 treats that mismatch as inverse data rather than as a failed finite theorem.
+
+The exact one-threshold inverse family is:
+
+```text
+Δb_i(L_*,L_B) = [2π(A_i(M_Z)-4π) - b_i L_*] / (L_*-L_B)
+```
+
+with `L_B=log(M_B/M_Z)` and `L_*=log(M_*/M_Z)`. This closes the triangle at the conditional benchmark `u_*=1` only when both `M_B` and `M_*` are supplied. Therefore Gate 201 records a new no-go: a single threshold scale `M_B` does not uniquely predict `Δb`.
+
+The gate audits known rational representation rows and finds no raw one-row solution. It also finds two conditional shape resonances after adding a real universal beta row: a Dirac vectorlike quark doublet shape and a Weyl `SU(2)_L` adjoint shape. These are not physical predictions because the universal component, representation map, activation law, and matching corrections are not finite-derived. The B-sector gap and seven contact partial-overlap modes remain finite spectral anchors only, not beta-threshold rows.
+
+Next gate: Gate 202 — canonical B-sector/contact representation-row construction or universal-completion source audit.

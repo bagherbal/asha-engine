@@ -1,0 +1,6 @@
+# Go compiled test binaries and accidental root build artifacts
+*.test
+
+# Local temporary workspace artifacts
+/tmp/
+*.log

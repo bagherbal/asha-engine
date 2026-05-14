@@ -2659,3 +2659,21 @@ conditional nullity: 2 -> 2
 This gate seals the current scalar/contact identification route. The missing object is a vacuum or external selector mechanism that chooses one resolvent partition and thereby converts the irreducible quartic contact module into the pair-degenerate Higgs scalar carrier.
 
 Recommended next gate: Gate 187 — scalar vacuum selector / spontaneous `2+2` pairing source audit.
+
+
+### Gate 201 — inverse B-sector deformation search / threshold prediction audit
+
+Package: `pkg/bridge/inversebsectordeformation`
+
+Gate 201 converts the Gate 200 mismatch triangle into an inverse threshold equation. With the quarantined topological benchmark `u_*=1`, the required one-threshold deformation obeys
+
+```text
+A_i(M_Z) - b_i L_*/(2π) - Δb_i(L_*-L_B)/(2π) = 4π
+Δb_i(L_*,L_B) = [2π(A_i(M_Z)-4π) - b_i L_*] / (L_*-L_B).
+```
+
+This is exact under the sharp-step one-loop convention, but it exposes an obstruction: `M_B` alone cannot determine `Δb`; the UV boundary scale `M_*` or a finite-derived representation row is still required.
+
+Known rational representation rows do not close the full `u_*=1` system as raw rows. Two rational shapes close only after a real universal beta completion: a Dirac vectorlike quark doublet shape and a Weyl `SU(2)_L` adjoint shape. The universal row is not finite-derived, so these are conditional phenomenological shape resonances, not B-sector predictions.
+
+The B-sector first spectral gap and seven contact partial-overlap modes remain dimensionless finite spectral anchors. They still lack representation rows, activation/decoupling laws, and matching corrections; count resonance is explicitly rejected.
