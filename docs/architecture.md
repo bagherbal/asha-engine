@@ -1108,3 +1108,25 @@ threshold-corrected Δb_i(L)          = not derived
 ```
 
 Next: Gate 136 — contact `T3R` / chirality source search for leptoquark hypercharge.
+
+
+## Gate 136 — Contact T3R / Chirality Source Search for Leptoquark Hypercharge
+
+Package: `pkg/bridge/contactlqt3r`
+
+Gate 136 audits the next tempting shortcut after the B-L charge-lattice obstruction. The matter/Fock sector already has a temporal right-isospin candidate `T0 = 1/2 - N0`, chiral restrictions of that candidate, and a hyperaudit branch that matches a right-singlet/conjugate hypercharge table. This is useful finite structure, but it lives on the matter/Fock domain.
+
+The gate tests whether that operator can be pulled back onto the six leptoquark-shaped contact rows. The result is negative: there is no derived Fock-to-contact pullback, no contact-side chirality operator, no signed B-L orientation, no non-abelian `SU(2)L` action on the contact carrier, no local field map, and no canonical `S6` row assignment.
+
+Combining the B-L magnitude with possible matter-side `T3R = ±1/2` values gives only hypothetical diagnostic hypercharge values. These values are not contact hypercharge rows because the sign, chirality, local variable, and row assignment data are all still missing.
+
+Therefore the contact beta firewall remains closed:
+
+```text
+representation-complete contact rows = 0 / 7
+contact beta rows allowed            = 0
+contact zero rows proved             = 0
+threshold-corrected Δb_i(L)          = not derived
+```
+
+Next: Gate 137 — contact T3R pullback obstruction / Fock-to-contact intertwiner search.

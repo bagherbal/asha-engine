@@ -38,6 +38,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqblock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqcharge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqsu2"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqt3r"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqtensor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactnaturality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactpropagator"
@@ -282,6 +283,7 @@ func Run() error {
 		contactlqsu2.LeptoquarkRealOrientationWeakDoubletSU2ActionSearchTheorem(),
 		contactlqbetapermission.LeptoquarkHyperchargeLocalFieldBetaPermissionTheorem(),
 		contactlqcharge.LeptoquarkContactHyperchargeSourceBLChargeLatticeObstructionTheorem(),
+		contactlqt3r.ContactT3RChiralitySourceSearchLeptoquarkHyperchargeTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
