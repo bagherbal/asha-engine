@@ -125,6 +125,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/doubledspacerepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcarrier"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcoupling"
+	"github.com/bagherbal/asha-engine/pkg/bridge/dynamicgenerationlabels"
 	"github.com/bagherbal/asha-engine/pkg/bridge/eftdecayportal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/electroweakvevseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalflavorledger"
@@ -790,6 +791,7 @@ func Run() error {
 		ashafinalarchitectureledger.AshaFrameworkFinalArchitectureLedgerEpistemologicalSealTheorem(),
 		trialitymodulisieve.TrialityDomainAdmissionEquivariantYukawaCentralizerSieveTheorem(),
 		generationaddressfunctor.NativeGenerationAddressFunctorTrialityMoritaEdgeIncidenceTheorem(),
+		dynamicgenerationlabels.RepresentationOriginDynamicGenerationLabelsTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

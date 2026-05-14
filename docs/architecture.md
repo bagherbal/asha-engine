@@ -5795,3 +5795,29 @@ Fock number ladder N=diag(0,1,2)           → sealed/circular hierarchy capacit
 No native noncentral generation-address operator is derived, and no native noncommuting operator pair exists. The sealed noncommuting stress tests are recorded but quarantined because they depend on non-native/circular address data. Therefore the 13 charged flavor moduli remain a firewall, not a solved sector.
 
 Architecturally this means the flavor continuation must move one level deeper than static support incidence: the next gate must search for the representation-origin of dynamic generation labels before a modular Hamiltonian or CKM-capacity theorem can be claimed.
+
+## Gate 395 — Representation-origin boundary for generation labels
+
+Gate 395 audits the proposed move from static generation copies to native `Cℓ(1,7)` representation theory. The implemented package is `pkg/bridge/dynamicgenerationlabels`.
+
+The theorem boundary is sharp:
+
+```text
+native spinor decomposition: 16 = 8_s ⊕ 8_c
+triality category:           8_v ↔ 8_s ↔ 8_c
+```
+
+The first line is native but has two sectors. The second line has three objects, but only at the representation-category level; the vector representation `8_v` is not contained inside the native spinor split, and no explicit finite-Dirac flavor functor has been derived that maps these representation types into physical generations.
+
+As a result, the gate refuses to promote triality branch labels, branch number operators, or sealed cyclic permutations into native flavor textures. Noncommuting capacity exists only in the sealed branch-label stress test, not in the native finite-Dirac ledger.
+
+The architectural consequence is that flavor cannot yet proceed by CKM texture calculation. The missing object is earlier and more structural:
+
+```text
+endogenous three-object source
+→ native generation-address functor
+→ two native noncommuting texture operators
+→ charged flavor-moduli quotient recount
+```
+
+Until that object is derived, the Gate-372/Gate-387 flavor firewall remains preserved at 13 charged finite-Dirac moduli.

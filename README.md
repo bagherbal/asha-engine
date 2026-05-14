@@ -6171,3 +6171,34 @@ dim M_charged = 13
 ```
 
 The next logical gate is Gate 395: a representation-origin search for dynamic generation labels, because static support/edge/one-form ledgers still broadcast uniformly over generation space.
+
+## Gate 395 — Representation-origin search for dynamic generation labels
+
+Gate 395 implements `pkg/bridge/dynamicgenerationlabels` and tests the deeper hypothesis left by Gate 394: perhaps the generation labels should not be static `C^3_gen` copies, but should emerge dynamically from the native representation theory of `Cℓ(1,7)` and `Spin(8)`.
+
+The result is again conservative and useful:
+
+```text
+Cℓ(1,7) spinor split: 16 = 8_s ⊕ 8_c
+Spin(8) triality arena: {8_v, 8_s, 8_c}
+```
+
+The native spinor decomposition gives two chiral half-spinor sectors, not three generation labels. Triality supplies a threefold representation-category arena only after adjoining the vector representation `8_v`; it does not by itself produce a native functor into finite-Dirac flavor space or a physical `C^3_gen` carrier.
+
+Therefore Gate 395 records:
+
+```text
+FAILED_ROUTE_SPINOR_DECOMPOSITION_IS_TWO_SECTOR_NOT_THREE_GENERATION
+FAILED_ROUTE_TRIALITY_IS_REPRESENTATION_CATEGORY_NOT_GENERATION_CARRIER
+FAILED_ROUTE_NO_NATIVE_DYNAMIC_GENERATION_LABELS
+FAILED_ROUTE_NO_NATIVE_NONCOMMUTING_TEXTURE_PAIR
+FIREWALL_PRESERVED_13_MODULI
+```
+
+Sealed branch-label operators can be noncentral and noncommuting in stress tests, but they remain circular unless a future theorem derives the branch labels as physical finite-Dirac generation addresses. The Gate-372 charged flavor firewall remains unchanged:
+
+```text
+dim M_charged = 13
+```
+
+The next logical gate is Gate 396: search for an endogenous three-object source beyond spinor chirality, such as primitive idempotents, minimal left ideals, octonionic/Fano triples, or modular/KMS sectors that might produce exactly three addressable generation labels compatible with `A_F`, `J`, first-order, and electroweak charges.
