@@ -3174,3 +3174,23 @@ FAILED_ROUTE_FINITE_SPECTRAL_TRIPLE_MATCHING_DERIVATION
 ```
 
 This result preserves the finite-to-continuum firewall. The heavy spectrum is still selected only by the `ThresholdSpectrumSeal`; no `D_F`, cutoff function, heat-kernel coefficient, or matching row is invented to fit the Gate-215 residual.
+
+## Gate 218 — MatchingCorrectionSeal and full SM Yukawa two-loop audit
+
+Gate 218 occupies the precision-phenomenology layer after the Gate 217 spectral-action obstruction. It does not weaken that obstruction. Instead, it introduces a new explicit seal:
+
+```text
+MatchingCorrectionSeal = SEAL-MATCHING-CORRECTION-GATE218
+```
+
+The seal quarantines the required `δ_i^match` vector as a theoretical boundary condition. With that firewall active, the engine upgrades the Gate-215 single-scale test by evolving the empirical top Yukawa coupling and Higgs quartic alongside the two-loop gauge system.
+
+Architectural classification:
+
+- finite-core status: no new exact finite theorem;
+- bridge status: conditional phenomenology;
+- empirical inputs: Z-pole ledger, top mass, Higgs mass, tree-level `y_t`, tree-level `λ`;
+- active seals: `EmpiricalCarrierSeal`, `LeptoquarkDynamicsSeal`, `ThresholdSpectrumSeal`, `MatchingCorrectionSeal`;
+- blocked derivations: finite `D_F`, heat-kernel gauge projection, cutoff/subtraction scheme, finite matching rows, finite Yukawa texture.
+
+The audit confirms that including top/Higgs running shifts the required matching residual but does not destroy the loop-factor plausibility envelope. The heavy scale and boundary scale remain sealed numerical fits, not physical predictions from the finite algebra.

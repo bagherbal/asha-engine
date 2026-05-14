@@ -2642,3 +2642,30 @@ finite subtraction / threshold matching scheme
 The gate rejects all hand-built shortcuts. A zero `D_F` is vacuous and cannot produce threshold traces. An identity mass ansatz `D_F = M_B I` would import the phenomenological PeV scale by hand. An off-diagonal map between `(1,3,1)` and `(8,2,1/2)` is not a gauge-equivariant finite intertwiner. Reusing the older top-down Fock spectral-triple ansatz does not act on the sealed heavy sector.
 
 Therefore Gate 217 does not derive `δ_i^match`. It only sharpens the missing bridge: future work must construct a true finite heavy-sector spectral triple and a canonical heat-kernel/subtraction map before the Gate-215 residual can become a finite theorem.
+
+## v2.16 — Gate 218: MatchingCorrectionSeal and full SM Yukawa two-loop audit
+
+Gate 218 adds `pkg/bridge/matchingcorrectionseal`. It inherits Gate 217's strict obstruction to finite spectral-action matching corrections and introduces the explicit `MatchingCorrectionSeal`:
+
+```text
+SEAL-MATCHING-CORRECTION-GATE218
+```
+
+Under this seal, the engine reruns the unique Gate-215 single-scale survivor,
+
+```text
+Dirac (1,3,Y=1) + Dirac (8,2,Y=1/2)
+```
+
+with phenomenological top-Yukawa and Higgs-quartic running included. The audit uses empirical electroweak inputs and tree-level seeds for `y_t` and `λ`; it does not derive the top mass, Higgs mass, Yukawa texture, or matching constants from the finite core.
+
+Central forced-degenerate full-SM two-loop result:
+
+```text
+M_B  ≈ 2.56883502e6 GeV
+M_*  ≈ 1.72153998e17 GeV
+δ_required ≈ (-0.000849831193, +0.000851100636, -0.000851065219)
+max|δ| / (1/(16π²)) ≈ 0.1344
+```
+
+The result remains within the matching-envelope proxy, so the single-scale threshold target survives the SM top/Higgs running audit. It is still conditional phenomenology: finite matching corrections remain sealed and un-derived.

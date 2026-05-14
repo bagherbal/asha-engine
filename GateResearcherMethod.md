@@ -74,3 +74,12 @@
 - Keep representation-trace facts separate from heat-kernel matching facts. A beta row or Dynkin index is not a finite threshold constant.
 - Never import `MSbar`, dimensional regularization, or a cutoff function as a finite theorem. They must be explicit seals or external phenomenological inputs.
 - For speed, test the new bridge package and its direct predecessor only; use `go list` for registry wiring and avoid the known full-registry compile path unless intentionally validating the whole historical ladder.
+
+## Gate 218 method refinement — empirical SM running must stay sealed
+
+- When a missing matching correction has been proven non-derived, introduce an explicit matching seal before using it in downstream numerical audits.
+- Treat top mass, Higgs mass, `y_t`, and `λ` as empirical ledger inputs unless the finite engine has derived their texture and amplitudes.
+- Add SM Yukawa/scalar running as a controlled phenomenology upgrade, not as a finite-core theorem.
+- Separate three claims: the forced single-scale fit converges, the required matching residual is inside the envelope, and the residual is derived. Gate 218 can prove the first two only.
+- Keep heavy-sector Yukawa couplings absent unless a new seal or finite local-field theorem introduces them.
+- When adding full-SM effects, compare against the previous no-Yukawa target and report the shift instead of overwriting the earlier result.
