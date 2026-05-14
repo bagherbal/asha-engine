@@ -6159,3 +6159,7 @@ native law-space
 The exported graph contains the major theorem blocks from the finite measurement ladder through the contact vacuum, Higgs seed, Fock matter carrier, electroweak charge skeleton, finite spectral triple, inner fluctuations, product geometry, CCM/edge/Pfaffian bridge lanes, flavor firewall, scalar/fermion no-go chains, quarantined family axioms, and cosmology frontier.
 
 Gate 420 intentionally adds no new physical derivation. It verifies that the atlas is acyclic, that failed routes are indexed, and that the flavor and cosmology firewalls remain intact. Native ASHA still preserves `dim M_charged = 13`, while the K/X/Y family axiom chain remains a quarantined nine-coefficient capacity ledger rather than a prediction of Yukawa values.
+
+## Gate 421 — Manuscript Skeleton / Proof Export
+
+Gate 421 is the post-atlas manuscript layer. It maps the finalized law-space board into publication sections: native finite theorems, bridge/coefficient lanes, flavor and cosmology firewalls, failed-route appendices, and reproducibility notes. The charged-flavor firewall remains `dim M_charged = 13`; the conditional K/X/Y family axiom ledger remains a quarantined nine-coefficient symbolic source, not a native ASHA theorem.

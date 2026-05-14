@@ -6509,3 +6509,7 @@ no Yukawa coefficient, CKM angle, CP phase, cosmology coordinate, or quarantined
 ```
 
 The gate logs `PROJECT_PUBLICATION_THEOREM_ATLAS_READY`. The next useful move is a manuscript/report skeleton, not another physics derivation.
+
+## Gate 421 — Manuscript Skeleton / Section-by-Section Proof Export
+
+Gate 421 converts the Gate-420 publication theorem atlas into a manuscript-ready skeleton. It exports section ordering, proof obligations, appendices, artifact checklist, and firewall language. It is an exposition/export gate only: it introduces no new physics claim, predicts no Yukawa coefficients, and promotes no quarantined family axiom.

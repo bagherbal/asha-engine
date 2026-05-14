@@ -236,6 +236,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/lorentziantimepullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/majoranaflavorsymmetrybreaking"
+	"github.com/bagherbal/asha-engine/pkg/bridge/manuscriptskeletonexport"
 	"github.com/bagherbal/asha-engine/pkg/bridge/masterstatusledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingcorrectionseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingresidualstructure"
@@ -842,6 +843,7 @@ func Run() error {
 		familyaxiomclosureledger.FamilyAxiomClosureLedgerFlavorFrontierSealTheorem(),
 		postflavorarchitectureboard.PostFlavorArchitectureConsolidationFinalLawSpaceBoardTheorem(),
 		publicationtheorematlas.PublicationGradeTheoremAtlasDependencyGraphExportTheorem(),
+		manuscriptskeletonexport.ManuscriptSkeletonSectionBySectionProofExportTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
