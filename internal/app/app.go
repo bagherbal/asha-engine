@@ -92,6 +92,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierzsign"
 	"github.com/bagherbal/asha-engine/pkg/bridge/filtration"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockcontactkernel"
+	"github.com/bagherbal/asha-engine/pkg/bridge/fockrepresentationtrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeaction"
@@ -344,6 +345,7 @@ func Run() error {
 		diracorderone.FiniteDiracCandidateOrderOneAxiomObstructionAuditTheorem(),
 		totalrepresentation.FiniteAlgebraTotalHilbertRepresentationFaithfulActionObstructionAuditTheorem(),
 		topdownspectraltriple.TopDownFockSpectralTripleBoundaryTraceAmplitudeFirewallTheorem(),
+		fockrepresentationtrace.FockRepresentationTraceGaugeRatioYukawaAmplitudeSeparationTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

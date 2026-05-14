@@ -1851,3 +1851,58 @@ residual nullity:               3 -> 3
 ```
 
 Next gate: Gate 167 — amplitude-rigidity theorem / finite action selection of the Dirac spectrum.
+
+### Gate 167 — Fock representation-trace gauge ratio and Yukawa-amplitude separation
+
+Package: `pkg/bridge/fockrepresentationtrace`
+
+Gate 167 resolves the ambiguity left by Gate 166. The unit-incidence top-down Fock spectral-triple ansatz reproduced the embedded boundary normalization, but its diagnostic `Tr(D_F^4 T_a^2)` changed when Yukawa amplitudes changed. Gate 167 proves that the lawful gauge-kinetic sector ratio is instead the amplitude-independent representation trace:
+
+```text
+K_a = Tr_rep(T_a^2)
+```
+
+over the one-generation Fock fermion content.
+
+Exact result:
+
+```text
+H_Fock fermion content: 16 = 8_L + 8_R
+SU(2)_L doublets:      4
+K_SU2:                 (2,2,2)
+K_Y:                   10/3
+K_Y/K_SU2:             5/3
+sin^2_*:               3/8
+```
+
+Sector trace:
+
+```text
+Q_L:  states=6, doublets=3, T=(3/2,3/2,3/2), Y^2=1/6
+L_L:  states=2, doublets=1, T=(1/2,1/2,1/2), Y^2=1/2
+nu_R:  states=1, doublets=0, T=(0,0,0),       Y^2=0
+e_R:  states=1, doublets=0, T=(0,0,0),       Y^2=1
+nu_R is neutral and contributes zero to K_Y.
+nu_R is distinct from u_R.
+Right states total: nu_R + e_R + three u_R colors + three d_R colors = 8.
+Right-sector Y^2 totals: nu_R=0, e_R=1, u_R=4/3, d_R=1/3.
+```
+
+The theorem separates two layers:
+
+- `diag(1,1,1,5/3)` and `sin^2_* = 3/8` are representation-trace invariants of the one-generation charge table.
+- The off-diagonal amplitudes in `D_F` are finite Yukawa coupling variables. Their eigen/singular data belongs to the mass-generation problem, not to gauge normalization.
+
+Consequences:
+
+```text
+Gate-166 D_F^4 weighted trace: diagnostic only
+correct gauge ratio:           amplitude independent
+Yukawa amplitudes:              not derived
+physical masses:                not derived
+CKM/PMNS:                       not derived
+contact classification:          bypassed only for embedded boundary ratio
+threshold/RG/physical constants: still sealed
+```
+
+Gate 167 links the next phase directly to Gates 28-36: generation breaking must now be reformulated as a finite Dirac/Yukawa texture eigenvalue problem.

@@ -871,3 +871,89 @@ sin^2_*:   3/8 -> 159/454
 Therefore the reproduction is a unit-incidence representation-trace certificate, not a physical mass, coupling, threshold, or RG theorem. It bypasses contact-mode classification only for the embedded boundary trace. It does not solve contact-mode classification, threshold corrections, RG running, physical constants, or Yukawa spectra.
 
 Next gate: Gate 167 — amplitude-rigidity theorem / finite action selection of the Dirac spectrum.
+
+## v1.65 — Gate 167: Fock representation trace gauge ratio and Yukawa-amplitude separation
+
+Gate 167 adds `pkg/bridge/fockrepresentationtrace`.
+
+This gate refines the Gate-166 result. Gate 166 used the diagnostic expression
+
+```text
+K_a = Tr(D_F^4 T_a^2)
+```
+
+and showed that unit incidence reproduces the embedded boundary normalization while arbitrary Yukawa-amplitude deformations change the ratio. Gate 167 separates the two layers:
+
+1. The **gauge-kinetic ratio** is not a Yukawa-amplitude theorem. It is the representation trace
+
+```text
+K_a = Tr_rep(T_a^2)
+```
+
+over the one-generation Fock fermion content.
+
+2. The **Dirac amplitudes** are the finite Yukawa/mass texture variables. They belong to the mass-generation problem, not to gauge normalization.
+
+The exact representation trace is:
+
+```text
+fermion states: 16 = 8 left + 8 right
+SU(2)_L doublets: 4
+K_SU2 = (2,2,2)
+K_Y   = 10/3
+normalized = diag(1,1,1,5/3)
+sin^2_* = 3/8
+```
+
+Sector decomposition:
+
+```text
+Q_L:   6 states, 3 doublets, T=(3/2,3/2,3/2), Y^2=1/6
+L_L:   2 states, 1 doublet,  T=(1/2,1/2,1/2), Y^2=1/2
+nu_R:   1 state,  singlet,    T=(0,0,0),       Y^2=0
+e_R:   1 state,  singlet,    T=(0,0,0),       Y^2=1
+nu_R is neutral and contributes zero to K_Y.
+nu_R is distinct from u_R.
+Right colored totals: u_R has 3 color states with Y^2=4/3; d_R has 3 color states with Y^2=1/3.
+Right states total: nu_R + e_R + u_R^1,u_R^2,u_R^3 + d_R^1,d_R^2,d_R^3 = 8.
+```
+
+Gate 167 therefore closes the embedded boundary gauge ratio as an amplitude-independent representation theorem. It also demotes the Gate-166 `Tr(D_F^4 T_a^2)` expression to a unit-incidence diagnostic: useful, but not the gauge kinetic functional.
+
+The amplitude side is now stated cleanly:
+
+```text
+Gate-25 channels:                  8
+one-generation amplitude slots:    8
+fermion-kind blocks:               4
+numerical amplitudes derived:      false
+color-universal amplitudes derived:false
+```
+
+For one generation, each matched finite Dirac block
+
+```text
+[[0, y_i], [y_i, 0]]
+```
+
+has eigenvalues `±|y_i|`, and `D_F^2` carries `y_i^2`. After Gate-26 triality replication, each fermion kind becomes a finite Yukawa matrix problem. The singular values encode fermion masses after a scalar scale is supplied; CKM/PMNS are encoded in left-eigenbasis misalignment between the relevant finite Yukawa matrices.
+
+Thus the gauge side is rigid, while the mass side remains open. Gate 167 connects the open amplitude problem directly to the Gate-28 generation-breaking texture search and Gates 29-36 source-tensor no-go chain.
+
+Gate 167 theorem ledger:
+
+```text
+boundary ratio closed:             true
+weak-angle seed closed:            true
+contact classification needed:     false, for the embedded boundary ratio
+D_F amplitudes affect gauge ratio: false, for the correct representation trace
+D_F amplitudes affect masses:      true
+physical couplings derived:        false
+threshold corrections derived:     false
+RG running derived:                false
+fermion masses derived:            false
+CKM/PMNS derived:                  false
+residual nullity:                  3 -> 3
+```
+
+Next gate: Gate 168 — finite Dirac/Yukawa amplitude texture target from triality and generation-breaking no-go data.
