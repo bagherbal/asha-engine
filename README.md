@@ -2792,3 +2792,64 @@ RELIC_DECAY_SEAL_NOT_GRANTED_FULL_SPECTRUM
 ```
 
 The full PeV spectrum is therefore still not cosmologically safe. Gate 222 preserves the firewalls: the triplet portal is a quarantined EFT possibility, not a finite-core derivation, and no arbitrary colored decay operator is invented.
+
+## v2.21 — Gate 223: Colored-octet pure-SM portal search / Spectrum falsification audit
+
+Gate 223 adds `pkg/bridge/coloredoctetportal`. It inherits Gate 222's result: the triplet `(1,3,Y=1)` has a sealed lepton-Higgs decay portal, but the colored `(8,2,Y=1/2)` carrier remained a fatal relic because it cannot mix with the SM quark doublet.
+
+Gate 223 performs a bounded pure-SM tensor-product search for an operator `O_SM` such that
+
+```text
+bar(Ψ8) O_SM is a gauge and Lorentz singlet,
+Ψ8=(8,2,Y=1/2),
+O_SM=(8,2,Y=1/2),
+dim[bar(Ψ8) O_SM] ≤ 6.
+```
+
+The audited SM field alphabet is:
+
+```text
+Q, u^c, d^c, L, e^c, H, H†, G_{μν}, W_{μν}, B_{μν}
+```
+
+with no new mediator particles and no use of dormant leptoquark slots.
+
+Gate 223 finds two baryon-safe dimension-six pure-SM portals. The best-ranked one is:
+
+```text
+(c_8/Λ²) bar(Ψ8)^a_i (Q_i u^c e^c)^a + h.c.
+```
+
+and the chromomagnetic-Higgs-lepton portal also appears:
+
+```text
+(c'_8/Λ²) bar(Ψ8)^a_i σ^{μν} e^c H†_i G^a_{μν} + h.c.
+```
+
+The false shortcut remains rejected:
+
+```text
+(8,2,Y=1/2) ≠ Q=(3,2,Y=1/6)
+```
+
+BBN safety is imposed only as a filter. For `M_B ≈ 2.56895727e6 GeV`, the conservative unit-Wilson dimension-six bound is:
+
+```text
+Λ_EFT ≲ 4.99261316e11 GeV
+```
+
+using the post-EWSB dipole proxy. The unbroken three-body estimate gives a weaker bound:
+
+```text
+Λ_EFT ≲ 1.29992096e13 GeV
+```
+
+Gate 223 status:
+
+```text
+CONDITIONAL_PHENOMENOLOGY_RELIC_DECAY_SEAL_GRANTED
+COLORED_OCTET_DIM6_PORTAL_FOUND
+RANK1_SPECTRUM_NOT_FALSIFIED_BY_RELIC_DECAY
+```
+
+This grants the `RelicDecaySeal` only as phenomenology. The finite core still does not derive the Wilson coefficient, flavor choice, EFT suppression scale, relic abundance, or thermal history.

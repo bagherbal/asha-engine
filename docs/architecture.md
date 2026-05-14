@@ -3322,3 +3322,58 @@ The gate separates the two sealed carriers:
 The triplet admits a quarantined EFT Yukawa portal to `L H†`, with a tiny BBN lower bound on its sealed coupling. The colored octet does not admit simple mass mixing with the SM quark doublet because its color and hypercharge differ from `Q=(3,2,Y=1/6)`. A leptoquark-assisted decay remains blocked by the `LeptoquarkDynamicsSeal`.
 
 Thus Gate 222 records partial triplet support but denies the full `RelicDecaySeal`. The cosmology frontier is narrowed to a colored-octet decay problem.
+
+## Gate 223 — Colored-octet pure-SM portal search and relic-seal rescue
+
+Gate 223 extends the relic/decay sector after Gate 222. Gate 222 found a triplet decay portal but left the colored octet unresolved. Gate 223 asks whether the unresolved octet can decay using only pure Standard Model fields, without importing new mediators or activating dormant leptoquark slots.
+
+Architectural placement:
+
+```text
+finite core
+→ Fock/gauge scaffold
+→ empirical and stability seals
+→ rational threshold lattice
+→ ThresholdSpectrumSeal + MatchingCorrectionSeal
+→ full-SM two-loop sensitivity audit
+→ PeV observability audit
+→ heavy-carrier decay/relic safety audit
+→ EFT decay portal audit
+→ colored-octet pure-SM tensor search
+```
+
+The target is the sealed carrier:
+
+```text
+Ψ8 = (8,2,Y=1/2)
+bar(Ψ8) = (8,2,Y=-1/2)
+```
+
+so the pure-SM composite operator must transform as:
+
+```text
+O_SM = (8,2,Y=1/2)
+```
+
+and must be fermionic so that `bar(Ψ8) O_SM` can form a Lorentz scalar.
+
+The search finds dimension-six portal classes, including:
+
+```text
+bar(Ψ8) Q u^c e^c
+bar(Ψ8) σ^{μν} e^c H† G_{μν}
+```
+
+Both preserve the baryon firewall in the audited representation bookkeeping and use no leptoquark mediator. The first is the best-ranked dimension-six witness; the second is the chromomagnetic-Higgs-lepton witness that explicitly uses the gluon field strength to expose the color-octet channel.
+
+The `RelicDecaySeal` is therefore granted conditionally on quarantined EFT data:
+
+```text
+Wilson coefficient c_8
+suppression scale Λ_EFT
+flavor choice
+post-EWSB decay/cascade semantics
+future relic Boltzmann audit
+```
+
+Gate 223 does not derive these quantities from the finite core. It only proves that the Rank-1 PeV spectrum is not immediately falsified by the colored relic problem once a pure-SM dimension-six portal is allowed as sealed phenomenology.

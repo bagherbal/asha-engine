@@ -117,3 +117,12 @@
 - Keep EFT portals quarantined: gauge-invariant operators, Wilson coefficients, and suppression scales are phenomenological unless derived from the finite core.
 - Use BBN bounds to constrain sealed couplings/scales, not to invent operators. If the operator is not certified, its width formula is diagnostic only.
 - Keep leptoquark-mediated decays blocked while `LeptoquarkDynamicsSeal` is active. Do not use dormant current slots to rescue relic safety.
+
+## Gate 223 workflow refinement — relic rescue must be a tensor-product theorem
+
+- Do not trust intuitive identity claims for representations. Recompute color, weak, hypercharge, Lorentz parity, and dimension before accepting a decay portal.
+- For a heavy fermion `Ψ`, search for a pure-SM spinor composite `O_SM` such that `bar(Ψ)O_SM` is a singlet. Keep the heavy-field dimension in the total operator-dimension bound.
+- Keep baryon/proton firewalls active while searching relic portals. A gauge-invariant operator can still be rejected if it would reopen a sealed baryon-violation route.
+- Distinguish operator existence from coefficient existence. Finding a dimension-six portal permits a `RelicDecaySeal`, but the Wilson coefficient and suppression scale remain phenomenological unless derived.
+- If a portal is found, compute BBN safety as a bound on `Λ` or `c`, not as a relic abundance. Full abundance and flavor constraints require a later gate.
+- If no portal exists within the bounded field alphabet and dimension limit, falsify the sealed spectrum before moving to lower-ranked RG candidates.

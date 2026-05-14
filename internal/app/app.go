@@ -27,6 +27,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/cliffordcontactcommutant"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
+	"github.com/bagherbal/asha-engine/pkg/bridge/coloredoctetportal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/conditionalrgbranch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/conditionalthresholdbeta"
@@ -456,6 +457,7 @@ func Run() error {
 		pevobservabilityaudit.PeVThresholdIndirectSignatureObservabilityAuditTheorem(),
 		heavycarrierdecayaudit.HeavyCarrierDecayRelicSafetyAuditTheorem(),
 		eftdecayportal.EFTDecayPortalRelicDecaySealActivationAuditTheorem(),
+		coloredoctetportal.ColoredOctetPureSMPortalSearchSpectrumFalsificationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
