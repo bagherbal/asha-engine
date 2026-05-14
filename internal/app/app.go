@@ -27,6 +27,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcomplex"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarsu2"
+	"github.com/bagherbal/asha-engine/pkg/bridge/sectorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
@@ -140,6 +141,7 @@ func Run() error {
 		exchangekernel.PropagatorExchangeKernelAuditTheorem(),
 		exchangeaction.FiniteExchangeActionPropagatorSearchTheorem(),
 		propagatorspectrum.FinitePropagatorSpectrumSearchTheorem(),
+		sectorspectrum.CurrentSectorSpectralAssignmentSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
