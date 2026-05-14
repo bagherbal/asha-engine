@@ -10,7 +10,7 @@ $$
 
 ASHA is ambitious, but disciplined: it derives the finite internal law-space and its spectral-action embedding, while explicitly preserving the flavor and cosmology firewalls where the current mathematics does not yet select the physical vacuum.
 
-[![Watch video](./docs/visuals/media/section07_higgs_edge_measure_pfaffian_scale_human.svg)](./docs/visuals/media/ASHAEssentialTower.mp4)
+[![Watch video](./docs/visuals/media/asha_video_thumbnail_sacred_board_4k.png)](./docs/visuals/media/ASHAEssentialTower.mp4)
 ---
 
 ## Method: Theorem-Gated Physics
