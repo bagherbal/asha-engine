@@ -169,3 +169,12 @@
 - For non-perturbative hierarchy searches, distinguish three levels: functional shape, target coefficient, and finite-derived coefficient. Only the third can grant a native mechanism.
 - Near-resonances such as `c≈4/π` should be logged as diagnostics unless the finite algebra derives the coefficient through an action, trace, volume, or instanton normalization.
 - A hidden-sector route can be favored by falsifying baryon-unsafe routes, but that still does not derive the hidden order parameter or breaking potential.
+
+## Gate 229 method note — geometric constants require finite action maps
+
+- When a fitted or near-fitted coefficient becomes recognizable as a geometric constant, decompose it explicitly into prior sealed data and standard mathematical factors before treating it as meaningful.
+- Keep three ledgers separate: exact mathematical identity, finite-engine derivation, and phenomenological resonance. `4/π = S_top/(π Vol(S^3))` is exact; a contact-vacuum Hopf-action map is not yet derived.
+- For exponential hierarchies, always compute sensitivity. A small coefficient residual can create a large scale displacement, and the audit must quantify this before discussing resonance.
+- Be precise about relative versus absolute sensitivity. A derivative of about `53` per unit `B_gap` means a 1% relative `B_gap` shift is about `0.054` decades, while a 10% shift is about `0.54` decades.
+- Compare residuals against already sealed uncertainty envelopes, but do not convert “plausibly covered” into “derived.” Matching corrections and higher-loop effects remain separate firewalled mechanisms.
+- Do not grant an intermediate-breaking seal from a near-resonance alone. Require a finite order parameter, action normalization, and breaking potential.

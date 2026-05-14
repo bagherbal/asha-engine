@@ -124,6 +124,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/hopfgeometricnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/inputsensitivityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/instantontracebridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/intermediatebreakingaudit"
@@ -468,6 +469,7 @@ func Run() error {
 		axionphenomenologyseal.AxionPhenomenologySealBGapMisalignmentScaleAuditTheorem(),
 		geometricmeanresonance.GeometricMeanIntermediateResonanceAuditTheorem(),
 		intermediatebreakingaudit.PatiSalamFalsificationBSectorHierarchyAuditTheorem(),
+		hopfgeometricnormalization.HopfFibrationGeometricNormalizationBGapSensitivityAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

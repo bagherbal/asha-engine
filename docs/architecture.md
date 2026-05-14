@@ -3637,3 +3637,52 @@ Pati-Salam/u4 route: falsified at M_int by proton decay
 B-sector route: structurally plausible but not derived
 intermediate breaking: still sealed/missing
 ```
+
+## Gate 229 — Hopf-fibration normalization as a conditional hierarchy diagnostic
+
+Gate 229 adds `pkg/bridge/hopfgeometricnormalization` after the Pati-Salam falsification / B-sector hierarchy search.
+
+Architecturally, this gate sits at the boundary between the sealed phenomenological hierarchy and a possible finite geometric origin of the intermediate scale. It consumes:
+
+```text
+Gate 174: S_top = 8π² topological action seal
+Gate 219: propagated PeV/GUT scale uncertainty envelope
+Gate 228: M_int, M_*, B_gap, c_req, and Pati-Salam falsification
+```
+
+It audits the decomposition
+
+```text
+4/π = S_top/(π Vol(S^3))
+```
+
+where `Vol(S^3)=2π²` is standard unit-sphere geometry. This gives the non-perturbative hierarchy
+
+```text
+M_Hopf = M_* exp(-(4/π)/B_gap)
+       ≈ 6.90866028e11 GeV.
+```
+
+This is only `0.0165` decades from the Gate-227 intermediate scale
+
+```text
+M_int ≈ 6.65072648e11 GeV.
+```
+
+The gate therefore records conditional geometric support for the B-gap hierarchy shape. But the engine deliberately refuses to promote this to a finite theorem because it has not derived:
+
+```text
+Cl(1,7) → S^7 Hopf-fiber action map
+contact-vacuum S^3 fiber volume normalization
+hidden B-sector order parameter
+finite breaking potential
+finite matching residual
+```
+
+This gate also records the hierarchy sensitivity
+
+```text
+∂log10(M)/∂B_gap ≈ 52.6677
+```
+
+and marks it as a binding precision constraint. The `IntermediateBreakingSeal` remains ungranted until the finite Hopf-action map and hidden order parameter are derived.

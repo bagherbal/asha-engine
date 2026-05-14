@@ -3095,3 +3095,69 @@ CONDITIONAL_SUPPORT_HIDDEN_SECTOR_ORIGIN_AFTER_PATI_SALAM_FALSIFICATION
 ```
 
 The result favors a baryon-safe hidden-sector origin after Pati-Salam falsification, but it does not yet derive the intermediate scale.
+
+## v2.27 — Gate 229: Hopf-fibration geometric normalization and B-gap sensitivity audit
+
+Gate 229 introduces `pkg/bridge/hopfgeometricnormalization`. It tests whether the Gate-228 diagnostic coefficient `c = 4/π` is merely a near-fit or has a canonical geometric decomposition.
+
+The audit verifies the exact identity
+
+```text
+c_Hopf = S_top / (π Vol(S^3))
+S_top = 8π²
+Vol(S^3) = 2π²
+c_Hopf = 4/π
+```
+
+and inserts it into the B-gap hierarchy
+
+```text
+M_Hopf = M_* exp(-(4/π)/B_gap).
+```
+
+Using the sealed values
+
+```text
+M_*   = 1.72179441e17 GeV
+B_gap = 0.1024649212
+```
+
+Gate 229 obtains
+
+```text
+M_Hopf = 6.90866028e11 GeV
+```
+
+compared with the Gate-227 intermediate target
+
+```text
+M_int = 6.65072648e11 GeV.
+```
+
+The gap is only `0.0165` decades. The required fitted coefficient from Gate 228 was `c_req = 1.277138298532`, so the geometric coefficient differs by only
+
+```text
+Δc = 0.003898753797
+```
+
+or about `0.305%`.
+
+Gate 229 also logs the exponential sensitivity:
+
+```text
+∂log10(M)/∂B_gap = c/(ln(10) B_gap²) ≈ 52.6677.
+```
+
+This means a 1% relative shift in `B_gap` moves the hierarchy by about `0.054` decades, while a 10% shift moves it by about `0.54` decades. The hierarchy is therefore precise but fragile.
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_GEOMETRIC_HIERARCHY
+FAILED_ROUTE_NATIVE_HOPF_FIBER_NORMALIZATION_DERIVATION
+BINDING_WARNING_EXPONENTIAL_BGAP_SENSITIVITY
+RESIDUAL_WITHIN_SEALED_UNCERTAINTY_NOT_DERIVED
+INTERMEDIATE_BREAKING_SEAL_STILL_REQUIRED
+```
+
+The coefficient is not fitted, and the near-resonance is structurally meaningful. However, the finite engine has not yet derived the Hopf-fiber action map, hidden B-sector order parameter, or matching residual. The `IntermediateBreakingSeal` remains prepared but ungranted.
