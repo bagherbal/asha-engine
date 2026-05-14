@@ -5640,3 +5640,19 @@ f0=7 contact ledger: overpredicts relative to the Higgs boundary.
 ```
 
 The gate therefore isolates the exact remaining coefficient gap as `10/7`: the mismatch between the previous contact-spectrum `f0=7` ledger and the edge-denominator value `10` needed for CCM+Pfaffian Higgs near-closure. This is not yet a native theorem. A future closure theorem must prove why the J-doubled finite Dirac edge multiplicity enters the canonical Higgs normalization denominator without double-counting the already traced ratio `e/a²=1197/4624`.
+
+## Gate 383 — Node-to-edge kinetic normalization architecture
+
+Gate 383 refines the CCM product-action Higgs coefficient architecture by distinguishing two finite trace domains.
+
+```text
+N_node = 7
+N_edge,J = 10
+N_edge,J / N_node = 10/7
+```
+
+The architectural finding is that the Higgs kinetic term is edge-supported: the scalar field is a finite one-form / inner fluctuation along the finite Dirac operator, so its support is naturally the interaction-edge graph rather than the bare contact-node graph.
+
+This explains why the edge-denominator lane in Gates 380–383 nearly closes the Higgs mass. But the architecture still blocks final closure until raw finite traces are recomputed. The invariant `e/a²=1197/4624` is already a finite trace ratio; the system must prove whether it was computed with node normalization, edge normalization, or a convention that already includes both. The final bridge cannot be an after-the-fact multiplication by `10/7`.
+
+The next architectural target is therefore a raw-trace recomputation gate for `a=Tr(Y†Y)` and `e=Tr((Y†Y)²)` under explicit node and edge measures.

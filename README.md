@@ -6044,3 +6044,21 @@ Tr_E(P_edge) = 2 × 5 = 10.
 This exactly matches the `f0 = 10` near-Higgs closure found in Gate 380. However, the gate does not identify this trace with the CCM spectral-action moment. In the CCM coefficient ledger, `f0` is the zeroth test-function moment/value `f(0)`. A projection trace over finite Dirac edge/operator slots is a multiplicity in a different mathematical slot. The equality would require a new spectral-graph moment theorem proving that the cutoff functional canonically collapses to the edge-slot projection trace.
 
 Gate 381 therefore preserves `f0 = 10` as a powerful native capacity witness, but logs strict failed routes for final Higgs-mass sealing until the analytic-to-discrete moment theorem is proven.
+
+## Gate 383 — Spectral Graph Trace / Node-to-Edge Kinetic Normalization Sieve
+
+Gate 383 audits the final `10/7` Higgs-sector normalization gap isolated by Gate 382.
+
+The gate separates two finite trace domains:
+
+```text
+contact nodes:        7
+J-doubled D_F edges: 10
+node-to-edge bridge: 10/7
+```
+
+The Higgs kinetic term is structurally supported by the finite Dirac interaction edges because the Higgs field appears as an inner fluctuation / finite one-form along the allowed `D_F` channels. This gives a strong mathematical reason why the edge trace, rather than the bare contact-node trace, is the correct-looking support for canonical Higgs normalization.
+
+Using the edge denominator `10` in the CCM+Pfaffian Higgs lane reproduces the near-125 GeV Higgs mass found in Gate 380. However, the engine does not yet seal this as a theorem: CCM canonical normalization already uses `a=Tr_F(Y†Y)`, and the stored finite ratio `e/a²=1197/4624` may already contain the edge support. Applying `10/7` after the fact could double-count unless raw `a` and `e` are recomputed under node-measure and edge-measure conventions.
+
+The precise missing theorem is now a `SpectralGraphKineticNormalizationTheorem` proving that the canonical Higgs kinetic trace replaces the contact-node normalization `7` by the J-doubled edge normalization `10` without double-counting the finite trace ratio.
