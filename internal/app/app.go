@@ -10,6 +10,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
+	"github.com/bagherbal/asha-engine/pkg/bridge/currentcontact"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentembedding"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currenthessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentprojection"
@@ -152,6 +153,7 @@ func Run() error {
 		exchangeselection.FiniteExchangeActionSelectionTheorem(),
 		currenthessian.FiniteCurrentHessianSearchTheorem(),
 		currentembedding.CurrentFieldEmbeddingTheorem(),
+		currentcontact.CurrentToContactEmbeddingMapSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

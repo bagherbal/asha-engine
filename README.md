@@ -400,3 +400,22 @@ S[B,A,j] = S_B[B] + S_block[A;K⊕K⊥] + 1/2 jᵀK_current j - <j,J_source[B,A]
 ```
 
 The gate is intentionally not a success claim: the map from finite `u(4)` Fock currents into Boolean/contact block-connection operators is still open, so `J_source`, the second variation `δ²S/δjδj`, the propagator rule, NJL attraction, top condensation, and fermion masses remain unclaimed.
+
+## v0.70 — Gate 71: Current-to-contact embedding map search
+
+Gate 71 adds `pkg/bridge/currentcontact`. Gate 70 typed the current-sector action slots but left the key map open:
+
+```text
+E_current_to_block : u(4) Fock currents -> Boolean/contact block operators.
+```
+
+The new gate searches for this embedding and exposes the representation obstruction. The available Boolean/contact block target is the four-generator contact-preserving `su(2)+u(1)`-shaped seed, while the Fock current inventory is the sixteen-generator `u(4)=central+color-su3+B-L+leptoquark` inventory. An arbitrary linear map `R^16 -> R^4` exists, but it would have a large kernel and is not selected by finite data.
+
+Current result:
+
+- abelian slot exists but cannot separate central `u(1)` from `B-L`;
+- no `SU(3)c` adjoint 8D carrier is present in the contact block target;
+- no 6D leptoquark carrier is derived in the contact block target;
+- therefore `E_current_to_block`, the current Hessian, the exchange kernel, and NJL attraction remain open.
+
+The next direction is a dual-carrier architecture: do not force all `u(4)` currents into the contact `su(2)+u(1)` block. Instead, test whether color/Pati-Salam currents and electroweak/contact currents live on separate coupled finite carriers.
