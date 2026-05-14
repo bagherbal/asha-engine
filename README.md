@@ -234,3 +234,22 @@ mixing is not yet selected. The next mathematical target is a finite BF
 curvature operator or a new projection from active curvature into generation
 texture space.
 
+
+## v0.30 — Active curvature to generation projection bridge
+
+Gate 31 adds `pkg/matter/bfbridge`. Gate 30 found that second-fundamental curvature is real on the active Higgs/contact carrier but flat on the protected 3D generation carrier. Gate 31 tests the tempting bridge honestly: can the existing finite block connection project active curvature into the protected generation carrier?
+
+It computes the natural cross maps
+
+```text
+B_i = G^T A_i H
+```
+
+where `G` is the protected 3D carrier, `H` is the active 4D carrier, and `A_i` are the Boolean-compressed connection generators. Then it tests induced generation operators
+
+```text
+B_i F_active B_j^T
+B_i F_active^T F_active B_j^T
+```
+
+The result is a no-go for the current implementation: active curvature exists, but the existing connection gives no nonzero active-to-protected bridge. Therefore the engine refuses to claim CKM/PMNS or generation mixing from active Higgs curvature alone. The next missing theorem is a genuine finite BF/Maurer-Cartan curvature operator or another canonical active-generation projection principle.
