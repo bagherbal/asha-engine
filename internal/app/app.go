@@ -223,6 +223,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncartanflavorvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncommutingtexturepair"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonperturbativeportalcoupling"
+	"github.com/bagherbal/asha-engine/pkg/bridge/nontracialmodularstate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonunitaryprojectortexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonuniversalrgfit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/normalizationthresholdaudit"
@@ -738,6 +739,7 @@ func Run() error {
 		admissibleoperatorclosure.AdmissibleOperatorClosureVacuumSelectionNoGoTheorem(),
 		modulartimeflowvacuumselector.ModularTimeFlowVacuumSelectorExtensionAuditTheorem(),
 		modularspectralflowkernel.ModularSpectralFlowKernelVacuumAddressOperatorConstructionAuditTheorem(),
+		nontracialmodularstate.NontracialModularStateOriginVacuumDensityMatrixDerivationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
