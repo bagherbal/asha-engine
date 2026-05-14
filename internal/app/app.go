@@ -161,6 +161,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdorigindichotomy"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
+	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdspectrumseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topdownspectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalboundaryviability"
@@ -436,6 +437,7 @@ func Run() error {
 		nonuniversalrgfit.NonUniversalRationalLatticeRGFitAuditTheorem(),
 		twothresholdviability.TwoThresholdRationalLatticeViabilityFilterTheorem(),
 		twothresholdminimality.TwoThresholdSolutionMinimalityFiniteOriginParentageAuditTheorem(),
+		thresholdspectrumseal.ThresholdSpectrumSealMatchingCorrectionTwoLoopPreflightTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

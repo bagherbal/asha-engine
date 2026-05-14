@@ -40,3 +40,7 @@
 - Never treat a ranking function as a finite theorem. Ranking can prioritize witnesses for inspection, but uniqueness requires a derived selector, symmetry, spectrum rule, or explicit seal.
 - For parentage audits, external branching patterns are only hints unless the engine derives the parent gauge connection, branching map, missing partners, and splitting rule.
 - For threshold-splitting arguments, numerical closeness of logs is not a mass theorem. Require an activation/splitting mechanism or log a `ThresholdSpectrumSeal` obligation.
+- For degenerate viable spectra, introduce an explicit spectrum seal before inspecting a ranked witness. The seal must quarantine the selection and prevent ranked-best from becoming finite-derived uniqueness.
+- Matching corrections require more than finite traces: demand a subtraction scheme, counterterm functional, heat-kernel/spectral-action map, and threshold matching convention before deriving `δ_i^match`.
+- Two-loop coefficients may be computed as standard-QFT preflight data, but their provenance must stay separate from finite-core theorems unless the engine derives the action, field normalization, and scheme.
+- For two-loop preflights, report correction-size diagnostics before claiming stability. If the two-loop/one-loop derivative ratio is not small, keep one-loop scales as reference values only and require full integration plus matching envelopes.

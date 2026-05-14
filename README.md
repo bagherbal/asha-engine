@@ -2413,3 +2413,62 @@ ThresholdSpectrumSeal required before selecting one Gate-211 pair as the heavy s
 The `EmpiricalCarrierSeal` and `LeptoquarkDynamicsSeal` remain active. No `SU(5)`, `SO(10)`, or Pati-Salam parent gauge group is imported as dynamics. No matching correction, two-loop correction, proton lifetime, physical mass derivation, or unique threshold spectrum is claimed.
 
 Next structural obligation: Gate 213 — ThresholdSpectrumSeal / matching-correction and two-loop stability preflight audit.
+
+## v2.11 — Gate 213: ThresholdSpectrumSeal / matching-correction and two-loop stability preflight audit
+
+Gate 213 adds `pkg/bridge/thresholdspectrumseal`.
+
+Gate 212 proved that the Gate-211 two-threshold bridge is degenerate: 44 ordered viable witnesses reduce to 22 unordered physical pair classes, and the finite algebra does not currently select one. Gate 213 therefore introduces an explicit quarantine rather than pretending that the ranked witness is a derived spectrum:
+
+```text
+ThresholdSpectrumSeal
+SEAL-THRESHOLD-SPECTRUM-GATE213
+```
+
+Under this seal, the Gate-211 best-ranked pair is selected only as a conditional test subject:
+
+```text
+row 1: Dirac fermion (1,3,Y=1)        Δb = (12/5,8/3,0)
+row 2: Dirac fermion (8,2,Y=1/2)      Δb = (16/5,16/3,8)
+M_B1  = 1.12508213e5 GeV
+M_B2  = 1.64679341e5 GeV
+M_*   = 7.37363563e16 GeV
+```
+
+The matching-correction audit preserves the Gate-199/Gate-194 firewall. The engine has finite support data (`tau_eta`, scalar traces, contact zeta traces), but it still lacks a spectral triple, heat-kernel matching map, canonical subtraction scheme, and finite counterterm functional. Therefore:
+
+```text
+FAILED_ROUTE_DERIVED_MATCHING_CORRECTIONS
+δ_i^match not derived
+```
+
+Gate 213 computes the exact symbolic standard-QFT two-loop matrix induced by the sealed heavy carriers. The heavy-carrier contribution is:
+
+```text
+ΔB_heavy = [[144/25,108/5,144/5],
+            [36/5,108,48],
+            [18/5,18,192]]
+```
+
+including the usual no-Yukawa SM two-loop matrix gives:
+
+```text
+B_total = [[487/50,243/10,188/5],
+           [81/10,683/6,60],
+           [47/10,45/2,166]]
+```
+
+These coefficients are exact rational **preflight data**, not finite-core theorems. The two-loop stability audit finds that the last segment, where both heavy carriers are active, has a non-small `SU(3)` correction:
+
+```text
+max two-loop / one-loop derivative ratio ≈ 1.22345
+status = TWO_LOOP_PREFLIGHT_WARNING_ONE_LOOP_STABILITY_NOT_PROVEN
+```
+
+So Gate 213 records:
+
+```text
+CONDITIONAL_PHENOMENOLOGY_ON_THRESHOLD_SPECTRUM_SEAL
+```
+
+The one-loop Gate-211 scales remain reference values only. No corrected two-loop scale, matching correction, unique spectrum, physical prediction, or finite-derived threshold mass is claimed.

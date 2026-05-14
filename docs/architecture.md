@@ -3027,3 +3027,25 @@ FAILED_ROUTE_CANONICAL_THRESHOLD_UNIQUENESS
 ```
 
 This failure preserves Gate 211 rather than overturning it. Gate 211 says viable paths exist. Gate 212 says the current finite algebra does not uniquely select one path. The correct next architectural move is a `ThresholdSpectrumSeal` or a future finite spectrum-selector theorem before matching corrections, two-loop stability, or experimental interpretation are allowed.
+
+### Gate 213 — ThresholdSpectrumSeal / matching-correction and two-loop stability preflight audit
+
+Package: `pkg/bridge/thresholdspectrumseal`
+
+Gate 213 is the first explicit heavy-spectrum seal. It sits after Gate 212’s degeneracy obstruction and before any precision threshold prediction.
+
+Architectural placement:
+
+```text
+Layer 9:  Two-threshold viability filter         → Gate 211
+Layer 10: Degeneracy / spectrum-selector audit   → Gate 212
+Layer 11: Threshold-spectrum seal + 2-loop audit → Gate 213
+```
+
+The gate introduces `ThresholdSpectrumSeal` because the engine has no finite selector for one of the 22 unordered viable pair classes. The selected pair is the Gate-211 ranked witness, but only as a quarantined test subject. The seal explicitly prevents this choice from being reinterpreted as a unique finite spectrum or contact/B-sector carrier derivation.
+
+The matching-correction branch audits the already available finite traces and scalar support functionals. They remain insufficient for precision threshold matching because the engine has not derived a spectral triple, heat-kernel matching map, subtraction scheme, or counterterm functional. As a result, `δ_i^match` remains sealed and no exact precision mass scale is promoted.
+
+The two-loop branch computes exact rational standard-QFT preflight coefficients for the sealed carriers, while keeping their provenance separate from the finite core. The resulting correction is not perturbatively small in the high-scale `SU(3)` segment, so Gate 213 warns that the Gate-211 one-loop convergence is not proven stable without full two-loop integration and matching corrections.
+
+This gate therefore strengthens the architecture: Gate 211 supplies viable one-loop witnesses; Gate 212 proves they are degenerate; Gate 213 seals one witness for inspection and shows exactly what higher-order data are still missing before precision phenomenology can be trusted.
