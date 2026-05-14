@@ -143,6 +143,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourcyclechernweil"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fullflavorledgerclosure"
+	"github.com/bagherbal/asha-engine/pkg/bridge/fullphysicalfirstorder"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fullscrepresentationsearch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeaction"
@@ -604,6 +605,7 @@ func Run() error {
 		doubledspacerepresentation.DoubledSpaceRepresentationOppositeAlgebraActionAssemblyAuditTheorem(),
 		truebimodulerepresentation.TrueBimoduleAssemblyLeftRightRepresentationAuditTheorem(),
 		hyperchargediracassembly.HyperchargeLedgerSieveCanonicalFiniteDiracAssemblyAuditTheorem(),
+		fullphysicalfirstorder.FullPhysicalFirstOrderVerificationFiniteSpectralTripleCompletionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
