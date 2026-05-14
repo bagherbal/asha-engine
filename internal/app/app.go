@@ -38,6 +38,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcomplex"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcovariant"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarsu2"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectoroperators"
@@ -178,6 +179,7 @@ func Run() error {
 		abeliancoupling.AbelianCouplingNormalizationFromDiagonalHessianAuditTheorem(),
 		gaugeaction.GaugeKineticActionSelectionRGBoundaryAuditTheorem(),
 		gaugehessian.GaugeKineticHessianSecondVariationTheorem(),
+		scalarcovariant.FiniteScalarCovariantDerivativeMassMatrixTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -68,3 +68,7 @@ The boundary-fixed Lie closure diagnostic is intentionally runtime-capped. Its s
 ## Gate 28 — Generation-Breaking Texture Search
 
 Exact triality is now treated as a replication principle, not as a texture-selection principle. The gate classifies the `3×3` flavor texture spaces exposed by the Yukawa/triality audit and proves the immediate no-go: a symmetric texture invariant under exact triality has only a singlet plus doublet spectrum. Therefore the engine must discover an additional finite generation-breaking operator before making any mass, CKM, or PMNS claim.
+
+## Gate 84 — Finite Scalar Covariant Derivative / Gauge-Boson Mass Matrix
+
+Gate 84 constructs an abstract finite scalar covariant-derivative template on the four-real-dimensional scalar/contact frame. It verifies the W/Z/photon signature at the dimensionless bridge level: two degenerate charged modes, one neutral massive mode, and one electromagnetic null direction. It deliberately does not claim physical W/Z masses because scalar kinetic normalization, gauge couplings, gauge-field Hessian, and canonical vacuum orientation remain open.
