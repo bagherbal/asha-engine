@@ -287,6 +287,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/topyukawagenerationtensor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tracesynthesiscarrierequivalence"
+	"github.com/bagherbal/asha-engine/pkg/bridge/trialitygaussianmeasure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitygenerationpullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitytexturelift"
 	"github.com/bagherbal/asha-engine/pkg/bridge/truebimodulerepresentation"
@@ -694,6 +695,7 @@ func Run() error {
 		hierarchyscalingaudit.GaugeHierarchyScalingAuditPlanckFactorSieveTheorem(),
 		hierarchyrankpromotion.Rank56HalfInstantonHierarchyPromotionSieveTheorem(),
 		pfaffianhierarchy.PfaffianHalfActionHierarchyFermionicFluctuationDeterminantTheorem(),
+		trialitygaussianmeasure.TrialityGaussianMeasureZeroModeNormalizationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
