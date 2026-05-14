@@ -5863,3 +5863,26 @@ v/M_P = 2^(3/2) exp(-4 pi^2)
 The result is strict but clarifying: these are scale/hierarchy constraints, not generation-texture equations. A symbolic vacuum-energy/trace-anomaly functional can be written using flavor invariants such as `T2`, `T4`, and possible misalignment commutators, but it is not a unique native functional without a renormalized vacuum counterterm, continuum scale choice, and extra coefficients. Holographic and Bekenstein bounds are inequalities on aggregate energy/entropy unless a native saturation theorem is derived.
 
 Therefore Gate 373 does not reduce the 13 charged finite-Dirac moduli. It preserves the gravity/information direction as a possible later Phase-IV/continuum program, but rejects the claim that the current ledger already fixes Yukawa texture or CKM data from holography.
+
+## Gate 374 — Final Closing Theorem / ASHA 13-Moduli Vacuum Manifold
+
+Gate 374 adds the capstone package `pkg/bridge/asha_final_closing_theorem`. It does not introduce a new selection mechanism. It seals the current finite `Cℓ(1,7)`/ASHA ledger into four categories:
+
+1. exact structural/topological laws;
+2. native boundary ratios;
+3. transport-dependent phenomenological proxies;
+4. the irreducible 13 charged finite-Dirac moduli.
+
+The final scoped theorem is:
+
+```text
+ASHA/Cℓ(1,7) closes as a finite-kinematic Standard-Model landscape theorem with native boundary ratios and an irreducible 13-dimensional charged flavor moduli manifold. The laws/representation/boundary ledger is sealed inside the current axioms; the specific Yukawa/CKM vacuum point is not derived and remains an environmental/informational coordinate unless a future theorem adds independent, noncircular dynamics.
+```
+
+The gate preserves the exact census:
+
+```text
+15 external minimal vacuum ledger = 13 charged finite-Dirac moduli + theta_QCD + one absolute scale
+```
+
+It also closes the attempted finite-geometric, modular-flow, eta-trace, Fock/information, and holographic routes as nonselecting under the current axioms. The theorem is therefore a scoped completion seal: complete as finite kinematics and boundary reconstruction; not complete as a derivation of the flavor vacuum point.

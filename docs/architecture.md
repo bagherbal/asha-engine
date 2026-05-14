@@ -5421,3 +5421,24 @@ Gate 373 therefore preserves the minimal census:
 ```
 
 This is not a rejection of the Theory-of-Everything direction. It is the category boundary: current ASHA gravity data supplies scale relations and aggregate bounds, not the independent equations required to collapse the flavor moduli space.
+
+## Gate 374 architectural update: final scoped closure of the finite ASHA ledger
+
+Gate 374 introduces `pkg/bridge/asha_final_closing_theorem` as the capstone/epistemic seal. The package intentionally uses the Go import path with underscores requested by the audit, while the internal package identifier is `ashafinalclosingtheorem`.
+
+Architecturally, the gate separates the final project ledger into four noninterchangeable categories:
+
+| Category | Meaning | Example |
+|---|---|---|
+| Exact structural laws | finite representation/topology/spectral-triple structure | gauge group, particle inventory, Morita split |
+| Native boundary ratios | exact UV/boundary data | `sin²θ_W=3/8`, `alpha_GUT^-1=8π`, `lambda_H/g_*²=1197/4624`, hierarchy scale |
+| Transport proxies | conditional IR comparisons after threshold/RG/matching transport | heavy-sector threshold jump, Higgs mass proxy |
+| Irreducible moduli | finite-Dirac charged flavor flat directions | `dim M(D_F)_charged = 13` |
+
+The architectural closure is strict:
+
+```text
+15 = 13 charged finite-Dirac flavor moduli + theta_QCD + one absolute scale
+```
+
+Gate 374 does not promote `tau_eta`, the Fock number operator, or holographic saturation into a Hamiltonian. It records those routes as capacity witnesses or failed/circular routes unless a future theorem derives an independent generation-address operator. This makes the framework publishable in a scoped form: the finite kinematic/boundary landscape is sealed, while the exact flavor vacuum point remains outside the current pure finite geometry.
