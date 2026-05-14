@@ -16,6 +16,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
+	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
@@ -130,6 +131,7 @@ func Run() error {
 		fierz.FiniteFierzProjectionAuditTheorem(),
 		chiraltrace.FiniteChiralBilinearMetricTheorem(),
 		currentprojection.CurrentActionScalarProjectionTheorem(),
+		kineticnorm.GeneratorKineticNormalizationTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
