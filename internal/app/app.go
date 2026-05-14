@@ -19,6 +19,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/matter"
 	"github.com/bagherbal/asha-engine/pkg/matter/action"
 	"github.com/bagherbal/asha-engine/pkg/matter/charge"
+	"github.com/bagherbal/asha-engine/pkg/matter/electroweak"
 	"github.com/bagherbal/asha-engine/pkg/matter/embedding"
 	"github.com/bagherbal/asha-engine/pkg/matter/tensor"
 	"github.com/bagherbal/asha-engine/pkg/matter/yukawa"
@@ -49,6 +50,7 @@ func Run() error {
 		charge.ChargePolarizationTheorem(),
 		tensor.TensorFactorBridgeTheorem(),
 		yukawa.IntertwinerSelectionTheorem(),
+		electroweak.OperatorSearchTheorem(),
 	)
 
 	results := registry.RunAll()
