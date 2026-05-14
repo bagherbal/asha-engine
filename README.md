@@ -6443,3 +6443,18 @@ M_s = a_s K_gen + b_s X_gen + c_s Y_gen,
 The gate confirms that the `K/X/Y` family generators have full three-family matrix capacity and can produce a nonzero CP-odd invariant such as `Im Tr([M_u,M_d]^3)`. Thus the complex phase extension is CKM/PMNS/CP-capable in the conditional axiom sense. However, the new phase coefficients are not derived by ASHA, no observed Yukawa data is used, no CKM angle or CP phase is predicted, and the axiom remains quarantined.
 
 Therefore Gate 417 records conditional CP-capable parameter compression under an explicit boundary axiom: the charged ledger is nine symbolic coefficients, but native ASHA remains at `dim M_charged = 13`.
+
+### Gate 418 — Family-Axiom Closure Ledger / Flavor Frontier Seal
+
+Gate 418 adds `pkg/bridge/familyaxiomclosureledger` as the capstone ledger for the Gates 411–417 flavor-axiom sequence. It does not search for another hidden selector. Instead, it records the exact boundary reached by the engine: native ASHA keeps the charged flavor firewall at `dim M_charged = 13`, while quarantined family axioms can supply hierarchy, real mixing, and CP capacity.
+
+The ledger records the progression:
+
+```text
+G412: K_gen = diag(-1,0,1)         → hierarchy capacity, diagonal-only
+G413: K_gen + shift/S_gen          → noncommuting real mixing capacity
+G416: K/X real sector source       → six charged coefficients, no CKM CP phase
+G417: K/X/Y complex sector source  → nine symbolic charged coefficients, CP-capable
+```
+
+Gate 418 formalizes the `FLAVOR_COEFFICIENTS_ENVIRONMENTAL_SEAL`: the nine symbolic source coefficients are not predicted by the current geometry, no observed Yukawa matrices are imported, and no axiom is promoted to a native ASHA theorem. The flavor sector is therefore complete as a classified frontier: capacity is understood, but coefficient values remain environmental boundary coordinates unless a future theory supplies a new native selector.

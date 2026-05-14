@@ -6096,3 +6096,13 @@ M_s = a_s K_gen + b_s X_gen + c_s Y_gen.
 The result is a precise CP-capacity theorem, not a flavor prediction. The `K/X/Y` family algebra spans the full three-family matrix capacity and admits nonzero CP-odd invariants for generic symbolic sector coefficients. But the coefficients `a_s`, `b_s`, and `c_s` remain boundary/source data, and neither CKM angles nor the CKM CP phase are predicted. The extension is compatible with gauge broadcast, `J`, `Gamma`, and first-order bookkeeping because it acts only on the family fiber, but compatibility does not make it native.
 
 Gate 417 therefore preserves the native ASHA flavor firewall. It gives a conditional nine-coefficient charged source ledger under an explicit axiom while keeping the honest native count `dim M_charged = 13`.
+
+### Gate 418 — Family-Axiom Closure Ledger / Flavor Frontier Seal
+
+Gate 418 adds `pkg/bridge/familyaxiomclosureledger` after Gate 417 showed that the minimal complex sector-source axiom activates CP-capable family texture algebra but leaves all coefficient values free. This gate is the formal closure ledger for the current flavor frontier. It separates three layers:
+
+1. native ASHA law-space, where the charged flavor moduli remain `dim M_charged = 13`;
+2. quarantined minimal family axioms, where `K_gen`, `X_gen`, and `Y_gen` provide hierarchy, mixing, and CP capacity;
+3. environmental boundary coordinates, where the nine symbolic charged source coefficients remain unfixed.
+
+The gate logs `FLAVOR_COEFFICIENTS_ENVIRONMENTAL_SEAL` and `PROJECT_FLAVOR_SECTOR_FORMALLY_SEALED_AND_COMPLETE`. It explicitly rejects native CKM-angle, CP-phase, or Yukawa-value prediction under the current theorem set. This closes the flavor search loop as an epistemological boundary rather than an empirical fit.

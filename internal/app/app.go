@@ -149,6 +149,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeselection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exponentialtauetatexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/faithfuloppositeactionrep"
+	"github.com/bagherbal/asha-engine/pkg/bridge/familyaxiomclosureledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/familyboundarysourceaxiom"
 	"github.com/bagherbal/asha-engine/pkg/bridge/familybundleaxiomledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/familycoefficientselector"
@@ -836,6 +837,7 @@ func Run() error {
 		familyboundarysourceaxiom.FamilyBoundaryConditionSectorSourceAxiomMinimalitySieveTheorem(),
 		minimalsectorsourceaxiom.MinimalSectorSourceAxiomConsistencyParameterCountingSieveTheorem(),
 		complexsectorsourcephase.ComplexSectorSourceCPPhaseAxiomSieveTheorem(),
+		familyaxiomclosureledger.FamilyAxiomClosureLedgerFlavorFrontierSealTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
