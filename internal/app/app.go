@@ -72,6 +72,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contacttargetoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactu4kernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactu4projection"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactzeta"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentcontact"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentembedding"
@@ -334,6 +335,7 @@ func Run() error {
 		contactquarticgrading.QuarticGhostGradingGaloisInvarianceNontrivialParityObstructionTheorem(),
 		quarticexternalselector.QuarticParityBranchBreakingExternalSelectorFirewallTheorem(),
 		quarticspectralfunctional.CollectiveQuarticSpectralFunctionalActionLevelContributionTheorem(),
+		contactzeta.FiniteContactSpectralZetaRegularizationSevenRootActionFunctionalAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

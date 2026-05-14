@@ -539,3 +539,43 @@ Current result:
 - no gauge representation, local field, mass activation, decoupling rule, Dynkin index, threshold beta row, or physical constant is derived.
 
 Gate 161 is therefore a positive spectral-data theorem but a negative physics-permission theorem. The next gate should build the full seven-root finite contact zeta/action functional and test whether that stronger object supplies constraints beyond scalar moment matching.
+
+## v1.60 — Gate 162: Finite Contact Spectral Zeta Regularization
+
+Adds `pkg/bridge/contactzeta`.
+
+Gate 162 extends the Gate 161 collective spectral ledger from positive moments to the full seven-root finite zeta function:
+
+```text
+ζ_contact(s) = Σ_i λ_i^(-s)
+```
+
+The audited exact zeta values are:
+
+```text
+ζ(0) = 7
+ζ(1) = 7993/542
+ζ(2) = 10529233/293764
+ζ(3) = 15529024549/159220088
+ζ(4) = 24783201328945/86297287696
+```
+
+The quartic contribution is computed by reciprocal Newton identities, without choosing quartic branches:
+
+```text
+ζ_q(0) = 4
+ζ_q(1) = 2235/271
+ζ_q(2) = 1512333/73441
+ζ_q(3) = 1177369209/19902511
+ζ_q(4) = 998467775217/5393580481
+```
+
+Current result:
+
+- the full contact zeta ledger is exact over `Q`, Galois-invariant, branch-free, and pole-free;
+- no analytic continuation is needed because the audited spectrum is finite and nonzero;
+- zeta/action scalar candidates such as `ζ(0)`, `ζ(1)`, `ζ(2)`, `ζ(1)/7`, `ζ(2)/ζ(1)^2`, `Tr(Ω)ζ(1)/49`, and the full determinant do not reproduce or constrain `κ_U1 = 6`, the embedded `5/3` normalization, `sin²_* = 3/8`, or the generator-basis `1/4` diagnostic;
+- the zeta ledger does not define a finite spectral triple, real structure, grading, finite Dirac operator, canonical cutoff function, or gauge-kinetic representation map;
+- no threshold beta row, physical coupling, mass, scale, CKM, or PMNS datum is derived.
+
+Gate 162 is therefore a positive finite-zeta theorem but a negative spectral-action permission theorem. The next gate should attempt the logically stronger object: a finite spectral action principle, including the spectral triple data required to interpret zeta values as gauge/action coefficients.

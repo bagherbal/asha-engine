@@ -1512,3 +1512,57 @@ The gate audits simple collective action-level candidates including the quartic 
 Therefore the quartic block can now be used as collective exact finite spectral data, but this does not open threshold beta rows or physical constants. The beta-permission firewall remains closed because no gauge representation, spin/statistics, local field, mass activation, decoupling law, or Dynkin index has been derived for the quartic block.
 
 Next gate: Gate 162 — finite contact spectral zeta regularization / seven-root action functional audit.
+
+### Gate 162 — Finite contact spectral zeta regularization / seven-root action functional audit
+
+Package: `pkg/bridge/contactzeta`
+
+Gate 162 consumes the Gate 161 collective quartic spectral ledger and builds the full seven-root finite contact zeta function
+
+```text
+ζ_contact(s) = Σ_i λ_i^(-s)
+```
+
+for the three rational singleton roots and the collective quartic primary block. The quartic reciprocal power sums are computed by Newton identities on the reciprocal quartic polynomial, so no branch or row assignment is used.
+
+Exact zeta ledger:
+
+```text
+ζ_contact(0) = 7
+ζ_contact(1) = 7993/542
+ζ_contact(2) = 10529233/293764
+ζ_contact(3) = 15529024549/159220088
+ζ_contact(4) = 24783201328945/86297287696
+```
+
+Exact quartic-only reciprocal ledger:
+
+```text
+ζ_q(0) = 4
+ζ_q(1) = 2235/271
+ζ_q(2) = 1512333/73441
+ζ_q(3) = 1177369209/19902511
+ζ_q(4) = 998467775217/5393580481
+```
+
+Result:
+
+```text
+zeta values computed:           5
+exact rational values:          5
+Galois-invariant values:        5
+branch choices used:            0
+poles:                          0
+analytic continuation needed:   false
+canonical spectral triple:      false
+canonical cutoff function:      false
+boundary constraints derived:   0
+contact beta rows allowed:      0
+residual nullity:               3 -> 3
+```
+
+The finite zeta ledger is exact action-level spectral data, not yet a physical spectral action. The gate audits zeta/action scalar candidates including `ζ(0)`, `ζ(1)`, `ζ(2)`, `ζ(3)`, `ζ(4)`, `ζ(1)/7`, `ζ(2)/ζ(1)^2`, `Tr(Ω)ζ(1)/49`, the determinant, and the reciprocal determinant. None matches or constrains the already-derived variational boundary quantities `κ_U1 = 6`, embedded normalization `5/3`, contact weak-angle seed `3/8`, or generator-basis diagnostic `1/4`.
+
+Therefore zeta regularization does not by itself bypass the beta-permission firewall. A finite spectral triple, real structure, grading, finite Dirac-like operator, cutoff/test function, and representation-complete gauge-kinetic map are still required before any spectral-action term may be interpreted as a coupling, threshold row, mass, or physical constant.
+
+Next gate: Gate 163 — finite spectral action principle / spectral triple construction audit.
