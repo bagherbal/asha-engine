@@ -133,6 +133,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdorigindichotomy"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topdownspectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
@@ -368,6 +369,7 @@ func Run() error {
 		conditionalrgbranch.ConditionalRGBoundaryScaleSolvabilityAuditTheorem(),
 		normalizationthresholdaudit.NormalizationPrefactorThresholdDeformationAuditTheorem(),
 		finitethresholdoperator.FiniteThresholdOperatorDecouplingSpectrumSearchTheorem(),
+		thresholdorigindichotomy.ThresholdOriginDichotomyNewSectorContinuumBridgeAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

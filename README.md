@@ -1650,3 +1650,50 @@ physical constants: not derived
 ```
 
 Next gate: Gate 179 — threshold-origin dichotomy / new-sector versus continuum-decoupling bridge audit.
+
+## v1.77 — Gate 179: Threshold-origin dichotomy / new-sector versus continuum-decoupling bridge audit
+
+Gate 179 adds `pkg/bridge/thresholdorigindichotomy`.
+
+Gate 178 proved that no currently derived object is a complete finite threshold operator. Gate 179 asks where non-universal threshold deformations could lawfully originate. It separates the possibilities into four branches:
+
+```text
+existing finite spectra + missing continuum decoupling bridge
+new finite heavy sectors
+normalization / scheme convention
+phenomenological fitted Δb vector
+```
+
+The last two are rejected as threshold origins. A scheme or normalization convention can change an overall action convention but cannot generate sector-specific decoupling data. The Gate-177 fitted `Δb_i` vector remains a comparison witness and cannot become theorem input.
+
+Two programmatic origins survive, both open:
+
+```text
+1. Existing finite spectral anchors may become thresholds only after deriving:
+   finite-to-continuum local field map,
+   physical mass unit,
+   activation predicate,
+   gauge representation rows,
+   decoupling / matching law.
+
+2. New finite heavy sectors may generate thresholds only after deriving:
+   a finite carrier not already counted in baseline fields,
+   canonical SU(3)×SU(2)×U(1) representation,
+   finite mass or activation scale,
+   decoupling / matching rule,
+   beta-index row contribution,
+   anomaly and vacuum compatibility.
+```
+
+Gate 179 status:
+
+```text
+Status: BRIDGE_REQUIRED
+threshold origin derived: false
+Gate-177 repair promoted: false
+non-universal finite Δb_i: false
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+```
+
+The next bridge should either construct a continuum decoupling / heat-kernel matching preflight for the existing finite spectra, or derive new finite heavy sectors with representation-complete beta rows.

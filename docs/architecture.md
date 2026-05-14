@@ -2400,3 +2400,24 @@ conditional nullity: 2 -> 2
 ```
 
 This does not prove that thresholds cannot exist. It proves that the present finite algebra has not yet supplied the missing threshold-origin object. The next question is whether such an object requires a new finite sector or a continuum-decoupling bridge.
+
+### Gate 179 — threshold-origin dichotomy / new-sector versus continuum-decoupling bridge audit
+
+Package: `pkg/bridge/thresholdorigindichotomy`
+
+Gate 179 follows the Gate-178 no-go for current finite threshold operators. It records a dichotomy theorem: if non-universal threshold deformations are required, they cannot come from the currently derived finite data alone. Their lawful origin must be one of two open program branches.
+
+Surviving branches:
+
+- existing finite spectral anchors plus a still-missing continuum decoupling bridge;
+- genuinely new finite heavy sectors with representation-complete beta rows.
+
+Rejected as threshold origins:
+
+- observed-fit `Δb_i` vectors;
+- universal threshold or scheme shifts;
+- baseline scalar rows already counted in the one-loop inventory.
+
+The continuum bridge branch requires an oriented four-cycle/principal-bundle/Chern-Weil style normalization, a local field map, physical mass units, activation predicates, decoupling laws, and gauge representation rows. The new-sector branch requires a new finite carrier, canonical gauge representation, finite mass or activation scale, matching law, beta-index row, and anomaly/vacuum compatibility.
+
+No branch is currently derived, so neither strict nor conditional nullity is reduced.
