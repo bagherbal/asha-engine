@@ -10,6 +10,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomaly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomalykinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
+	"github.com/bagherbal/asha-engine/pkg/bridge/betamatching"
 	"github.com/bagherbal/asha-engine/pkg/bridge/boundaryselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokenaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokengaugefields"
@@ -226,6 +227,7 @@ func Run() error {
 		coarsegrain.NativeFiniteCoarseGrainingThresholdActivationSearchTheorem(),
 		shellfunctor.FiniteShellFunctorSemigroupConstructionTheorem(),
 		filtration.FiniteFiltrationOrderSelectorThresholdPredicateSearchTheorem(),
+		betamatching.ThresholdRepresentationCompletionBetaMatchingTensorSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

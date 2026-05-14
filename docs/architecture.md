@@ -418,3 +418,28 @@ The next true gate must search for a canonical finite filtration/order selector 
 ### Gate 107 — finite filtration/order selector and monotone threshold predicate search
 
 Gate 107 extends the Gate 106 shell projection family by asking whether the existing finite data select a canonical order or monotone threshold predicate. It constructs the status preorder, spectral-value ascending and descending filtrations, and shell-index cut predicates. The result is intentionally strict: all of these are compatible with the finite carrier, but no theorem selects orientation, cutoff, physical scale, or beta-matching rule. The only invariant safe predicate leaves continuum candidates as candidates, threshold-open modes open, and vacuum-frustration modes excluded. Physical constants and threshold-corrected beta coefficients remain sealed.
+
+### Gate 108 — Threshold Representation Completion / Finite Beta-Matching Tensor Search
+
+Gate 108 adds `pkg/bridge/betamatching`. Gate 107 showed that finite shell/filtration data alone do not select a canonical activation order. Gate 108 asks whether every threshold-open finite mode can at least be assigned a representation row and beta-matching row:
+
+```text
+finite mode -> SU(3)c × SU(2)L × U(1)Y representation -> Δb_i row
+```
+
+The scalar/contact active carrier has one representation-complete sector-level row: one complex scalar doublet contributing
+
+```text
+Δb_scalar = (1/10, 1/6, 0).
+```
+
+This is baseline inventory data, not a heavy-threshold correction. The B-sector first spectral gap and the seven contact partial-overlap modes remain representation-incomplete. Compatible alternatives such as treating contact modes as singlets, doublets, or vacuum/regulator modes remain possible because no finite theorem selects the activation class.
+
+The residual physical-flow nullity remains:
+
+```text
+nullity before Gate 108 = 3
+nullity after Gate 108  = 3
+```
+
+The next true gate must classify B-sector/contact-overlap modes as physical fields, regulator modes, or vacuum-frustration modes before any `Δb_i(L)` threshold correction, physical `alpha`, physical `thetaW`, or mass prediction can be claimed.
