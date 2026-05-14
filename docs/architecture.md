@@ -6180,3 +6180,22 @@ native theorem
 ```
 
 The exported audit includes native law-space claims, bridge claims, K/X/Y family axiom capacity, flavor and cosmology firewall wording, failed-route warnings, and non-claims. It explicitly states that native ASHA preserves `dim M_charged = 13`, while the quarantined K/X/Y family chain supplies only a nine-symbolic-coefficient capacity ledger. No Yukawa value, CKM angle, CP phase, PMNS parameter, cosmology coordinate, or quarantined family axiom is promoted to a native theorem.
+
+## Gate 423 — Reviewer Objection Matrix / Rebuttal Readiness Export
+
+Gate 423 introduces `pkg/bridge/reviewerobjectionmatrix` as the reviewer-facing publication support layer after the Gate-422 executive claim audit. It converts the front-matter claim language into a concrete objection matrix: each row lists the objection, risk class, rebuttal, boundary language, gate references, safe wording, and forbidden overclaim wording.
+
+This gate preserves the mature architecture classification:
+
+```text
+native law-space theorem
+bridge/coefficient lane
+quarantined conditional family axiom
+environmental firewall
+failed-route/no-go
+explicit non-claim
+```
+
+No new physics claim is added. The native charged flavor firewall remains dimension 13, and the conditional K/X/Y family ledger remains a nine-symbolic-coefficient capacity statement rather than a prediction of Yukawa values or CKM/PMNS parameters.
+
+Gate 423 produces `PROJECT_REVIEWER_OBJECTION_MATRIX_READY`. It prepares reviewer replies and rebuttal discipline; it does not promote any quarantined axiom to native theorem.

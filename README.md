@@ -6529,3 +6529,19 @@ no Yukawa value, CKM angle, CP phase, PMNS parameter, cosmology coordinate, or q
 ```
 
 Gate 422 logs `PROJECT_EXECUTIVE_CLAIM_AUDIT_SUMMARY_READY`. The next useful gate is a reviewer objection / rebuttal readiness matrix, not another physics search.
+
+## Gate 423 — Reviewer Objection Matrix / Rebuttal Readiness Export
+
+Gate 423 adds `pkg/bridge/reviewerobjectionmatrix` after Gate 422 produced the executive abstract and claim-audit summary. This gate converts the claim audit into a reviewer-facing objection matrix with explicit rebuttal boundaries, gate references, safe wording, and forbidden overclaim wording.
+
+It is an export gate only. It introduces no new physical derivation and does not reopen the flavor frontier. The matrix covers overclaim risk, flavor firewalls, quarantined K/X/Y family axioms, triality no-go boundaries, q4/contact-sector classification, bridge-lane qualifications, cosmology firewalls, reproducibility language, and failed-route hygiene.
+
+The final boundary remains:
+
+```text
+native charged flavor dim = 13
+conditional K/X/Y family axiom ledger = 9 symbolic charged coefficients
+no Yukawa value, CKM angle, CKM CP phase, PMNS parameter, cosmology coordinate, or quarantined family axiom is promoted to a native ASHA theorem
+```
+
+Gate 423 logs `PROJECT_REVIEWER_OBJECTION_MATRIX_READY`. The next useful gate is an artifact index / reproducibility checklist export, not another physics search.

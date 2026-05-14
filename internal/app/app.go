@@ -295,6 +295,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/resolventcubictagselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/resolventfieldadjunction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/resolventvacuum"
+	"github.com/bagherbal/asha-engine/pkg/bridge/reviewerobjectionmatrix"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgfirewall"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarbundlemap"
@@ -846,6 +847,7 @@ func Run() error {
 		publicationtheorematlas.PublicationGradeTheoremAtlasDependencyGraphExportTheorem(),
 		manuscriptskeletonexport.ManuscriptSkeletonSectionBySectionProofExportTheorem(),
 		executiveabstractclaimaudit.ExecutiveAbstractClaimAuditSummaryExportTheorem(),
+		reviewerobjectionmatrix.ReviewerObjectionMatrixRebuttalReadinessExportTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
