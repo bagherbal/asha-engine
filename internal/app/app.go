@@ -192,6 +192,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutrinotextureaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncartanflavorvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncommutingtexturepair"
+	"github.com/bagherbal/asha-engine/pkg/bridge/nonperturbativeportalcoupling"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonuniversalrgfit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/normalizationthresholdaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/o3quotient"
@@ -646,6 +647,7 @@ func Run() error {
 		higgsquarticratioverification.EmpiricalHiggsQuarticRatioVerificationTheorem(),
 		nativeunifiedcouplingorigin.NativeUnifiedCouplingOriginAbsoluteGaugeCouplingTraceCapacityAuditTheorem(),
 		hilbertspacetracecapacity.HilbertSpaceDimensionTraceCapacityLedgerAuditTheorem(),
+		nonperturbativeportalcoupling.NonPerturbativeInstantonMappingHeavyPortalCouplingSieveAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
