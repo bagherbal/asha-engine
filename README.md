@@ -5628,3 +5628,25 @@ Gate 290 stress-tests whether Morita `1⊕3` trace multiplicities can veto the l
 ### Gate 291 — Per-Slot Monotonicity Seal / Final Spectral Synthesis Audit
 
 Gate 291 activates the `PerSlotMonotonicitySeal`, explicitly quarantining the phenomenological per-slot ordering rule that selects the `r_+` scalar-Morita branch. Under that seal, the reduced trace moments are recomputed and the raw dimensionless proxy `Tr(D_F^4)/(Tr(D_F^2))^2` exactly reproduces the Gate-169 contact scalar shape `1197/4624`. The gate does not claim a physical Higgs mass prediction: heat-kernel projection, scalar/gauge normalization, physical `J`, and the full six-point Higgs firewall remain active.
+
+## Gate 292 — Real Structure KO Factorization
+
+Gate 292 audits the Gate-234 occupation-complement `J_c` against the Gate-3 spacetime/fiber split.  It proves exact factorization `J_c=J_M⊗J_F`, but the fiber component complements two internal Witt modes and therefore commutes with fiber parity:
+
+```text
+J_F²=+1,
+J_Fγ_F=+γ_FJ_F.
+```
+
+This is KO0-like, not the required KO6-style sign.  The physical internal real structure remains missing.
+
+## Gate 293 — KO-6 Twisted Real Structure
+
+Gate 293 tests twist candidates for converting the KO0-like fiber complement into a KO6-style real structure.  The even grading/volume twist `J0·γ_F` fails to flip the sign.  Odd one-mode twists do satisfy
+
+```text
+J²=+1,
+Jγ_F=-γ_FJ,
+```
+
+but they come in a twofold orientation family and no native selector chooses one internal Witt direction.  The `JD=DJ` sieve leaves three real odd-block parameters, so no canonical `D_F` or physical opposite algebra action is derived.  Paths B and C remain firewalled.

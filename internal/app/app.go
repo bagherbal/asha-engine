@@ -160,6 +160,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/intermediatebreakingseesaw"
 	"github.com/bagherbal/asha-engine/pkg/bridge/inversebsectordeformation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
+	"github.com/bagherbal/asha-engine/pkg/bridge/ko6twistedrealstructure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/leptoquarkdynamicsseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/liecarrierprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/lietrialitypullback"
@@ -596,6 +597,7 @@ func Run() error {
 		bimoduletracecapacity.BimoduleTraceCapacitySieveSectorHierarchyAuditTheorem(),
 		perslotmonotonicityseal.PerSlotMonotonicitySealFinalSpectralSynthesisAuditTheorem(),
 		realstructurekofactorization.RealStructureJFactorizationKODimensionAuditTheorem(),
+		ko6twistedrealstructure.KO6TwistedRealStructurePhysicalJDerivationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

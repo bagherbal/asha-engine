@@ -5264,3 +5264,7 @@ FAILED_ROUTE_HIGGS_MASS_RATIO_STILL_NOT_DERIVED
 ## Gate 291 — Sealed final spectral synthesis
 
 The Per-Slot Monotonicity Seal is a phenomenological orientation rule, not a native finite theorem. It chooses the quark-per-slot-heavy branch `r_+` and vetoes `r_-` only under seal. The resulting reduced spectral trace identity closes the raw scalar-Morita/contact synthesis while preserving the Higgs firewall: the proxy ratio equals `1197/4624`, but it is not promoted to a Seeley-de Witt `a₂/a₄` prediction.
+
+## Gate 292–293 — Real Structure Boundary
+
+Gate 292 confirms that the Gate-234 occupation-complement candidate factorizes across the Gate-3 split, but its internal/fiber restriction is KO0-like rather than KO6-like.  Gate 293 then audits twists.  Even grading/volume twists fail to flip the parity sign, while odd one-mode twists expose KO6 sign candidates.  This is a sign-level partial opening, not a physical finite spectral triple: the one-mode odd twist is not canonically selected, `JD=DJ` does not select a canonical `D_F`, and the opposite algebra action remains unconstructed.
