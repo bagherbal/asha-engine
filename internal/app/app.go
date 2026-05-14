@@ -164,6 +164,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/grandnormalizationsieve"
 	"github.com/bagherbal/asha-engine/pkg/bridge/grandunifiedledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/gravityspectralactionf2"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heatkernelconventionledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heatkerneldynamicspreflight"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
@@ -696,6 +697,7 @@ func Run() error {
 		hierarchyrankpromotion.Rank56HalfInstantonHierarchyPromotionSieveTheorem(),
 		pfaffianhierarchy.PfaffianHalfActionHierarchyFermionicFluctuationDeterminantTheorem(),
 		trialitygaussianmeasure.TrialityGaussianMeasureZeroModeNormalizationAuditTheorem(),
+		gravityspectralactionf2.GravitationalSpectralActionF2CutoffMomentSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
