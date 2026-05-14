@@ -462,3 +462,8 @@ Adds Gate 91, which compares protected contact directions to broken gauge-genera
 ## v0.92 — Normalized Broken-Generator Basis
 
 Adds Gate 93, which normalizes the neutral broken generator by 1/2, isotropizes the quotient-safe broken-image metric, and exposes diag(1,1,4) as a gauge-kinetic candidate rather than an action-selected physical Hessian.
+
+
+## v0.94 — Gate 95 Broken-Sector Action Second Variation
+
+Adds `pkg/bridge/brokenaction`, which audits whether the raw-coordinate kinetic candidate `diag(1,1,4)` is selected by a finite scalar/gauge action second variation. The gate preserves the Gate 94 result that `diag(1,1,4)` exactly whitens the broken-generator image metric, but it refuses to promote that diagnostic to a physical gauge kinetic Hessian until finite gauge-field variables, scalar kinetic action, curvature/field-strength term, and `δ²S` are derived.

@@ -10,6 +10,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomaly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomalykinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
+	"github.com/bagherbal/asha-engine/pkg/bridge/brokenaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokengeneratornorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokenmetric"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
@@ -200,6 +201,7 @@ func Run() error {
 		brokenmetric.BrokenImageMetricKineticNormalizationAuditTheorem(),
 		brokengeneratornorm.NormalizedBrokenGeneratorBasisGaugeKineticCandidateTheorem(),
 		gaugekineticdiag.GaugeKineticDiagActionSelectionAuditTheorem(),
+		brokenaction.BrokenSectorActionSecondVariationSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
