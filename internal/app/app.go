@@ -170,6 +170,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavylightoverlapoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavypropagatorselfquartic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/higgspolemassprecision"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsquarticratioverification"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hilbertspacetracecapacity"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hopfgeometricnormalization"
@@ -672,6 +673,7 @@ func Run() error {
 		topologicalcouplingnormalization.TopologicalActionChernWeilCouplingNormalizationFactorAuditTheorem(),
 		doubledbosonictraceindex.DoubledBosonicTraceIndexJMirrorGaugeCapacityAuditTheorem(),
 		bosonicspectraltraceconvention.BosonicSpectralActionTraceConventionFullDoubledSpaceAuditTheorem(),
+		higgspolemassprecision.HiggsPoleMassConversionPrecisionGapLedgerAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
