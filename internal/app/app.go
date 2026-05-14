@@ -105,6 +105,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactzeta"
 	"github.com/bagherbal/asha-engine/pkg/bridge/continuumdecouplingbridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
+	"github.com/bagherbal/asha-engine/pkg/bridge/crosssectorreductionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentcontact"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentembedding"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currenthessian"
@@ -708,6 +709,7 @@ func Run() error {
 		spectralactionvariationalgradient.SpectralActionVariationalGradientPhaseIIIVacuumInitializationSieveTheorem(),
 		majoranaflavorsymmetrybreaking.NonUnitaryInvariantTextureSieveMajoranaFlavorSymmetryBreakingAuditTheorem(),
 		empiricalquarantineseal.EmpiricalQuarantineSealGrandUnifiedProjectLedgerTheorem(),
+		crosssectorreductionaudit.CrossSectorReductionAuditVacuumParameterCompressionSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
