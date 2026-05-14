@@ -390,3 +390,13 @@ Gate 68 exposes the action-selection problem for current exchange.  The engine n
 - unit-sector rule `K_A = I`
 
 All are positive finite diagnostics, but none is promoted to a physical propagator.  Direct and inverse diagnostics disagree on the dominant sector, so the engine rejects choosing either by convenience.  The next missing object is a finite current-field Hessian / action second variation that selects the exchange kernel.
+
+## v0.69 — Gate 70: Current Field Embedding into Finite BF/Contact Action
+
+Gate 70 adds `pkg/bridge/currentembedding`. Gate 69 exposed the missing current Hessian `K_current`; this gate turns that absence into a typed finite-action architecture. It defines current-sector fields for central, color-su3, B−L, and leptoquark sectors, embeds them as formal action variables, and exposes the minimal template
+
+```text
+S[B,A,j] = S_B[B] + S_block[A;K⊕K⊥] + 1/2 jᵀK_current j - <j,J_source[B,A]>
+```
+
+The gate is intentionally not a success claim: the map from finite `u(4)` Fock currents into Boolean/contact block-connection operators is still open, so `J_source`, the second variation `δ²S/δjδj`, the propagator rule, NJL attraction, top condensation, and fermion masses remain unclaimed.
