@@ -419,3 +419,23 @@ Current result:
 - therefore `E_current_to_block`, the current Hessian, the exchange kernel, and NJL attraction remain open.
 
 The next direction is a dual-carrier architecture: do not force all `u(4)` currents into the contact `su(2)+u(1)` block. Instead, test whether color/Pati-Salam currents and electroweak/contact currents live on separate coupled finite carriers.
+
+## v0.71 — Gate 72: Dual-Carrier Gauge Architecture Split
+
+Gate 72 adds `pkg/bridge/dualcarrier`. Gate 71 showed that forcing the full sixteen-dimensional `u(4)` Fock/Pati-Salam current inventory into the four-dimensional Boolean/contact `su(2)+u(1)` block is structurally wrong. Gate 72 therefore splits the theory into two typed finite carriers:
+
+```text
+Carrier A: Pati-Salam / Fock current carrier
+  dim = 16 = central 1 + color-su3 8 + B-L 1 + leptoquark 6
+
+Carrier B: Boolean/contact electroweak block carrier
+  dim = 4 = contact-su2 3 + contact-u1 1
+```
+
+This preserves the color and leptoquark sectors on their native `u(4)` carrier instead of crushing them into the contact block. The missing object is now a coupling action/tensor between the two carriers, not a direct embedding:
+
+```text
+S_total = S_PS[j] + S_contact[A,Φ] + S_coupling[j,A,Φ]
+```
+
+The formal current-contact coupling tensor has dimension `16×4 = 64`, but no finite theorem selects its entries yet. Therefore the current Hessian, propagator rule, NJL attraction, top condensation, and fermion masses remain open.
