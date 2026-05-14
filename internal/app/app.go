@@ -125,6 +125,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
+	"github.com/bagherbal/asha-engine/pkg/bridge/topdownspectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1completion"
@@ -342,6 +343,7 @@ func Run() error {
 		spectralaction.FiniteSpectralActionPrincipleSpectralTripleConstructionAuditTheorem(),
 		diracorderone.FiniteDiracCandidateOrderOneAxiomObstructionAuditTheorem(),
 		totalrepresentation.FiniteAlgebraTotalHilbertRepresentationFaithfulActionObstructionAuditTheorem(),
+		topdownspectraltriple.TopDownFockSpectralTripleBoundaryTraceAmplitudeFirewallTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

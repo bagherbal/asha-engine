@@ -816,3 +816,58 @@ Result:
 - Residual nullity remains `3 -> 3`.
 
 Next gate: Gate 166 — sector-intertwiner reconstruction / total representation glue-map search.
+
+## v1.64 — Gate 166: top-down Fock spectral triple boundary trace firewall
+
+Gate 166 adds `pkg/bridge/topdownspectraltriple`.
+
+This gate deliberately tries the strongest top-down shortcut after the Gate-165 total-representation obstruction:
+
+```text
+H_total := H_Fock, dim(H_total)=16
+D_F     := unit-incidence off-diagonal support from the 8 Gate-25 Yukawa channels
+J       := channel-pair charge-conjugation candidate
+Gamma   := left/right chirality grading
+```
+
+The candidate matrices satisfy the expected finite identities:
+
+```text
+D_F = D_F^T
+D_F is off-diagonal
+J^2 = 1
+JD_F = D_FJ
+JGamma = -GammaJ
+Gamma^2 = 1
+Tr(Gamma)=0
+GammaD_F = -D_FGamma
+```
+
+The unit-incidence fourth-trace gauge-sector functional is:
+
+```text
+K_a = Tr(D_F^4 T_a^2)
+```
+
+For the one-generation left/right table it gives:
+
+```text
+K_SU2 = (2,2,2)
+K_Y   = 10/3
+normalized = diag(1,1,1,5/3)
+sin^2_* = K_SU2 / (K_SU2 + K_Y) = 3/8
+Tr(D_F^4)=16
+```
+
+So Gate 166 is the first successful top-down reproduction of the embedded boundary normalization from the Fock/Yukawa representation trace alone.
+
+However, the gate also proves the amplitude firewall. Gate 25 derives the eight allowed channel supports, not the numerical Yukawa amplitudes. If the up-type channel amplitudes are changed from `1` to `2` while all others remain `1`, the functional changes:
+
+```text
+K_Y/K_SU2: 5/3 -> 295/159
+sin^2_*:   3/8 -> 159/454
+```
+
+Therefore the reproduction is a unit-incidence representation-trace certificate, not a physical mass, coupling, threshold, or RG theorem. It bypasses contact-mode classification only for the embedded boundary trace. It does not solve contact-mode classification, threshold corrections, RG running, physical constants, or Yukawa spectra.
+
+Next gate: Gate 167 — amplitude-rigidity theorem / finite action selection of the Dirac spectrum.

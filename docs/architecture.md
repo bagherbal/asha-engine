@@ -1767,3 +1767,87 @@ residual nullity:                 3 -> 3
 Therefore Gate 165 proves that the finite engine has strong local representation data but no canonical total representation. The next missing object is a sector-intertwining glue map or functor that can place contact, scalar, Fock, and Clifford/projector data into one faithful finite representation without importing Standard Model algebra by hand and without choosing quartic branches.
 
 Next gate: Gate 166 — sector-intertwiner reconstruction / total representation glue-map search.
+
+### Gate 166 — Top-down Fock spectral triple boundary trace reproduction and amplitude firewall
+
+Package: `pkg/bridge/topdownspectraltriple`
+
+Gate 166 tests a deliberate top-down shortcut around the contact-mode deadlock. Instead of trying to classify the seven contact modes, it identifies the Gate-14 sixteen-dimensional Fock-spinor carrier with the Gate-25 one-generation left/right Yukawa table:
+
+```text
+H_total = H_Fock ≅ H_L ⊕ H_R
+D_F     = eight-channel off-diagonal unit-incidence Yukawa support
+J       = channel-pair charge-conjugation candidate
+Gamma   = left/right chirality grading
+```
+
+The candidate is not claimed as a bottom-up canonical spectral triple. It is an ansatz, because the identification of the Fock occupation basis with the left/right Weyl table remains a branch choice and because Gate 25 supplies channel support but not channel amplitudes.
+
+Nevertheless the finite matrix identities are verified:
+
+```text
+D_F symmetric:                 true
+D_F off-diagonal:              true
+J^2 = 1:                       true
+JD_F = D_FJ:                   true
+JGamma = -GammaJ:              true
+Gamma^2 = 1:                   true
+Tr(Gamma)=0:                   true
+GammaD_F = -D_FGamma:          true
+promotable spectral triple:    false
+```
+
+The unit-incidence fourth-trace functional
+
+```text
+K_a = Tr(D_F^4 T_a^2)
+```
+
+reduces to the one-generation representation trace, because `D_F^4=I_16`. It gives:
+
+```text
+K_SU2 = (2,2,2)
+K_Y   = 10/3
+normalized = diag(1,1,1,5/3)
+sin^2_* = K_SU2 / (K_SU2 + K_Y) = 3/8
+Tr(D_F^4)=16
+```
+
+Sector decomposition:
+
+```text
+up:       3 pairs, D4 trace 6, Y^2 trace L=1/12, R=4/3
+down:     3 pairs, D4 trace 6, Y^2 trace L=1/12, R=1/3
+neutrino: 1 pair,  D4 trace 2, Y^2 trace L=1/4,  R=0
+electron: 1 pair,  D4 trace 2, Y^2 trace L=1/4,  R=1
+```
+
+Therefore Gate 166 positively reproduces the embedded boundary normalization `diag(1,1,1,5/3)` and weak-angle seed `3/8` from the top-down Fock/Yukawa representation trace.
+
+The same gate also proves the amplitude firewall. Prior gates do not derive unit Yukawa amplitudes. Under an allowed deformation where the three up-type channel amplitudes are set to `2` and the other channels remain `1`, the ratios become:
+
+```text
+K_Y/K_SU2 = 295/159
+sin^2     = 159/454
+```
+
+So the top-down reproduction is not amplitude-rigid. It is a representation-trace certificate, not a physical coupling or mass theorem. It bypasses contact-mode classification only for the embedded boundary trace; it does not solve threshold corrections, RG running, physical constants, or Yukawa spectra.
+
+Gate 166 theorem ledger:
+
+```text
+Hilbert dimension:             16
+Gate-25 Yukawa channels:        8
+D_F support complete:           true
+Yukawa amplitudes derived:      false
+boundary ratio reproduced:      true, under unit incidence
+weak-angle seed reproduced:     true, under unit incidence
+amplitude-rigid:                false
+contact classification solved:  false
+threshold corrections derived:  false
+RG running derived:             false
+physical constants derived:     false
+residual nullity:               3 -> 3
+```
+
+Next gate: Gate 167 — amplitude-rigidity theorem / finite action selection of the Dirac spectrum.
