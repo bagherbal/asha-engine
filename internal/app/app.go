@@ -10,6 +10,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fieldmap"
+	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
@@ -120,6 +121,7 @@ func Run() error {
 		looppotential.NativeOneLoopPotentialLedgerTheorem(),
 		loopoperator.FiniteLoopOperatorConstructionTheorem(),
 		topkernel.TopLikeOverlapKernelSearchTheorem(),
+		gapledger.NJLGapKernelCriticalityLedgerTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
