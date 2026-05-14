@@ -110,6 +110,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/cutoffmomentsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/diracorderone"
+	"github.com/bagherbal/asha-engine/pkg/bridge/doubledbosonictraceindex"
 	"github.com/bagherbal/asha-engine/pkg/bridge/doubledspacerepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcarrier"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcoupling"
@@ -668,6 +669,7 @@ func Run() error {
 		grandunifiedledger.GrandUnifiedLedgerProjectCapstoneAuditTheorem(),
 		spectralactioncouplingnormalization.SpectralActionCouplingNormalizationAlphaGUTAuditTheorem(),
 		topologicalcouplingnormalization.TopologicalActionChernWeilCouplingNormalizationFactorAuditTheorem(),
+		doubledbosonictraceindex.DoubledBosonicTraceIndexJMirrorGaugeCapacityAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
