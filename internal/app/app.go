@@ -251,6 +251,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/singlescalematchingaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactioncapstone"
+	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactioncouplingnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spin8trialityfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spinctwistedchirality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spontaneouscarrierseal"
@@ -664,6 +665,7 @@ func Run() error {
 		flavororientationoperator.FlavorOrientationOperatorTrialityToMassEigenstateTextureAuditTheorem(),
 		flavorprojectionmetric.FlavorProjectionMetricVariationalVacuumSelectorAuditTheorem(),
 		grandunifiedledger.GrandUnifiedLedgerProjectCapstoneAuditTheorem(),
+		spectralactioncouplingnormalization.SpectralActionCouplingNormalizationAlphaGUTAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
