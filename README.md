@@ -361,3 +361,20 @@ Adds `pkg/bridge/exchangeaction`, which audits whether the signed Fierz result a
 Adds `pkg/bridge/propagatorspectrum`. This gate searches whether existing finite spectra can provide current-sector propagator denominators for the native NJL/four-fermion kernel. It exposes diagnostic denominator families from the B-sector gap, scalar/contact active mean, contact partial-overlap mean, scalar radial curvature, and contact leakage. It deliberately rejects all of them as derived propagators because no theorem maps those spectral anchors to the central/color/B−L/leptoquark current sectors yet.
 
 Result: finite spectral anchors exist, but current-sector propagator weights remain unassigned; no condensation, Higgs VEV, or mass scale is claimed.
+
+## v0.65 — Gate 66: Current-Sector Operator Construction Search
+
+Gate 66 adds `pkg/bridge/sectoroperators`. Gate 65 showed that raw finite spectral lists could not be assigned to current sectors by multiplicity alone. Gate 66 fixes the direction: it constructs the actual finite current-sector Casimir operators
+
+```text
+C_A = Σ_a T_aᵀ T_a
+```
+
+on the one-generation `1 lepton + 3 color` flavor space for the sectors central, color-su3, B−L, and leptoquark. This produces real representation-level sector data:
+
+- central: uniform flavor carrier;
+- color-su3: zero on lepton and equal Casimir on the three color seeds;
+- B−L: lepton/color-polarizing charge-square carrier;
+- leptoquark: off-diagonal lepton-color carrier.
+
+This resolves the operator-construction part of the current-sector problem, but it still does **not** derive propagator denominators, exchange signs, up/down splitting, NJL criticality, top condensation, the Higgs VEV, or fermion masses. The next task is to decide whether these sector Casimirs, or another finite kinetic/action operator, control current exchange.
