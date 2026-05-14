@@ -1566,3 +1566,48 @@ The finite zeta ledger is exact action-level spectral data, not yet a physical s
 Therefore zeta regularization does not by itself bypass the beta-permission firewall. A finite spectral triple, real structure, grading, finite Dirac-like operator, cutoff/test function, and representation-complete gauge-kinetic map are still required before any spectral-action term may be interpreted as a coupling, threshold row, mass, or physical constant.
 
 Next gate: Gate 163 — finite spectral action principle / spectral triple construction audit.
+
+### Gate 163 — Finite spectral action principle / spectral triple construction audit
+
+Package: `pkg/bridge/spectralaction`
+
+Gate 163 consumes the Gate 162 finite zeta ledger and asks whether the spectral data are sufficient to define a genuine finite spectral action principle.
+
+The gate audits the required spectral-triple chain:
+
+```text
+finite algebra representation on a spectral Hilbert carrier
+finite Dirac-like operator D
+real structure J
+grading gamma
+order-one calculus
+orientability / Poincare duality / KO-compatibility
+canonical cutoff or test function
+inner/gauge fluctuation map
+representation-complete gauge-kinetic map
+```
+
+Exact spectral pre-data are available: the contact overlap operator, exact characteristic data, exact root isolation, seven positive nonzero contact roots, and the branch-free zeta ledger from Gate 162. However, these are not sufficient to complete a finite spectral triple.
+
+Audit result:
+
+```text
+ingredients audited:             11
+available ingredients:           4
+canonical ingredients:           3
+missing required canonical:      8
+Dirac-like candidates audited:   5
+promotable Dirac candidates:     0
+spectral-action ansatzes:        5
+canonical action coefficients:   0
+gauge kinetic rows:              0
+boundary constraints:            0
+threshold beta rows:             0
+residual nullity:                3 -> 3
+```
+
+The finite Dirac-like candidates `Omega_contact`, `Omega_contact^{-1}`, the centered contact overlap, the zeta-normalized overlap, and the quartic collective scalar block are exact diagnostics only. None satisfies the full spectral-triple chain because the canonical algebra representation, `J`, `gamma`, order-one calculus, and gauge fluctuation map have not been derived.
+
+Therefore Gate 163 does not reject the spectral-action path. It proves that the path requires a prior finite Dirac/spectral-triple construction before any zeta or heat coefficient may be interpreted as a gauge coupling, threshold contribution, mass, scale, or physical constant.
+
+Next gate: Gate 164 — finite Dirac candidate construction / order-one axiom obstruction audit.

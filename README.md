@@ -579,3 +579,77 @@ Current result:
 - no threshold beta row, physical coupling, mass, scale, CKM, or PMNS datum is derived.
 
 Gate 162 is therefore a positive finite-zeta theorem but a negative spectral-action permission theorem. The next gate should attempt the logically stronger object: a finite spectral action principle, including the spectral triple data required to interpret zeta values as gauge/action coefficients.
+
+## v1.61 — Gate 163: Finite Spectral Action Principle / Spectral Triple Construction Audit
+
+Adds `pkg/bridge/spectralaction`.
+
+Gate 163 tests the logically stronger move after Gate 162: whether the exact seven-root contact zeta ledger can be promoted into a finite spectral action principle rather than remaining a collection of spectral scalars.
+
+The gate distinguishes exact spectral pre-data from missing spectral-triple structure.
+
+Available pre-data:
+
+```text
+contact rows:                   7
+zeta values:                    5
+exact rational overlap:         true
+exact characteristic certified: true
+exact root isolation certified: true
+positive nonzero spectrum rows: 7
+finite zeta poles:              0
+analytic continuation needed:   false
+rational singleton rows:        3
+quartic orbit rows:             4
+quartic collective blocks:      1
+```
+
+Audited spectral-triple ingredients:
+
+```text
+ingredients audited:            11
+available ingredients:          4
+canonical ingredients:          3
+missing required canonical:     8
+spectral triple complete:       false
+finite Dirac selected:          false
+real structure selected:        false
+grading selected:               false
+order-one calculus verified:    false
+canonical cutoff selected:      false
+gauge fluctuation map derived:  false
+```
+
+Gate 163 also audits five finite Dirac-like candidates:
+
+```text
+D = Omega_contact
+D = Omega_contact^{-1}
+D = Omega_contact - Tr(Omega)/7 I
+D = 7 Omega_contact / Tr(Omega)
+D_q = spectral scalar on the quartic primary block
+```
+
+All five are exact, finite-spectrum, Galois-invariant, and branch-free diagnostics. None is promoted to a spectral-triple Dirac operator because each still requires a canonical algebra representation, real structure `J`, grading `gamma`, order-one calculus, and gauge fluctuation map.
+
+Audited spectral-action ansatzes:
+
+```text
+Tr f(D/Lambda) = sum_k f_k Tr(D^k)
+sum_s c_s zeta_contact(s)
+sum_s c_s zeta_q(s)
+c log det(D^2)
+Tr f((D+A+JAJ^{-1})/Lambda)
+```
+
+All remain formal. None supplies canonical coefficients, gauge kinetic rows, boundary constraints, threshold beta rows, masses, scales, or physical constants.
+
+Result:
+
+- Gate 163 is a positive finite spectral pre-data theorem.
+- Gate 163 is a negative finite spectral-action permission theorem.
+- The spectral-action route is not rejected; it is postponed until a lawful finite spectral triple is constructed.
+- The beta-permission firewall remains closed.
+- Residual nullity remains `3 -> 3`.
+
+Next gate: Gate 164 — finite Dirac candidate construction / order-one axiom obstruction audit.
