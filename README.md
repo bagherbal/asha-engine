@@ -5844,3 +5844,7 @@ P_tau(N) = 2 - (15/2)N + (7/2)N^2,
 which is circular unless those coefficients are derived from finite topology.
 
 Main result: Gate 371 opens a strong Phase-IV quantum-information path, but internal thermal time is not activated and the 15 vacuum coordinates remain unreduced.
+
+## Gate 372 — Native Moduli Space Dimension / Exact Dirac Parameter Census Sieve
+
+Gate 372 replaces the external “19 minus 4 equals 15” bookkeeping question with a native finite-Dirac moduli-space computation. The result is category-refining rather than vacuum-selecting: the minimal charged finite-Dirac flavor space has dimension 13, while the older external 15 ledger is `13 + theta_QCD + one absolute scale`. If the all-allowed right-neutrino Majorana sector is included, the finite-Dirac moduli dimension is 31. No hidden cross-sector generation constraints are found, and the physical vacuum point remains unselected.

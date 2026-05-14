@@ -5395,3 +5395,7 @@ derive Phi_support→N(Tr_support^eta(C_LR)) without fitting tau_eta
 ```
 
 Until that theorem exists, `tau_eta` remains a kinematic topology / capacity witness rather than the selected modular Hamiltonian.
+
+## Gate 372 — Native Moduli Space Dimension / Exact Dirac Parameter Census Sieve
+
+Gate 372 audits the finite Dirac operator directly instead of relying on external Standard-Model parameter-count conventions. The spectral-triple axioms restrict the allowed block architecture to generic Yukawa matrices and, in the extended ledger, a symmetric Majorana block. After quotienting unphysical generation-basis rotations, the minimal charged finite-Dirac moduli dimension is 13; the canonical all-allowed Majorana/seesaw finite-Dirac dimension is 31. The older 15-vacuum-input statement is preserved only as a category-correct minimal ledger: `13 finite-Dirac flavor moduli + theta_QCD + absolute scale`.

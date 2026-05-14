@@ -220,6 +220,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/modulartimeflowvacuumselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/moritabimodulesearch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativefinitealgebra"
+	"github.com/bagherbal/asha-engine/pkg/bridge/nativemodulispacecensus"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativenondiagonaltexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativeunifiedcouplingorigin"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativeweakquaternionicalgebra"
@@ -754,6 +755,7 @@ func Run() error {
 		etagradedlrtrace.EtaGradedLeftRightTraceNoncentralHamiltonianExtractionSieveTheorem(),
 		supportgenerationintertwiner.SupportToGenerationIntertwinerTopologicalIndexMapSieveTheorem(),
 		schrodingervibrationalintertwiner.SchrodingerVibrationalModesQuantumInformationIntertwinerAuditTheorem(),
+		nativemodulispacecensus.NativeModuliSpaceDimensionExactDiracParameterCensusSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
