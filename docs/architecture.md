@@ -1479,3 +1479,36 @@ because `P_rational` and `P_quartic` are orthogonal spectral projectors of the s
 Gate 160 therefore records a definitive external-selector firewall for all currently available finite objects. The quartic block remains exact finite spectral data, but cannot be used mode-by-mode for threshold beta rows, BRST cancellation, or physical constant derivation.
 
 Next gate: Gate 161 — collective quartic spectral functional / action-level coupling contribution.
+
+### Gate 161 — Collective quartic spectral functional / action-level contribution theorem
+
+Package: `pkg/bridge/quarticspectralfunctional`
+
+Gate 161 consumes the Gate 160 external-selector firewall and changes the problem from rowwise classification to collective spectral use. The exact quartic primary block is not split into branches. Instead, the gate computes exact Galois-invariant symmetric functionals from the quartic factor
+
+```text
+3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271
+```
+
+The exact branch-free ledger is:
+
+```text
+quartic p1      = 71/30
+quartic p2      = 1471/900
+quartic p3      = 33581/27000
+quartic p4      = 809891/810000
+quartic ζ_q(1)  = 2235/271
+full contact p1 = 58/15
+full contact p2 = 61/25
+full contact p3 = 11489/6750
+full contact p4 = 257629/202500
+full ζ(1)       = 7993/542
+```
+
+All of these quantities are exact over `Q`, Galois-invariant, branch-free, and use no observed physical inputs.
+
+The gate audits simple collective action-level candidates including the quartic mean, quartic quadratic shape, quartic inverse mean, quartic determinant, full contact mean, full contact quadratic shape, and full contact inverse mean. None matches or constrains the already-derived variational boundary quantities `κ_U1 = 6`, embedded normalization `5/3`, contact weak-angle seed `3/8`, or generator-basis diagnostic `1/4`.
+
+Therefore the quartic block can now be used as collective exact finite spectral data, but this does not open threshold beta rows or physical constants. The beta-permission firewall remains closed because no gauge representation, spin/statistics, local field, mass activation, decoupling law, or Dynkin index has been derived for the quartic block.
+
+Next gate: Gate 162 — finite contact spectral zeta regularization / seven-root action functional audit.

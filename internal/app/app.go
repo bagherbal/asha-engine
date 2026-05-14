@@ -107,6 +107,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedmetric"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticexternalselector"
+	"github.com/bagherbal/asha-engine/pkg/bridge/quarticspectralfunctional"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quotientedcorrespondence"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgfirewall"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
@@ -332,6 +333,7 @@ func Run() error {
 		contactquarticbrst.QuarticBRSTCandidateDifferentialZeroSupertraceAttemptTheorem(),
 		contactquarticgrading.QuarticGhostGradingGaloisInvarianceNontrivialParityObstructionTheorem(),
 		quarticexternalselector.QuarticParityBranchBreakingExternalSelectorFirewallTheorem(),
+		quarticspectralfunctional.CollectiveQuarticSpectralFunctionalActionLevelContributionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

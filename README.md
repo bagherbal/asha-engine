@@ -508,3 +508,34 @@ Current result:
 - no nondegenerate spectrum, no 2+2 split, no ghost grading, no BRST cancellation, no contact beta row, and no physical constant is derived.
 
 The mode-by-mode quartic route is now blocked both internally and by all currently available external finite sources. The next gate should treat the quartic data collectively through Galois-invariant spectral functionals.
+
+## v1.59 — Gate 161: Collective Quartic Spectral Functional
+
+Adds `pkg/bridge/quarticspectralfunctional`.
+
+Gate 160 closed the last mode-by-mode escape hatch for the quartic contact block. Gate 161 therefore changes strategy: it treats the four quartic roots only collectively, through exact Galois-invariant symmetric spectral data.
+
+Exact quartic factor:
+
+```text
+3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271
+```
+
+The gate computes the branch-free Newton/zeta ledger:
+
+- quartic trace `p1 = 71/30`;
+- quartic quadratic power sum `p2 = 1471/900`;
+- quartic cubic power sum `p3 = 33581/27000`;
+- quartic quartic power sum `p4 = 809891/810000`;
+- quartic inverse trace `ζ_q(1) = 2235/271`;
+- full seven-root contact trace `58/15`;
+- full seven-root inverse trace `7993/542`.
+
+Current result:
+
+- the quartic block now has a clean collective action-level spectral ledger;
+- every listed moment is exact over `Q`, Galois-invariant, and branch-free;
+- none of the audited collective scalar functionals reproduces or constrains `κ_U1 = 6`, the embedded `5/3` normalization, `sin²_* = 3/8`, or the generator-basis `1/4` diagnostic;
+- no gauge representation, local field, mass activation, decoupling rule, Dynkin index, threshold beta row, or physical constant is derived.
+
+Gate 161 is therefore a positive spectral-data theorem but a negative physics-permission theorem. The next gate should build the full seven-root finite contact zeta/action functional and test whether that stronger object supplies constraints beyond scalar moment matching.

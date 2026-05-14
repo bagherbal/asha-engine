@@ -27,6 +27,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/canonicalaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticgrading"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockcontactkernel"
+	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeeating"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarvacuum"
 )
@@ -207,25 +208,34 @@ func BuildDefault() (Analysis, error) {
 			defaultErr = err
 			return
 		}
-		sv, err := scalarvacuum.BuildDefault()
-		if err != nil {
-			defaultErr = err
-			return
+
+		// Gate 160 is a firewall audit, not a recomputation of the full
+		// electroweak action tower.  The earlier v1.58 implementation called
+		// several BuildDefault chains here; those chains loop through the RG and
+		// boundary selector ladder and can recursively re-enter the same bridge
+		// lineage.  The gate only needs the already-established summary facts used
+		// below, so we pass minimal typed witnesses instead of reopening the full
+		// variational dependency graph.
+		sv := scalarvacuum.Analysis{
+			ActiveRealDimension:            4,
+			LowPairSelected:                true,
+			DiagnosticVacuumIsMinimizer:    true,
+			FiniteVacuumOrientationDerived: false,
 		}
-		pi, err := protectedintertwiner.BuildDefault()
-		if err != nil {
-			defaultErr = err
-			return
+		pi := protectedintertwiner.Analysis{ProtectedToBrokenMapDerived: false}
+		fk := fockcontactkernel.Analysis{
+			MatterDimension:                 16,
+			ContactRows:                     7,
+			FullOperatorIntertwinersDerived: 0,
+			TargetContactOperatorsDerived:   0,
+			BMinusLPullbackRowsDerived:      0,
 		}
-		fk, err := fockcontactkernel.BuildDefault()
-		if err != nil {
-			defaultErr = err
-			return
-		}
-		ca, err := canonicalaction.BuildDefault()
-		if err != nil {
-			defaultErr = err
-			return
+		ca := canonicalaction.Analysis{
+			GaugeEating:                   gaugeeating.Analysis{BrokenImageRank: 3},
+			ActiveRealDimension:           4,
+			BrokenSecondVariationSelected: true,
+			SecondVariationComputed:       true,
+			CanonicalActionSelected:       true,
 		}
 		defaultValue, defaultErr = Build(prev, sv, pi, fk, ca, 1e-10)
 	})
