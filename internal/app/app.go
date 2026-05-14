@@ -142,6 +142,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finiteyukawaaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/flavoralignmentdmabsence"
+	"github.com/bagherbal/asha-engine/pkg/bridge/flavororientationoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockcontactkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockrepresentationtrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourcyclechernweil"
@@ -658,6 +659,7 @@ func Run() error {
 		heavypropagatorselfquartic.HeavyPropagatorSelfQuarticSieveThresholdNormalizationAuditTheorem(),
 		fullthresholdrgtransport.FullThresholdRGTransportConditionalHiggsMassPredictionAuditTheorem(),
 		trialitygenerationpullback.TrialityGenerationPullbackNativeTopYukawaBoundarySieveAuditTheorem(),
+		flavororientationoperator.FlavorOrientationOperatorTrialityToMassEigenstateTextureAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
