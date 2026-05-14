@@ -170,6 +170,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavylightoverlapoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavypropagatorselfquartic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/higgsexactprecisionkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsoneloopselfenergyledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgspassarinoveltmankernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgspolemasseselfenergy"
@@ -680,6 +681,7 @@ func Run() error {
 		higgspolemasseselfenergy.HiggsPoleSelfEnergyTargetMinimalPrecisionCorrectionAuditTheorem(),
 		higgsoneloopselfenergyledger.HiggsOneLoopSelfEnergyComponentLedgerRenormalizedPoleKernelAuditTheorem(),
 		higgspassarinoveltmankernel.HiggsPassarinoVeltmanPoleKernelFiniteIntegralInstallationAuditTheorem(),
+		higgsexactprecisionkernel.ExactNativeHiggsPredictionArbitraryPrecisionNumericalKernelAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
