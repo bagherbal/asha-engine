@@ -1693,3 +1693,77 @@ residual nullity:                  3 -> 3
 Therefore Gate 164 does not reject the spectral-triple path. It proves that the next missing object is not another scalar spectral functional, but a faithful canonical finite-algebra representation on the total spectral Hilbert space. Until that representation exists, no nontrivial Dirac operator, real structure, grading, order-one calculus, gauge fluctuation map, beta row, or physical constant may be claimed.
 
 Next gate: Gate 165 — finite algebra representation on total spectral Hilbert space / faithful action obstruction audit.
+
+### Gate 165 — Finite algebra representation on total spectral Hilbert space / faithful action obstruction audit
+
+Package: `pkg/bridge/totalrepresentation`
+
+Gate 165 addresses the exact representation gap identified by Gate 164. A nontrivial finite Dirac operator cannot be tested against the order-one axiom until the engine has a faithful canonical representation of one finite algebra on the total spectral Hilbert space.
+
+The audit separates:
+
+```text
+carrier-level exact actions
+block-local matter/scalar/contact actions
+formal direct-sum assemblies
+faithful total finite-algebra representations
+```
+
+Audited carriers:
+
+```text
+K7 contact vacuum carrier
+generated four-mode Fock matter carrier
+active scalar carrier H_phi
+middle exterior chamber Lambda^4 R8
+formal K7 plus H_Fock tensor H_phi carrier
+doubled NCG-style H plus JH target
+```
+
+Audit result:
+
+```text
+carrier candidates audited:       6
+available carriers:               5
+canonical carriers:               4
+total Hilbert candidates:         2
+canonical total Hilbert spaces:   0
+```
+
+Audited algebra actions:
+
+```text
+Q[Omega_contact] on K7
+Alg(P_B,P_G) on Lambda^4 R8
+Cl(1,7) bookkeeping action
+Q[N0,N1,N2,N3,B-L] on H_Fock
+su(2)+u(1) scalar action on H_phi
+Fock-charge tensor scalar-EW block
+formal block-direct-sum action
+imported Connes Standard Model algebra C+H+M3(C)
+```
+
+The first six are useful own-carrier or block-carrier representations. None is a faithful total representation. The imported Connes algebra is explicitly rejected as an external template rather than a finite-engine derivation.
+
+Theorem ledger:
+
+```text
+algebra actions audited:          8
+available actions:                7
+canonical own-carrier actions:    6
+faithful own-carrier actions:     4
+faithful total representations:   0
+nontrivial cross-sector actions:  0
+nonzero one-form actions:         0
+canonical glue maps:              0
+promotable spectral triples:      0
+gauge kinetic rows:               0
+boundary constraints:             0
+threshold beta rows:              0
+physical constants derived:        false
+residual nullity:                 3 -> 3
+```
+
+Therefore Gate 165 proves that the finite engine has strong local representation data but no canonical total representation. The next missing object is a sector-intertwining glue map or functor that can place contact, scalar, Fock, and Clifford/projector data into one faithful finite representation without importing Standard Model algebra by hand and without choosing quartic branches.
+
+Next gate: Gate 166 — sector-intertwiner reconstruction / total representation glue-map search.

@@ -126,6 +126,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
+	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1completion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1kinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1nonfactor"
@@ -340,6 +341,7 @@ func Run() error {
 		contactzeta.FiniteContactSpectralZetaRegularizationSevenRootActionFunctionalAuditTheorem(),
 		spectralaction.FiniteSpectralActionPrincipleSpectralTripleConstructionAuditTheorem(),
 		diracorderone.FiniteDiracCandidateOrderOneAxiomObstructionAuditTheorem(),
+		totalrepresentation.FiniteAlgebraTotalHilbertRepresentationFaithfulActionObstructionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

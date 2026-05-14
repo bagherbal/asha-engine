@@ -730,3 +730,89 @@ Result:
 - The beta-permission firewall remains closed.
 
 Next gate: Gate 165 — finite algebra representation on total spectral Hilbert space / faithful action obstruction audit.
+
+## v1.63 — Gate 165: Finite Algebra Representation on Total Spectral Hilbert Space / Faithful Action Obstruction Audit
+
+Adds `pkg/bridge/totalrepresentation`.
+
+Gate 165 consumes the Gate 164 order-one obstruction and audits the representation layer that must exist before any nontrivial finite Dirac operator, real structure, grading, or spectral action can be lawfully constructed.
+
+The gate distinguishes three levels that must not be conflated:
+
+```text
+canonical representation on an individual carrier
+formal blockwise direct-sum bookkeeping
+faithful representation of one finite algebra on the total spectral Hilbert space
+```
+
+Carrier audit:
+
+```text
+carrier candidates audited:       6
+available carriers:               5
+canonical carriers:               4
+total Hilbert candidates:         2
+canonical total Hilbert spaces:   0
+```
+
+Algebra-action audit:
+
+```text
+algebra actions audited:          8
+available actions:                7
+canonical own-carrier actions:    6
+faithful own-carrier actions:     4
+faithful total representations:   0
+nontrivial cross-sector actions:  0
+nonzero one-form actions:         0
+imported SM algebra candidates:   1 rejected
+```
+
+Canonical actions exist on their own carriers:
+
+```text
+Q[Omega_contact] on K7
+Alg(P_B,P_G) on Lambda^4 R8
+Cl(1,7) bookkeeping action
+Fock charge-number algebra on H_Fock
+scalar electroweak action on H_phi
+matter-scalar tensor block
+```
+
+But none is a faithful representation of one derived finite algebra on the total spectral Hilbert space. The contact spectral algebra is canonical but commutative and gauge-trivial. The Fock and scalar actions are structurally useful but do not act on the contact carrier. The exterior/projector action is exact but auxiliary. The formal direct-sum action lists sectors side by side but does not derive a canonical interacting representation.
+
+Glue-map audit:
+
+```text
+glue maps audited:                5
+available diagnostic maps:        4
+canonical glue maps:              0
+intertwining maps:                0
+isometric maps:                   0
+Galois-safe diagnostics:          4
+```
+
+Assembly audit:
+
+```text
+assembly candidates audited:      6
+available assemblies:             4
+canonical assemblies:             3
+total-carrier-complete forms:     2
+faithful total representations:   0
+nontrivial sector mixing:         0
+nonzero one-forms:                0
+promotable spectral triples:      0
+```
+
+Result:
+
+- Gate 165 is a positive local-representation ledger.
+- Gate 165 is a negative faithful-total-representation theorem.
+- No canonical total finite algebra `A_total` is constructed.
+- No faithful representation `rho: A_total -> End(H_total)` is selected.
+- No nontrivial one-form calculus, gauge fluctuation map, gauge kinetic row, threshold beta row, mass, scale, or physical constant is derived.
+- The beta-permission firewall remains closed.
+- Residual nullity remains `3 -> 3`.
+
+Next gate: Gate 166 — sector-intertwiner reconstruction / total representation glue-map search.
