@@ -130,6 +130,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgfirewall"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarbundlemap"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalarchernweiltaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcomplex"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcontactselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcovariant"
@@ -394,6 +395,7 @@ func Run() error {
 		scalarbundlemap.ScalarBundleMapHphiProjectorIdentificationAuditTheorem(),
 		scalarorientationsource.EtaOddScalarOrientationSourceMatterPullbackSearchTheorem(),
 		scalarorientationseal.SpontaneousScalarOrientationSealGaugeFixedHphiTrivializationTheorem(),
+		scalarchernweiltaudit.SealedScalarBundleChernWeilCarrierHeatKernelPreflightTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
