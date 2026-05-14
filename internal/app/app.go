@@ -197,6 +197,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/inversebsectordeformation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ko6twistedrealstructure"
+	"github.com/bagherbal/asha-engine/pkg/bridge/leptogenesiscpasymmetry"
 	"github.com/bagherbal/asha-engine/pkg/bridge/leptoquarkdynamicsseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/liecarrierprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/lietrialitypullback"
@@ -718,6 +719,7 @@ func Run() error {
 		matrixinvariantkoideaudit.MatrixInvariantKoideTypeTracePolynomialAuditTheorem(),
 		fermionicroottracesieve.FermionicEffectiveActionRootTracePfaffianSieveTheorem(),
 		yukawairfixedpoint.YukawaInfraredFixedPointBasinRGAttractorReductionAuditTheorem(),
+		leptogenesiscpasymmetry.LeptogenesisDecayCPAsymmetryBGapMajoranaCosmogenesisAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
