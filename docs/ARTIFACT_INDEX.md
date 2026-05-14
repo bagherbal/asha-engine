@@ -60,3 +60,27 @@ The repository root is intentionally small. Generated audits and report outputs 
 - `docs/paper/final/asha_paper_final_manuscript.docx` — finalized editable manuscript with source-code link, acknowledgments, final unified formula, and completed bibliography.
 - `docs/paper/final/asha_paper_final_manuscript.pdf` — PDF export generated from the DOCX.
 - `docs/audits/final/final_result.md` — formula-first final ASHA result ledger updated after Gates 0–425.
+
+## Final Runtime Artifacts
+
+| Artifact | Path | Purpose |
+|---|---|---|
+| Runtime package | `pkg/asha/` | Standalone final calculation/report API. |
+| Runtime CLI | `cmd/asha/` | CI-safe command using `pkg/asha`. |
+| Runtime docs | `docs/runtime/README.md` | Usage, scenarios, formats, and epistemology. |
+| Runtime CI Markdown | `docs/runtime/reports/asha_runtime_ci.md` | Deterministic human-readable runtime report. |
+| Runtime CI JSON | `docs/runtime/reports/asha_runtime_ci.json` | Machine-readable runtime report. |
+| Runtime consolidation note | `docs/audits/final/runtime_step_gate425_20260514T0035.md` | Timestamped Gate-425 final runtime step. |
+
+## Runtime verification update — 2026-05-14
+
+The standalone runtime board was rerun against the latest embedded Gate-425 data. Reports are available at:
+
+```text
+docs/runtime/reports/asha_runtime_verification_20260514.md
+docs/runtime/reports/asha_runtime_all_20260514.md
+docs/runtime/reports/asha_runtime_ci_20260514.json
+docs/audits/final/runtime_verification_gate425_20260514.md
+```
+
+The verification found no mismatch requiring manuscript updates.

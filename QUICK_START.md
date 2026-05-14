@@ -23,6 +23,34 @@ go test -p=1 ./pkg/bridge/publicationbundlepreflight -count=1
 go test -p=1   ./pkg/bridge/reviewerobjectionmatrix   ./pkg/bridge/executiveabstractclaimaudit   ./pkg/bridge/manuscriptskeletonexport   -count=1
 ```
 
+
+## Runtime board first-use workflow
+
+The current final calculation surface is the standalone runtime board in `pkg/asha` with CLI entrypoint `cmd/asha`. Use this for reporting current ASHA outputs; keep historical gate packages for audit provenance.
+
+```bash
+# Fast runtime validation
+go test -p=1 ./pkg/asha ./cmd/asha -count=1
+
+# Full current board report
+go run ./cmd/asha --scenario all --format markdown --strict
+
+# Machine-readable CI report
+go run ./cmd/asha --scenario ci --format json --strict
+```
+
+Canonical runtime report outputs live under:
+
+```text
+docs/runtime/reports/
+```
+
+Current scenario names:
+
+```text
+all | native | higgs | family | dark-stable-thermal | cosmology | ci
+```
+
 ## What not to run by default
 
 ```bash
@@ -67,3 +95,35 @@ docs/visuals/                     # figures and diagrams
 - Summary/tower documents live in `docs/summaries/`.
 - Paper drafts and final paper files live in `docs/paper/`.
 - Visuals live in `docs/visuals/`.
+
+## Final Runtime Board (post-Gate 425)
+
+For day-to-day use, prefer the standalone runtime package instead of the historical theorem-registry flow:
+
+```bash
+go test -p=1 ./pkg/asha ./cmd/asha -count=1
+go run ./cmd/asha --scenario all --format text --strict
+```
+
+Useful report formats:
+
+```bash
+go run ./cmd/asha --scenario ci --format json --strict
+go run ./cmd/asha --scenario higgs --format markdown --strict
+go run ./cmd/asha --scenario dark-stable-thermal --format text --strict
+```
+
+Runtime package:
+
+```text
+pkg/asha
+```
+
+Runtime documentation:
+
+```text
+docs/runtime/README.md
+docs/runtime/reports/asha_runtime_ci.md
+docs/runtime/reports/asha_runtime_ci.json
+```
+

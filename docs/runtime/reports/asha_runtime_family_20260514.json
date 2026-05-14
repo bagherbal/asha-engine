@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "runtime_version": "gate425-runtime-20260514",
+    "latest_gate": 425,
+    "title": "ASHA final runtime board",
+    "keywords": [
+      "Clifford algebra",
+      "noncommutative geometry",
+      "spectral action",
+      "Standard Model",
+      "Higgs",
+      "flavor firewall",
+      "finite geometry"
+    ],
+    "pacs": [
+      "02.10.Ud",
+      "04.50.Kd",
+      "11.10.Nx",
+      "11.15.-q",
+      "12.10.-g",
+      "12.15.Ff"
+    ],
+    "source": "github.com/bagherbal/asha-engine"
+  },
+  "scenario": "family",
+  "sections": [
+    {
+      "name": "Family/flavor frontier",
+      "summary": "Native flavor remains 13-dimensional; quarantined K/X/Y axioms activate hierarchy, mixing, and CP capacity with 9 symbolic charged coefficients.",
+      "quantities": [
+        {
+          "symbol": "dim M_charged^native",
+          "value": 13,
+          "formula": "6 quark masses + 4 CKM + 3 charged-lepton masses",
+          "status": "environmental",
+          "note": "native firewall"
+        },
+        {
+          "symbol": "K_gen",
+          "text": "diag(-1,0,1)",
+          "formula": "K_gen = diag(-1,0,1)",
+          "status": "quarantined-axiom",
+          "note": "hierarchy capacity only"
+        },
+        {
+          "symbol": "ρ_β",
+          "text": "[0.665240955775, 0.244728471055, 0.0900305731704]",
+          "formula": "exp(-βK)/Tr exp(-βK)",
+          "status": "quarantined-axiom"
+        },
+        {
+          "symbol": "ρ_max/ρ_min",
+          "value": 7.38905609893065,
+          "formula": "exp(2β)",
+          "status": "quarantined-axiom"
+        },
+        {
+          "symbol": "X_gen",
+          "text": "S+S^T",
+          "formula": "real shift quadrature",
+          "status": "quarantined-axiom",
+          "note": "real mixing capacity"
+        },
+        {
+          "symbol": "Y_gen",
+          "text": "i(S-S^T)",
+          "formula": "imaginary shift quadrature",
+          "status": "quarantined-axiom",
+          "note": "CP capacity"
+        },
+        {
+          "symbol": "||[K,S]||_F",
+          "value": 2.449489742783178,
+          "formula": "sqrt(6)",
+          "status": "quarantined-axiom"
+        },
+        {
+          "symbol": "||[K,X]||_F",
+          "value": 3.4641016151377544,
+          "formula": "sqrt(12)",
+          "status": "quarantined-axiom"
+        },
+        {
+          "symbol": "Im Tr([M_u,M_d]^3)",
+          "value": 8.397024,
+          "formula": "sample nonzero CP-capacity witness",
+          "status": "quarantined-axiom"
+        },
+        {
+          "symbol": "dim C_KXY^charged",
+          "value": 9,
+          "formula": "3 charged sectors × 3 symbolic coefficients",
+          "status": "quarantined-axiom"
+        }
+      ],
+      "boundaries": [
+        {
+          "name": "charged flavor",
+          "formula": "dim M_charged^native = 13",
+          "status": "environmental",
+          "meaning": "Yukawa values and CKM coordinates are not native ASHA outputs."
+        },
+        {
+          "name": "K/X/Y coefficients",
+          "formula": "{a_s,b_s,c_s}_{s=u,d,e}",
+          "status": "environmental",
+          "meaning": "conditional family source coefficients remain boundary data."
+        }
+      ],
+      "checks": [
+        {
+          "name": "Native charged flavor firewall",
+          "passed": true,
+          "detail": "dim M_charged^native=13"
+        },
+        {
+          "name": "KMS family hierarchy capacity",
+          "passed": true,
+          "detail": "ρβ nontracial for β≠0"
+        },
+        {
+          "name": "Noncommuting capacity",
+          "passed": true,
+          "detail": "K does not commute with shift/quadrature"
+        },
+        {
+          "name": "CP capacity not CP prediction",
+          "passed": true,
+          "detail": "phase coefficients remain free"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "Clifford dimension",
+      "passed": true,
+      "detail": "dim Cℓ(1,7)=2^8"
+    },
+    {
+      "name": "Exterior grade dimensions",
+      "passed": true,
+      "detail": "[1,8,28,56,70,56,28,8,1]"
+    },
+    {
+      "name": "Boolean/G2 contact vacuum",
+      "passed": true,
+      "detail": "rank(P_B)=56 rank(P_G)=14 dim K=7"
+    },
+    {
+      "name": "Scalar shape",
+      "passed": true,
+      "detail": "Tr(M_K^2)/Tr(M_K)^2"
+    },
+    {
+      "name": "Hypercharge normalization",
+      "passed": true,
+      "detail": "k_Y=5/3"
+    },
+    {
+      "name": "Boundary weak angle",
+      "passed": true,
+      "detail": "sin²θ*=3/8"
+    },
+    {
+      "name": "Gauge/Higgs inventory",
+      "passed": true,
+      "detail": "U(1)_Y × SU(2)_L × SU(3)_C + one complex Higgs doublet"
+    },
+    {
+      "name": "Pfaffian scale positive",
+      "passed": true,
+      "detail": "v_Pf computed from Planck mass bridge"
+    },
+    {
+      "name": "Higgs tree proxy",
+      "passed": true,
+      "detail": "m_H^tree ≈ 124.925 GeV under project Planck convention"
+    },
+    {
+      "name": "Majorana stable thermal relic rejected",
+      "passed": true,
+      "detail": "overcloses by ~1.3e13"
+    },
+    {
+      "name": "Native charged flavor firewall",
+      "passed": true,
+      "detail": "dim M_charged^native=13"
+    },
+    {
+      "name": "KMS family hierarchy capacity",
+      "passed": true,
+      "detail": "ρβ nontracial for β≠0"
+    },
+    {
+      "name": "Noncommuting capacity",
+      "passed": true,
+      "detail": "K does not commute with shift/quadrature"
+    },
+    {
+      "name": "CP capacity not CP prediction",
+      "passed": true,
+      "detail": "phase coefficients remain free"
+    },
+    {
+      "name": "Latest gate marker",
+      "passed": true,
+      "detail": "gate=425"
+    }
+  ],
+  "boundaries": [
+    {
+      "name": "charged flavor",
+      "formula": "dim M_charged^native = 13",
+      "status": "environmental",
+      "meaning": "Yukawa values and CKM coordinates are not native ASHA outputs."
+    },
+    {
+      "name": "K/X/Y coefficients",
+      "formula": "{a_s,b_s,c_s}_{s=u,d,e}",
+      "status": "environmental",
+      "meaning": "conditional family source coefficients remain boundary data."
+    },
+    {
+      "name": "spectral-action cosmological term",
+      "formula": "48 f₄ Λ⁴ + subtraction/renormalization",
+      "status": "bridge-required",
+      "meaning": "bare term exists; observed ρΛ needs continuum/history rule."
+    },
+    {
+      "name": "holographic/dilaton bridge",
+      "formula": "ρΛ ~ M_P²/L², Λ → Λ(x)",
+      "status": "bridge-required",
+      "meaning": "possible pathway, not native prediction."
+    },
+    {
+      "name": "cosmological coordinates",
+      "formula": "(Ω_DM h², ρΛ, t_universe, η_B)",
+      "status": "environmental",
+      "meaning": "history/state dependent and not predicted by current law-space."
+    },
+    {
+      "name": "B-gap Majorana stable thermal relic",
+      "formula": "Ω_candidate/Ω_DM ~ 1.3×10¹³",
+      "status": "failed-route",
+      "meaning": "simple stable thermal interpretation is rejected by overclosure."
+    },
+    {
+      "name": "decaying/portal heavy sector",
+      "formula": "Ω_heavy h² = 0 after decay assumptions",
+      "status": "bridge-required",
+      "meaning": "allowed only with sealed decay/portal dynamics."
+    },
+    {
+      "name": "nonthermal/axion-like routes",
+      "formula": "requires production-history axiom",
+      "status": "environmental",
+      "meaning": "not native ASHA output."
+    },
+    {
+      "name": "q4 sector",
+      "formula": "q4 ∈ contact spectral sector, q4 ∉ HΦ selector",
+      "status": "failed-route",
+      "meaning": "contact invariant not promoted to scalar/flavor theorem."
+    },
+    {
+      "name": "HΦ flavor blindness",
+      "formula": "HΦ ⇒ weak doublet + scalar potential, not flavor selector",
+      "status": "failed-route",
+      "meaning": "native scalar selectors are central or pair-degenerate."
+    },
+    {
+      "name": "family axioms",
+      "formula": "K/X/Y ⇒ capacity, not coefficient prediction",
+      "status": "quarantined-axiom",
+      "meaning": "family extension is explicit and quarantined."
+    }
+  ],
+  "verdict": "PASS: ASHA runtime board is internally consistent; native law-space separated from bridge, quarantined, and environmental data."
+}

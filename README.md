@@ -6640,3 +6640,30 @@ For the publication version of the ASHA theorem atlas and architecture ledger, c
 ```
 
 <!-- ASHA-CITATION-TEMPLATE-END -->
+
+## Final Runtime Board
+
+The final post-Gate-425 calculation endpoint is the standalone runtime package:
+
+```text
+pkg/asha
+cmd/asha
+```
+
+The historical gate/theorem packages remain as audit evidence. For current reports and CI checks, use:
+
+```bash
+go test -p=1 ./pkg/asha ./cmd/asha -count=1
+go run ./cmd/asha --scenario all --format text --strict
+```
+
+Supported scenarios include `native`, `higgs`, `family`, `dark-stable-thermal`, `cosmology`, and `ci`. Supported formats are `text`, `markdown`, and `json`.
+
+The previous theorem-registry CLI entrypoint is preserved as:
+
+```text
+cmd/asha/main_legacy_gate425_20260514.deprecated.go
+```
+
+and is excluded from default builds unless the `legacyasha` build tag is used.
+

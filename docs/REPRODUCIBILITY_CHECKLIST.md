@@ -43,3 +43,16 @@ go list ./internal/app
 The final manuscript artifacts are in `docs/paper/final/`.
 The PDF was generated from the DOCX using LibreOffice headless conversion.
 The bibliography intentionally excludes the project author's own repository entry; source-code access is recorded in the manuscript body and can be replaced by a DOI/archive citation when available.
+
+## Runtime verification update — 2026-05-14
+
+The standalone runtime board was rerun against the latest embedded Gate-425 data. Reports are available at:
+
+```text
+docs/runtime/reports/asha_runtime_verification_20260514.md
+docs/runtime/reports/asha_runtime_all_20260514.md
+docs/runtime/reports/asha_runtime_ci_20260514.json
+docs/audits/final/runtime_verification_gate425_20260514.md
+```
+
+The verification found no mismatch requiring manuscript updates.
