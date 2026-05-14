@@ -2669,3 +2669,35 @@ max|δ| / (1/(16π²)) ≈ 0.1344
 ```
 
 The result remains within the matching-envelope proxy, so the single-scale threshold target survives the SM top/Higgs running audit. It is still conditional phenomenology: finite matching corrections remain sealed and un-derived.
+
+## v2.17 — Gate 219: Input-sensitivity and bottom/tau-Yukawa completeness audit
+
+Gate 219 adds `pkg/bridge/inputsensitivityaudit`.
+
+Gate 218 showed that the sealed single-scale spectrum,
+
+```text
+Dirac (1,3,Y=1) + Dirac (8,2,Y=1/2)
+```
+
+survives top-Yukawa and Higgs-quartic two-loop running. Gate 219 upgrades that numerical audit by adding third-family bottom and tau Yukawa running and propagating one-at-a-time `1σ` empirical uncertainties through the same forced single-scale solver.
+
+The central bottom/tau-complete result is:
+
+```text
+M_B  ≈ 2.56895727e6 GeV
+M_*  ≈ 1.72179441e17 GeV
+δ_required ≈ (-0.000835610558, +0.000855124927, -0.000854917218)
+max|δ| / (1/(16π²)) ≈ 0.135036
+```
+
+The bounded input scan audits `α_s(M_Z)`, `m_t`, `m_H`, `m_b`, and `m_τ` at their stated `±1σ` values. All 11 cases converge and remain inside the matching envelope:
+
+```text
+M_B range  ≈ [2.46868509e6, 2.67089887e6] GeV
+M_* range  ≈ [1.66008302e17, 1.78344443e17] GeV
+max max|δ|/ε_u ≈ 0.411919
+worst case: α_s(M_Z) -1σ
+```
+
+This is conditional phenomenology only. The engine does not derive the low-energy empirical inputs, Yukawa matrices, or matching corrections from the finite core. The result says that the sealed PeV-scale target remains robust under the audited `1σ` input variations.

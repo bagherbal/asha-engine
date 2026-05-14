@@ -83,3 +83,12 @@
 - Separate three claims: the forced single-scale fit converges, the required matching residual is inside the envelope, and the residual is derived. Gate 218 can prove the first two only.
 - Keep heavy-sector Yukawa couplings absent unless a new seal or finite local-field theorem introduces them.
 - When adding full-SM effects, compare against the previous no-Yukawa target and report the shift instead of overwriting the earlier result.
+
+## Gate 219 method refinement — input uncertainty is not tuning freedom
+
+- When a numerical gate depends on empirical low-energy inputs, treat every uncertainty as a bounded audit variable, not as a parameter to tune the target residual to zero.
+- Add missing small SM couplings only when they have a clear role in the running equations; keep lighter negligible terms explicitly listed as omissions rather than silently forgotten.
+- Report central values, induced scale ranges, residual-envelope ranges, and the dominant sensitivity driver separately.
+- If a parameter changes a running variable that does not feed back at the current loop order, say so directly instead of inventing an effect.
+- Preserve the difference between experimental uncertainty, theoretical matching uncertainty, and finite-core derivation. They are three separate ledgers.
+- For speed, avoid full-grid covariance scans until one-at-a-time `±1σ` scans establish whether the envelope is threatened.

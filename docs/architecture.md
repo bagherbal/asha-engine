@@ -3194,3 +3194,38 @@ Architectural classification:
 - blocked derivations: finite `D_F`, heat-kernel gauge projection, cutoff/subtraction scheme, finite matching rows, finite Yukawa texture.
 
 The audit confirms that including top/Higgs running shifts the required matching residual but does not destroy the loop-factor plausibility envelope. The heavy scale and boundary scale remain sealed numerical fits, not physical predictions from the finite algebra.
+
+## Gate 219 — Input-sensitivity and bottom/tau-Yukawa completeness audit
+
+Gate 219 occupies the precision-sensitivity layer after Gate 218. It keeps the same active seals:
+
+```text
+ThresholdSpectrumSeal
+MatchingCorrectionSeal
+EmpiricalCarrierSeal
+LeptoquarkDynamicsSeal
+```
+
+and upgrades the phenomenological running by including `y_b` and `y_τ` together with `y_t` and `λ`. The gate also adds an empirical input ledger and propagates one-at-a-time `±1σ` variations for:
+
+```text
+α_s(M_Z), m_t, m_H, m_b, m_τ
+```
+
+The central forced-degenerate fit remains near the Gate-218 result:
+
+```text
+M_B ≈ 2.56895727e6 GeV
+M_* ≈ 1.72179441e17 GeV
+max|δ_required|/ε_u ≈ 0.135036
+```
+
+The full audited range remains within the matching-correction plausibility envelope:
+
+```text
+M_B ∈ [2.46868509e6, 2.67089887e6] GeV
+M_* ∈ [1.66008302e17, 1.78344443e17] GeV
+worst residual ratio ≈ 0.411919 < 1
+```
+
+This gate does not convert the sealed spectrum into a finite-core prediction. It only proves that the sealed PeV-threshold hypothesis is stable under the audited empirical input uncertainties.

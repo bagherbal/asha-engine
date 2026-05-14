@@ -117,6 +117,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugekineticdiag"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/inputsensitivityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/instantontracebridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/inversebsectordeformation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
@@ -448,6 +449,7 @@ func Run() error {
 		matchingresidualstructure.MatchingResidualStructureSpectralHeatKernelSearchTheorem(),
 		finitespectraltriple.FiniteSpectralTripleHeavySectorGaugeCurvatureProjectionAuditTheorem(),
 		matchingcorrectionseal.MatchingCorrectionSealFullSMYukawaTwoLoopIntegrationAuditTheorem(),
+		inputsensitivityaudit.InputSensitivityBottomTauYukawaCompletenessAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
