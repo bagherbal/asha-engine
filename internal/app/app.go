@@ -22,6 +22,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
+	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcomplex"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
@@ -138,6 +139,7 @@ func Run() error {
 		fierzsign.CliffordLorentzFierzSignTheorem(),
 		exchangekernel.PropagatorExchangeKernelAuditTheorem(),
 		exchangeaction.FiniteExchangeActionPropagatorSearchTheorem(),
+		propagatorspectrum.FinitePropagatorSpectrumSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

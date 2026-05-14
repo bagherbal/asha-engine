@@ -354,3 +354,10 @@ Adds `pkg/bridge/currentprojection`, which lifts the finite `u(4)`-shaped curren
 ## v0.62 — Gate 63: Finite Exchange Action / Propagator Normalization Search
 
 Adds `pkg/bridge/exchangeaction`, which audits whether the signed Fierz result and conditional exchange kernel can be promoted to a derived finite NJL kernel. The gate computes unit, inverse-kinetic, and kinetic-weighted exchange diagnostics, but keeps the exchange action sign, propagator denominators, relative current couplings, up/down splitting, and NJL criticality open.
+
+
+## v0.63 — Gate 64: Finite Propagator Spectrum Search
+
+Adds `pkg/bridge/propagatorspectrum`. This gate searches whether existing finite spectra can provide current-sector propagator denominators for the native NJL/four-fermion kernel. It exposes diagnostic denominator families from the B-sector gap, scalar/contact active mean, contact partial-overlap mean, scalar radial curvature, and contact leakage. It deliberately rejects all of them as derived propagators because no theorem maps those spectral anchors to the central/color/B−L/leptoquark current sectors yet.
+
+Result: finite spectral anchors exist, but current-sector propagator weights remain unassigned; no condensation, Higgs VEV, or mass scale is claimed.
