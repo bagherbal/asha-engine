@@ -318,6 +318,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/wittso8coordinates"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawaamplitudeseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawaamplitudesource"
+	"github.com/bagherbal/asha-engine/pkg/bridge/yukawairfixedpoint"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawashapeconstraint"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
@@ -716,6 +717,7 @@ func Run() error {
 		vacuumcriticalityradiative.VacuumCriticalityRadiativeHierarchySieveTheorem(),
 		matrixinvariantkoideaudit.MatrixInvariantKoideTypeTracePolynomialAuditTheorem(),
 		fermionicroottracesieve.FermionicEffectiveActionRootTracePfaffianSieveTheorem(),
+		yukawairfixedpoint.YukawaInfraredFixedPointBasinRGAttractorReductionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
