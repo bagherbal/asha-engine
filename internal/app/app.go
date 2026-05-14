@@ -269,6 +269,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalactionvariationalprinciple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalboundaryviability"
+	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalcouplingnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topyukawagenerationtensor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
@@ -666,6 +667,7 @@ func Run() error {
 		flavorprojectionmetric.FlavorProjectionMetricVariationalVacuumSelectorAuditTheorem(),
 		grandunifiedledger.GrandUnifiedLedgerProjectCapstoneAuditTheorem(),
 		spectralactioncouplingnormalization.SpectralActionCouplingNormalizationAlphaGUTAuditTheorem(),
+		topologicalcouplingnormalization.TopologicalActionChernWeilCouplingNormalizationFactorAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
