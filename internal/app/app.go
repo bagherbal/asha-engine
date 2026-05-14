@@ -241,6 +241,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/sealedthresholdstresstest"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectoroperators"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectorspectrum"
+	"github.com/bagherbal/asha-engine/pkg/bridge/seesawoverlapmatrix"
 	"github.com/bagherbal/asha-engine/pkg/bridge/shellfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/singlescalematchingaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralaction"
@@ -650,6 +651,7 @@ func Run() error {
 		hilbertspacetracecapacity.HilbertSpaceDimensionTraceCapacityLedgerAuditTheorem(),
 		nonperturbativeportalcoupling.NonPerturbativeInstantonMappingHeavyPortalCouplingSieveAuditTheorem(),
 		heavylightoverlapoperator.FunctionalDeterminantSieveHeavyLightOverlapOperatorAuditTheorem(),
+		seesawoverlapmatrix.SeesawOverlapMatrixConstructionMajoranaHiggsMixingSieveAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
