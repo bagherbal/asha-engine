@@ -122,6 +122,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/leptoquarkdynamicsseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
+	"github.com/bagherbal/asha-engine/pkg/bridge/matchingresidualstructure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncommutingtexturepair"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonuniversalrgfit"
@@ -442,6 +443,7 @@ func Run() error {
 		thresholdspectrumseal.ThresholdSpectrumSealMatchingCorrectionTwoLoopPreflightTheorem(),
 		twoloopintegration.SealedTwoLoopRGIntegrationMatchingEnvelopeTheorem(),
 		singlescalematchingaudit.SingleScaleDegenerateLimitMatchingAuditTheorem(),
+		matchingresidualstructure.MatchingResidualStructureSpectralHeatKernelSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

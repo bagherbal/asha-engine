@@ -3104,3 +3104,39 @@ max |δ_i^req| / ε_u ≈ 0.0887
 ```
 
 This does not derive threshold matching corrections. It narrows the phenomenological target: a future finite spectral matching theorem should explain the small alternating residual vector required by this pair, or else the single-scale interpretation must remain sealed.
+
+## Gate 216 — Matching-residual structure audit / spectral heat-kernel coefficient search
+
+Package: `pkg/bridge/matchingresidualstructure`
+
+Gate 216 sits after the Gate-215 single-scale scan. It takes the unique plausible degenerate spectrum and audits whether the required matching correction can be produced by the current finite spectral inventory.
+
+Architectural placement:
+
+```text
+Layer 13: Degenerate-limit matching plausibility scan → Gate 215
+Layer 14: Spectral matching-residual origin audit     → Gate 216
+```
+
+The inherited target is:
+
+```text
+δ_match_required = (-0.000561193804, +0.000561440698, -0.000560508948)
+```
+
+The target has an alternating `- + -` sign pattern and almost equal magnitudes. Gate 216 compares it against:
+
+- B-sector gap scalar data,
+- seven contact partial-overlap modes,
+- exact contact zeta/action scalars,
+- scalar fundamental-class `τ_η` signed degrees.
+
+The audit finds no canonical match. Positive spectral scalars have the wrong sign structure. The orientation-flipped eta trace `-τ_η=(-2,2,-1)` has the right signs but not the right relative magnitudes. No canonical normalization maps it to the required `~5.6e-4` magnitude.
+
+The result is a strict failed route:
+
+```text
+FAILED_ROUTE_SPECTRAL_MATCHING_RESIDUAL_DERIVATION
+```
+
+The obstruction is not a failure of the Gate-215 spectrum. It identifies the next missing bridge: a finite spectral triple / heat-kernel gauge projection / subtraction scheme capable of deriving actual `δ_i^match` rows.

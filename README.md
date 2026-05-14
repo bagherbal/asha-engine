@@ -2554,3 +2554,46 @@ max |residual| / ε_u ≈ 0.0886592
 ```
 
 This means the required matching correction is smaller than 9% of the explicit loop-factor envelope. The result is a strong conditional signal for the degenerate single-scale interpretation of the Gate-211 ranked witness, but it is **not** a finite-core derivation. The matching vector remains a target for future spectral/heat-kernel matching theory.
+
+## v2.14 — Gate 216: Matching-residual structure audit / spectral heat-kernel coefficient search
+
+Gate 216 adds `pkg/bridge/matchingresidualstructure`.
+
+Gate 215 reduced the forced single-scale two-loop scan to one viable class:
+
+```text
+Dirac (1,3,Y=1) + Dirac (8,2,Y=1/2)
+```
+
+The remaining required matching residual is:
+
+```text
+δ_match_required = (-0.000561193804, +0.000561440698, -0.000560508948)
+```
+
+Gate 216 audits whether current finite spectral data can canonically produce this vector. It checks the B-sector gap, the seven contact partial-overlap modes, exact contact zeta scalars, and the finite scalar fundamental class `τ_η`.
+
+Result:
+
+```text
+FAILED_ROUTE_SPECTRAL_MATCHING_RESIDUAL_DERIVATION
+```
+
+Important diagnostics:
+
+```text
+required sign pattern: - + -
+required normalized vector: (-0.999560249, 1, -0.998340430)
+τ_η native degrees: (2, -2, 1)
+orientation-flipped τ_η: (-2, 2, -1)
+```
+
+The orientation-flipped `τ_η` trace gives a sign-only resonance, but its relative magnitudes are `1:1:0.5`, not the required near `1:1:1`. The closest canonical loop-scaled scalar is:
+
+```text
+gap_B/(16π²) = 0.000648866694
+```
+
+which is a rejected near-miss, about `1.1557×` the required magnitude. Gate 216 does not fit a coefficient to close that gap.
+
+The heat-kernel bridge remains open because the engine has not derived a finite Dirac operator, complete spectral triple, canonical cutoff function, gauge-curvature projection, or threshold subtraction scheme. The Gate-215 residual remains a target for future finite matching theory, not a derived correction.

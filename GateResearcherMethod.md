@@ -56,3 +56,12 @@
 - Scan all previously viable classes, not only the favorite witness, before claiming a spectrum is structurally preferred.
 - Rank by required correction size, but keep ranking separate from derivation. A small required correction is a target for the next theorem, not proof that the correction exists.
 - Keep the validation focused: new package tests, direct predecessor tests, `go list` wiring checks, and no timeout-prone full registry execution unless the gate specifically requires it.
+
+## Gate 216 method refinement — residual targets are not coefficients
+
+- When a previous gate produces a small required residual, treat it as a target vector first, not as a discovered constant.
+- Compare sign pattern, relative magnitude, and absolute magnitude separately. A sign-only resonance is useful, but it is not a matching theorem.
+- Reject loop-factor near-misses unless the normalization is canonical and branch-free. Do not insert fitted coefficients to turn spectral scalars into threshold corrections.
+- Heat-kernel language requires concrete structure: finite Dirac operator, spectral triple, gauge-curvature projection, cutoff moments, and subtraction scheme.
+- Existing finite traces may be action-level diagnostics while still lacking permission to become `δ_i^match` rows.
+- Preserve the difference between a future matching target and a derived matching correction in every theorem, audit, and README summary.
