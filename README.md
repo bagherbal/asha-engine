@@ -4850,3 +4850,57 @@ FAILED_ROUTE_EMPIRICAL_YUKAWA_SEAL_REMAINS_ACTIVE
 ```
 
 Thus the spectral-action path is reopened as a precise theorem obligation, not as a premature prediction. The next lawful step is a canonical finite `D_F` selector and non-vacuous order-one spectral-triple completion before any `a_0,a_2,a_4` coefficient or Higgs-to-gauge mass ratio can be promoted.
+
+## Gate 269 — Canonical Finite Dirac Selector / Order-One Spectral Triple Completion Audit
+
+Gate 269 adds `pkg/bridge/canonicalfinitediracselector` and registers `CanonicalFiniteDiracSelectorOrderOneSpectralTripleCompletionAuditTheorem`.
+
+After Gate 268 showed that raw `Tr(D_F²)/Tr(D_F⁴)` ratios depend on the unselected singular spectrum of `M`, Gate 269 applies the Noncommutative Geometry order-one condition:
+
+```text
+[[D_F, ρ(a)], Jρ(b*)J^{-1}] = 0     for all a,b ∈ A_F
+A_F = C ⊕ M3(C)
+```
+
+The gate finds a genuine but limited selector. At the currently available mode-level `1⊕3` preflight, the order-one equation reduces a generic `4×4` complex block
+
+```text
+M = [[x,r],[c,D]]
+```
+
+to the block-commutant family
+
+```text
+M_order1(x,y)=diag(x,y,y,y).
+```
+
+This eliminates temporal-spatial leakage and internal color anisotropy, reducing the block from `16` complex parameters to `2` complex parameters. However, this is not yet a physical finite Dirac operator because the engine still lacks a faithful representation on the full doubled `S_C` carrier, a physical opposite action through `J`, and a non-vacuous one-form calculus.
+
+The surviving family still has unselected amplitudes. Gate 269 recomputes raw moments:
+
+```text
+(x,y)=(1,1): Tr(D_F²)=8,  Tr(D_F⁴)=8,  ratio=1
+(x,y)=(2,1): Tr(D_F²)=14, Tr(D_F⁴)=38, ratio≈0.368421052632
+(x,y)=(1,2): Tr(D_F²)=26, Tr(D_F⁴)=98, ratio≈0.265306122449
+```
+
+Thus even order-one-allowed representatives do not yield an invariant Higgs ratio.
+
+Gate 269 logs:
+
+```text
+CONDITIONAL_SUPPORT_GATE268_SPECTRAL_ACTION_REATTEMPT_INHERITED
+CONDITIONAL_SUPPORT_ORDER_ONE_CONDITION_FORMALLY_DEFINED
+CONDITIONAL_SUPPORT_MODE_LEVEL_C_PLUS_M3C_ORDER_ONE_PREFLIGHT
+CONDITIONAL_SUPPORT_ORDER_ONE_SIEVE_REDUCES_GENERIC_M
+CONDITIONAL_SUPPORT_ORDER_ONE_ALLOWED_MOMENTS_REEVALUATED
+FAILED_ROUTE_FAITHFUL_TOTAL_SC_ALGEBRA_REPRESENTATION_MISSING
+FAILED_ROUTE_PHYSICAL_OPPOSITE_ALGEBRA_ACTION_MISSING
+FAILED_ROUTE_NON_VACUOUS_ORDER_ONE_CALCULUS_NOT_DERIVED
+FAILED_ROUTE_ORDER_ONE_DOES_NOT_SELECT_UNIQUE_CANONICAL_DF
+FAILED_ROUTE_ORDER_ONE_ALLOWED_TRACE_RATIO_STILL_AMPLITUDE_DEPENDENT
+FAILED_ROUTE_HIGGS_RATIO_STILL_NOT_DERIVED
+FAILED_ROUTE_EMPIRICAL_YUKAWA_SEAL_REMAINS_ACTIVE
+```
+
+The next lawful target is a faithful opposite-action representation and non-vacuous one-form calculus on doubled `S_C`.

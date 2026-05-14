@@ -4846,3 +4846,26 @@ The recommended continuation is:
 ```text
 Gate 269 — Canonical Finite Dirac Selector / Order-One Spectral Triple Completion Audit
 ```
+
+## Gate 269 — Order-One Finite Dirac Selector
+
+Gate 269 tests whether the NCG order-one condition can select the finite Dirac block after Gate 268 exposed spectral-moment degeneracy.
+
+The result is a two-layer verdict:
+
+- **mode-level progress:** the available `C ⊕ M3(C)` preflight reduces a generic `4×4` block to `M=diag(x,yI3)`, eliminating temporal/spatial leakage and color anisotropy;
+- **spectral-triple obstruction:** this is still not a faithful doubled-`S_C` representation with physical `J`, opposite algebra, or non-vacuous one-forms.
+
+The order-one sieve therefore narrows the Dirac family but does not select a canonical operator. Raw moment ratios remain amplitude-dependent across allowed representatives, so `a₂/a₄`, the Higgs ratio, and any mass-sector prediction remain blocked.
+
+Architecturally, Gate 269 refines the dynamics phase:
+
+```text
+formal D_F family
+  → order-one mode sieve
+  → M=diag(x,yI3)
+  → amplitude degeneracy remains
+  → faithful opposite-action / one-form calculus required
+```
+
+The gate preserves all empirical and spectral firewalls: no observed masses, no VEV, no cutoff scale, no imported Connes algebra, and no Higgs prediction are inserted.

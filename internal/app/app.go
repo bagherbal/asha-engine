@@ -25,6 +25,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokenmetric"
 	"github.com/bagherbal/asha-engine/pkg/bridge/canonicalaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/canonicalboundary"
+	"github.com/bagherbal/asha-engine/pkg/bridge/canonicalfinitediracselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/carrieractivationseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/carrierintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
@@ -548,6 +549,7 @@ func Run() error {
 		empiricalflavorledger.FullEmpiricalFlavorLedgerLeptonPMNSSectorFirewallExtensionAuditTheorem(),
 		fullflavorledgerclosure.FullFlavorLedgerClosureQuarkLeptonEmpiricalFirewallSummaryAuditTheorem(),
 		finitespectralactionreattempt.FiniteSpectralActionReAttemptSeeleyDeWittCoefficientAuditTheorem(),
+		canonicalfinitediracselector.CanonicalFiniteDiracSelectorOrderOneSpectralTripleCompletionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
