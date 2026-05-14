@@ -176,6 +176,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgspassarinoveltmankernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgspolemasseselfenergy"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgspolemassprecision"
+	"github.com/bagherbal/asha-engine/pkg/bridge/higgsprecisionroutesieve"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsquarticratioverification"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hilbertspacetracecapacity"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hopfgeometricnormalization"
@@ -684,6 +685,7 @@ func Run() error {
 		higgspassarinoveltmankernel.HiggsPassarinoVeltmanPoleKernelFiniteIntegralInstallationAuditTheorem(),
 		higgsexactprecisionkernel.ExactNativeHiggsPredictionArbitraryPrecisionNumericalKernelAuditTheorem(),
 		higgsinverseshapeprecision.ExactInverseHiggsShapeDeviationPrecisionAuditTheorem(),
+		higgsprecisionroutesieve.HiggsPrecisionRepairRouteSievePoleCorrectionVsContactShapeAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
