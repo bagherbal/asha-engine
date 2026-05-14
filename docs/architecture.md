@@ -767,3 +767,52 @@ L = ln(M*/μ)
 ```
 
 The next true gate should test automorphism/naturality: whether any contact-to-Fano assignment is invariant under the finite symmetry data or whether all assignments are convention-dependent.
+
+## Gate 117 — Contact-Fano Naturality Obstruction / Automorphism-Invariance Theorem
+
+Gate 117 adds `pkg/bridge/contactnaturality`. It takes the exact Fano/contact incidence resonance from Gate 116 and asks whether symmetry itself selects a contact-to-Fano assignment.
+
+The gate computes the Fano automorphism group directly from the seven incidence lines:
+
+```text
+|Aut(Fano)| = 168
+identity elements = 1
+non-identity elements = 167
+point orbit sizes = [7]
+line orbit sizes  = [7]
+global fixed Fano points = 0
+global fixed Fano lines  = 0
+```
+
+So the finite symmetry is real, but it is transitive rather than selector-like. It preserves the entire Fano plane; it does not distinguish one point, line, chart, or contact row.
+
+Therefore the missing object is now sharper:
+
+```text
+contact-side Aut(Fano)/G2 action = not derived
+naturality/equivariance square   = not derived
+canonical contact-to-Fano map    = not derived
+canonical assignment count       = 0
+compatible assignments           = 7! = 5040
+```
+
+A spectral ordering of the seven contact modes would label them, but that would break the Fano symmetry by convention. It is not an automorphism-invariant finite selector.
+
+The beta firewall remains closed:
+
+```text
+representation-complete contact rows = 0 / 7
+contact beta rows allowed            = 0
+contact zero rows proved             = 0
+threshold-corrected Δb_i             = not derived
+```
+
+The residual physical-flow nullity remains unchanged:
+
+```text
+u = 1/g_*²
+L = ln(M*/μ)
+Δb_i(L)
+```
+
+The next honest gate should search for a finite symmetry-breaking selector or stabilizer-reduction mechanism. Without such a selector, the contact-Fano resonance is structural but not yet a physical threshold representation.

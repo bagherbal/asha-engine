@@ -29,6 +29,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactembedding"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactfieldmap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactincidence"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactnaturality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactpropagator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentcontact"
@@ -244,6 +245,7 @@ func Run() error {
 		contactcohomology.FiniteContactConstraintDifferentialCohomologyObstructionTheorem(),
 		contactbundle.ContactLocalBundleObstructionRepresentationRowConstructionTheorem(),
 		contactincidence.ContactIncidenceFiberFunctorSearchTheorem(),
+		contactnaturality.ContactFanoNaturalityAutomorphismObstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
