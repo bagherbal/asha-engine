@@ -5576,3 +5576,47 @@ FAILED_ROUTE_CUTOFF_FUNCTION_EQUALS_CONTACT_SPECTRUM_NOT_DERIVED_AS_HEAT_KERNEL_
 FAILED_ROUTE_A0_IDENTITY_TRACE_NORMALIZATION_STILL_PROXY_LEVEL
 FAILED_ROUTE_HIGGS_MASS_RATIO_STILL_NOT_DERIVED
 ```
+
+## Gate 289 — Chiral/J-Structure Anomaly Sieve
+
+Gate 289 audits whether asymmetric traces can break the two-branch ambiguity left by Gate 288.
+
+The reduced odd-Dirac ledger has
+
+```text
+γ = +1 on L, -1 on R,
+D_F = [[0,M],[M†,0]],
+D_F² = diag(MM†,M†M).
+```
+
+Therefore paired left/right singular values cancel in chirally weighted even traces:
+
+```text
+Tr(γD_F²)=0,
+Tr(γD_F⁴)=0.
+```
+
+This holds for both surviving branches, so `γ` alone is branch-blind.
+
+Sector-projected traces do distinguish the branches:
+
+```text
+r_+ : Tr(P_C D_F²)≈0.9680658203, Tr(P_Q D_F²)≈4.7787711405
+r_- : Tr(P_C D_F²)≈1.9053526601, Tr(P_Q D_F²)≈3.8414843006
+```
+
+but this is only a diagnostic. No native selection functional says which lepton/quark distribution is physical. The physical real structure `J`, completed chiral/hypercharge representation, and anomaly polynomial remain underived.
+
+Statuses:
+
+```text
+CONDITIONAL_SUPPORT_CHIRAL_TRACES_COMPUTED
+CONDITIONAL_SUPPORT_SECTOR_PROJECTED_BRANCH_SENSITIVITY_EXPOSED
+FAILED_ROUTE_PHYSICAL_J_NOT_DERIVED
+FAILED_ROUTE_FULL_CHIRAL_HYPERCHARGE_REPRESENTATION_MISSING
+FAILED_ROUTE_GAMMA_TRACES_BRANCH_BLIND
+FAILED_ROUTE_SECTOR_PROJECTED_TRACES_LACK_SELECTION_PRINCIPLE
+FAILED_ROUTE_ANOMALY_CONDITIONS_DO_NOT_DEPEND_ON_R_BRANCH
+FAILED_ROUTE_BRANCH_NOT_SELECTED_BY_CHIRAL_ASYMMETRY
+FAILED_ROUTE_HIGGS_MASS_RATIO_STILL_NOT_DERIVED
+```

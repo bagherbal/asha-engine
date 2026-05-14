@@ -5208,3 +5208,29 @@ Tr(D_F⁴)≈8.549369303330813.
 ```
 
 Thus the contact cutoff selects total spectral moment size but remains blind to the distribution between lepton and quark edge amplitudes. Architecturally this gate lowers the ambiguity from free cutoff moments to a two-branch amplitude redistribution, but the heat-kernel normalization, physical `a0`, physical `J`, chiral/hypercharge representation, and dimensionless Higgs observable remain missing.
+
+## Gate 289 — Asymmetric Trace Boundary
+
+Gate 289 tests the first branch-sensitive route after the global trace masking of Gate 288.
+
+The audit separates three trace classes:
+
+1. **Global traces** — already shown in Gate 288 to be branch-blind after the absolute scale `X` adjusts.
+2. **Chiral traces** — also branch-blind in the reduced odd-Dirac proxy, because `Tr(γD_F²n)` cancels paired left/right singular values.
+3. **Sector-projected traces** — branch-sensitive, but not branch-selecting without a derived physical functional.
+
+The key result is:
+
+```text
+Tr(γD_F²)=Tr(γD_F⁴)=0 on both r branches.
+```
+
+while
+
+```text
+Tr(P_C D_F²), Tr(P_Q D_F²)
+```
+
+see the internal redistribution between lepton and quark edge amplitudes.
+
+This means the remaining branch selector cannot be ordinary `γ` alone. It requires the completed physical finite Hilbert representation: anti-linear real structure `J`, chiral/hypercharge assignments, and a branch-sensitive invariant or anomaly functional. Until then the Higgs ratio remains firewalled.

@@ -31,6 +31,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/carrierintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/characteristicpullback"
+	"github.com/bagherbal/asha-engine/pkg/bridge/chiraljanomalysieve"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiralweakselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/cliffordcontactcommutant"
@@ -588,6 +589,7 @@ func Run() error {
 		finitencginstantonaction.FiniteSpectralActionSaddlePointBGapInstantonActionAuditTheorem(),
 		topologicalactionvariationalprinciple.TopologicalActionVariationalPrincipleBoundarySelectorAuditTheorem(),
 		contactspectralcutoff.ContactSpectralCutoffIdentificationSTopBranchSelectorAuditTheorem(),
+		chiraljanomalysieve.ChiralJStructureAnomalySieveAsymmetricTraceAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
