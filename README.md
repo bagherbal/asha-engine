@@ -12,6 +12,23 @@ The engine is intentionally theorem-gated:
 No observed physical constants are hard-coded in the finite core.
 
 
+## Phenomenology package — empirical-seal observable layer
+
+The final bridge ledger remains geometrically sealed in `pkg/bridge`.  Hard cosmological observables are intentionally computed in a separate package:
+
+```text
+pkg/phenomenology
+```
+
+This package imports the ASHA law-space and injects a declared empirical quarantine state: top mass, Higgs mass, strong coupling, Z mass, dark-matter target density, and a dark-energy target scale.  It then computes conditional consequences rather than ASHA-native derivations:
+
+- a one-loop vacuum-fate RG audit with the ASHA B-gap threshold jump;
+- the B-gap Majorana relic-yield constraint and thermal-overclosure check;
+- the cosmological-constant counterterm severity.
+
+The current output is summarized in `phenomenology_predictions_audit.md`.
+
+
 ## Bottom line up front — final architecture finding
 
 The ASHA Engine is now formally sealed as a **finite-geometry Standard Model + gravity architecture ledger with an explicit environmental boundary**. The finite internal geometry `F` is not forced to become spacetime; it joins an external four-dimensional spin manifold `M` through the almost-commutative product
