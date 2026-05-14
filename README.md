@@ -349,3 +349,8 @@ The gate explicitly rejects threshold-corrected beta coefficients until a physic
 ## v0.58 — Gate 59: Current Action on Scalar LR Projector
 
 Adds `pkg/bridge/currentprojection`, which lifts the finite `u(4)`-shaped current inventory to the left×scalar domain and right-singlet image of the scalar LR projector. The gate computes finite representation-overlap diagnostics for central, color, B−L, and leptoquark current sectors while keeping Fierz signs, current kinetic normalization, propagator rules, and up/down splitting explicitly open.
+
+
+## v0.62 — Gate 63: Finite Exchange Action / Propagator Normalization Search
+
+Adds `pkg/bridge/exchangeaction`, which audits whether the signed Fierz result and conditional exchange kernel can be promoted to a derived finite NJL kernel. The gate computes unit, inverse-kinetic, and kinetic-weighted exchange diagnostics, but keeps the exchange action sign, propagator denominators, relative current couplings, up/down splitting, and NJL criticality open.

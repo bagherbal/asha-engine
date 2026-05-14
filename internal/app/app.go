@@ -11,6 +11,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
+	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fieldmap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierz"
@@ -136,6 +137,7 @@ func Run() error {
 		kineticnorm.GeneratorKineticNormalizationTheorem(),
 		fierzsign.CliffordLorentzFierzSignTheorem(),
 		exchangekernel.PropagatorExchangeKernelAuditTheorem(),
+		exchangeaction.FiniteExchangeActionPropagatorSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
