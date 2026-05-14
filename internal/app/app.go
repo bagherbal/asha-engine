@@ -153,6 +153,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugekineticdiag"
 	"github.com/bagherbal/asha-engine/pkg/bridge/geometricmeanresonance"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
+	"github.com/bagherbal/asha-engine/pkg/bridge/heatkerneldynamicspreflight"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hopfgeometricnormalization"
@@ -608,6 +609,7 @@ func Run() error {
 		hyperchargediracassembly.HyperchargeLedgerSieveCanonicalFiniteDiracAssemblyAuditTheorem(),
 		fullphysicalfirstorder.FullPhysicalFirstOrderVerificationFiniteSpectralTripleCompletionAuditTheorem(),
 		innerfluctuationfieldcontent.InnerFluctuationGaugeHiggsFieldContentAuditTheorem(),
+		heatkerneldynamicspreflight.SeeleyDeWittHeatKernelFormalizationSpectralActionDynamicsPreflightTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
