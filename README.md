@@ -5741,3 +5741,38 @@ FAILED_ROUTE_INTERNAL_THERMAL_TIME_ORIGIN_NOT_DERIVED
 FAILED_ROUTE_TAU_ETA_HAMILTONIAN_STILL_NOT_SELECTED
 FAILED_ROUTE_VACUUM_PARAMETER_CENSUS_NOT_REDUCED
 ```
+
+## v3.67 — Gate 369: Eta-Graded Left-Right Trace / Noncentral Hamiltonian Extraction Sieve
+
+Gate 369 executes the exact target isolated by Gate 368:
+
+```text
+Pi_gen Tr_support^eta(C_LR) = a I_3 + b tau_eta, b != 0
+```
+
+The new package `pkg/bridge/etagradedlrtrace` separates two objects that must not be conflated:
+
+1. a native eta grading on the heavy/Majorana Left-Right support; and
+2. a generation-dependent `tau_eta=(2,-2,1)` insertion.
+
+The native support traces execute, but they remain uniform over generations. Their projected Hamiltonians are zero or proportional to `I_3`, so the decomposition has `b=0`. Coupling by the already-derived `B_gap` rescales the central operator but does not create flavor asymmetry.
+
+The generation-eta lane reproduces `B_gap · tau_eta` and has noncentral KMS capacity, but it is explicitly marked circular because the generation grading is assumed rather than extracted from the support trace. Therefore Gate 369 logs the route as a strict failed extraction, not a thermal-time success.
+
+Main statuses:
+
+```text
+CONDITIONAL_SUPPORT_ETA_GRADING_OPERATOR_FORMALIZED
+CONDITIONAL_SUPPORT_ETA_GRADED_TRACE_EXECUTED
+CONDITIONAL_SUPPORT_THERMAL_TIME_ACTIVATION_SIEVE_EXECUTED
+CONDITIONAL_TENSION_NATIVE_SUPPORT_ETA_TRACE_IS_GENERATION_CENTRAL
+CONDITIONAL_TENSION_GENERATION_ETA_INSERTION_WOULD_BE_CIRCULAR
+CONDITIONAL_TENSION_TAU_ETA_NOT_EXTRACTED_FROM_NATIVE_SUPPORT_TRACE
+FAILED_ROUTE_ETA_GRADED_TRACE_REMAINS_GENERATION_CENTRAL
+FAILED_ROUTE_TARGET_A_I_PLUS_B_TAU_ETA_NOT_REACHED_WITH_B_NONZERO
+FAILED_ROUTE_INTERNAL_THERMAL_TIME_ORIGIN_NOT_DERIVED
+FAILED_ROUTE_TAU_ETA_HAMILTONIAN_STILL_NOT_SELECTED
+FAILED_ROUTE_VACUUM_PARAMETER_CENSUS_NOT_REDUCED
+```
+
+Gate 369 preserves all ASHA firewalls: no CKM, PMNS, observed Yukawa, observed masses, or final vacuum point are imported. The 15 vacuum coordinates remain unreduced. The next lawful theorem must either derive a representation map from support eta defects to generation-dependent weights, or prove that every admissible eta-graded Left-Right contraction factors through `I_3`.

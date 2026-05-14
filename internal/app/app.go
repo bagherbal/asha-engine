@@ -124,6 +124,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalfulltexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalquarantineseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalyukawafit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/etagradedlrtrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewcartanledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewcurvature"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
@@ -748,6 +749,7 @@ func Run() error {
 		modularhamiltonianorigin.ModularHamiltonianOriginTrialityEnergyConstraintDerivationAuditTheorem(),
 		lorentziantimepullback.LorentzianTimePullbackE0ModularKernelSieveTheorem(),
 		bimodulemodularcurvature.BimoduleModularCurvatureInternalThermalTimeOriginSieveTheorem(),
+		etagradedlrtrace.EtaGradedLeftRightTraceNoncentralHamiltonianExtractionSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
