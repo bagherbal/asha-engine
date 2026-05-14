@@ -3696,3 +3696,55 @@ Gate 230 sits after the geometric-mean and Hopf-normalization resonance gates. I
 - **Not derived:** the finite core does not yet provide the octonionic/G₂ instanton equation, Hopf-fiber localization functional, or hidden B-sector order parameter needed to promote the resonance into a physical intermediate-breaking theorem.
 
 The gate preserves the Pati-Salam and leptoquark firewalls, does not promote the B-gap into a physical field, and keeps the `IntermediateBreakingSeal` ungranted.
+
+## Gate 231 — IntermediateBreakingSeal and neutrino seesaw preflight
+
+Gate 231 adds `pkg/bridge/intermediatebreakingseesaw` after the Gate-230 finite instanton obstruction.
+
+Architecturally, this is the first gate that deliberately activates the `IntermediateBreakingSeal`. The activation is not a finite theorem. It is a phenomenological boundary condition used to test whether the hidden intermediate scale can support further observed structures.
+
+The inherited scale is
+
+```text
+M_int = 6.650726476871e11 GeV
+```
+
+and Gate 231 tests the Type-I seesaw scale relation
+
+```text
+m_ν ≈ y_ν² v² / M_R.
+```
+
+With the electroweak VEV seal `v = 246.22 GeV` and `M_R = M_int`, the order-one Yukawa result is
+
+```text
+m_ν(y_ν=1) ≈ 91.13 eV.
+```
+
+This fails the desired `0.01–0.1 eV` active-neutrino window and is much larger than the cosmological mass-sum stress bound. Therefore `M_int` alone does not explain neutrino masses with order-one Dirac Yukawa coupling.
+
+The same scale can become phenomenologically viable if the empirical neutrino Dirac Yukawa is small:
+
+```text
+y_ν ≈ 0.0234 for m_ν ≈ 0.05 eV.
+```
+
+This is recorded only as conditional support under the existing Yukawa-amplitude firewall. The finite engine still lacks:
+
+```text
+right-handed neutrino field theorem
+Majorana mass matrix
+Dirac neutrino Yukawa texture
+three-generation rank theorem
+mass ordering
+PMNS mixing angles
+```
+
+The architectural status after Gate 231 is:
+
+```text
+IntermediateBreakingSeal: active phenomenological boundary
+order-one seesaw: failed
+small-Yukawa seesaw: conditionally plausible
+finite neutrino matrix: not derived
+```

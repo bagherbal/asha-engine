@@ -3166,3 +3166,59 @@ The coefficient is not fitted, and the near-resonance is structurally meaningful
 ### Gate 230 — Octonionic Instanton / finite Hopf-action map audit
 
 Gate 230 inherits the Gate-229 Hopf/B-gap hierarchy resonance but tests the missing mechanics. It audits whether the finite `Cℓ(1,7)`/G₂/contact core derives an octonionic or G₂ instanton equation, a Hopf-fiber action-localization map, and a hidden B-sector order parameter. The result is a strict obstruction: the resonance is real and conditional, but the finite engine still lacks a principal bundle, connection, curvature two-form, self-duality projector, finite Yang-Mills action, nontrivial instanton solution, and hidden VEV. The `IntermediateBreakingSeal` remains prepared but ungranted.
+
+## v2.29 — Gate 231: IntermediateBreakingSeal activation and neutrino Type-I seesaw preflight
+
+Gate 231 introduces `pkg/bridge/intermediatebreakingseesaw`. It activates the `IntermediateBreakingSeal` explicitly as a phenomenological boundary condition after Gate 230 proved that the finite core still lacks a Hopf instanton, Hopf-action localization map, and hidden order parameter.
+
+The seal assigns the intermediate scale
+
+```text
+M_int = 6.650726476871e11 GeV
+```
+
+as a possible right-handed neutrino Majorana threshold for a Type-I seesaw preflight:
+
+```text
+m_ν ≈ y_ν² v² / M_R.
+```
+
+Using the electroweak VEV seal
+
+```text
+v = 246.22 GeV
+M_R = M_int
+```
+
+Gate 231 obtains
+
+```text
+m_ν(y_ν = 1) = 91.132 eV
+```
+
+not `0.09 eV`. This is far above the atmospheric scale and the cosmological sum-of-masses stress bound. Therefore the order-one seesaw resonance fails.
+
+A viable atmospheric-scale estimate
+
+```text
+m_ν ≈ 0.05 eV
+```
+
+requires
+
+```text
+y_ν ≈ 0.02342
+m_D ≈ 5.77 GeV
+```
+
+which is plausible only behind the already existing empirical Yukawa-amplitude firewall. Gate 231 does not derive a right-handed neutrino field, Majorana mass matrix, Dirac neutrino Yukawa texture, mass ordering, or PMNS mixing angles.
+
+Result:
+
+```text
+INTERMEDIATE_BREAKING_SEAL_ACTIVATED_PHENOMENOLOGICALLY
+FAILED_ROUTE_ORDER_ONE_TYPE_I_SEESAW_RESONANCE
+CONDITIONAL_SUPPORT_TYPE_I_SEESAW_WITH_EMPIRICAL_YUKAWA_AMPLITUDE_SEAL
+FAILED_ROUTE_FINITE_NEUTRINO_MASS_MATRIX_DERIVATION
+FINITE_INTERMEDIATE_DYNAMICS_STILL_NOT_DERIVED
+```

@@ -181,3 +181,12 @@
 
 
 - For resonance-to-mechanism gates, split the audit into three layers: inherited numerical/geometric resonance, required dynamic machinery, and seal status. Do not grant a seal merely because the resonance is tight; require an explicit operator, action, field equation, or order parameter.
+
+## Gate 231 method note — check units before celebrating seesaw resonances
+
+- When testing a seesaw scale, compute units explicitly: `v²/M_R` is in GeV and must be multiplied by `1e9` to obtain eV.
+- Do not assume an intermediate scale near `10¹² GeV` gives `0.05 eV` neutrinos for order-one Yukawa. With `v≈246 GeV`, it gives tens to hundreds of eV unless the Dirac Yukawa is small.
+- Keep three ledgers separate: Majorana scale, Dirac Yukawa amplitude, and full flavor/mixing matrix. A good scale relation does not derive PMNS data.
+- Activating a seal can permit phenomenological testing, but it does not retroactively derive the instanton, order parameter, or field content that previous gates obstructed.
+- If a target mass can be recovered only by choosing a Yukawa value, report the required Yukawa as a sealed conditional parameter, not as a finite prediction.
+- Use neutrino mass observations as comparison bounds, not as inputs to tune the finite core.
