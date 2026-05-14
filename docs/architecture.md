@@ -956,3 +956,18 @@ contact beta rows allowed        = 0
 ```
 
 The next gate should search for a canonical kernel or quotient relation on the `u(4)` current carrier before any seven-row contact projection can be trusted.
+
+### Gate 127 — u(4) projection kernel / canonical quotient relation search
+
+Gate 127 searches one layer beneath the `u(4) -> contact R^7` projection obstruction. A rank-seven projection from the sixteen-dimensional `u(4)` / Pati-Salam current carrier would require a nine-dimensional kernel. Generic nine-dimensional kernels exist, but they form a 63-parameter Grassmannian family, so existence is not selection.
+
+Two sector-natural nine-dimensional kernels can be named:
+
+```text
+kernel = color su(3) + B-L        -> quotient = central + leptoquark
+kernel = central + color su(3)    -> quotient = B-L + leptoquark
+```
+
+Both quotients have dimension seven, but both are current-side Pati-Salam sector quotients, not contact-row semantics. Their coexistence proves ambiguity rather than resolving it. No finite action, source functional, equivalence relation, representation row, contact-semantic kernel, or symmetry criterion selects one. Therefore the contact beta firewall remains closed: representation-complete contact rows are still `0 / 7`, contact beta rows allowed remain `0`, and no contact zero-row cancellation is proved.
+
+The next gate should search for a current-side sector quotient semantics or contact-row equivalence relation strong enough to relate the current carrier to the seven contact rows without inserting observed physics.

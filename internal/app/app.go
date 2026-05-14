@@ -39,6 +39,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactrowsemantics"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsymmetry"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactu4kernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactu4projection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentcontact"
@@ -264,6 +265,7 @@ func Run() error {
 		contactdualpairing.ContactSourceCurrentDualPairingNaturalityObstructionTheorem(),
 		contactdualcurrenttarget.ContactDualCurrentTargetEnlargementSevenRowCarrierSearchTheorem(),
 		contactu4projection.ContactSevenRowTargetProjectionU4QuotientObstructionTheorem(),
+		contactu4kernel.U4ProjectionKernelCanonicalQuotientRelationSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
