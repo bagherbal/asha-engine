@@ -378,3 +378,15 @@ on the one-generation `1 lepton + 3 color` flavor space for the sectors central,
 - leptoquark: off-diagonal lepton-color carrier.
 
 This resolves the operator-construction part of the current-sector problem, but it still does **not** derive propagator denominators, exchange signs, up/down splitting, NJL criticality, top condensation, the Higgs VEV, or fermion masses. The next task is to decide whether these sector Casimirs, or another finite kinetic/action operator, control current exchange.
+
+
+## v0.67 — Gate 68: Finite Exchange-Action Selection Principle
+
+Gate 68 exposes the action-selection problem for current exchange.  The engine now audits four finite candidate propagator rules:
+
+- direct Casimir kernel `K_A = C_A`
+- inverse nonzero Casimir kernel `K_A = C_A^+`
+- trace-normalized Casimir kernel `K_A = C_A / Tr(C_A)`
+- unit-sector rule `K_A = I`
+
+All are positive finite diagnostics, but none is promoted to a physical propagator.  Direct and inverse diagnostics disagree on the dominant sector, so the engine rejects choosing either by convenience.  The next missing object is a finite current-field Hessian / action second variation that selects the exchange kernel.
