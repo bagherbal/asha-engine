@@ -52,6 +52,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactnaturality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactorientation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactpropagator"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticcompression"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticgalois"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotientsemantics"
@@ -318,6 +319,7 @@ func Run() error {
 		contactidempotent.ExactContactEigenprojectorNumberFieldSpectralIdempotentConstructionAttemptTheorem(),
 		contactquarticgalois.QuarticContactNumberFieldBranchGaloisSymmetryObstructionTheorem(),
 		contactbranchsemantics.QuarticContactBranchSelectorGaloisInvariantRowSemanticsSearchTheorem(),
+		contactquarticcompression.QuarticOrbitSemanticCompressionFourRowBlockBetaFirewallTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

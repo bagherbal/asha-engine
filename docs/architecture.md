@@ -1386,3 +1386,7 @@ The gate deliberately refuses to split the quartic orbit into four individual ro
 The physics firewall remains closed: the Galois-invariant partition is spectral/algebraic data only. It does not derive contact `T3R`, `B−L`, hypercharge, representation rows, local fields, mass activation, decoupling, threshold beta corrections, physical electroweak constants, or masses.
 
 Next gate: Gate 154 — quartic orbit semantic compression / four-row block beta firewall theorem.
+
+### Gate 154 — Quartic orbit semantic compression / four-row block beta firewall
+
+Gate 154 compresses the exact quartic contact orbit from Gate 153 into a branch-free four-row spectral block. It records exact Q-symmetric invariants of the quartic factor (sum 71/30, mean 71/120, pair sum 119/60, triple sum 149/216, product 271/3240), but refuses to treat the block as a physical multiplet. Without gauge representation, local field variables, spin/statistics, mass activation, and decoupling, the quartic block contributes no threshold beta row and keeps physical constants sealed.
