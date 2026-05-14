@@ -1004,3 +1004,24 @@ threshold-corrected Δb_i(L)          = not derived
 ```
 
 The next gate should examine the six-row leptoquark block itself and decide whether its internal `S6` permutation ambiguity can be broken by native finite data without importing observed physics.
+
+### Gate 131 — contact leptoquark six-block symmetry / S6 permutation obstruction theorem
+
+Package: `pkg/bridge/contactlqblock`
+
+Gate 131 isolates the six-row half of the Gate 130 obstruction. Gate 130 showed that the current-side `1+6` quotient does not choose which of the seven contact rows should receive the singlet sector. Gate 131 asks a sharper conditional question: even if a singlet contact row were chosen by an external convention, does the finite system naturally assign the remaining six contact rows to the six leptoquark slots?
+
+The answer remains negative. The anonymous six-dimensional leptoquark block is canonical, but row-blind. A row-level assignment of the six leptoquark slots requires choosing one element of `S6`, giving `6! = 720` possible assignments after the singlet row is fixed. Since the singlet itself still has seven possible contact-row choices, each current quotient branch still carries `7 * 6! = 5040` hidden assignments; with two current branches, the total current-side assignment ambiguity is `10080`.
+
+Spectral ascending and descending orderings of the six remaining contact rows exist because the contact overlap values are distinct. These orderings are diagnostic contact-spectrum conventions, not current-derived representation maps. They supply no gauge representation row, no local variable map, no Lorentz kinetic row, no mass activation, and no decoupling rule. Fano-transported orderings still require a hidden contact-to-Fano assignment, and observed-constant selectors remain forbidden.
+
+Therefore the contact beta firewall remains closed:
+
+```text
+representation-complete contact rows = 0 / 7
+contact beta rows allowed            = 0
+contact zero rows proved             = 0
+threshold-corrected Δb_i(L)          = not derived
+```
+
+The next gate should test whether the six leptoquark slots can receive a representation tensor — for example color/doublet semantics — without relying on an arbitrary `S6` assignment.
