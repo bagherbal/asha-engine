@@ -160,6 +160,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1nonfactor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1orientation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1source"
+	"github.com/bagherbal/asha-engine/pkg/bridge/yukawaamplitudeseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawaamplitudesource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawashapeconstraint"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
@@ -402,6 +403,7 @@ func Run() error {
 		scalarfundamentalclass.FiniteFundamentalClassScalarBundleIntegrationFunctionalSearchAuditTheorem(),
 		scalaryukawasupport.TensorLiftedScalarFundamentalClassYukawaBilinearSupportTheorem(),
 		yukawaamplitudesource.FiniteYukawaTextureOperatorAmplitudeSourceObstructionTheorem(),
+		yukawaamplitudeseal.SpontaneousYukawaAmplitudeSealEmpiricalTextureAxiomFirewallTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
