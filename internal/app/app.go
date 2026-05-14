@@ -165,6 +165,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1nonfactor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1orientation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1source"
+	"github.com/bagherbal/asha-engine/pkg/bridge/universalbetasource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/universaltracedeformation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawaamplitudeseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawaamplitudesource"
@@ -416,6 +417,7 @@ func Run() error {
 		topologicalboundaryviability.TopologicalBoundaryViabilityBottomUpConvergenceComparisonTheorem(),
 		inversebsectordeformation.InverseBSectorDeformationThresholdPredictionAuditTheorem(),
 		universaltracedeformation.UniversalTraceDeformationTopologicalBoundaryOffsetAuditTheorem(),
+		universalbetasource.UniversalBetaSourceClassificationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

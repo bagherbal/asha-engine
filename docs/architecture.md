@@ -2705,3 +2705,26 @@ This identity is useful because it reclassifies the Gate-201 universal completio
 Result: no canonical source is found. The B-gap does not numerically match the required offsets and still lacks a trace-to-boundary theorem. Contact zeta/action scalars are exact and branch-free, but they still require a finite spectral triple, cutoff/test function, gauge kinetic map, and coefficient theorem before they can shift a boundary coupling. The near value `ζ(1)/7` is explicitly rejected as non-exact and non-canonical.
 
 Therefore Gate 202 is a `FAILED_ROUTE` under current axioms. It preserves all mass, beta-row, matching, and physical-unification firewalls and turns the next problem into a universal beta-source classification problem.
+
+### Gate 203 — Universal beta source classification / complete-multiplet versus regulator-trace audit
+
+Package: `pkg/bridge/universalbetasource`
+
+Gate 203 consumes the Gate-202 result that the universal beta row required by the Gate-201 conditional threshold shapes is not a simple B-sector/contact-zeta boundary-volume defect. It audits the two remaining standard interpretations of a universal one-loop beta contribution.
+
+First, it builds an exact rational complete-multiplet ledger in GUT normalization. Weyl `SU(5)` rows such as `5bar`, `10`, and `5bar+10`, vectorlike rows such as `5+5bar` and `16+16bar`, and scalar complete rows are all universal. However, no integer sum of these rational rows exactly equals the Gate-201 real universal rows:
+
+```text
+Dirac vectorlike quark doublet: c_univ = 7.65295391
+Weyl SU(2)L adjoint fermion:   c_univ = 10.1497543
+```
+
+The closest integer sums remain near-misses and are rejected.
+
+Second, Gate 203 audits whether the finite contact/Fock inventory itself supplies a new complete heavy multiplet. The seven contact partial-overlap modes remain spectral modes without charge, representation, Dynkin-index, local-field, mass-activation, decoupling, or beta-row semantics. The Fock `16` remains a kinematic one-generation scaffold and representation-trace certificate; it is not a derived additional heavy threshold generation.
+
+Third, the gate audits regulator/ghost/measure sources: `τ_η`, contact zeta traces, quartic BRST supertrace routes, top-down Fock representation traces, and spectral-action pre-data. None has the full chain required to act as a universal conformal anomaly beta row: complete spectral triple, cutoff function, BRST/ghost completion, gauge-measure map, and beta-row permission.
+
+Gate 203 is therefore a `FAILED_ROUTE`. It preserves the Gate-202 obstruction and prevents the engine from replacing a missing source theorem with complete-multiplet or regulator numerology.
+
+Next structural obligation: construct or seal a finite representation-row lattice/heavy-sector basis before trying to repair the universal beta completion again.

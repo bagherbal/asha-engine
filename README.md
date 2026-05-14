@@ -2061,3 +2061,22 @@ The gate then audits whether the existing finite B-sector spectral gap or the ex
 The closest audited scalar is `ζ(1)/7`, but it is neither exact for the required offsets nor canonical as a boundary defect. Gate 202 therefore records a strict `FAILED_ROUTE`: the universal beta completion can be reinterpreted as a boundary-offset variable, but its finite origin remains unknown.
 
 Next gate: Gate 203 — universal beta source classification / complete-multiplet versus regulator-trace audit.
+
+## v2.01 — Gate 203: Universal beta source classification / complete-multiplet versus regulator-trace audit
+
+Gate 203 adds `pkg/bridge/universalbetasource`.
+
+Gate 202 proved that the Gate-201 universal beta row can be rewritten as a common boundary offset, but that the B-sector gap and contact zeta traces do not canonically derive that offset. Gate 203 classifies the remaining standard sources of a universal row:
+
+1. complete unified heavy multiplets, which supply exact rational universal one-loop beta rows in GUT normalization;
+2. regulator/ghost/spectral-measure traces, which would act as universal conformal anomalies.
+
+The complete-multiplet audit checks exact rows such as `1/3`, `1`, `4/3`, `2/3`, `8/3`, `1/6`, and `1/2`. None is an exact integer-sum source for the Gate-201 required real rows `7.65295391` and `10.1497543`. Near-misses are explicitly rejected.
+
+The finite inventory audit also refuses to promote the seven contact partial-overlap modes, the quartic contact block, or the kinematic Fock `16` into new heavy threshold multiplets without charge, Dynkin-index, local-field, mass-activation, and decoupling semantics.
+
+The regulator audit rejects `τ_η`, contact zeta traces, quartic BRST routes, and spectral-action pre-data as universal beta sources until a complete spectral triple, cutoff function, BRST/ghost completion, gauge-measure map, and beta-row permission theorem exist.
+
+Therefore Gate 203 records a strict `FAILED_ROUTE`: the universal beta completion remains external phenomenological data under current axioms.
+
+Next gate: Gate 204 — representation-row lattice completion / finite heavy-sector basis search.

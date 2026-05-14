@@ -14,3 +14,4 @@
 - If a command times out, narrow scope rather than retrying blindly: identify package boundaries, warm the build cache, reduce verbose output, or replace deep imports with audited snapshots when scientifically legitimate.
 - Before packaging, clean generated binaries and transient artifacts with a root-level artifact check, especially `*.test`, logs, temporary folders, and accidental build outputs.
 - End every gate with a registry audit that separates theorem status into permanent, sealed/no-go, conditional, empirical/quarantined, and next-gate obligations.
+- For inverse/phenomenology gates, classify source mechanisms before fitting numbers: exact row lattice, finite carrier permission, regulator/measure route, then firewall outcome.
