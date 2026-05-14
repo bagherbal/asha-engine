@@ -3938,3 +3938,45 @@ order-one calculus still blocked
 ```
 
 Gate 238 is therefore a useful no-go: it prevents identifying Fock parity with physical Standard Model chirality without a separate theorem.
+
+## Gate 239 — Orientation operator and true chirality derivation audit
+
+Gate 239 adds `pkg/bridge/orientationtruechirality` after the Gate-238 failure of the naive occupation-parity selector.
+
+Architecturally, it tests the next possible source of physical chirality: finite orientation. The audit separates two candidates:
+
+1. the Clifford-volume orientation on the complexified spinor `S_C=Λ*(W)`, and
+2. the scalar fundamental-class functional `τ_η`.
+
+The Clifford-volume candidate is available as a finite orientation grading on `S_C`, but in the current exterior/Fock realization it is proportional to occupation parity:
+
+```text
+χ_vol ∝ γ = (-1)^N
+```
+
+Thus it has the same eigenspaces as the Gate-238 grading. The weak-plane sieve remains unchanged: every candidate two-mode plane contains doublet and singlet sectors split `4+4` across the two `χ` eigenspaces.
+
+The scalar fundamental class contributes signed orientation data:
+
+```text
+τ_η = (2, -2, 1)
+```
+
+but remains a scalar-bundle trace functional. No canonical pullback to an endomorphism of the complexified Fock spinor is derived. Consequently, `τ_η` cannot yet act as the true chirality operator.
+
+The finite algebra frontier is now:
+
+```text
+complexified carrier available
+C⊕M₃(C) mode-commutant preflight available
+local pseudo-real doublet/H support available
+raw γ parity selector failed
+Clifford-volume χ is equivalent to γ
+τ_η orientation pullback missing
+canonical weak-plane selector missing
+physical chirality missing
+global H summand missing
+faithful finite algebra/order-one calculus still blocked
+```
+
+Gate 239 is therefore a second chirality no-go: finite orientation exists, but the current orientation endomorphism is not distinct enough to produce Standard Model left-handed weak action.

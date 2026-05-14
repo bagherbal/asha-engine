@@ -147,6 +147,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonuniversalrgfit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/normalizationthresholdaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/o3quotient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/orientationtruechirality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/pevobservabilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedconnection"
@@ -488,6 +489,7 @@ func Run() error {
 		nativefinitealgebra.NativeFiniteAlgebraContactPreservingSubalgebraSearchTheorem(),
 		su2spinorlift.SU2SpinorLiftQuaternionicClosureAuditTheorem(),
 		chiralweakselector.ChiralAlignmentWeakPlaneSelectorAuditTheorem(),
+		orientationtruechirality.OrientationOperatorTrueChiralityDerivationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

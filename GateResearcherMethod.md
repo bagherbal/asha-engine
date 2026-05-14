@@ -247,3 +247,12 @@
 - If a Lie action preserves a grading, it is not automatically chiral with respect to that grading. A chiral weak action must be isolated to the appropriate sector by a derived projection.
 - Temporal/spatial class distinctions are meaningful, but class-level reduction is not unique plane selection.
 - Preserve local quaternionic support from prior gates while logging failed global `H` derivation when the selector is missing.
+
+## Gate 239 method note — orientation data is not automatically physical chirality
+
+- When a grading fails to produce physical chirality, test whether orientation data gives a genuinely distinct operator; do not assume that volume-element language changes the eigenspaces.
+- In an exterior/Fock realization, the Clifford-volume candidate may be proportional to occupation parity. If so, rerunning the representation sieve must give the same no-go.
+- Treat scalar fundamental-class traces such as `τ_η` as functionals unless a pullback to an endomorphism of the relevant Hilbert carrier is explicitly derived.
+- Keep three objects separate: finite orientation grading, scalar-bundle integration functional, and Standard Model chirality. Passing the first two does not derive the third.
+- Never tune signs of `χ` or choose a weak plane manually to create a left-handed action. The selector must come from a derived operator, commutator, or faithful algebra representation.
+- If orientation improves the conceptual map but not the plane sieve, log it as conditional support plus a failed route for physical chirality.

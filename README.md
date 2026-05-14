@@ -3514,3 +3514,50 @@ FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
 ```
 
 Gate 238 preserves Gate 237's local quaternionic support but proves that occupation parity alone is not the Standard Model chirality theorem. The next finite-core target is a stronger selector/intertwiner, likely from contact-vacuum orientation, η-source structure, or opposite-algebra/order-one compatibility.
+
+## v2.37 — Gate 239: Orientation operator chi and true chirality derivation audit
+
+Gate 239 introduces `pkg/bridge/orientationtruechirality`. It tests whether a true chirality operator can be obtained from finite orientation data after Gate 238 proved that raw occupation parity is not Standard Model chirality.
+
+The first candidate is the Clifford-volume orientation acting on the complexified exterior spinor:
+
+```text
+S_C = Λ*(W),  dim_C(S_C)=16, dim_R(S_C)=32
+```
+
+In the current Fock realization, this candidate is proportional to occupation parity:
+
+```text
+χ_vol ∝ γ = (-1)^N
+```
+
+So it has the same `8⊕8` eigenspaces and cannot improve the weak-plane sieve. Re-running the six candidate two-mode planes gives the same result as Gate 238:
+
+```text
+for every U_ij:
+  doublet sector = 4 χ+ + 4 χ-
+  singlet sector = 4 χ+ + 4 χ-
+```
+
+The second candidate is the scalar fundamental class `τ_η`, with inherited signed degrees:
+
+```text
+τ_η = (2, -2, 1)
+-τ_η = (-2, 2, -1)
+```
+
+This is meaningful orientation-trace data, but the project has not derived a canonical pullback from the scalar bundle to an endomorphism of `S_C`. Gate 239 therefore refuses to promote `τ_η` into physical chirality.
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_CLIFFORD_VOLUME_ORIENTATION_PREFLIGHT
+CONDITIONAL_SUPPORT_TAU_ETA_ORIENTATION_FUNCTIONAL_INHERITED
+FAILED_ROUTE_DISTINCT_ORIENTATION_CHI_DERIVATION
+FAILED_ROUTE_TAU_ETA_TO_SC_OPERATOR_PULLBACK
+FAILED_ROUTE_TRUE_CHIRALITY_PLANE_SELECTION
+FAILED_ROUTE_LEFT_HANDED_WEAK_ACTION_DERIVATION
+FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
+```
+
+Gate 239 preserves Gate 237's local quaternionic support but proves that the currently available orientation data still does not select physical chirality or a unique weak plane. The next finite-core task is to derive a nontrivial orientation pullback, contact-vacuum intertwiner, or faithful finite algebra/order-one calculus that distinguishes physical chirality from Fock parity.
