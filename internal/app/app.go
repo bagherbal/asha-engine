@@ -46,6 +46,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqsu2"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqt3r"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqtensor"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactmatrixcert"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactnaturality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactorientation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactpropagator"
@@ -308,6 +309,7 @@ func Run() error {
 		contactchargelattice.ContactChargeLatticeEmbeddingRationalSpectrumObstructionTheorem(),
 		contactalgebraic.ContactIrrationalSpectrumAlgebraicOriginMinimalPolynomialObstructionTheorem(),
 		contactcharpoly.ExactContactOverlapCharacteristicPolynomialSymbolicNumberFieldAttemptTheorem(),
+		contactmatrixcert.ExactRationalContactOverlapMatrixLiftDeterminantCertificateSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

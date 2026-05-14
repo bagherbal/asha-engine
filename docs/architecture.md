@@ -1244,3 +1244,51 @@ This is a real symbolic advance, but not yet an exact finite proof. The project 
 Therefore contact `T3R`, `B−L`, hypercharge, local field variables, mass activation, decoupling, threshold beta rows, physical electroweak constants, and masses remain sealed.
 
 Next: Gate 149 — exact rational contact-overlap matrix lift / determinant certificate search.
+
+## Gate 149 — Exact Rational Contact-Overlap Matrix Lift / Determinant Certificate Search
+
+Package: `pkg/bridge/contactmatrixcert`
+
+Gate 149 upgrades the Gate 148 characteristic-polynomial candidate into an exact rational matrix certificate.
+
+The contact overlap matrix is lifted without the numerical eigensolver:
+
+```text
+Ω_exact = Q_G^T P_B Q_G
+        = 1/4 · (M^T R)^T · (M^T M)^-1 · (M^T R)
+```
+
+where `M` is the Boolean Λ³→Λ⁴ incidence matrix and `R` is the integer G₂ calibration-column matrix with `R^T R = 4I`.
+
+The Boolean Gram inverse is verified by the closed rational rule:
+
+```text
+|A∩B| = 3  ->   77/240
+|A∩B| = 2  ->  -29/720
+|A∩B| = 1  ->   11/720
+|A∩B| = 0  ->   -1/80
+```
+
+The exact rational matrix has denominator set:
+
+```text
+{1, 5, 6, 10, 12, 20, 30, 60}
+```
+
+Exact Faddeev-LeVerrier arithmetic gives:
+
+```text
+χ_Ω(x) = (x - 1)^7 (2x - 1)(3x - 2)(3x - 1)
+         (3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271) / 58320
+```
+
+with:
+
+```text
+trace(Ω) = 163/15
+ det(Ω) = 271/29160
+ rank(Ω-I) = 7
+ dim ker(Ω-I) = 7
+```
+
+This certifies the Gate 148 determinant/characteristic-polynomial candidate exactly. It still does not provide root isolation, row-wise eigenprojector assignment, charge semantics, local fields, mass activation, decoupling, threshold beta rows, or physical constants.
