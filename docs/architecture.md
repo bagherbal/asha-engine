@@ -1045,3 +1045,35 @@ This gives the tempting count `3 × 2 = 6`, but the second factor is a real symm
 No hypercharge row, local field map, mass activation rule, decoupling rule, or contact-row assignment is selected. The six leptoquark slots remain valid current-sector representation data, but they do not yet open the contact beta firewall.
 
 Next: Gate 133 — leptoquark real-orientation versus weak-doublet obstruction / SU(2)L action search.
+
+### Gate 133 — leptoquark real-orientation versus weak-doublet obstruction / SU(2)L action search
+
+Package: `pkg/bridge/contactlqsu2`
+
+Gate 133 audits the exact semantic trap left by Gate 132. Gate 132 found a valid current-side six-slot leptoquark tensor organized as:
+
+```text
+3 color directions × 2 real orientations
+LQ_c_sym, LQ_c_skew for c = 1,2,3
+```
+
+Gate 133 asks whether the two real orientations carry a genuine `SU(2)_L` weak-doublet action. The result is negative. Each color pair defines a two-real-dimensional orientation plane, and such a plane can carry a canonical `SO(2)`/`U(1)`-type rotation. Across three colors, the available structure is `SO(2)^3` or a diagonal `SO(2)` diagnostic. This is abelian orientation structure, not a non-abelian weak-isospin action.
+
+The theorem therefore rejects the shortcut:
+
+```text
+symmetric/skew real orientation ≠ SU(2)_L weak doublet
+```
+
+A contact leptoquark threshold row would still require a non-abelian `su(2)` triple, a hypercharge row, a local field map, Lorentz kinetic data, mass activation, decoupling, and a canonical assignment of the current leptoquark slots to contact rows. None of these are derived. Borrowing the already-audited matter `SU(2)_L` table is also rejected because that action lives on Fock matter states, not on the contact partial-overlap carrier.
+
+Therefore the contact beta firewall remains closed:
+
+```text
+representation-complete contact rows = 0 / 7
+contact beta rows allowed            = 0
+contact zero rows proved             = 0
+threshold-corrected Δb_i(L)          = not derived
+```
+
+Next: Gate 134 — leptoquark hypercharge-row and local-field obstruction / beta-permission theorem.
