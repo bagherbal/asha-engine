@@ -61,3 +61,25 @@ Current finite result:
 - Contact-vacuum mixing rank: 4 inside `dim(K)=7`
 - Unmixed contact directions: 3
 - Trace balance: `Tr(M_K)=Tr(M_C)=1.1333333333`
+
+
+## v0.12 — Fock / Matter Bridge
+
+Added the first typed matter bridge:
+
+- `pkg/spinor`: four-mode Witt/Fock bookkeeping with `2^4 = 16` states.
+- `pkg/matter`: bridge analysis between the Fock generation seed and the contact/Higgs finite data.
+- New theorem gates:
+  - `SPINOR-WITT-FOCK-16`
+  - `MATTER-FOCK-CONTACT-BRIDGE`
+
+The bridge verifies a conservative kinematic resonance:
+
+- four Fock creation modes;
+- sixteen occupation states;
+- one B−L-neutral sterile vacuum seed;
+- one temporal/lepton seed plus three spatial/color seeds;
+- four active Higgs/contact directions;
+- three protected unmixed contact directions.
+
+It intentionally does **not** claim Standard Model hypercharge, Yukawa masses, a Higgs mass, or dark matter stability. Those remain future theorem gates.

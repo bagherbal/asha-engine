@@ -16,7 +16,9 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/geometry/boolean"
 	"github.com/bagherbal/asha-engine/pkg/geometry/contact"
 	"github.com/bagherbal/asha-engine/pkg/geometry/g2"
+	"github.com/bagherbal/asha-engine/pkg/matter"
 	"github.com/bagherbal/asha-engine/pkg/phase"
+	"github.com/bagherbal/asha-engine/pkg/spinor"
 	"github.com/bagherbal/asha-engine/pkg/theorem"
 )
 
@@ -35,6 +37,8 @@ func Run() error {
 		connection.ProjectedConnectionTheorem(),
 		higgs.VacuumMixingTheorem(),
 		higgspotential.PotentialCandidateTheorem(),
+		spinor.FockSpaceTheorem(),
+		matter.FockContactBridgeTheorem(),
 	)
 
 	results := registry.RunAll()
