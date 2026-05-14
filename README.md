@@ -57,3 +57,14 @@ Adds the rank-14 G₂ matter-calibration support inside the middle chamber `Λ�
 - exact theorem checks for rank, trace, idempotence, and symmetry.
 
 The next gate is `K₇ = Im(P_B) ∩ Im(P_G)`.
+
+
+## v0.4 — Contact gate
+
+The engine now constructs the Boolean--Octonionic contact space:
+
+```text
+K = Im(P_B) ∩ Im(P_G)
+```
+
+It verifies the contact projector `P_K`, containment inside both `P_B` and `P_G`, the finite contact index `I_BG`, and reports the bare contact leakage invariant `L_BG = ||P_B P_G - P_K||_F` without identifying it with the cosmological constant.

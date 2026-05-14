@@ -7,6 +7,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/exterior"
 	"github.com/bagherbal/asha-engine/pkg/geometry/boolean"
+	"github.com/bagherbal/asha-engine/pkg/geometry/contact"
 	"github.com/bagherbal/asha-engine/pkg/geometry/g2"
 	"github.com/bagherbal/asha-engine/pkg/phase"
 	"github.com/bagherbal/asha-engine/pkg/theorem"
@@ -19,6 +20,7 @@ func Run() error {
 		phase.CovariantPhaseSpaceTheorem(4),
 		boolean.IncidenceSupportTheorem(8, 3, 4),
 		g2.CalibrationSupportTheorem(),
+		contact.ContactSpaceTheorem(),
 	)
 
 	results := registry.RunAll()
