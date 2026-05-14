@@ -23,54 +23,60 @@ Total geometry = M × F
 D_total = D_M ⊗ 1_F + γ5 ⊗ D_F
 ```
 
-Gate 379 supersedes the earlier generic heat-kernel normalization attempt by substituting the ASHA finite
-data directly into the Chamseddine--Connes--Marcolli almost-commutative spectral-action coefficient ledger.
-This is the right bridge formula for the Standard Model finite algebra coupled to gravity.
+Gate 379 installed the direct Chamseddine--Connes--Marcolli coefficient ledger for this product geometry.
+Gate 380 then combined that CCM ledger with the ASHA Pfaffian hierarchy scale to isolate the remaining
+Higgs-sector closure question into one number: the effective zeroth spectral-action moment `f0`.
 
-The decisive correction is the Einstein-Hilbert coefficient. Under the CCM ledger,
-
-```text
-C_R = (96 f₂Λ² - f₀ c) / (24π²)
-```
-
-where `c = Tr(D_F²)`. In the leading `c << M_P²` approximation, canonical Einstein gravity
-`C_R = M_P²/2` requires
+Using the CCM canonical quartic read-off
 
 ```text
-f₂(Λ/M_P)² = π²/8
+λ_H(f0) = π²(e/a²)/(2f0)
+e/a² = 1197/4624
 ```
 
-not the previous ledger value
+and the Higgs relation `m_H = v sqrt(2λ_H)`, the Higgs boundary extracts
 
 ```text
-f₂(Λ/M_P)² = π/64
+f0_eff = π²(e/a²)(v/m_H)²
 ```
 
-The mismatch is exactly
+Numerically:
 
 ```text
-(π²/8) / (π/64) = 8π
+f0_eff ≈ 9.8971   using v = 246.22 GeV
+f0_eff ≈ 9.9721   using the unreduced-Planck Pfaffian VEV
 ```
 
-So the current status is clearer and stronger:
+The native finite-Dirac edge ledger contains exactly five structural edge classes:
 
-- the product `M × F` bridge is structurally correct;
-- the CCM coefficient ledger is now installed directly;
-- the old `π/64` gravitational cutoff moment is not canonical under the CCM Einstein-Hilbert coefficient;
-- the ASHA Higgs number `1197/4624` is a finite trace ratio `e/a²`, not automatically the canonically normalized Higgs quartic;
-- canonical Higgs normalization introduces explicit `f₀` and, depending on field convention, possible `π²` factors;
-- the 13 charged finite-Dirac flavor moduli remain free coordinates of `D_F`;
-- cosmological observables remain conditional targets, not native predictions.
+```text
+Q_L ↔ u_R
+Q_L ↔ d_R
+L_L ↔ e_R
+L_L ↔ ν_R
+ν_R ↔ ν_R^c
+```
+
+and therefore exactly ten `J`-doubled edge slots. With `f0 = 10`, the CCM+Pfaffian calculation gives a
+near-125 GeV Higgs mass:
+
+```text
+m_H(f0=10, v=246.22 GeV) ≈ 124.455 GeV
+m_H(f0=10, Pfaffian VEV) ≈ 124.925 GeV
+```
+
+This is a strong and nontrivial near-closure. However, the theorem is not yet sealed as a native Higgs-mass
+derivation, because in the spectral action `f0` is the zeroth moment/value of the cutoff test function, not
+automatically an edge count. The `10` edge result is therefore a capacity witness unless a new theorem proves
+that the CCM `f0` moment functional equals the `J`-doubled finite-Dirac edge projection.
 
 The current theorem boundary is therefore:
 
 ```text
-ASHA supplies the finite internal geometry and finite trace ratios.
+ASHA supplies the finite internal geometry, trace ratio e/a²=1197/4624, and Pfaffian hierarchy scale.
 CCM supplies the correct almost-commutative spectral-action coefficient ledger.
-M × F supplies the Standard Model + Einstein-gravity action framework.
-Gate 379 identifies the exact 8π correction required in the gravitational cutoff moment.
-Full numerical ToE closure still requires the f₀ moment theorem, the c/a/e trace scale seals,
-gauge representation-trace normalization, f₄/vacuum subtraction, and RG/matching prescriptions.
+Gate 380 shows that f0≈10 closes the Higgs mass to high accuracy and that ASHA has a native integer-10 edge witness.
+Full numerical ToE closure still requires the f0 moment theorem, plus gauge trace normalization, f4/vacuum subtraction, and RG/matching prescriptions.
 ```
 
 ## Current gates

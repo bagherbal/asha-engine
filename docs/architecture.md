@@ -5576,3 +5576,24 @@ prompt-skeleton C_R/M_P² = (1/2)96(π/64) = 3π/4 ≈ 2.35619449019
 ```
 
 This confirms structural SM+gravity product-action recovery while exposing that the full numerical Einstein-Hilbert normalization still requires a final heat-kernel/sign/trace-renormalization convention. The cosmological constant requires `f₄Λ⁴` and a vacuum subtraction rule. The 13 charged flavor moduli remain free.
+
+## Gate 380 CCM + Pfaffian f0 closure sieve
+
+Gate 380 combines the direct CCM spectral-action coefficient ledger with the Pfaffian hierarchy scale.
+The Higgs-sector calculation is reduced to the effective zeroth spectral moment:
+
+```text
+λ_H(f0) = π²(e/a²)/(2f0)
+e/a² = 1197/4624
+m_H = v sqrt(2λ_H)
+f0_eff = π²(e/a²)(v/m_H)²
+```
+
+The empirical Higgs boundary gives `f0_eff ≈ 9.8971` with the standard electroweak VEV and
+`f0_eff ≈ 9.9721` with the unreduced-Planck Pfaffian VEV. The latter is very close to the native integer
+`10` obtained from the five finite-Dirac structural edge classes doubled by the real structure `J`.
+
+This is recorded as a conditional near-closure, not as a final theorem. The reason is precise: the spectral-action
+`f0` is a test-function moment/value, while the edge count is a finite graph dimension. A new theorem is required
+before these two notions can be identified. Until then, `f0=10` is a powerful capacity witness and not a native
+Higgs-mass derivation.

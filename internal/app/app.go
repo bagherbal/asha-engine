@@ -37,6 +37,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/carrieractivationseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/carrierintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
+	"github.com/bagherbal/asha-engine/pkg/bridge/ccmpfaffianf0closure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ccmspectralactionsubstitution"
 	"github.com/bagherbal/asha-engine/pkg/bridge/characteristicpullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraljanomalysieve"
@@ -770,6 +771,7 @@ func Run() error {
 		productspectralactioncoefficients.ProductSpectralActionCoefficientCalculatorClosureAuditTheorem(),
 		normalizationfactoraudit.CompleteNormalizationFactorAuditProductSpectralActionConventionSieveTheorem(),
 		ccmspectralactionsubstitution.CCMSpectralActionDirectSubstitutionCompleteCoefficientLedgerTheorem(),
+		ccmpfaffianf0closure.SelfConsistentCCMPfaffianCoefficientClosureF0SieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
