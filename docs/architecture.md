@@ -4910,3 +4910,28 @@ Gate 271 audits the native lift of `C ⊕ M3(C)` to the full `S_C=Λ*(C^4)` carr
 ### Gate 272 — Morita-Bimodule Search
 
 Gate 272 moves the finite spectral-action search out of the second-quantized Fock representation problem and into the first-quantized finite Hilbert bimodule category. The universal semisimple ledger for `A_F = C ⊕ M3(C)` is `H_ij = V_i ⊗ V_j*`, with dimensions `1,3,3,9`. This gives faithful commuting left/opposite actions and a clean order-one edge rule: non-vacuous one-forms are possible only for edges with different left module and shared right module. The result repairs the representation category but does not select a canonical finite Dirac amplitude ratio. The Higgs spectral ratio remains a future-theorem target, not a derived result.
+
+### Gate 273 — Weak/Quaternionic Normalization Audit
+
+Gate 273 tests the next proposed selector after the Morita-bimodule repair: weak/chiral/quaternionic sub-bimodule restriction plus finite Hilbert-space inner-product normalization.
+
+The result is a useful but bounded theorem. The Morita inner product on the two non-vacuous order-one edge families gives geometric trace multiplicities:
+
+```text
+right C edge: H_CC ↔ H_QC, κ_C = 1
+right Q edge: H_CQ ↔ H_QQ, κ_Q = 3
+```
+
+This correctly records the `1⊕3` lepton/quark trace weighting. But the gate does not derive a quaternionic weak algebra inside the active `C ⊕ M3(C)` finite algebra, nor does it derive the physical Standard-Model Hilbert sub-bimodule. The edge-map norms and amplitudes remain independent variables.
+
+Architecturally, the dynamics branch now reads:
+
+```text
+Morita H_F ledger
+  → order-one non-vacuous edges
+  → finite inner-product trace weights κ_C:κ_Q = 1:3
+  → multiplicity does not fix x:y
+  → canonical D_F and a₂/a₄ remain blocked
+```
+
+This preserves the central firewall: a trace multiplicity is not a mass amplitude. A future gate must derive either a native weak/quaternionic finite algebra action, a physical charge-conjugation `J`, or a finite action normalization theorem that fixes the relative edge norms before the Seeley-de Witt Higgs-ratio path can be reopened.

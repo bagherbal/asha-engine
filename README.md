@@ -4968,3 +4968,51 @@ Gate 271 audits the native lift of `C ⊕ M3(C)` to the full `S_C=Λ*(C^4)` carr
 ## Gate 272 — Finite Algebra Representation Obstruction Classification / Morita-Bimodule Search
 
 Gate 272 classifies the Gate 271 full-Fock obstruction as a categorical boundary: the finite associative algebra `C ⊕ M3(C)` belongs on a first-quantized finite Hilbert bimodule `H_F`, not on the second-quantized full Fock carrier `S_C`. The gate extracts the semisimple Morita summands `H_ij = V_i ⊗ V_j*`, obtains a faithful `A_F ⊗ A_F^op` algebraic representation, and derives an order-one edge sieve with non-vacuous one-form candidates. It still does not lock the surviving `x:y` lepton/quark amplitude ratio, so the `a2/a4` Higgs ratio remains blocked pending an additional weak/chiral/quaternionic selector or spectral-action normalization theorem.
+
+## Gate 273 — Weak/Quaternionic Sub-Bimodule Selector / Finite Inner-Product Normalization Audit
+
+Gate 273 adds `pkg/bridge/weakquaternionicnormalization` and registers `WeakQuaternionicSubBimoduleSelectorFiniteInnerProductNormalizationAuditTheorem`.
+
+Gate 272 exposed the correct first-quantized Morita arena and two lawful non-vacuous order-one edges. Gate 273 audits whether weak/chiral/quaternionic restrictions plus finite inner-product normalization can promote those edges into a canonical finite Dirac operator.
+
+The gate computes a genuine Morita trace-multiplicity ledger. Under the minimal normalized edge model,
+
+```text
+H_CC ↔ H_QC   right C sector   κ_C = 1
+H_CQ ↔ H_QQ   right Q sector   κ_Q = 3
+```
+
+so the finite inner product gives a geometric multiplicity ratio
+
+```text
+κ_C : κ_Q = 1 : 3.
+```
+
+However, the gate keeps the crucial firewall intact: multiplicity is not amplitude. The trace formula becomes
+
+```text
+Tr(D_F²) proxy = κ_C |x|² + κ_Q |y|²
+Tr(D_F⁴) proxy = κ_C |x|⁴ + κ_Q |y|⁴
+```
+
+but the independent amplitudes `x` and `y`, and the edge-map norms `||T_C||`, `||T_Q||`, are not fixed by Morita multiplicity alone. A hypothetical equal-contribution convention would set `|x/y|=√3`, but that convention is not derived.
+
+Gate 273 logs:
+
+```text
+CONDITIONAL_SUPPORT_GATE272_MORITA_BIMODULE_LEDGER_INHERITED
+CONDITIONAL_SUPPORT_WEAK_CHIRAL_SUB_BIMODULE_SIEVE_AUDITED
+CONDITIONAL_SUPPORT_ORDER_ONE_NONVACUOUS_EDGES_RECOVERED
+CONDITIONAL_SUPPORT_FINITE_INNER_PRODUCT_NORMALIZATION_LEDGER_BUILT
+CONDITIONAL_SUPPORT_LEPTON_QUARK_TRACE_MULTIPLICITIES_COMPUTED
+CONDITIONAL_SUPPORT_NORMALIZED_TRACE_MOMENTS_REEVALUATED
+FAILED_ROUTE_WEAK_QUATERNIONIC_SELECTOR_NOT_NATIVE_TO_C_PLUS_M3C
+FAILED_ROUTE_PHYSICAL_SM_SUB_BIMODULE_NOT_DERIVED
+FAILED_ROUTE_EDGE_MAP_NORMS_REMAIN_UNSELECTED
+FAILED_ROUTE_INNER_PRODUCT_NORMALIZATION_DOES_NOT_LOCK_XY_RATIO
+FAILED_ROUTE_CANONICAL_DF_AMPLITUDES_NOT_LOCKED_VIA_NORMALIZATION
+FAILED_ROUTE_A2_A4_HIGGS_RATIO_STILL_NOT_DERIVED
+FAILED_ROUTE_EMPIRICAL_YUKAWA_SEAL_REMAINS_ACTIVE
+```
+
+The next lawful target is a native weak/quaternionic finite-Hilbert-space reconstruction or equivalent finite action theorem that can select the physical sub-bimodule and edge norms without importing empirical masses.
