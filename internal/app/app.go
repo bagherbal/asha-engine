@@ -11,6 +11,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
+	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/higgspotential"
@@ -100,6 +101,7 @@ func Run() error {
 		rgflow.RGBoundaryFlowAuditTheorem(),
 		betacoeff.FiniteSpectrumBetaCoefficientAuditTheorem(),
 		threshold.ThresholdSpectrumMatchingAuditTheorem(),
+		thresholdrep.ThresholdRepresentationAssignmentAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
