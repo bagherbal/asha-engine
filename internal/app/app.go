@@ -260,6 +260,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitytexturelift"
 	"github.com/bagherbal/asha-engine/pkg/bridge/truebimodulerepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/twoloopintegration"
+	"github.com/bagherbal/asha-engine/pkg/bridge/twoloopmatchingpoleledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/twothresholdminimality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/twothresholdviability"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1completion"
@@ -630,6 +631,7 @@ func Run() error {
 		tracesynthesiscarrierequivalence.RawTraceSynthesisCarrierEquivalenceQuarticKineticRatioAuditTheorem(),
 		unificationtraceledger.UnificationTraceLedgerHiggsQuarticUnificationBoundaryAuditTheorem(),
 		conditionalhiggsmassrgtransport.ConditionalHiggsMassFromQuarticRGTransportAuditTheorem(),
+		twoloopmatchingpoleledger.TwoLoopMatchingPoleMassConversionLedgerAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
