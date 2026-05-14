@@ -100,6 +100,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugehessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugekineticdiag"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
+	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
@@ -350,6 +351,7 @@ func Run() error {
 		fockrepresentationtrace.FockRepresentationTraceGaugeRatioYukawaAmplitudeSeparationTheorem(),
 		scalarfockspectralpotential.FockDiracScalarSpectralActionContactShapeComparisonTheorem(),
 		yukawashapeconstraint.FiniteYukawaAmplitudeTextureScalarShapeConstraintTheorem(),
+		higgsconjugatequotient.HiggsConjugateChannelQuotientTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

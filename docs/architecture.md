@@ -2011,3 +2011,42 @@ positive: conditional four-class contact-spectrum pattern matches λ_contact
 negative: direct eight-channel texture does not match
 negative: pair-collapse, kind assignment, generation texture, phases, masses, CKM/PMNS, thresholds, RG running, and physical constants remain underived
 ```
+
+### Gate 170 — Higgs-conjugate channel quotient obstruction and four-kind support refinement
+
+Package: `pkg/bridge/higgsconjugatequotient`
+
+Gate 170 audits the quotient premise left open by Gate 169. Gate 169 found a conditional scalar-shape match if the eight one-generation Yukawa support slots could be quotiented into four amplitude classes and identified with the four active contact/Higgs weights. Gate 170 checks whether this quotient is actually a Higgs-conjugate scalar-channel quotient.
+
+It is not. The Gate-25 support table has one scalar branch per fermion kind:
+
+```text
+up, neutrino      -> Φ_+
+down, electron    -> Φ_-
+```
+
+No fermion kind carries both conjugate scalar branches. The eight support slots come from color and fermion kind:
+
+```text
+3 up colors + 3 down colors + neutrino + electron.
+```
+
+Thus the scalar-conjugate 8→4 mechanism is rejected. A four-kind support quotient is visible,
+
+```text
+3_u + 3_d + 1_ν + 1_e → {u,d,ν,e},
+```
+
+but this is not yet a four-amplitude theorem. It does not derive color-amplitude universality, it does not assign the two high/two low active contact weights to fermion kinds, and it does not derive generation textures, masses, or mixing.
+
+Status:
+
+```text
+positive: Gate-25 channel structure is clarified exactly
+positive: four-kind support quotient is visible
+negative: Higgs-conjugate pair collapse is rejected
+negative: four physical Yukawa amplitudes are not derived
+negative: scalar-shape closure remains conditional
+```
+
+The next theorem target is the contact-spectrum-to-kind assignment problem: from four fermion kinds and two high/two low contact weights, the current ambiguity is six assignments.

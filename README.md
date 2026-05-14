@@ -1107,3 +1107,60 @@ residual nullity:                        3 -> 3
 ```
 
 Next gate: Gate 170 — Higgs-conjugate channel quotient theorem: decide whether the eight Gate-25 channels canonically reduce to four amplitude classes, or whether the Gate-169 scalar match remains only a conditional target.
+
+## v1.68 — Gate 170: Higgs-conjugate channel quotient obstruction and four-kind support refinement
+
+Gate 170 adds `pkg/bridge/higgsconjugatequotient`.
+
+Gate 169 left a conditional scalar-sector match: the Gate-37 scalar shape can be reproduced if the eight Yukawa support slots reduce to four amplitude classes whose squared weights are the four active contact/Higgs eigenvalues. Gate 170 audits the proposed mechanism for that reduction.
+
+The actual Gate-25 channel table is:
+
+```text
+u/e/up/down support = 3_u + 3_d + 1_ν + 1_e
+up, ν      use Φ_+
+down, e    use Φ_-
+```
+
+Therefore the eight channels are **not** two Higgs-conjugate copies of four fermion kinds. Hypercharge balance selects exactly one scalar branch for each kind:
+
+```text
+Y_R = Y_L + Y_Φ
+```
+
+Gate 170 result:
+
+```text
+Higgs-conjugate 8→4 quotient: rejected
+unique scalar branch per kind: true
+four-kind support quotient:    visible/canonical at support level
+four amplitude classes:        not derived
+contact high/low assignment:   not derived, six choices
+scalar shape closure:          not achieved
+```
+
+The four-class object that remains available is not a scalar-conjugate quotient. It is a fermion-kind/color support quotient:
+
+```text
+3_u + 3_d + 1_ν + 1_e → {u, d, ν, e}
+```
+
+This refines Gate 169 rather than closing it. The scalar target `1197/4624` remains a valid finite Yukawa moment constraint, but the mechanism is now clear: a future theorem must assign the two high and two low contact weights to the four fermion kinds and then lift that assignment to the triality/generation texture.
+
+Gate 170 theorem ledger:
+
+```text
+gauge ratio closed:                         true
+Gate37 scalar target available:              true
+Higgs-conjugate quotient derived:            false
+four-kind support quotient visible:          true
+four-amplitude-class quotient derived:       false
+contact-spectrum-to-kind assignment derived: false
+Yukawa amplitudes derived:                   false
+generation texture derived:                  false
+fermion masses / CKM / PMNS derived:         false
+physical constants derived:                  false
+residual nullity:                            3 -> 3
+```
+
+Next gate: Gate 171 — contact-spectrum-to-fermion-kind assignment theorem: test whether any finite operator canonically chooses which two of `{u,d,ν,e}` receive the high contact weights and which two receive the low weights.
