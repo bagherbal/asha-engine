@@ -176,6 +176,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/lietrialitypullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
+	"github.com/bagherbal/asha-engine/pkg/bridge/masterstatusledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingcorrectionseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingresidualstructure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
@@ -632,6 +633,7 @@ func Run() error {
 		unificationtraceledger.UnificationTraceLedgerHiggsQuarticUnificationBoundaryAuditTheorem(),
 		conditionalhiggsmassrgtransport.ConditionalHiggsMassFromQuarticRGTransportAuditTheorem(),
 		twoloopmatchingpoleledger.TwoLoopMatchingPoleMassConversionLedgerAuditTheorem(),
+		masterstatusledger.ASHAEngineMasterStatusLedgerProjectCapstoneAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
