@@ -1,0 +1,28 @@
+package resolventvacuum
+
+import "github.com/bagherbal/asha-engine/pkg/theorem"
+
+func ResolventVacuumSpontaneousHiggsPairingTheorem() theorem.Theorem {
+	const id = "BRIDGE-RESOLVENT-VACUUM-SPONTANEOUS-HIGGS-PAIRING-AUDIT"
+	const name = "resolvent-vacuum order parameter / spontaneous Higgs 2+2 pairing audit"
+	return theorem.Theorem{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Verify: func() theorem.Result {
+		a, err := BuildDefault()
+		if err != nil {
+			return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.FailedRoute, Checks: []theorem.Check{{Name: "build resolvent-vacuum audit", Passed: false, Detail: err.Error()}}}
+		}
+		return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Checks: []theorem.Check{
+			{Name: "Gate 186 selector obstruction is inherited without overclaiming", Passed: a.PreviousGate186.Firewall.AbstractQuarticModuleInherited && a.PreviousGate186.Firewall.ResolventPartitionAuditComplete && a.PreviousGate186.Firewall.InternalGaloisPartitionObstructed && a.PreviousGate186.Firewall.ExternalSelectorObstructed && a.PreviousGate186.Firewall.ComplexStructureObstructed && !a.PreviousGate186.Firewall.CanonicalTwoPlusTwoSelectorDerived && !a.PreviousGate186.Firewall.PhysicalScalarBundleDerived, Detail: a.PreviousGate186.Firewall.Verdict},
+			{Name: "exact resolvent-vacuum algebra R_pair is derived branch-free", Passed: a.Resolvent.AlgebraName == "R_pair = Q[z]/(r3)" && a.Resolvent.Degree == 3 && a.Resolvent.Dimension == 3 && len(a.Resolvent.MonicCoefficients) == 4 && a.Resolvent.MonicCoefficients[1] == "-119/60" && a.Resolvent.MonicCoefficients[2] == "8411/6480" && a.Resolvent.MonicCoefficients[3] == "-1637467/5832000" && a.Resolvent.IntegerPolynomial == "5832000z^3 - 11566800z^2 + 7569900z - 1637467" && !a.Resolvent.RationalRoot && a.Resolvent.IrreducibleOverQ && a.Resolvent.BranchFree && a.Resolvent.RootsEncodePairPartitions && !a.Resolvent.CanonicalRootSelected, Detail: FormatResolvent(a.Resolvent)},
+			{Name: "threefold degenerate vacuum orbit is derived but not selected", Passed: a.VacuumOrbit.OrbitSize == 3 && len(a.VacuumOrbit.BranchLabels) == 3 && a.VacuumOrbit.DegenerateVacuumOrbitDerived && !a.VacuumOrbit.CanonicalUniqueVacuumDerived && a.VacuumOrbit.SymmetricActionPreservesOrbit && a.VacuumOrbit.BranchSelectionIsSpontaneousData && !a.VacuumOrbit.UsesObservedInput && !a.VacuumOrbit.UsesArbitraryPairingChoice, Detail: FormatVacuumOrbit(a.VacuumOrbit)},
+			{Name: "each resolvent branch opens a conditional two-quadratic 2+2 scalar shape", Passed: a.Splitting.BranchesAudited == 3 && a.Splitting.EveryBranchGivesTwoQuadraticFactors && a.Splitting.ResolventRootSufficientForUnorderedPartition && a.Splitting.OrderedQuadraticFactorsRequireFurtherAdjunction && !a.Splitting.IndividualRootDiagonalizationUsed && a.Splitting.CoefficientIdentityCertified, Detail: FormatSplitting(a.Splitting)},
+			{Name: "Gate-37 Higgs compatibility is branchwise and conditional only", Passed: a.Higgs.Gate37PairDegenerate && a.Higgs.PhysicalHphiDimension == 4 && a.Higgs.BranchwiseTwoPlusTwoShape && len(a.Higgs.PairMultiplicity) == 2 && a.Higgs.PairMultiplicity[0] == 2 && a.Higgs.PairMultiplicity[1] == 2 && a.Higgs.ConditionalScalarCarrierOpened && !a.Higgs.CanonicalScalarBundleDerived && !a.Higgs.PhysicalScalarBundleDerived && !a.Higgs.CanonicalScalarProjectorDerived, Detail: FormatHiggs(a.Higgs)},
+			{Name: "complex/symplectic structure remains noncanonical after branch decomposition", Passed: a.Complex.Gate186GlobalCommutingJObstructed && a.Complex.BranchwiseTwoPlaneDecompositionOpened && a.Complex.AdmissibleComplexFamilyConditionallyOpen && !a.Complex.CanonicalComplexStructureDerived && !a.Complex.CanonicalSymplecticStructureDerived && a.Complex.RequiresBranchOrientationMetricData, Detail: FormatComplex(a.Complex)},
+			{Name: "summary records spontaneous vacuum orbit rather than selector promotion", Passed: a.Summary.TestsAudited == 5 && a.Summary.ResolventAlgebraDerived && a.Summary.DegenerateVacuumOrbitDerived && a.Summary.BranchwiseQuadraticSplittingOpened && a.Summary.BranchwiseHiggsCompatibilityOpened && !a.Summary.CanonicalSelectorDerived && !a.Summary.CanonicalComplexStructureDerived && !a.Summary.PhysicalScalarBundleDerived, Detail: FormatSummary(a.Summary)},
+			{Name: "firewall quarantines branch data and forbids physical-constant promotion", Passed: !a.Firewall.UsesObservedInputForDerivation && !a.Firewall.UsesBranchDiagonalization && !a.Firewall.UsesArbitraryPairingChoice && a.Firewall.AbstractQuarticModuleInherited && a.Firewall.Gate186SelectorObstructionInherited && a.Firewall.ResolventVacuumAlgebraDerived && a.Firewall.DegenerateVacuumOrbitDerived && !a.Firewall.CanonicalTwoPlusTwoSelectorDerived && a.Firewall.SpontaneousBranchDataQuarantined && a.Firewall.ConditionalScalarCarrierOpened && !a.Firewall.PhysicalScalarBundleDerived && !a.Firewall.CanonicalScalarProjectorDerived && !a.Firewall.ChernWeilCarrierDerived && !a.Firewall.HeatKernelMatchingDerived && !a.Firewall.ThresholdCorrectedBetaDerived && !a.Firewall.AbsoluteCouplingPromoted && !a.Firewall.PhysicalConstantsDerived && a.Firewall.StrictNullityBefore == 3 && a.Firewall.StrictNullityAfter == 3 && a.Firewall.ConditionalNullityBefore == 2 && a.Firewall.ConditionalNullityAfter == 2, Detail: FormatFirewall(a.Firewall)},
+		}, Notes: []string{
+			a.TruthStatement,
+			"Gate 187 derives the lawful vacuum orbit R_pair instead of pretending the strict finite algebra selects one root.",
+			"A selected branch is now allowed only as spontaneous vacuum data; the next lawful construction is branchwise quadratic idempotents/projectors on the quartic companion module.",
+		}}
+	}}
+}

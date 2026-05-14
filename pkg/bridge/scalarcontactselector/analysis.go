@@ -267,7 +267,7 @@ func auditPartitions() PartitionAudit {
 
 func auditResolvent() ResolventCubicAudit {
 	// For monic q4 = x^4 + a x^3 + b x^2 + c x + d, the partition resolvent
-	// with roots (r1+r2)(r3+r4), (r1+r3)(r2+r4), (r1+r4)(r2+r3) is
+	// with roots r1r2+r3r4, r1r3+r2r4, r1r4+r2r3 is
 	// z^3 - b z^2 + (a c - 4 d) z + (4 b d - a^2 d - c^2).
 	a := rat("-71/30")
 	b := rat("1071/540")
@@ -277,7 +277,7 @@ func auditResolvent() ResolventCubicAudit {
 	coeff1 := sub(mul(a, c), mul(rat("4"), d))
 	coeff0 := sub(sub(mul(mul(rat("4"), b), d), mul(mul(a, a), d)), mul(c, c))
 	return ResolventCubicAudit{
-		Construction:                  "z^3 - b z^2 + (a c - 4d)z + (4bd - a^2d - c^2), roots encode the three 2+2 partitions",
+		Construction:                  "z^3 - b z^2 + (a c - 4d)z + (4bd - a^2d - c^2), roots are pair-product sums encoding the three 2+2 partitions",
 		Variable:                      "z",
 		MonicCoefficients:             []string{"1", ratString(coeff2), ratString(coeff1), ratString(coeff0)},
 		IntegerPolynomial:             "5832000z^3 - 11566800z^2 + 7569900z - 1637467",

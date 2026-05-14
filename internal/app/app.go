@@ -125,6 +125,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticscalaroperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticspectralfunctional"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quotientedcorrespondence"
+	"github.com/bagherbal/asha-engine/pkg/bridge/resolventvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgfirewall"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcomplex"
@@ -384,6 +385,7 @@ func Run() error {
 		cliffordcontactcommutant.CliffordContactSpectralIdempotentCommutantObstructionTheorem(),
 		quarticscalaroperator.QuarticScalarOperatorMinimalPolynomialTheorem(),
 		scalarcontactselector.ScalarContactQuarticIdentificationSelectorObstructionTheorem(),
+		resolventvacuum.ResolventVacuumSpontaneousHiggsPairingTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
