@@ -5745,3 +5745,28 @@ Current computed consequences:
 - severe overclosure for an unsuppressed stable thermal B-gap Majorana relic;
 - roughly 121 decimal digits of cosmological-constant counterterm cancellation under the diagnostic CCM bare-vacuum convention.
 
+
+## Gate 393 — Triality flavor sieve boundary
+
+Gate 393 audits whether Spin(8) triality can directly reduce the flavor/vacuum frontier.
+
+The architectural result is:
+
+```text
+Spin(8) triality exists
+≠
+C^3_gen is natively admitted as 8_v ⊕ 8_s ⊕ 8_c.
+```
+
+The package `pkg/bridge/trialitymodulisieve` computes the label-permutation stress test while refusing to promote it to a native theorem. Under a sealed C3 action the Yukawa centralizer is the six-real-dimensional complex circulant space; under a sealed S3 action it is the four-real-dimensional `aI+b(1-I)` space with a `1+2` degeneracy. Both branches fail as complete flavor theorems: C3 gives simultaneous Fourier diagonalization and no CKM capacity, while S3 cannot produce three distinct generation singular values.
+
+The Fock number operator `N=diag(0,1,2)` is classified as hierarchy-capable but non-native. It breaks exact triality and remains a sealed/bridge-level extension unless a later theorem derives it from the finite ASHA ledger.
+
+The flavor frontier therefore remains:
+
+```text
+Gate 372 / Gate 387 firewall preserved:
+13 charged finite-Dirac flavor moduli remain environmental/vacuum coordinates.
+```
+
+The architectural continuation is Gate 394: search for a native noncentral map into `End(C^3_gen)` from triality branch incidence, Morita bimodule edge incidence, and finite one-form support.

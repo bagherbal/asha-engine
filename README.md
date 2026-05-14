@@ -6117,3 +6117,26 @@ This closes the Higgs coefficient lane at the CCM+Pfaffian tree-level proxy. The
 ## Gate 386 update — cosmological observable boundary
 
 Gate 386 reopens the macroscopic-observable program after the Gate 385 Higgs edge-measure seal. The result is deliberately conservative: the sealed CCM+Pfaffian Higgs proxy and the B-gap threshold ledger make dark-sector and vacuum-fate calculations well posed, but they do not yet produce native hard predictions for `Ω_DM h²`, absolute vacuum stability, metastability lifetime, or a Euclidean bounce action. Dark matter still requires a stability theorem, interaction rates, production history, reheating temperature, and a closed Boltzmann kernel. Vacuum fate still requires the top/Yukawa seal, absolute gauge-running trajectory, threshold-matching convention, lambda minimum, and bounce prefactor. The correct status is therefore conditional-computability, not full numerical ToE closure.
+
+## Gate 393 — Triality domain-admission and Yukawa centralizer sieve
+
+Gate 393 tests the proposed Spin(8) triality route to flavor without assuming the desired generation assignment.
+
+The gate separates native theorem status from sealed stress tests:
+
+```text
+native question:      C^3_gen -> 8_v ⊕ 8_s ⊕ 8_c ?
+sealed C3 test:       P Y P^{-1} = Y  -> complex circulant texture
+sealed S3 test:       S3-invariant Y  -> aI + b(1-I)
+number-operator test: N = diag(0,1,2)
+```
+
+The result is a failed-route audit, not a flavor breakthrough. Abstract Spin(8) triality is available, but the current finite spectral-triple ledger does not derive a native generation-to-triality carrier, explicit native `theta` action on `D_F`, or a noncentral generation-address functor. The sealed C3 branch reduces each Yukawa block to a complex circulant form but simultaneously diagonalizes all sectors, so CKM capacity is lost. The sealed S3 branch gives a `1+2` degeneracy. The number operator has hierarchy capacity but is not native and supplies no mixing.
+
+Therefore Gate 393 preserves the Gate-372 charged flavor firewall:
+
+```text
+native charged finite-Dirac flavor moduli = 13
+```
+
+The next logical gate is Gate 394: a native generation-address functor search using triality branch data, Morita edge incidence, and one-form edge support.

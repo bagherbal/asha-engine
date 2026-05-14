@@ -331,6 +331,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/tracesynthesiscarrierequivalence"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitygaussianmeasure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitygenerationpullback"
+	"github.com/bagherbal/asha-engine/pkg/bridge/trialitymodulisieve"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitytexturelift"
 	"github.com/bagherbal/asha-engine/pkg/bridge/truebimodulerepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/twoloopintegration"
@@ -786,6 +787,7 @@ func Run() error {
 		innerfluctuationedgemeasure.InnerFluctuationOneFormSupportCCMEdgeMeasureSelectionSieveTheorem(),
 		cosmologicalobservablesdarksector.CosmologicalObservablesDarkSectorPredictionAfterHiggsSealSieveTheorem(),
 		ashafinalarchitectureledger.AshaFrameworkFinalArchitectureLedgerEpistemologicalSealTheorem(),
+		trialitymodulisieve.TrialityDomainAdmissionEquivariantYukawaCentralizerSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
