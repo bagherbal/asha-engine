@@ -163,3 +163,31 @@ Result:
 - conjugate mirror orientation is also present with `Q_L^c: Y=-1/6 × 6` and `L_L^c: Y=+1/2 × 2`.
 
 The gate deliberately does not claim the full nonabelian `SU(2)_L` theorem. It proves the doublet hypercharges at charge-selection level and leaves the actual raising/lowering generators, conjugation convention, and explicit Yukawa intertwiners open.
+
+## v0.23 — SU(2)_L finite generator audit
+
+Gate 24 adds `pkg/matter/su2lgauge`. Gate 23 proved the left-doublet hypercharges at the charge-selection level; Gate 24 now builds the explicit finite `SU(2)_L` ladder representation on the derived left-doublet space:
+
+```text
+H_L = Q_L(3 colors × 2 weak states) ⊕ L_L(2 weak states)
+T3 = diag(+1/2,-1/2) on each doublet
+T+ |down⟩ = |up⟩
+T- |up⟩ = |down⟩
+```
+
+The gate verifies the ladder algebra:
+
+```text
+[T3,T+] = T+
+[T3,T-] = -T-
+[T+,T-] = 2T3
+```
+
+and also verifies:
+
+```text
+[Y,T±] = 0
+Q = T3 + Y
+```
+
+This upgrades `U-13A-SU2L-GENERATORS` from missing to solved at the audited left-doublet representation level. The remaining deeper bridge is to derive the same generators directly from the finite Boolean/contact block connection rather than from the hypercharge table.

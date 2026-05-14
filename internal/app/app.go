@@ -24,6 +24,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/matter/hyperaudit"
 	"github.com/bagherbal/asha-engine/pkg/matter/hypercharge"
 	"github.com/bagherbal/asha-engine/pkg/matter/su2l"
+	"github.com/bagherbal/asha-engine/pkg/matter/su2lgauge"
 	"github.com/bagherbal/asha-engine/pkg/matter/t3r"
 	"github.com/bagherbal/asha-engine/pkg/matter/tensor"
 	"github.com/bagherbal/asha-engine/pkg/matter/yukawa"
@@ -59,6 +60,7 @@ func Run() error {
 		t3r.MatterT3RSearchTheorem(),
 		hyperaudit.HyperchargeTableAuditTheorem(),
 		su2l.DoubletAuditTheorem(),
+		su2lgauge.GeneratorAuditTheorem(),
 	)
 
 	results := registry.RunAll()
