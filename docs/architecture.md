@@ -5656,3 +5656,29 @@ The architectural finding is that the Higgs kinetic term is edge-supported: the 
 This explains why the edge-denominator lane in Gates 380–383 nearly closes the Higgs mass. But the architecture still blocks final closure until raw finite traces are recomputed. The invariant `e/a²=1197/4624` is already a finite trace ratio; the system must prove whether it was computed with node normalization, edge normalization, or a convention that already includes both. The final bridge cannot be an after-the-fact multiplication by `10/7`.
 
 The next architectural target is therefore a raw-trace recomputation gate for `a=Tr(Y†Y)` and `e=Tr((Y†Y)²)` under explicit node and edge measures.
+
+
+## Gate 384 — Raw finite trace recomputation / edge measure sieve
+
+Gate 384 recomputes the finite Higgs trace ratio under explicit node and edge measures rather than applying `10/7` after the fact.
+
+```text
+R_node = (e/a²)_node = 1197/4624
+N_node = 7
+N_edge,J = 10
+R_edge = (e/a²)_edge = (7/10)R_node
+```
+
+This gives the clean coefficient identity
+
+```text
+π² R_edge/(2·7) = π² R_node/(2·10)
+```
+
+and reproduces the near-125 GeV Higgs lane with the Pfaffian VEV:
+
+```text
+m_H ≈ 124.925 GeV.
+```
+
+The result is not final closure. The missing theorem is that the CCM canonical Higgs kinetic inner product must select the normalized `J`-doubled edge measure. Literal `f0=1` without a finite kinetic normalization still fails, and applying both the edge-ratio reduction and an edge denominator double-counts the same normalization.

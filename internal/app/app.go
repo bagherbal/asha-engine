@@ -256,6 +256,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticscalaroperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticspectralfunctional"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quotientedcorrespondence"
+	"github.com/bagherbal/asha-engine/pkg/bridge/rawfinitetracerecomputation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/realstructurekofactorization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/realstructureorderone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/reebweakselection"
@@ -778,6 +779,7 @@ func Run() error {
 		spectralgraphf0index.SpectralGraphProjectionF0IndexTheoremSieveTheorem(),
 		finitetraceedgemultiplicity.FiniteTraceEdgeMultiplicityEffectiveCoefficientSieveTheorem(),
 		spectralgraphtracenormalization.SpectralGraphTraceNodeToEdgeKineticNormalizationSieveTheorem(),
+		rawfinitetracerecomputation.RawFiniteTraceRecomputationEdgeMeasureSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
