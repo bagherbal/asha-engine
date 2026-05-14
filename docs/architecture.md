@@ -911,3 +911,28 @@ The next gate should test whether incidence-weighted spectral data can provide r
 ### Gate 122 — Contact Row Semantics / Local Variable Reconstruction
 
 Gate 122 tests whether incidence-weighted contact spectral data can reconstruct row-level semantics for the seven unresolved contact partial-overlap modes. The canonical Fano incidence degree is uniform: each point lies on three lines and each line has three points. Degree-three weighting preserves the seven distinct contact rows, but it does not select a contact-to-Fano row assignment, local variable, constraint semantic map, representation row, Lorentz kinetic row, mass activation, or decoupling rule. Signed incidence remains noncanonical because it requires choosing one of 7! contact-Fano labelings. The contact beta firewall remains closed.
+
+### Gate 123 — Contact semantic source-coupling / observable selector search
+
+Gate 123 tests whether any finite source, observable, current, or action-coupling object already present in the project can label the seven unresolved contact rows without importing a hidden contact-to-Fano bijection or observed physical constants.
+
+The gate separates three notions of selector:
+
+```text
+uniform action/source coupling     = canonical, but row-blind
+spectral diagonal observable       = row-distinguishing, but diagnostic only
+incidence-weighted observable      = canonical rescaling, but semantically inert
+current-to-contact source coupling = still obstructed by the u(4) -> contact target mismatch
+```
+
+The spectral observable distinguishes all seven contact rows numerically because their overlap values are distinct. This is not enough. A numerical row label is not a local variable, gauge representation, Lorentz kinetic term, mass activation rule, decoupling rule, or beta-matching row. A signed/Fano-labelled source would still require one of `7! = 5040` contact-to-Fano assignments.
+
+Result: no finite semantic source selector is derived. Contact representation rows remain `0 / 7`, contact beta rows allowed remain `0`, and no contact zero-row cancellation is proved. The physical-flow nullity remains unchanged:
+
+```text
+u = 1/g_*²
+L = ln(M*/μ)
+Δb_i(L)
+```
+
+The next gate should test whether a source-current dual pairing can provide a natural row-labeling obstruction or selector stronger than diagonal spectral diagnostics.

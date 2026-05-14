@@ -35,6 +35,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactreconstruction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactrowsemantics"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsymmetry"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentcontact"
@@ -256,6 +257,7 @@ func Run() error {
 		contactquotient.ContactSpectralInvariantQuotientOrbitCollapseTheorem(),
 		contactreconstruction.ContactSpectralReconstructionInvariantToRowLiftingObstructionTheorem(),
 		contactrowsemantics.ContactRowSemanticsLocalVariableReconstructionTheorem(),
+		contactsource.ContactSemanticSourceCouplingObservableSelectorSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
