@@ -6,6 +6,7 @@ import (
 	"github.com/bagherbal/asha-engine/internal/report"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
+	"github.com/bagherbal/asha-engine/pkg/dynamics/higgspotential"
 	"github.com/bagherbal/asha-engine/pkg/exterior"
 	"github.com/bagherbal/asha-engine/pkg/gauge"
 	"github.com/bagherbal/asha-engine/pkg/gauge/boundary"
@@ -33,6 +34,7 @@ func Run() error {
 		boundary.BoundaryFixedClosureTheorem(),
 		connection.ProjectedConnectionTheorem(),
 		higgs.VacuumMixingTheorem(),
+		higgspotential.PotentialCandidateTheorem(),
 	)
 
 	results := registry.RunAll()
