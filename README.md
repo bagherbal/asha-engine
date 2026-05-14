@@ -76,7 +76,10 @@ The current theorem boundary is therefore:
 ASHA supplies the finite internal geometry, trace ratio e/a²=1197/4624, and Pfaffian hierarchy scale.
 CCM supplies the correct almost-commutative spectral-action coefficient ledger.
 Gate 380 shows that f0≈10 closes the Higgs mass to high accuracy and that ASHA has a native integer-10 edge witness.
-Full numerical ToE closure still requires the f0 moment theorem, plus gauge trace normalization, f4/vacuum subtraction, and RG/matching prescriptions.
+Gate 381 proves the edge-side trace Tr_E(P_edge)=10 but rejects the type error f0=Tr_E(P_edge).
+Gate 382 repairs the type mismatch by locking the continuous cutoff moment to f0=1 and auditing whether the finite trace supplies the factor 10.
+The result is sharper: multiplying the quartic trace by 10 is the wrong channel; placing 10 in the kinetic/canonical denominator reproduces the Higgs near-closure, but this requires a new finite-trace normalization theorem.
+Full numerical ToE closure still requires the 10/7 normalization theorem, plus gauge trace normalization, f4/vacuum subtraction, and RG/matching prescriptions.
 ```
 
 ## Current gates

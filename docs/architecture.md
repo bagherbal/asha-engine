@@ -5624,3 +5624,19 @@ The gate then audits the type of this trace. The result is a strict separation:
 - The ordinary index-theorem analogy counts a signed kernel/Fredholm index, not the unsigned count of all Yukawa and Majorana edges.
 
 Therefore Gate 381 does not seal `f0=10` as a theorem. It preserves the Rule-of-10 as a strong capacity witness and identifies the precise missing theorem: a spectral-graph moment theorem that equates the CCM `f0` functional with the finite edge-slot projection trace.
+
+
+## Gate 382 — Finite Trace Edge Multiplicity / Effective Coefficient Sieve
+
+Gate 382 repairs the Gate 381 type mismatch by separating the continuous spectral-action moment from the finite trace channel. The continuous sharp-cutoff value is locked to `f0=1`; the native finite edge ledger still gives `5 × J = 10` edge slots.
+
+The coefficient lanes are:
+
+```text
+f0=1 with no extra finite multiplicity: overpredicts the Higgs mass.
+10 multiplying the quartic numerator: catastrophically overpredicts and double-counts.
+10 entering as the kinetic/canonical denominator: reproduces the Gate 380 near-125 GeV closure.
+f0=7 contact ledger: overpredicts relative to the Higgs boundary.
+```
+
+The gate therefore isolates the exact remaining coefficient gap as `10/7`: the mismatch between the previous contact-spectrum `f0=7` ledger and the edge-denominator value `10` needed for CCM+Pfaffian Higgs near-closure. This is not yet a native theorem. A future closure theorem must prove why the J-doubled finite Dirac edge multiplicity enters the canonical Higgs normalization denominator without double-counting the already traced ratio `e/a²=1197/4624`.

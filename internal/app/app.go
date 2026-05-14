@@ -154,6 +154,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitespectralactionreattempt"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitespectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
+	"github.com/bagherbal/asha-engine/pkg/bridge/finitetraceedgemultiplicity"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finiteyukawaaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/flavoralignmentdmabsence"
 	"github.com/bagherbal/asha-engine/pkg/bridge/flavororientationoperator"
@@ -774,6 +775,7 @@ func Run() error {
 		ccmspectralactionsubstitution.CCMSpectralActionDirectSubstitutionCompleteCoefficientLedgerTheorem(),
 		ccmpfaffianf0closure.SelfConsistentCCMPfaffianCoefficientClosureF0SieveTheorem(),
 		spectralgraphf0index.SpectralGraphProjectionF0IndexTheoremSieveTheorem(),
+		finitetraceedgemultiplicity.FiniteTraceEdgeMultiplicityEffectiveCoefficientSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
