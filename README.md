@@ -3898,3 +3898,48 @@ fermion masses / CKM / PMNS derived: no
 ```
 
 This is a major relocation of the obstruction. The engine no longer tries to use `tau_eta` to select the weak plane. It recognizes `tau_eta` as a potential scalar-to-flavor texture source, while preserving the firewall until the carrier functor is derived or explicitly sealed.
+
+## v2.45 — Gate 247: Spin(8) triality automorphism / scalar-to-spinor functor audit
+
+Gate 247 adds `pkg/bridge/spin8trialityfunctor` after Gate 246 showed that `tau_eta=(2,-2,1)` has exact generation-breaking and non-commuting Yukawa-texture capacity but lacks a scalar-to-triality pullback.
+
+The gate audits whether Spin(8) triality itself supplies the missing functor.
+
+It records the abstract representation-level structure:
+
+```text
+Out(Spin(8)) ≅ S3
+8_v ↔ 8_s ↔ 8_c
+```
+
+This is the right mathematical arena for a vector/scalar-to-spinor bridge. However, the current finite engine has not derived an `8_v` representative of the scalar trace sequence, nor explicit Spin(8) triality automorphism matrices acting on the complexified spinor carrier `S_C`.
+
+The binding obstruction is therefore:
+
+```text
+Spin(8) triality rotates representations.
+tau_eta is currently a neutral scalar trace ledger, not a vector representative.
+```
+
+Gate 247 preserves the flavor capacity:
+
+```text
+D_tau ?= diag(2, -2, 1)
+```
+
+would have three distinct eigenvalues and would not commute with triality permutations. But the diagonal texture is not constructed because the scalar trace has not been lawfully pulled into the spinor generation carrier.
+
+Gate 247 status:
+
+```text
+CONDITIONAL_SUPPORT_SPIN8_TRIALITY_AUTOMORPHISM_PREFLIGHT
+CONDITIONAL_SUPPORT_TRIALITY_SCALAR_SPINOR_DIMENSION_MATCH
+CONDITIONAL_SUPPORT_TAU_ETA_TEXTURE_CAPACITY_INHERITED
+FAILED_ROUTE_SCALAR_TRACE_NOT_VECTOR_REPRESENTATIVE
+FAILED_ROUTE_TRIALITY_FUNCTOR_PULLBACK_DERIVATION
+FAILED_ROUTE_TRIALITY_FUNCTOR_YUKAWA_DERIVATION
+FAILED_ROUTE_CKM_PMNS_DERIVATION
+YUKAWA_AMPLITUDE_SEAL_REMAINS_BINDING
+```
+
+No Yukawa matrices, CKM/PMNS matrices, observed fermion masses, Connes algebra, or finite flavor theorem are derived.

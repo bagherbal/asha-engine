@@ -308,3 +308,11 @@
 - Distinguish neutral electroweak combinations such as `Q=T3+Y` and `Z=T3-Y` from the full nonabelian basis `{T1,T2,T3}`.
 - Treat abstract `su(2)` capacity of spatial bivectors as a preflight only until an ordered contact-generator-to-axis map is derived.
 - Preserve the weak-plane and generation-breaking capacities as roadmaps, not completed theorems.
+
+## Gate 247 workflow refinement — triality is a representation functor, not a trace converter
+
+- When a scalar trace has the right number of slots for a generation carrier, do not treat dimensional agreement as a functor.
+- Spin(8) triality can rotate `8_v`, `8_s`, and `8_c` representations only after the object being rotated is represented in one of those domains.
+- Separate three claims: abstract triality exists, explicit triality matrices on `S_C` are derived, and a scalar trace has an `8_v` representative. The first does not imply the other two.
+- Preserve raw texture capacity diagnostics such as `diag(2,-2,1)` and nonzero commutators, but do not promote them to Yukawa matrices without a lawful scalar-to-spinor pullback.
+- Never use triality as a universal type-cast from scalar-bundle ledgers to spinor endomorphisms. The bridge must specify carrier, basis, normalization, and spectral-triple permission.

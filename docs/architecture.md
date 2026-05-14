@@ -4223,3 +4223,58 @@ qualified Yukawa texture source: missing
 ```
 
 Gate 246 therefore relocates the next frontier from weak-plane selection to scalar-to-flavor representation theory. The missing theorem is a lawful representation functor turning scalar-bundle trace data into a generation-carrier endomorphism without importing observed masses or mixing angles.
+
+## Gate 247 — Spin(8) triality automorphism and scalar-to-spinor functor audit
+
+Gate 247 adds `pkg/bridge/spin8trialityfunctor`.
+
+The gate tests the proposed categorical bridge from the scalar-bundle trace invariant
+
+```text
+tau_eta = (2, -2, 1)
+```
+
+to the spinor generation carrier using Spin(8) triality.
+
+The audit distinguishes two statements:
+
+1. Spin(8) triality exists as the representation-theoretic symmetry permuting `8_v`, `8_s`, and `8_c`.
+2. The scalar trace sequence `tau_eta` has a lawful representative in one of those representations.
+
+Gate 247 supports the first statement and rejects the second under current axioms.
+
+The engine records:
+
+```text
+Out(Spin(8)) ≅ S3
+8_v, 8_s, 8_c available as abstract triality roles
+```
+
+but the concrete missing data are:
+
+```text
+tau_eta as an element of 8_v or Λ*W
+explicit Spin(8) triality automorphism matrices on S_C
+basis-independent map from H_Phi neutral scalar traces to the generation carrier
+order-one / spectral-triple permission to use the resulting object as a Yukawa texture
+```
+
+Therefore the tempting construction
+
+```text
+D_tau = diag(2, -2, 1)
+```
+
+remains a conditional flavor-capacity diagnostic rather than a derived endomorphism.
+
+This gate preserves the current ontology:
+
+```text
+scalar-bundle origin known: yes
+Spin(8) triality arena known: yes
+scalar-to-spinor functor derived: no
+Yukawa texture derived: no
+CKM/PMNS derived: no
+```
+
+The next frontier is deriving a representative of `tau_eta` in the actual domain of Spin(8) triality, rather than treating abstract triality as a universal converter.
