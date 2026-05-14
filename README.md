@@ -457,3 +457,8 @@ connection selecting a unique O(3) intertwiner.
 ## v0.90 — Gauge-Quotiented Correspondence
 
 Adds Gate 91, which compares protected contact directions to broken gauge-generator images only after quotienting arbitrary protected `O(3)` frame choices. It rejects component-wise frame matching and keeps only quotient-safe invariants: dimension/rank correspondence and broken-image metric spectrum. The gauge-eating bridge remains open because no quotient-safe intertwiner is derived.
+
+
+## v0.92 — Normalized Broken-Generator Basis
+
+Adds Gate 93, which normalizes the neutral broken generator by 1/2, isotropizes the quotient-safe broken-image metric, and exposes diag(1,1,4) as a gauge-kinetic candidate rather than an action-selected physical Hessian.

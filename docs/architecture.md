@@ -124,3 +124,13 @@ Next target: derive whether the broken-image anisotropy is physical kinetic data
 Gate 92 audits the anisotropic metric on the broken-generator image after the protected `O(3)` quotient. The raw diagnostic metric has charged eigenvalue `0.2833333333` and neutral eigenvalue `1.1333333333`, giving condition number `4`. The gate shows this anisotropy is exactly removable by normalizing the neutral broken generator by `1/2`, so the current anisotropy is not yet a physical W/Z mass prediction. It is unresolved gauge/scalar kinetic normalization data.
 
 The gate therefore preserves the structural Goldstone/gauge-eating signature while rejecting premature physical-mass claims. The next missing object is an action-selected gauge kinetic normalization or normalized broken-generator basis.
+
+## Gate 93 — Normalized Broken-Generator Basis / Gauge-Kinetic Candidate
+
+Gate 93 refines the broken-image metric result.  The raw broken-generator image
+metric has neutral-to-charged ratio `4`; the neutral broken generator can be
+scaled by `1/2`, making the quotient-safe broken metric isotropic.  In the raw
+field-coordinate basis this exposes the diagnostic kinetic candidate
+`diag(1,1,4)`.  The engine records this as a canonical diagnostic extracted
+from the broken-image metric, but not as a physical gauge kinetic Hessian until
+a finite action second variation selects it.
