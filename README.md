@@ -3604,3 +3604,52 @@ FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
 ```
 
 Gate 240 improves the finite weak-plane search by reducing the six candidate planes to the pure-spatial conjugacy class, but it still does not derive Standard Model chirality, a unique weak plane, or the global quaternionic `H` summand. The next hard target is a selector that breaks the remaining pure-spatial `S_3` degeneracy without importing Standard Model assignments.
+
+## v2.39 — Gate 241: Reeb vector spatial isotropy break and contact-geometry sieve audit
+
+Gate 241 introduces `pkg/bridge/reebweakselection`. It tests whether the core contact geometry can break the final pure-spatial `S_3` degeneracy left by Gate 240.
+
+Gate 240 reduced the six candidate weak planes to three pure-spatial planes:
+
+```text
+U={a†_1,a†_2}
+U={a†_1,a†_3}
+U={a†_2,a†_3}
+```
+
+A true contact Reeb vector would be the correct kind of object to finish the sieve. If the finite geometry derived a Reeb axis aligned with one spatial Fock mode, then the complementary two-plane would be selected as the weak plane. Gate 241 audits exactly this route.
+
+The contact space `K` is available as exact finite geometry:
+
+```text
+dim K = 7
+I_BG = 1
+K = Im(P_B) ∩ Im(P_G) inside Λ⁴R⁸
+```
+
+But the current finite core still does not derive:
+
+```text
+contact one-form η
+exterior derivative dη
+Reeb vector R satisfying η(R)=1 and i_R dη=0
+projection map K → W_spatial
+Reeb components on {a†_1,a†_2,a†_3}
+```
+
+Therefore no spatial axis is tagged and no weak plane is selected.
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_CONTACT_K_RETRIEVED_PREFLIGHT
+CONDITIONAL_SUPPORT_REEB_SELECTOR_TYPE_PREFLIGHT
+FAILED_ROUTE_CONTACT_FORM_ETA_DETA_DERIVATION
+FAILED_ROUTE_NATIVE_REEB_VECTOR_DERIVATION
+FAILED_ROUTE_CONTACT_TO_FOCK_SPATIAL_PROJECTION
+FAILED_ROUTE_SPATIAL_AXIS_TAG_DERIVATION
+FAILED_ROUTE_REEB_VECTOR_WEAK_PLANE_SELECTION
+FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
+```
+
+Gate 241 is a useful obstruction: it identifies the exact contact-geometry object that would solve the weak-plane problem, while refusing to promote the contact projector itself into a Reeb vector.

@@ -265,3 +265,12 @@
 - A commutator sieve can reduce candidate classes without selecting a unique physical plane. Report class reduction as progress, not as derivation.
 - If `χ_twist = γY` is not an involution or has multiple eigenvalues across the doublet sector, do not call it Standard Model chirality.
 - Preserve the global `H` obstruction until a canonical weak-plane selector, faithful finite algebra representation, and order-one calculus are all available.
+
+## Gate 241 method note — contact projectors are not Reeb vectors
+
+- When a contact-geometry selector is proposed, first distinguish the finite contact space/projector from the full contact-form data `(η,dη,R)`. A projector intersection `K` is not itself a Reeb vector.
+- A Reeb selector requires two independent bridges: a derived contact one-form/two-form pair and a natural projection from the contact carrier to the Fock generator axes.
+- Use the proposed Reeb mechanism as a hypothetical selection rule only after the Reeb axis is derived. Do not tag a spatial axis by hand.
+- Preserve the Gate-240 result: temporal-spatial planes are already rejected by the native `u(1)` commutator sieve, and the remaining problem is the threefold pure-spatial `S_3` degeneracy.
+- If no `K → W_spatial` map exists, report the obstruction as a bridge failure rather than a failure of contact geometry itself.
+- Do not claim the global quaternionic `H` summand until the weak plane, faithful finite algebra representation, and order-one calculus are all derived.

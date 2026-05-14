@@ -4011,3 +4011,40 @@ faithful finite algebra/order-one calculus still blocked
 ```
 
 Gate 240 is therefore progress but not completion: the native `u(1)` data gives a mathematically meaningful compatibility filter, but no unique electroweak plane or left-handed action follows yet.
+
+## Gate 241 — Reeb vector spatial isotropy break and contact geometry sieve audit
+
+Gate 241 adds `pkg/bridge/reebweakselection` after the Spin^c/u(1) class sieve of Gate 240.
+
+Architecturally, the finite algebra frontier is now blocked at the final pure-spatial degeneracy. Gate 240 proved that temporal-spatial planes are incompatible with the native diagonal `u(1)` bookkeeping, but it preserved the three pure-spatial candidate weak planes. Gate 241 asks whether the contact geometry supplies a Reeb vector that can tag one spatial axis and thereby select the complementary weak two-plane.
+
+The audit retrieves the exact finite contact space:
+
+```text
+K = Im(P_B) ∩ Im(P_G) ⊂ Λ⁴R⁸
+dim K = 7
+contact index = 1
+```
+
+This is real finite geometry, but it is still projector/intersection data. The project has not yet constructed the full contact-form package needed for a Reeb vector:
+
+```text
+η        missing
+dη       missing
+R        missing
+K → W    missing
+R|_{spatial Fock modes} missing
+```
+
+Thus Gate 241 records the following theorem distinction:
+
+```text
+contact K available: yes
+Reeb selector type identified: yes
+native Reeb vector derived: no
+spatial S3 degeneracy broken: no
+unique weak plane selected: no
+global H summand derived: no
+```
+
+The weak-algebra frontier now requires either an explicit finite contact one-form/Reeb-vector theorem with a natural projection to the Fock generator carrier, or an honest seal stating that weak-plane selection is an additional physical boundary condition.
