@@ -5051,3 +5051,9 @@ Q-base irreducibility
   -> unresolved projector-to-sector semantics
   -> unresolved r-branch selection
 ```
+
+## Gate 281 — Projector Orientation Boundary
+
+Gate 281 resolves the immediate question left by Gate 280: whether the Morita `1⊕3` trace multiplicities can choose one of the six sealed projector-sector orientations. They cannot. The contact projectors produced by resolvent adjunction split the irreducible quartic companion module as `2⊕2`, while the Morita multiplicities count finite-Hilbert-bimodule sectors as `1⊕3`. These are different carriers, and the multiplicity ledger does not provide an invariant contact-projector orientation.
+
+A `ProjectorSectorOrientationSeal` is therefore introduced as a conditional boundary. It may choose a representative branch and assign one projector to `{u,d}` and its complement to `{e,ν}`, but this remains a sealed orientation. The seal does not derive the missing map from resolvent branches to Gate-275 `r_±`, and the Seeley-de Witt/Higgs-ratio path remains blocked pending a real branch map, physical `J`, hypercharge/chirality completion, heat-kernel projection, and scalar/gauge normalization.

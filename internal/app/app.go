@@ -185,6 +185,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/realstructureorderone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/reebweakselection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/representationrowlattice"
+	"github.com/bagherbal/asha-engine/pkg/bridge/resolventbranchsemantics"
 	"github.com/bagherbal/asha-engine/pkg/bridge/resolventcubictagselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/resolventfieldadjunction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/resolventvacuum"
@@ -572,6 +573,7 @@ func Run() error {
 		contactrootsectorbijection.QuarticRootToYukawaSectorBijectionContactProjectorSemanticsAuditTheorem(),
 		contactprojectorcompanion.ContactProjectorActionQuarticCompanionModuleSemanticsAuditTheorem(),
 		resolventfieldadjunction.ResolventFieldAdjunctionContactProjectorConstructionAuditTheorem(),
+		resolventbranchsemantics.ResolventBranchSemanticsProjectorSectorOrientationSealAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -5206,3 +5206,30 @@ FAILED_ROUTE_RESOLVENT_TO_RPLUS_RMINUS_BRANCH_MAP_MISSING
 FAILED_ROUTE_AMPLITUDE_BRANCH_NOT_LOCKED
 FAILED_ROUTE_HIGGS_MASS_RATIO_STILL_NOT_DERIVED
 ```
+
+## Gate 281 — Resolvent Branch Semantics / Projector-to-Sector Orientation Seal Audit
+
+Gate 281 audits whether the conditional projectors built after the Gate-280 `ResolventAdjunctionSeal` carry enough native semantics to map onto the physical sector split `{u,d}|{e,ν}` and thereby select the Gate-275 `r_+` or `r_-` amplitude branch.
+
+The answer is negative, but precise:
+
+```text
+All resolvent projectors are rank-2/rank-2 on the contact companion module.
+Morita multiplicities are 1|3 on the finite Hilbert bimodule.
+Therefore κ_C:κ_Q = 1:3 cannot natively orient a 2|2 contact projector pair.
+```
+
+Gate 281 activates a `ProjectorSectorOrientationSeal` only as a conditional orientation witness. A representative branch and projector-sector assignment can be quarantined for future stress tests, but this does not rewrite the native theorem status and does not derive a map from the selected resolvent branch to Gate 275's scalar-Morita amplitude branches.
+
+Statuses:
+
+```text
+CONDITIONAL_SUPPORT_PROJECTOR_TRACE_NORM_SEMANTIC_AUDIT_COMPLETED
+CONDITIONAL_SUPPORT_PROJECTOR_SECTOR_ORIENTATION_SEAL_ACTIVATED
+CONDITIONAL_SUPPORT_REPRESENTATIVE_PROJECTOR_SECTOR_ORIENTATION_ASSIGNED
+FAILED_ROUTE_NO_NATIVE_PROJECTOR_ORIENTATION_SELECTOR_DERIVED
+FAILED_ROUTE_1_PLUS_3_MULTIPLICITY_DOES_NOT_PREFER_2_PLUS_2_PROJECTOR_ORIENTATION
+FAILED_ROUTE_PROJECTOR_ORIENTATION_DOES_NOT_DERIVE_RESOLVENT_TO_R_BRANCH_MAP
+FAILED_ROUTE_AMPLITUDE_BRANCH_NOT_LOCKED
+FAILED_ROUTE_HIGGS_MASS_RATIO_STILL_NOT_DERIVED
+```
