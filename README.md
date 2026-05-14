@@ -1470,3 +1470,65 @@ physical alpha / masses / thresholds / boundary scale: not derived
 This means the topological normalization branch is useful but quarantined. It can be studied as a conditional RG branch, but it is not yet a derived physical coupling.
 
 Next gate: Gate 176 — conditional RG boundary-scale solvability audit under the quarantined `u=1` branch.
+
+## v1.74 — Gate 176: Conditional RG boundary-scale solvability under quarantined `u=1`
+
+Gate 176 adds `pkg/bridge/conditionalrgbranch`.
+
+Gate 175 preserved the conditional instanton branch
+
+```text
+u = 1/g_*² = 1
+```
+
+but did not promote it to a strict finite-to-continuum theorem. Gate 176 asks the conditional question: if this branch is assumed, does the unthresholded one-loop RG system produce a sensible low-energy point near `M_Z`?
+
+The gate evaluates the project convention
+
+```text
+1/g_Y²(M_Z) = 5/3 + (b1/8π²)L
+1/g_2²(M_Z) = 1   + (b2/8π²)L
+1/g_3²(M_Z) = 1   + (b3/8π²)L
+L = ln(M*/M_Z)
+b = (41/10, -19/6, -7)
+```
+
+and keeps the observed comparison ledger explicitly quarantined. The comparison values are used only to test viability, not to derive or fit a theorem.
+
+Single-observable fits fail as simultaneous electroweak/QCD points:
+
+```text
+fit α3:     L ≈ 3.666,  M* ≈ 3.57 TeV,      α3 matched but α2 and αem too strong
+fit α2:     L ≈ -33.77, M* below M_Z,       rejected
+fit αem:    L ≈ 635.8,  negative kinetics,  rejected
+fit sin²θ:  L ≈ 8.950,  M* ≈ 7.03e5 GeV,   sin² matched but α3 and αem far off
+```
+
+Gate 176 also records the ratio-only audit in GUT-normalized variables:
+
+```text
+(α₂⁻¹ - α₃⁻¹)/(α₁⁻¹ - α₂⁻¹) = (b₂ - b₃)/(b₁ - b₂)
+```
+
+The unthresholded theory ratio is approximately `0.5275`; the comparison ledger gives approximately `0.7169`. The inferred log intervals disagree:
+
+```text
+L23 ≈ 34.59
+L12 ≈ 25.45
+```
+
+So the conditional `u=1` branch is internally computable, but it does not land near the observed `M_Z` coupling pattern without additional normalization or threshold data.
+
+Gate 176 status:
+
+```text
+Status: BRIDGE_REQUIRED
+conditional u=1 branch: evaluated
+single-observable M_Z fits: no simultaneous viable point
+ratio-only unthresholded check: fails comparison
+strict nullity: 3 -> 3
+conditional nullity ledger: 2 -> 2
+physical constants: not derived
+```
+
+Next gate: Gate 177 — normalization-prefactor or threshold-deformation branch audit after conditional `u=1` M_Z rejection.

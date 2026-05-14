@@ -24,6 +24,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
+	"github.com/bagherbal/asha-engine/pkg/bridge/conditionalrgbranch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactalgebraic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactassignment"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactasymmetry"
@@ -362,6 +363,7 @@ func Run() error {
 		noncommutingtexturepair.FiniteNonCommutingTexturePairSearchTheorem(),
 		topologicalnormalization.SpectralActionTopologicalNormalizationTheorem(),
 		instantontracebridge.FiniteToContinuumInstantonTraceNormalizationBridgeTheorem(),
+		conditionalrgbranch.ConditionalRGBoundaryScaleSolvabilityAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

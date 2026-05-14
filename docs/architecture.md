@@ -2271,3 +2271,55 @@ physical constants: not derived
 ```
 
 The topological branch is therefore mathematically meaningful but quarantined. Future gates may analyze what follows under that conditional assumption, but must keep the strict theorem ledger separate.
+
+### Gate 176 — conditional RG boundary-scale solvability under quarantined `u=1`
+
+Package: `pkg/bridge/conditionalrgbranch`
+
+Gate 176 studies the useful but quarantined branch isolated by Gates 174-175:
+
+```text
+u = 1/g_*² = 1
+```
+
+This branch is not a strict theorem because the finite-to-continuum instanton/trace bridge failed. Gate 176 therefore treats it as a conditional RG diagnostic only.
+
+The gate propagates the boundary seed with the unthresholded one-loop coefficients
+
+```text
+b1 = 41/10
+b2 = -19/6
+b3 = -7
+```
+
+using
+
+```text
+1/g_Y²(μ) = 5/3 + (b1/8π²)L
+1/g_2²(μ) = 1   + (b2/8π²)L
+1/g_3²(μ) = 1   + (b3/8π²)L
+L = ln(M*/μ)
+```
+
+At `μ=M_Z`, no single-observable fit gives a simultaneous viable low-energy coupling point. Fitting `α3` gives a positive log interval but predicts electroweak couplings far too strong. Fitting `α2` requires negative `L`. Fitting `αem` makes kinetic coefficients negative. Fitting `sin²θ` keeps positivity but misses `α3` and `αem` badly.
+
+The gate also records a pure ratio audit in GUT-normalized variables:
+
+```text
+(α₂⁻¹-α₃⁻¹)/(α₁⁻¹-α₂⁻¹) = (b₂-b₃)/(b₁-b₂)
+```
+
+This check is independent of the absolute intercept `u`, but it fails the external comparison ledger under the unthresholded beta vector. The result points toward a missing threshold-deformation or normalization-prefactor theorem, not toward a derived physical prediction.
+
+Gate 176 status:
+
+```text
+Status: BRIDGE_REQUIRED
+conditional RG branch: computable
+conditional u=1 M_Z viability: rejected under unthresholded one-loop flow
+ratio-only check: fails without thresholds
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+physical constants: not derived
+observed values: comparison-only, not theorem input
+```
