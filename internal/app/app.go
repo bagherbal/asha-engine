@@ -129,6 +129,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeselection"
+	"github.com/bagherbal/asha-engine/pkg/bridge/exponentialtauetatexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/faithfuloppositeactionrep"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fermionicroottracesieve"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fieldmap"
@@ -726,6 +727,7 @@ func Run() error {
 		tauetargtexture.TauEtaDiagonalTextureRGEvolutionMassHierarchyAuditTheorem(),
 		nativenondiagonaltexture.NativeNonDiagonalTextureFlavorOrientationSieveTheorem(),
 		nonunitaryprojectortexture.NonUnitaryProjectorKineticSafeFlavorTextureSieveTheorem(),
+		exponentialtauetatexture.ExponentialTauEtaTextureBGapMixingHierarchyAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
