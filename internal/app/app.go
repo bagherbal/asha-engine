@@ -5,6 +5,7 @@ import (
 
 	"github.com/bagherbal/asha-engine/internal/report"
 	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
+	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
@@ -96,6 +97,7 @@ func Run() error {
 		couplingnorm.CouplingNormalizationBridgeTheorem(),
 		ewprojection.ElectroweakProjectionTheorem(),
 		rgflow.RGBoundaryFlowAuditTheorem(),
+		betacoeff.FiniteSpectrumBetaCoefficientAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
