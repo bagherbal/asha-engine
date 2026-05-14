@@ -53,6 +53,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotientsemantics"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactreconstruction"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactrootiso"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactrowsemantics"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsignsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsignsplit"
@@ -310,6 +311,7 @@ func Run() error {
 		contactalgebraic.ContactIrrationalSpectrumAlgebraicOriginMinimalPolynomialObstructionTheorem(),
 		contactcharpoly.ExactContactOverlapCharacteristicPolynomialSymbolicNumberFieldAttemptTheorem(),
 		contactmatrixcert.ExactRationalContactOverlapMatrixLiftDeterminantCertificateSearchTheorem(),
+		contactrootiso.ExactContactRootIsolationRowwiseEigenprojectorAssignmentTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

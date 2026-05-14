@@ -1292,3 +1292,33 @@ trace(Ω) = 163/15
 ```
 
 This certifies the Gate 148 determinant/characteristic-polynomial candidate exactly. It still does not provide root isolation, row-wise eigenprojector assignment, charge semantics, local fields, mass activation, decoupling, threshold beta rows, or physical constants.
+
+### Gate 150 — Exact contact root-isolation / row-wise eigenprojector assignment theorem
+
+Gate 150 upgrades the Gate 149 contact spectral certificate by isolating all seven non-unit contact roots using exact rational data.
+
+The partial contact factor is:
+
+```text
+(2x - 1)(3x - 2)(3x - 1)
+(3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271) / 58320
+```
+
+Three roots are exact rational roots:
+
+```text
+1/3, 1/2, 2/3
+```
+
+The four quartic roots are isolated by disjoint rational sign-change intervals:
+
+```text
+[2839/10000, 2840/10000]
+[4411/10000, 4412/10000]
+[7440/10000, 7441/10000]
+[8975/10000, 8976/10000]
+```
+
+Because the intervals are disjoint, each has an exact sign change, and the quartic has degree four, the four non-rational roots are isolated one per interval.
+
+This gives exact root-isolation certificates for all seven non-unit contact roots, while preserving the firewall: root isolation is not a number-field eigenprojector construction, row-wise physical assignment, charge operator, representation row, local field map, mass activation, decoupling rule, threshold beta correction, or physical constant derivation.
