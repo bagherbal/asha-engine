@@ -1,0 +1,27 @@
+package contactbranchsemantics
+
+import (
+	"fmt"
+
+	"github.com/bagherbal/asha-engine/pkg/theorem"
+)
+
+func QuarticContactBranchSelectorGaloisInvariantRowSemanticsSearchTheorem() theorem.Theorem {
+	const id = "BRIDGE-QUARTIC-CONTACT-BRANCH-SELECTOR-GALOIS-INVARIANT-ROW-SEMANTICS"
+	const name = "Quartic contact branch selector / Galois-invariant row semantics search"
+	return theorem.Theorem{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.Variational, Verify: func() theorem.Result {
+		a, err := BuildDefault()
+		if err != nil {
+			return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.FailedRoute, Checks: []theorem.Check{{Name: "build quartic branch semantics search", Passed: false, Detail: err.Error()}}}
+		}
+		return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.Variational, Checks: []theorem.Check{
+			{Name: "Gate 152 exact quartic branch obstruction is inherited", Passed: a.Previous.ExactRationalOverlapMatrix && a.Previous.ExactCharacteristicCertified && a.Previous.ExactRootIsolationCertified && a.Previous.RationalPrimaryIdempotents == 5 && a.Previous.QuarticBranches == 4 && a.Previous.CanonicalQuarticBranches == 0 && a.Previous.IndividualQuarticProjectors == 0 && a.Previous.ContactBetaRowsAllowed == 0, Detail: fmt.Sprintf("matrix=%t char=%t rootIso=%t Qidempotents=%d branches=%d canonicalBranches=%d individualQuartic=%d beta=%d", a.Previous.ExactRationalOverlapMatrix, a.Previous.ExactCharacteristicCertified, a.Previous.ExactRootIsolationCertified, a.Previous.RationalPrimaryIdempotents, a.Previous.QuarticBranches, a.Previous.CanonicalQuarticBranches, a.Previous.IndividualQuarticProjectors, a.Previous.ContactBetaRowsAllowed)},
+			{Name: "Galois-invariant partition is exact but not row-complete", Passed: a.Partition.TotalPartialRows == 7 && a.Partition.RationalSingletonRows == 3 && a.Partition.QuarticOrbitRows == 4 && a.Partition.OrbitPattern == "1+1+1+4" && a.Partition.GaloisInvariantOrbits == 4 && a.Partition.IndividualQuarticRows == 0 && a.Partition.CanonicalBranchSelectors == 0 && a.Partition.BranchChoicesRequired == 4 && a.Partition.PartitionExact && !a.Partition.PartitionRowComplete, Detail: FormatPartition(a.Partition)},
+			{Name: "branch selector still absent", Passed: a.BranchSelector.RationalRootBranches == 3 && a.BranchSelector.QuarticRootBranches == 4 && a.BranchSelector.QuarticBranchesSelected == 0 && a.BranchSelector.QuarticEmbeddingsSelected == 0 && a.BranchSelector.GaloisInvariantBlockOnly && !a.BranchSelector.IndividualQuarticSemantics && a.BranchSelector.RowwiseRootAssignments == 0 && a.BranchSelector.HiddenChoiceFree, Detail: FormatBranchSelector(a.BranchSelector)},
+			{Name: "spectral semantics do not become charges or beta rows", Passed: a.SemanticLift.SpectralPartitionRows == 7 && a.SemanticLift.SpectralSemanticsRows == 3 && a.SemanticLift.ChargeSemanticRows == 0 && a.SemanticLift.T3RRows == 0 && a.SemanticLift.BMinusLRows == 0 && a.SemanticLift.HyperchargeRows == 0 && a.SemanticLift.LocalFieldRows == 0 && a.SemanticLift.MassActivationRows == 0 && a.SemanticLift.DecouplingRows == 0 && a.SemanticLift.RepresentationRows == 0 && a.SemanticLift.ContactBetaRowsAllowed == 0 && a.SemanticLift.GaloisInvariantSemantics && !a.SemanticLift.RepresentationUseful, Detail: FormatSemanticLift(a.SemanticLift)},
+			{Name: "Galois-safe pattern mismatches contact/current/Fano semantics", Passed: a.PatternMismatch.GaloisSafePattern == "1+1+1+4" && a.PatternMismatch.ContactSingletonPattern == "1+1+1+1+1+1+1" && a.PatternMismatch.CurrentQuotientPattern == "1+6" && a.PatternMismatch.FanoPattern == "7-transitive" && !a.PatternMismatch.GaloisPatternMatchesContact && !a.PatternMismatch.GaloisPatternMatchesCurrent && !a.PatternMismatch.GaloisPatternMatchesFano && a.PatternMismatch.RefinementChoicesRequired == 4, Detail: FormatPatternMismatch(a.PatternMismatch)},
+			{Name: "physics firewall remains closed", Passed: a.Firewall.ObservedInputFree && a.Firewall.ExactMatrix && a.Firewall.ExactCharpoly && a.Firewall.ExactRootIsolation && a.Firewall.RationalPrimaryIdempotents && a.Firewall.GaloisInvariantPartition && !a.Firewall.BranchSelector && !a.Firewall.IndividualQuarticSplit && !a.Firewall.ContactCharges && !a.Firewall.RepresentationRows && !a.Firewall.BetaRows && !a.Firewall.PhysicalConstants && !a.Firewall.AllSatisfiedForPhysics, Detail: FormatFirewall(a.Firewall)},
+			{Name: "contact beta and physical constants remain sealed", Passed: a.ContactRows == 7 && a.GaloisInvariantOrbits == 4 && a.RationalSingletonRows == 3 && a.QuarticOrbitRows == 4 && a.IndividualQuarticRows == 0 && a.CanonicalQuarticBranches == 0 && a.ExactNumberFieldProjectors == 0 && a.IndividualQuarticProjectors == 0 && a.RowwiseRootAssignmentProofs == 0 && a.ChargeSemanticRows == 0 && a.T3RRowsDerived == 0 && a.BMinusLRowsDerived == 0 && a.HyperchargeRowsDerived == 0 && a.RepresentationCompleteRows == 0 && a.RepresentationOpenRows == 7 && a.ContactBetaRowsAllowed == 0 && a.ContactZeroRowsProved == 0 && a.BetaPermissionFirewallClosed && a.ResidualS6Choices == 720 && a.ResidualNullityBefore == 3 && a.ResidualNullityAfter == 3 && !a.ThresholdCorrectedBeta && !a.FullBetaMatchingTensor && !a.HiddenObservedInputUsed && !a.PhysicalWeakAngleDerived && !a.FineStructureDerived && !a.PhysicalMassesDerived && !a.PhysicalScaleDerived, Detail: FormatSummary(a.Summary) + " :: " + a.TruthStatement},
+		}}
+	}}
+}

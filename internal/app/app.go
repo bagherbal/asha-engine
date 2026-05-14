@@ -28,6 +28,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactassignment"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactasymmetry"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactautaction"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactbranchsemantics"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactbundle"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactchargelattice"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactchargenorm"
@@ -316,6 +317,7 @@ func Run() error {
 		contactrootiso.ExactContactRootIsolationRowwiseEigenprojectorAssignmentTheorem(),
 		contactidempotent.ExactContactEigenprojectorNumberFieldSpectralIdempotentConstructionAttemptTheorem(),
 		contactquarticgalois.QuarticContactNumberFieldBranchGaloisSymmetryObstructionTheorem(),
+		contactbranchsemantics.QuarticContactBranchSelectorGaloisInvariantRowSemanticsSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

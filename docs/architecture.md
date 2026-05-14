@@ -1360,3 +1360,29 @@ has four isolated real roots and a non-square discriminant
 with a transitive Galois-active branch structure. The rational quartic primary block is therefore safe and exact over `Q`, but its individual roots are not individually selected without choosing a number-field branch or embedding.
 
 The gate preserves the exact spectral advance while keeping the physics firewall closed: no contact `T3R`, `B−L`, hypercharge, representation rows, local fields, mass activation, decoupling, threshold beta correction, or physical constants are derived from quartic branch data.
+
+### Gate 153 — Quartic contact branch selector / Galois-invariant row semantics search
+
+Package: `pkg/bridge/contactbranchsemantics`
+
+Gate 153 asks what can be said about the four quartic contact roots without choosing a quartic branch or embedding.
+
+The answer is an exact Galois-invariant partition:
+
+```text
+partial contact spectrum = 1 + 1 + 1 + 4
+```
+
+The three rational roots `1/3`, `1/2`, and `2/3` are exact singleton spectral rows. The four roots of
+
+```text
+3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271
+```
+
+form one exact quartic orbit/block over `Q`. This is the strongest branch-free row semantics currently available.
+
+The gate deliberately refuses to split the quartic orbit into four individual rows, because that would require a noncanonical branch selector. It also records that the `1+1+1+4` Galois-safe pattern does not match the current-side `1+6` quotient semantics, the seven singleton contact-row semantics, or the transitive Fano-labeling pattern.
+
+The physics firewall remains closed: the Galois-invariant partition is spectral/algebraic data only. It does not derive contact `T3R`, `B−L`, hypercharge, representation rows, local fields, mass activation, decoupling, threshold beta corrections, physical electroweak constants, or masses.
+
+Next gate: Gate 154 — quartic orbit semantic compression / four-row block beta firewall theorem.
