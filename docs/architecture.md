@@ -816,3 +816,17 @@ L = ln(M*/μ)
 ```
 
 The next honest gate should search for a finite symmetry-breaking selector or stabilizer-reduction mechanism. Without such a selector, the contact-Fano resonance is structural but not yet a physical threshold representation.
+
+
+### Gate 118 — Contact symmetry-breaking selector / stabilizer reduction search
+
+Gate 118 tests whether the exact Fano symmetry data from Gate 117 contains a legitimate finite symmetry-breaking object that can reduce `Aut(Fano)` to a selected stabilizer subgroup. It verifies the stabilizer arithmetic: choosing a Fano point or line gives stabilizer order `24`, and choosing an incident point-line flag gives stabilizer order `8`. The gate then refuses to promote those conditional reductions into physics, because the finite system still contains no canonical point, line, flag, contact-side automorphism action, or natural contact-to-Fano assignment.
+
+The seven contact partial-overlap modes therefore remain representation-open and beta-forbidden. Gate 118 uses no observed physical constants and leaves the residual flow nullity unchanged.
+
+
+### Gate 119 — Contact-side automorphism action / equivariant assignment search
+
+Gate 119 tests whether the seven positive contact partial-overlap modes carry a derived contact-side action of the 168-element Fano automorphism group. The finite overlap values are treated as contact-side structure. Under that constraint, the contact weighted automorphism group is identity-only because the seven overlap values are all distinct. A faithful Aut(Fano) action can be transported to contact labels only after choosing one of the 7! contact-to-Fano bijections, but that choice is precisely the convention blocked by the naturality and stabilizer gates.
+
+Result: the contact-side action search is a variational obstruction theorem. It derives no canonical equivariant assignment, no representation row, no contact threshold beta correction, and no physical constants. The next gate should test whether quotienting the contact spectrum to symmetry-invariant data collapses or clarifies the obstruction without losing the finite information needed for representation rows.

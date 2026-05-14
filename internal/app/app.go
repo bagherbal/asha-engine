@@ -24,6 +24,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactautaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactbundle"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactcohomology"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactembedding"
@@ -31,6 +32,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactincidence"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactnaturality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactpropagator"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactsymmetry"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentcontact"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentembedding"
@@ -246,6 +248,8 @@ func Run() error {
 		contactbundle.ContactLocalBundleObstructionRepresentationRowConstructionTheorem(),
 		contactincidence.ContactIncidenceFiberFunctorSearchTheorem(),
 		contactnaturality.ContactFanoNaturalityAutomorphismObstructionTheorem(),
+		contactsymmetry.ContactSymmetryBreakingSelectorStabilizerSearchTheorem(),
+		contactautaction.ContactSideAutomorphismActionEquivariantAssignmentSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
