@@ -4770,3 +4770,23 @@ but the coefficients remain behind the `EmpiricalYukawaSeal` unless a future fin
 ## Gate 264 — Empirical Yukawa Seal Activation
 
 Gate 264 separates the derived geometric shell from empirical flavor reality. The finite core supplies `tau_eta` and the Hermitian triality real/phase basis, but not the amplitudes. Under `EmpiricalYukawaSeal`, representative quark flavor data are used as sealed stress targets. The restricted three-parameter ansatz per sector fails the fit audit, preserving the firewall: masses, CKM/PMNS entries, VEV normalization, thresholds, and full Yukawa matrices remain empirical boundary data unless a later finite theorem supplies additional texture components or a genuine action functional.
+
+## Gate 265 — Empirical Full Texture Seal / SVD-CKM Reconstruction
+
+Gate 265 extends the flavor ontology after the Gate 264 underfit no-go. The minimal finite shell is not expanded by hand. Instead, the `EmpiricalYukawaSeal` is continued into a full-texture branch:
+
+- `Y_u` and `Y_d` are full empirical `3x3` quark texture matrices.
+- SVD is used only as algebraic reconstruction: `Y = U Sigma V^dagger`.
+- Singular values give the sealed mass eigenvalue ledger.
+- Left-unitary misalignment gives the sealed CKM observable: `V_CKM = U_u^dagger U_d`.
+
+The selected representative weak-basis convention is:
+
+```text
+Y_d = diag(m_d,m_s,m_b)
+Y_u = V_CKM^dagger diag(m_u,m_c,m_t)
+U_d = I
+U_u = V_CKM^dagger
+```
+
+This is deliberately a phenomenological reconstruction theorem, not a finite-core derivation. It closes the immediate flavor-observable pipeline while preserving Gate 263 and Gate 264 no-gos: no native finite Yukawa action, no finite amplitude selector, and no finite derivation of quark masses or CKM angles has been found.

@@ -102,6 +102,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcoupling"
 	"github.com/bagherbal/asha-engine/pkg/bridge/eftdecayportal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/electroweakvevseal"
+	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalfulltexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalyukawafit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewcartanledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewcurvature"
@@ -540,6 +541,7 @@ func Run() error {
 		tauetamixingpartner.TauEtaNonCommutingPartnerFinitePhaseMixingSourceAuditTheorem(),
 		finiteyukawaaction.FiniteYukawaActionFunctionalTrialityHopfAmplitudeQualificationAuditTheorem(),
 		empiricalyukawafit.EmpiricalYukawaSealActivationTextureAmplitudeFitAuditTheorem(),
+		empiricalfulltexture.EmpiricalFullTextureSealSVDCKMObservableReconstructionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

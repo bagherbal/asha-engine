@@ -4682,3 +4682,55 @@ Y_f = alpha*tau_eta + beta*(C+C^T) + gamma*i(C-C^T)
 ```
 
 The gate ingests representative quark-sector mass hierarchy and CKM data only as quarantined phenomenological stress data. Orthogonal projection of a conventional sealed quark texture proxy into the three-term geometric shell leaves large residuals, so the minimal shell is structurally meaningful but too restrictive for observed flavor. Full empirical Yukawa matrices, or additional finite-derived texture components, remain required.
+
+## Gate 265 — Empirical Full Texture Seal / SVD-CKM Observable Reconstruction Audit
+
+Gate 265 adds `pkg/bridge/empiricalfulltexture` and registers `EmpiricalFullTextureSealSVDCKMObservableReconstructionAuditTheorem`.
+
+After Gate 264 proved that the restricted three-term shell
+
+```text
+Y_f = alpha*tau_eta + beta*(C+C^T) + gamma*i(C-C^T)
+```
+
+underfits representative quark flavor data, Gate 265 keeps the `EmpiricalYukawaSeal` active and moves to full sealed quark textures. It chooses a transparent generation-labeled weak-basis convention:
+
+```text
+Y_d = diag(m_d,m_s,m_b)
+Y_u = V_CKM^dagger diag(m_u,m_c,m_t)
+V_u = V_d = I on the right
+U_d = I
+U_u = V_CKM^dagger
+V_CKM = U_u^dagger U_d
+```
+
+The SVD audit verifies that the singular values reconstruct the sealed quark mass ledger and that the left-unitary misalignment reconstructs the CKM matrix:
+
+```text
+Y_u = U_u Sigma_u V_u^dagger
+Y_d = U_d Sigma_d V_d^dagger
+V_CKM = U_u^dagger U_d
+```
+
+Representative CKM magnitudes reconstructed in this sealed basis are approximately:
+
+```text
+|V_CKM| ≈ [[0.974350, 0.225009, 0.003635],
+          [0.224874, 0.973490, 0.041820],
+          [0.008582, 0.041091, 0.999119]]
+```
+
+The gate logs support for algebraic observable reconstruction but also permanently records the firewall:
+
+```text
+CONDITIONAL_SUPPORT_FULL_EMPIRICAL_TEXTURE_SEAL_ACTIVATED
+CONDITIONAL_SUPPORT_FULL_EMPIRICAL_QUARK_TEXTURES_INGESTED
+CONDITIONAL_SUPPORT_SVD_DECOMPOSITION_COMPLETED
+CONDITIONAL_SUPPORT_MASS_EIGENVALUES_RECONSTRUCTED_FROM_SVD
+CONDITIONAL_SUPPORT_SVD_CKM_RECONSTRUCTION_VERIFIED
+FAILED_ROUTE_NO_NATIVE_DERIVATION
+FAILED_ROUTE_FULL_YUKAWA_TEXTURES_ARE_EMPIRICAL_BOUNDARY_DATA
+FAILED_ROUTE_RESTRICTED_GEOMETRIC_ANSATZ_REMAINS_EMPIRICALLY_UNDERFIT
+```
+
+Thus Gate 265 proves that the engine can reconstruct physical flavor observables from sealed full textures while preserving the central truth: the full matrices, masses, CKM entries, basis convention, VEV normalization, and RG scale choices are empirical boundary data unless a future finite action derives them.
