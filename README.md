@@ -83,3 +83,10 @@ The bridge verifies a conservative kinematic resonance:
 - three protected unmixed contact directions.
 
 It intentionally does **not** claim Standard Model hypercharge, Yukawa masses, a Higgs mass, or dark matter stability. Those remain future theorem gates.
+
+
+## v0.14 — Canonical Fock/contact embedding search
+
+Gate 15 tests whether the finite Higgs/contact active eigenstructure is already sufficient to assign the four active directions to the Fock `1+3` split. The result is intentionally honest: the active sector is four-dimensional and the Fock sector has a `1 temporal + 3 spatial` bookkeeping split, but the current Higgs/contact spectrum is pair-degenerate `2+2`. Therefore the eigenvectors are not canonically aligned with lepton/color modes yet.
+
+The new missing object is a finite charge-polarizing operator compatible with the block connection on `K ⊕ K⊥`, such as a `B−L`, hypercharge, or central `U(1)` action.

@@ -18,6 +18,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/geometry/g2"
 	"github.com/bagherbal/asha-engine/pkg/matter"
 	"github.com/bagherbal/asha-engine/pkg/matter/action"
+	"github.com/bagherbal/asha-engine/pkg/matter/embedding"
 	"github.com/bagherbal/asha-engine/pkg/phase"
 	"github.com/bagherbal/asha-engine/pkg/spinor"
 	"github.com/bagherbal/asha-engine/pkg/theorem"
@@ -41,6 +42,7 @@ func Run() error {
 		spinor.FockSpaceTheorem(),
 		matter.FockContactBridgeTheorem(),
 		action.RepresentationActionTheorem(),
+		embedding.CanonicalEmbeddingTheorem(),
 	)
 
 	results := registry.RunAll()
