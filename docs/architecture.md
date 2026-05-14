@@ -1906,3 +1906,64 @@ threshold/RG/physical constants: still sealed
 ```
 
 Gate 167 links the next phase directly to Gates 28-36: generation breaking must now be reformulated as a finite Dirac/Yukawa texture eigenvalue problem.
+
+### Gate 168 — Fock Dirac scalar spectral action and contact quartic-shape comparison
+
+Package: `pkg/bridge/scalarfockspectralpotential`
+
+Gate 168 tests the scalar-sector analogue of the Gate-166/167 gauge convergence. The gauge ratio closed because the correct functional is the amplitude-independent representation trace. The scalar potential behaves differently: the finite spectral-action scalar moments depend directly on the off-diagonal Dirac/Yukawa amplitudes.
+
+The gate records the Fock/Yukawa scalar moment ledger:
+
+```text
+A = Tr(Y†Y)     = Σ |y_i|²
+B = Tr((Y†Y)²) = Σ |y_i|⁴
+Tr(D_F²)       = 2A
+Tr(D_F⁴)       = 2B
+V(H)           = -c2 f2 Λ² A |H|² + c4 f0 B |H|⁴
+```
+
+The dimensionless scalar shape comparable to the Gate-37 contact/Higgs shape is
+
+```text
+λ_Fock_shape = B/A²
+```
+
+For the unit-incidence Gate-25 support:
+
+```text
+A = 8
+B = 8
+Tr(D_F²) = 16
+Tr(D_F⁴) = 16
+λ_Fock_shape = 1/8
+```
+
+The independently derived Gate-37 contact/Higgs scalar shape is
+
+```text
+λ_contact_shape = Tr(M_K²)/Tr(M_K)² ≈ 0.258866782006920
+```
+
+Therefore unit incidence does not produce scalar-sector convergence. However, since eight positive Yukawa amplitudes obey
+
+```text
+1/8 ≤ B/A² ≤ 1
+```
+
+and the Gate-37 value lies inside this range, the contact scalar potential becomes a finite amplitude-texture constraint rather than a new closed representation theorem. Its effective participation number is
+
+```text
+N_eff = 1/λ_contact_shape ≈ 3.862990810359
+```
+
+Status:
+
+```text
+positive: Fock spectral-action scalar moment ledger constructed
+positive: Gate37 contact shape is inside the allowed finite Yukawa shape range
+negative: unit incidence does not match Gate37
+negative: no Yukawa amplitudes, fermion masses, CKM/PMNS, electroweak scale, Higgs mass, thresholds, RG running, or physical constants are derived
+```
+
+This gate redirects the next step toward a canonical finite Yukawa amplitude texture search constrained by the Gate-37 scalar shape.

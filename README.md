@@ -957,3 +957,86 @@ residual nullity:                  3 -> 3
 ```
 
 Next gate: Gate 168 — finite Dirac/Yukawa amplitude texture target from triality and generation-breaking no-go data.
+
+## v1.66 — Gate 168: Fock Dirac scalar spectral action and contact quartic-shape comparison
+
+Gate 168 adds `pkg/bridge/scalarfockspectralpotential`.
+
+This gate tests whether the scalar sector shows the same kind of two-tower convergence that Gates 166-167 established for the embedded gauge boundary ratio.
+
+The result is disciplined but negative: the scalar potential is not a gauge-like representation trace. In a finite spectral-action expansion, the Fock Dirac/Yukawa scalar moments are
+
+```text
+A = Tr(Y†Y)     = Σ |y_i|²
+B = Tr((Y†Y)²) = Σ |y_i|⁴
+Tr(D_F²)       = 2A
+Tr(D_F⁴)       = 2B
+```
+
+The cutoff-dependent scalar template is recorded as
+
+```text
+V(H) = -c2 f2 Λ² A |H|² + c4 f0 B |H|⁴
+```
+
+The scale-free shape comparable to Gate 37 is therefore
+
+```text
+λ_Fock_shape = B / A²
+```
+
+For unit incidence across the eight Gate-25 Yukawa channels:
+
+```text
+A = 8
+B = 8
+Tr(D_F²) = 16
+Tr(D_F⁴) = 16
+λ_Fock_shape = 1/8 = 0.125
+```
+
+Gate 37 independently gives the contact/Higgs active-sector scalar shape:
+
+```text
+λ_contact_shape = Tr(M_K²) / Tr(M_K)²
+                ≈ 0.258866782006920
+```
+
+So the scalar shapes do **not** match under unit incidence:
+
+```text
+absolute difference ≈ 0.133866782006920
+```
+
+The gate also records the important positive constraint: for eight positive Yukawa-amplitude slots, the shape range is
+
+```text
+1/8 ≤ B/A² ≤ 1
+```
+
+Gate 37 lies inside this range. Its effective participation count is
+
+```text
+N_eff = 1 / λ_contact_shape ≈ 3.862990810359
+```
+
+Thus Gate 168 does not close the scalar sector, but it converts the contact scalar potential into a concrete finite-Yukawa amplitude target. The next scalar/mass gate should search for a canonical amplitude texture whose moment shape equals the Gate-37 contact value without inserting observed masses.
+
+Gate 168 theorem ledger:
+
+```text
+gauge ratio already closed:        true
+scalar unit-incidence convergence: false
+Fock unit scalar shape:            1/8
+Gate37 contact shape:              ≈0.258866782006920
+contact shape in Yukawa range:     true
+amplitude constraint opened:       true
+Yukawa amplitudes derived:         false
+fermion masses derived:            false
+CKM/PMNS derived:                  false
+EW scale / Higgs mass derived:     false
+threshold/RG/constants derived:    false
+residual nullity:                  3 -> 3
+```
+
+Next gate: Gate 169 — finite Yukawa amplitude texture search from the Gate-37 scalar-shape constraint.
