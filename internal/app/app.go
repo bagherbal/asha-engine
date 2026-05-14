@@ -190,6 +190,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticscalaroperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticspectralfunctional"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quotientedcorrespondence"
+	"github.com/bagherbal/asha-engine/pkg/bridge/realstructurekofactorization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/realstructureorderone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/reebweakselection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/representationrowlattice"
@@ -594,6 +595,7 @@ func Run() error {
 		chiraljanomalysieve.ChiralJStructureAnomalySieveAsymmetricTraceAuditTheorem(),
 		bimoduletracecapacity.BimoduleTraceCapacitySieveSectorHierarchyAuditTheorem(),
 		perslotmonotonicityseal.PerSlotMonotonicitySealFinalSpectralSynthesisAuditTheorem(),
+		realstructurekofactorization.RealStructureJFactorizationKODimensionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
