@@ -1390,3 +1390,9 @@ Next gate: Gate 154 — quartic orbit semantic compression / four-row block beta
 ### Gate 154 — Quartic orbit semantic compression / four-row block beta firewall
 
 Gate 154 compresses the exact quartic contact orbit from Gate 153 into a branch-free four-row spectral block. It records exact Q-symmetric invariants of the quartic factor (sum 71/30, mean 71/120, pair sum 119/60, triple sum 149/216, product 271/3240), but refuses to treat the block as a physical multiplet. Without gauge representation, local field variables, spin/statistics, mass activation, and decoupling, the quartic block contributes no threshold beta row and keeps physical constants sealed.
+
+### Gate 155 — Quartic block multiplet representation / beta-index obstruction
+
+Gate 155 audits whether the exact four-row quartic contact block from Gate 154 can be promoted to a physical multiplet. It checks dimension-four interpretations such as a real scalar four-vector, complex scalar doublet candidate, four singlet thresholds, and a Dirac-like block. All match the block only by dimension. None supplies a derived gauge action, representation row, spin/statistics, local field map, mass activation, decoupling rule, or Dynkin/beta index. The quartic block remains an exact spectral diagnostic, not a threshold beta contribution.
+
+Next gate: Gate 156 — quartic block local-field/spin-statistics obstruction theorem.
