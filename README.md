@@ -4332,3 +4332,63 @@ FAILED_ROUTE_YUKAWA_TEXTURE_STILL_BLOCKED
 ```
 
 The next logical move is not to force the map. If the project chooses to proceed, the missing data must be sealed explicitly as spontaneous/gauge-fixed carrier data: scalar orientation, gauge frame, and a state-index ledger that identifies how the left-doublet table embeds into the Fock basis.
+
+## Gate 256 — Spontaneous carrier seal / gauge-fixed embedding axiom audit
+
+Gate 256 adds `pkg/bridge/spontaneouscarrierseal`.
+
+Gate 255 proved a native carrier no-go: no finite theorem currently embeds both
+
+```text
+H_phi      -> S_C = Λ*(C^4)
+Q_L⊕L_L    -> S_C = Λ*(C^4)
+```
+
+as a common `S_C` endomorphism ledger. Gate 256 therefore follows the seal method rather than forcing the map. It records a quarantined `SpontaneousCarrierSeal`: a gauge-fixed/SSB boundary condition that specifies exactly what extra data must be supplied before the physical electroweak pair can be compared on the Fock carrier.
+
+The seal is explicit, conditional, and non-derived. It requires five concrete data items before the downstream calculation is lawful:
+
+```text
+ι_phi:H_phi→S_C                    scalar/contact trivialization
+ι_L:Q_L⊕L_L→S_C                    left-doublet occupation injection
+U_L⊂{N_0,N_1,N_2,N_3}              weak SU(2) frame / plane
+Y_phi^seal                         Higgs/scalar charge orientation
+τ_{s→v}                             physical spinor-to-vector triality branch
+```
+
+Gate 256 defines the typed symbolic schema
+
+```text
+T3L^seal   = Σ_k t_k N_k
+Y_phi^seal = Σ_k y_k N_k
+Q^seal     = Σ_k (t_k+y_k) N_k
+```
+
+and, using the Gate-253 Witt dictionary, the corresponding symbolic Cartan formulas
+
+```text
+T3L^seal   -> Σ_k (i/2)t_k e_{2k}∧e_{2k+1}
+Y_phi^seal -> Σ_k (i/2)y_k e_{2k}∧e_{2k+1}
+Q^seal     -> Σ_k (i/2)(t_k+y_k)e_{2k}∧e_{2k+1}
+```
+
+This is not yet a physical `Q_8vC` matrix. No numerical `t_k`, `y_k`, embedding matrices, weak plane, or triality branch are supplied in this gate. Therefore the neutral three-plane is still blocked.
+
+Status:
+
+```text
+CONDITIONAL_SUPPORT_GATE255_NATIVE_CARRIER_NO_GO_INHERITED
+CONDITIONAL_SUPPORT_SPONTANEOUS_CARRIER_SEAL_INSTITUTED
+CONDITIONAL_SUPPORT_CONDITIONAL_INTERTWINER_SCHEMA_DEFINED
+CONDITIONAL_SUPPORT_SYMBOLIC_FOCK_LEDGER_SCHEMA_DEFINED
+CONDITIONAL_SUPPORT_SYMBOLIC_WITT_SO8_SCHEMA_AVAILABLE
+CONDITIONAL_SUPPORT_SEAL_QUARANTINED_FROM_FINITE_CORE
+FAILED_ROUTE_SEALED_EMBEDDING_VALUES_NOT_SUPPLIED
+FAILED_ROUTE_CONCRETE_T3L_Y_PHI_FOCK_LEDGERS_STILL_BLOCKED
+FAILED_ROUTE_TRIALITY_BRANCH_SELECTION_STILL_BLOCKED
+FAILED_ROUTE_Q8VC_KERNEL_COMPUTATION_STILL_BLOCKED
+FAILED_ROUTE_NEUTRAL_3PLANE_STILL_BLOCKED
+FAILED_ROUTE_YUKAWA_TEXTURE_STILL_SEALED
+```
+
+The next logical gate is a sealed witness audit: provide or derive the concrete gauge-fixed embedding data and then test the resulting `Q_8vC` kernel without selecting the data by the desired answer.

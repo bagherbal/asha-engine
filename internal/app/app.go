@@ -194,6 +194,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spin8trialityfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spinctwistedchirality"
+	"github.com/bagherbal/asha-engine/pkg/bridge/spontaneouscarrierseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/su2spinorlift"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetaspatialtagging"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
@@ -522,6 +523,7 @@ func Run() error {
 		wittso8coordinates.WittDecompositionFockToSO8BivectorCoordinateAuditTheorem(),
 		ewcartanledger.ElectroweakCartanLedgerRetrievalAuditTheorem(),
 		carrierintertwiner.CarrierIntertwinerT3LYPhiRepresentationUnificationAuditTheorem(),
+		spontaneouscarrierseal.SpontaneousCarrierSealGaugeFixedEmbeddingAxiomAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

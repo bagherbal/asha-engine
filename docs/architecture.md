@@ -4538,3 +4538,48 @@ v_tau and Yukawa texture: blocked
 ```
 
 This gate sharpens the next required object. The missing datum is either a real finite representation functor into a common carrier, or an explicit sealed carrier convention containing the spontaneous scalar orientation, gauge frame, and left-doublet state-index embedding.
+
+## Gate 256 — Spontaneous carrier seal / gauge-fixed embedding axiom audit
+
+Gate 256 adds `pkg/bridge/spontaneouscarrierseal` and registers `SpontaneousCarrierSealGaugeFixedEmbeddingAxiomAuditTheorem`.
+
+The gate keeps the Gate-255 theorem status intact: there is still no native, finite-core functor that sends both the scalar/contact carrier and the left-doublet carrier into the common Fock carrier `S_C=Λ*(C^4)`. Instead, Gate 256 records the required operation as an explicit seal.
+
+The `SpontaneousCarrierSeal` is the mathematical boundary corresponding to a gauge-fixed/SSB carrier choice. It is allowed as bridge data, but it is not a finite derivation and it does not override the native no-go. Its required data are:
+
+```text
+scalar/contact trivialization       ι_phi:H_phi→S_C
+left-doublet occupation injection   ι_L:Q_L⊕L_L→S_C
+weak SU(2) frame                    U_L⊂{N_0,N_1,N_2,N_3}
+scalar charge orientation           Y_phi^seal
+spinor-to-vector branch             τ_{s→v}
+```
+
+With only the schema present, the engine may write symbolic common-carrier ledgers:
+
+```text
+T3L^seal   = Σ t_k N_k
+Y_phi^seal = Σ y_k N_k
+Q^seal     = Σ (t_k+y_k) N_k
+```
+
+and symbolic `so(8)` Cartan formulas through the Witt dictionary:
+
+```text
+Σ c_k N_k  ->  Σ (i/2)c_k e_{2k}∧e_{2k+1}
+```
+
+But the gate deliberately does not construct `Q_8vC`, because no concrete coefficients, embedding maps, weak frame, or triality branch are supplied. The neutral 3-plane remains a target condition for a future sealed witness, not an output of Gate 256.
+
+Architectural consequence:
+
+```text
+native carrier unification: still failed
+seal boundary: recorded
+conditional intertwiner schema: recorded
+symbolic Fock and so(8) ledgers: recorded
+concrete T3L/Y_phi coordinates: absent
+triality branch: unselected
+Q_8vC eigensystem: not computed
+neutral 3-plane / v_tau / Yukawa texture: still blocked
+```
