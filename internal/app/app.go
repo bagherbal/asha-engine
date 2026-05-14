@@ -11,6 +11,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
+	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
@@ -102,6 +103,7 @@ func Run() error {
 		betacoeff.FiniteSpectrumBetaCoefficientAuditTheorem(),
 		threshold.ThresholdSpectrumMatchingAuditTheorem(),
 		thresholdrep.ThresholdRepresentationAssignmentAuditTheorem(),
+		thresholdactivation.ThresholdActivationDecouplingAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

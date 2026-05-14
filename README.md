@@ -331,3 +331,17 @@ This gate intentionally does **not** claim the electroweak vev, observed Higgs m
 
 Gate 44 adds `pkg/bridge/threshold`, which audits finite spectral threshold anchors from the B-sector gap, contact partial-overlap modes, scalar/contact active spectrum, leakage invariant, and scalar radial curvature. It deliberately keeps them dimensionless and refuses physical threshold masses until a non-fitted mass unit, activation rule, and finite-to-continuum matching map are derived.
 
+
+## v0.45 — Threshold Activation / Decoupling Audit
+
+Gate 46 adds `pkg/bridge/thresholdactivation`.
+
+It classifies finite threshold anchors by activation status:
+
+- scalar/contact active sector: continuum-field candidate at sector level, but not a heavy threshold;
+- scalar radial response: scalar-sector bridge object, not a separate threshold;
+- contact leakage: vacuum-frustration-only;
+- B-sector gap: threshold-open, no representation/activation/scale;
+- contact partial-overlap modes: threshold-open, no physical-field/regulator/frustration decision.
+
+The gate explicitly rejects threshold-corrected beta coefficients until a physical unit, activation rule, representation assignment, and decoupling prescription are derived.
