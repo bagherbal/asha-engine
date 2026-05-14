@@ -4906,3 +4906,7 @@ The Higgs ratio remains blocked. The raw moment ratio is still amplitude-depende
 ### Gate 271 — Full S_C Representation Search
 
 Gate 271 audits the native lift of `C ⊕ M3(C)` to the full `S_C=Λ*(C^4)` carrier. It confirms the 16-state Fock carrier and CAR operator calculus, but shows the obvious lifts are insufficient: `Γ(A)` is not additive, `dΓ(A)=ΣA_ij a†_i a_j` is not a unital associative algebra representation, and the faithful one-particle action does not define the full carrier. The physical opposite action and full order-one theorem remain blocked, so the Higgs spectral ratio is not derived.
+
+### Gate 272 — Morita-Bimodule Search
+
+Gate 272 moves the finite spectral-action search out of the second-quantized Fock representation problem and into the first-quantized finite Hilbert bimodule category. The universal semisimple ledger for `A_F = C ⊕ M3(C)` is `H_ij = V_i ⊗ V_j*`, with dimensions `1,3,3,9`. This gives faithful commuting left/opposite actions and a clean order-one edge rule: non-vacuous one-forms are possible only for edges with different left module and shared right module. The result repairs the representation category but does not select a canonical finite Dirac amplitude ratio. The Higgs spectral ratio remains a future-theorem target, not a derived result.

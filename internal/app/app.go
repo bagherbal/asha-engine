@@ -159,6 +159,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingcorrectionseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingresidualstructure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
+	"github.com/bagherbal/asha-engine/pkg/bridge/moritabimodulesearch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativefinitealgebra"
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutraleigenspacekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutrinotextureaudit"
@@ -554,6 +555,7 @@ func Run() error {
 		canonicalfinitediracselector.CanonicalFiniteDiracSelectorOrderOneSpectralTripleCompletionAuditTheorem(),
 		faithfuloppositeactionrep.FaithfulOppositeActionRepresentationNonVacuousOneFormCalculusAuditTheorem(),
 		fullscrepresentationsearch.FullSCFiniteAlgebraRepresentationSearchOppositeActionConstructionAuditTheorem(),
+		moritabimodulesearch.FiniteAlgebraRepresentationObstructionClassificationMoritaBimoduleSearchAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

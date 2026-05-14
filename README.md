@@ -4964,3 +4964,7 @@ The next lawful target is a full `S_C` finite algebra representation and physica
 ### Gate 271 — Full S_C Representation Search
 
 Gate 271 audits the native lift of `C ⊕ M3(C)` to the full `S_C=Λ*(C^4)` carrier. It confirms the 16-state Fock carrier and CAR operator calculus, but shows the obvious lifts are insufficient: `Γ(A)` is not additive, `dΓ(A)=ΣA_ij a†_i a_j` is not a unital associative algebra representation, and the faithful one-particle action does not define the full carrier. The physical opposite action and full order-one theorem remain blocked, so the Higgs spectral ratio is not derived.
+
+## Gate 272 — Finite Algebra Representation Obstruction Classification / Morita-Bimodule Search
+
+Gate 272 classifies the Gate 271 full-Fock obstruction as a categorical boundary: the finite associative algebra `C ⊕ M3(C)` belongs on a first-quantized finite Hilbert bimodule `H_F`, not on the second-quantized full Fock carrier `S_C`. The gate extracts the semisimple Morita summands `H_ij = V_i ⊗ V_j*`, obtains a faithful `A_F ⊗ A_F^op` algebraic representation, and derives an order-one edge sieve with non-vacuous one-form candidates. It still does not lock the surviving `x:y` lepton/quark amplitude ratio, so the `a2/a4` Higgs ratio remains blocked pending an additional weak/chiral/quaternionic selector or spectral-action normalization theorem.
