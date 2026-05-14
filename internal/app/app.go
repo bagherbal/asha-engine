@@ -153,6 +153,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugekineticdiag"
 	"github.com/bagherbal/asha-engine/pkg/bridge/geometricmeanresonance"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
+	"github.com/bagherbal/asha-engine/pkg/bridge/grandnormalizationsieve"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heatkerneldynamicspreflight"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
@@ -610,6 +611,7 @@ func Run() error {
 		fullphysicalfirstorder.FullPhysicalFirstOrderVerificationFiniteSpectralTripleCompletionAuditTheorem(),
 		innerfluctuationfieldcontent.InnerFluctuationGaugeHiggsFieldContentAuditTheorem(),
 		heatkerneldynamicspreflight.SeeleyDeWittHeatKernelFormalizationSpectralActionDynamicsPreflightTheorem(),
+		grandnormalizationsieve.GrandNormalizationSieveWaveFunctionRenormalizationExtractionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
