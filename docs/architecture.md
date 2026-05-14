@@ -5821,3 +5821,72 @@ endogenous three-object source
 ```
 
 Until that object is derived, the Gate-372/Gate-387 flavor firewall remains preserved at 13 charged finite-Dirac moduli.
+
+## Gate 396 — Endogenous three-object source boundary
+
+Gate 396 adds `pkg/bridge/threeobjectsource` after the Gate-395 spinor-origin obstruction. It does not ask for a flavor texture directly. It asks the logically prior question:
+
+```text
+Does ASHA contain any native three-object source that could even become generation labels?
+```
+
+The answer is mixed:
+
+```text
+three-object sources: yes
+generation-address functor: no
+```
+
+The native positive source is the rational/Galois-safe contact spectral ledger:
+
+```text
+three rational singleton contact blocks + one quartic primary block
+```
+
+This is the first strong endogenous three-object clue after the failure of trivial generation copies, direct Spin(8) triality promotion, and spinor chirality. But its semantics are still contact-root/idempotent semantics, not finite-Dirac flavor semantics. The gate refuses to identify those three contact singleton blocks with generations unless a later theorem derives a compatible action on the finite spectral-triple/Yukawa edge carrier.
+
+Other three-object sources are blocked:
+
+```text
+Fock spatial triplet        → color/spatial structure, not generation
+Fano line triples           → sevenfold family, needs selector
+primitive idempotents       → eight/sixteen cells, not three
+Morita M3(C) slots          → color dimensions, not generation labels
+tau_eta and N               → sealed/circular three-slot capacity
+```
+
+No native noncommuting pair of generation operators is derived. The sealed diagonal-plus-cycle stress test demonstrates CKM-like algebraic capacity, but only after importing circular branch labels. Therefore the Gate-372/Gate-387 charged flavor firewall remains preserved:
+
+```text
+dim M_charged = 13
+```
+
+The architectural continuation is no longer a broad search over all three-object structures. Gate 396 identifies the best next target precisely:
+
+```text
+Gate 397 — Contact Rational Singleton to Finite-Dirac Flavor Functor Sieve
+```
+
+The next theorem must decide whether the three rational contact singleton idempotents can act on the finite Dirac/Yukawa edge carrier compatibly with `A_F`, `J`, first-order, and electroweak charges.
+
+## Gate 397 — Contact singleton flavor-functor boundary
+
+Gate 397 adds `pkg/bridge/contactsingletonflavorfunctor` after the Gate-396 three-object source search. It tests whether the three rational contact singleton idempotents can become physical finite-Dirac generation labels.
+
+The required object is an explicit action/functor:
+
+```text
+rho: Q^3_contact -> End(H_finite-Dirac)
+```
+
+with compatibility against the mature finite spectral-triple constraints: `A_F`, `J`, first-order, electroweak charges, and inner-fluctuation one-form/Yukawa edge support.
+
+The audit result is negative but useful. The contact singleton algebra is native and exact in the contact spectral domain, but no canonical action on the finite-Dirac/Yukawa edge carrier is derived. The finite edge ledger still broadcasts uniformly over the generation factor. Diagonal root-to-generation assignments and cyclic mixing actions exist only as sealed/circular stress tests.
+
+Therefore the flavor firewall remains:
+
+```text
+dim M_charged = 13
+```
+
+Architecturally, Gate 397 redirects the contact route away from generation labels and toward the four-dimensional quartic primary block, which is already dimension-compatible with the scalar/Higgs carrier and should be audited next as a possible scalar/Yukawa bundle functor.

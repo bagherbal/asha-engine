@@ -100,6 +100,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactrowsemantics"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsignsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsignsplit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactsingletonflavorfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactspectralcutoff"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactspectralcutoffpromotion"
@@ -316,6 +317,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetaspatialtagging"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetaweakselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetayukawasourcemap"
+	"github.com/bagherbal/asha-engine/pkg/bridge/threeobjectsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdorigindichotomy"
@@ -792,6 +794,8 @@ func Run() error {
 		trialitymodulisieve.TrialityDomainAdmissionEquivariantYukawaCentralizerSieveTheorem(),
 		generationaddressfunctor.NativeGenerationAddressFunctorTrialityMoritaEdgeIncidenceTheorem(),
 		dynamicgenerationlabels.RepresentationOriginDynamicGenerationLabelsTheorem(),
+		threeobjectsource.EndogenousThreeObjectSourceBeyondSpinorChiralityTheorem(),
+		contactsingletonflavorfunctor.ContactSingletonFiniteDiracFlavorFunctorSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

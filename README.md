@@ -6202,3 +6202,73 @@ dim M_charged = 13
 ```
 
 The next logical gate is Gate 396: search for an endogenous three-object source beyond spinor chirality, such as primitive idempotents, minimal left ideals, octonionic/Fano triples, or modular/KMS sectors that might produce exactly three addressable generation labels compatible with `A_F`, `J`, first-order, and electroweak charges.
+
+## Gate 396 — Endogenous three-object source search beyond spinor chirality
+
+Gate 396 implements `pkg/bridge/threeobjectsource` and moves one step earlier than CKM or modular-Hamiltonian texture work. After Gate 395 rejected the direct spinor-origin route, Gate 396 asks whether ASHA has any **native three-object source** at all that could later become generation labels.
+
+The result is subtle and important:
+
+```text
+native three-object sources exist
+≠
+native finite-Dirac generation labels exist
+```
+
+The package audits these candidate sources:
+
+```text
+contact rational singleton idempotent blocks   → native three-object source, contact-root semantics
+Fock spatial color triplet                      → native three-object source, color/spatial semantics
+Fano/octonionic line triples                    → native triple family, but seven choices require selector
+Clifford/Fock primitive idempotent cells        → native idempotents, but eight/sixteen cells, not three
+Morita dimension-three slots                    → M3(C) color dimensions, not generation objects
+tau_eta=(2,-2,1) and N=diag(0,1,2)             → sealed three-slot capacity, not native endomorphisms
+```
+
+The strongest new positive clue is the contact spectral decomposition inherited from the contact-idempotent ledger: over the rational/Galois-safe layer, the contact spectrum contains **three rational singleton blocks plus one quartic primary block**. This gives a real native three-object source, but it still lacks an action/functor into the finite-Dirac generation carrier.
+
+Therefore the gate logs:
+
+```text
+CONDITIONAL_SUPPORT_NATIVE_THREE_OBJECT_SOURCE_FOUND
+CONDITIONAL_SUPPORT_CONTACT_RATIONAL_SINGLETON_THREE_SOURCE_FOUND
+FAILED_ROUTE_CONTACT_SINGLETONS_LACK_FINITE_DIRAC_FLAVOR_FUNCTOR
+FAILED_ROUTE_FOCK_SPATIAL_TRIPLET_IS_COLOR_NOT_GENERATION
+FAILED_ROUTE_FANO_TRIPLES_REQUIRE_SELECTOR
+FAILED_ROUTE_TAU_OR_N_THREE_SLOT_OPERATOR_REMAINS_CIRCULAR
+FAILED_ROUTE_NO_NATIVE_NONCOMMUTING_TEXTURE_PAIR
+FIREWALL_PRESERVED_13_MODULI
+```
+
+Sealed stress tests can produce noncommuting capacity by combining a cyclic three-branch action with a diagonal three-slot operator, but the carrier is circular/non-native and therefore cannot reduce the flavor firewall.
+
+The next logical gate is Gate 397: test whether the three rational contact singleton blocks admit a canonical `A_F`/`J`/first-order compatible action on the finite Dirac/Yukawa edge carrier.
+
+## Gate 397 — Contact rational singleton to finite-Dirac flavor functor sieve
+
+Gate 397 implements `pkg/bridge/contactsingletonflavorfunctor` and tests the strongest clue left by Gate 396: the exact rational contact spectral ledger contains three singleton idempotent blocks with eigenvalues `1/3`, `1/2`, and `2/3`.
+
+The gate asks whether this native `Q^3_contact` algebra admits a canonical representation
+
+```text
+rho: Q^3_contact -> End(H_finite-Dirac)
+```
+
+compatible with `A_F = C ⊕ H ⊕ M_3(C)`, `J`, the first-order condition, hypercharge, `SU(2)_L`, and inner-fluctuation one-form/Yukawa edge support.
+
+The result is conservative:
+
+```text
+FAILED_ROUTE_CONTACT_SINGLETONS_REMAIN_DOMAIN_IDEMPOTENTS
+FAILED_ROUTE_NO_FINITE_DIRAC_ACTION_FUNCTOR
+FAILED_ROUTE_EDGE_INCIDENCE_BROADCASTS_UNIFORMLY
+FAILED_ROUTE_SINGLETON_TO_GENERATION_ASSIGNMENT_IS_CIRCULAR
+FAILED_ROUTE_DIAGONAL_ONLY_NO_CKM
+FAILED_ROUTE_NO_NATIVE_NONCOMMUTING_TEXTURE_PAIR
+FIREWALL_PRESERVED_13_MODULI
+```
+
+The three rational singleton projectors are exact and native, but only in the contact spectral domain. The finite-Dirac/Yukawa edge target remains generation-uniform, and assigning the three roots to generations requires a circular `3!` choice. A sealed diagonal-plus-cycle stress test has noncommuting capacity, but it is not promoted to a native theorem.
+
+The next logical gate is Gate 398: audit the remaining exact contact spectral datum, the four-dimensional quartic primary block, as a possible scalar/Yukawa bundle functor rather than a generation-label source.
