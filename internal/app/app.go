@@ -279,6 +279,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/spontaneouscarrierseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/su2spinorlift"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetamixingpartner"
+	"github.com/bagherbal/asha-engine/pkg/bridge/tauetargtexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetaspatialtagging"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetaweakselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetayukawasourcemap"
@@ -720,6 +721,7 @@ func Run() error {
 		fermionicroottracesieve.FermionicEffectiveActionRootTracePfaffianSieveTheorem(),
 		yukawairfixedpoint.YukawaInfraredFixedPointBasinRGAttractorReductionAuditTheorem(),
 		leptogenesiscpasymmetry.LeptogenesisDecayCPAsymmetryBGapMajoranaCosmogenesisAuditTheorem(),
+		tauetargtexture.TauEtaDiagonalTextureRGEvolutionMassHierarchyAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
