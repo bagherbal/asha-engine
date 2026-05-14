@@ -173,3 +173,46 @@ Current truth: `kappa_U1=6` is the metric-whitening value, not an
 action-selected abelian kinetic coefficient.  The next missing object is a
 finite abelian completion action source or a second variation that selects the
 coefficient without using the whitening target as input.
+
+## Gate 100 — Canonical Finite Variational Action / Second-Variation Selection
+
+Gate 100 adds `pkg/bridge/canonicalaction`.  It converts the Gate 99 obstruction into a finite variational action rather than another count or whitening diagnostic.
+
+The canonical dimensionless action assembled by the gate is
+
+```text
+S_can = 1/2 <D_A Phi, D_A Phi>_{I4}
+      + lambda_shape (||Phi||^2 - r0^2)^2
+      + 1/4 <F_A, F_A>_{K_EW}
+      + 1/2 ||J_G - S_G||^2
+```
+
+The scalar kinetic term selects `K_phi = I4` on the four-real active contact frame.  Its second variation along the broken gauge orbit gives the raw diagonal
+
+```text
+diag(0.2833333333, 0.2833333333, 1.1333333333),
+```
+
+which normalizes by the charged unit to
+
+```text
+diag(1,1,4).
+```
+
+Embedding this broken Hessian back into the closed electroweak carrier `[T1,T2,Z,Q]` selects
+
+```text
+K_EW = (K_SU2 + 6(Q-Z)(Q-Z)^T)/2
+```
+
+with eigenvalues `[1,1,2,6]`.  Thus `kappa_U1=6` is selected by scalar-orbit/full-carrier second-variation matching, not by count resonance.
+
+The generation source selected at this gate is intentionally modest: the quotient-canonical traceless diagonal Higgs/contact spectrum
+
+```text
+[+0.0533593686, 0, -0.0533593686].
+```
+
+It splits the three generation labels but does not claim CKM/PMNS mixing.  The previous 3x4 active-to-generation source action still selects zero, so physical Yukawa textures remain sealed until a non-commuting generation operator or nonzero active-to-generation map is derived.
+
+The gate is marked `VARIATIONAL`, but only for dimensionless finite action data.  It still does not derive `alpha`, `thetaW`, the electroweak vev, Higgs mass, fermion masses, CKM, or PMNS.

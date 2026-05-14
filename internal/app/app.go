@@ -14,6 +14,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokengaugefields"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokengeneratornorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokenmetric"
+	"github.com/bagherbal/asha-engine/pkg/bridge/canonicalaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
@@ -210,6 +211,7 @@ func Run() error {
 		ewcurvature.FullElectroweakConnectionCurvatureAuditTheorem(),
 		ewquadratic.FullElectroweakQuadraticActionAbelianCompletionTheorem(),
 		u1completion.AbelianCoefficientU1CompletionSelectionSearchTheorem(),
+		canonicalaction.CanonicalFiniteVariationalActionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
