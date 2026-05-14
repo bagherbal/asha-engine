@@ -32,6 +32,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactincidence"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactnaturality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactpropagator"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsymmetry"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentcontact"
@@ -250,6 +251,7 @@ func Run() error {
 		contactnaturality.ContactFanoNaturalityAutomorphismObstructionTheorem(),
 		contactsymmetry.ContactSymmetryBreakingSelectorStabilizerSearchTheorem(),
 		contactautaction.ContactSideAutomorphismActionEquivariantAssignmentSearchTheorem(),
+		contactquotient.ContactSpectralInvariantQuotientOrbitCollapseTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

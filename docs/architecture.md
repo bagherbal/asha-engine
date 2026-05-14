@@ -830,3 +830,28 @@ The seven contact partial-overlap modes therefore remain representation-open and
 Gate 119 tests whether the seven positive contact partial-overlap modes carry a derived contact-side action of the 168-element Fano automorphism group. The finite overlap values are treated as contact-side structure. Under that constraint, the contact weighted automorphism group is identity-only because the seven overlap values are all distinct. A faithful Aut(Fano) action can be transported to contact labels only after choosing one of the 7! contact-to-Fano bijections, but that choice is precisely the convention blocked by the naturality and stabilizer gates.
 
 Result: the contact-side action search is a variational obstruction theorem. It derives no canonical equivariant assignment, no representation row, no contact threshold beta correction, and no physical constants. The next gate should test whether quotienting the contact spectrum to symmetry-invariant data collapses or clarifies the obstruction without losing the finite information needed for representation rows.
+
+
+### Gate 120 — Contact spectral-invariant quotient / orbit-collapse theorem
+
+Gate 120 tests whether quotienting the seven contact partial-overlap modes can turn the Gate 119 contact/Fano action obstruction into usable representation data.
+
+It finds a strict fork:
+
+```text
+weighted contact-spectrum quotient = canonical, but seven singleton orbits
+anonymous full-symmetric quotient  = one orbit, but row-level spectral data is erased
+transported Fano quotient          = one orbit only after choosing one of 7! bijections
+```
+
+So quotienting either does nothing useful or destroys the data needed for physics. The identity/weighted quotient preserves the seven distinct finite overlap values, but it produces no Fano-like transitive orbit. The anonymous quotient restores a single orbit only by forgetting which distinct overlap value belongs to which mode, making representation rows, mass activation, and threshold beta matching impossible.
+
+Result: no contact representation row, zero-row cancellation, threshold-corrected beta tensor, physical coupling, boundary scale, or mass is derived. The contact beta firewall remains closed and the residual physical-flow nullity stays:
+
+```text
+u = 1/g_*²
+L = ln(M*/μ)
+Δb_i(L)
+```
+
+The next gate should test whether invariant quotient data can be lifted back to row-level data without reintroducing an arbitrary contact-to-Fano bijection.
