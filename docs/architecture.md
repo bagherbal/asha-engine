@@ -2504,3 +2504,38 @@ conditional nullity: 2 -> 2
 The next target is not a smooth manifold. It is a canonical contact-algebra action on `H_Fock` or `H_Φ`, or an algebraic finite integration/topological-charge trace that turns the contact module into a true Chern-Weil carrier.
 
 Recommended next gate: Gate 183 — contact-module-to-Fock/scalar representation action search.
+
+### Gate 183 — contact-module to Fock/scalar representation action search
+
+Package: `pkg/bridge/contactmoduleaction`
+
+Gate 183 follows the finite-locality result of Gate 182. Since `C[Ω_contact]` gives a seven-point contact spectral base and `K₇` is its regular projective module, the next question is whether the same contact algebra acts on the physical carriers: the 16D Fock/spinor space and the 4D scalar active carrier.
+
+The gate forbids arbitrary representation maps from `C⁷` into matrix algebras. It audits only constrained routes already present in the finite engine.
+
+First, the Clifford-spinor route confirms that `K₇` has a canonical vector action on the 16D spinor/Fock carrier via Clifford multiplication. This is important predata for a finite spinor bundle. However, Clifford multiplication is not a multiplicative representation of the commutative contact spectral algebra `C[Ω_contact]`. It does not supply contact spectral idempotent fibers or an Ω-intertwining law on `H_Fock`.
+
+Second, the quartic-scalar route confirms the dimensional resonance between the 4D quartic primary block and the 4D scalar active carrier. The quartic ideal is a branch-free Galois-safe algebra with an abstract rank-one module/companion representation. But no canonical scalar operator on `H_Φ` is currently known to have the quartic contact minimal polynomial, so the abstract module is not promoted to a physical scalar bundle.
+
+Third, the connection-induced route uses the Gate-11 projected connection and second-fundamental curvature as candidate pullback data. These objects are canonical predata, but their adjoint/commutator actions do not close as a contact spectral algebra action on `H_Fock` or `H_Φ`.
+
+Gate 183 records the following status:
+
+```text
+contact base inherited: true
+contact regular module inherited: true
+Clifford K₇ -> End(H_Fock) preaction: true
+quartic abstract 4D module: true
+connection preaction audited: true
+canonical C[Ω] action on H_Fock: false
+canonical C[Ω] action on H_Φ: false
+physical bundle map: false
+Chern-Weil carrier: false
+heat-kernel / threshold rows: false
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+```
+
+The gate is a partial positive and partial obstruction theorem. It proves that the relevant finite pre-actions exist, but also proves that current data do not yet give a physical `C[Ω_contact]`-module action on the spinor or scalar carrier.
+
+Recommended next gate: Gate 184 — Clifford-contact spectral idempotent / commutant obstruction or construction.
