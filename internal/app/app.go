@@ -107,6 +107,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactvacuumhopfaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactzeta"
 	"github.com/bagherbal/asha-engine/pkg/bridge/continuumdecouplingbridge"
+	"github.com/bagherbal/asha-engine/pkg/bridge/cosmologicalobservables"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/crosssectorreductionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentcontact"
@@ -760,6 +761,7 @@ func Run() error {
 		nativemodulispacecensus.NativeModuliSpaceDimensionExactDiracParameterCensusSieveTheorem(),
 		holographicvacuumentropy.HolographicVacuumEntropyGravitationalModuliConstraintSieveTheorem(),
 		ashafinalclosingtheorem.AshaFinalClosingTheoremThirteenModuliVacuumManifoldTheorem(),
+		cosmologicalobservables.CosmologicalObservablesDarkSectorPredictionSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -5886,3 +5886,29 @@ The gate preserves the exact census:
 ```
 
 It also closes the attempted finite-geometric, modular-flow, eta-trace, Fock/information, and holographic routes as nonselecting under the current axioms. The theorem is therefore a scoped completion seal: complete as finite kinematics and boundary reconstruction; not complete as a derivation of the flavor vacuum point.
+
+## Gate 375 — Cosmological Observables & Dark Sector Prediction Sieve
+
+Gate 375 reopens the Gate-374 scoped closure in the only honest direction: observable cosmology. The new package `pkg/bridge/cosmologicalobservables` asks whether ASHA's sealed boundary and heavy-sector ledger is already sufficient to compute hard predictions for dark matter abundance, vacuum lifetime, and dark energy.
+
+The result is strict. ASHA has important scale data:
+
+```text
+lambda_H/g_*² = 1197/4624
+v/M_P = 2^(3/2) exp(-4 pi²)
+PeV threshold lane ≈ 1.46774973718e6 GeV
+sealed intermediate scale ≈ 6.650726476871e11 GeV
+Delta lambda witness ≈ -0.0978
+```
+
+But these are not yet a closed cosmological model. A relic density requires a stable dark candidate, mass theorem, interaction rates, reheating/production history, entropy dilution, and a Boltzmann kernel. A vacuum lifetime requires the full continuum RG trajectory, `lambda_min`, bounce scale, prefactor, and gravitational corrections. A cosmological constant requires a renormalized vacuum-energy counterterm or a native holographic saturation theorem.
+
+Therefore Gate 375 derives zero hard cosmological observables in the current ledger:
+
+```text
+FAILED_ROUTE_DARK_MATTER_RELIC_DENSITY_NOT_DERIVED
+FAILED_ROUTE_UNIVERSE_LIFETIME_NOT_DERIVED
+FAILED_ROUTE_COSMOLOGICAL_CONSTANT_NOT_DERIVED
+```
+
+The gate does not close cosmology negatively. It defines the next required layer: a continuum cosmology extension that derives the dark-sector Lagrangian, Boltzmann kernel, RG/bounce functional, and vacuum-energy renormalization from ASHA rather than fitting them from observation.

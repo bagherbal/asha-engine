@@ -5442,3 +5442,22 @@ The architectural closure is strict:
 ```
 
 Gate 374 does not promote `tau_eta`, the Fock number operator, or holographic saturation into a Hamiltonian. It records those routes as capacity witnesses or failed/circular routes unless a future theorem derives an independent generation-address operator. This makes the framework publishable in a scoped form: the finite kinematic/boundary landscape is sealed, while the exact flavor vacuum point remains outside the current pure finite geometry.
+
+## Gate 375 architectural update: cosmological observables require a continuum model
+
+Gate 375 adds `pkg/bridge/cosmologicalobservables` after the Gate-374 capstone. It tests whether the sealed ASHA boundary and heavy-sector ledger can already predict macroscopic observables.
+
+| Observable | Required additional structure | Gate 375 verdict |
+|---|---|---|
+| Dark matter relic density `Omega_DM h²` | stable dark candidate, mass theorem, interactions, `<sigma v>`, decay widths, reheating/production history, entropy dilution, Boltzmann kernel | not derived |
+| Universe lifetime | full `lambda(mu)` RG trajectory, top/Yukawa transport, threshold matching, `lambda_min`, bounce scale, determinant prefactor, gravitational corrections | not derived |
+| Dark energy / cosmological constant | renormalized vacuum-energy functional, counterterm, sign/normalization, holographic equality-saturation theorem | not derived |
+
+The architectural distinction is now explicit:
+
+```text
+finite ASHA geometry -> laws, representation, boundary ratios, hierarchy scales
+continuum cosmology extension -> relic abundance, vacuum lifetime, Lambda_cosmo
+```
+
+The PeV threshold lane, intermediate scale ledger, and quartic jump witness are valuable inputs for a future cosmological model, but Gate 375 forbids promoting them into predictions without the missing continuum kernels. This preserves the empirical firewall and prevents observed `Omega_DM`, dark-energy density, or metastability numbers from being smuggled into the finite theory.
