@@ -15,6 +15,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/currenthessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcarrier"
+	"github.com/bagherbal/asha-engine/pkg/bridge/dualcoupling"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangekernel"
@@ -156,6 +157,7 @@ func Run() error {
 		currentembedding.CurrentFieldEmbeddingTheorem(),
 		currentcontact.CurrentToContactEmbeddingMapSearchTheorem(),
 		dualcarrier.DualCarrierGaugeArchitectureSplitTheorem(),
+		dualcoupling.DualCarrierCouplingTensorActionSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
