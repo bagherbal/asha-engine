@@ -6,6 +6,7 @@ import (
 	"github.com/bagherbal/asha-engine/internal/report"
 	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
+	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
@@ -144,6 +145,7 @@ func Run() error {
 		propagatorspectrum.FinitePropagatorSpectrumSearchTheorem(),
 		sectorspectrum.CurrentSectorSpectralAssignmentSearchTheorem(),
 		sectoroperators.CurrentSectorOperatorConstructionSearchTheorem(),
+		casimirkernel.CurrentSectorCasimirPropagatorDiagnosticTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
