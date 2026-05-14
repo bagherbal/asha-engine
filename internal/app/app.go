@@ -140,6 +140,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingcorrectionseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingresidualstructure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
+	"github.com/bagherbal/asha-engine/pkg/bridge/nativefinitealgebra"
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutrinotextureaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncommutingtexturepair"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonuniversalrgfit"
@@ -482,6 +483,7 @@ func Run() error {
 		finitediracinitialization.FiniteDiracOperatorInitializationFockMatrixAuditTheorem(),
 		realstructureorderone.RealStructureKOOrderOneCalculusAuditTheorem(),
 		complexifiedhilbertspace.ComplexifiedHilbertSpaceFiniteAlgebraRepresentationAuditTheorem(),
+		nativefinitealgebra.NativeFiniteAlgebraContactPreservingSubalgebraSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

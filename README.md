@@ -3382,3 +3382,45 @@ FAILED_ROUTE_FULL_DOUBLED_SPECTRAL_TRIPLE_DERIVATION
 ```
 
 Gate 235 therefore closes the Gate-234 Hilbert-space obstruction at the level of carrier kinematics, while preserving the deeper obstruction: the native associative algebra and the B-gap Majorana theorem are still missing.
+
+## v2.34 — Gate 236: Native finite algebra derivation / contact-preserving subalgebra search
+
+Gate 236 introduces `pkg/bridge/nativefinitealgebra`. It audits whether the Standard Model finite algebra can be derived from the complexified `Cℓ(1,7)` carrier rather than imported.
+
+The gate inherits the Gate-235 carrier:
+
+```text
+S_C = S ⊗_R C
+ dim_C(S_C) = 16
+ dim_R(S_C) = 32
+```
+
+and examines the native four-mode generator split:
+
+```text
+W = C·e0 ⊕ C³_spatial
+```
+
+This `1⊕3` split supports a mode-level block commutant:
+
+```text
+End(C) ⊕ End(C³) = C ⊕ M₃(C)
+```
+
+This is genuine progress: the singlet plus color-matrix shape appears from the finite Fock bookkeeping without importing Connes’ algebra.
+
+However, Gate 236 does not derive the full finite Standard Model algebra. The `u(1)` complex summand is plausible from complexification, but the `su(2)` Lie algebra is not yet promoted to a left quaternionic `H` module. The project still lacks explicit contact-preserving `su(2)` matrices on `S_C`, a faithful doubled representation, opposite algebra action, and order-one calculus readiness.
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_NATIVE_1PLUS3_SPLIT_PREFLIGHT
+CONDITIONAL_SUPPORT_MODE_COMMUTANT_C_PLUS_M3C_PREFLIGHT
+CONDITIONAL_SUPPORT_U1_COMPLEX_SUMMAND_PREFLIGHT
+FAILED_ROUTE_NATIVE_QUATERNIONIC_H_DERIVATION
+FAILED_ROUTE_EXACT_CONNES_ALGEBRA_DERIVATION
+FAILED_ROUTE_NATIVE_ALGEBRA_ORDER_ONE_READINESS
+FAILED_ROUTE_FULL_NATIVE_FINITE_ALGEBRA_DERIVATION
+```
+
+Gate 236 therefore moves the finite spectral-triple program from “algebra missing” to “`C⊕M₃(C)` preflight found; `H` still missing.” The next gate should target the explicit `su(2)` action on `S_C` and test whether its associative closure forces a quaternionic module.

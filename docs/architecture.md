@@ -3823,3 +3823,48 @@ The finite algebra representation remains the main obstruction. Gate 235 does no
 The doubled carrier permits neutral Majorana bilinears in principle, because neutral states now have conjugate partners. But the right-handed-neutrino slot, order-one compatibility, and B-gap placement are not derived. The B-gap is still a dimensionless spectral datum, not a Majorana mass.
 
 Gate 235 therefore moves the finite spectral-triple program forward from “space too small” to “space available, algebra missing.” The next finite-core gate must derive the native associative algebra representation before the order-one condition can become non-vacuous.
+
+## Gate 236 — Native finite algebra derivation / contact-preserving subalgebra search
+
+Gate 236 is the first direct attempt to derive the finite associative algebra on the complexified carrier rather than importing the standard NCG algebra.
+
+The gate starts from the Gate-235 doubled carrier:
+
+```text
+S_C = S ⊗_R C
+```
+
+and audits the native Fock generator split:
+
+```text
+W = C·e0 ⊕ C³_spatial
+```
+
+The block commutant of this `1⊕3` projection on the generator carrier is:
+
+```text
+C ⊕ M₃(C)
+```
+
+This gives conditional support for the singlet/color-matrix part of the finite algebra. It is not yet a physical color gauge theorem, because the lifted representation on the full exterior spinor and the opposite-algebra action are not derived.
+
+The inherited contact-preserving Lie algebra `su(2)⊕u(1)` is then audited. Complexification supports a `u(1) → C` preflight, but `su(2) → H` is not automatic. A quaternionic summand requires an explicit left `H` module or equivalent associative closure on `S_C`; this is still missing.
+
+Thus Gate 236 records partial native algebra support while preserving the Connes-algebra firewall:
+
+```text
+C⊕M₃(C) mode commutant: supported as preflight
+H summand: not derived
+C⊕H⊕M₃(C): not derived
+order-one calculus: not ready
+```
+
+Architecturally, the finite spectral-triple frontier is now:
+
+```text
+complexified carrier available
+1⊕3 commutant available
+quaternionic weak module missing
+faithful finite algebra representation missing
+order-one calculus still blocked
+```
