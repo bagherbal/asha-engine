@@ -314,3 +314,15 @@ The engine now exposes the remaining unknown as:
 U-17E-SOURCE-TENSOR-ACTION
 ```
 
+
+## v0.36 — Scalar-sector effective potential normal form
+
+Gate 37 adds `pkg/dynamics/scalarpotential`, which derives the finite scalar/Higgs normal-form invariants from the active contact sector:
+
+- active scalar dimension: `4` real directions = `2` complex doublet components;
+- protected contact resonance: `3` unmixed directions;
+- finite radius: `r0² = Tr(M_K)`;
+- quartic shape: `Tr(M_K²)/Tr(M_K)²`;
+- bridge-level shifted normal form: `V(r)=λ_shape(r²-r0²)²`.
+
+This gate intentionally does **not** claim the electroweak vev, observed Higgs mass, or a proven gauge-eating theorem. Those remain bridge-layer unknowns.

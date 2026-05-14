@@ -7,6 +7,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/higgspotential"
+	"github.com/bagherbal/asha-engine/pkg/dynamics/scalarpotential"
 	"github.com/bagherbal/asha-engine/pkg/engine/cache"
 	"github.com/bagherbal/asha-engine/pkg/exterior"
 	"github.com/bagherbal/asha-engine/pkg/gauge"
@@ -84,6 +85,7 @@ func Run() error {
 		sourcemap.SourceTensorSelectionTheorem(),
 		sourceaction.SourceTensorActionTheorem(),
 		sourcepotential.SymmetryBreakingSourceActionTheorem(),
+		scalarpotential.EffectivePotentialTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
