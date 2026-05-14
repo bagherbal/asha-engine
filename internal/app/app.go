@@ -185,6 +185,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
 	"github.com/bagherbal/asha-engine/pkg/bridge/moritabimodulesearch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativefinitealgebra"
+	"github.com/bagherbal/asha-engine/pkg/bridge/nativeunifiedcouplingorigin"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativeweakquaternionicalgebra"
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutraleigenspacekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutrinotextureaudit"
@@ -642,6 +643,7 @@ func Run() error {
 		topyukawagenerationtensor.TopYukawaGenerationTensorSieveAmplitudeFractionalizationAuditTheorem(),
 		intermediatethresholdjump.IntermediateThresholdDecouplingQuarticJumpTransportAuditTheorem(),
 		higgsquarticratioverification.EmpiricalHiggsQuarticRatioVerificationTheorem(),
+		nativeunifiedcouplingorigin.NativeUnifiedCouplingOriginAbsoluteGaugeCouplingTraceCapacityAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
