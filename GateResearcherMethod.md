@@ -19,3 +19,6 @@
 - When a mathematical representation class is infinite, declare the finite alphabet explicitly and treat it as an audited grammar, not a universal enumeration.
 - For carrier/threshold gates, require all three activation pillars before any beta-row promotion: charge semantics, spin-statistics semantics, and mass-activation/decoupling semantics.
 - Never infer a representation from multiplicity alone; a seven-mode carrier is not automatically an adjoint, color sector, ghost ledger, or threshold multiplet.
+- When a gate introduces a seal, split the result into two ledgers: native-search obstruction and sealed conditional consequence. Never let the sealed consequence rewrite the native theorem status.
+- For sealed phenomenology gates, require anomaly/consistency checks before emitting numbers, and label every number with the exact seal and inherited external assumptions.
+- Distinguish an activated conditional carrier from a finite-derived particle: the former can be used for stress tests; the latter requires charge, spin-statistics, mass, and decoupling theorems.

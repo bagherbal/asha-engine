@@ -2119,3 +2119,39 @@ The audit formalizes three required semantic pillars:
 All three pillars are absent for the contact partial-overlap modes under current axioms. The modes remain positive finite spectral anchors, but no contact mode is assigned to `(3,2,1/6)`, `(1,3,0)`, or any other beta-row generator.
 
 Gate 205 therefore records a strict `FAILED_ROUTE`: carrier activation is a bridge obstruction, not a finite-derived particle prediction.
+
+## v2.04 — Gate 206: Carrier-Activation Seal / Local-Field Semantic Bifurcation
+
+Gate 206 adds `pkg/bridge/carrieractivationseal`.
+
+Gate 205 proved that the seven contact partial-overlap modes cannot natively become heavy beta-row carriers because they lack charge, spin-statistics, and mass-activation semantics. Gate 206 therefore formalizes the bifurcation:
+
+1. it records that native BRST/cohomology and Clifford/contact grading routes still do not derive those semantics;
+2. it introduces an explicit quarantined `EmpiricalCarrierSeal`;
+3. under that seal only, it activates the two Gate-204 row-lattice shapes for anomaly and inverse-RG tests.
+
+The sealed carriers are anomaly compatible:
+
+```text
+Dirac vectorlike quark doublet: (3,2,1/6), Δb=(2/15,2,4/3)
+Weyl SU(2)L adjoint fermion:   (1,3,0),   Δb=(0,4/3,0)
+```
+
+The conditional inverse-threshold outputs at `u_* = 1` are:
+
+```text
+Dirac vectorlike quark doublet:
+  M_B = 1.46774973718e6 GeV
+  M_* = 2.40099519719e15 GeV
+  c_univ = 7.65295390904
+
+Weyl SU(2)L adjoint fermion:
+  M_B = 8.19807624157e6 GeV
+  M_* = 2.42276543552e14 GeV
+  c_univ = 10.1497542656
+
+alpha_GUT = 1/(4π) = 0.0795774715459
+alpha_GUT^-1 = 4π = 12.5663706144
+```
+
+These values are `CONDITIONAL_ON_CARRIER_SEAL` and on the inherited Gate-201 external universal beta completion. They are not finite-core mass predictions, not physical unification claims, and not contact-mode particle derivations.

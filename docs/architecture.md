@@ -2802,3 +2802,54 @@ contact beta rows allowed: 0
 This seals the contact-to-row promotion route under current axioms. The Gate-201 shapes remain conditional row-lattice support only; they are not finite-derived particles, activated thresholds, or a physical unification claim.
 
 Next structural obligation: Gate 206 — carrier-activation seal / local-field semantic bifurcation audit.
+
+### Gate 206 — Carrier-activation seal / local-field semantic bifurcation audit
+
+Package: `pkg/bridge/carrieractivationseal`
+
+Gate 206 follows the Gate-205 obstruction that the seven contact partial-overlap modes lack the three semantic pillars required for particle/threshold status:
+
+```text
+charge semantics
+spin-statistics semantics
+mass activation / decoupling semantics
+```
+
+The gate first audits the native local-field routes. Historical BRST/cohomology and Clifford/contact grading data do not provide a canonical nonzero BRST differential, zero-beta ledger, nontrivial Galois-invariant parity grading, gauge-charge functor, spin-statistics functor, or VEV-independent activation predicate. Native carrier activation therefore remains a `FAILED_ROUTE`.
+
+Gate 206 then introduces an explicit quarantined axiom:
+
+```text
+EmpiricalCarrierSeal
+SEAL-CARRIER-ACTIVATION-GATE206
+```
+
+This seal does not derive contact particles. It only permits conditional phenomenological testing of the two Gate-204 representation-row shapes:
+
+```text
+Dirac vectorlike quark doublet: (3,2,1/6), Δb=(2/15,2,4/3)
+Weyl SU(2)L adjoint fermion:   (1,3,0),   Δb=(0,4/3,0)
+```
+
+Under this seal the new sector is anomaly compatible. The vectorlike quark doublet cancels perturbative and mixed anomalies by its vectorlike pairing. The Weyl `SU(2)L` adjoint is a real, `Y=0`, integer-isospin triplet and therefore has no Abelian, mixed-gravity, or Witten `SU(2)` obstruction.
+
+Gate 206 then emits the Gate-201 inverse-threshold numerical solutions at `u_* = 1`:
+
+```text
+Dirac vectorlike quark doublet:
+  c_univ = 7.65295390904
+  M_B = 1.46774973718e6 GeV
+  M_* = 2.40099519719e15 GeV
+
+Weyl SU(2)L adjoint fermion:
+  c_univ = 10.1497542656
+  M_B = 8.19807624157e6 GeV
+  M_* = 2.42276543552e14 GeV
+
+alpha_GUT = 1/(4π)
+alpha_GUT^-1 = 4π
+```
+
+The theorem status is `PHENOMENOLOGY`, internally labelled `CONDITIONAL_ON_CARRIER_SEAL`. The universal beta source remains external, finite matching corrections remain absent, and no absolute mass/unification claim is made.
+
+Next structural obligation: Gate 207 — sealed-threshold prediction stress test / experimental and proton-decay firewall audit.

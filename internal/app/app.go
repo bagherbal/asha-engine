@@ -21,6 +21,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokenmetric"
 	"github.com/bagherbal/asha-engine/pkg/bridge/canonicalaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/canonicalboundary"
+	"github.com/bagherbal/asha-engine/pkg/bridge/carrieractivationseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/cliffordcontactcommutant"
@@ -422,6 +423,7 @@ func Run() error {
 		universalbetasource.UniversalBetaSourceClassificationAuditTheorem(),
 		representationrowlattice.RepresentationRowLatticeCompletionAuditTheorem(),
 		finitecarrieractivation.FiniteCarrierActivationContactToRowSemanticsObstructionAuditTheorem(),
+		carrieractivationseal.CarrierActivationSealLocalFieldSemanticBifurcationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
