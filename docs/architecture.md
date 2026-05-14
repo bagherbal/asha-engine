@@ -2677,3 +2677,31 @@ This is exact under the sharp-step one-loop convention, but it exposes an obstru
 Known rational representation rows do not close the full `u_*=1` system as raw rows. Two rational shapes close only after a real universal beta completion: a Dirac vectorlike quark doublet shape and a Weyl `SU(2)_L` adjoint shape. The universal row is not finite-derived, so these are conditional phenomenological shape resonances, not B-sector predictions.
 
 The B-sector first spectral gap and seven contact partial-overlap modes remain dimensionless finite spectral anchors. They still lack representation rows, activation/decoupling laws, and matching corrections; count resonance is explicitly rejected.
+
+### Gate 202 — Universal trace deformation / topological boundary offset audit
+
+Package: `pkg/bridge/universaltracedeformation`
+
+Gate 202 follows the Gate-201 discovery that two rational non-universal threshold shapes close only after adding a real universal beta row. It proves the algebraic equivalence
+
+```text
+A_i(M_Z)=4πu_* + b_iL_*/(2π) + (r_i+c_univ)(L_*-L_B)/(2π)
+```
+
+is identical to
+
+```text
+A_i(M_Z)=4π(u_*+δ_u) + b_iL_*/(2π) + r_i(L_*-L_B)/(2π)
+```
+
+with
+
+```text
+δ_u = c_univ (L_*-L_B)/(8π²).
+```
+
+This identity is useful because it reclassifies the Gate-201 universal completion as a possible topological boundary offset rather than a non-universal representation row. The gate then audits the B-sector first spectral gap and Gate-162 contact zeta/action traces as possible finite volume-defect sources.
+
+Result: no canonical source is found. The B-gap does not numerically match the required offsets and still lacks a trace-to-boundary theorem. Contact zeta/action scalars are exact and branch-free, but they still require a finite spectral triple, cutoff/test function, gauge kinetic map, and coefficient theorem before they can shift a boundary coupling. The near value `ζ(1)/7` is explicitly rejected as non-exact and non-canonical.
+
+Therefore Gate 202 is a `FAILED_ROUTE` under current axioms. It preserves all mass, beta-row, matching, and physical-unification firewalls and turns the next problem into a universal beta-source classification problem.
