@@ -6000,3 +6000,14 @@ Thus Gate 408 preserves the flavor firewall: the scalar lane has algebraic capac
 After the H_phi-native route was classified as flavor-blind, Gate 409 returns to the fermionic matter carrier. It separates real native fermionic structures—Fock occupation, parity/chirality, B-L, hypercharge, SU(2)_L, J-real conjugation, Morita bimodule structure, and one-generation Yukawa source/target bilinears—from generation semantics. The audit rejects color, particle species, chirality, and exact triality degeneracy as family origins unless a typed End(C^3_gen) action is derived.
 
 The result preserves the flavor firewall: the current matter carrier still behaves as a standard trivial generation copy, with arbitrary U(3)_gen commutant freedom but no native canonical generation Hamiltonian or noncommuting texture pair.
+
+### Gate 410 — Fermionic Representation Extension / Nontrivial Family Bundle Sieve
+
+Gate 410 audits the first post-Gate-409 non-surrender route: replacing the trivial fermionic family factor by a derived nontrivial family bundle. The gate distinguishes mathematical capacity from native theoremhood:
+
+- KO/twisted real-structure data affects signs and compatibility, not generation rank.
+- Modular/KMS nontracial states can break degeneracy only after a Hamiltonian/density matrix is supplied.
+- Primitive ideal extensions and triality local systems require a new algebra/functor beyond the current finite triple.
+- A sealed U(3) family connection has CKM capacity but is quarantined as the missing external structure.
+
+The result preserves the Gate-372/Gate-387 charged flavor firewall: `dim M_charged = 13` under current ASHA functors.

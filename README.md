@@ -6378,3 +6378,9 @@ Gate 408 therefore rejects a native variational coefficient selector inside the 
 Gate 409 pivots after the scalar/H_phi flavor-blindness closure of Gates 398–408. It audits the fermionic matter carrier, primitive idempotents, commutant, triality-from-fermion side, fermionic bilinears, and dynamic generation-source candidates for a native nontrivial generation representation. The gate does not seal empirical Yukawa amplitudes and does not import observed masses, CKM/PMNS data, tau_eta, N=diag(0,1,2), or scalar q4 promotion.
 
 Result: the existing fermionic carrier reconstructs charge, chirality, color, conjugation, weak representation, and one-generation Yukawa channel selection, but generations still enter as a trivial multiplicity. The native commutant exposes U(3)_gen freedom without a canonical selector, exact triality remains 1+2 degenerate, and no native noncommuting CKM-capable texture pair is derived. The Gate-372 charged flavor firewall remains at 13 moduli.
+
+### Gate 410 — Fermionic Representation Extension / Nontrivial Family Bundle Sieve
+
+Gate 410 continues after Gate 409's fermionic-generation audit. It tests whether advanced representation extensions already present in ASHA — KO/twisted real structures, modular nontracial/KMS states, primitive ideal extensions, contact family candidates, triality local systems, or a sealed U(3) family connection stress test — replace the standard trivial `C^3_gen` multiplicity by a native nontrivial family bundle.
+
+Result: no native extension derives a family connection, family curvature, or two noncommuting family texture operators. KO/twists change real-structure compatibility rather than multiplicity; KMS/nontracial states need an external Hamiltonian; primitive ideal/family-bundle extensions require a new axiom; and the sealed U(3) stress test is capacity only. The 13 charged flavor moduli firewall remains preserved.
