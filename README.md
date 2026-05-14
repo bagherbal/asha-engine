@@ -147,3 +147,19 @@ The engine now extracts the finite part genuinely supported by the active Higgs/
 ## v0.20 — Gate 21: Matter-side T3_R / chirality search
 
 Adds `pkg/matter/t3r`, which searches for the matter-side operator missing after the scalar hypercharge bridge. The gate tests the canonical temporal occupation polarization `T0 = 1/2 - N0`, verifies that it is compatible with `B-L`, rejects the vectorlike version as physical chirality, and shows that chiral restrictions of `T0` unlock gauge-compatible grading-flipping channels. The result remains bridge-layer: the even/odd physical orientation is still open, and no Yukawa texture or mass spectrum is claimed.
+
+## v0.22 — SU(2)_L doublet charge audit
+
+Gate 23 adds `pkg/matter/su2l`, a charge-level audit of the missing left-doublet bridge. It uses the Gate 22 odd right-singlet/conjugate hypercharge table and the Gate 20 finite scalar doublet charge to test the Yukawa charge-balance equation:
+
+```text
+Y_L = Y_R - Y_Φ
+```
+
+Result:
+
+- standard orientation: `u_R(2/3)-(+1/2)=1/6`, `d_R(-1/3)-(-1/2)=1/6`, giving `Q_L: Y=1/6 × 6`;
+- standard lepton orientation: `ν_R(0)-(+1/2)=-1/2`, `e_R(-1)-(-1/2)=-1/2`, giving `L_L: Y=-1/2 × 2`;
+- conjugate mirror orientation is also present with `Q_L^c: Y=-1/6 × 6` and `L_L^c: Y=+1/2 × 2`.
+
+The gate deliberately does not claim the full nonabelian `SU(2)_L` theorem. It proves the doublet hypercharges at charge-selection level and leaves the actual raising/lowering generators, conjugation convention, and explicit Yukawa intertwiners open.
