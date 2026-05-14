@@ -4583,3 +4583,52 @@ triality branch: unselected
 Q_8vC eigensystem: not computed
 neutral 3-plane / v_tau / Yukawa texture: still blocked
 ```
+
+## Gate 257 — Sealed carrier embedding data / weak-frame and triality-branch witness audit
+
+Gate 257 adds `pkg/bridge/sealedcarrierwitness` and registers `SealedCarrierEmbeddingDataWeakFrameTrialityBranchWitnessAuditTheorem`.
+
+The gate refines the Gate-256 seal boundary. It separates two ledgers:
+
+1. **Native charge eigenvalues** — derived by the early matter chain, not phenomenological input.
+2. **Carrier embedding orientation** — still sealed, because the project has no native theorem selecting the weak Fock plane or scalar/contact orientation inside `S_C`.
+
+The native charge inputs are:
+
+```text
+B-L ledger                         -N_0 + (1/3)(N_1+N_2+N_3)
+scalar/contact Y_phi eigenvalues   ±1/2 from the 2+2 scalar bridge
+left-doublet T3L eigenvalues       ±1/2 from the Gate-24 SU(2)_L audit
+```
+
+Gate 257 scans the sealed embedding witnesses rather than injecting a preferred one:
+
+```text
+weak frames:       12  = 6 two-mode Fock planes × 2 orientations
+scalar embeddings:  8  = uniform ±1/2 plus 6 contact 2+2 orientations
+Q witnesses:       96
+triality branches:  3  = identity, tau_even, tau_odd
+branch evaluations: 288
+```
+
+Every candidate `Q=T3L+Y_phi` is translated through the Witt dictionary into `so(8)` Cartan form and then evaluated under each triality branch. The audit records both the polarized zero-slot count and the full complexified `8_vC` kernel dimension.
+
+Result:
+
+```text
+exact polarized 3-plane witnesses: 0
+exact full Q_8vC 3-kernel witnesses: 0
+maximum polarized zero-slot dimension: 2
+maximum full 8_vC kernel dimension: 4
+```
+
+A scalar-only diagnostic `Y_phi=(1/2,1/2,1/2,1/2)` would yield a three-slot pattern under `tau_even`; the firewall rejects it because it is not `Q=T3L+Y_phi`. Thus the obstruction is now sharper:
+
+```text
+charge table: available
+Witt translation: available
+triality scan: available
+weak/scalar embedding selector: missing
+neutral 3-plane: not derived
+v_tau / Yukawa texture: still sealed
+```

@@ -186,6 +186,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalartrialitytexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalaryukawasupport"
+	"github.com/bagherbal/asha-engine/pkg/bridge/sealedcarrierwitness"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sealedthresholdstresstest"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectoroperators"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectorspectrum"
@@ -524,6 +525,7 @@ func Run() error {
 		ewcartanledger.ElectroweakCartanLedgerRetrievalAuditTheorem(),
 		carrierintertwiner.CarrierIntertwinerT3LYPhiRepresentationUnificationAuditTheorem(),
 		spontaneouscarrierseal.SpontaneousCarrierSealGaugeFixedEmbeddingAxiomAuditTheorem(),
+		sealedcarrierwitness.SealedCarrierEmbeddingDataWeakFrameTrialityBranchWitnessAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

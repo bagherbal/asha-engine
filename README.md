@@ -4392,3 +4392,50 @@ FAILED_ROUTE_YUKAWA_TEXTURE_STILL_SEALED
 ```
 
 The next logical gate is a sealed witness audit: provide or derive the concrete gauge-fixed embedding data and then test the resulting `Q_8vC` kernel without selecting the data by the desired answer.
+
+## Gate 257 — Sealed carrier embedding data / weak-frame and triality-branch witness audit
+
+Gate 257 adds `pkg/bridge/sealedcarrierwitness`.
+
+This gate corrects an important epistemic distinction from Gate 256. The early charge data are not inserted from phenomenology: the engine already derived charge eigenvalues in the early matter chain. Gate 257 therefore treats the following as native charge-table data:
+
+```text
+B-L = -N_0 + (1/3)(N_1+N_2+N_3)
+Y_phi scalar/contact spectrum = ±1/2 from the 2+2 scalar bridge
+T3L left-doublet spectrum = ±1/2 from the finite SU(2)_L doublet audit
+```
+
+The seal is used only for the carrier embedding orientation: which Fock weak frame receives the left-doublet `T3L`, and which Fock orientation receives the scalar/contact `Y_phi`. The gate scans these possibilities instead of selecting one by hand:
+
+```text
+12 weak-frame witnesses      six two-mode planes × two orientations
+8 scalar embeddings          uniform ±1/2 plus six 2+2 contact orientations
+3 triality branches          identity, tau_even, tau_odd
+288 total branch evaluations
+```
+
+Every witness is mechanically translated through the Gate-253 Witt dictionary:
+
+```text
+Q = T3L + Y_phi = Σ c_k N_k
+Q_so8 = Σ (i/2)c_k e_{2k}∧e_{2k+1}
+```
+
+The result is an honest failed route for the exact neutral three-plane:
+
+```text
+CONDITIONAL_SUPPORT_GATE256_SPONTANEOUS_CARRIER_SEAL_INHERITED
+CONDITIONAL_SUPPORT_NATIVE_CHARGE_EIGENVALUE_TABLE_EXTRACTED
+CONDITIONAL_SUPPORT_SEALED_EMBEDDING_WITNESSES_SCANNED
+CONDITIONAL_SUPPORT_WITNESS_Q_SO8_CARTAN_TRANSLATED
+CONDITIONAL_SUPPORT_ALL_TRIALITY_BRANCHES_SCANNED
+CONDITIONAL_SUPPORT_NO_TRIALITY_BRANCH_SELECTED_BY_HAND
+FAILED_ROUTE_WEAK_FRAME_EMBEDDING_STILL_DEGENERATE
+FAILED_ROUTE_TRIALITY_BRANCH_NOT_UNIQUELY_SELECTED_BY_3PLANE
+FAILED_ROUTE_SEALED_WITNESS_NEUTRAL_3PLANE_NOT_DERIVED
+FAILED_ROUTE_FULL_Q8VC_KERNEL_NOT_THREE_DIMENSIONAL
+FAILED_ROUTE_Y_ONLY_THREE_SLOT_DIAGNOSTIC_REJECTED_AS_NOT_Q
+FAILED_ROUTE_YUKAWA_TEXTURE_STILL_SEALED
+```
+
+A scalar-only uniform `Y_phi` diagnostic does produce a three-slot pattern under `tau_even`, but Gate 257 rejects it because it is not the physical `Q=T3L+Y_phi`; it drops the `T3L` contribution. The next gate should therefore search for a genuine weak-plane/scalar-embedding selector, not another charge table or Witt dictionary.
