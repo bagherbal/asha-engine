@@ -83,3 +83,25 @@ The engine verifies that the kernel of `O_B` has dimension 7 and equals the Bool
 ## v0.6 — Gauge centralizer gate
 
 Adds octonion multiplication matrices, standard octonion derivations, the compact `g₂` derivation span, the contact-copy involution `R = diag(-,+,-,+,+,+,+)`, and the centralizer theorem. The gate verifies `dim(g₂)=14`, `dim(g₂ᴿ)=4`, Lie closure, one-dimensional center, and three-dimensional derived algebra. This supports the tangent-level identification `g₂ᴿ ≅ su(2) ⊕ u(1)` without claiming the Boolean-compressed finite gauge theorem yet.
+
+## v0.7 — Boolean lift/compression diagnostic
+
+Gate 8 adds the first harsh finite-gauge survival test:
+
+```text
+X ∈ g₂ᴿ
+ρ(X) : Λ⁴R⁸ → Λ⁴R⁸
+J = Wᵀρ(X)W
+J_C = P_C J P_C
+```
+
+where `P_C` is the Boolean-coordinate projector onto the contact complement
+`K⊥` inside the Boolean support. The gate measures:
+
+- exterior lift to `Λ⁴R⁸`;
+- Boolean compression through the incidence isometry `W`;
+- contact-boundary leakage;
+- skew-symmetry after restriction;
+- closure residual of compressed commutators.
+
+Current diagnostic result: the tangent-level algebra `g₂ᴿ ≅ su(2) ⊕ u(1)` exists, but the naive Boolean-compressed finite gauge theorem does **not** yet close at strict tolerance. This is recorded as an `OPEN_TEST`, not hidden or reinterpreted as a success.
