@@ -6200,6 +6200,15 @@ No new physics claim is added. The native charged flavor firewall remains dimens
 
 Gate 423 produces `PROJECT_REVIEWER_OBJECTION_MATRIX_READY`. It prepares reviewer replies and rebuttal discipline; it does not promote any quarantined axiom to native theorem.
 
+
+## Gate 424 — Artifact Index / Reproducibility Checklist Export
+
+Gate 424 introduces `pkg/bridge/artifactindexexport` as the repository-artifact and reproducibility layer after Gate 423. It compiles the canonical artifact index, targeted validation checklist, artifact maintenance checklist, and publication workspace guide.
+
+This gate is a documentation and reproducibility export only. It adds no new physical derivation, does not reopen flavor, and does not promote any quarantined K/X/Y family axiom. It preserves the final law-space classification while making the cleaned repository navigable for future gates, manuscript work, figures, and reviewer reproduction.
+
+Gate 424 produces `PROJECT_ARTIFACT_INDEX_READY`. The next useful step is a final paper assembly / publication bundle preflight.
+
 <!-- ASHA-ARTIFACT-LAYOUT-ADDENDUM-START -->
 
 ## Artifact Layout Addendum
@@ -6207,12 +6216,16 @@ Gate 423 produces `PROJECT_REVIEWER_OBJECTION_MATRIX_READY`. It prepares reviewe
 Generated audits and publication-support artifacts are organized under `docs/` so the repository root remains a source-oriented entry point.
 
 ```text
-docs/audits/gates/          # chronological gate registry audits
-docs/audits/phenomenology/  # empirical-quarantine phenomenology reports
-docs/audits/final/          # final aggregate and legacy result reports
-docs/summaries/             # non-chronological summaries and tower maps
-docs/paper/                 # manuscript drafts, final paper, references
-docs/visuals/               # figures, diagrams, and visual source assets
+docs/ARTIFACT_INDEX.md            # canonical artifact/navigation index
+docs/REPRODUCIBILITY_CHECKLIST.md # targeted validation and timeout-safe commands
+docs/ARTIFACT_MAINTENANCE_CHECKLIST.md
+docs/PUBLICATION_WORKSPACE.md
+docs/audits/gates/                # chronological gate registry audits
+docs/audits/phenomenology/        # empirical-quarantine phenomenology reports
+docs/audits/final/                # final aggregate and legacy result reports
+docs/summaries/                   # non-chronological summaries and tower maps
+docs/paper/                       # manuscript drafts, final paper, references
+docs/visuals/                     # figures, diagrams, and visual source assets
 ```
 
 This layout does not alter any theorem status. It only separates source code, generated audits, summary documents, manuscript materials, and visual assets.

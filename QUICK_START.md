@@ -39,6 +39,8 @@ go test ./internal/app
 README.md                         # high-level project status and boundaries
 docs/architecture.md              # detailed architecture ledger
 docs/INDEX.md                     # documentation/artifact structure
+docs/ARTIFACT_INDEX.md            # canonical artifact index
+docs/REPRODUCIBILITY_CHECKLIST.md # targeted validation policy
 docs/audits/gates/INDEX.md        # gate audit index
 docs/summaries/                   # summary docs and logical tower maps
 docs/paper/                       # manuscript workspace
@@ -58,6 +60,8 @@ docs/visuals/                     # figures and diagrams
 
 - Root should stay clean.
 - Gate audits live in `docs/audits/gates/`.
+- The canonical artifact index lives in `docs/ARTIFACT_INDEX.md`.
+- The reproducibility checklist lives in `docs/REPRODUCIBILITY_CHECKLIST.md`.
 - Phenomenology audits live in `docs/audits/phenomenology/`.
 - Summary/tower documents live in `docs/summaries/`.
 - Paper drafts and final paper files live in `docs/paper/`.

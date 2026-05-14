@@ -6546,6 +6546,23 @@ no Yukawa value, CKM angle, CKM CP phase, PMNS parameter, cosmology coordinate, 
 
 Gate 423 logs `PROJECT_REVIEWER_OBJECTION_MATRIX_READY`. The next useful gate is an artifact index / reproducibility checklist export, not another physics search.
 
+
+## Gate 424 — Artifact Index / Reproducibility Checklist Export
+
+Gate 424 adds `pkg/bridge/artifactindexexport` after the repository-structure cleanup and Gate 423 reviewer matrix. It compiles the canonical artifact index, reproducibility checklist, maintenance checklist, and publication workspace guide.
+
+It is an export and repository-hygiene gate only. It introduces no new physical derivation, does not reopen flavor, and does not promote any quarantined family axiom. Its purpose is to make generated audits, summaries, paper workspaces, visuals, and validation commands navigable from stable documentation paths.
+
+The final boundary remains:
+
+```text
+native charged flavor dim = 13
+conditional K/X/Y family axiom ledger = 9 symbolic charged coefficients
+no Yukawa value, CKM angle, CKM CP phase, PMNS parameter, cosmology coordinate, or quarantined family axiom is promoted to a native ASHA theorem
+```
+
+Gate 424 logs `PROJECT_ARTIFACT_INDEX_READY`. The next useful gate is a final paper assembly / publication bundle preflight, not another physics search.
+
 <!-- ASHA-DOC-STRUCTURE-START -->
 
 ## Documentation and artifact layout
@@ -6555,6 +6572,10 @@ Generated artifacts are now kept out of the repository root.
 ```text
 docs/
 ├── INDEX.md                     # documentation and artifact map
+├── ARTIFACT_INDEX.md            # canonical artifact/navigation index
+├── REPRODUCIBILITY_CHECKLIST.md # targeted validation and timeout-safe commands
+├── ARTIFACT_MAINTENANCE_CHECKLIST.md
+├── PUBLICATION_WORKSPACE.md
 ├── audits/
 │   ├── gates/                   # gate registry audits and index
 │   ├── phenomenology/           # empirical-quarantine reports
@@ -6565,6 +6586,8 @@ docs/
 ```
 
 For setup and targeted validation, start with [`QUICK_START.md`](QUICK_START.md).
+
+Use [`docs/ARTIFACT_INDEX.md`](docs/ARTIFACT_INDEX.md) as the canonical artifact map and [`docs/REPRODUCIBILITY_CHECKLIST.md`](docs/REPRODUCIBILITY_CHECKLIST.md) for timeout-safe validation commands.
 
 Gate audit files are indexed at [`docs/audits/gates/INDEX.md`](docs/audits/gates/INDEX.md).
 

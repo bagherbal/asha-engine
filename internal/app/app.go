@@ -12,6 +12,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/almostcommutativeproduct"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomaly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomalykinetic"
+	"github.com/bagherbal/asha-engine/pkg/bridge/artifactindexexport"
 	"github.com/bagherbal/asha-engine/pkg/bridge/asha_final_closing_theorem"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ashafinalarchitectureledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/axionphenomenologyseal"
@@ -848,6 +849,7 @@ func Run() error {
 		manuscriptskeletonexport.ManuscriptSkeletonSectionBySectionProofExportTheorem(),
 		executiveabstractclaimaudit.ExecutiveAbstractClaimAuditSummaryExportTheorem(),
 		reviewerobjectionmatrix.ReviewerObjectionMatrixRebuttalReadinessExportTheorem(),
+		artifactindexexport.ArtifactIndexReproducibilityChecklistExportTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
