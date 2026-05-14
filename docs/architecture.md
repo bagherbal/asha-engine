@@ -1081,3 +1081,30 @@ Next: Gate 134 — leptoquark hypercharge-row and local-field obstruction / beta
 ## Gate 134 — Leptoquark Hypercharge / Local Field Beta-Permission Firewall
 
 Gate 134 takes the Gate 133 result that the six current-side leptoquark slots carry only `3 colors × 2 real symmetric/skew orientations`. It audits the remaining permission requirements before any of those slots may enter threshold beta matching: weak SU(2)L action, hypercharge row, local field map, Lorentz kinetic pole/residue data, mass activation, and decoupling/matching. None is selected by the finite data, so the contact leptoquark branch remains diagnostic only and contributes no `Δb_i` row.
+
+## Gate 135 — Leptoquark Contact Hypercharge Source / B-L and Charge-Lattice Obstruction
+
+Package: `pkg/bridge/contactlqcharge`
+
+Gate 135 audits the most tempting shortcut left by Gate 134: using the already-valid matter-side `B-L` operator, or a finite charge lattice built from it, as the missing contact leptoquark hypercharge source.
+
+The result is disciplined. The `B-L` bridge is valid in the matter/Fock sector: it polarizes the one-particle modes into the expected lepton/color `1+3` split and has the invariant trace data already checked by the charge-polarization gate. It also gives the lepton-color diagnostic
+
+```text
+Δ(B-L) = 1/3 - (-1) = 4/3
+```
+
+for lepton-color off-diagonal current slots. Therefore the six leptoquark-shaped current slots do carry a real `B-L` diagnostic.
+
+But this is not a contact hypercharge theorem. Hypercharge would require a contact-side `T3R` or weak-chirality source, a non-abelian `SU(2)L` action on the contact leptoquark candidates, signed orientation on the real symmetric/skew slots, a local field map, Lorentz kinetic/pole data, mass activation, decoupling, and the unresolved `S6` assignment of current slots to contact rows. None is selected by `B-L` alone or by the finite charge lattice.
+
+Therefore the contact beta firewall remains closed:
+
+```text
+representation-complete contact rows = 0 / 7
+contact beta rows allowed            = 0
+contact zero rows proved             = 0
+threshold-corrected Δb_i(L)          = not derived
+```
+
+Next: Gate 136 — contact `T3R` / chirality source search for leptoquark hypercharge.
