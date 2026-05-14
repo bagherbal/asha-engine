@@ -2986,3 +2986,50 @@ DARK_MATTER_SCALE_INTERMEDIATE_NOT_ASHA_HIERARCHY_MATCH
 ```
 
 Gate 226 does not derive an axion, `f_a`, a shift symmetry, a Pontryagin coupling, or a relic abundance from the finite core. It only parameterizes a sealed ALP route and identifies that the required dark-matter scale is intermediate rather than naturally coincident with `M_B` or `M_*`.
+
+## v2.25 — Gate 227: Geometric-mean intermediate scale resonance audit
+
+Gate 227 introduces `pkg/bridge/geometricmeanresonance`. It tests whether the two independent intermediate scales discovered in the sealed phenomenological tower are related to the already established ASHA hierarchy by the geometric mean
+
+```text
+M_int = sqrt(M_B M_*)
+```
+
+using only previously sealed values:
+
+```text
+M_B ≈ 2.56895727e6 GeV
+M_* ≈ 1.72179441e17 GeV
+f_a ≈ 1.00000000e12 GeV
+Λ_EFT ≲ 4.99261316e11 GeV
+```
+
+The calculation gives
+
+```text
+M_int = 6.65072648e11 GeV
+```
+
+and this scale brackets the two independent intermediate requirements:
+
+```text
+Λ_EFT < M_int < f_a
+```
+
+Both `f_a` and `Λ_EFT` lie within one decade of `M_int`, and their own geometric mean is only about `0.026` decades from `M_int`. Gate 227 therefore logs:
+
+```text
+CONDITIONAL_PHENOMENOLOGY_GEOMETRIC_MEAN_RESONANCE
+NULL_HYPOTHESIS_NO_RESONANCE_REJECTED_WITHIN_ONE_DECADE
+```
+
+This is not a finite derivation of an intermediate breaking scale. The engine still lacks a native order parameter, breaking potential, axion shift generator, EFT mediator mass, and common parent symmetry. The tempting `u(4)` / Pati-Salam route remains quarantined by the `LeptoquarkDynamicsSeal`.
+
+Gate 227 therefore also records:
+
+```text
+FAILED_ROUTE_NATIVE_INTERMEDIATE_BREAKING_DERIVATION
+PATI_SALAM_ROUTE_QUARANTINED_BY_LEPTOQUARK_DYNAMICS_SEAL
+```
+
+The result is a structural phenomenological resonance, not a new finite-core theorem.

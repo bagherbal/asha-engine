@@ -151,3 +151,12 @@
 - Compare any extracted dark scale against existing hierarchy scales in log space; report non-resonance as clearly as resonance.
 - Diagnostic variants such as `θ_i = B_gap` are useful only if marked noncanonical unless a prior gate derived that identification.
 - Do not claim dark matter is solved when the result depends on an un-derived axion seal. The native task remains deriving the symmetry, `f_a`, and anomaly map.
+
+## Gate 227 method note — resonance is not derivation
+
+- When two sealed phenomenological scales appear near each other, first test the null hypothesis quantitatively in log space before inventing a new mechanism.
+- Use inherited sealed values only when testing hierarchy relations; do not refit `M_B`, `M_*`, `f_a`, or `Λ_EFT` to improve a resonance.
+- A geometric mean relation can be a structural clue, but it is not a finite theorem until an order parameter, breaking potential, or exact operator derives the intermediate scale.
+- Keep “bracketing” and “matching” distinct: `Λ_EFT < M_int < f_a` is stronger than both scales merely being within one decade, but still conditional.
+- Do not reopen sealed leptoquark or Pati-Salam dynamics just because the intermediate scale is suggestive. Existing seals remain active until a gate derives the missing curvature/action/propagator data.
+- Treat resonance gates as target-selection gates: they identify where to search next, not what has already been proven.

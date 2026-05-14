@@ -3531,3 +3531,51 @@ M_* ≈ 1.72179441e17 GeV
 ```
 
 No resonance is found within the one-decade criterion. The axion route remains a sealed phenomenological route, not a finite-core theorem. A future gate must derive a shift generator, anomaly coupling, and dimensionful `f_a` before the dark-matter sector can be claimed as native ASHA physics.
+
+## Gate 227 — Geometric mean as sealed intermediate hierarchy
+
+Gate 227 adds the geometric-mean resonance layer after the dark-matter and relic-decay seals.
+
+The layer consumes only sealed phenomenological outputs:
+
+```text
+M_B      from the PeV threshold branch
+M_*      from the topological boundary branch
+f_a      from AxionPhenomenologySeal
+Λ_EFT    from RelicDecaySeal / colored-octet portal
+```
+
+It computes
+
+```text
+M_int = sqrt(M_B M_*) = 6.65072648e11 GeV
+```
+
+and finds that this single intermediate scale sits between the two independently required intermediate scales:
+
+```text
+Λ_EFT ≲ 4.99261316e11 GeV < M_int < f_a = 1.0e12 GeV
+```
+
+This creates a new conditional structural layer:
+
+```text
+sealed low threshold M_B
+        ↓ geometric seesaw
+sealed intermediate M_int
+        ↓ possible common origin of axion and relic-decay EFT scale
+sealed topological boundary M_*
+```
+
+The architecture does not yet promote this into a finite theorem. Gate 227 explicitly records that the following are still missing:
+
+```text
+finite intermediate order parameter
+breaking potential
+shift generator
+EFT mediator origin
+Pati-Salam/u4 gauge dynamics
+leptoquark curvature and propagators
+```
+
+Thus the intermediate scale is a powerful phenomenological resonance and a target for Gate 228, not a derived native scale.

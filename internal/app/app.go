@@ -120,6 +120,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeeating"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugehessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugekineticdiag"
+	"github.com/bagherbal/asha-engine/pkg/bridge/geometricmeanresonance"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
@@ -464,6 +465,7 @@ func Run() error {
 		flavoralignmentdmabsence.FlavorAlignmentSafetyDarkMatterAbsenceTheorem(),
 		finiteanchordm.FiniteAnchorDarkMatterViabilityAuditTheorem(),
 		axionphenomenologyseal.AxionPhenomenologySealBGapMisalignmentScaleAuditTheorem(),
+		geometricmeanresonance.GeometricMeanIntermediateResonanceAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
