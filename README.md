@@ -5278,3 +5278,54 @@ FAILED_ROUTE_HEAT_KERNEL_SUBTRACTION_SCHEME_MISSING
 FAILED_ROUTE_SCALAR_GAUGE_NORMALIZATION_MISSING
 FAILED_ROUTE_DIMENSIONLESS_HIGGS_OBSERVABLE_DEFINITION_MISSING
 ```
+
+## Gate 283 — B-Gap Hierarchy Coefficient / Topological Volume Ratio Audit
+
+Gate 283 opens Path C after the Gate-282 spectral-action capstone. It re-audits the B-gap hierarchy resonance found in Gates 228–229 and asks whether the coefficient `c ≈ 4/π` can be promoted from a geometric diagnostic into a finite-derived hierarchy theorem.
+
+The gate retrieves the Hopf volume ledger:
+
+```text
+S³ -> S⁷ -> S⁴
+Vol(S³) = 2π²
+Vol(S⁴) = 8π²/3
+Vol(S⁷) = π⁴/3
+```
+
+and verifies the exact identity:
+
+```text
+S_top = 8π²
+c_Hopf = S_top / (π Vol(S³)) = 4/π
+```
+
+Inserted into the B-gap hierarchy formula,
+
+```text
+M_hidden = M_* exp(-(4/π)/B_gap),
+```
+
+it gives:
+
+```text
+M_hidden ≈ 6.908660279e11 GeV
+M_int target ≈ 6.650726477e11 GeV
+ratio ≈ 1.038782801
+log10 gap ≈ 0.016524751 decades
+```
+
+This is a very tight structural resonance, but not an exact theorem. The finite engine still lacks the native contact-vacuum Hopf action map, hidden B-sector order parameter, breaking potential, and residual matching theorem required to upgrade the intermediate scale.
+
+Statuses:
+
+```text
+CONDITIONAL_SUPPORT_PATH_C_BGAP_DERIVATION_OPENED_AFTER_PATH_B_CAPSTONE
+CONDITIONAL_SUPPORT_HOPF_TOPOLOGICAL_VOLUMES_RETRIEVED
+CONDITIONAL_SUPPORT_FOUR_OVER_PI_VOLUME_RATIO_IDENTITY_VERIFIED
+CONDITIONAL_SUPPORT_BGAP_HIERARCHY_RESONANCE_REPRODUCED
+FAILED_ROUTE_NATIVE_CONTACT_ACTION_MAP_TO_BGAP_NOT_DERIVED
+FAILED_ROUTE_HOPF_FIBER_VOLUME_NORMALIZATION_NOT_FINITE_DERIVED
+FAILED_ROUTE_FOUR_OVER_PI_DOES_NOT_EXACTLY_REPRODUCE_M_INT_WITH_CURRENT_BGAP
+FAILED_ROUTE_INTERMEDIATE_SCALE_THEOREM_NOT_UPGRADED
+FAILED_ROUTE_INTERMEDIATE_BREAKING_SEAL_REMAINS_REQUIRED
+```

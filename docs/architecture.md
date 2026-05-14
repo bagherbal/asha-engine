@@ -5072,3 +5072,27 @@ The capstone firewall has six required missing structures:
 6. A pre-defined dimensionless observable to be predicted before comparison.
 
 This gate permanently prevents the engine from claiming a Higgs mass ratio from raw trace ratios, from the Gate-275 two-branch `r_±` shape constraint, or from the Gate-281 sealed projector orientation. The spectral action remains a valid future target, but the present theorem status is bridge-required, not exact finite.
+
+## Gate 283 — Path C B-Gap Coefficient Boundary
+
+Gate 283 pivots from the Path-B Higgs firewall to Path C, the B-gap hierarchy coefficient. It confirms that the coefficient `4/π` has an exact topological-volume expression:
+
+```text
+4/π = S_top / (π Vol(S³)), with S_top = 8π² and Vol(S³)=2π².
+```
+
+This coefficient tightly reproduces the intermediate-scale near-resonance through:
+
+```text
+M_hidden = M_* exp(-(4/π)/B_gap),
+```
+
+but it does not exactly reproduce the sealed `M_int` with the current finite `B_gap`, and the engine has not derived the missing contact-vacuum action map that would make this coefficient operational in the B-sector dynamics.
+
+Architecturally this gate separates three ledgers:
+
+1. **Exact mathematics:** Hopf volumes and `S_top/(π Vol(S³)) = 4/π`.
+2. **Strong conditional resonance:** the B-gap exponential lands within about `0.0165` decades of the sealed intermediate scale.
+3. **Missing finite mechanism:** hidden-sector order parameter, contact/Hopf action normalization, breaking potential, and residual matching theorem.
+
+The `IntermediateBreakingSeal` remains required and ungranted. Path C is now open, but the next theorem must derive the action map or order parameter rather than re-rank numerical coincidences.

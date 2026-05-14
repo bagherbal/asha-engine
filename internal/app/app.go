@@ -15,6 +15,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betamatching"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betapermission"
+	"github.com/bagherbal/asha-engine/pkg/bridge/bgaphierarchycoefficient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bminuslweakselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/boundaryselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/branchprojector"
@@ -576,6 +577,7 @@ func Run() error {
 		resolventfieldadjunction.ResolventFieldAdjunctionContactProjectorConstructionAuditTheorem(),
 		resolventbranchsemantics.ResolventBranchSemanticsProjectorSectorOrientationSealAuditTheorem(),
 		spectralactioncapstone.SpectralActionEpistemologicalCapstoneHiggsPredictionFirewallAuditTheorem(),
+		bgaphierarchycoefficient.BGapHierarchyCoefficientTopologicalVolumeRatioAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
