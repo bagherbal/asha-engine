@@ -34,6 +34,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeeating"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugehessian"
+	"github.com/bagherbal/asha-engine/pkg/bridge/gaugekineticdiag"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
@@ -198,6 +199,7 @@ func Run() error {
 		quotientedcorrespondence.GaugeQuotientedProtectedBrokenCorrespondenceAuditTheorem(),
 		brokenmetric.BrokenImageMetricKineticNormalizationAuditTheorem(),
 		brokengeneratornorm.NormalizedBrokenGeneratorBasisGaugeKineticCandidateTheorem(),
+		gaugekineticdiag.GaugeKineticDiagActionSelectionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
