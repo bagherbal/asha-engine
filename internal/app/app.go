@@ -16,6 +16,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/betamatching"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betapermission"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bgaphierarchycoefficient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/bimoduletracecapacity"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bminuslweakselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/boundaryselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/branchprojector"
@@ -590,6 +591,7 @@ func Run() error {
 		topologicalactionvariationalprinciple.TopologicalActionVariationalPrincipleBoundarySelectorAuditTheorem(),
 		contactspectralcutoff.ContactSpectralCutoffIdentificationSTopBranchSelectorAuditTheorem(),
 		chiraljanomalysieve.ChiralJStructureAnomalySieveAsymmetricTraceAuditTheorem(),
+		bimoduletracecapacity.BimoduleTraceCapacitySieveSectorHierarchyAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

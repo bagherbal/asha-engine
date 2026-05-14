@@ -5234,3 +5234,29 @@ Tr(P_C D_F²), Tr(P_Q D_F²)
 see the internal redistribution between lepton and quark edge amplitudes.
 
 This means the remaining branch selector cannot be ordinary `γ` alone. It requires the completed physical finite Hilbert representation: anti-linear real structure `J`, chiral/hypercharge assignments, and a branch-sensitive invariant or anomaly functional. Until then the Higgs ratio remains firewalled.
+
+## Gate 290 — Bimodule Trace Capacity Boundary
+
+Gate 290 audits whether the Morita `1⊕3` multiplicities can select the surviving scalar-Morita amplitude branch.
+
+The sector moments are
+
+```text
+Tr(P_C D_F²)=X,
+Tr(P_Q D_F²)=3Xr,
+Tr(P_C D_F⁴)=X²,
+Tr(P_Q D_F⁴)=3X²r².
+```
+
+Both branches pass the weak total-capacity bound `Tr(P_QD_F^{2n}) >= Tr(P_CD_F^{2n})`. A stronger per-slot monotonic rule would select `r_+`, since `r_+>1` while `r_-<1`, but that rule is not derived from Morita multiplicity alone. Therefore `κ_C:κ_Q=1:3` remains a trace-count theorem, not an amplitude-ordering theorem.
+
+Statuses:
+
+```text
+CONDITIONAL_SUPPORT_BRANCH_STRESS_TEST_COMPLETED
+CONDITIONAL_SUPPORT_PER_SLOT_MONOTONIC_BOUND_DIAGNOSTIC_EXPOSED
+FAILED_ROUTE_TOTAL_CAPACITY_BOUND_DOES_NOT_SELECT_BRANCH
+FAILED_ROUTE_PER_SLOT_MONOTONIC_BOUND_IS_EXTRA_SELECTION_AXIOM
+FAILED_ROUTE_BRANCH_NOT_SELECTED_BY_TRACE_CAPACITY_BOUND
+FAILED_ROUTE_HIGGS_MASS_RATIO_STILL_NOT_DERIVED
+```

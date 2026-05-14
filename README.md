@@ -5620,3 +5620,7 @@ FAILED_ROUTE_ANOMALY_CONDITIONS_DO_NOT_DEPEND_ON_R_BRANCH
 FAILED_ROUTE_BRANCH_NOT_SELECTED_BY_CHIRAL_ASYMMETRY
 FAILED_ROUTE_HIGGS_MASS_RATIO_STILL_NOT_DERIVED
 ```
+
+## Gate 290 — Bimodule Trace Capacity Sieve
+
+Gate 290 stress-tests whether Morita `1⊕3` trace multiplicities can veto the lower scalar-Morita branch. The weak total-capacity inequality is satisfied by both `r_+` and `r_-`; a stronger per-slot monotonicity diagnostic would select `r_+`, but it is not a derived theorem. The amplitude branch and Higgs ratio remain unselected.
