@@ -102,6 +102,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcoupling"
 	"github.com/bagherbal/asha-engine/pkg/bridge/eftdecayportal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/electroweakvevseal"
+	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalflavorledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalfulltexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalyukawafit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewcartanledger"
@@ -542,6 +543,7 @@ func Run() error {
 		finiteyukawaaction.FiniteYukawaActionFunctionalTrialityHopfAmplitudeQualificationAuditTheorem(),
 		empiricalyukawafit.EmpiricalYukawaSealActivationTextureAmplitudeFitAuditTheorem(),
 		empiricalfulltexture.EmpiricalFullTextureSealSVDCKMObservableReconstructionAuditTheorem(),
+		empiricalflavorledger.FullEmpiricalFlavorLedgerLeptonPMNSSectorFirewallExtensionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

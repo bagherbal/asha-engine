@@ -4790,3 +4790,21 @@ U_u = V_CKM^dagger
 ```
 
 This is deliberately a phenomenological reconstruction theorem, not a finite-core derivation. It closes the immediate flavor-observable pipeline while preserving Gate 263 and Gate 264 no-gos: no native finite Yukawa action, no finite amplitude selector, and no finite derivation of quark masses or CKM angles has been found.
+
+## Gate 266 — Full Empirical Flavor Ledger / Lepton-PMNS Reconstruction
+
+Gate 266 extends the `EmpiricalYukawaSeal` from the quark full-texture branch into the lepton sector. The architecture now separates:
+
+1. **Native finite geometry:** carrier spaces, gauge/charge structure, `tau_eta`, triality texture basis, and no-go records for finite amplitude derivation.
+2. **Sealed empirical quark flavor:** full `Y_u,Y_d` textures reconstructed by SVD, with CKM from `U_u^dagger U_d`.
+3. **Sealed empirical lepton flavor:** charged-lepton SVD plus Majorana-neutrino Takagi reconstruction, with PMNS from `U_e^dagger U_nu`.
+
+Gate 266 uses a representative normal-ordering Majorana neutrino witness:
+
+```text
+M_nu = U_PMNS Sigma_nu U_PMNS^T
+```
+
+and verifies the Takagi equations directly. This is not a claim that the finite core derives Majorana neutrinos. The gate explicitly records that neutrino ordering, neutrino masses, PMNS entries, CP phase, and Majorana-vs-Dirac nature are empirical boundary assumptions.
+
+The observable reconstruction pipeline is now complete at the sealed phenomenological layer, while the finite-core theorem status remains unchanged: no native finite Yukawa action or amplitude selector has been derived.

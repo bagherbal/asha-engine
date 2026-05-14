@@ -4734,3 +4734,53 @@ FAILED_ROUTE_RESTRICTED_GEOMETRIC_ANSATZ_REMAINS_EMPIRICALLY_UNDERFIT
 ```
 
 Thus Gate 265 proves that the engine can reconstruct physical flavor observables from sealed full textures while preserving the central truth: the full matrices, masses, CKM entries, basis convention, VEV normalization, and RG scale choices are empirical boundary data unless a future finite action derives them.
+
+## Gate 266 — Full Empirical Flavor Ledger / Lepton-PMNS and Sector Firewall Extension Audit
+
+Gate 266 adds `pkg/bridge/empiricalflavorledger` and registers `FullEmpiricalFlavorLedgerLeptonPMNSSectorFirewallExtensionAuditTheorem`.
+
+After Gate 265 verified quark-sector SVD/CKM reconstruction under `EmpiricalYukawaSeal`, Gate 266 extends the same firewall to the lepton sector. It ingests representative charged-lepton and light-neutrino data as sealed phenomenological inputs, not finite-core outputs.
+
+The charged-lepton texture is audited by SVD:
+
+```text
+Y_e = U_e Sigma_e V_e^dagger
+```
+
+The neutrino texture is treated as a sealed Majorana witness and audited by the Takagi convention:
+
+```text
+M_nu = U_nu Sigma_nu U_nu^T
+U_nu^dagger M_nu conjugate(U_nu) = Sigma_nu
+```
+
+The PMNS matrix is reconstructed by left-unitary misalignment:
+
+```text
+U_PMNS = U_e^dagger U_nu
+```
+
+Representative reconstructed PMNS magnitudes in this sealed witness are approximately:
+
+```text
+|U_PMNS| ≈ [[0.825146, 0.544911, 0.149018],
+           [0.270252, 0.605514, 0.748543],
+           [0.496082, 0.580022, 0.646125]]
+```
+
+The gate logs support for algebraic reconstruction while preserving the firewall:
+
+```text
+CONDITIONAL_SUPPORT_EMPIRICAL_LEPTON_FLAVOR_SEAL_ACTIVATED
+CONDITIONAL_SUPPORT_REPRESENTATIVE_LEPTON_TEXTURES_INGESTED
+CONDITIONAL_SUPPORT_CHARGED_LEPTON_SVD_COMPLETED
+CONDITIONAL_SUPPORT_MAJORANA_NEUTRINO_TAKAGI_COMPLETED
+CONDITIONAL_SUPPORT_LEPTON_MASS_EIGENVALUES_RECONSTRUCTED
+CONDITIONAL_SUPPORT_SVD_TAKAGI_PMNS_RECONSTRUCTION_VERIFIED
+CONDITIONAL_SUPPORT_PMNS_LARGE_ANGLE_STRUCTURE_AUDITED
+FAILED_ROUTE_NO_NATIVE_DERIVATION
+FAILED_ROUTE_LEPTON_TEXTURES_ARE_EMPIRICAL_BOUNDARY_DATA
+FAILED_ROUTE_MAJORANA_OR_DIRAC_NEUTRINO_NATURE_NOT_FINITE_DERIVED
+```
+
+Thus Gate 266 completes the sealed Standard Model flavor-observable reconstruction ledger: quark CKM and lepton PMNS can be reconstructed from full empirical textures, but the finite core still does not derive the numerical masses, mixing angles, CP phase, neutrino ordering, or Majorana nature.
