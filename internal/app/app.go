@@ -161,6 +161,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/heatkernelconventionledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heatkerneldynamicspreflight"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/heavylightoverlapoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsquarticratioverification"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hilbertspacetracecapacity"
@@ -648,6 +649,7 @@ func Run() error {
 		nativeunifiedcouplingorigin.NativeUnifiedCouplingOriginAbsoluteGaugeCouplingTraceCapacityAuditTheorem(),
 		hilbertspacetracecapacity.HilbertSpaceDimensionTraceCapacityLedgerAuditTheorem(),
 		nonperturbativeportalcoupling.NonPerturbativeInstantonMappingHeavyPortalCouplingSieveAuditTheorem(),
+		heavylightoverlapoperator.FunctionalDeterminantSieveHeavyLightOverlapOperatorAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
