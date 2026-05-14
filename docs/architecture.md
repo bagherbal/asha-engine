@@ -259,3 +259,44 @@ lambda² = (5/3)/3 = 5/9,
 but Gate 101 deliberately does not select that map.
 
 Remaining sealed quantities: `alpha`, physical `thetaW`, `g2`, `gY`, W/Z masses, Higgs vev, Higgs mass, boundary scale `M*`, beta coefficients, and finite threshold matching.  The next gate must either derive or reject the contact-to-matter hypercharge embedding / threshold map without using observed constants.
+
+## Gate 102 — Contact-to-Matter Hypercharge Embedding / Finite Normalization Threshold
+
+Gate 102 adds `pkg/bridge/contactembedding`.  Gate 101 exposed the first real abelian mismatch after the canonical action had been selected:
+
+```text
+K(Y_phi)=3,
+qquad k_Y=5/3.
+```
+
+Gate 102 asks the minimal allowed question: whether a one-dimensional abelian embedding
+
+```text
+Y_matter = lambda Y_phi
+```
+
+can carry the scalar/contact action coefficient into the finite matter hypercharge normalization without using measured couplings.  Matching the quadratic coefficient gives
+
+```text
+lambda² K(Y_phi) = k_Y,
+qquad lambda² = (5/3)/3 = 5/9,
+qquad lambda = sqrt(5)/3.
+```
+
+The sign ambiguity is handled explicitly.  The positive branch is selected because it preserves the charge orientation in `Q=T3+Y`; the negative branch is quadratically admissible but rejected because it reverses the hypercharge/electric-charge orientation.
+
+The embedded generator-basis Hessian becomes
+
+```text
+K_embedded = diag(1,1,1,5/3).
+```
+
+This lifts the earlier matter-table value
+
+```text
+sin² = 1/(1+k_Y)=3/8
+```
+
+from a representation-table-only diagnostic to an embedded finite boundary diagnostic.  It is still not the physical low-energy weak mixing angle.  The boundary scale `M*`, RG flow, finite threshold activation, electromagnetic coupling normalization, and scalar mass unit remain sealed.
+
+The next gate must therefore move from normalized finite boundary data to an RG/scale firewall: derive, or reject, the boundary scale and continuum-active beta/threshold map without inserting observed `alpha`, `thetaW`, `g2`, `gY`, W/Z masses, or Higgs data.

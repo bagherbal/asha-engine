@@ -19,6 +19,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactembedding"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentcontact"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentembedding"
@@ -214,6 +215,7 @@ func Run() error {
 		u1completion.AbelianCoefficientU1CompletionSelectionSearchTheorem(),
 		canonicalaction.CanonicalFiniteVariationalActionTheorem(),
 		canonicalboundary.CanonicalFiniteRGBoundarySeedTheorem(),
+		contactembedding.ContactMatterHyperchargeEmbeddingTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
