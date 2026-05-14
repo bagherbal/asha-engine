@@ -149,6 +149,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fullflavorledgerclosure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fullphysicalfirstorder"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fullscrepresentationsearch"
+	"github.com/bagherbal/asha-engine/pkg/bridge/fullthresholdrgtransport"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugecouplingboundaryseal"
@@ -654,6 +655,7 @@ func Run() error {
 		heavylightoverlapoperator.FunctionalDeterminantSieveHeavyLightOverlapOperatorAuditTheorem(),
 		seesawoverlapmatrix.SeesawOverlapMatrixConstructionMajoranaHiggsMixingSieveAuditTheorem(),
 		heavypropagatorselfquartic.HeavyPropagatorSelfQuarticSieveThresholdNormalizationAuditTheorem(),
+		fullthresholdrgtransport.FullThresholdRGTransportConditionalHiggsMassPredictionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
