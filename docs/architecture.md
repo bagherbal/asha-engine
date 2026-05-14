@@ -159,3 +159,17 @@ K(kappa)=K_SU2+kappa(Q-Z)(Q-Z)^T
 ```
 
 In the basis `[T1,T2,Z,Q]`, the semisimple curvature sees the `SU(2)` direction but leaves the pure abelian `Q-Z=2Y_phi` direction null.  The abelian completion exposes the correct missing coefficient problem.  In the chosen convention, the earlier raw broken-coordinate candidate `diag(1,1,4)` is reachable at `kappa=6`, but this value is not action-selected.  The gate therefore keeps `g2`, `gY`, `thetaW`, `alpha`, and physical W/Z masses bridge-gated.
+
+
+## Gate 99 — Abelian Coefficient / U(1) Completion Selection Search
+
+Gate 99 audits the coefficient exposed by Gate 98.  In the convention
+`K(kappa)=K_SU2+kappa(Q-Z)(Q-Z)^T`, the broken-coordinate whitening candidate
+`diag(1,1,4)` requires `kappa_U1=6`.  The gate verifies this arithmetic and
+then rejects premature physical interpretation: several independent finite count
+resonances also equal six, so count-matching alone is not a derivation.
+
+Current truth: `kappa_U1=6` is the metric-whitening value, not an
+action-selected abelian kinetic coefficient.  The next missing object is a
+finite abelian completion action source or a second variation that selects the
+coefficient without using the whitening target as input.

@@ -61,6 +61,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
+	"github.com/bagherbal/asha-engine/pkg/bridge/u1completion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1kinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1nonfactor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1orientation"
@@ -208,6 +209,7 @@ func Run() error {
 		brokengaugefields.FiniteBrokenGaugeFieldVariablesCurvatureSearchTheorem(),
 		ewcurvature.FullElectroweakConnectionCurvatureAuditTheorem(),
 		ewquadratic.FullElectroweakQuadraticActionAbelianCompletionTheorem(),
+		u1completion.AbelianCoefficientU1CompletionSelectionSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
