@@ -443,3 +443,24 @@ nullity after Gate 108  = 3
 ```
 
 The next true gate must classify B-sector/contact-overlap modes as physical fields, regulator modes, or vacuum-frustration modes before any `Δb_i(L)` threshold correction, physical `alpha`, physical `thetaW`, or mass prediction can be claimed.
+
+## Gate 109 — Finite Mass / Activation Class Classifier
+
+Gate 109 adds `pkg/bridge/modeclass`. It continues from Gate 108 by asking a more primitive question than beta matching: before an open mode can contribute to a threshold correction, what kind of mode is it?
+
+The gate classifies the B-sector first spectral gap as a **constrained finite vacuum-action eigenmode**. The value is real finite spectral data, but it belongs to the finite B-sector vacuum action and still lacks continuum locality, a gauge representation row, a physical mass unit, and a decoupling rule. It is therefore excluded from heavy-threshold beta corrections.
+
+The seven contact partial-overlap modes remain class-open. Current finite data allows several mutually incompatible readings: physical singlet scalars, scalar doublets, regulator modes, constrained finite overlap modes, or vacuum-frustration modes. Because one compatible branch would change beta coefficients and others would not, no threshold beta tensor is released.
+
+The remaining obstruction is now sharper:
+
+```text
+contact partial-overlap mode
+→ kinetic sign / locality / propagator class
+→ physical/regulator/frustration classification
+→ representation row if physical
+→ activation + decoupling rule
+→ Δb_i correction
+```
+
+No `alpha`, physical `thetaW`, W/Z/Higgs/fermion mass, boundary scale, or fitted threshold is derived.

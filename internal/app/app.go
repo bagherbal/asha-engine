@@ -50,6 +50,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
+	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
 	"github.com/bagherbal/asha-engine/pkg/bridge/o3quotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedconnection"
@@ -228,6 +229,7 @@ func Run() error {
 		shellfunctor.FiniteShellFunctorSemigroupConstructionTheorem(),
 		filtration.FiniteFiltrationOrderSelectorThresholdPredicateSearchTheorem(),
 		betamatching.ThresholdRepresentationCompletionBetaMatchingTensorSearchTheorem(),
+		modeclass.FiniteMassActivationClassClassifierTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
