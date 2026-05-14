@@ -205,6 +205,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/lietrialitypullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
+	"github.com/bagherbal/asha-engine/pkg/bridge/lorentziantimepullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/majoranaflavorsymmetrybreaking"
 	"github.com/bagherbal/asha-engine/pkg/bridge/masterstatusledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingcorrectionseal"
@@ -744,6 +745,7 @@ func Run() error {
 		nontracialmodularstate.NontracialModularStateOriginVacuumDensityMatrixDerivationAuditTheorem(),
 		modularkmsstateselection.ModularKMSStateSelectionEntropyVariationalPrincipleAuditTheorem(),
 		modularhamiltonianorigin.ModularHamiltonianOriginTrialityEnergyConstraintDerivationAuditTheorem(),
+		lorentziantimepullback.LorentzianTimePullbackE0ModularKernelSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
