@@ -169,6 +169,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavylightoverlapoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavypropagatorselfquartic"
+	"github.com/bagherbal/asha-engine/pkg/bridge/hierarchyrankpromotion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hierarchyscalingaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsexactprecisionkernel"
@@ -690,6 +691,7 @@ func Run() error {
 		higgsprecisionroutesieve.HiggsPrecisionRepairRouteSievePoleCorrectionVsContactShapeAuditTheorem(),
 		higgsonshellrenormalizationscheme.OnShellRenormalizationSchemePassarinoVeltmanPoleMatchingAuditTheorem(),
 		hierarchyscalingaudit.GaugeHierarchyScalingAuditPlanckFactorSieveTheorem(),
+		hierarchyrankpromotion.Rank56HalfInstantonHierarchyPromotionSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
