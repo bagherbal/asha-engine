@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/bagherbal/asha-engine/internal/report"
+	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
@@ -88,6 +89,7 @@ func Run() error {
 		sourcepotential.SymmetryBreakingSourceActionTheorem(),
 		scalarpotential.EffectivePotentialTheorem(),
 		scalarscale.ScaleBridgeSearchTheorem(),
+		actionscale.ActionNormalizationScaleBridgeTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
