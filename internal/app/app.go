@@ -154,6 +154,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/geometricmeanresonance"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/grandnormalizationsieve"
+	"github.com/bagherbal/asha-engine/pkg/bridge/heatkernelconventionledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heatkerneldynamicspreflight"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
@@ -614,6 +615,7 @@ func Run() error {
 		heatkerneldynamicspreflight.SeeleyDeWittHeatKernelFormalizationSpectralActionDynamicsPreflightTheorem(),
 		grandnormalizationsieve.GrandNormalizationSieveWaveFunctionRenormalizationExtractionAuditTheorem(),
 		scalarkinetictracepositivity.ScalarKineticTraceFunctionalPositiveZHEvaluableCarrierAuditTheorem(),
+		heatkernelconventionledger.HeatKernelConventionLedgerPositivePrefactorNormalizationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
