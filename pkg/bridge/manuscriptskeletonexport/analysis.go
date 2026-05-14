@@ -251,7 +251,7 @@ func buildProofs(sections []ManuscriptSection) []ProofObligation {
 
 func buildAppendices() []Appendix {
 	return []Appendix{
-		{"app-atlas", "Theorem atlas export", "Place the Gate-420 theorem table, Mermaid graph, DOT graph, and machine ledger.", []string{"gate420_registry_audit.md"}, "ready"},
+		{"app-atlas", "Theorem atlas export", "Place the Gate-420 theorem table, Mermaid graph, DOT graph, and machine ledger.", []string{"docs/audits/gates/gate420_registry_audit.md"}, "ready"},
 		{"app-failed", "Failed-route/no-go index", "Preserve scalar, fermion, and family axiom no-gos as reproducible constraints.", []string{"gate398-gate410 audits"}, "ready"},
 		{"app-firewalls", "Firewall and environmental coordinate ledger", "State flavor/cosmology coordinates that remain empirical or environmental.", []string{"Gate 418", "Gate 419", "Gate 420"}, "ready"},
 		{"app-repro", "Reproducibility/test ledger", "List targeted test commands and artifact policy.", []string{"go test -p=1 selected packages"}, "ready"},
@@ -262,7 +262,7 @@ func buildExports(m Manuscript) ExportBundle {
 	outline := renderOutline(m)
 	proof := renderProofMatrix(m)
 	apps := renderAppendices(m)
-	checklist := []string{"README.md updated", "docs/architecture.md updated", "internal/app/app.go wired", "gate421_registry_audit.md generated", "targeted tests recorded"}
+	checklist := []string{"README.md updated", "docs/architecture.md updated", "internal/app/app.go wired", "docs/audits/gates/gate421_registry_audit.md generated", "targeted tests recorded"}
 	return ExportBundle{Executed: true, OutlineMarkdown: outline, ProofMatrixMarkdown: proof, AppendixMarkdown: apps, ArtifactChecklist: checklist, PublicationReady: outline != "" && proof != "" && apps != "", Verdict: "Manuscript outline, proof matrix, appendices, and artifact checklist are ready."}
 }
 

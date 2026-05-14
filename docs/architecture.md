@@ -6199,3 +6199,22 @@ explicit non-claim
 No new physics claim is added. The native charged flavor firewall remains dimension 13, and the conditional K/X/Y family ledger remains a nine-symbolic-coefficient capacity statement rather than a prediction of Yukawa values or CKM/PMNS parameters.
 
 Gate 423 produces `PROJECT_REVIEWER_OBJECTION_MATRIX_READY`. It prepares reviewer replies and rebuttal discipline; it does not promote any quarantined axiom to native theorem.
+
+<!-- ASHA-ARTIFACT-LAYOUT-ADDENDUM-START -->
+
+## Artifact Layout Addendum
+
+Generated audits and publication-support artifacts are organized under `docs/` so the repository root remains a source-oriented entry point.
+
+```text
+docs/audits/gates/          # chronological gate registry audits
+docs/audits/phenomenology/  # empirical-quarantine phenomenology reports
+docs/audits/final/          # final aggregate and legacy result reports
+docs/summaries/             # non-chronological summaries and tower maps
+docs/paper/                 # manuscript drafts, final paper, references
+docs/visuals/               # figures, diagrams, and visual source assets
+```
+
+This layout does not alter any theorem status. It only separates source code, generated audits, summary documents, manuscript materials, and visual assets.
+
+<!-- ASHA-ARTIFACT-LAYOUT-ADDENDUM-END -->

@@ -26,7 +26,7 @@ This package imports the ASHA law-space and injects a declared empirical quarant
 - the B-gap Majorana relic-yield constraint and thermal-overclosure check;
 - the cosmological-constant counterterm severity.
 
-The current output is summarized in `phenomenology_predictions_audit.md`.
+The current output is summarized in `docs/audits/phenomenology/phenomenology_predictions_audit.md`.
 
 
 ## Bottom line up front — final architecture finding
@@ -6545,3 +6545,58 @@ no Yukawa value, CKM angle, CKM CP phase, PMNS parameter, cosmology coordinate, 
 ```
 
 Gate 423 logs `PROJECT_REVIEWER_OBJECTION_MATRIX_READY`. The next useful gate is an artifact index / reproducibility checklist export, not another physics search.
+
+<!-- ASHA-DOC-STRUCTURE-START -->
+
+## Documentation and artifact layout
+
+Generated artifacts are now kept out of the repository root.
+
+```text
+docs/
+├── INDEX.md                     # documentation and artifact map
+├── audits/
+│   ├── gates/                   # gate registry audits and index
+│   ├── phenomenology/           # empirical-quarantine reports
+│   └── final/                   # final aggregate/legacy reports
+├── summaries/                   # gate summaries and ontological tower maps
+├── paper/                       # paper drafts, final manuscript, references
+└── visuals/                     # diagrams, figures, and source visuals
+```
+
+For setup and targeted validation, start with [`QUICK_START.md`](QUICK_START.md).
+
+Gate audit files are indexed at [`docs/audits/gates/INDEX.md`](docs/audits/gates/INDEX.md).
+
+<!-- ASHA-DOC-STRUCTURE-END -->
+
+<!-- ASHA-CITATION-TEMPLATE-START -->
+
+## Published paper reference template
+
+When a paper or preprint is published, reference it here without changing theorem claims in the repository.
+
+```bibtex
+@article{ASHAEngine,
+  title        = {ASHA Engine: Finite Boolean--Octonionic Geometry and the Spectral-Action Law-Space},
+  author       = {Baghershemirani, Mohammad Ali},
+  journal      = {TBD},
+  year         = {TBD},
+  volume       = {TBD},
+  number       = {TBD},
+  pages        = {TBD},
+  doi          = {TBD},
+  eprint       = {TBD},
+  archivePrefix= {arXiv},
+  primaryClass = {TBD},
+  url          = {TBD}
+}
+```
+
+Suggested prose citation:
+
+```text
+For the publication version of the ASHA theorem atlas and architecture ledger, cite: Baghershemirani, M. A., "ASHA Engine: Finite Boolean--Octonionic Geometry and the Spectral-Action Law-Space" (publication details TBD).
+```
+
+<!-- ASHA-CITATION-TEMPLATE-END -->
