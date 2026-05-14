@@ -22,6 +22,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/matter/charge"
 	"github.com/bagherbal/asha-engine/pkg/matter/electroweak"
 	"github.com/bagherbal/asha-engine/pkg/matter/embedding"
+	"github.com/bagherbal/asha-engine/pkg/matter/generationbreak"
 	"github.com/bagherbal/asha-engine/pkg/matter/hyperaudit"
 	"github.com/bagherbal/asha-engine/pkg/matter/hypercharge"
 	"github.com/bagherbal/asha-engine/pkg/matter/su2l"
@@ -68,6 +69,7 @@ func Run() error {
 		yukawaintertwiner.GaugeCompatibleYukawaTheorem(),
 		trialityyukawa.GenerationTrialityYukawaTheorem(),
 		texture.GenerationBreakingTextureSearchTheorem(),
+		generationbreak.FiniteGenerationBreakingSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
