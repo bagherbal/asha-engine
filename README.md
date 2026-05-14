@@ -655,3 +655,5 @@ failed route.
 ```
 
 That is the engine.
+
+![Open Master Formula](./docs/media/open_master_formula.svg)
