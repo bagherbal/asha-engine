@@ -92,6 +92,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsignsplit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactspectralcutoff"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactspectralcutoffpromotion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsymmetry"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactt3rpullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contacttargetoperator"
@@ -618,6 +619,7 @@ func Run() error {
 		scalarkinetictracepositivity.ScalarKineticTraceFunctionalPositiveZHEvaluableCarrierAuditTheorem(),
 		heatkernelconventionledger.HeatKernelConventionLedgerPositivePrefactorNormalizationAuditTheorem(),
 		cutoffmomentsource.CutoffMomentSourcePositiveF0TestFunctionClassAuditTheorem(),
+		contactspectralcutoffpromotion.ContactSpectralCutoffPromotionCanonicalPositiveTestProfileConstructionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
