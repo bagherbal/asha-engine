@@ -7,6 +7,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/abelianmixing"
 	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomaly"
+	"github.com/bagherbal/asha-engine/pkg/bridge/anomalykinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
@@ -170,6 +171,7 @@ func Run() error {
 		u1nonfactor.NonFactorizedAbelianActionSearchTheorem(),
 		u1orientation.ChiralOrientationalAbelianSourceSearchTheorem(),
 		anomaly.AbelianAnomalyCancellationLedgerTheorem(),
+		anomalykinetic.AnomalyConstrainedU1KineticHessianSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
