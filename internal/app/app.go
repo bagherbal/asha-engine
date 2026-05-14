@@ -278,6 +278,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedconnection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedmetric"
+	"github.com/bagherbal/asha-engine/pkg/bridge/publicationtheorematlas"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticexternalselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticscalaroperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticspectralfunctional"
@@ -840,6 +841,7 @@ func Run() error {
 		complexsectorsourcephase.ComplexSectorSourceCPPhaseAxiomSieveTheorem(),
 		familyaxiomclosureledger.FamilyAxiomClosureLedgerFlavorFrontierSealTheorem(),
 		postflavorarchitectureboard.PostFlavorArchitectureConsolidationFinalLawSpaceBoardTheorem(),
+		publicationtheorematlas.PublicationGradeTheoremAtlasDependencyGraphExportTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

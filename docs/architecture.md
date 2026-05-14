@@ -6141,3 +6141,21 @@ dim M_charged = 13
 ```
 
 The next useful gate is a theorem-atlas/dependency-graph export, not a new physics claim.
+
+## Gate 420 — Publication-Grade Theorem Atlas / Dependency Graph Export
+
+Gate 420 introduces `pkg/bridge/publicationtheorematlas` as the publication export layer for the mature ASHA board. It inherits Gate 419 and converts the post-flavor architecture into an acyclic dependency graph suitable for peer-review preparation.
+
+The atlas preserves the strict classification established by the previous gates:
+
+```text
+native law-space
+≠ bridge/coefficient convention
+≠ failed-route boundary
+≠ quarantined axiom
+≠ environmental coordinate
+```
+
+The exported graph contains the major theorem blocks from the finite measurement ladder through the contact vacuum, Higgs seed, Fock matter carrier, electroweak charge skeleton, finite spectral triple, inner fluctuations, product geometry, CCM/edge/Pfaffian bridge lanes, flavor firewall, scalar/fermion no-go chains, quarantined family axioms, and cosmology frontier.
+
+Gate 420 intentionally adds no new physical derivation. It verifies that the atlas is acyclic, that failed routes are indexed, and that the flavor and cosmology firewalls remain intact. Native ASHA still preserves `dim M_charged = 13`, while the K/X/Y family axiom chain remains a quarantined nine-coefficient capacity ledger rather than a prediction of Yukawa values.

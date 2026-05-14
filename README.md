@@ -6487,3 +6487,25 @@ FAILED_ROUTE_COSMOLOGY_REMAINS_ENVIRONMENTAL_FRONTIER
 FAILED_ROUTE_NO_QUARANTINED_AXIOM_PROMOTED_TO_NATIVE
 FIREWALL_PRESERVED_13_MODULI
 ```
+
+## Gate 420 — Publication-Grade Theorem Atlas / Dependency Graph Export
+
+Gate 420 adds `pkg/bridge/publicationtheorematlas` after Gate 419 consolidated the post-flavor law-space board. This gate is an export and publication-preparation theorem, not a new physics claim. It compiles the mature ASHA theorem ledger into a typed dependency atlas with explicit layers:
+
+1. native law-space theorem blocks;
+2. bridge/coefficient lanes;
+3. failed-route boundary chains;
+4. quarantined K/X/Y family axioms;
+5. environmental frontiers.
+
+The package exports a Markdown theorem table, a Mermaid dependency graph, a DOT graph, and a machine-readable ledger. It checks that the graph is acyclic and that all Gate-418/Gate-419 firewalls are preserved.
+
+Gate 420 keeps the final boundary intact:
+
+```text
+native charged flavor dim = 13
+conditional K/X/Y family axiom ledger = 9 symbolic charged coefficients
+no Yukawa coefficient, CKM angle, CP phase, cosmology coordinate, or quarantined axiom is promoted to a native ASHA theorem
+```
+
+The gate logs `PROJECT_PUBLICATION_THEOREM_ATLAS_READY`. The next useful move is a manuscript/report skeleton, not another physics derivation.
