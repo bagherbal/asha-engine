@@ -4784,3 +4784,31 @@ FAILED_ROUTE_MAJORANA_OR_DIRAC_NEUTRINO_NATURE_NOT_FINITE_DERIVED
 ```
 
 Thus Gate 266 completes the sealed Standard Model flavor-observable reconstruction ledger: quark CKM and lepton PMNS can be reconstructed from full empirical textures, but the finite core still does not derive the numerical masses, mixing angles, CP phase, neutrino ordering, or Majorana nature.
+
+## Gate 267 — Full Flavor Ledger Closure / Quark-Lepton Empirical Firewall Summary Audit
+
+Gate 267 adds `pkg/bridge/fullflavorledgerclosure` and registers `FullFlavorLedgerClosureQuarkLeptonEmpiricalFirewallSummaryAuditTheorem`.
+
+This is a closure/manifest gate rather than a new flavor derivation. It consolidates Gates 261-266 into three strict ledgers:
+
+1. **Finite-geometric derivation ledger:** the engine records the lawful flavor structures supplied by the finite core, including `S_C = Λ*(C^4)`, the native `C ⊕ M_3(C)` algebra, the generation-breaking source `τ_eta = diag(2,-2,1)`, the `ad_tau` texture decomposition, and the Hermitian triality real/phase basis.
+2. **Empirical input ledger:** the engine records what remains behind `SpontaneousCarrierSeal` and `EmpiricalYukawaSeal`, including weak-frame orientation, scalar VEV alignment, full quark/lepton textures, Dirac amplitudes, CKM/PMNS entries, neutrino ordering, and Majorana-vs-Dirac assumptions.
+3. **Reconstruction ledger:** the engine records that quark CKM, charged-lepton masses, and PMNS were reconstructed algebraically from sealed inputs using SVD/Takagi mechanics, without converting those inputs into finite-core predictions.
+
+Gate 267 therefore closes the Standard Model flavor ledger with the central epistemic verdict:
+
+```text
+CONDITIONAL_SUPPORT_FULL_FLAVOR_LEDGER_CLOSED_AND_SEALED
+FAILED_ROUTE_NO_NATIVE_FLAVOR_AMPLITUDE_DERIVATION
+FAILED_ROUTE_CKM_PMNS_NUMERICS_REMAIN_EMPIRICAL
+FAILED_ROUTE_FERMION_MASSES_REMAIN_EMPIRICAL
+FAILED_ROUTE_FINITE_SPECTRAL_ACTION_FOR_YUKAWA_AMPLITUDES_MISSING
+```
+
+The gate also defines the exact criteria a future theorem must satisfy before the flavor seal can be lawfully reopened: a canonical finite `D_F` on the doubled `S_C` space, a finite spectral-action/heat-kernel map, computed `a0,a2,a4` coefficients with a normalization scheme, and a derived action map from those coefficients into `M_3(C)` Yukawa amplitudes.
+
+The recommended next direction is therefore a finite spectral-action re-attempt rather than another empirical flavor fit:
+
+```text
+Gate 268 — Finite Spectral Action Re-Attempt / Seeley-de Witt a0-a2-a4 Coefficient Audit on doubled S_C
+```

@@ -4808,3 +4808,15 @@ M_nu = U_PMNS Sigma_nu U_PMNS^T
 and verifies the Takagi equations directly. This is not a claim that the finite core derives Majorana neutrinos. The gate explicitly records that neutrino ordering, neutrino masses, PMNS entries, CP phase, and Majorana-vs-Dirac nature are empirical boundary assumptions.
 
 The observable reconstruction pipeline is now complete at the sealed phenomenological layer, while the finite-core theorem status remains unchanged: no native finite Yukawa action or amplitude selector has been derived.
+
+## Gate 267 — Flavor Ledger Closure
+
+Gate 267 closes the flavor module as an epistemological manifest. It does not add a new finite prediction. Instead, it records the final boundary after the direct flavor route, the finite action no-go, the restricted ansatz underfit, and the full empirical SVD/Takagi reconstructions.
+
+The closure separates three layers:
+
+- **Kinematics derived from finite geometry:** `S_C`, the generation carrier, `τ_eta`, the `M_3(C)` bilinear arena, the `ad_tau` off-diagonal complement, and the Hermitian triality mixing basis.
+- **Dynamics sealed as empirical:** scalar/weak embedding orientation, full Yukawa textures, mass amplitudes, CKM/PMNS numerical entries, CP phases, neutrino ordering, and Majorana/Dirac nature.
+- **Observable reconstruction verified:** SVD for quark and charged-lepton textures, Takagi for the representative Majorana neutrino witness, and left-unitary misalignment for CKM/PMNS.
+
+This gate records the architectural truth that the engine derives the flavor stage but not the numerical flavor dynamics. Any future theorem that attempts to break this boundary must derive a native finite spectral/action functional, not merely fit the sealed texture data.

@@ -129,6 +129,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockrepresentationtrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourcyclechernweil"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
+	"github.com/bagherbal/asha-engine/pkg/bridge/fullflavorledgerclosure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugecouplingboundaryseal"
@@ -544,6 +545,7 @@ func Run() error {
 		empiricalyukawafit.EmpiricalYukawaSealActivationTextureAmplitudeFitAuditTheorem(),
 		empiricalfulltexture.EmpiricalFullTextureSealSVDCKMObservableReconstructionAuditTheorem(),
 		empiricalflavorledger.FullEmpiricalFlavorLedgerLeptonPMNSSectorFirewallExtensionAuditTheorem(),
+		fullflavorledgerclosure.FullFlavorLedgerClosureQuarkLeptonEmpiricalFirewallSummaryAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
