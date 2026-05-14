@@ -1342,3 +1342,21 @@ So Gate 151 constructs exact `Q`-primary spectral idempotent blocks. This is a g
 The firewall remains closed. The four quartic roots are still not split into individual exact eigenprojectors because that requires choosing a quartic root/embedding and building exact number-field arithmetic. The spectral blocks also do not assign roots to contact modes, do not define `T3R`, `B-L`, hypercharge, local field variables, mass activation, decoupling, threshold beta rows, or physical constants.
 
 Next gate: Gate 152 — quartic contact number-field branch / Galois symmetry obstruction theorem.
+
+### Gate 152 — Quartic contact number-field branch / Galois symmetry obstruction theorem
+
+Gate 152 upgrades the Gate 151 quartic-primary block into an explicit branch-obstruction theorem. The exact contact quartic factor
+
+```text
+3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271
+```
+
+has four isolated real roots and a non-square discriminant
+
+```text
+1026346341076992 = 2^12 * 3^12 * 13 * 36269
+```
+
+with a transitive Galois-active branch structure. The rational quartic primary block is therefore safe and exact over `Q`, but its individual roots are not individually selected without choosing a number-field branch or embedding.
+
+The gate preserves the exact spectral advance while keeping the physics firewall closed: no contact `T3R`, `B−L`, hypercharge, representation rows, local fields, mass activation, decoupling, threshold beta correction, or physical constants are derived from quartic branch data.
