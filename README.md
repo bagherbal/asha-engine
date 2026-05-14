@@ -3161,3 +3161,8 @@ INTERMEDIATE_BREAKING_SEAL_STILL_REQUIRED
 ```
 
 The coefficient is not fitted, and the near-resonance is structurally meaningful. However, the finite engine has not yet derived the Hopf-fiber action map, hidden B-sector order parameter, or matching residual. The `IntermediateBreakingSeal` remains prepared but ungranted.
+
+
+### Gate 230 — Octonionic Instanton / finite Hopf-action map audit
+
+Gate 230 inherits the Gate-229 Hopf/B-gap hierarchy resonance but tests the missing mechanics. It audits whether the finite `Cℓ(1,7)`/G₂/contact core derives an octonionic or G₂ instanton equation, a Hopf-fiber action-localization map, and a hidden B-sector order parameter. The result is a strict obstruction: the resonance is real and conditional, but the finite engine still lacks a principal bundle, connection, curvature two-form, self-duality projector, finite Yang-Mills action, nontrivial instanton solution, and hidden VEV. The `IntermediateBreakingSeal` remains prepared but ungranted.

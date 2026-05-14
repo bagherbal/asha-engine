@@ -178,3 +178,6 @@
 - Be precise about relative versus absolute sensitivity. A derivative of about `53` per unit `B_gap` means a 1% relative `B_gap` shift is about `0.054` decades, while a 10% shift is about `0.54` decades.
 - Compare residuals against already sealed uncertainty envelopes, but do not convert “plausibly covered” into “derived.” Matching corrections and higher-loop effects remain separate firewalled mechanisms.
 - Do not grant an intermediate-breaking seal from a near-resonance alone. Require a finite order parameter, action normalization, and breaking potential.
+
+
+- For resonance-to-mechanism gates, split the audit into three layers: inherited numerical/geometric resonance, required dynamic machinery, and seal status. Do not grant a seal merely because the resonance is tight; require an explicit operator, action, field equation, or order parameter.

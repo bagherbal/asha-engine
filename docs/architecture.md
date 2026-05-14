@@ -3686,3 +3686,13 @@ This gate also records the hierarchy sensitivity
 ```
 
 and marks it as a binding precision constraint. The `IntermediateBreakingSeal` remains ungranted until the finite Hopf-action map and hidden order parameter are derived.
+
+
+## Gate 230 — Dynamic Hopf-action obstruction
+
+Gate 230 sits after the geometric-mean and Hopf-normalization resonance gates. It separates two claims:
+
+- **Supported conditionally:** `M_Hopf = M_* exp(-(4/π)/B_gap)` remains a sharp geometric resonance.
+- **Not derived:** the finite core does not yet provide the octonionic/G₂ instanton equation, Hopf-fiber localization functional, or hidden B-sector order parameter needed to promote the resonance into a physical intermediate-breaking theorem.
+
+The gate preserves the Pati-Salam and leptoquark firewalls, does not promote the B-gap into a physical field, and keeps the `IntermediateBreakingSeal` ungranted.

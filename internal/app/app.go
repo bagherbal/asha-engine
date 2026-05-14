@@ -107,6 +107,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/finiteanchordm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitebundlemap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitecarrieractivation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/finitehopfaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitespectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/flavoralignmentdmabsence"
@@ -470,6 +471,7 @@ func Run() error {
 		geometricmeanresonance.GeometricMeanIntermediateResonanceAuditTheorem(),
 		intermediatebreakingaudit.PatiSalamFalsificationBSectorHierarchyAuditTheorem(),
 		hopfgeometricnormalization.HopfFibrationGeometricNormalizationBGapSensitivityAuditTheorem(),
+		finitehopfaction.OctonionicInstantonFiniteHopfActionMapAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
