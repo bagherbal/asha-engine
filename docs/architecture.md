@@ -464,3 +464,29 @@ contact partial-overlap mode
 ```
 
 No `alpha`, physical `thetaW`, W/Z/Higgs/fermion mass, boundary scale, or fitted threshold is derived.
+
+## Gate 110 — Contact-Overlap Kinetic-Sign / Locality / Propagator Classifier Search
+
+Gate 110 adds `pkg/bridge/contactpropagator`. Gate 109 left the seven contact partial-overlap modes class-open. Gate 110 asks the narrower precondition question: do these modes already carry enough information to be physical positive-norm propagating fields, regulator/ghost modes, constrained non-propagating modes, or vacuum-frustration modes?
+
+The gate derives one real diagnostic: the seven contact partial-overlap eigenvalues are positive finite overlap data. This is a useful finite fact, but it is not a Lorentzian kinetic-sign theorem. A positive dimensionless overlap eigenvalue is not yet a local quadratic operator, not a pole denominator, and not a residue/signature calculation.
+
+The gate audits several compatible denominator readings:
+
+```text
+rho_i = lambda_i
+rho_i = 1 - lambda_i
+rho_i = lambda_i/(1-lambda_i)
+rho_i = 1/lambda_i
+```
+
+All are positive and compatible with the finite data, but none is selected as the physical pole. The gate also refuses to infer a ghost/regulator class from the absence of a negative overlap eigenvalue; that would require an indefinite metric, BRST complex, or negative-residue theorem.
+
+Therefore contact modes remain positive finite-overlap modes with open propagator class. They may not be counted as physical heavy fields, regulators, constrained modes, or vacuum-frustration modes for beta matching. The residual physical-flow nullity remains:
+
+```text
+nullity before Gate 110 = 3
+nullity after Gate 110  = 3
+```
+
+The next true gate must derive a contact-overlap local field map or a constraint/BRST classifier. Until locality, kinetic operator, pole residue, representation, activation, and decoupling are all selected, threshold-corrected beta coefficients and physical constants remain sealed.
