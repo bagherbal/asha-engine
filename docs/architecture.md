@@ -5597,3 +5597,30 @@ This is recorded as a conditional near-closure, not as a final theorem. The reas
 `f0` is a test-function moment/value, while the edge count is a finite graph dimension. A new theorem is required
 before these two notions can be identified. Until then, `f0=10` is a powerful capacity witness and not a native
 Higgs-mass derivation.
+
+## Gate 381 — Spectral Graph Projection / `f0` Index Theorem Sieve
+
+Gate 381 follows Gate 380's `f0 ≈ 10` near-closure by testing whether the ASHA finite Dirac graph can legally supply the CCM spectral-action zeroth moment.
+
+The gate constructs the finite edge-slot projection on the five structural finite Dirac edge classes:
+
+1. `Q_L ↔ u_R`
+2. `Q_L ↔ d_R`
+3. `L_L ↔ e_R`
+4. `L_L ↔ ν_R`
+5. `ν_R ↔ ν_R^c`
+
+With `J`-doubling, this gives ten edge/operator slots:
+
+```text
+Tr_E(P_edge) = 10.
+```
+
+The gate then audits the type of this trace. The result is a strict separation:
+
+- `Tr_E(P_edge)=10` is a native edge-slot multiplicity.
+- CCM `f0` is the zeroth cutoff/test-function moment `f(0)`.
+- Edge slots are entries/modes of the finite Dirac operator, not automatically orthogonal vectors in `H_F`.
+- The ordinary index-theorem analogy counts a signed kernel/Fredholm index, not the unsigned count of all Yukawa and Majorana edges.
+
+Therefore Gate 381 does not seal `f0=10` as a theorem. It preserves the Rule-of-10 as a strong capacity witness and identifies the precise missing theorem: a spectral-graph moment theorem that equates the CCM `f0` functional with the finite edge-slot projection trace.

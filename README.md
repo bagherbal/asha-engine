@@ -6027,3 +6027,17 @@ The assembled action contains the structural Standard Model plus Einstein-gravit
 - higher-curvature gravitational terms.
 
 The result is a bridge theorem, not a cosmological prediction theorem. It makes continuum computations such as RG running, Boltzmann evolution, bounce actions, and gravitational EFT calculations well-posed by installing the finite ASHA data as coefficients of the product-action Lagrangian. It does not predict `Lambda_cosmo`, dark-matter relic density, universe lifetime, or the numerical Yukawa/CKM texture without the additional continuum model inputs identified in Gate 375.
+
+## Gate 381 update — Spectral Graph Projection / `f0` Index Theorem Sieve
+
+Gate 381 audits the final proposed bridge between the effective CCM zero-moment value `f0 ≈ 10` and the ASHA finite Dirac graph's ten `J`-doubled edge slots.
+
+Bottom line: the finite graph really contains five structural Dirac edge classes and ten `J`-doubled edge slots, so the edge-slot projection trace is
+
+```text
+Tr_E(P_edge) = 2 × 5 = 10.
+```
+
+This exactly matches the `f0 = 10` near-Higgs closure found in Gate 380. However, the gate does not identify this trace with the CCM spectral-action moment. In the CCM coefficient ledger, `f0` is the zeroth test-function moment/value `f(0)`. A projection trace over finite Dirac edge/operator slots is a multiplicity in a different mathematical slot. The equality would require a new spectral-graph moment theorem proving that the cutoff functional canonically collapses to the edge-slot projection trace.
+
+Gate 381 therefore preserves `f0 = 10` as a powerful native capacity witness, but logs strict failed routes for final Higgs-mass sealing until the analytic-to-discrete moment theorem is proven.

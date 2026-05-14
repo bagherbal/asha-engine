@@ -296,6 +296,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactioncapstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactioncouplingnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactionvariationalgradient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/spectralgraphf0index"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralmomentledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spin8trialityfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spinctwistedchirality"
@@ -772,6 +773,7 @@ func Run() error {
 		normalizationfactoraudit.CompleteNormalizationFactorAuditProductSpectralActionConventionSieveTheorem(),
 		ccmspectralactionsubstitution.CCMSpectralActionDirectSubstitutionCompleteCoefficientLedgerTheorem(),
 		ccmpfaffianf0closure.SelfConsistentCCMPfaffianCoefficientClosureF0SieveTheorem(),
+		spectralgraphf0index.SpectralGraphProjectionF0IndexTheoremSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
