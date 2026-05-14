@@ -22,6 +22,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/canonicalboundary"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
+	"github.com/bagherbal/asha-engine/pkg/bridge/cliffordcontactcommutant"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/conditionalrgbranch"
@@ -378,6 +379,7 @@ func Run() error {
 		fourcyclechernweil.FiniteOrientedFourCycleChernWeilCarrierConstructionSearchTheorem(),
 		finitebundlemap.FiniteAlgebraicLocalFieldBundleMapConstructionSearchTheorem(),
 		contactmoduleaction.ContactModuleToFockScalarRepresentationActionSearchTheorem(),
+		cliffordcontactcommutant.CliffordContactSpectralIdempotentCommutantObstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

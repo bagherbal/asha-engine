@@ -2539,3 +2539,29 @@ conditional nullity: 2 -> 2
 The gate is a partial positive and partial obstruction theorem. It proves that the relevant finite pre-actions exist, but also proves that current data do not yet give a physical `C[Ω_contact]`-module action on the spinor or scalar carrier.
 
 Recommended next gate: Gate 184 — Clifford-contact spectral idempotent / commutant obstruction or construction.
+
+### Gate 184 — Clifford-contact spectral idempotent / commutant obstruction or construction
+
+Package: `pkg/bridge/cliffordcontactcommutant`
+
+Gate 184 follows the finite module-action obstruction isolated by Gate 183. It tests whether the seven-point contact spectral algebra can act on the 16D Fock/spinor space through spectral idempotents, through a Clifford Cartan/commutant, or through the 4D quartic scalar ideal.
+
+The direct Fock route is sealed. A faithful unital representation of `C^7` on a 16-dimensional vector space requires seven orthogonal idempotent fibers with integer ranks summing to 16. The contact-point symmetry would require equal ranks, but `16 / 7` is not an integer. Any non-uniform pattern, for example `3,3,2,2,2,2,2`, chooses special contact points and therefore requires exactly the kind of contact-mode selector ruled out earlier.
+
+The Clifford commutant route is also not promoted. A maximal commuting Cartan inside the Clifford spinor action has eight primitive cells. Embedding a seven-point contact algebra requires a noncanonical Cartan selection plus a seven-of-eight choice or quotient. The current finite engine does not derive such a selector.
+
+The quartic scalar route remains open and becomes the preferred target. The quartic primary ideal is a branch-free 4D algebraic object, and it has an abstract rank-one regular module of the same dimension as the active scalar carrier `H_Φ`. This removes the integer-rank obstruction, but it still does not identify the physical scalar carrier with the quartic module. The missing datum is a canonical scalar operator on `H_Φ` with the quartic contact minimal polynomial, or an equivalent ideal-action construction compatible with the existing scalar electroweak representation.
+
+Gate 184 records:
+
+```text
+Fock 7-point idempotent action: no-go
+Cartan/commutant embedding: no-go
+quartic abstract scalar module: yes
+physical scalar bundle map: no
+Chern-Weil carrier / heat-kernel matching / threshold rows: no
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+```
+
+Recommended next gate: Gate 185 — quartic scalar operator / minimal-polynomial construction on `H_Φ`.

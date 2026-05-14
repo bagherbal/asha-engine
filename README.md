@@ -1899,3 +1899,29 @@ The connection route has valid predata from the projected connection and second-
 Gate 183 therefore narrows the obstruction. The problem is no longer a vague finite-to-continuum gap or a dimensional mismatch. It is now a precise algebraic module-action problem: derive a multiplicative contact spectral algebra action on the physical spinor/scalar carriers, or prove that such an action cannot be canonical.
 
 Recommended next gate: Gate 184 — Clifford-contact spectral idempotent / commutant obstruction or construction.
+
+## v1.82 — Gate 184: Clifford-contact spectral idempotent / commutant obstruction or construction
+
+Gate 184 adds `pkg/bridge/cliffordcontactcommutant`.
+
+Gate 183 proved that the contact spectral algebra has constrained pre-actions on the physical carriers, but not yet a multiplicative module action. Gate 184 sharpens this into three exact algebraic audits.
+
+First, the gate proves the direct Fock spectral-idempotent route is obstructed. A faithful unital action of the seven-point algebra `C[Ω_contact] ≅ C^7` on the 16D Fock/spinor space would require seven orthogonal idempotent fibers with integer ranks summing to 16. If the contact-point symmetry is preserved, the ranks must be uniform, but `16 mod 7 = 2`. Non-uniform ranks such as `3,3,2,2,2,2,2` are dimensionally possible, but require choosing which contact points receive larger fibers. That is precisely the forbidden contact-mode selector problem.
+
+Second, the Clifford Cartan/commutant route is audited. A maximal commuting Cartan inside the Clifford spinor action has eight primitive idempotent cells. A seven-point contact algebra can fit only after choosing a Cartan and then deleting, merging, or selecting one of the eight cells. The current finite data do not provide a canonical Cartan gauge selector or seven-of-eight embedding compatible with the contact spectrum.
+
+Third, the quartic-scalar route survives as the only viable target. The quartic primary ideal has dimension four, and the scalar active carrier `H_Φ` also has dimension four. Therefore the integer-rank obstruction vanishes. The quartic primary ideal has a branch-free abstract rank-one regular module / companion representation. However, this is not yet a physical scalar bundle, because the engine has not derived a canonical scalar operator or basis on `H_Φ` whose minimal polynomial is the quartic contact factor.
+
+Gate 184 status:
+
+```text
+7 -> 16 Fock contact-idempotent action: obstructed
+Clifford Cartan/commutant embedding: obstructed
+4 -> 4 quartic scalar abstract module: derived
+physical H_Φ quartic module: not derived
+Chern-Weil-ready bundle: not derived
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+```
+
+Recommended next gate: Gate 185 — quartic scalar operator / minimal-polynomial construction on `H_Φ`.
