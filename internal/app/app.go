@@ -8,6 +8,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
 	"github.com/bagherbal/asha-engine/pkg/exterior"
 	"github.com/bagherbal/asha-engine/pkg/gauge"
+	"github.com/bagherbal/asha-engine/pkg/gauge/boundary"
 	"github.com/bagherbal/asha-engine/pkg/gauge/lift"
 	"github.com/bagherbal/asha-engine/pkg/geometry/boolean"
 	"github.com/bagherbal/asha-engine/pkg/geometry/contact"
@@ -27,6 +28,7 @@ func Run() error {
 		bsector.ContactVacuumTheorem(),
 		gauge.ContactCentralizerTheorem(),
 		lift.BooleanCompressionTheorem(),
+		boundary.BoundaryFixedClosureTheorem(),
 	)
 
 	results := registry.RunAll()
