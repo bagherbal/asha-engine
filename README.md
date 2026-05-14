@@ -214,3 +214,23 @@ Each scalar branch has the finite pair multiplicity inherited from the 2+2 Higgs
 ### v0.27 — Gate 28: Generation-Breaking Texture Search
 
 Added `pkg/matter/texture`, a no-go/search gate for Yukawa texture selection. The gate proves that exact triality can replicate the one-generation Yukawa channel pattern into three generations, but cannot by itself select numerical `3×3` Yukawa matrices or three distinct generation eigenvalues. A triality-invariant symmetric texture has a `1+2` eigenvalue pattern, so a real hierarchy requires a new finite generation-breaking operator compatible with the contact/BF/Higgs geometry.
+
+## v0.29 — Gate 30: Curvature on Generation Carrier Search
+
+Gate 30 tests the contact-side mirror curvature
+
+```text
+R^K_AB = P_K A P_C B P_K - P_K B P_C A P_K
+```
+
+on the three protected contact directions exposed by the Higgs/contact sector.
+The result is an important no-go: the protected 3D generation carrier is
+curvature-flat under this second-fundamental source, while the active 4D
+Higgs/contact carrier receives nonzero curvature.
+
+This means the diagonal generation-breaking spurion from Gate 29 is still the
+best bridge-level generation-splitting object, but curvature-induced generation
+mixing is not yet selected. The next mathematical target is a finite BF
+curvature operator or a new projection from active curvature into generation
+texture space.
+
