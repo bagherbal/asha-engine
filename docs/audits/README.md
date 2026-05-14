@@ -7,8 +7,6 @@ This folder stores generated audit and registry artifacts. These are outputs of 
 ```text
 docs/audits/
 ├── gates/          # gateNNN_registry_audit.md files + index
-├── phenomenology/  # empirical-quarantine phenomenology reports
-└── final/          # legacy/final aggregate result reports
 ```
 
 ## Policy

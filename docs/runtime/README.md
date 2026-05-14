@@ -9,14 +9,6 @@ pkg/asha     standalone calculation/report package
 cmd/asha     runtime CLI using pkg/asha
 ```
 
-The old theorem-registry CLI entrypoint was renamed to:
-
-```text
-cmd/asha/main_legacy_gate425_20260514.deprecated.go
-```
-
-and is excluded from default builds by the `legacyasha` build tag.
-
 ## Primary command
 
 ```bash

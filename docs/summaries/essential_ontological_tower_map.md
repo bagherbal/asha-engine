@@ -1,71 +1,65 @@
-## ASHA Essential Tower Map
+# ASHA Essential Tower Map — Gates 0–425
 
-This is the **core logical tower**, not the chronological path.
+This is the **logical tower**, not the historical route.
+It keeps only gates that are structurally essential to the final theory-board.
 
 ---
 
-# Floor 0 — Measurement Ladder
+# Floor 0 — Finite Measurement Ladder
 
-**Purpose:** define the finite language in which everything is measured.
+**Role:** define the algebraic measuring instrument.
 
 [
 C\ell(1,7),\qquad \Lambda^\bullet\mathbb R^8,\qquad \dim C\ell(1,7)=256
 ]
 
-**Core gates**
-
 [
-(G0\ |\ \text{Exterior Grade Structure})
+(G0\ |\ \Lambda^\bullet\mathbb R^8)
 \rightarrow
 (G1\ |\ C\ell(1,7))
 \rightarrow
-(G2\ |\ \text{4D Covariant Phase Space})
+(G2\ |\ 4D\ \text{covariant phase-space bookkeeping})
 ]
 
-**Slug:** `finite-measurement-ladder`
+**Slug:** `measurement-ladder`
 
 ---
 
-# Floor 1 — Finite Contact Vacuum
+# Floor 1 — Boolean–Octonionic Contact Vacuum
 
-**Purpose:** construct the first irreducible finite vacuum object.
+**Role:** derive the first native finite vacuum object.
 
 [
-P_B:\operatorname{rank}=56,\qquad
-P_G:\operatorname{rank}=14
+P_B:\operatorname{rank}=56,\qquad P_G:\operatorname{rank}=14
 ]
 
 [
-K=\operatorname{Im}(P_B)\cap\operatorname{Im}(P_G),
+K_7=\operatorname{Im}(P_B)\cap\operatorname{Im}(P_G),
 \qquad
-\dim K=7
+\dim K_7=7
 ]
 
 [
-S_B[b]=|(I-P_G)Wb|^2,
-\qquad
-\ker S_B=K
+S_B[b]=|(I-P_G)Wb|^2,\qquad \ker S_B=K_7
 ]
 
-**Core gates**
-
 [
-(G3\ |\ \text{Boolean Incidence Support})
+(G3\ |\ \text{Boolean incidence})
 +
-(G4\ |\ G_2\ \text{Calibration Support})
+(G4\ |\ G_2\ \text{octonionic calibration})
 \rightarrow
-(G5\ |\ \text{Boolean–Octonionic Contact Space})
+(G5\ |\ K_7\ \text{contact space})
 \rightarrow
-(G6\ |\ \text{B-sector Zero-Energy Vacuum})
+(G6\ |\ K_7\ \text{zero-energy sector})
 ]
 
-**Slug:** `contact-vacuum-K7`
+**Slug:** `contact-vacuum`
 
 ---
 
-# Floor 2 — Higgs Seed from Off-Diagonal Geometry
+# Floor 2 — Off-Diagonal Higgs Seed
 
-**Purpose:** discover that the Higgs-like object comes from connection leakage/off-diagonal finite geometry.
+**Role:** discover that the scalar/Higgs object comes from off-diagonal finite connection geometry.
 
 [
 P[A,B]P-[PAP,PBP]=PAQBP-PBQAP
@@ -76,28 +70,22 @@ P[A,B]P-[PAP,PBP]=PAQBP-PBQAP
 ]
 
 [
-V(r)=\lambda_{\rm shape}(r^2-r_0^2)^2
-]
-
-**Core gates**
-
-[
-(G10\ |\ \text{Projected Connection Curvature})
+(G10\ |\ \text{projected curvature})
 \rightarrow
-(G11\ |\ \text{Finite Higgs/Vacuum Mixing})
+(G11\ |\ \text{Higgs/vacuum mixing})
 \rightarrow
-(G12\ |\ \text{Finite Higgs Spectrum})
+(G12\ |\ \text{finite scalar spectrum})
 \rightarrow
-(G37\ |\ \text{Scalar Potential Normal Form})
+(G37\ |\ \text{scalar normal form})
 ]
 
 **Slug:** `offdiagonal-higgs-seed`
 
 ---
 
-# Floor 3 — Matter Carrier
+# Floor 3 — Fock Matter Carrier
 
-**Purpose:** build the finite fermionic arena.
+**Role:** build the finite fermionic arena.
 
 [
 \mathcal F=\Lambda^\ast(\mathbb C^4),
@@ -109,25 +97,23 @@ V(r)=\lambda_{\rm shape}(r^2-r_0^2)^2
 B-L=-N_0+\frac13(N_1+N_2+N_3)
 ]
 
-**Core gates**
-
 [
-(G13\ |\ \text{Witt/Fock Matter Basis})
+(G13\ |\ \text{Witt/Fock basis})
 \rightarrow
-(G17\ |\ B-L\ \text{Charge Polarization})
+(G17\ |\ B-L\ \text{polarization})
 \rightarrow
-(G18\ |\ \text{Fock}\otimes\text{Scalar Tensor Split})
+(G18\ |\ H_{\rm Fock}\otimes H_\Phi)
 \rightarrow
-(G19\ |\ \text{Yukawa Selection Rule})
+(G19\ |\ \text{Yukawa selection firewall})
 ]
 
 **Slug:** `fock-matter-carrier`
 
 ---
 
-# Floor 4 — Electroweak Charge Logic
+# Floor 4 — Electroweak Charge Skeleton
 
-**Purpose:** recover the Standard Model charge skeleton.
+**Role:** recover Standard Model charge logic.
 
 [
 Y=T_R^3+\frac12(B-L)
@@ -143,33 +129,31 @@ k_Y=\frac53,
 \sin^2\theta_W=\frac38
 ]
 
-**Core gates**
-
 [
-(G23\ |\ \text{Odd Hypercharge Branch})
+(G23\ |\ \text{odd hypercharge branch})
 +
-(G24\ |\ \text{Left Doublet Hypercharge})
+(G24\ |\ \text{left-doublet hypercharge})
 +
-(G25\ |\ SU(2)_L\ \text{Doublet Generators})
+(G25\ |\ SU(2)_L\ \text{doublet ladder})
 \rightarrow
-(G26\ |\ \text{Gauge-Compatible Yukawa Channels})
+(G26\ |\ \text{gauge-compatible Yukawa channels})
 ]
 
 [
-(G41\ |\ \text{Electroweak Projection})
+(G41\ |\ \text{electroweak projection})
 +
-(G74\ |\ \text{Hypercharge Direction})
+(G74\ |\ \text{hypercharge direction})
 +
-(G100{-}102\ |\ \text{Canonical Boundary Normalization})
+(G100{-}102\ |\ \text{canonical boundary normalization})
 ]
 
 **Slug:** `electroweak-charge-skeleton`
 
 ---
 
-# Floor 5 — Correct Spectral-Triple Category
+# Floor 5 — Correct Finite Spectral-Triple Category
 
-**Purpose:** stop using the wrong Fock category and move to the true finite bimodule architecture.
+**Role:** move from wrong Fock-lift intuition into the true Morita/bimodule category.
 
 [
 A_F=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)
@@ -179,27 +163,25 @@ A_F=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)
 H_{ij}=V_i\otimes V_j^\ast
 ]
 
-**Core gates**
-
 [
-(G272\ |\ \text{Morita-Bimodule Search})
+(G272\ |\ \text{Morita bimodule})
 \rightarrow
-(G274\ |\ \mathbb H\ \text{Weak Quaternionic Algebra})
+(G274\ |\ \mathbb H\ \text{weak quaternionic block})
 \rightarrow
-(G295\ |\ \text{True Left-Right Bimodule})
+(G295\ |\ \text{true left-right bimodule})
 \rightarrow
-(G296\ |\ \text{Hypercharge Ledger + Dirac Edges})
+(G296\ |\ \text{hypercharge + Dirac edge graph})
 \rightarrow
-(G297\ |\ \text{Full First-Order Verification})
+(G297\ |\ \text{first-order condition})
 ]
 
 **Slug:** `finite-spectral-triple-core`
 
 ---
 
-# Floor 6 — Inner Fluctuation Field Content
+# Floor 6 — Inner Fluctuation Field Inventory
 
-**Purpose:** derive the actual field inventory from the finite spectral triple.
+**Role:** derive gauge and Higgs fields from finite noncommutative geometry.
 
 [
 D_A=D_F+A+JAJ^{-1}
@@ -219,60 +201,50 @@ U(1)_Y\times SU(2)_L\times SU(3)_C
 1\ \text{complex Higgs doublet}
 ]
 
-**Core gates**
-
 [
-(G298\ |\ \text{Inner Fluctuation Field Content})
+(G298\ |\ \text{inner fluctuation field content})
 \rightarrow
-(G299\ |\ \text{Seeley-deWitt Spectral Action Preflight})
+(G299\ |\ \text{Seeley-deWitt dynamics preflight})
 ]
 
 **Slug:** `inner-fluctuation-sm-fields`
 
 ---
 
-# Floor 7 — Product Geometry: (M\times F)
+# Floor 7 — Product Geometry (M\times F)
 
-**Purpose:** correct the ontology: finite geometry is internal, not spacetime itself.
+**Role:** correct the ontology: finite geometry is internal geometry, not spacetime itself.
 
 [
 M\times F
 ]
 
 [
-D_{\rm total}
-=============
-
-D_M\otimes1_F+\gamma_5\otimes D_F
+D_{\rm total}=D_M\otimes1_F+\gamma_5\otimes D_F
 ]
 
-**Core gates**
-
 [
-(G376\ |\ \text{Almost-Commutative Product Geometry})
+(G376\ |\ \text{almost-commutative product geometry})
 \rightarrow
-(G377\ |\ \text{Product Coefficient Audit})
+(G377\ |\ \text{product coefficient audit})
 \rightarrow
-(G379\ |\ \text{Direct CCM Substitution})
+(G379\ |\ \text{direct CCM substitution})
 ]
 
 **Slug:** `almost-commutative-product`
 
 ---
 
-# Floor 8 — CCM Spectral Action Coefficient Lane
+# Floor 8 — CCM Spectral-Action Coefficient Lane
 
-**Purpose:** replace generic coefficient intuition with actual CCM coefficient arithmetic.
+**Role:** replace generic heat-kernel intuition with actual CCM coefficient accounting.
 
 [
-S_{\rm CCM}
-===========
-
-\operatorname{Tr}f(D/\Lambda)
+S_{\rm CCM}=\operatorname{Tr}f(D/\Lambda)
 ]
 
 [
-\text{Einstein}
+\text{gravity}
 +
 \text{gauge}
 +
@@ -285,14 +257,12 @@ S_{\rm CCM}
 \text{higher curvature}
 ]
 
-**Core gates**
-
 [
-(G379\ |\ \text{CCM Direct Substitution})
+(G379\ |\ \text{CCM coefficient correction})
 \rightarrow
-(G380\ |\ \text{CCM + Pfaffian }f_0\text{ Closure})
+(G380\ |\ \text{CCM + Pfaffian }f_0\text{ closure})
 \rightarrow
-(G381{-}382\ |\ \text{Edge Count vs Effective Coefficient})
+(G381{-}382\ |\ \text{edge count vs coefficient interpretation})
 ]
 
 **Slug:** `ccm-coefficient-lane`
@@ -301,15 +271,15 @@ S_{\rm CCM}
 
 # Floor 9 — Higgs as Finite One-Form on Edges
 
-**Purpose:** correct the Higgs normalization measure.
+**Role:** correct the Higgs measure.
 
-Old node idea:
+Old node measure:
 
 [
 N_{\rm node}=7
 ]
 
-Correct one-form edge support:
+Correct finite one-form edge support:
 
 [
 N_{\rm edge,J}=10
@@ -323,8 +293,7 @@ A_F=\sum_i a_i[D_F,b_i]
 R_{\rm edge}
 ============
 
-\frac{7}{10}
-\frac{1197}{4624}
+\frac{7}{10}\frac{1197}{4624}
 ]
 
 [
@@ -334,50 +303,43 @@ R_{\rm edge}
 \frac{\pi^2(1197/4624)}{2\cdot10}
 ]
 
-**Core gates**
-
 [
-(G383\ |\ \text{Node-to-Edge Kinetic Architecture})
+(G383\ |\ \text{node-to-edge architecture})
 \rightarrow
-(G384\ |\ \text{Raw Edge-Measure Recalculation})
+(G384\ |\ \text{raw edge-measure recomputation})
 \rightarrow
-(G385\ |\ \text{Inner-Fluctuation One-Form Support})
+(G385\ |\ \text{inner fluctuation one-form support})
 ]
 
 **Slug:** `higgs-oneform-edge-measure`
 
 ---
 
-# Floor 10 — Pfaffian / Scale Lane
+# Floor 10 — Pfaffian Scale Lane
 
-**Purpose:** give the electroweak scale lane used by the final Higgs tree proxy.
+**Role:** supply the electroweak scale lane used by the final tree proxy.
 
 [
-v_{\rm Pf}
-==========
-
-M_P,2^{3/2}e^{-4\pi^2}
+v_{\rm Pf}=M_P,2^{3/2}e^{-4\pi^2}
 ]
 
-**Core gates**
-
 [
-(G341\ |\ \text{Pfaffian Half-Action Hierarchy})
+(G341\ |\ \text{Pfaffian half-action hierarchy})
 \rightarrow
-(G342\ |\ \text{Triality Gaussian Measure})
+(G342\ |\ \text{triality Gaussian measure})
 \rightarrow
-(G343\ |\ \text{Gravity }f_2\text{ Ledger})
+(G343\ |\ \text{gravity }f_2\text{ ledger})
 \rightarrow
-(G380\ |\ \text{Pfaffian + CCM Higgs Closure})
+(G380\ |\ \text{Pfaffian + CCM closure})
 ]
 
 **Slug:** `pfaffian-scale-lane`
 
 ---
 
-# Floor 11 — Final Higgs Tree Proxy
+# Floor 11 — Sealed Higgs Tree Proxy
 
-**Purpose:** combine the CCM coefficient, edge measure, and Pfaffian scale.
+**Role:** combine CCM coefficient, finite edge measure, and Pfaffian scale.
 
 [
 m_H^{\rm tree}
@@ -395,8 +357,6 @@ m_H^{\rm tree}
 \approx124.925370288\ {\rm GeV}
 ]
 
-**Core gates**
-
 [
 (G380)
 +
@@ -404,16 +364,16 @@ m_H^{\rm tree}
 +
 (G385)
 \rightarrow
-(G387\ |\ \text{Final Architecture Ledger})
+(G387\ |\ \text{final architecture ledger})
 ]
 
 **Slug:** `sealed-higgs-tree-proxy`
 
 ---
 
-# Floor 12 — Flavor Boundary / Vacuum Moduli
+# Floor 12 — Flavor Firewall
 
-**Purpose:** define what ASHA does **not** derive from the finite core.
+**Role:** define the exact limit of native finite flavor derivation.
 
 [
 \dim\mathcal M_{\rm charged}=13
@@ -436,29 +396,159 @@ External minimal ledger:
 15=13+\theta_{\rm QCD}+1\ \text{absolute scale}
 ]
 
-**Core gates**
-
 [
-(G345\ |\ \text{Vacuum Parameter Census})
+(G345\ |\ \text{vacuum parameter census})
 \rightarrow
-(G361\ |\ \text{Static Operator No-Go})
+(G361\ |\ \text{static operator no-go})
 \rightarrow
-(G372\ |\ \text{Native Moduli Space Census})
+(G372\ |\ \text{native moduli census})
 \rightarrow
-(G374\ |\ \text{13-Moduli Closing Theorem})
+(G374\ |\ \text{13-moduli closing theorem})
 \rightarrow
-(G387\ |\ \text{Final Epistemological Seal})
+(G387\ |\ \text{epistemological seal})
 ]
 
 **Slug:** `flavor-vacuum-firewall`
 
 ---
 
-# Floor 13 — Cosmology / Dark Sector Boundary
+# Floor 13 — Contact/Quartic Non-Promotion Firewall
 
-**Purpose:** separate law-space from environmental cosmological history.
+**Role:** prevent beautiful contact spectra from being falsely promoted into Higgs/flavor physics.
 
-Required but not derived:
+[
+q_4(x)=3240x^4-7668x^3+6426x^2-2235x+271
+]
+
+[
+C_{q_4}=\mathbb Q[x]/(q_4)
+]
+
+[
+(G397\ |\ \text{contact rational singleton flavor functor fails})
++
+(G398\ |\ q_4\rightarrow H_\phi\ \text{fails})
++
+(G399\ |\ \mathbb H\ \text{does not produce }q_4)
++
+(G400{-}405\ |\ \text{edge/contact pullback fails})
+\rightarrow
+(G406\ |\ q_4\ \text{contact-internal})
+]
+
+**Slug:** `contact-quartic-firewall`
+
+---
+
+# Floor 14 — (H_\phi) Native Scalar Closure
+
+**Role:** classify the Higgs carrier correctly.
+
+[
+H_\phi:\ 4\ \text{real dimensions}
+]
+
+Native scalar data:
+
+[
+\text{central}
+,\quad
+\mathbb H\text{-quaternionic}
+,\quad
+2+2\ \text{pair-degenerate}
+]
+
+[
+(G407\ |\ H_\phi\ \text{native scalar algebra})
+\rightarrow
+(G408\ |\ H_\phi\ \text{variational selector no-go})
+]
+
+**Slug:** `hphi-scalar-closure`
+
+---
+
+# Floor 15 — Family Bundle Frontier
+
+**Role:** identify the only honest place where flavor can be extended.
+
+Native ASHA:
+
+[
+H_{\rm fermion}^{(1)}\otimes\mathbb C^3_{\rm gen}
+]
+
+with trivial generation multiplicity.
+
+Needed:
+
+[
+K_{\rm gen}\not\propto I_3
+]
+
+[
+(G409\ |\ \text{fermionic generation origin no-go})
+\rightarrow
+(G410\ |\ \text{family bundle extension sieve})
+\rightarrow
+(G411\ |\ \text{family axiom ledger})
+]
+
+**Slug:** `family-bundle-frontier`
+
+---
+
+# Floor 16 — Quarantined (K/X/Y) Family Axiom Chain
+
+**Role:** define the minimal conditional structure that has hierarchy, mixing, and CP capacity.
+
+Hierarchy:
+
+[
+K_{\rm gen}=\operatorname{diag}(-1,0,1)
+]
+
+Mixing:
+
+[
+X_{\rm gen}=S+S^T
+]
+
+CP phase capacity:
+
+[
+Y_{\rm gen}=i(S-S^T)
+]
+
+Sector-source texture:
+
+[
+M_s=a_sK_{\rm gen}+b_sX_{\rm gen}+c_sY_{\rm gen},
+\qquad
+s\in{u,d,e}
+]
+
+[
+(G412\ |\ K_{\rm gen})
+\rightarrow
+(G413\ |\ X_{\rm gen})
+\rightarrow
+(G416\ |\ \text{real sector source})
+\rightarrow
+(G417\ |\ Y_{\rm gen}\ \text{CP capacity})
+\rightarrow
+(G418\ |\ \text{family axiom closure})
+]
+
+**Slug:** `quarantined-family-axioms`
+
+---
+
+# Floor 17 — Cosmology / Dark-Sector Firewall
+
+**Role:** separate finite law-space from environmental cosmic history.
+
+Not derived:
 
 [
 \Omega_{\rm DM}h^2
@@ -476,43 +566,80 @@ Required but not derived:
 f_4\Lambda^4+\text{subtraction rule}
 ]
 
-**Core gates**
-
 [
-(G344\ |\ \text{Cosmological Constant Firewall})
+(G344\ |\ \text{cosmological constant firewall})
 +
-(G375\ |\ \text{Cosmological Observables Sieve})
+(G375\ |\ \text{cosmological observable sieve})
 +
-(G386\ |\ \text{Dark Sector Prediction Sieve})
+(G386\ |\ \text{dark-sector prediction sieve})
 \rightarrow
-(G387\ |\ \text{Final Boundary Seal})
+(G387\ |\ \text{final boundary seal})
 ]
 
 **Slug:** `cosmology-environment-firewall`
 
 ---
 
-# Final Board Essence
+# Floor 18 — Publication Architecture
 
-The essential ASHA tower is:
+**Role:** turn the theory into a claim-controlled, reproducible paper.
 
-```text
+[
+\text{native}
+\neq
+\text{bridge}
+\neq
+\text{quarantined axiom}
+\neq
+\text{environmental coordinate}
+\neq
+\text{failed route}
+]
+
+[
+(G419\ |\ \text{post-flavor law-space board})
+\rightarrow
+(G420\ |\ \text{theorem atlas})
+\rightarrow
+(G421\ |\ \text{manuscript skeleton})
+\rightarrow
+(G422\ |\ \text{executive claim audit})
+\rightarrow
+(G423\ |\ \text{reviewer objection matrix})
+\rightarrow
+(G424\ |\ \text{artifact index})
+\rightarrow
+(G425\ |\ \text{publication bundle preflight})
+]
+
+**Slug:** `publication-ready-architecture`
+
+---
+
+# Final Core Tower
+
+The essential ASHA tower from Gates **0–425** is:
+
+```text id="lxbi3f"
 Cℓ(1,7) measurement ladder
 → Boolean/G₂ contact vacuum K₇
-→ off-diagonal finite Higgs seed
+→ off-diagonal Higgs seed
 → Fock matter carrier
 → electroweak charge skeleton
 → Morita finite spectral triple
 → inner fluctuations give SM gauge + Higgs fields
 → M × F almost-commutative product geometry
-→ CCM spectral-action coefficients
+→ CCM spectral-action coefficient lane
 → Higgs as finite one-form on Dirac edges
 → Pfaffian scale lane
 → sealed Higgs tree proxy
-→ explicit flavor/cosmology firewalls
+→ flavor/cosmology firewalls
+→ contact-quartic non-promotion firewall
+→ quarantined K/X/Y family axiom capacity
+→ publication-ready theorem atlas
 ```
 
-In one compressed line:
+Compressed formula:
 
 [
 C\ell(1,7)
@@ -521,7 +648,9 @@ K_7
 \Rightarrow
 A_F=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)
 \Rightarrow
-D_{M\times F}
+D_A
+\Rightarrow
+M\times F
 \Rightarrow
 S_{\rm CCM}
 \Rightarrow
@@ -533,18 +662,17 @@ m_H^{\rm tree}\approx124.925
 with the honest boundary:
 
 [
-\text{law-space sealed}
-\quad\neq\quad
-\text{all environmental vacuum coordinates derived}.
+\text{native law-space sealed}
+\neq
+\text{all vacuum/environment coordinates derived}.
 ]
 
-So the core board is:
+The final essence:
 
-```text
-Finite internal geometry derives the Standard Model law-space.
-CCM product geometry embeds it into spacetime.
-Inner fluctuations produce gauge and Higgs fields.
-The Higgs is edge-supported as a finite one-form.
-Flavor and cosmology remain vacuum/environment frontiers.
+```text id="e14l6x"
+ASHA derives the finite internal Standard Model law-space and its CCM product-action embedding.
+The Higgs tree proxy comes from finite one-form edge support plus Pfaffian scale.
+Flavor and cosmology remain explicit frontiers.
+The K/X/Y family chain is a quarantined capacity extension, not a native theorem.
+The project is now publication-structured with clear claim firewalls.
 ```
-

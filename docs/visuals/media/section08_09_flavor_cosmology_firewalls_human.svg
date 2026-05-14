@@ -1,0 +1,390 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='3200' height='2400' viewBox='0 0 3200 2400' role='img' aria-label='ASHA Section 8 and 9 flavor cosmology and firewalls'>
+<defs>
+ <radialGradient id="bg" cx="49%" cy="44%" r="76%"><stop offset="0%" stop-color="#121019"/><stop offset="55%" stop-color="#07070C"/><stop offset="100%" stop-color="#050508"/></radialGradient>
+ <radialGradient id="sphere" cx="43%" cy="34%" r="76%"><stop offset="0%" stop-color="#FFF5CB" stop-opacity="0.34"/><stop offset="30%" stop-color="#B7F6FF" stop-opacity="0.16"/><stop offset="68%" stop-color="#111721" stop-opacity="0.38"/><stop offset="100%" stop-color="#010102" stop-opacity="1"/></radialGradient>
+ <linearGradient id="fireband" x1="0%" x2="100%"><stop offset="0%" stop-color="#000000"/><stop offset="44%" stop-color="#151018"/><stop offset="60%" stop-color="#49301B" stop-opacity="0.58"/><stop offset="100%" stop-color="#000000"/></linearGradient>
+ <linearGradient id="goldline" x1="0%" x2="100%"><stop offset="0%" stop-color="#B77935" stop-opacity="0.22"/><stop offset="50%" stop-color="#F2C86D" stop-opacity="0.85"/><stop offset="100%" stop-color="#B7F6FF" stop-opacity="0.25"/></linearGradient>
+ <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="big" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="15" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="red" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="blur"><feGaussianBlur stdDeviation="5"/></filter>
+ </defs>
+<rect width='3200' height='2400' fill='url(#bg)'/>
+<circle cx='73.0' cy='131.0' r='0.8' fill='#A98CFF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='314.0' cy='288.0' r='1.1' fill='#A98CFF' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='555.0' cy='445.0' r='1.3' fill='#A98CFF' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='796.0' cy='602.0' r='1.6' fill='#A98CFF' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1037.0' cy='759.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1278.0' cy='916.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1519.0' cy='1073.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1760.0' cy='1230.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2001.0' cy='1387.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2242.0' cy='1544.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2483.0' cy='1701.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2724.0' cy='1858.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2965.0' cy='2015.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='6.0' cy='2172.0' r='1.1' fill='#A98CFF' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='247.0' cy='2329.0' r='1.3' fill='#A98CFF' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='488.0' cy='86.0' r='1.6' fill='#A98CFF' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='729.0' cy='243.0' r='0.8' fill='#A98CFF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='970.0' cy='400.0' r='1.1' fill='#E06A5F' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1211.0' cy='557.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1452.0' cy='714.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1693.0' cy='871.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1934.0' cy='1028.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2175.0' cy='1185.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2416.0' cy='1342.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2657.0' cy='1499.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2898.0' cy='1656.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='3139.0' cy='1813.0' r='1.3' fill='#A98CFF' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='180.0' cy='1970.0' r='1.6' fill='#A98CFF' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='421.0' cy='2127.0' r='0.8' fill='#A98CFF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='662.0' cy='2284.0' r='1.1' fill='#A98CFF' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='903.0' cy='41.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1144.0' cy='198.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1385.0' cy='355.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1626.0' cy='512.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1867.0' cy='669.0' r='1.3' fill='#E06A5F' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2108.0' cy='826.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2349.0' cy='983.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2590.0' cy='1140.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2831.0' cy='1297.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='3072.0' cy='1454.0' r='1.6' fill='#A98CFF' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='113.0' cy='1611.0' r='0.8' fill='#A98CFF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='354.0' cy='1768.0' r='1.1' fill='#A98CFF' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='595.0' cy='1925.0' r='1.3' fill='#A98CFF' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='836.0' cy='2082.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1077.0' cy='2239.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1318.0' cy='2396.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1559.0' cy='153.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1800.0' cy='310.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2041.0' cy='467.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2282.0' cy='624.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2523.0' cy='781.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2764.0' cy='938.0' r='1.6' fill='#E06A5F' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='3005.0' cy='1095.0' r='0.8' fill='#A98CFF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='46.0' cy='1252.0' r='1.1' fill='#A98CFF' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='287.0' cy='1409.0' r='1.3' fill='#A98CFF' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='528.0' cy='1566.0' r='1.6' fill='#A98CFF' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='769.0' cy='1723.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1010.0' cy='1880.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1251.0' cy='2037.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1492.0' cy='2194.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1733.0' cy='2351.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1974.0' cy='108.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2215.0' cy='265.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2456.0' cy='422.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2697.0' cy='579.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2938.0' cy='736.0' r='1.1' fill='#A98CFF' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='3179.0' cy='893.0' r='1.3' fill='#A98CFF' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='220.0' cy='1050.0' r='1.6' fill='#A98CFF' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='461.0' cy='1207.0' r='0.8' fill='#A98CFF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='702.0' cy='1364.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='943.0' cy='1521.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1184.0' cy='1678.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1425.0' cy='1835.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1666.0' cy='1992.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1907.0' cy='2149.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2148.0' cy='2306.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2389.0' cy='63.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2630.0' cy='220.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2871.0' cy='377.0' r='1.3' fill='#A98CFF' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='3112.0' cy='534.0' r='1.6' fill='#A98CFF' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='153.0' cy='691.0' r='0.8' fill='#A98CFF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='394.0' cy='848.0' r='1.1' fill='#A98CFF' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='635.0' cy='1005.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='876.0' cy='1162.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1117.0' cy='1319.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1358.0' cy='1476.0' r='1.1' fill='#E06A5F' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1599.0' cy='1633.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1840.0' cy='1790.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2081.0' cy='1947.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2322.0' cy='2104.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2563.0' cy='2261.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2804.0' cy='18.0' r='1.6' fill='#A98CFF' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='3045.0' cy='175.0' r='0.8' fill='#A98CFF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='86.0' cy='332.0' r='1.1' fill='#A98CFF' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='327.0' cy='489.0' r='1.3' fill='#A98CFF' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='568.0' cy='646.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='809.0' cy='803.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1050.0' cy='960.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1291.0' cy='1117.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1532.0' cy='1274.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1773.0' cy='1431.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2014.0' cy='1588.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2255.0' cy='1745.0' r='1.3' fill='#E06A5F' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2496.0' cy='1902.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2737.0' cy='2059.0' r='0.8' fill='#A98CFF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2978.0' cy='2216.0' r='1.1' fill='#A98CFF' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='19.0' cy='2373.0' r='1.3' fill='#A98CFF' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='260.0' cy='130.0' r='1.6' fill='#A98CFF' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='501.0' cy='287.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='742.0' cy='444.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='983.0' cy='601.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1224.0' cy='758.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1465.0' cy='915.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1706.0' cy='1072.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1947.0' cy='1229.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2188.0' cy='1386.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2429.0' cy='1543.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2670.0' cy='1700.0' r='1.1' fill='#A98CFF' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2911.0' cy='1857.0' r='1.3' fill='#A98CFF' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='3152.0' cy='2014.0' r='1.6' fill='#A98CFF' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='193.0' cy='2171.0' r='0.8' fill='#A98CFF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='434.0' cy='2328.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='675.0' cy='85.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='916.0' cy='242.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1157.0' cy='399.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1398.0' cy='556.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1639.0' cy='713.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1880.0' cy='870.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2121.0' cy='1027.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2362.0' cy='1184.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2603.0' cy='1341.0' r='1.3' fill='#A98CFF' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2844.0' cy='1498.0' r='1.6' fill='#A98CFF' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='3085.0' cy='1655.0' r='0.8' fill='#A98CFF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='126.0' cy='1812.0' r='1.1' fill='#A98CFF' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='367.0' cy='1969.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='608.0' cy='2126.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='849.0' cy='2283.0' r='0.8' fill='#E06A5F' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1090.0' cy='40.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1331.0' cy='197.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1572.0' cy='354.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1813.0' cy='511.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2054.0' cy='668.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2295.0' cy='825.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2536.0' cy='982.0' r='1.6' fill='#A98CFF' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2777.0' cy='1139.0' r='0.8' fill='#A98CFF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='3018.0' cy='1296.0' r='1.1' fill='#A98CFF' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='59.0' cy='1453.0' r='1.3' fill='#A98CFF' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='300.0' cy='1610.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='541.0' cy='1767.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='782.0' cy='1924.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1023.0' cy='2081.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1264.0' cy='2238.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1505.0' cy='2395.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1746.0' cy='152.0' r='1.1' fill='#E06A5F' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1987.0' cy='309.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2228.0' cy='466.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2469.0' cy='623.0' r='0.8' fill='#A98CFF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2710.0' cy='780.0' r='1.1' fill='#A98CFF' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2951.0' cy='937.0' r='1.3' fill='#A98CFF' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='3192.0' cy='1094.0' r='1.6' fill='#A98CFF' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='233.0' cy='1251.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='474.0' cy='1408.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='715.0' cy='1565.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='956.0' cy='1722.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1197.0' cy='1879.0' r='0.8' fill='#B7F6FF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1438.0' cy='2036.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1679.0' cy='2193.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1920.0' cy='2350.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2161.0' cy='107.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2402.0' cy='264.0' r='1.1' fill='#A98CFF' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2643.0' cy='421.0' r='1.3' fill='#A98CFF' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='2884.0' cy='578.0' r='1.6' fill='#A98CFF' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='3125.0' cy='735.0' r='0.8' fill='#A98CFF' fill-opacity='0.053571428571428575' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='166.0' cy='892.0' r='1.1' fill='#BFB7A7' fill-opacity='0.06071428571428572' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='407.0' cy='1049.0' r='1.3' fill='#BFB7A7' fill-opacity='0.06785714285714287' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='648.0' cy='1206.0' r='1.6' fill='#BFB7A7' fill-opacity='0.07500000000000001' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='889.0' cy='1363.0' r='0.8' fill='#B7F6FF' fill-opacity='0.025' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1130.0' cy='1520.0' r='1.1' fill='#BFB7A7' fill-opacity='0.03214285714285715' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1371.0' cy='1677.0' r='1.3' fill='#BFB7A7' fill-opacity='0.039285714285714285' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<circle cx='1612.0' cy='1834.0' r='1.6' fill='#BFB7A7' fill-opacity='0.04642857142857143' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<ellipse cx='2240.0' cy='450.0' rx='140.0' ry='55.0' fill='#E06A5F' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='2407.0' cy='661.0' rx='165.0' ry='73.0' fill='#A98CFF' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='2574.0' cy='872.0' rx='190.0' ry='91.0' fill='#E06A5F' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='2741.0' cy='1083.0' rx='215.0' ry='55.0' fill='#A98CFF' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='2908.0' cy='1294.0' rx='140.0' ry='73.0' fill='#E06A5F' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='3075.0' cy='1505.0' rx='165.0' ry='91.0' fill='#A98CFF' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='2392.0' cy='626.0' rx='190.0' ry='55.0' fill='#E06A5F' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='2559.0' cy='837.0' rx='215.0' ry='73.0' fill='#A98CFF' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='2726.0' cy='1048.0' rx='140.0' ry='91.0' fill='#E06A5F' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='2893.0' cy='1259.0' rx='165.0' ry='55.0' fill='#A98CFF' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='3060.0' cy='1470.0' rx='190.0' ry='73.0' fill='#E06A5F' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='2377.0' cy='591.0' rx='215.0' ry='91.0' fill='#A98CFF' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='2544.0' cy='802.0' rx='140.0' ry='55.0' fill='#E06A5F' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<ellipse cx='2711.0' cy='1013.0' rx='165.0' ry='73.0' fill='#A98CFF' fill-opacity='0.03' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#blur)'/>
+<text x='92.0' y='84.0' text-anchor='start' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='34' font-weight='850'>08–09</text>
+<text x='240.0' y='84.0' text-anchor='start' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Serif, Georgia, serif' font-size='58' font-weight='650'>FLAVOR, COSMOLOGY, AND THE FIREWALLS</text>
+<text x='244.0' y='132.0' text-anchor='start' fill='#BFB7A7' fill-opacity='0.86' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='26' font-weight='500'>law space stays crystalline; environmental coordinates stay outside the derivation</text>
+<rect x='92.0' y='172.0' width='2260.0' height='112.0' rx='36.0' fill='#08080E' fill-opacity='0.78' stroke='#F2C86D' stroke-opacity='0.22' stroke-width='1.4' filter='url(#soft)'/>
+<text x='360.0' y='238.0' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='28' font-weight='720'>Native is not a family predictor</text>
+<text x='890.0' y='238.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='28' font-weight='720'>dim M_charged = 13</text>
+<text x='1445.0' y='238.0' text-anchor='middle' fill='#B7F6FF' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='28' font-weight='720'>Cosmology requires history</text>
+<text x='1995.0' y='238.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='28' font-weight='720'>Firewall = theorem hygiene</text>
+<line x1='625.0' y1='194.0' x2='625.0' y2='260.0' stroke='#F2C86D' stroke-width='1' stroke-opacity='0.16'/>
+<line x1='1178.0' y1='194.0' x2='1178.0' y2='260.0' stroke='#F2C86D' stroke-width='1' stroke-opacity='0.16'/>
+<line x1='1715.0' y1='194.0' x2='1715.0' y2='260.0' stroke='#F2C86D' stroke-width='1' stroke-opacity='0.16'/>
+<ellipse cx='1130.0' cy='1020.0' rx='784.0' ry='714.0' fill='#000000' fill-opacity='0.98' stroke='#000000' stroke-opacity='0.92' stroke-width='36' filter='url(#big)'/>
+<ellipse cx='1130.0' cy='1020.0' rx='756.0' ry='686.0' fill='url(#fireband)' fill-opacity='0.96' stroke='#B77935' stroke-opacity='0.3' stroke-width='4' filter='url(#soft)'/>
+<ellipse cx='1130.0' cy='1020.0' rx='680.0' ry='610.0' fill='url(#sphere)' fill-opacity='0.96' stroke='#B7F6FF' stroke-opacity='0.2' stroke-width='2'/>
+<ellipse cx='1010.0' cy='895.0' rx='394.4' ry='207.4' fill='#ffffff' fill-opacity='0.026' stroke='none' stroke-opacity='1' stroke-width='1'/>
+<rect x='662.0' y='508.0' width='936.0' height='64.0' rx='24.0' fill='#09080D' fill-opacity='0.88' stroke='#B77935' stroke-opacity='0.26' stroke-width='1.4' filter='url(#soft)'/>
+<text x='1130.0' y='549.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='26' font-weight='760'>OBSIDIAN FIREWALL: typed bridges only</text>
+<text x='1130.0' y='628.0' text-anchor='middle' fill='#B7F6FF' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='28' font-weight='850'>DERIVED / BRIDGE AUDITED LAW SPACE</text>
+<text x='1130.0' y='666.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.86' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='21' font-weight='500'>Sections 1-7 remain inside the glass sphere</text>
+<line x1='869.0' y1='763.6' x2='1143.6' y2='675.2' stroke='url(#goldline)' stroke-width='3' stroke-opacity='0.48' filter='url(#soft)'/>
+<line x1='1143.6' y1='675.2' x2='1410.5' y2='780.3' stroke='url(#goldline)' stroke-width='3' stroke-opacity='0.48' filter='url(#soft)'/>
+<line x1='1410.5' y1='780.3' x2='1520.0' y2='1020.0' stroke='url(#goldline)' stroke-width='3' stroke-opacity='0.48' filter='url(#soft)'/>
+<line x1='1520.0' y1='1020.0' x2='1410.5' y2='1259.7' stroke='url(#goldline)' stroke-width='3' stroke-opacity='0.48' filter='url(#soft)'/>
+<line x1='1410.5' y1='1259.7' x2='1143.6' y2='1364.8' stroke='url(#goldline)' stroke-width='3' stroke-opacity='0.48' filter='url(#soft)'/>
+<line x1='1143.6' y1='1364.8' x2='869.0' y2='1276.4' stroke='url(#goldline)' stroke-width='3' stroke-opacity='0.48' filter='url(#soft)'/>
+<circle cx='869.0' cy='763.6' r='58.0' fill='#090A10' fill-opacity='0.88' stroke='#F2C86D' stroke-opacity='0.5' stroke-width='1.8' filter='url(#soft)'/>
+<text x='869.0' y='760.6' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='24' font-weight='850'>01</text>
+<text x='869.0' y='839.6' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='680'>Measurement</text>
+<text x='869.0' y='868.6' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.84' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='450'>Cℓ(1,7) ladder</text>
+<circle cx='1143.6' cy='675.2' r='58.0' fill='#090A10' fill-opacity='0.88' stroke='#F2C86D' stroke-opacity='0.5' stroke-width='1.8' filter='url(#soft)'/>
+<text x='1143.6' y='672.2' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='24' font-weight='850'>02</text>
+<text x='1143.6' y='751.2' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='680'>Vacuum</text>
+<text x='1143.6' y='780.2' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.84' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='450'>K₇ contact core</text>
+<circle cx='1410.5' cy='780.3' r='58.0' fill='#090A10' fill-opacity='0.88' stroke='#F2C86D' stroke-opacity='0.5' stroke-width='1.8' filter='url(#soft)'/>
+<text x='1410.5' y='777.3' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='24' font-weight='850'>03</text>
+<text x='1410.5' y='856.3' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='680'>Scalar</text>
+<text x='1410.5' y='885.3' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.84' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='450'>off-diagonal Φ</text>
+<circle cx='1520.0' cy='1020.0' r='58.0' fill='#090A10' fill-opacity='0.88' stroke='#F2C86D' stroke-opacity='0.5' stroke-width='1.8' filter='url(#soft)'/>
+<text x='1520.0' y='1017.0' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='24' font-weight='850'>04</text>
+<text x='1520.0' y='1096.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='680'>Charges</text>
+<text x='1520.0' y='1125.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.84' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='450'>Q=T³L+Y</text>
+<circle cx='1410.5' cy='1259.7' r='58.0' fill='#090A10' fill-opacity='0.88' stroke='#F2C86D' stroke-opacity='0.5' stroke-width='1.8' filter='url(#soft)'/>
+<text x='1410.5' y='1256.7' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='24' font-weight='850'>05</text>
+<text x='1410.5' y='1335.7' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='680'>Triple</text>
+<text x='1410.5' y='1364.7' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.84' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='450'>C⊕H⊕M₃(C)</text>
+<circle cx='1143.6' cy='1364.8' r='58.0' fill='#090A10' fill-opacity='0.88' stroke='#F2C86D' stroke-opacity='0.5' stroke-width='1.8' filter='url(#soft)'/>
+<text x='1143.6' y='1361.8' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='24' font-weight='850'>06</text>
+<text x='1143.6' y='1440.8' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='680'>Product</text>
+<text x='1143.6' y='1469.8' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.84' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='450'>M×F + CCM</text>
+<circle cx='869.0' cy='1276.4' r='58.0' fill='#090A10' fill-opacity='0.88' stroke='#F2C86D' stroke-opacity='0.5' stroke-width='1.8' filter='url(#soft)'/>
+<text x='869.0' y='1273.4' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='24' font-weight='850'>07</text>
+<text x='869.0' y='1352.4' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='680'>Higgs</text>
+<text x='869.0' y='1381.4' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.84' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='450'>124.925 GeV lane</text>
+<rect x='722.0' y='902.0' width='816.0' height='250.0' rx='34.0' fill='#06060B' fill-opacity='0.7' stroke='#B7F6FF' stroke-opacity='0.16' stroke-width='1.2'/>
+<text x='1130.0' y='966.0' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Serif, Georgia, serif' font-size='28' font-weight='670'>What stays inside</text>
+<text x='1130.0' y='1014.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='540'>finite geometry + spectral triple + CCM/Pfaffian lanes</text>
+<text x='1130.0' y='1062.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.86' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='21' font-weight='460'>field inventory and Higgs tree proxy are claim tracked</text>
+<text x='1130.0' y='1111.0' text-anchor='middle' fill='#E06A5F' fill-opacity='0.92' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='20' font-weight='700'>No hidden family coefficients. No smuggled cosmology history.</text>
+<text x='2575.0' y='382.0' text-anchor='middle' fill='#A98CFF' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='33' font-weight='850'>FIREWALLED EXTERIOR</text>
+<text x='2575.0' y='420.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.86' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='21' font-weight='480'>13 charged-family moduli float unconnected outside law space</text>
+<rect x='2030.0' y='468.0' width='1070.0' height='632.0' rx='36.0' fill='#08070D' fill-opacity='0.44' stroke='#E06A5F' stroke-opacity='0.16' stroke-width='1.2'/>
+<circle cx='2110.0' cy='610.0' r='43.0' fill='#E06A5F' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2110.0' cy='610.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#E06A5F' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2110.0' y='618.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='780'>u</text>
+<text x='2110.0' y='676.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>quark</text>
+<circle cx='2270.0' cy='610.0' r='43.0' fill='#E06A5F' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2270.0' cy='610.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#E06A5F' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2270.0' y='618.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='780'>d</text>
+<text x='2270.0' y='676.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>quark</text>
+<circle cx='2430.0' cy='610.0' r='43.0' fill='#E06A5F' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2430.0' cy='610.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#E06A5F' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2430.0' y='618.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='780'>c</text>
+<text x='2430.0' y='676.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>quark</text>
+<circle cx='2590.0' cy='610.0' r='43.0' fill='#E06A5F' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2590.0' cy='610.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#E06A5F' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2590.0' y='618.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='780'>s</text>
+<text x='2590.0' y='676.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>quark</text>
+<circle cx='2750.0' cy='610.0' r='43.0' fill='#E06A5F' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2750.0' cy='610.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#E06A5F' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2750.0' y='618.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='780'>t</text>
+<text x='2750.0' y='676.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>quark</text>
+<circle cx='2910.0' cy='610.0' r='43.0' fill='#E06A5F' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2910.0' cy='610.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#E06A5F' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2910.0' y='618.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='780'>b</text>
+<text x='2910.0' y='676.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>quark</text>
+<circle cx='2190.0' cy='795.0' r='43.0' fill='#E06A5F' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2190.0' cy='795.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#E06A5F' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2190.0' y='803.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='780'>θ12</text>
+<text x='2190.0' y='861.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>CKM</text>
+<circle cx='2405.0' cy='795.0' r='43.0' fill='#E06A5F' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2405.0' cy='795.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#E06A5F' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2405.0' y='803.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='780'>θ23</text>
+<text x='2405.0' y='861.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>CKM</text>
+<circle cx='2620.0' cy='795.0' r='43.0' fill='#E06A5F' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2620.0' cy='795.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#E06A5F' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2620.0' y='803.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='780'>θ13</text>
+<text x='2620.0' y='861.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>CKM</text>
+<circle cx='2835.0' cy='795.0' r='43.0' fill='#E06A5F' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2835.0' cy='795.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#E06A5F' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2835.0' y='803.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='780'>δCKM</text>
+<text x='2835.0' y='861.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>phase</text>
+<circle cx='2300.0' cy='980.0' r='43.0' fill='#F2C86D' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2300.0' cy='980.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#F2C86D' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2300.0' y='988.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='780'>e</text>
+<text x='2300.0' y='1046.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>lepton</text>
+<circle cx='2550.0' cy='980.0' r='43.0' fill='#F2C86D' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2550.0' cy='980.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#F2C86D' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2550.0' y='988.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='780'>μ</text>
+<text x='2550.0' y='1046.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>lepton</text>
+<circle cx='2800.0' cy='980.0' r='43.0' fill='#F2C86D' fill-opacity='0.07' stroke='none' stroke-opacity='1' stroke-width='1' filter='url(#red)'/>
+<circle cx='2800.0' cy='980.0' r='35.0' fill='#0B0709' fill-opacity='0.94' stroke='#F2C86D' stroke-opacity='0.72' stroke-width='2.1' filter='url(#red)'/>
+<text x='2800.0' y='988.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='780'>τ</text>
+<text x='2800.0' y='1046.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='460'>lepton</text>
+<text x='2510.0' y='1148.0' text-anchor='middle' fill='#E06A5F' fill-opacity='0.9' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='700'>No links: these are not derived by the native finite board.</text>
+<rect x='2030.0' y='1225.0' width='1070.0' height='300.0' rx='36.0' fill='#08070D' fill-opacity='0.44' stroke='#A98CFF' stroke-opacity='0.18' stroke-width='1.2'/>
+<text x='2078.0' y='1282.0' text-anchor='start' fill='#A98CFF' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='23' font-weight='850'>COSMOLOGY / DARK SECTOR COORDINATES</text>
+<circle cx='2130.0' cy='1385.0' r='38.0' fill='#0A0912' fill-opacity='0.9' stroke='#72E6FF' stroke-opacity='0.46' stroke-width='1.6' filter='url(#soft)'/>
+<text x='2130.0' y='1392.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='740'>ΩDM h²</text>
+<text x='2130.0' y='1450.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.8' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' font-weight='440'>relic history</text>
+<circle cx='2360.0' cy='1385.0' r='38.0' fill='#0A0912' fill-opacity='0.9' stroke='#A98CFF' stroke-opacity='0.46' stroke-width='1.6' filter='url(#soft)'/>
+<text x='2360.0' y='1392.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='740'>ρΛ</text>
+<text x='2360.0' y='1450.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.8' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' font-weight='440'>vacuum energy</text>
+<circle cx='2590.0' cy='1385.0' r='38.0' fill='#0A0912' fill-opacity='0.9' stroke='#72E6FF' stroke-opacity='0.46' stroke-width='1.6' filter='url(#soft)'/>
+<text x='2590.0' y='1392.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='740'>τU</text>
+<text x='2590.0' y='1450.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.8' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' font-weight='440'>cosmic age</text>
+<circle cx='2820.0' cy='1385.0' r='38.0' fill='#0A0912' fill-opacity='0.9' stroke='#A98CFF' stroke-opacity='0.46' stroke-width='1.6' filter='url(#soft)'/>
+<text x='2820.0' y='1392.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='740'>thermal path</text>
+<text x='2820.0' y='1450.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.8' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' font-weight='440'>production rule</text>
+<circle cx='3050.0' cy='1385.0' r='38.0' fill='#0A0912' fill-opacity='0.9' stroke='#72E6FF' stroke-opacity='0.46' stroke-width='1.6' filter='url(#soft)'/>
+<text x='3050.0' y='1392.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='740'>thresholds</text>
+<text x='3050.0' y='1450.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.8' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' font-weight='440'>activation</text>
+<text x='2565.0' y='1493.0' text-anchor='middle' fill='#B7F6FF' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='620'>Requires state + scale + expansion dynamics + thermal/nonthermal path + vacuum prescription</text>
+<rect x='92.0' y='1660.0' width='930.0' height='510.0' rx='38.0' fill='#07070D' fill-opacity='0.82' stroke='#E06A5F' stroke-opacity='0.28' stroke-width='1.4' filter='url(#soft)'/>
+<text x='145.0' y='1720.0' text-anchor='start' fill='#E06A5F' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='25' font-weight='850'>FLAVOR FIREWALL</text>
+<text x='145.0' y='1764.0' text-anchor='start' fill='#BFB7A7' fill-opacity='0.86' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='21' font-weight='480'>native ASHA keeps charged-family data sealed</text>
+<text x='557.0' y='1855.0' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Serif, Georgia, serif' font-size='54' font-weight='720'>13 = 6 + 4 + 3</text>
+<text x='557.0' y='1912.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='23' font-weight='530'>quark masses  +  CKM parameters  +  charged leptons</text>
+<rect x='210.0' y='1975.0' width='190.0' height='112.0' rx='22.0' fill='#050508' fill-opacity='0.74' stroke='#F2C86D' stroke-opacity='0.3' stroke-width='1.2'/>
+<text x='305.0' y='2022.0' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='33' font-weight='850'>6</text>
+<text x='305.0' y='2056.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='500'>quark masses</text>
+<rect x='460.0' y='1975.0' width='190.0' height='112.0' rx='22.0' fill='#050508' fill-opacity='0.74' stroke='#E06A5F' stroke-opacity='0.3' stroke-width='1.2'/>
+<text x='555.0' y='2022.0' text-anchor='middle' fill='#E06A5F' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='33' font-weight='850'>4</text>
+<text x='555.0' y='2056.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='500'>CKM</text>
+<rect x='710.0' y='1975.0' width='190.0' height='112.0' rx='22.0' fill='#050508' fill-opacity='0.74' stroke='#F2C86D' stroke-opacity='0.3' stroke-width='1.2'/>
+<text x='805.0' y='2022.0' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='33' font-weight='850'>3</text>
+<text x='805.0' y='2056.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='500'>charged leptons</text>
+<text x='557.0' y='2127.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.88' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='21' font-weight='500'>capacity may be organized; values are not predicted</text>
+<rect x='1135.0' y='1660.0' width='930.0' height='510.0' rx='38.0' fill='#07070D' fill-opacity='0.82' stroke='#F2C86D' stroke-opacity='0.24' stroke-width='1.4' filter='url(#soft)'/>
+<text x='1188.0' y='1720.0' text-anchor='start' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='24' font-weight='850'>QUARANTINED FAMILY AXIOMS</text>
+<text x='1188.0' y='1764.0' text-anchor='start' fill='#BFB7A7' fill-opacity='0.86' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='21' font-weight='480'>K/X/Y gives hierarchy, mixing, and CP capacity only</text>
+<circle cx='1305.0' cy='1878.0' r='62.0' fill='#09080E' fill-opacity='0.86' stroke='#F2C86D' stroke-opacity='0.52' stroke-width='1.8' filter='url(#soft)'/>
+<text x='1305.0' y='1886.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='780'>K_gen</text>
+<text x='1305.0' y='1972.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.84' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='460'>hierarchy</text>
+<line x1='1378.0' y1='1878.0' x2='1500.0' y2='1878.0' stroke='#F2C86D' stroke-width='1.7' stroke-opacity='0.36' stroke-dasharray='9 10'/>
+<circle cx='1575.0' cy='1878.0' r='62.0' fill='#09080E' fill-opacity='0.86' stroke='#F2C86D' stroke-opacity='0.52' stroke-width='1.8' filter='url(#soft)'/>
+<text x='1575.0' y='1886.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='780'>X_gen</text>
+<text x='1575.0' y='1972.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.84' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='460'>mixing</text>
+<line x1='1648.0' y1='1878.0' x2='1770.0' y2='1878.0' stroke='#A98CFF' stroke-width='1.7' stroke-opacity='0.36' stroke-dasharray='9 10'/>
+<circle cx='1845.0' cy='1878.0' r='62.0' fill='#09080E' fill-opacity='0.86' stroke='#A98CFF' stroke-opacity='0.52' stroke-width='1.8' filter='url(#soft)'/>
+<text x='1845.0' y='1886.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='780'>Y_gen</text>
+<text x='1845.0' y='1972.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.84' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='460'>CP phase</text>
+<text x='1600.0' y='2025.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='25' font-weight='660'>M_s = a_s K_gen + b_s X_gen + c_s Y_gen</text>
+<text x='1600.0' y='2070.0' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='22' font-weight='650'>s ∈ {u,d,e}; 9 symbolic charged coefficients</text>
+<text x='1600.0' y='2124.0' text-anchor='middle' fill='#E06A5F' fill-opacity='0.9' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='20' font-weight='700'>not promoted to a native theorem</text>
+<rect x='2178.0' y='1660.0' width='930.0' height='510.0' rx='38.0' fill='#07070D' fill-opacity='0.82' stroke='#A98CFF' stroke-opacity='0.25' stroke-width='1.4' filter='url(#soft)'/>
+<text x='2231.0' y='1720.0' text-anchor='start' fill='#A98CFF' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='25' font-weight='850'>COSMOLOGY FIREWALL</text>
+<text x='2231.0' y='1764.0' text-anchor='start' fill='#BFB7A7' fill-opacity='0.86' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='21' font-weight='480'>finite law space does not determine cosmic history</text>
+<rect x='2225.0' y='1812.0' width='270.0' height='96.0' rx='24.0' fill='#050508' fill-opacity='0.72' stroke='#72E6FF' stroke-opacity='0.26' stroke-width='1.2'/>
+<text x='2360.0' y='1855.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='26' font-weight='750'>ΩDM h²</text>
+<text x='2360.0' y='1891.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='460'>dark matter abundance</text>
+<rect x='2635.0' y='1812.0' width='270.0' height='96.0' rx='24.0' fill='#050508' fill-opacity='0.72' stroke='#A98CFF' stroke-opacity='0.26' stroke-width='1.2'/>
+<text x='2770.0' y='1855.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='26' font-weight='750'>ρΛ</text>
+<text x='2770.0' y='1891.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='460'>vacuum energy</text>
+<rect x='2225.0' y='1942.0' width='270.0' height='96.0' rx='24.0' fill='#050508' fill-opacity='0.72' stroke='#72E6FF' stroke-opacity='0.26' stroke-width='1.2'/>
+<text x='2360.0' y='1985.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='26' font-weight='750'>τU</text>
+<text x='2360.0' y='2021.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='460'>age / expansion</text>
+<rect x='2635.0' y='1942.0' width='270.0' height='96.0' rx='24.0' fill='#050508' fill-opacity='0.72' stroke='#A98CFF' stroke-opacity='0.26' stroke-width='1.2'/>
+<text x='2770.0' y='1985.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='26' font-weight='750'>f₄Λ⁴</text>
+<text x='2770.0' y='2021.0' text-anchor='middle' fill='#BFB7A7' fill-opacity='0.82' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' font-weight='460'>subtraction rule</text>
+<text x='2643.0' y='2124.0' text-anchor='middle' fill='#B7F6FF' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='20' font-weight='640'>environmental until a finite to continuum history bridge is derived</text>
+<rect x='92.0' y='2242.0' width='3016.0' height='92.0' rx='31.0' fill='#06060B' fill-opacity='0.78' stroke='#B77935' stroke-opacity='0.2' stroke-width='1.2'/>
+<text x='1600.0' y='2277.0' text-anchor='middle' fill='#F2C86D' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='20' font-weight='850'>Final boundary statement</text>
+<text x='1600.0' y='2315.0' text-anchor='middle' fill='#E8E2D1' fill-opacity='1' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='25' font-weight='530'>ASHA constructs finite geometric law space and bridge lanes; it does not convert environmental coordinates into fake algebraic predictions.</text>
+</svg>

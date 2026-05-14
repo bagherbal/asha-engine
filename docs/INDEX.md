@@ -14,7 +14,7 @@ docs/
 ├── ARTIFACT_MAINTENANCE_CHECKLIST.md
 ├── PUBLICATION_WORKSPACE.md
 ├── paper/PUBLICATION_BUNDLE_PREFLIGHT.md # paper-facing preflight report
-├── architecture.md               # detailed architecture ledger
+├── architecture.md               # detailed architecture ledger (Needs cleanup)
 ├── audits/                       # generated audit artifacts
 │   ├── gates/                    # gate registry audits and index
 │   ├── phenomenology/            # empirical-quarantine phenomenology reports

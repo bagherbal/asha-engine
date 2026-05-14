@@ -16,3 +16,7 @@ Guidelines:
 - Prefer editable source formats alongside exported images.
 - Name figures by concept, not by screenshot date.
 - For paper figures, include a short caption note in the same folder.
+
+---
+
+for now I put everything in media. I've generated paper figures by generating Penrose in ChatGPT, and Manim for the video
