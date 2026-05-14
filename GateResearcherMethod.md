@@ -22,3 +22,7 @@
 - When a gate introduces a seal, split the result into two ledgers: native-search obstruction and sealed conditional consequence. Never let the sealed consequence rewrite the native theorem status.
 - For sealed phenomenology gates, require anomaly/consistency checks before emitting numbers, and label every number with the exact seal and inherited external assumptions.
 - Distinguish an activated conditional carrier from a finite-derived particle: the former can be used for stress tests; the latter requires charge, spin-statistics, mass, and decoupling theorems.
+- For stress-test gates, split the output into branch verdicts. A collider branch can pass while a UV-completion branch fails; do not collapse mixed evidence into a false global success.
+- External experimental limits belong in a quarantined ledger. Use them for stress-testing sealed phenomenology, never for finite-core derivation.
+- When a boundary scale is near proton-decay danger, first audit mediator/operator support. Do not compute a lifetime unless the engine derives or explicitly seals the relevant `B/L`-violating operator basis.
+- For high-scale beta completions, test one-loop pole/asymptotic-safety behavior before declaring numerical predictions viable. A sub-Planck pole is a failed route unless a new UV completion or matching theorem is supplied.

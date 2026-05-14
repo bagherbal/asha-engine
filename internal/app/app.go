@@ -149,6 +149,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarsu2"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalaryukawasupport"
+	"github.com/bagherbal/asha-engine/pkg/bridge/sealedthresholdstresstest"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectoroperators"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/shellfunctor"
@@ -424,6 +425,7 @@ func Run() error {
 		representationrowlattice.RepresentationRowLatticeCompletionAuditTheorem(),
 		finitecarrieractivation.FiniteCarrierActivationContactToRowSemanticsObstructionAuditTheorem(),
 		carrieractivationseal.CarrierActivationSealLocalFieldSemanticBifurcationAuditTheorem(),
+		sealedthresholdstresstest.SealedThresholdPredictionStressTestTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -2155,3 +2155,41 @@ alpha_GUT^-1 = 4π = 12.5663706144
 ```
 
 These values are `CONDITIONAL_ON_CARRIER_SEAL` and on the inherited Gate-201 external universal beta completion. They are not finite-core mass predictions, not physical unification claims, and not contact-mode particle derivations.
+
+## v2.05 — Gate 207: Sealed-threshold prediction stress test / experimental and proton-decay firewall audit
+
+Gate 207 adds `pkg/bridge/sealedthresholdstresstest`.
+
+The gate consumes the Gate-206 `EmpiricalCarrierSeal` outputs only as conditional phenomenology. It stress-tests the two sealed threshold scenarios against direct collider reach, proton-decay mediator support, and one-loop high-scale viability of the required external universal beta completion.
+
+Direct collider branch:
+
+```text
+Dirac vectorlike quark doublet: M_B = 1.46774973718e6 GeV = 1467.74973718 TeV
+Weyl SU(2)L adjoint fermion:   M_B = 8.19807624157e6 GeV = 8198.07624157 TeV
+```
+
+Both thresholds are far above current TeV-scale direct collider searches and remain above a conservative `100 TeV` future-reach stress marker. This is only a direct-reach scale check; no flavour, precision, cosmology, portal-coupling, or decay-lifetime constraint is claimed.
+
+Proton-decay branch:
+
+```text
+min(M_*) = 2.42276543552e14 GeV
+max(M_*) = 2.40099519719e15 GeV
+```
+
+This range is dangerous for naive `SU(5)`-style dimension-six proton decay. Gate 207 therefore audits the actual ASHA mediator inventory. The current finite connection does not derive full `SU(5)`/`SO(10)` gauge algebra, `X/Y` gauge bosons, `B,L`-violating curvature, or dimension-six proton-decay operators. The branch records a conditional natural-suppression firewall by mediator absence, not a proton lifetime prediction.
+
+Universal-completion branch:
+
+The external universal beta row fails the one-loop high-scale stress test. Above the sealed threshold, the total beta rows become positive in all gauge channels. The formal one-loop pole scales include:
+
+```text
+Dirac branch U(1) pole: 1.8419242e18 GeV
+Weyl branch U(1) pole:  6.17596741e16 GeV
+Weyl branch SU(2) pole: 3.21767041e18 GeV
+```
+
+These are sub-Planck obstructions. Gate 207 therefore records `FAILED_ROUTE_UNIVERSAL_COMPLETION_STRESS`: the Gate-206 universal-completion scenario is not viable as a high-scale one-loop bridge under the current assumptions. This failure does not falsify the finite core, the Gate-204 row lattice, or the Gate-206 anomaly compatibility result; it rejects the external universal beta completion as currently formulated.
+
+Next structural obligation: Gate 208 — baryon/lepton violating operator basis audit / proton-decay channel construction obstruction.

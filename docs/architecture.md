@@ -2853,3 +2853,25 @@ alpha_GUT^-1 = 4π
 The theorem status is `PHENOMENOLOGY`, internally labelled `CONDITIONAL_ON_CARRIER_SEAL`. The universal beta source remains external, finite matching corrections remain absent, and no absolute mass/unification claim is made.
 
 Next structural obligation: Gate 207 — sealed-threshold prediction stress test / experimental and proton-decay firewall audit.
+
+### Gate 207 — Sealed-threshold prediction stress test / experimental and proton-decay firewall audit
+
+Package: `pkg/bridge/sealedthresholdstresstest`
+
+Gate 207 is the first stress-test layer after the `EmpiricalCarrierSeal`. It keeps the Gate-206 scales conditional and checks three independent branches.
+
+**Collider branch.** The sealed thresholds are PeV-scale: `1467.74973718 TeV` for the Dirac vectorlike quark doublet branch and `8198.07624157 TeV` for the Weyl `SU(2)L` adjoint branch. Both are far outside current direct TeV-scale collider reach and outside a conservative `100 TeV` future-reach proxy. This branch is only a direct-production scale test.
+
+**Proton-decay branch.** The boundary scale range `2.42276543552e14–2.40099519719e15 GeV` is low enough to trigger a naive GUT proton-decay warning. The architecture therefore separates naive external intuition from engine-native mediator support. The current ASHA connection inventory has the contact-preserving `su(2)+u(1)` seed and a typed matter-current `u(4)` inventory, but no derived full `SU(5)`/`SO(10)` gauge connection, no `X/Y` gauge bosons, no `B,L`-violating curvature, and no dimension-six proton-decay operator. The resulting suppression is a mediator-absence firewall, not a lifetime calculation.
+
+**Universal-completion branch.** The required real universal beta row is now tested as an actual high-scale one-loop bridge. It fails. The total rows become positive in all channels, and the formal pole formula
+
+```text
+M_pole = M_* exp(8π²/b_total)
+```
+
+puts the `U(1)` pole below the Planck scale in both sealed branches and the `SU(2)` pole below the Planck scale in the Weyl branch. Gate 207 therefore upgrades the universal-completion scenario from conditional external data to a strict failed route under the current one-loop assumptions.
+
+The theorem status is `FAILED_ROUTE_UNIVERSAL_COMPLETION_STRESS`. The failure is local to the universal-completion bridge. It does not remove the Gate-204 rational row-lattice support or the Gate-206 anomaly compatibility theorem.
+
+Next structural obligation: Gate 208 — baryon/lepton violating operator basis audit / proton-decay channel construction obstruction.
