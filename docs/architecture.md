@@ -1967,3 +1967,47 @@ negative: no Yukawa amplitudes, fermion masses, CKM/PMNS, electroweak scale, Hig
 ```
 
 This gate redirects the next step toward a canonical finite Yukawa amplitude texture search constrained by the Gate-37 scalar shape.
+
+### Gate 169 — finite Yukawa amplitude texture scalar-shape constraint
+
+Package: `pkg/bridge/yukawashapeconstraint`
+
+Gate 169 follows the Gate-168 scalar mismatch. The scalar spectral-action shape is a Yukawa-moment invariant,
+
+```text
+B/A² = Σ|y_i|⁴ / (Σ|y_i|²)²,
+```
+
+while Gate 37 supplies the independent finite contact/Higgs target
+
+```text
+λ_contact = Tr(M_K²)/Tr(M_K)² = 1197/4624 ≈ 0.258866782006920.
+```
+
+The gate searches finite amplitude-shape candidates and finds:
+
+```text
+8 equal channels:                          1/8          rejected
+4 equal amplitude classes:                 1/4          rejected
+contact spectrum duplicated over Φ±:       λ_contact/2 rejected
+4 contact-spectrum classes:                λ_contact    conditional match
+```
+
+The conditional match identifies the four active contact eigenvalues as squared amplitude weights, giving two high and two low classes. The required squared-amplitude ratio is
+
+```text
+(34+√41)/(34-√41)
+```
+
+and the amplitude ratio is its square root. This gives a finite, scale-free scalar texture target.
+
+However, the result is explicitly not a mass theorem. It requires a future theorem proving that the eight Gate-25 scalar-conjugate channels quotient to four amplitude classes, and another theorem assigning the two high/two low classes to the four fermion kinds. After Gate-26 triality, the full problem remains four 3x3 Yukawa matrices; the scalar shape supplies only one global moment constraint.
+
+Status:
+
+```text
+positive: exact finite scalar target converted into a Yukawa moment constraint
+positive: conditional four-class contact-spectrum pattern matches λ_contact
+negative: direct eight-channel texture does not match
+negative: pair-collapse, kind assignment, generation texture, phases, masses, CKM/PMNS, thresholds, RG running, and physical constants remain underived
+```

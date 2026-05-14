@@ -1040,3 +1040,70 @@ residual nullity:                  3 -> 3
 ```
 
 Next gate: Gate 169 — finite Yukawa amplitude texture search from the Gate-37 scalar-shape constraint.
+
+## v1.67 — Gate 169: finite Yukawa amplitude texture scalar-shape constraint
+
+Gate 169 adds `pkg/bridge/yukawashapeconstraint`.
+
+Gate 168 showed that the scalar spectral-action shape is amplitude-sensitive:
+
+```text
+λ_Fock_shape = B/A² = Σ|y_i|⁴ / (Σ|y_i|²)²
+```
+
+Gate 37 independently supplies the contact/Higgs target:
+
+```text
+λ_contact = Tr(M_K²)/Tr(M_K)² = 1197/4624 ≈ 0.258866782006920
+N_eff = 4624/1197 ≈ 3.862990810359
+```
+
+Gate 169 turns that mismatch into a finite Yukawa moment target. It audits four natural amplitude-shape candidates:
+
+```text
+unit eight-channel incidence:                  shape = 1/8          fail
+unit four-class Higgs quotient:                shape = 1/4          fail, close
+contact spectrum duplicated across Φ±:         shape = λ_contact/2  fail
+four-class contact-spectrum amplitude target:  shape = λ_contact    conditional match
+```
+
+The conditional match uses the four active contact/Higgs eigenvalues as squared Yukawa-amplitude weights:
+
+```text
+|y|² ∝ [(34+√41)/120, (34+√41)/120, (34-√41)/120, (34-√41)/120]
+```
+
+Therefore the required two-level anisotropy is finite and mild:
+
+```text
+|y_high|² / |y_low|² = (34+√41)/(34-√41) ≈ 1.464
+|y_high|  / |y_low|  ≈ 1.210
+```
+
+But this is not yet a physical mass theorem. The match requires additional bridge theorems that are not currently derived:
+
+```text
+scalar-conjugate Φ± channel pair collapse:      not derived
+assignment of two high/two low weights to {u,d,ν,e}: not derived, six choices
+generation lift to four 3x3 Yukawa matrices:    not derived
+phases and non-commuting texture operators:     not derived
+fermion masses and CKM/PMNS:                    not derived
+```
+
+Gate 169 theorem ledger:
+
+```text
+gauge ratio closed:                     true
+Gate37 scalar target available:          true
+conditional four-class match found:      true
+eight-channel amplitude texture selected:false
+pair-collapse theorem derived:           false
+fermion-kind assignment derived:         false
+generation texture derived:              false
+Yukawa amplitudes derived:               false
+fermion masses / CKM / PMNS derived:     false
+threshold/RG/constants derived:          false
+residual nullity:                        3 -> 3
+```
+
+Next gate: Gate 170 — Higgs-conjugate channel quotient theorem: decide whether the eight Gate-25 channels canonically reduce to four amplitude classes, or whether the Gate-169 scalar match remains only a conditional target.

@@ -135,6 +135,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1nonfactor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1orientation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1source"
+	"github.com/bagherbal/asha-engine/pkg/bridge/yukawashapeconstraint"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/higgspotential"
@@ -348,6 +349,7 @@ func Run() error {
 		topdownspectraltriple.TopDownFockSpectralTripleBoundaryTraceAmplitudeFirewallTheorem(),
 		fockrepresentationtrace.FockRepresentationTraceGaugeRatioYukawaAmplitudeSeparationTheorem(),
 		scalarfockspectralpotential.FockDiracScalarSpectralActionContactShapeComparisonTheorem(),
+		yukawashapeconstraint.FiniteYukawaAmplitudeTextureScalarShapeConstraintTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
