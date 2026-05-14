@@ -155,6 +155,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hopfgeometricnormalization"
+	"github.com/bagherbal/asha-engine/pkg/bridge/hyperchargediracassembly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/inputsensitivityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/instantontracebridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/intermediatebreakingaudit"
@@ -602,6 +603,7 @@ func Run() error {
 		ko6twistedrealstructure.KO6TwistedRealStructurePhysicalJDerivationAuditTheorem(),
 		doubledspacerepresentation.DoubledSpaceRepresentationOppositeAlgebraActionAssemblyAuditTheorem(),
 		truebimodulerepresentation.TrueBimoduleAssemblyLeftRightRepresentationAuditTheorem(),
+		hyperchargediracassembly.HyperchargeLedgerSieveCanonicalFiniteDiracAssemblyAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
