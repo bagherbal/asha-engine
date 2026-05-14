@@ -171,6 +171,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/o3quotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/orientationtruechirality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/pevobservabilityaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/physicalfinitehilbertcompletion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedconnection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedintertwiner"
@@ -560,6 +561,7 @@ func Run() error {
 		moritabimodulesearch.FiniteAlgebraRepresentationObstructionClassificationMoritaBimoduleSearchAuditTheorem(),
 		weakquaternionicnormalization.WeakQuaternionicSubBimoduleSelectorFiniteInnerProductNormalizationAuditTheorem(),
 		nativeweakquaternionicalgebra.NativeWeakQuaternionicAlgebraPhysicalFiniteHilbertSpaceReconstructionAuditTheorem(),
+		physicalfinitehilbertcompletion.PhysicalFiniteHilbertSpaceChiralHyperchargeOppositeActionCompletionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

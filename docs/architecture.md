@@ -4939,3 +4939,26 @@ This preserves the central firewall: a trace multiplicity is not a mass amplitud
 ## Gate 274 — Native Weak Quaternionic Algebra Boundary
 
 The engine now separates local quaternionic closure from global finite-algebra derivation. On a selected weak doublet, the quaternionic units close exactly (`I²=J²=K²=-1`, `IJ=K`). This is conditional support for a weak `H` factor. It is not yet a full `C ⊕ H ⊕ M3(C)` spectral-triple theorem because the weak-plane selector remains sealed/conditional, and the physical finite Hilbert space, anti-linear opposite action, and Dirac edge-norm action are still missing. Consequently `x:y` and the Seeley-de Witt `a₂/a₄` route remain blocked.
+
+## Gate 275 — Physical Finite Hilbert Space / Scalar-Morita Shape Bridge
+
+Gate 275 refines the spectral-action branch by connecting two prior finite ledgers:
+
+```text
+Gate 169: λ_contact = 1197/4624
+Gate 273: κ_C:κ_Q = 1:3
+```
+
+The resulting amplitude-shape equation
+
+```text
+(|x|⁴+3|y|⁴)/(|x|²+3|y|²)² = 1197/4624
+```
+
+fixes `r=|y/x|²` to two exact branches:
+
+```text
+r = (3591 ± 136√123)/3099.
+```
+
+This is conditional support for a scalar-Morita finite amplitude-shape bridge. It is not yet a Seeley-de Witt `a₂/a₄` theorem because the scalar-Morita identification, branch selector, physical `J`, hypercharge/chirality assignment, opposite action, and heat-kernel normalization remain un-derived.

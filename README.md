@@ -5020,3 +5020,46 @@ The next lawful target is a native weak/quaternionic finite-Hilbert-space recons
 ### Gate 274 — Native Weak Quaternionic Algebra / Physical Finite Hilbert Space Reconstruction Audit
 
 Gate 274 verifies exact local quaternionic closure on the selected weak doublet using the native finite/Fock weak-plane lineage. It assembles a conditional candidate `C ⊕ H_U12 ⊕ M3(C)` but refuses to promote local `H` into an unsealed global Standard Model finite algebra theorem. The physical finite Hilbert space, physical opposite action `J`, edge-map norm theorem, and `a₂/a₄` Higgs-ratio extraction remain blocked.
+
+## Gate 275 — Physical Finite Hilbert Space / Scalar-Morita Shape Bridge
+
+Gate 275 adds a preliminary bridge before completing physical `J` and hypercharge. It connects the Gate-169 scalar contact shape
+
+```text
+λ_contact = 1197/4624
+```
+
+with the Gate-273 Morita trace multiplicities
+
+```text
+κ_C:κ_Q = 1:3
+```
+
+using
+
+```text
+Tr(D_F²) = |x|² + 3|y|²
+Tr(D_F⁴) = |x|⁴ + 3|y|⁴
+```
+
+and solves
+
+```text
+(|x|⁴ + 3|y|⁴) / (|x|² + 3|y|²)² = 1197/4624.
+```
+
+For `r=|y/x|²`, this gives
+
+```text
+3099r² - 7182r + 3427 = 0
+r = (3591 ± 136√123)/3099.
+```
+
+So the lepton/quark edge shape is constrained to two finite algebraic branches:
+
+```text
+r_+ ≈ 1.645470463011191, |y/x|_+ ≈ 1.282758926303454
+r_- ≈ 0.672051318208557, |y/x|_- ≈ 0.819787361581378
+```
+
+Gate 275 does not claim a Higgs mass prediction. The scalar-Morita identification, branch selector, physical `J`, chiral hypercharge assignment, opposite action, and Seeley-de Witt projection remain open.
