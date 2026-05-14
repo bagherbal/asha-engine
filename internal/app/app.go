@@ -42,6 +42,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcovariant"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarsu2"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalarvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectoroperators"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
@@ -182,6 +183,7 @@ func Run() error {
 		gaugehessian.GaugeKineticHessianSecondVariationTheorem(),
 		scalarcovariant.FiniteScalarCovariantDerivativeMassMatrixTheorem(),
 		gaugeeating.FiniteScalarKineticGaugeEatingSearchTheorem(),
+		scalarvacuum.ScalarVacuumOrientationFiniteMinimizerSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
