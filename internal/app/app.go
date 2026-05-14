@@ -119,6 +119,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/instantontracebridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/inversebsectordeformation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
+	"github.com/bagherbal/asha-engine/pkg/bridge/leptoquarkdynamicsseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
@@ -428,6 +429,7 @@ func Run() error {
 		carrieractivationseal.CarrierActivationSealLocalFieldSemanticBifurcationAuditTheorem(),
 		sealedthresholdstresstest.SealedThresholdPredictionStressTestTheorem(),
 		baryonleptonoperatoraudit.BaryonLeptonViolatingOperatorBasisAuditTheorem(),
+		leptoquarkdynamicsseal.LeptoquarkDynamicsSealBaryonConservationTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

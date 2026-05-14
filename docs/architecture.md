@@ -2906,3 +2906,44 @@ FAILED_ROUTE_PROTON_DECAY_CHANNEL_CONSTRUCTION
 The theorem can be read as a current-connection algebraic proton-stability theorem. It is not yet an absolute baryon-conservation theorem. No proton lifetime or symbolic suppression scale is emitted, because no `B/L`-violating operator coefficient has been derived or sealed.
 
 Next structural obligation: Gate 209 — Pati-Salam leptoquark current dynamics / B-L-preserving proton-decay operator seal audit.
+
+### Gate 209 — Pati-Salam leptoquark current dynamics / B-L-preserving proton-decay operator seal audit
+
+Package: `pkg/bridge/leptoquarkdynamicsseal`
+
+Gate 209 resolves the open threat left by Gate 208. The engine has a Pati-Salam-shaped matter-current inventory,
+
+```text
+u(4) = 1 central + 8 color + 1 B-L + 6 off-diagonal quark-lepton slots,
+```
+
+but Gate 208 only proved that those slots are not part of the currently derived contact gauge connection. Gate 209 asks whether they can become dynamical by any native finite mechanism.
+
+The dynamic activation audit checks six required structures:
+
+```text
+curvature/action/local-field/propagator/mass/coefficient
+```
+
+All six are absent. The off-diagonal slots therefore remain kinematic current inventory, not propagating leptoquark fields and not proton-decay mediators. The native branch is recorded as `FAILED_ROUTE_NATIVE_LEPTOQUARK_DYNAMICS`.
+
+The gate then introduces:
+
+```text
+LeptoquarkDynamicsSeal
+SEAL-LEPTOQUARK-DYNAMICS-GATE209
+```
+
+This seal is an explicit architectural quarantine. It allows the engine to remember the six quark-lepton slots while forbidding their use as gauge curvature, exchange propagators, four-fermion coefficients, or proton-lifetime inputs until a future theorem derives the missing semantics.
+
+Under the seal, the standard dimension-six proton-decay templates remain unconstructible. This includes the crucial `B-L`-preserving classes `QQQL` and conjugate `UUD E`; therefore the stability argument is not a false `B-L` shortcut. It is a mediator/operator/coefficient absence theorem under an explicit seal.
+
+Gate 209 records the `SEALED_CONNECTION_BARYON_CONSERVATION_THEOREM`:
+
+```text
+As long as the LeptoquarkDynamicsSeal holds, the current connection plus dormant u(4) quark-lepton slots cannot mediate B/L-violating proton decay.
+```
+
+This theorem is conditional on the seal. It does not claim unsealed absolute baryon conservation and does not compute a proton lifetime.
+
+Next structural obligation: Gate 210 — sealed baryon-stable threshold sector / non-universal deformation viability without universal Landau-pole completion.

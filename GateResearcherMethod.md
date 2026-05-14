@@ -28,3 +28,5 @@
 - For high-scale beta completions, test one-loop pole/asymptotic-safety behavior before declaring numerical predictions viable. A sub-Planck pole is a failed route unless a new UV completion or matching theorem is supplied.
 - For proton-decay gates, do not use `B-L` as a blanket firewall: the standard `QQQL` and `UUD E` classes preserve `B-L`, so the real question is operator construction and mediator activation.
 - Distinguish current-connection stability from absolute baryon conservation. If quark-lepton current slots exist but lack an action/propagator/coefficient, record an operator-construction obstruction, not an all-future conservation theorem.
+- For dormant-current gates, separate inventory from dynamics. A current slot becomes dangerous only after curvature/action/local-field/propagator/mass/coefficient semantics are derived or explicitly sealed.
+- When sealing a dormant threat surface, state what the seal forbids operationally and what future theorem could lift it. The seal must not rewrite the native failed route.

@@ -2232,3 +2232,57 @@ Absolute baryon conservation theorem: not yet.
 ```
 
 The next unresolved branch is whether the six `u(4)` leptoquark current slots can be dynamically activated or permanently sealed.
+
+## v2.07 — Gate 209: Pati-Salam leptoquark current dynamics / B-L-preserving proton-decay operator seal audit
+
+Gate 209 adds `pkg/bridge/leptoquarkdynamicsseal`.
+
+Gate 208 proved current-connection proton stability but left a precise threat surface: the Fock/matter-current inventory contains six off-diagonal `u(4)` quark-lepton slots. Since the standard `QQQL` and conjugate `UUD E` proton-decay templates preserve `B-L`, the engine cannot use `B-L` as a blanket proton-stability firewall. Gate 209 therefore audits whether the six slots can acquire dynamics.
+
+The native dynamic activation audit finds no derived:
+
+```text
+gauge curvature
+finite action / kinetic term
+local-field map
+propagator denominator
+mass or suppression scale
+coupling / operator coefficient
+```
+
+Thus the six slots remain kinematic inventory only. The native branch records:
+
+```text
+FAILED_ROUTE_NATIVE_LEPTOQUARK_DYNAMICS
+```
+
+Gate 209 then introduces the explicit quarantine:
+
+```text
+LeptoquarkDynamicsSeal
+SEAL-LEPTOQUARK-DYNAMICS-GATE209
+```
+
+Under this seal, the dormant quark-lepton slots cannot be used as leptoquark mediators, cannot generate dimension-six coefficients, and cannot support proton-lifetime formulas. Re-auditing the standard `B-L`-preserving templates under the seal gives:
+
+```text
+QQQL: blocked
+UUD E: blocked
+mixed QQLd-like class: blocked
+```
+
+The theorem records:
+
+```text
+SEALED_CONNECTION_BARYON_CONSERVATION_THEOREM
+```
+
+Interpretation:
+
+```text
+As long as the LeptoquarkDynamicsSeal holds, the current connection plus dormant u(4) quark-lepton slots cannot mediate B/L-violating proton decay.
+```
+
+This is a sealed conditional theorem, not an unsealed absolute all-future baryon-conservation proof. No `SU(5)`, `SO(10)`, or Pati-Salam gauge dynamics are imported. No leptoquark mass, propagator, suppression scale, or proton lifetime is computed.
+
+Next structural obligation: Gate 210 — sealed baryon-stable threshold sector / non-universal deformation viability without universal Landau-pole completion.
