@@ -102,3 +102,18 @@ broken-generator image metric is positive with condition number 4.  Pulling that
 metric back to the protected side would be circular until the protected-to-broken
 intertwiner is independently derived.  The `O(3)` freedom may be pure gauge, but
 that quotient theorem remains open.
+
+## Gate 91 — Gauge-Quotiented Protected-to-Broken Correspondence Audit
+
+Gate 91 follows Gate 90's conclusion that the protected-contact `O(3)` frame freedom behaves as gauge for the currently implemented intrinsic protected diagnostics. It therefore forbids component-wise matching between protected and broken frames.
+
+The gate keeps only quotient-safe data:
+
+- protected carrier dimension = 3;
+- broken-generator image rank = 3;
+- electromagnetic null direction from the scalar covariant-derivative diagnostic;
+- broken-image metric spectrum and condition number.
+
+The result is a strengthened but still bridge-level correspondence. The count/rank resonance survives the quotient, but the broken image metric is anisotropic, while the protected carrier currently has only the abstract Euclidean reference metric. Therefore no quotient-safe protected-to-broken intertwiner is derived yet.
+
+Next target: derive whether the broken-image anisotropy is physical kinetic data, gauge normalization data, or an artifact of diagnostic normalization.

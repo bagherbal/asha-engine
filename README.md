@@ -452,3 +452,8 @@ that protected contact directions, scalar angular directions, and broken gauge
 images all have dimension three, while refusing to identify them by hand. The
 remaining obstruction is the absence of a canonical protected-contact metric or
 connection selecting a unique O(3) intertwiner.
+
+
+## v0.90 — Gauge-Quotiented Correspondence
+
+Adds Gate 91, which compares protected contact directions to broken gauge-generator images only after quotienting arbitrary protected `O(3)` frame choices. It rejects component-wise frame matching and keeps only quotient-safe invariants: dimension/rank correspondence and broken-image metric spectrum. The gauge-eating bridge remains open because no quotient-safe intertwiner is derived.
