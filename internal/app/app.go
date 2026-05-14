@@ -148,6 +148,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeselection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exponentialtauetatexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/faithfuloppositeactionrep"
+	"github.com/bagherbal/asha-engine/pkg/bridge/fermionicgenerationorigin"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fermionicroottracesieve"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fieldmap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierz"
@@ -818,6 +819,7 @@ func Run() error {
 		contacteigenoperatorreconstruction.ContactEigenoperatorInternalReconstructionQ4ContactOnlyTheorem(),
 		hphinativescalaralgebra.HphiNativeScalarSelectorAlgebraPairDegeneracyClosureSieveTheorem(),
 		hphivariationalselector.HphiVariationalFunctionalCanonicalCoefficientSelectorSieveTheorem(),
+		fermionicgenerationorigin.FermionicMatterCarrierOriginNontrivialGenerationRepresentationSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -5994,3 +5994,9 @@ Gate 408 follows the Gate-407 capacity/no-selector split. It audits whether nati
 The audited functionals do not select a nondegenerate scalar theorem. The scalar potential selects only the radial norm, the spectral-action Hessian selects the known pair-degenerate scalar response, the one-form kinetic trace leaves a compatible minimizer family, and quaternionic invariant trace/norm data is central. A source functional of the form `1/2||A||^2 - <J,A>` would select `A=J`, but `J` is external unless derived by another theorem.
 
 Thus Gate 408 preserves the flavor firewall: the scalar lane has algebraic capacity but no native variational coefficient selector. The architectural meaning is that Yukawa amplitudes/source data must now be treated as a separate seal or sourced from a non-scalar theorem; it cannot be smuggled in through `H_phi` variational freedom.
+
+## Gate 409 — Fermionic matter-carrier generation-origin audit
+
+After the H_phi-native route was classified as flavor-blind, Gate 409 returns to the fermionic matter carrier. It separates real native fermionic structures—Fock occupation, parity/chirality, B-L, hypercharge, SU(2)_L, J-real conjugation, Morita bimodule structure, and one-generation Yukawa source/target bilinears—from generation semantics. The audit rejects color, particle species, chirality, and exact triality degeneracy as family origins unless a typed End(C^3_gen) action is derived.
+
+The result preserves the flavor firewall: the current matter carrier still behaves as a standard trivial generation copy, with arbitrary U(3)_gen commutant freedom but no native canonical generation Hamiltonian or noncommuting texture pair.
