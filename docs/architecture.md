@@ -371,3 +371,46 @@ nullity after Gate 105  = 3
 ```
 
 This is progress because the obstruction is now sharper.  The next true gate must attempt an actual finite shell functor / semigroup construction.  Until that exists, threshold-corrected beta coefficients, `alpha`, physical `thetaW`, W/Z/Higgs masses, and fermion masses remain sealed.
+
+## Gate 106 — Finite Shell Functor / Semigroup Construction Attempt
+
+Gate 106 adds `pkg/bridge/shellfunctor`.  Gate 105 ended with the requirement to attempt an actual finite map
+
+```text
+C_s : finite threshold/mode carrier -> finite threshold/mode carrier
+```
+
+and to test whether it can satisfy a true RG-like composition law.  Gate 106 builds the current finite shell carrier directly from the threshold activation audit:
+
+```text
+5 continuum-candidate modes
+8 threshold-open modes
+1 vacuum-frustration-only mode
+```
+
+The strongest object available without new assumptions is a nested projection family `C_n`.  It keeps all continuum-candidate scalar/contact modes and, by an explicitly non-physical temporary ordering, includes threshold-open modes up to shell rank `n`.  The vacuum-frustration-only leakage invariant remains excluded.
+
+This family is mathematically real and composable:
+
+```text
+C_a ∘ C_b = C_min(a,b)
+```
+
+so Gate 106 derives a finite idempotent semilattice of projections.  But this is not a logarithmic/additive RG semigroup.  A physical RG flow would require a law of the form
+
+```text
+C_s ∘ C_t = C_{s+t}
+```
+
+or an equivalent finite shell-composition rule carrying a canonical scale parameter.  The current projection family fails that requirement nontrivially: for example `C_1∘C_2=C_1`, not `C_3`.
+
+Gate 106 also proves shell-order non-uniqueness.  The current data support both the inventory order and the reverse order of the open threshold modes.  Since both are compatible and neither is selected by the finite algebra, no threshold activation predicate or `Δb_i` matching contribution may be claimed.
+
+The residual physical-flow nullity therefore remains:
+
+```text
+nullity before Gate 106 = 3
+nullity after Gate 106  = 3
+```
+
+The next true gate must search for a canonical finite filtration/order selector and monotone threshold predicate.  Until that exists, the finite shell family is useful bookkeeping, not physical RG running.

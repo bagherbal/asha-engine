@@ -63,6 +63,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectoroperators"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectorspectrum"
+	"github.com/bagherbal/asha-engine/pkg/bridge/shellfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
@@ -222,6 +223,7 @@ func Run() error {
 		rgfirewall.FiniteRGFlowBoundaryScaleFirewallTheorem(),
 		boundaryselector.BoundaryScaleOperatorAbsoluteCouplingSearchTheorem(),
 		coarsegrain.NativeFiniteCoarseGrainingThresholdActivationSearchTheorem(),
+		shellfunctor.FiniteShellFunctorSemigroupConstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
