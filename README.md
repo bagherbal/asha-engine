@@ -6099,3 +6099,7 @@ m_H ≈ 124.925 GeV
 ```
 
 This closes the Higgs coefficient lane at the CCM+Pfaffian tree-level proxy. The project still does not claim a full physical pole-mass theorem or full numerical Theory-of-Everything closure: RG transport, threshold matching, pole/self-energy conversion, cosmology, and the 13 flavor moduli remain separate tasks.
+
+## Gate 386 update — cosmological observable boundary
+
+Gate 386 reopens the macroscopic-observable program after the Gate 385 Higgs edge-measure seal. The result is deliberately conservative: the sealed CCM+Pfaffian Higgs proxy and the B-gap threshold ledger make dark-sector and vacuum-fate calculations well posed, but they do not yet produce native hard predictions for `Ω_DM h²`, absolute vacuum stability, metastability lifetime, or a Euclidean bounce action. Dark matter still requires a stability theorem, interaction rates, production history, reheating temperature, and a closed Boltzmann kernel. Vacuum fate still requires the top/Yukawa seal, absolute gauge-running trajectory, threshold-matching convention, lambda minimum, and bounce prefactor. The correct status is therefore conditional-computability, not full numerical ToE closure.

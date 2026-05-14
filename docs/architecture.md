@@ -5715,3 +5715,7 @@ and yields the clean Higgs coefficient identity
 ```
 
 The resulting Pfaffian-VEV tree-level Higgs proxy is approximately `124.925 GeV`. This is now an internally selected coefficient lane, not a post-hoc `10/7` multiplier and not a redefinition of the CCM continuous moment `f0`. The remaining open boundary is physical pole-mass closure, which requires continuum RG and matching machinery.
+
+## Gate 386 — cosmological-observable boundary after Higgs seal
+
+The Higgs sector now supplies a sealed CCM+Pfaffian tree-level coefficient lane, but cosmological observables live in the continuum dynamics of `M × F`. Gate 386 records the required separation: finite ASHA data provide a heavy-sector candidate scale and a Higgs quartic boundary, while relic density and vacuum lifetime require additional continuum structures. No observed dark-matter abundance, top-sector trajectory, reheating state, or bounce lifetime is inserted into the native ledger.
