@@ -7,6 +7,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/exterior"
 	"github.com/bagherbal/asha-engine/pkg/geometry/boolean"
+	"github.com/bagherbal/asha-engine/pkg/geometry/g2"
 	"github.com/bagherbal/asha-engine/pkg/phase"
 	"github.com/bagherbal/asha-engine/pkg/theorem"
 )
@@ -17,6 +18,7 @@ func Run() error {
 		clifford.StructureTheorem(clifford.Signature{Positive: 1, Negative: 7}),
 		phase.CovariantPhaseSpaceTheorem(4),
 		boolean.IncidenceSupportTheorem(8, 3, 4),
+		g2.CalibrationSupportTheorem(),
 	)
 
 	results := registry.RunAll()

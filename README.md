@@ -43,3 +43,17 @@ Gate 3 — Boolean incidence support P_B
 Gate 4 — Octonionic G₂ calibration P_G
 Gate 5 — Contact vacuum K₇
 ```
+
+
+## v0.3 — Octonionic / G₂ Calibration Gate
+
+Adds the rank-14 G₂ matter-calibration support inside the middle chamber `Λ⁴R⁸`:
+
+- standard Fano convention for the associative 3-form `φ`;
+- coassociative Hodge-dual 4-form `*φ`;
+- construction of `M₁₄ᴳ = 7_t ⊕ 7_s`;
+- orthonormal calibration frame `Q_G`;
+- support projector `P_G = Q_G Q_Gᵀ`;
+- exact theorem checks for rank, trace, idempotence, and symmetry.
+
+The next gate is `K₇ = Im(P_B) ∩ Im(P_G)`.
