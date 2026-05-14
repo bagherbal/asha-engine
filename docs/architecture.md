@@ -1143,3 +1143,40 @@ Result: generic maps exist, but no canonical intertwiner is derived.
 - the contact spectral identity preserves contact diagnostics, but does not pull back matter-side `T3R` or chirality.
 
 Therefore contact hypercharge rows, threshold beta rows, physical electroweak constants, and masses remain sealed.
+
+## Gate 138 — Fock-Contact Kernel Selection / Operator-Intertwining Obstruction
+
+Package: `pkg/bridge/fockcontactkernel`
+
+Gate 138 upgrades Gate 137 from generic map counting to an operator-intertwining test. A rank-seven quotient
+
+```text
+P : H_Fock -> R7_contact
+```
+
+needs a nine-dimensional kernel. To transport a matter operator `A` to a contact operator `B`, the kernel must be invariant and the quotient must satisfy
+
+```text
+P A = B P
+```
+
+T3R invariance reduces the arbitrary Grassmannian search to eight spectral split patterns, and joint T3R/chirality invariance gives eighty split patterns. Both are still families; neither selects a unique kernel or a target contact operator.
+
+Therefore contact T3R, chirality, B-L, SU(2)L, hypercharge rows, threshold beta rows, and physical constants remain sealed.
+
+## Gate 139 — Contact Target-Operator Reconstruction / Quotient-Side T3R Spectrum Search
+
+Package: `pkg/bridge/contacttargetoperator`
+
+Gate 139 searches from the contact side instead of the Fock side. The seven contact partial-overlap modes define a canonical spectral diagonal diagnostic:
+
+```text
+[0.8975350788, 0.7440966380, 0.6666666667, 0.5000000000,
+ 0.4411227573, 0.3333333333, 0.2839121926]
+```
+
+This operator is real finite contact data, but it is not a quotient-side T3R operator. A T3R-like contact target would require assigning `+1/2` or `-1/2` to the seven contact rows. That gives eight abstract multiplicity splits and `2^7 = 128` row-sign assignments, of which `126` are non-scalar sign assignments. No Fock kernel, row-sign rule, or operator equation selects one.
+
+Therefore the canonical contact spectral diagonal remains diagnostic only. Contact T3R, chirality, B-L, SU(2)L, hypercharge rows, threshold beta rows, physical electroweak constants, and masses remain sealed.
+
+Next: Gate 140 — contact T3R sign-split naturality / spectral-cut obstruction theorem.
