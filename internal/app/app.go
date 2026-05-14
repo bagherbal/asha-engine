@@ -34,6 +34,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coloredoctetportal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/complexifiedhilbertspace"
+	"github.com/bagherbal/asha-engine/pkg/bridge/complexweightspacekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/conditionalrgbranch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/conditionalthresholdbeta"
@@ -512,6 +513,7 @@ func Run() error {
 		vectorrepresentative8v.VectorRepresentative8VScalarToVectorBundleMapAuditTheorem(),
 		neutraleigenspacekernel.NeutralEigenspaceKernelInvariant3PlaneAuditTheorem(),
 		adjointbivectoraction.AdjointBivectorActionExplicitQ8VMatrixAuditTheorem(),
+		complexweightspacekernel.ComplexWeightSpaceDecompositionNeutralKernelAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

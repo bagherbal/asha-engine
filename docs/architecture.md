@@ -4388,3 +4388,43 @@ neutral 3-plane from real bivector kernel: blocked
 v_tau and Spin(8) triality pullback: blocked
 Yukawa/CKM/PMNS: blocked
 ```
+
+## Gate 251 — Complex weight-space decomposition and `8_vC` neutral-kernel audit
+
+Gate 251 adds `pkg/bridge/complexweightspacekernel`.
+
+It responds to Gate 250's even-rank obstruction. A real bivector adjoint action on `8_v` is skew-adjoint, so an exact real three-dimensional neutral kernel is impossible through that route. Gate 251 therefore complexifies the vector carrier:
+
+```text
+8_vC = 8_v ⊗_R C
+```
+
+In this carrier, skew generators can be treated as Hermitian quantum generators via:
+
+```text
+H = iA
+```
+
+This moves the problem from real kernels to complex weight spaces, where odd-dimensional eigenspaces are allowed.
+
+The architecture now distinguishes four levels:
+
+```text
+1. real Clifford adjoint action exists for explicit bivectors;
+2. complex Hermitian weight-space decomposition is mathematically allowed;
+3. physical Q_8vC and Z_8vC matrices are still missing;
+4. neutral three-plane, v_tau, and triality/Yukawa pullback remain blocked.
+```
+
+Gate 251 also records a complex-triality preflight. The complexified Spin(8) modules `8_v⊗C`, `8_s⊗C`, and `8_c⊗C` belong to the correct triality arena, but the engine does not derive a canonical real-structure-compatible map from `8_vC` into the spinor/Fock carrier. This prevents promotion of `tau_eta` into a Yukawa-generation texture.
+
+Architectural status:
+
+```text
+complex route: opened
+Hermitian matrices: missing
+neutral kernel: not computed
+complex triality map: not canonical
+J compatibility: not checked
+finite flavor theorem: not derived
+```

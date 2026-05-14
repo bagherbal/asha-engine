@@ -344,3 +344,12 @@ When a later gate proposes a functor such as Spin(8) triality, first verify that
 - Track structural impossibility theorems: a real skew-adjoint bivector action on an 8D real carrier cannot have a 3D kernel.
 - If a desired eigenspace has odd dimension, consider whether the intended route should be a complex weight-space decomposition or a different representation functor, not a real bivector kernel.
 - Preserve downstream maps (`v_tau`, Spin(8) triality, Yukawa texture, CKM/PMNS) as blocked until the actual target-carrier representative exists.
+
+## Gate 251 method note — complexification removes one obstruction, not all of them
+
+- When a real skew-adjoint route fails by even-rank parity, complexification is a legitimate next audit, because quantum gauge charges live naturally as Hermitian operators on complex carriers.
+- Do not confuse “odd complex weight spaces are allowed” with “the physical neutral three-plane is derived.” The defining Hermitian operator must still be constructed.
+- Multiplying a known real candidate generator by `i` is meaningful only for a generator that has already been derived on the target carrier. It does not create `Q_8vC` or `Z_8vC`.
+- Complex Spin(8) triality is a representation-theoretic arena, not a canonical type-cast. Check the explicit automorphism, the target basis, and real-structure compatibility before transporting data from `8_vC` to spinors.
+- Keep the sequence strict: derive Hermitian Cartan matrices, compute the weight spaces, prove a canonical scalar-slot frame, construct `v_tau`, then test triality transport.
+- Preserve CKM/PMNS and Yukawa claims as blocked until the spinor endomorphism is actually constructed.

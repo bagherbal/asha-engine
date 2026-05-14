@@ -4114,3 +4114,72 @@ real 3D neutral kernel from bivector route: impossible
 v_tau: not constructed
 triality/Yukawa/CKM/PMNS: still blocked
 ```
+
+## v2.49 — Gate 251: Complex weight-space decomposition / 8vC neutral kernel audit
+
+Gate 251 adds `pkg/bridge/complexweightspacekernel` after Gate 250 proved that a real skew-adjoint bivector action on `8_v` cannot have an exact three-dimensional real kernel.
+
+The gate formalizes the correct quantum pivot:
+
+```text
+8_vC = 8_v ⊗_R C
+```
+
+On the complexified carrier, a real skew generator `A` can be converted into a Hermitian operator:
+
+```text
+H = iA
+```
+
+Hermitian weight spaces can have arbitrary multiplicity, including odd complex dimension. Therefore Gate 251 records:
+
+```text
+odd-dimensional complex neutral kernels are mathematically allowed.
+```
+
+This resolves the Gate-250 even-rank obstruction only in principle.
+
+The route still fails because the physical Hermitian matrices are not derived:
+
+```text
+Q_8vC: not derived
+Z_8vC: not derived
+Cartan weight spectrum: not derived
+ker(Q_8vC): not computed
+dim_C ker(Q_8vC)=3: not verified
+```
+
+Gate 251 also audits complex Spin(8) triality. It records that `8_v⊗C`, `8_s⊗C`, and `8_c⊗C` live in the correct complex triality arena, but it refuses to treat triality as a canonical type-cast:
+
+```text
+explicit triality map: not derived
+real-structure J compatibility: not derived
+neutral kernel image in spinor/Fock carrier: not derived
+```
+
+Gate 251 status:
+
+```text
+CONDITIONAL_SUPPORT_8V_COMPLEXIFICATION_PREFLIGHT
+CONDITIONAL_SUPPORT_HERMITIAN_WEIGHT_SPACE_CAPACITY
+CONDITIONAL_SUPPORT_ODD_COMPLEX_KERNEL_CAPACITY
+FAILED_ROUTE_NATIVE_HERMITIAN_Q8VC_MATRICES_UNAVAILABLE
+FAILED_ROUTE_COMPLEX_NEUTRAL_3PLANE_DERIVATION
+CONDITIONAL_SUPPORT_COMPLEX_TRIALITY_ARENA_PREFLIGHT
+FAILED_ROUTE_CANONICAL_COMPLEX_TRIALITY_ISOMORPHISM
+FAILED_ROUTE_REAL_STRUCTURE_COMPATIBILITY_DERIVATION
+FAILED_ROUTE_COMPLEX_WEIGHT_V_TAU_CONSTRUCTION
+FAILED_ROUTE_YUKAWA_TEXTURE_DERIVATION
+```
+
+Architectural status:
+
+```text
+real bivector 3-kernel route: impossible
+complex weight-space route: valid in principle
+native Q_8vC/Z_8vC matrices: missing
+neutral complex 3-plane: missing
+v_tau: missing
+J-compatible complex triality map: missing
+Yukawa/CKM/PMNS: blocked
+```
