@@ -10,6 +10,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomaly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomalykinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
+	"github.com/bagherbal/asha-engine/pkg/bridge/boundaryselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokenaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokengaugefields"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokengeneratornorm"
@@ -218,6 +219,7 @@ func Run() error {
 		canonicalboundary.CanonicalFiniteRGBoundarySeedTheorem(),
 		contactembedding.ContactMatterHyperchargeEmbeddingTheorem(),
 		rgfirewall.FiniteRGFlowBoundaryScaleFirewallTheorem(),
+		boundaryselector.BoundaryScaleOperatorAbsoluteCouplingSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

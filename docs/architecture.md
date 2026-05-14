@@ -312,3 +312,27 @@ L=ln(M*/μ), u=1/g_*²
 ```
 
 with `k_Y=5/3`, `b1=41/10`, `b2=-19/6`, and `b3=-7` under the explicitly stated continuum one-loop assumption.  The gate is a firewall theorem: it proves that the current project has a finite boundary seed and beta diagnostic, but still does not have a selected boundary scale `M*`, absolute boundary coupling `g_*²`, native finite RG theorem, or threshold/decoupling map.  Therefore no physical `alpha`, `thetaW`, `g2`, `gY`, W/Z mass, Higgs vev, or fermion mass may be claimed from the current data.
+
+## Gate 104 — Boundary-Scale Operator / Absolute Coupling Unit Search
+
+Gate 104 adds `pkg/bridge/boundaryselector`.  Gate 103 made the obstruction exact: after the finite embedded boundary seed and beta diagnostic are available, the formal RG family still contains the free data
+
+```text
+u = 1/g_*²,
+L = ln(M*/μ),
+Δb_i(L) threshold/decoupling map.
+```
+
+Gate 104 searches the available finite boundary/action operators for something that can select one of those missing objects.  The candidate inventory includes the embedded Hessian `K_*=diag(1,1,1,5/3)`, the matter hypercharge normalization `k_Y=5/3`, the boundary diagnostic `sin²_*=3/8`, the contact-index topological action seal `S_top=8π²`, the instanton-shaped weight `exp(-S_top)`, unit-trace coupling diagnostics, scalar radius, B-sector gap, contact leakage, and the one-loop beta vector.
+
+The result is a sharpened firewall theorem.  Every presently available candidate is either a valid dimensionless finite invariant or a convention-dependent diagnostic.  None carries physical mass/length units.  None derives the finite-to-continuum trace/action prefactor needed to fix `g_*²`.  None derives the boundary scale `M*`.  None derives the threshold activation schedule.
+
+The residual symmetries are now explicit:
+
+```text
+S_gauge -> c S_gauge              leaves relative finite Hessians unchanged
+M*, μ, threshold masses -> ρ(...) leaves all dimensionless finite data unchanged
+Δb_i schedules remain free         until a decoupling/matching operator is selected
+```
+
+Therefore Gate 104 does not claim `alpha`, physical `thetaW`, couplings, W/Z masses, Higgs scale, fermion masses, or a GUT/boundary scale.  The next true gate must construct a native finite coarse-graining / threshold activation operator, or a genuine dimensional anchor, before physical running can begin.
