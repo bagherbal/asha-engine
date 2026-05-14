@@ -147,6 +147,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeselection"
+	"github.com/bagherbal/asha-engine/pkg/bridge/executiveabstractclaimaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exponentialtauetatexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/faithfuloppositeactionrep"
 	"github.com/bagherbal/asha-engine/pkg/bridge/familyaxiomclosureledger"
@@ -844,6 +845,7 @@ func Run() error {
 		postflavorarchitectureboard.PostFlavorArchitectureConsolidationFinalLawSpaceBoardTheorem(),
 		publicationtheorematlas.PublicationGradeTheoremAtlasDependencyGraphExportTheorem(),
 		manuscriptskeletonexport.ManuscriptSkeletonSectionBySectionProofExportTheorem(),
+		executiveabstractclaimaudit.ExecutiveAbstractClaimAuditSummaryExportTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
