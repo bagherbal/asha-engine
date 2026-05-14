@@ -5149,3 +5149,36 @@ Tr(F†F)=32μ⁴(t²+t⁴),
 with only a trivial real saddle and positive-power `μ` scaling. It does not generate an inverse-`B_gap` action or the topological coefficient `4/π`.
 
 Architecturally, Gate 286 keeps Path C open but narrows the next obligation: the engine must derive a physical finite `D_F`, a `B_gap` Majorana/bilinear map, full finite-algebra representation with `J`, and a nontrivial finite action saddle before the intermediate scale can be upgraded from resonance to theorem.
+
+## Gate 287 — Topological Action Variational Principle Boundary
+
+Gate 287 is the first explicit top-down dynamics audit. It asks whether the exact finite topological action
+
+```text
+S_top = 8π²
+```
+
+can act as the missing variational selector for the amplitude branch, physical real structure `J`, cutoff moments, Higgs ratio, and B-gap instanton law.
+
+The formal constraint is:
+
+```text
+F4 a0 + F2 Tr(D_F²) + F0 Tr(D_F⁴) = 8π²,
+```
+
+with the scalar-Morita proxy:
+
+```text
+Tr(D_F²)=X(1+3r),
+Tr(D_F⁴)=X²(1+3r²).
+```
+
+The stationarity equation is:
+
+```text
+∂S/∂r = 3F2X + 6F0X²r.
+```
+
+This shows why the gate cannot yet promote the idea to a theorem. The action constraint is one scalar equation over free cutoff moments, the absolute `D_F` scale, field normalizations, and the still-missing physical spectral triple. It therefore cannot uniquely select `r_+` or `r_-`, cannot derive `J` as an extremum symmetry, and cannot compute `(4/π)/B_gap` as a finite instanton action.
+
+Architecturally, this gate unifies the Path-B and Path-C blockages: both now require a completed spectral-action moment/normalization theorem before dynamics can be claimed.

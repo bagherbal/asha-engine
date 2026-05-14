@@ -233,6 +233,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdspectrumseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topdownspectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
+	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalactionvariationalprinciple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalboundaryviability"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
@@ -584,6 +585,7 @@ func Run() error {
 		contactvacuumhopfaction.NativeContactVacuumHopfActionMapHiddenSectorOrderParameterAuditTheorem(),
 		finitehopfconnectioncurvature.FiniteHopfConnectionCurvatureChernSimonsBoundaryWindingAuditTheorem(),
 		finitencginstantonaction.FiniteSpectralActionSaddlePointBGapInstantonActionAuditTheorem(),
+		topologicalactionvariationalprinciple.TopologicalActionVariationalPrincipleBoundarySelectorAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

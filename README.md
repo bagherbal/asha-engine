@@ -5479,3 +5479,43 @@ FAILED_ROUTE_FINITE_TRACE_DOES_NOT_YIELD_INVERSE_BGAP_ACTION
 FAILED_ROUTE_FOUR_OVER_PI_NOT_GENERATED_BY_FINITE_SADDLE
 FAILED_ROUTE_FINITE_INSTANTON_ACTION_NOT_DERIVED_VIA_NCG
 ```
+
+## Gate 287 — Topological Action Variational Principle Boundary
+
+Gate 287 tests the proposed dynamical correction after the Gate-286 NCG saddle barrier: promote the exact finite topological action
+
+```text
+S_top = 8π²
+```
+
+from a diagnostic into a global spectral-action boundary constraint:
+
+```text
+S_total = F4 a0(D_F) + F2 a2(D_F) + F0 a4(D_F) = 8π².
+```
+
+Using the Gate-275 scalar-Morita moment model,
+
+```text
+Tr(D_F²) = X(1+3r),     X=|x|²
+Tr(D_F⁴) = X²(1+3r²),   r=|y/x|²,
+```
+
+the variational equation is:
+
+```text
+∂S/∂r = 3F2 X + 6F0 X²r,
+so r_* = -F2/(2F0 X).
+```
+
+This is a real dynamical equation, but it is not yet a selector. With unknown cutoff moments and unknown absolute Dirac scale, it remains underdetermined; with positive moments it does not select a positive nonzero `r`, and with arbitrary signed moments it can fit any `r`.
+
+The gate also verifies that the scalar shape derivative
+
+```text
+d/dr [(1+3r²)/(1+3r)²] = 6(r-1)/(1+3r)³
+```
+
+has its extremum at `r=1`, not at the Gate-275 branches. Therefore `S_top=8π²` does not currently select `r_+` or `r_-`, derive physical `J`, extract `f0:f2:f4`, or generate `(4/π)/B_gap`.
+
+Gate 287 keeps the proposal alive as a future top-down route, but records the present theorem status as bridge-required.
