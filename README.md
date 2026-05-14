@@ -4439,3 +4439,56 @@ FAILED_ROUTE_YUKAWA_TEXTURE_STILL_SEALED
 ```
 
 A scalar-only uniform `Y_phi` diagnostic does produce a three-slot pattern under `tau_even`, but Gate 257 rejects it because it is not the physical `Q=T3L+Y_phi`; it drops the `T3L` contribution. The next gate should therefore search for a genuine weak-plane/scalar-embedding selector, not another charge table or Witt dictionary.
+
+## Gate 258 — Weak-plane selector / B-L embedding orientation constraint audit
+
+Gate 258 adds `pkg/bridge/bminuslweakselector`.
+
+This gate applies the native `B-L` ledger as a genuine pre-kernel selector on the Gate-257 sealed witness space:
+
+```text
+B-L = -N_0 + (1/3)(N_1+N_2+N_3)
+```
+
+It treats this as the `1⊕3` Fock polarization:
+
+```text
+N_0          temporal / lepton slot
+N_1,N_2,N_3 spatial / quark orbit
+```
+
+The scalar/contact sieve requires the scalar embedding to preserve the spatial `S_3` orbit, reducing scalar candidates:
+
+```text
+8 → 2
+```
+
+The weak-frame sieve requires the weak pair to lie inside an equal `B-L` sector, rejecting temporal-spatial weak planes and reducing weak frames:
+
+```text
+12 → 6
+```
+
+Together:
+
+```text
+Q witnesses:       96 → 12
+triality branches: 3
+restricted scans:  36
+```
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_B_MINUS_L_LEDGER_RETRIEVED
+CONDITIONAL_SUPPORT_B_MINUS_L_SCALAR_EMBEDDING_SIEVE_REDUCED
+CONDITIONAL_SUPPORT_B_MINUS_L_WEAK_FRAME_SIEVE_REDUCED
+CONDITIONAL_SUPPORT_B_MINUS_L_RESTRICTED_TRIALITY_RESCAN_COMPLETED
+FAILED_ROUTE_B_MINUS_L_SPATIAL_WEAK_PLANE_DEGENERACY_REMAINS
+FAILED_ROUTE_B_MINUS_L_SCALAR_SIGN_DEGENERACY_REMAINS
+FAILED_ROUTE_B_MINUS_L_DOES_NOT_UNIQUELY_SELECT_EW_ORIENTATION
+FAILED_ROUTE_B_MINUS_L_SIEVE_NEUTRAL_3PLANE_NOT_DERIVED
+FAILED_ROUTE_YUKAWA_TEXTURE_STILL_SEALED
+```
+
+The important conclusion is precise: `B-L` is a real native selector, but it is not sufficient to derive the neutral three-plane. It reduces the sealed witness space from 96 to 12, then the restricted triality scan still finds zero exact three-plane witnesses.

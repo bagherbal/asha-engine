@@ -15,6 +15,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betamatching"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betapermission"
+	"github.com/bagherbal/asha-engine/pkg/bridge/bminuslweakselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/boundaryselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/branchprojector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/branchselector"
@@ -526,6 +527,7 @@ func Run() error {
 		carrierintertwiner.CarrierIntertwinerT3LYPhiRepresentationUnificationAuditTheorem(),
 		spontaneouscarrierseal.SpontaneousCarrierSealGaugeFixedEmbeddingAxiomAuditTheorem(),
 		sealedcarrierwitness.SealedCarrierEmbeddingDataWeakFrameTrialityBranchWitnessAuditTheorem(),
+		bminuslweakselector.WeakPlaneSelectorBMinusLEmbeddingOrientationConstraintAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

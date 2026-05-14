@@ -4632,3 +4632,37 @@ weak/scalar embedding selector: missing
 neutral 3-plane: not derived
 v_tau / Yukawa texture: still sealed
 ```
+
+## Gate 258 — Weak-plane selector / B-L embedding orientation constraint audit
+
+Gate 258 adds `pkg/bridge/bminuslweakselector` and registers `WeakPlaneSelectorBMinusLEmbeddingOrientationConstraintAuditTheorem`.
+
+The gate inherits the Gate-257 witness inventory and applies the native `B-L` Fock ledger as an independent compatibility sieve before inspecting triality kernels:
+
+```text
+B-L = -N_0 + (1/3)(N_1+N_2+N_3)
+```
+
+This ledger defines the native `1⊕3` split of the Fock carrier: mode `0` is separated from the spatial orbit `1,2,3`.
+
+The scalar sieve keeps only scalar embeddings that do not split the spatial `S_3` orbit. This reduces the eight scalar/contact witnesses to the two uniform sign mirrors.
+
+The weak-frame sieve keeps only weak planes that pair equal `B-L` sectors. This rejects temporal-spatial planes and keeps the six oriented spatial-spatial weak frames.
+
+The combined witness space is therefore reduced:
+
+```text
+96 Gate-257 Q witnesses → 12 B-L compatible Q witnesses
+36 restricted branch evaluations after applying the 3 triality branches
+```
+
+The restricted scan finds:
+
+```text
+exact polarized 3-plane witnesses: 0
+exact full Q_8vC 3-kernel witnesses: 0
+maximum polarized zero-slot dimension: 1
+maximum full 8_vC kernel dimension: 2
+```
+
+Therefore `B-L` is necessary structure but not the missing final selector. It proves that the next obstruction is inside the remaining spatial `S_3` weak-plane degeneracy and scalar sign/orientation degeneracy, not in the charge table or Witt dictionary.
