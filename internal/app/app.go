@@ -20,6 +20,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
+	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/higgspotential"
@@ -118,6 +119,7 @@ func Run() error {
 		condensate.CompositeHiggsCondensateDirectionAuditTheorem(),
 		looppotential.NativeOneLoopPotentialLedgerTheorem(),
 		loopoperator.FiniteLoopOperatorConstructionTheorem(),
+		topkernel.TopLikeOverlapKernelSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
