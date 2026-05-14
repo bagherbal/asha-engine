@@ -5063,3 +5063,25 @@ r_- ≈ 0.672051318208557, |y/x|_- ≈ 0.819787361581378
 ```
 
 Gate 275 does not claim a Higgs mass prediction. The scalar-Morita identification, branch selector, physical `J`, chiral hypercharge assignment, opposite action, and Seeley-de Witt projection remain open.
+
+## Gate 276 — Scalar-Morita Spectral Shape Bridge / Heat-Kernel Normalization Audit
+
+Gate 276 carries forward the Gate-275 scalar-Morita bridge:
+
+```text
+λ_contact = 1197/4624
+κ_C:κ_Q = 1:3
+(|x|⁴+3|y|⁴)/(|x|²+3|y|²)² = 1197/4624
+r = |y/x|² = (3591 ± 136√123)/3099
+```
+
+It confirms that the two exact branches are genuine finite shape candidates:
+
+```text
+r_+ ≈ 1.645470463011191, |y/x|_+ ≈ 1.282758926303454
+r_- ≈ 0.672051318208557, |y/x|_- ≈ 0.819787361581378
+```
+
+The gate then audits whether the branches can be promoted to a Seeley-de Witt `a₂/a₄` Higgs-ratio prediction. They cannot yet. Positivity, charge/anomaly ledgers, and the available finite data do not select a unique branch. The formal heat-kernel expansion is known, but the cutoff moments, subtraction scheme, scalar/gauge projection, field normalization, physical `J`, and full chiral hypercharge representation are still missing.
+
+Gate 276 therefore records conditional support for the finite scalar-Morita shape bridge and strict failed routes for branch selection, heat-kernel projection, `a₂/a₄`, and Higgs mass prediction.

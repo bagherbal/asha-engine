@@ -4962,3 +4962,27 @@ r = (3591 ± 136√123)/3099.
 ```
 
 This is conditional support for a scalar-Morita finite amplitude-shape bridge. It is not yet a Seeley-de Witt `a₂/a₄` theorem because the scalar-Morita identification, branch selector, physical `J`, hypercharge/chirality assignment, opposite action, and heat-kernel normalization remain un-derived.
+
+## Gate 276 — Scalar-Morita Spectral Shape Bridge / Branch Selector Boundary
+
+Gate 276 refines the dynamics branch after Gate 275. The scalar-Morita bridge is now a formal scale-free shape constraint:
+
+```text
+Gate 169 scalar/contact shape: λ_contact = 1197/4624
+Gate 273 Morita multiplicity: κ_C:κ_Q = 1:3
+r = |y/x|² = (3591 ± 136√123)/3099
+```
+
+This gives two exact finite branches for the lepton/quark Dirac edge-shape ratio. The result is not yet a physical Higgs prediction. The raw trace shape
+
+```text
+Tr(D_F⁴)/Tr(D_F²)²
+```
+
+is scale-free, while the spectral action requires a heat-kernel projection to physical coefficients:
+
+```text
+Tr(f(D/Λ)) ~ f₄Λ⁴ a₀ + f₂Λ² a₂ + f₀ a₄ + ...
+```
+
+The missing structures are branch selection, physical charge conjugation `J`, chiral hypercharge completion, cutoff moments, subtraction scheme, scalar/gauge projection, and field normalization. Until these are derived, `a₂/a₄` and the Higgs mass ratio remain behind a bridge-required firewall.
