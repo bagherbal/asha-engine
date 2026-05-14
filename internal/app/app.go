@@ -266,6 +266,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactioncapstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactioncouplingnormalization"
+	"github.com/bagherbal/asha-engine/pkg/bridge/spectralmomentledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spin8trialityfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spinctwistedchirality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spontaneouscarrierseal"
@@ -698,6 +699,7 @@ func Run() error {
 		pfaffianhierarchy.PfaffianHalfActionHierarchyFermionicFluctuationDeterminantTheorem(),
 		trialitygaussianmeasure.TrialityGaussianMeasureZeroModeNormalizationAuditTheorem(),
 		gravityspectralactionf2.GravitationalSpectralActionF2CutoffMomentSieveTheorem(),
+		spectralmomentledger.CompleteSpectralMomentLedgerCosmologicalConstantTripleHierarchyAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
