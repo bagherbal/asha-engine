@@ -199,6 +199,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/lietrialitypullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
+	"github.com/bagherbal/asha-engine/pkg/bridge/majoranaflavorsymmetrybreaking"
 	"github.com/bagherbal/asha-engine/pkg/bridge/masterstatusledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingcorrectionseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingresidualstructure"
@@ -704,6 +705,7 @@ func Run() error {
 		spectralmomentledger.CompleteSpectralMomentLedgerCosmologicalConstantTripleHierarchyAuditTheorem(),
 		vacuumparametercensus.VacuumParameterCensusMinimalInputTheoremAuditTheorem(),
 		spectralactionvariationalgradient.SpectralActionVariationalGradientPhaseIIIVacuumInitializationSieveTheorem(),
+		majoranaflavorsymmetrybreaking.NonUnitaryInvariantTextureSieveMajoranaFlavorSymmetryBreakingAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
