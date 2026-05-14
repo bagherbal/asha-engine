@@ -526,3 +526,48 @@ nullity after Gate 111  = 3
 ```
 
 The next true gate must decide the representation-or-constraint dichotomy and keep the beta-permission firewall closed until local field class, representation, activation, mass unit, and decoupling are all derived.
+
+## Gate 112 — Contact-Overlap Representation-or-Constraint Dichotomy / Beta-Permission Firewall
+
+Gate 112 adds `pkg/bridge/betapermission`. Gate 111 left the seven contact partial-overlap modes in a precise open state: positive finite-overlap data exists, but no local field map and no constraint/BRST complex exists. Gate 112 turns that state into an executable permission rule.
+
+A contact mode may enter threshold beta matching only through the physical branch:
+
+```text
+local spacetime support / bundle map
+→ Lorentzian quadratic kinetic action
+→ SU(3)c × SU(2)L × U(1)Y representation row
+→ pole/residue theorem
+→ physical mass unit
+→ activation predicate
+→ decoupling/matching rule
+→ permitted Δb_i row
+```
+
+A contact mode may instead be removed as nonphysical only through the constraint/BRST branch:
+
+```text
+constraint generator
+→ ghost grading
+→ nilpotent Q with Q² = 0
+→ BRST pair/quartet assignment
+→ supertrace/cancellation ledger
+→ proven zero contribution
+```
+
+Current finite data completes neither branch for any of the seven contact partial-overlap modes. Therefore all seven remain dichotomy-open and the beta-permission firewall stays closed:
+
+```text
+contact threshold beta rows allowed = 0
+contact zero rows proven           = 0
+resolved contact modes             = 0 / 7
+```
+
+The residual physical-flow nullity remains unchanged:
+
+```text
+nullity before Gate 112 = 3
+nullity after Gate 112  = 3
+```
+
+The next true gate must either construct a finite constraint complex or construct a local bundle/field map for the contact-overlap carrier. Until that happens, threshold-corrected `Δb_i(L)`, physical `alpha`, physical `thetaW`, `M*`, `g_*`, and masses remain sealed.

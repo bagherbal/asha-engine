@@ -11,6 +11,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomalykinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betamatching"
+	"github.com/bagherbal/asha-engine/pkg/bridge/betapermission"
 	"github.com/bagherbal/asha-engine/pkg/bridge/boundaryselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokenaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokengaugefields"
@@ -234,6 +235,7 @@ func Run() error {
 		modeclass.FiniteMassActivationClassClassifierTheorem(),
 		contactpropagator.ContactOverlapKineticSignLocalityPropagatorClassifierTheorem(),
 		contactfieldmap.ContactOverlapLocalFieldMapConstraintBRSTClassifierTheorem(),
+		betapermission.ContactOverlapRepresentationConstraintBetaPermissionFirewallTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
