@@ -133,3 +133,12 @@
 - Distinguish three levels: operator existence, BBN lifetime safety, and flavor/rare-decay safety.
 - Introduce a flavor seal only when exact rare-decay machinery is missing; never claim FCNC bounds are passed without Wilson matrices, basis choice, and matrix elements.
 - If a sector is forced to decay before BBN, log its present-day dark-matter contribution as zero for that sector and defer dark matter to a separate inventory audit.
+
+## Gate 225 method note — dark matter requires symmetry, scale, and history
+
+- After a sector is proven to decay before BBN, treat its present-day dark-matter abundance as zero and move the dark-matter question to a separate finite inventory audit.
+- Do not identify a dimensionless spectral scalar with an axion mass, decay constant, or relic abundance without a derived dimensionful scale.
+- For an ALP claim, require a shift symmetry, periodic coordinate, anomaly/Pontryagin coupling, and production mechanism before computing Ωh².
+- For a contact-mode dark-sector claim, require gauge-singlet semantics, a stability symmetry, a dark action, and mass/production laws; non-promotion to SM carriers is not enough.
+- Near loop-factor numerical values should be logged as diagnostics only. Never insert a coefficient to turn a finite scalar into a matching, mass, or relic-density fit.
+- Use the observed dark-matter abundance as a target for future validation, not as an input for deriving finite scales.

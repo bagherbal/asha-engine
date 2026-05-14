@@ -2896,3 +2896,57 @@ CONDITIONAL_PHENOMENOLOGY_FLAVOR_ALIGNMENT_SEAL_GRANTED
 HEAVY_SECTOR_DARK_MATTER_ABSENCE_THEOREM
 RELIC_DECAY_SEAL_PRESERVED_UNDER_FLAVOR_ALIGNMENT
 ```
+
+## v2.23 — Gate 225: Finite anchor Dark Matter viability / ALP and Dark Sector audit
+
+Gate 225 adds `pkg/bridge/finiteanchordm`. It inherits Gate 224's result that the sealed PeV threshold carriers decay before BBN and therefore contribute no present-day dark matter:
+
+```text
+Ω_heavy h² = 0
+```
+
+The gate then returns to unassigned finite inventory:
+
+```text
+B-sector first spectral gap = 0.1024649212
+seven contact partial-overlap modes
+```
+
+The ALP route is audited first. The B-gap is a real dimensionless finite spectral anchor, and its loop-scaled diagnostic value is:
+
+```text
+B_gap/(16π²) ≈ 0.000648866694
+```
+
+but this is not an axion theorem. The engine does not derive:
+
+```text
+continuous shift symmetry a → a + c
+compact periodic coordinate
+axion decay constant f_a
+instanton potential
+Pontryagin/anomaly coupling a F∧F
+gauge anomaly coefficient vector
+```
+
+The contact-mode route is also audited. The seven contact partial-overlap modes remain compatible future dark-sector anchors, but non-promotion to SM carriers is not the same as a derived stable gauge-singlet dark sector. The engine still lacks:
+
+```text
+gauge-singlet theorem
+stability symmetry
+dark-sector action
+mass scale
+self-interactions
+thermal or misalignment history
+```
+
+Therefore Gate 225 logs:
+
+```text
+FAILED_ROUTE_FINITE_ANCHOR_DARK_MATTER_DERIVATION
+FAILED_ROUTE_ALP_SHIFT_ANOMALY_SCALE_OBSTRUCTION
+FAILED_ROUTE_CONTACT_DARK_SECTOR_STABILITY_OBSTRUCTION
+HEAVY_SECTOR_DM_ABSENCE_REMAINS_BINDING
+```
+
+Dark matter remains an open problem. The finite anchors are not discarded; they are deferred until a future gate derives a shift generator, a stable singlet action, or a dimensionful dark scale without using the observed relic density as an input.

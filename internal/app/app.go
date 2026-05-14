@@ -103,6 +103,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierz"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierzsign"
 	"github.com/bagherbal/asha-engine/pkg/bridge/filtration"
+	"github.com/bagherbal/asha-engine/pkg/bridge/finiteanchordm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitebundlemap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitecarrieractivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitespectraltriple"
@@ -460,6 +461,7 @@ func Run() error {
 		eftdecayportal.EFTDecayPortalRelicDecaySealActivationAuditTheorem(),
 		coloredoctetportal.ColoredOctetPureSMPortalSearchSpectrumFalsificationAuditTheorem(),
 		flavoralignmentdmabsence.FlavorAlignmentSafetyDarkMatterAbsenceTheorem(),
+		finiteanchordm.FiniteAnchorDarkMatterViabilityAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

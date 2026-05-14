@@ -3429,3 +3429,68 @@ Heavy_Sector_Dark_Matter_Absence_Theorem
 ```
 
 The dark-matter problem is therefore shifted away from the PeV unification carriers and back to unassigned finite inventory: contact modes, the B-sector gap, sterile/Fock seeds, or a future finite neutral sector.
+
+## Gate 225 — Finite anchor dark matter viability and ALP/dark-sector obstruction
+
+Gate 225 adds `pkg/bridge/finiteanchordm`. It begins after Gate 224, where the PeV threshold sector was forced to decay before BBN under `RelicDecaySeal + FlavorAlignmentSeal`. That result closes the relic problem for the unification carriers but also proves that this heavy threshold sector has no present-day dark-matter abundance:
+
+```text
+Ω_heavy h² = 0
+```
+
+The dark matter question is therefore pushed back into finite inventory. Gate 225 audits the two most natural anchors:
+
+```text
+B-sector first spectral gap: 0.1024649212
+contact partial-overlap modes: 7
+```
+
+### B-sector ALP audit
+
+The B-sector gap is a dimensionless spectral scalar. Gate 225 asks whether it is already an axion-like particle. The required ALP structure would include:
+
+```text
+continuous or compact shift symmetry
+periodic coordinate
+axion decay constant f_a
+gauge anomaly coefficient
+Pontryagin coupling a F∧F
+instanton potential or mass law
+```
+
+None of these structures is derived. The near diagnostic
+
+```text
+B_gap/(16π²) ≈ 0.000648866694
+```
+
+is recorded only as a loop-scaled scalar. It is not promoted into a mass, decay constant, anomaly coefficient, or relic abundance.
+
+### Contact-mode dark-sector audit
+
+The seven contact partial-overlap modes are also audited as a possible sequestered dark sector. Earlier gates blocked their promotion to SM gauge threshold rows; Gate 225 emphasizes the inverse point: being unpromoted is not yet a proof of being stable gauge-singlet dark matter.
+
+The following data is still missing:
+
+```text
+gauge-singlet theorem
+stability symmetry
+local dark-field action
+mass scale or f_dark
+self-interaction law
+thermal freeze-out or misalignment production history
+```
+
+Thus the contact modes remain compatible future dark-sector anchors, but not a derived dark sector.
+
+### Misalignment and relic density firewall
+
+Gate 225 does not compute a relic density. Misalignment production requires at least an axion mass, a decay constant, an initial angle, and cosmological history. The B-gap is dimensionless and cannot dimensionalize itself. The observed relic abundance is not used to infer these missing quantities.
+
+Gate 225 records:
+
+```text
+FAILED_ROUTE_FINITE_ANCHOR_DARK_MATTER_DERIVATION
+```
+
+This failure preserves the firewall. It does not falsify dark matter as a requirement; it proves that the current finite anchors are not yet enough to derive it.
