@@ -135,6 +135,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcontactselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcovariant"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarfockspectralpotential"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalarfundamentalclass"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarorientationseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarorientationsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
@@ -396,6 +397,7 @@ func Run() error {
 		scalarorientationsource.EtaOddScalarOrientationSourceMatterPullbackSearchTheorem(),
 		scalarorientationseal.SpontaneousScalarOrientationSealGaugeFixedHphiTrivializationTheorem(),
 		scalarchernweiltaudit.SealedScalarBundleChernWeilCarrierHeatKernelPreflightTheorem(),
+		scalarfundamentalclass.FiniteFundamentalClassScalarBundleIntegrationFunctionalSearchAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
