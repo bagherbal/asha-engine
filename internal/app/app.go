@@ -266,6 +266,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1nonfactor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1orientation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1source"
+	"github.com/bagherbal/asha-engine/pkg/bridge/unificationtraceledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/universalbetasource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/universaltracedeformation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/vectorrepresentative8v"
@@ -626,6 +627,7 @@ func Run() error {
 		scalarheatkernelsubtraction.ScalarHeatKernelSubtractionHiggsPotentialChannelSeparationAuditTheorem(),
 		scalarquarticchannel.ScalarQuarticChannelExtractionDimensionlessCouplingSieveAuditTheorem(),
 		tracesynthesiscarrierequivalence.RawTraceSynthesisCarrierEquivalenceQuarticKineticRatioAuditTheorem(),
+		unificationtraceledger.UnificationTraceLedgerHiggsQuarticUnificationBoundaryAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
