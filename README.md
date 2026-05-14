@@ -1400,3 +1400,73 @@ conditional nullity: 3 -> 2
 No observed coupling is inserted. No physical low-energy alpha, physical weak angle, boundary scale, threshold correction, or mass is claimed.
 
 Next gate: Gate 175 — finite-to-continuum instanton trace-normalization bridge.
+
+## v1.73 — Gate 175: Finite-to-continuum instanton trace-normalization bridge
+
+Gate 175 adds `pkg/bridge/instantontracebridge`.
+
+Gate 174 found a clean conditional branch:
+
+```text
+S_YM(k=I_BG) = 8π² I_BG / g_*²
+S_top        = 8π² I_BG
+I_BG         = 1
+
+conditional u = 1/g_*² = 1
+conditional nullity: 3 -> 2
+```
+
+Gate 175 asks whether this conditional branch can be promoted into a strict theorem by deriving the two missing bridges:
+
+```text
+1. finite contact index -> continuum Yang-Mills / Chern-Weil topological charge
+2. finite trace/Hessian form -> continuum kinetic trace normalization
+```
+
+The gate audits five continuum-index requirements:
+
+```text
+oriented continuum four-cycle
+principal gauge bundle
+continuum connection curvature F
+Chern-Weil normalization
+integer charge orientation/unit
+```
+
+and five trace/kinetic requirements:
+
+```text
+relative representation trace
+absolute finite Hilbert trace scale
+continuum kinetic inner product
+continuum generator trace convention
+coupling-placement convention
+```
+
+Only the relative representation trace is fully canonical. The finite engine still lacks a canonical continuum four-manifold/bundle/connection, a Chern-Weil trace normalization, a Hodge/kinetic integral normalization, and an absolute finite action scale.
+
+Gate 175 also quarantines the shortcut routes:
+
+```text
+direct S_top = unit instanton action: conditional only
+representation trace normalization: ratio only, not absolute f0
+canonical action Hessian: selects boundary ratio, not continuum unit
+SU(2) generator closure: fixes algebra, not continuum trace scale
+observed coupling fit: forbidden
+```
+
+The result is a clean obstruction:
+
+```text
+Status: FAILED_ROUTE
+conditional u=1 branch: preserved
+strict finite-to-continuum instanton bridge: not derived
+strict absolute coupling: not derived
+strict nullity: 3 -> 3
+conditional nullity: 3 -> 2
+physical alpha / masses / thresholds / boundary scale: not derived
+```
+
+This means the topological normalization branch is useful but quarantined. It can be studied as a conditional RG branch, but it is not yet a derived physical coupling.
+
+Next gate: Gate 176 — conditional RG boundary-scale solvability audit under the quarantined `u=1` branch.

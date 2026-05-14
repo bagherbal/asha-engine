@@ -2218,3 +2218,56 @@ physical alpha / masses / thresholds / RG scale: not derived
 ```
 
 Next gate: Gate 175 — finite-to-continuum instanton trace-normalization bridge.
+
+### Gate 175 — finite-to-continuum instanton trace-normalization bridge
+
+Package: `pkg/bridge/instantontracebridge`
+
+Gate 175 directly audits the two missing identifications isolated by Gate 174. The finite topological seal and representation-trace boundary ratio are exact finite data, but promoting the conditional branch `u=1/g_*²=1` into a physical coupling theorem requires a continuum bridge.
+
+The required continuum-index data are:
+
+```text
+1. oriented continuum four-cycle
+2. principal gauge bundle
+3. continuum connection curvature F
+4. Chern-Weil normalization
+5. integer charge orientation/unit
+```
+
+The required kinetic-trace data are:
+
+```text
+1. relative representation trace
+2. absolute finite Hilbert trace scale
+3. continuum kinetic inner product
+4. continuum generator trace convention
+5. coupling-placement convention
+```
+
+Gate 175 finds that the representation trace is canonical only as a relative ratio. It closes `diag(1,1,1,5/3)` and `sin²_* = 3/8`, but it does not fix the absolute action prefactor. Multiplying the full finite action by a scalar leaves the relative gauge ratio unchanged.
+
+Shortcut routes are rejected or quarantined:
+
+```text
+S_top = unit instanton action          -> conditional matching rule
+K_rep trace                            -> relative gauge ratio only
+Gate 100/102 Hessian                   -> relative boundary seed only
+SU(2) generator algebra                -> closure/ratio only
+observed coupling fit                  -> forbidden
+```
+
+Gate 175 status:
+
+```text
+Status: FAILED_ROUTE
+conditional absolute coupling branch: preserved
+strict finite-to-continuum index bridge: not derived
+strict trace/kinetic normalization bridge: not derived
+strict absolute coupling: not derived
+strict nullity: 3 -> 3
+conditional nullity: 3 -> 2
+physical constants: not derived
+```
+
+The topological branch is therefore mathematically meaningful but quarantined. Future gates may analyze what follows under that conditional assumption, but must keep the strict theorem ledger separate.

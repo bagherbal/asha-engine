@@ -102,6 +102,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugekineticdiag"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/instantontracebridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
@@ -360,6 +361,7 @@ func Run() error {
 		trialitytexturelift.TrialityLiftedYukawaTextureOperatorSearchTheorem(),
 		noncommutingtexturepair.FiniteNonCommutingTexturePairSearchTheorem(),
 		topologicalnormalization.SpectralActionTopologicalNormalizationTheorem(),
+		instantontracebridge.FiniteToContinuumInstantonTraceNormalizationBridgeTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
