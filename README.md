@@ -467,3 +467,11 @@ Adds Gate 93, which normalizes the neutral broken generator by 1/2, isotropizes 
 ## v0.94 — Gate 95 Broken-Sector Action Second Variation
 
 Adds `pkg/bridge/brokenaction`, which audits whether the raw-coordinate kinetic candidate `diag(1,1,4)` is selected by a finite scalar/gauge action second variation. The gate preserves the Gate 94 result that `diag(1,1,4)` exactly whitens the broken-generator image metric, but it refuses to promote that diagnostic to a physical gauge kinetic Hessian until finite gauge-field variables, scalar kinetic action, curvature/field-strength term, and `δ²S` are derived.
+
+## v0.95 — Finite broken gauge-field variables / curvature search
+
+Gate 96 adds `pkg/bridge/brokengaugefields`. Gate 95 identified `diag(1,1,4)` as the raw-coordinate Hessian candidate that whitens the broken-generator image metric, but it could not be selected by an action because broken gauge-field variables and a field-strength term were absent.
+
+Gate 96 types the broken gauge variables `{W1, W2, Z_raw}` and audits their closure. The crucial result is that the broken sector alone is not closed: `[T1,T2]=T3=(Z+Q)/2`, so the electromagnetic direction `Q=T3+Y_phi` is required in any finite curvature construction. The next action must therefore be a full electroweak connection curvature term, not a broken-only curvature term.
+
+Current result: typed finite gauge variables exist, but the finite field-strength action and second variation remain open. No physical coupling, weak angle, alpha, or W/Z mass is claimed.

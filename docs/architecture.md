@@ -134,3 +134,9 @@ field-coordinate basis this exposes the diagnostic kinetic candidate
 `diag(1,1,4)`.  The engine records this as a canonical diagnostic extracted
 from the broken-image metric, but not as a physical gauge kinetic Hessian until
 a finite action second variation selects it.
+
+## Gate 96 — Finite Broken Gauge Field Variables / Curvature Term Search
+
+Gate 96 upgrades the broken-sector diagnostic into typed gauge-field variables.  The broken variables are `W1`, `W2`, and `Z_raw=T3-Y_phi`; the unbroken electromagnetic variable is `A_em` along `Q=T3+Y_phi`.
+
+The closure audit shows that the broken variables alone are not a curvature carrier: `[T1,T2]=T3=(Z+Q)/2`, so the electromagnetic direction cannot be discarded when constructing a finite field strength.  The result redirects the next gate toward the full electroweak connection `{T1,T2,Z,Q}` and forbids treating `diag(1,1,4)` as action-selected before a full finite curvature term and second variation are derived.
