@@ -124,6 +124,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncommutingtexturepair"
+	"github.com/bagherbal/asha-engine/pkg/bridge/nonuniversalrgfit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/normalizationthresholdaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/o3quotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
@@ -430,6 +431,7 @@ func Run() error {
 		sealedthresholdstresstest.SealedThresholdPredictionStressTestTheorem(),
 		baryonleptonoperatoraudit.BaryonLeptonViolatingOperatorBasisAuditTheorem(),
 		leptoquarkdynamicsseal.LeptoquarkDynamicsSealBaryonConservationTheorem(),
+		nonuniversalrgfit.NonUniversalRationalLatticeRGFitAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

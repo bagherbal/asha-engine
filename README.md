@@ -2286,3 +2286,39 @@ As long as the LeptoquarkDynamicsSeal holds, the current connection plus dormant
 This is a sealed conditional theorem, not an unsealed absolute all-future baryon-conservation proof. No `SU(5)`, `SO(10)`, or Pati-Salam gauge dynamics are imported. No leptoquark mass, propagator, suppression scale, or proton lifetime is computed.
 
 Next structural obligation: Gate 210 — sealed baryon-stable threshold sector / non-universal deformation viability without universal Landau-pole completion.
+
+
+## v2.08 — Gate 210: Non-universal rational lattice RG fit / sub-Planck asymptotic safety audit
+
+Gate 210 adds `pkg/bridge/nonuniversalrgfit`.
+
+After Gate 207 falsified the external universal beta-row completion through sub-Planck Landau poles, and Gate 209 sealed dormant leptoquark current dynamics, Gate 210 reopens the inverse threshold problem using only the exact rational Gate-204 representation-row lattice.
+
+The gate refuses universal beta rows, arbitrary real coefficients, imported unified groups, proton-decay mediators, or fitted matching corrections. It filters the 158 unique rational row generators into anomaly-safe, leptoquark-seal-compatible nonzero search rows and then audits whether a single threshold can close the mismatch triangle at `u_* = 1`.
+
+The main result is an exact obstruction. For a single rational threshold row `Δb`, closure requires:
+
+```text
+det(b_SM, Δb, 2πA - 8π²1) = 0
+```
+
+Since `A`, `b_SM`, and `Δb` are rational while the topological boundary contains exact `π`, this splits into rational determinant constraints. Because:
+
+```text
+det(b_SM, 1, A) = -7165690553429 / 176850000000 ≠ 0
+```
+
+exact closure forces `Δb` onto the SM beta-vector ray. But `b_SM = (41/10, -19/6, -7)` has negative non-Abelian components, while the threshold-row lattice is a nonnegative semigroup. Therefore no nonzero rational lattice sum can close the triangle exactly at one scale.
+
+The bounded search audits 6,210,819 combinations up to four carriers. It finds zero exact closure candidates. It does find asymptotically safe near-misses, but they retain nonzero residuals and are not promoted.
+
+The theorem records:
+
+```text
+FAILED_ROUTE_EXACT_SINGLE_SCALE_RATIONAL_LATTICE
+BOUNDED_OPTIMAL_NEAR_MISS_ONLY
+```
+
+No `M_B`, `M_*`, physical unification, or threshold-corrected fit is emitted.
+
+Next structural obligation: Gate 211 — multi-threshold rational lattice deformation or matching-correction obstruction audit.

@@ -30,3 +30,4 @@
 - Distinguish current-connection stability from absolute baryon conservation. If quark-lepton current slots exist but lack an action/propagator/coefficient, record an operator-construction obstruction, not an all-future conservation theorem.
 - For dormant-current gates, separate inventory from dynamics. A current slot becomes dangerous only after curvature/action/local-field/propagator/mass/coefficient semantics are derived or explicitly sealed.
 - When sealing a dormant threat surface, state what the seal forbids operationally and what future theorem could lift it. The seal must not rewrite the native failed route.
+- For rational RG-lattice gates, check exact determinant/field-structure obstructions before brute-force search; use bounded enumeration only as supporting evidence, never as the sole proof of an infinite semigroup no-go.

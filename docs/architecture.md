@@ -2947,3 +2947,22 @@ As long as the LeptoquarkDynamicsSeal holds, the current connection plus dormant
 This theorem is conditional on the seal. It does not claim unsealed absolute baryon conservation and does not compute a proton lifetime.
 
 Next structural obligation: Gate 210 — sealed baryon-stable threshold sector / non-universal deformation viability without universal Landau-pole completion.
+
+
+## Gate 210 — Non-universal rational lattice RG fit
+
+Gate 210 sits after the proton-stability seal and before any renewed numerical prediction. It tests whether the exact rational representation-row lattice can heal the Gate-200 mismatch triangle without the Gate-207-falsified universal beta row.
+
+Architectural placement:
+
+```text
+Layer 4: Rational row grammar          → Gate 204
+Layer 5: Carrier activation seal       → Gate 206
+Layer 6: Phenomenological stress test  → Gate 207
+Layer 7: Proton/operator seal          → Gates 208–209
+Layer 8: Non-universal lattice search  → Gate 210
+```
+
+Gate 210 proves an exact single-scale obstruction. With rational Z-pole ledger values and rational row-lattice beta vectors, exact closure at the topological `alpha_*^-1 = 4π` boundary would require rational determinant data to equal a nonzero multiple of `π`. The determinant split forces the deformation row onto the SM beta ray, which is incompatible with the nonnegative threshold semigroup.
+
+Thus the engine learns that the mismatch triangle cannot be repaired by one rational non-universal threshold. This protects the project from replacing the failed universal beta row with a disguised near-fit. The next architectural branch must either introduce multiple threshold scales, derive finite matching corrections, or prove a stronger obstruction.
