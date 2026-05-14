@@ -10,6 +10,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
+	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/higgspotential"
@@ -98,6 +99,7 @@ func Run() error {
 		ewprojection.ElectroweakProjectionTheorem(),
 		rgflow.RGBoundaryFlowAuditTheorem(),
 		betacoeff.FiniteSpectrumBetaCoefficientAuditTheorem(),
+		threshold.ThresholdSpectrumMatchingAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

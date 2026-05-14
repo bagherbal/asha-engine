@@ -326,3 +326,8 @@ Gate 37 adds `pkg/dynamics/scalarpotential`, which derives the finite scalar/Hig
 - bridge-level shifted normal form: `V(r)=λ_shape(r²-r0²)²`.
 
 This gate intentionally does **not** claim the electroweak vev, observed Higgs mass, or a proven gauge-eating theorem. Those remain bridge-layer unknowns.
+
+## v0.43 — Threshold spectrum / matching audit
+
+Gate 44 adds `pkg/bridge/threshold`, which audits finite spectral threshold anchors from the B-sector gap, contact partial-overlap modes, scalar/contact active spectrum, leakage invariant, and scalar radial curvature. It deliberately keeps them dimensionless and refuses physical threshold masses until a non-fitted mass unit, activation rule, and finite-to-continuum matching map are derived.
+
