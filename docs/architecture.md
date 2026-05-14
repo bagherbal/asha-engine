@@ -4179,3 +4179,47 @@ global H summand: still unselected
 ```
 
 Gate 245 narrows the missing theorem. It is no longer enough to cite a Lie algebra analogy; the engine needs either an explicit `H_Phi -> W` representation functor, or a future seal admitting the scalar-to-spatial projection as phenomenological boundary data rather than finite derivation.
+
+## Gate 246 — Scalar bundle to triality pullback and Yukawa generation texture audit
+
+Gate 246 adds `pkg/bridge/scalartrialitytexture` after the Gate 245 scalar-to-spatial carrier projection no-go.
+
+The architectural correction is decisive: the scalar fundamental class is not a spatial-axis object. Its source operators are neutral electroweak scalar-bundle observables. Therefore the correct target is the Yukawa/flavor sector, where scalar-bundle data is physically relevant.
+
+Gate 246 audits the conditional operator
+
+```text
+D_tau = diag(2, -2, 1)
+```
+
+on the three-dimensional triality generation carrier. If a lawful `H_Phi -> Generation` pullback existed, this operator would:
+
+```text
+- split generation triality as 1+1+1
+- act as a self-adjoint diagonal generation-breaking spurion
+- fail to commute with triality permutations
+- satisfy the kind of non-commuting texture-capacity target isolated in Gate 173
+```
+
+The audit computes this as capacity only. The scalar-to-triality functor is still missing. Consequently the following remain un-derived:
+
+```text
+Yukawa matrices
+fermion mass amplitudes
+CKM matrix
+PMNS matrix
+finite flavor theorem
+```
+
+Architectural status:
+
+```text
+H_Phi scalar origin: known
+triality generation carrier: known
+three-distinct tau_eta eigenvalues: known
+non-commuting triality capacity: known
+H_Phi -> triality endomorphism: missing
+qualified Yukawa texture source: missing
+```
+
+Gate 246 therefore relocates the next frontier from weak-plane selection to scalar-to-flavor representation theory. The missing theorem is a lawful representation functor turning scalar-bundle trace data into a generation-carrier endomorphism without importing observed masses or mixing angles.

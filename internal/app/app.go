@@ -177,6 +177,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarorientationsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarsu2"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalartrialitytexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalaryukawasupport"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sealedthresholdstresstest"
@@ -502,6 +503,7 @@ func Run() error {
 		cliffordpullback.CliffordActionPullbackTauEtaEndomorphismAuditTheorem(),
 		characteristicpullback.CharacteristicClassOperatorToModePullbackAuditTheorem(),
 		liecarrierprojection.LieAlgebraIsomorphismScalarToSpatialCarrierProjectionAuditTheorem(),
+		scalartrialitytexture.ScalarBundleToTrialityPullbackYukawaGenerationTextureAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -3844,3 +3844,57 @@ carrier projection theorem: no
 ```
 
 The weak-plane and generation-breaking capacities remain visible, but no exterior representative, weak plane, global `H`, or generation texture is derived.
+
+## v2.44 — Gate 246: Scalar bundle to triality pullback / Yukawa generation texture audit
+
+Gate 246 adds `pkg/bridge/scalartrialitytexture` after Gate 245 proved that `tau_eta=(2,-2,1)` is not a spatial weak-plane selector.
+
+The gate accepts the corrected destination of `tau_eta`: it is a neutral electroweak scalar-bundle trace invariant, so its natural possible role is flavor texture, not spatial orientation. The inherited source records remain:
+
+```text
+tau_eta(Q^T Q)        =  2
+tau_eta(Z^T Z)        = -2
+tau_eta(T3L^T Y_phi)  =  1
+```
+
+Gate 246 audits the conditional diagonal generation operator:
+
+```text
+D_tau ?= diag(2, -2, 1)
+```
+
+This object would have exactly three distinct eigenvalues, splitting generation triality as `1+1+1`. It would also not commute with the canonical triality cycle/reflection, giving precisely the kind of non-commuting generation-breaking capacity that Gate 173 identified as missing for Yukawa/CKM/PMNS structure.
+
+However, the binding obstruction remains categorical:
+
+```text
+H_Phi scalar trace functional -> generation-carrier endomorphism
+```
+
+is not derived. Therefore `D_tau` is not promoted to a finite Yukawa texture.
+
+Gate 246 status:
+
+```text
+CONDITIONAL_SUPPORT_SCALAR_BUNDLE_ORIGIN_INHERITED
+CONDITIONAL_SUPPORT_TAU_ETA_GENERATION_BREAKING_CAPACITY
+CONDITIONAL_SUPPORT_TAU_ETA_TRIALITY_NONCOMMUTING_CAPACITY
+FAILED_ROUTE_SCALAR_TO_TRIALITY_PULLBACK
+FAILED_ROUTE_TAU_ETA_YUKAWA_TEXTURE_DERIVATION
+FAILED_ROUTE_CKM_PMNS_DERIVATION
+FAILED_ROUTE_FERMION_MASS_DERIVATION
+YUKAWA_AMPLITUDE_SEAL_REMAINS_BINDING
+```
+
+The theorem distinction is now:
+
+```text
+tau_eta is scalar/Higgs-sector flavor-relevant: yes
+tau_eta has 1+1+1 generation-breaking capacity: yes
+tau_eta has non-commuting triality-texture capacity: yes
+scalar-to-triality pullback derived: no
+Yukawa matrices derived: no
+fermion masses / CKM / PMNS derived: no
+```
+
+This is a major relocation of the obstruction. The engine no longer tries to use `tau_eta` to select the weak plane. It recognizes `tau_eta` as a potential scalar-to-flavor texture source, while preserving the firewall until the carrier functor is derived or explicitly sealed.
