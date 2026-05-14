@@ -941,3 +941,18 @@ The next gate should test whether a source-current dual pairing can provide a na
 ### Gate 125 — contact dual-current target enlargement / seven-row carrier search
 
 Gate 125 tests whether the current/source target can be enlarged to a genuine seven-row contact carrier. The existing derived targets fail dimensionally or semantically: the uniform scalar target is 1D and row-blind, the contact electroweak block is 4D, the typed u(4)/Pati-Salam current inventory is 16D without a selected projection to seven, and the leptoquark current sector is 6D. Three seven-row carriers can be named — spectral R^7, anonymous contact R^7, and Fano R^7 — but none is a derived dual-current target. The spectral carrier is diagnostic only, the anonymous carrier stores cardinality without semantics, and the Fano carrier requires one of 7! hidden contact-to-Fano labelings. Therefore the contact beta firewall remains closed.
+
+### Gate 126 — contact seven-row target projection / u(4)-to-contact quotient obstruction
+
+Gate 126 tests whether the sixteen-dimensional `u(4)` / Pati-Salam current carrier can be projected or quotiented into the seven unresolved contact rows. Abstract rank-seven maps `u(4) -> R^7_contact` exist, but they carry a nine-dimensional kernel and a continuous family of coefficient choices; no finite action, source functional, quotient relation, representation rule, or naturality condition selects one. Dimension-seven current-side sector sums such as `central + leptoquark` and `B-L + leptoquark` have the right cardinality, but they are Pati-Salam matter-current subspaces, not contact-row semantics. Quotienting `su(3)c` from eight generators to seven would require choosing a generator/direction to remove, and the spectral/Fano seven-row carriers are not derived quotients of `u(4)`.
+
+Therefore the contact beta firewall remains closed:
+
+```text
+u(4)->contact projection derived = false
+u(4)->contact quotient derived   = false
+representation-complete rows     = 0 / 7
+contact beta rows allowed        = 0
+```
+
+The next gate should search for a canonical kernel or quotient relation on the `u(4)` current carrier before any seven-row contact projection can be trusted.
