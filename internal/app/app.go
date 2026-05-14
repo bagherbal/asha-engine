@@ -5,6 +5,7 @@ import (
 
 	"github.com/bagherbal/asha-engine/internal/report"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
+	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
 	"github.com/bagherbal/asha-engine/pkg/exterior"
 	"github.com/bagherbal/asha-engine/pkg/geometry/boolean"
 	"github.com/bagherbal/asha-engine/pkg/geometry/contact"
@@ -21,6 +22,7 @@ func Run() error {
 		boolean.IncidenceSupportTheorem(8, 3, 4),
 		g2.CalibrationSupportTheorem(),
 		contact.ContactSpaceTheorem(),
+		bsector.ContactVacuumTheorem(),
 	)
 
 	results := registry.RunAll()

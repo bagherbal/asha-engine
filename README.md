@@ -68,3 +68,14 @@ K = Im(P_B) ∩ Im(P_G)
 ```
 
 It verifies the contact projector `P_K`, containment inside both `P_B` and `P_G`, the finite contact index `I_BG`, and reports the bare contact leakage invariant `L_BG = ||P_B P_G - P_K||_F` without identifying it with the cosmological constant.
+
+## v0.5 — B-sector dynamical vacuum gate
+
+This version adds the first variational theorem gate:
+
+```text
+O_B = Wᵀ(I − P_G)W
+S_B[b] = ||(I − P_G)Wb||² = bᵀO_Bb
+```
+
+The engine verifies that the kernel of `O_B` has dimension 7 and equals the Boolean-coordinate image of the contact space `K = Im(P_B) ∩ Im(P_G)`. This upgrades the contact space from a static intersection to a finite zero-energy sector. No physical constants are inferred from this gate.
