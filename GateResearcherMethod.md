@@ -160,3 +160,12 @@
 - Keep “bracketing” and “matching” distinct: `Λ_EFT < M_int < f_a` is stronger than both scales merely being within one decade, but still conditional.
 - Do not reopen sealed leptoquark or Pati-Salam dynamics just because the intermediate scale is suggestive. Existing seals remain active until a gate derives the missing curvature/action/propagator data.
 - Treat resonance gates as target-selection gates: they identify where to search next, not what has already been proven.
+
+## Gate 228 method note — test lethal baryon channels before building intermediate symmetry
+
+- When an intermediate scale is identified, run proton-decay and baryon-violation kill-switches before constructing elegant common-origin models.
+- Temporarily unseal a dangerous mediator only for a bounded falsification estimate; do not treat that as restored dynamics or a finite theorem.
+- Keep `B-L` separate from proton safety. Dimension-six proton-decay operators can preserve `B-L`, so the relevant question is mediator/action/operator existence and mass scale.
+- For non-perturbative hierarchy searches, distinguish three levels: functional shape, target coefficient, and finite-derived coefficient. Only the third can grant a native mechanism.
+- Near-resonances such as `c≈4/π` should be logged as diagnostics unless the finite algebra derives the coefficient through an action, trace, volume, or instanton normalization.
+- A hidden-sector route can be favored by falsifying baryon-unsafe routes, but that still does not derive the hidden order parameter or breaking potential.

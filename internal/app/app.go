@@ -126,6 +126,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/inputsensitivityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/instantontracebridge"
+	"github.com/bagherbal/asha-engine/pkg/bridge/intermediatebreakingaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/inversebsectordeformation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/leptoquarkdynamicsseal"
@@ -466,6 +467,7 @@ func Run() error {
 		finiteanchordm.FiniteAnchorDarkMatterViabilityAuditTheorem(),
 		axionphenomenologyseal.AxionPhenomenologySealBGapMisalignmentScaleAuditTheorem(),
 		geometricmeanresonance.GeometricMeanIntermediateResonanceAuditTheorem(),
+		intermediatebreakingaudit.PatiSalamFalsificationBSectorHierarchyAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

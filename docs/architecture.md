@@ -3579,3 +3579,61 @@ leptoquark curvature and propagators
 ```
 
 Thus the intermediate scale is a powerful phenomenological resonance and a target for Gate 228, not a derived native scale.
+
+## Gate 228 — Intermediate breaking kill-switch and hidden-sector hierarchy target
+
+Gate 228 adds `pkg/bridge/intermediatebreakingaudit` after the geometric-mean resonance layer.
+
+The architecture now treats `M_int` as a dangerous intermediate scale requiring a baryon-safety kill-switch before any model-building route is accepted.
+
+The first branch tests the dormant `u(4)` leptoquark / Pati-Salam interpretation by assigning the leptoquark mediator mass
+
+```text
+M_LQ = M_int = 6.65072648e11 GeV
+```
+
+only for a dimension-six proton-decay stress estimate. The result is
+
+```text
+τ_p ≈ 8.86e17 years
+```
+
+which is catastrophically below the `1e34 year` stress bound. This architecture branch is therefore closed:
+
+```text
+intermediate Pati-Salam breaking → FAILED_ROUTE
+```
+
+The second branch keeps the intermediate scale hidden and tests the finite B-sector gap:
+
+```text
+B_gap = 0.1024649212
+M_hidden = M_* exp(-c/B_gap)
+```
+
+The exact target coefficient is
+
+```text
+c_req = 1.277138298532
+```
+
+and the diagnostic coefficient `4/π` lands very close to the geometric-mean scale. This makes the B-sector a strong target for a hidden non-perturbative hierarchy mechanism.
+
+However, no finite theorem currently derives:
+
+```text
+c
+B-sector instanton action
+hidden order parameter
+intermediate breaking potential
+axion shift-breaking mechanism
+EFT mediator origin
+```
+
+Therefore `IntermediateBreakingSeal` is prepared but not granted. The architectural status is:
+
+```text
+Pati-Salam/u4 route: falsified at M_int by proton decay
+B-sector route: structurally plausible but not derived
+intermediate breaking: still sealed/missing
+```

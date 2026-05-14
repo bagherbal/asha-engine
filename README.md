@@ -3033,3 +3033,65 @@ PATI_SALAM_ROUTE_QUARANTINED_BY_LEPTOQUARK_DYNAMICS_SEAL
 ```
 
 The result is a structural phenomenological resonance, not a new finite-core theorem.
+
+## v2.26 — Gate 228: Pati-Salam falsification and B-sector hierarchy search
+
+Gate 228 introduces `pkg/bridge/intermediatebreakingaudit`. It tests the Gate-227 intermediate scale in the strict falsification-first order.
+
+First, it temporarily unseals the dormant `u(4)` leptoquark route only as a proton-decay stress estimate at
+
+```text
+M_LQ = M_int = 6.65072648e11 GeV
+```
+
+Using the dimension-six proxy
+
+```text
+Γ_p ~ α² m_p⁵ / M_LQ⁴
+τ_p = ℏ / Γ_p
+```
+
+with `α = 1/(4π)`, Gate 228 obtains
+
+```text
+τ_p ≈ 8.86163600e17 years
+```
+
+This is about `16.05` orders of magnitude below the `1e34 year` stress bound. Gate 228 therefore logs
+
+```text
+FAILED_ROUTE_PATI_SALAM_INTERMEDIATE_BREAKING
+```
+
+Intermediate Pati-Salam / active leptoquark breaking at the geometric-mean scale is catastrophically excluded in the current sealed tower.
+
+Second, Gate 228 tests whether the B-sector gap can generate the same intermediate scale through
+
+```text
+M_hidden = M_* exp(-c / B_gap)
+B_gap = 0.1024649212
+```
+
+The canonical `c=1` value gives `9.94e12 GeV`, outside the one-decade criterion. The exact required coefficient is
+
+```text
+c_req = B_gap ln(M_*/M_int) = 1.277138298532
+```
+
+and the diagnostic candidate `c = 4/π` gives
+
+```text
+M_* exp(-(4/π)/B_gap) = 6.90866028e11 GeV
+```
+
+only `0.0165` decades from `M_int`. This is recorded as a strong structural near-resonance, but it is not promoted because the finite core has not derived `c`, a hidden order parameter, or an intermediate breaking potential.
+
+Gate 228 therefore records
+
+```text
+CONDITIONAL_SUPPORT_BSECTOR_NONPERTURBATIVE_HIERARCHY_SHAPE
+INTERMEDIATE_BREAKING_SEAL_REQUIRED_NOT_GRANTED
+CONDITIONAL_SUPPORT_HIDDEN_SECTOR_ORIGIN_AFTER_PATI_SALAM_FALSIFICATION
+```
+
+The result favors a baryon-safe hidden-sector origin after Pati-Salam falsification, but it does not yet derive the intermediate scale.
