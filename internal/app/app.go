@@ -119,6 +119,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/electroweakvevseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalflavorledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalfulltexture"
+	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalquarantineseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalyukawafit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewcartanledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewcurvature"
@@ -706,6 +707,7 @@ func Run() error {
 		vacuumparametercensus.VacuumParameterCensusMinimalInputTheoremAuditTheorem(),
 		spectralactionvariationalgradient.SpectralActionVariationalGradientPhaseIIIVacuumInitializationSieveTheorem(),
 		majoranaflavorsymmetrybreaking.NonUnitaryInvariantTextureSieveMajoranaFlavorSymmetryBreakingAuditTheorem(),
+		empiricalquarantineseal.EmpiricalQuarantineSealGrandUnifiedProjectLedgerTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
