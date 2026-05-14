@@ -11,6 +11,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fieldmap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcomplex"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarsu2"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
@@ -110,6 +111,7 @@ func Run() error {
 		fieldmap.FiniteToContinuumFieldMapAuditTheorem(),
 		goldstone.GaugeEatingGoldstoneAuditTheorem(),
 		scalarsu2.ScalarContactSU2ActionSearchTheorem(),
+		scalarcomplex.ScalarComplexQuaternionicStructureSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
