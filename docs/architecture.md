@@ -4766,3 +4766,7 @@ Y_f = alpha*tau_eta + beta*(C+C^T) + gamma*i(C-C^T)
 ```
 
 but the coefficients remain behind the `EmpiricalYukawaSeal` unless a future finite action, finite `D_F`, Hopf projection, or order-one calculus selects them.
+
+## Gate 264 — Empirical Yukawa Seal Activation
+
+Gate 264 separates the derived geometric shell from empirical flavor reality. The finite core supplies `tau_eta` and the Hermitian triality real/phase basis, but not the amplitudes. Under `EmpiricalYukawaSeal`, representative quark flavor data are used as sealed stress targets. The restricted three-parameter ansatz per sector fails the fit audit, preserving the firewall: masses, CKM/PMNS entries, VEV normalization, thresholds, and full Yukawa matrices remain empirical boundary data unless a later finite theorem supplies additional texture components or a genuine action functional.

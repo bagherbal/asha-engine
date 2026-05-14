@@ -4672,3 +4672,13 @@ FAILED_ROUTE_CKM_PMNS_AND_FERMION_MASSES_STILL_BLOCKED
 ```
 
 Gate 263 does not use observed masses, CKM/PMNS angles, or empirical Yukawa values. The next gate must either derive a finite `D_F` / order-one Yukawa block selector, or explicitly activate a quarantined `EmpiricalYukawaSeal` for phenomenological texture fitting.
+
+### Gate 264 — Empirical Yukawa Seal Activation / Texture Amplitude Fit Audit
+
+Gate 264 activates the `EmpiricalYukawaSeal` after Gate 263 proved that the finite core does not supply a native action functional for the coefficients in
+
+```text
+Y_f = alpha*tau_eta + beta*(C+C^T) + gamma*i(C-C^T)
+```
+
+The gate ingests representative quark-sector mass hierarchy and CKM data only as quarantined phenomenological stress data. Orthogonal projection of a conventional sealed quark texture proxy into the three-term geometric shell leaves large residuals, so the minimal shell is structurally meaningful but too restrictive for observed flavor. Full empirical Yukawa matrices, or additional finite-derived texture components, remain required.
