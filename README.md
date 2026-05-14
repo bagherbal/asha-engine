@@ -272,3 +272,15 @@ It then restricts that residual to:
 - the cross bridge `Gᵀ F H`.
 
 The result is a useful no-go: the finite curvature is real on the full Boolean support and active Higgs/contact sector, but it does not yet project into protected generation mixing. Therefore CKM/PMNS and non-diagonal Yukawa textures remain open.
+
+## v0.33 — Gate 34: Source tensor selection / active-generation map search
+
+Gate 34 adds `pkg/matter/sourcemap`. It searches for a canonical source tensor
+
+```text
+M : H_active → H_generation
+```
+
+that could turn active Higgs/contact curvature into a genuine `3×3` generation texture. The gate tests the existing compressed-connection cross maps `GᵀAH`, the finite Maurer-Cartan curvature cross maps `GᵀFH`, and the BF action mixed source contraction. All natural canonical maps remain zero at the current stage. The abstract map space `Hom(H_active,H_generation)` has dimension `3×4=12`, but choosing a tensor there would be fitting rather than derivation.
+
+The gate therefore preserves the hard truth: diagonal generation splitting exists as a bridge-level spurion, but no canonical non-diagonal source tensor, CKM structure, PMNS structure, or physical Yukawa-strength bridge has been derived yet.

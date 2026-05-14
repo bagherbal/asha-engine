@@ -29,6 +29,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/matter/generationbreak"
 	"github.com/bagherbal/asha-engine/pkg/matter/hyperaudit"
 	"github.com/bagherbal/asha-engine/pkg/matter/hypercharge"
+	"github.com/bagherbal/asha-engine/pkg/matter/sourcemap"
 	"github.com/bagherbal/asha-engine/pkg/matter/su2l"
 	"github.com/bagherbal/asha-engine/pkg/matter/su2lgauge"
 	"github.com/bagherbal/asha-engine/pkg/matter/t3r"
@@ -78,6 +79,7 @@ func Run() error {
 		bfbridge.ActiveGenerationProjectionBridgeTheorem(),
 		bfcurvature.FiniteMaurerCartanCurvatureTheorem(),
 		bfsource.BFActionSourceTextureTheorem(),
+		sourcemap.SourceTensorSelectionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
