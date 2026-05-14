@@ -205,6 +205,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/masterstatusledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingcorrectionseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingresidualstructure"
+	"github.com/bagherbal/asha-engine/pkg/bridge/matrixinvariantkoideaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
 	"github.com/bagherbal/asha-engine/pkg/bridge/moritabimodulesearch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativefinitealgebra"
@@ -712,6 +713,7 @@ func Run() error {
 		empiricalquarantineseal.EmpiricalQuarantineSealGrandUnifiedProjectLedgerTheorem(),
 		crosssectorreductionaudit.CrossSectorReductionAuditVacuumParameterCompressionSieveTheorem(),
 		vacuumcriticalityradiative.VacuumCriticalityRadiativeHierarchySieveTheorem(),
+		matrixinvariantkoideaudit.MatrixInvariantKoideTypeTracePolynomialAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
