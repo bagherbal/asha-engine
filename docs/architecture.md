@@ -5006,3 +5006,26 @@ The gate also records the remaining categorical obstruction. The quartic contact
 the selected sector pairing cannot be identified with one exact resolvent root. Without a selected resolvent root and a theorem mapping resolvent branches to the scalar-Morita `r_±` branches, the Gate-275 amplitude branch and Seeley-de Witt/Higgs-ratio path remain blocked.
 
 The next lawful target is a contact-root/projector semantics theorem, not a Higgs prediction.
+
+## Gate 278 — Contact Root / Yukawa Sector Projector Firewall
+
+The contact quartic roots are audited against all currently available sector tags:
+
+```text
+Morita multiplicity: κ_C:κ_Q = 1:3
+B_gap: neutrino/Majorana semantic tag
+τ_eta: weak {u,d} semantic tag
+```
+
+These data reach sector semantics but not root/projector semantics. All four quartic roots are finite O(1) contact eigenvalues; none is a native zero or suppressed Majorana root. The quartic is irreducible over the base field, and its individual root projectors require the splitting field. The 2+2 contact pair projectors likewise require a selected resolvent root.
+
+Thus Gate 278 records a strict no-go:
+
+```text
+sector labels are not quartic roots;
+1+3 multiplicity is not a root label;
+B_gap scale semantics is not a contact-root projector;
+τ_eta weak binding is not a root-sector bijection.
+```
+
+The Gate-277 sector split `{u,d}|{e,ν}` remains supported, but the root-level resolvent branch and Gate-275 `r_±` branch remain blocked.

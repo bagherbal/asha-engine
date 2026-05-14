@@ -5121,3 +5121,9 @@ selected contact resolvent root is not yet mapped to r_+ or r_-
 ```
 
 Therefore the Gate-275 two-branch amplitude ambiguity remains unresolved, and no Higgs ratio is claimed.
+
+## Gate 278 — Quartic Root-to-Yukawa Sector Bijection Boundary
+
+Gate 278 audits whether the four quartic contact roots can be natively assigned to the four Yukawa sectors `{u,d,e,ν}`. It retrieves the quartic roots and applies the Gate-273 Morita multiplicity `κ_C:κ_Q = 1:3`, the `B_gap` neutrino/Majorana tag, and the `τ_eta` weak-doublet tag.
+
+The result preserves the Gate-277 sector-level pairing `{u,d}|{e,ν}`, but it does not derive a root-level bijection. The quartic roots remain one irreducible Galois orbit. Individual root projectors require the splitting field, and 2+2 pair projectors require choosing a resolvent root. Therefore no contact resolvent root, no Gate-275 `r_±` amplitude branch, and no Higgs-ratio proxy are selected.
