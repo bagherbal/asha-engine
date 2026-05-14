@@ -129,6 +129,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcarrier"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcoupling"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dynamicgenerationlabels"
+	"github.com/bagherbal/asha-engine/pkg/bridge/edgetohphiquotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/eftdecayportal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/electroweakvevseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/empiricalflavorledger"
@@ -808,6 +809,7 @@ func Run() error {
 		derivededgeweightoperator.DerivedEdgeWeightOperatorHyperchargeLaplacianSieveTheorem(),
 		spectralgraphedgeadjacency.SpectralGraphEdgeAdjacencyOperatorSearchTheorem(),
 		orientededgeincidence.OrientedEdgeIncidenceBoundaryOperatorSieveTheorem(),
+		edgetohphiquotient.CanonicalEdgeToHphiQuotientContactEdgeIntertwinerSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -5948,3 +5948,15 @@ Gate 402 tests the topology of the one-form edge graph itself after Gate 401 rej
 ### Gate 403 — Oriented edge-incidence boundary operator sieve
 
 Gate 403 tests the natural post-Gate-402 candidate: replacing undirected edge adjacency by a signed boundary operator over the finite one-form Dirac edges. Chiral orientation canonically sends the four Yukawa edges left-to-right, but the Majorana edge is J-real and its arrow reversal is a signed-column conjugacy for `d^T d`; a unit complex Majorana phase also cancels in `d†d`. Thus orientation is real bookkeeping but not free spectral data. The four-edge Yukawa Gram is still a two-pair object with quadratic minimal polynomial, while the full five-edge incidence Gram is degree five on edge-slot space, not a four-dimensional scalar endomorphism, and is disjoint from `q4`. Gate 403 therefore preserves the Higgs/scalar lane, rejects native q4 identification by oriented incidence, and points to the next missing object: a canonical quotient/intertwiner from edge-slot space to `H_phi`.
+
+### Gate 404 — Canonical edge-to-H_phi quotient / contact-edge intertwiner sieve
+
+Gate 404 follows the oriented-incidence obstruction by testing the exact missing map:
+
+```text
+Q: edge-slot space -> H_phi
+```
+
+The audit distinguishes true native quotients from arbitrary four-mode selections. Native quotients exist: the Higgs/Yukawa edge restriction, scalar branch quotient, J-even quotient from the ten J-doubled one-form edge slots, and the existing contact/scalar response. All are compatible with the finite one-form/first-order/J ledger, but all remain too symmetric. They are rank-two or pair-degenerate and have quadratic minimal polynomial, not the irreducible contact quartic `q4`.
+
+The full five-edge graph has quartic capacity only after choosing which edge/eigenmode to discard; this is exactly the missing theorem and is not promoted. A q4 companion can be inserted only by arbitrary basis choice. Gate 404 therefore rejects a native edge-to-`H_phi` `q4` selector, preserves the Higgs/scalar and flavor firewalls, and redirects the next search toward a contact-to-edge natural transformation/pullback theorem.
