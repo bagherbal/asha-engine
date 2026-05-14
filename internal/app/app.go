@@ -21,6 +21,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/matter/charge"
 	"github.com/bagherbal/asha-engine/pkg/matter/electroweak"
 	"github.com/bagherbal/asha-engine/pkg/matter/embedding"
+	"github.com/bagherbal/asha-engine/pkg/matter/hypercharge"
 	"github.com/bagherbal/asha-engine/pkg/matter/tensor"
 	"github.com/bagherbal/asha-engine/pkg/matter/yukawa"
 	"github.com/bagherbal/asha-engine/pkg/phase"
@@ -51,6 +52,7 @@ func Run() error {
 		tensor.TensorFactorBridgeTheorem(),
 		yukawa.IntertwinerSelectionTheorem(),
 		electroweak.OperatorSearchTheorem(),
+		hypercharge.ScalarHyperchargeBridgeTheorem(),
 	)
 
 	results := registry.RunAll()

@@ -138,3 +138,8 @@ With the scalar factor currently neutral under `B−L`, the allowed neutral inte
 - parity-preserving and parity-flipping dimensions are balanced, but true chirality remains an open theorem.
 
 This gate does not derive fermion masses. It turns `U-07-YUKAWA` into a precise mathematical problem: construct a non-arbitrary hypercharge/chirality-compatible intertwiner rather than a fitted mass matrix.
+
+
+## Gate 20 — Scalar Hypercharge / T3 Bridge Search
+
+The engine now extracts the finite part genuinely supported by the active Higgs/contact sector: a 2+2 real scalar doublet with a canonical trace-zero scalar charge `T_Φ = diag(+1/2,+1/2,-1/2,-1/2)`. It also proves the harder truth: this scalar-side charge is not yet full Standard Model hypercharge. The matter-side `T3_R` and physical chirality operator remain open bridge theorems.
