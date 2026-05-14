@@ -12,6 +12,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalarsu2"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
@@ -108,6 +109,7 @@ func Run() error {
 		thresholdactivation.ThresholdActivationDecouplingAuditTheorem(),
 		fieldmap.FiniteToContinuumFieldMapAuditTheorem(),
 		goldstone.GaugeEatingGoldstoneAuditTheorem(),
+		scalarsu2.ScalarContactSU2ActionSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
