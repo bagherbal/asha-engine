@@ -3653,3 +3653,38 @@ FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
 ```
 
 Gate 241 is a useful obstruction: it identifies the exact contact-geometry object that would solve the weak-plane problem, while refusing to promote the contact projector itself into a Reeb vector.
+
+## v2.40 — Gate 242: tau_eta spatial tagging and generation-breaking audit
+
+Gate 242 adds `pkg/bridge/tauetaspatialtagging`.
+
+Gate 241 showed that the contact space `K` exists but that no contact one-form, `dη`, Reeb vector, or `K -> W_spatial` projection has been derived. Gate 242 audits the next exact three-component datum: the scalar fundamental-class signature
+
+```text
+tau_eta = (2, -2, 1)
+```
+
+The result is a precise capacity theorem, not a completed weak-plane theorem. The magnitudes
+
+```text
+|tau_eta| = (2, 2, 1)
+```
+
+have exactly the `2+1` shape required to isolate one spatial axis and conditionally select the complementary pure-spatial weak plane. If a future theorem derives a lawful `tau_eta -> W_spatial` pullback, the unique `|1|` entry would tag `a†_3` and select `U={a†_1,a†_2}`.
+
+The signed sequence also has exactly three distinct values, so it has generation-breaking capacity beyond exact triality's known `1+2` obstruction. However, the engine refuses to promote this into a generation texture because no `tau_eta -> triality generation carrier` pullback or non-commuting texture pair is derived.
+
+Gate 242 status:
+
+```text
+CONDITIONAL_SUPPORT_TAU_ETA_SEQUENCE_RETRIEVED
+CONDITIONAL_SUPPORT_TAU_ETA_MAGNITUDE_2PLUS1_SELECTOR_CAPACITY
+CONDITIONAL_SUPPORT_TAU_ETA_GENERATION_BREAKING_CAPACITY
+FAILED_ROUTE_TAU_ETA_TO_FOCK_SPATIAL_PULLBACK
+FAILED_ROUTE_TAU_ETA_WEAK_PLANE_SELECTION
+FAILED_ROUTE_TAU_ETA_TO_TRIALITY_GENERATION_PULLBACK
+FAILED_ROUTE_TAU_ETA_GENERATION_TEXTURE_DERIVATION
+FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
+```
+
+Next gate: Gate 243 — derive or reject the tau_eta pullback functor from scalar-bundle fundamental class to Fock spatial and triality generation operators.

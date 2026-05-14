@@ -184,6 +184,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spinctwistedchirality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/su2spinorlift"
+	"github.com/bagherbal/asha-engine/pkg/bridge/tauetaspatialtagging"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdorigindichotomy"
@@ -494,6 +495,7 @@ func Run() error {
 		orientationtruechirality.OrientationOperatorTrueChiralityDerivationAuditTheorem(),
 		spinctwistedchirality.SpinCTwistedChiralityHyperchargeWeakSieveAuditTheorem(),
 		reebweakselection.ReebVectorSpatialIsotropyWeakPlaneSieveAuditTheorem(),
+		tauetaspatialtagging.TauEtaSpatialTaggingGenerationBreakingAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

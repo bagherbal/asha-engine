@@ -4048,3 +4048,32 @@ global H summand derived: no
 ```
 
 The weak-algebra frontier now requires either an explicit finite contact one-form/Reeb-vector theorem with a natural projection to the Fock generator carrier, or an honest seal stating that weak-plane selection is an additional physical boundary condition.
+
+## Gate 242 — Scalar fundamental class spatial tagging and generation-breaking audit
+
+Gate 242 adds `pkg/bridge/tauetaspatialtagging` after the Reeb-vector obstruction of Gate 241.
+
+The gate retrieves the exact scalar fundamental-class signature:
+
+```text
+tau_eta = (2, -2, 1)
+```
+
+This datum has two strong structural capacities:
+
+1. Its magnitudes are `(2,2,1)`, giving a `2+1` selector shape. If a lawful pullback to the three spatial Fock modes is derived, it would tag the unique `|1|` axis and select the complementary pure-spatial weak plane.
+2. Its signs produce three distinct values `(2,-2,1)`, giving a `1+1+1` diagonal spectrum. If a lawful pullback to the triality generation carrier is derived, it would supply the generation-breaking capacity exact triality alone lacks.
+
+The architectural obstruction is type-theoretic. `tau_eta` is currently a scalar-bundle eta-graded trace functional, not an endomorphism of the Fock generator carrier or the generation carrier.
+
+Gate 242 therefore records:
+
+```text
+weak-plane selector capacity: yes
+native weak-plane selection: no
+generation-breaking capacity: yes
+native generation texture: no
+global H summand: still unselected
+```
+
+The next structural problem is no longer numerical. It is functorial: derive the pullback from the scalar fundamental class to the Fock/generation carriers, or seal that map as an additional physical boundary condition.

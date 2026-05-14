@@ -274,3 +274,11 @@
 - Preserve the Gate-240 result: temporal-spatial planes are already rejected by the native `u(1)` commutator sieve, and the remaining problem is the threefold pure-spatial `S_3` degeneracy.
 - If no `K → W_spatial` map exists, report the obstruction as a bridge failure rather than a failure of contact geometry itself.
 - Do not claim the global quaternionic `H` summand until the weak plane, faithful finite algebra representation, and order-one calculus are all derived.
+
+## Gate 242 method refinement — selector capacity versus carrier pullback
+
+- Separate shape/capacity from carrier action: a finite signature may have the right eigenvalue pattern while still being the wrong type of object.
+- Before promoting a scalar trace datum, require an explicit pullback to the carrier on which it is supposed to act.
+- For weak-plane selection, distinguish conditional complement rules from native axis-tagging theorems.
+- For generation breaking, distinguish a three-eigenvalue diagonal capacity from a full texture theorem with non-commuting operators and mixing.
+- Prefer the next gate to derive the missing functor/map rather than search for new numerological signatures.
