@@ -1396,3 +1396,11 @@ Gate 154 compresses the exact quartic contact orbit from Gate 153 into a branch-
 Gate 155 audits whether the exact four-row quartic contact block from Gate 154 can be promoted to a physical multiplet. It checks dimension-four interpretations such as a real scalar four-vector, complex scalar doublet candidate, four singlet thresholds, and a Dirac-like block. All match the block only by dimension. None supplies a derived gauge action, representation row, spin/statistics, local field map, mass activation, decoupling rule, or Dynkin/beta index. The quartic block remains an exact spectral diagnostic, not a threshold beta contribution.
 
 Next gate: Gate 156 — quartic block local-field/spin-statistics obstruction theorem.
+
+### Gate 156 — Quartic block local-field / spin-statistics obstruction theorem
+
+Gate 156 consumes the exact four-row quartic contact block from Gates 149–155 and tests whether it can be promoted from spectral data into local continuum field data.
+
+Result: the gate is `VARIATIONAL` and passing, but it is a firewall theorem. It audits five degree-matching interpretations — real scalar quartet, complex scalar doublet, Weyl/Dirac spinor candidate, ghost/regulator quartet, and auxiliary/constrained quartet — and rejects all as physical threshold fields because none supplies local spacetime support, section variables, Lorentz representation, kinetic/pole-residue theorem, spin-statistics rule, gauge/hypercharge row, mass activation, or decoupling.
+
+The exact quartic block remains an exact finite spectral diagnostic. It does not yet contribute threshold beta rows or physical constants.

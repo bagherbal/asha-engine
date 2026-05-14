@@ -54,6 +54,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactpropagator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticcompression"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticgalois"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticlocalfield"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticmultiplet"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotientsemantics"
@@ -322,6 +323,7 @@ func Run() error {
 		contactbranchsemantics.QuarticContactBranchSelectorGaloisInvariantRowSemanticsSearchTheorem(),
 		contactquarticcompression.QuarticOrbitSemanticCompressionFourRowBlockBetaFirewallTheorem(),
 		contactquarticmultiplet.QuarticBlockMultipletRepresentationBetaIndexObstructionTheorem(),
+		contactquarticlocalfield.QuarticBlockLocalFieldSpinStatisticsObstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
