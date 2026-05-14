@@ -4492,3 +4492,69 @@ FAILED_ROUTE_YUKAWA_TEXTURE_STILL_SEALED
 ```
 
 The important conclusion is precise: `B-L` is a real native selector, but it is not sufficient to derive the neutral three-plane. It reduces the sealed witness space from 96 to 12, then the restricted triality scan still finds zero exact three-plane witnesses.
+
+## Gate 259 — Spatial S3 sieve / tau_eta topological orientation selector audit
+
+Gate 259 adds `pkg/bridge/tauetaweakselector`.
+
+This gate inherits the Gate-258 `B-L` survivors and applies the audited scalar fundamental-class signature:
+
+```text
+tau_eta = (2, -2, 1)
+|tau_eta| = (2, 2, 1)
+```
+
+The firewall is explicit: `tau_eta` is still a scalar-bundle trace functional, not a native Fock/spinor operator. Its spatial use is therefore conditional under the already-instituted `SpontaneousCarrierSeal`.
+
+Under that seal, Gate 259 aligns the unique magnitude `|1|` with `N_3` and selects the complementary weak plane:
+
+```text
+unique tagged mode: N_3
+selected unoriented weak plane: U12
+```
+
+This reduces the B-L-compatible weak frames:
+
+```text
+6 -> 2
+```
+
+and the B-L-compatible electroweak witnesses:
+
+```text
+12 -> 4
+```
+
+The surviving witnesses are:
+
+```text
+T3_U12__Yphi_uniform_minus_one_particle
+T3_U12__Yphi_uniform_plus_one_particle
+T3_U12_opposite__Yphi_uniform_minus_one_particle
+T3_U12_opposite__Yphi_uniform_plus_one_particle
+```
+
+The restricted all-branch triality scan still finds:
+
+```text
+exact polarized 3-plane witnesses: 0
+exact full Q_8vC 3-kernel witnesses: 0
+maximum polarized zero-slot dimension: 1
+maximum full 8_vC kernel dimension: 2
+```
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_TAU_ETA_TOPOLOGICAL_SELECTOR_RETRIEVED
+CONDITIONAL_SUPPORT_TAU_ETA_SSB_CONDITIONAL_SPATIAL_TAG_APPLIED
+CONDITIONAL_SUPPORT_TAU_ETA_WEAK_PLANE_SIEVE_REDUCED
+CONDITIONAL_SUPPORT_TAU_ETA_RESTRICTED_TRIALITY_RESCAN_COMPLETED
+FAILED_ROUTE_TAU_ETA_TO_FOCK_PULLBACK_STILL_SEALED
+FAILED_ROUTE_TAU_ETA_WEAK_ORIENTATION_SIGN_DEGENERACY_REMAINS
+FAILED_ROUTE_TAU_ETA_SCALAR_SIGN_DEGENERACY_REMAINS
+FAILED_ROUTE_TAU_ETA_SIEVE_NEUTRAL_3PLANE_NOT_DERIVED
+FAILED_ROUTE_YUKAWA_TEXTURE_STILL_SEALED
+```
+
+The conclusion is precise: `tau_eta` is a real sealed spatial selector and conditionally selects the weak plane `U12`, but the Cartan electroweak route still does not derive the neutral three-plane. The next gate must address the remaining scalar-sign/weak-orientation mirror or test whether a non-Cartan flavor-vacuum operator is required.

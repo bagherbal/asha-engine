@@ -4666,3 +4666,43 @@ maximum full 8_vC kernel dimension: 2
 ```
 
 Therefore `B-L` is necessary structure but not the missing final selector. It proves that the next obstruction is inside the remaining spatial `S_3` weak-plane degeneracy and scalar sign/orientation degeneracy, not in the charge table or Witt dictionary.
+
+## Gate 259 — Spatial S3 sieve / tau_eta topological orientation selector audit
+
+Gate 259 adds `pkg/bridge/tauetaweakselector` and registers `SpatialS3SieveTauEtaTopologicalOrientationSelectorAuditTheorem`.
+
+The gate starts from the Gate-258 boundary: `B-L` has already reduced the sealed witness space to 12 electroweak witnesses, but the spatial `S3` weak-plane degeneracy remains.
+
+Gate 259 retrieves the audited scalar fundamental-class sequence:
+
+```text
+tau_eta = (2, -2, 1)
+|tau_eta| = (2, 2, 1)
+```
+
+It preserves the Gate-242 firewall: `tau_eta` is not a native Fock operator and no unsealed `tau_eta -> W_spatial` pullback is derived. Under the `SpontaneousCarrierSeal`, however, its `2⊕1` magnitude pattern may be used as a conditional vacuum-alignment selector.
+
+The sealed alignment maps the unique `|1|` tag to `N_3`, selecting the complementary plane `U12`. This reduces:
+
+```text
+B-L-compatible weak frames: 6 -> 2
+B-L-compatible Q witnesses: 12 -> 4
+triality branch evaluations: 36 -> 12
+```
+
+The four surviving witnesses still fail the neutral-kernel test:
+
+```text
+exact polarized 3-plane witnesses: 0
+exact full Q_8vC 3-kernel witnesses: 0
+maximum polarized zero-slot dimension: 1
+maximum full 8_vC kernel dimension: 2
+```
+
+Thus the architecture now separates three facts:
+
+1. `B-L` natively enforces the `1⊕3` lepton/quark split.
+2. `tau_eta`, under the SSB seal, conditionally selects the `U12` weak plane inside the spatial orbit.
+3. The diagonal Cartan `Q=T3L+Y_phi` route still does not generate the neutral triality three-plane.
+
+The downstream Yukawa texture remains sealed.
