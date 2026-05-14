@@ -5776,3 +5776,51 @@ FAILED_ROUTE_VACUUM_PARAMETER_CENSUS_NOT_REDUCED
 ```
 
 Gate 369 preserves all ASHA firewalls: no CKM, PMNS, observed Yukawa, observed masses, or final vacuum point are imported. The 15 vacuum coordinates remain unreduced. The next lawful theorem must either derive a representation map from support eta defects to generation-dependent weights, or prove that every admissible eta-graded Left-Right contraction factors through `I_3`.
+
+## v3.68 — Gate 370: Support-to-Generation Intertwiner / Topological Index Map Sieve
+
+Gate 370 executes the representation-map theorem isolated by Gate 369. The previous gate proved that the native eta-graded Left-Right support trace is generation-blind: it yields zero or a scalar multiple of `I_3`. Therefore the missing object is not another trace, but a lawful intertwiner
+
+```text
+Phi: H_support-index data -> End(H_generation)
+```
+
+which would have to satisfy
+
+```text
+Pi_gen Phi(Tr_support^eta(C_LR)) = a I_3 + b tau_eta, b != 0
+```
+
+without inserting `tau_eta` by hand.
+
+The new package `pkg/bridge/supportgenerationintertwiner` audits six lanes:
+
+| Lane | Candidate | Result |
+|---|---|---|
+| A | Identity broadcast | Native, but factors through `I_3`. |
+| B | `Omega_Hsigma` endpoint map | Native support index, but no generation address. |
+| C | Finite `D_F` / `J_swap` / opposite-action transport | Native, but generation-equivariant. |
+| D | Morita `1:3` multiplicity broadcast | Native, but uniformly copies the index across all generations. |
+| E | `B_gap`-scaled support-index map | Native scalar rescaling only; still central. |
+| F | `tau_eta`-weighted map witness | Noncentral and KMS-capable, but circular because it assumes the target generation weights. |
+
+The theorem exposes a Schur-like obstruction in the current ledger: every native candidate commutes with the generation `U(3)` orbit and therefore lands in `span{I_3}`. The only noncentral candidate is the forbidden manual `tau_eta` map.
+
+Main statuses:
+
+```text
+CONDITIONAL_SUPPORT_SUPPORT_TO_GENERATION_INTERTWINER_SIEVE_FORMALIZED
+CONDITIONAL_SUPPORT_NATIVE_INTERTWINER_CANDIDATES_ENUMERATED
+CONDITIONAL_SUPPORT_EQUIVARIANCE_NO_GO_AUDITED
+CONDITIONAL_TENSION_NO_NATIVE_GENERATION_ADDRESS_IN_CURRENT_SUPPORT_LEDGER
+CONDITIONAL_TENSION_PHASE_IV_REPRESENTATION_EXTENSION_MAY_BE_REQUIRED
+CONDITIONAL_TENSION_TAU_ETA_INTERTWINER_WOULD_ASSUME_TARGET_WEIGHTS
+FAILED_ROUTE_SUPPORT_TO_GENERATION_INTERTWINER_NOT_DERIVED
+FAILED_ROUTE_TOPOLOGICAL_INDEX_MAP_NOT_DERIVED
+FAILED_ROUTE_SUPPORT_DEFECT_TRACE_FACTORS_THROUGH_I3
+FAILED_ROUTE_INTERNAL_THERMAL_TIME_NOT_ACTIVATED
+FAILED_ROUTE_TAU_ETA_HAMILTONIAN_STILL_NOT_SELECTED
+FAILED_ROUTE_VACUUM_PARAMETER_CENSUS_NOT_REDUCED
+```
+
+Gate 370 preserves the landscape and all empirical firewalls. No CKM, PMNS, observed Yukawa, observed masses, Higgs target, or vacuum point is imported. The 15 vacuum coordinates remain unreduced. The next lawful direction is now sharper: either derive a native generation-address theorem inside the finite representation, or open a Phase-IV extension where generation labels are no longer uniform copies but dynamical/topological degrees of freedom.

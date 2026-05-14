@@ -291,6 +291,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/spinctwistedchirality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spontaneouscarrierseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/su2spinorlift"
+	"github.com/bagherbal/asha-engine/pkg/bridge/supportgenerationintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetamixingpartner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetargtexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetaspatialtagging"
@@ -750,6 +751,7 @@ func Run() error {
 		lorentziantimepullback.LorentzianTimePullbackE0ModularKernelSieveTheorem(),
 		bimodulemodularcurvature.BimoduleModularCurvatureInternalThermalTimeOriginSieveTheorem(),
 		etagradedlrtrace.EtaGradedLeftRightTraceNoncentralHamiltonianExtractionSieveTheorem(),
+		supportgenerationintertwiner.SupportToGenerationIntertwinerTopologicalIndexMapSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
