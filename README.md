@@ -284,3 +284,33 @@ M : H_active → H_generation
 that could turn active Higgs/contact curvature into a genuine `3×3` generation texture. The gate tests the existing compressed-connection cross maps `GᵀAH`, the finite Maurer-Cartan curvature cross maps `GᵀFH`, and the BF action mixed source contraction. All natural canonical maps remain zero at the current stage. The abstract map space `Hom(H_active,H_generation)` has dimension `3×4=12`, but choosing a tensor there would be fitting rather than derivation.
 
 The gate therefore preserves the hard truth: diagonal generation splitting exists as a bridge-level spurion, but no canonical non-diagonal source tensor, CKM structure, PMNS structure, or physical Yukawa-strength bridge has been derived yet.
+
+## v0.34 — Source Tensor Action / Variational Selection
+
+Gate 35 adds the variational source-tensor action over `M : H_active → H_generation`.
+
+The minimal stable action is:
+
+```text
+S[M] = 1/2 ||M||_F^2 - <J, M>
+```
+
+The stationary equation is `M = J`. Since the finite connection, BF curvature,
+and BF source contractions currently select `J ≈ 0`, the unique stable stationary
+source tensor is `M = 0`. This is a useful no-go theorem: the abstract 12D tensor
+space `Hom(R^4,R^3)` exists, but choosing a nonzero tensor would still be fitting
+unless a new finite interaction derives a nonzero source, constraint, or
+symmetry-breaking action.
+
+New package:
+
+```text
+pkg/matter/sourceaction
+```
+
+The engine now exposes the remaining unknown as:
+
+```text
+U-17E-SOURCE-TENSOR-ACTION
+```
+
