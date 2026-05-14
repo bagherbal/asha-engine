@@ -47,6 +47,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotientsemantics"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactreconstruction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactrowsemantics"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactsignsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsignsplit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsymmetry"
@@ -294,6 +295,7 @@ func Run() error {
 		contacttargetoperator.ContactTargetOperatorReconstructionQuotientSideT3RSpectrumSearchTheorem(),
 		contactsignsplit.ContactT3RSignSplitNaturalitySpectralCutObstructionTheorem(),
 		contactorientation.ContactSpectralGapOrientationSignChoiceObstructionTheorem(),
+		contactsignsource.ContactSignOrientationSourceChargeConjugationObstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
