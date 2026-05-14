@@ -24,6 +24,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactcohomology"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactembedding"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactfieldmap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactpropagator"
@@ -238,6 +239,7 @@ func Run() error {
 		contactfieldmap.ContactOverlapLocalFieldMapConstraintBRSTClassifierTheorem(),
 		betapermission.ContactOverlapRepresentationConstraintBetaPermissionFirewallTheorem(),
 		branchselector.ContactModeBranchSelectorConstructionAttemptTheorem(),
+		contactcohomology.FiniteContactConstraintDifferentialCohomologyObstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

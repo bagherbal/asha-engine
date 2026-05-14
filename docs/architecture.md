@@ -622,3 +622,57 @@ nullity after Gate 113  = 3
 ```
 
 The next true gate should attempt a finite contact constraint differential / cohomology obstruction theorem. Until a canonical local bundle or constraint complex exists, threshold-corrected `Δb_i(L)`, physical `alpha`, physical `thetaW`, `M*`, `g_*`, and masses remain sealed.
+
+## Gate 114 — Finite Contact Constraint Differential / Cohomology Obstruction
+
+Gate 114 adds `pkg/bridge/contactcohomology`. Gate 113 showed that the seven contact partial-overlap modes still have no selected local-bundle branch and no selected constraint/BRST branch. Gate 114 focuses on the constraint branch and asks whether the finite contact carrier itself selects a differential.
+
+The gate audits the candidate chain carrier:
+
+```text
+C_contact^0 = span{seven positive finite-overlap contact modes}
+```
+
+and tests candidate differentials:
+
+```text
+Q0 = 0
+identity endomorphism
+spectral-value ordered shift
+pair/quartet cancellation map
+Fano/octonion incidence candidate
+```
+
+The zero differential is square-zero:
+
+```text
+Q0² = 0
+```
+
+but its cohomology has dimension seven:
+
+```text
+dim H(C_contact, Q0) = 7
+```
+
+so it cancels no contact mode and proves no beta zero-row. The nontrivial candidates require extra orientation, ordering, pairing, incidence, or ghost-grading choices not selected by the current finite data. Therefore no canonical nontrivial nilpotent differential, acyclic complex, BRST quartet ledger, or supertrace cancellation theorem is derived.
+
+Gate 114 therefore proves the cohomology obstruction:
+
+```text
+contact modes inherited          = 7
+zero differential square-zero    = true
+zero-differential cohomology dim = 7
+canonical nontrivial Q derived   = false
+contact zero rows proven         = 0
+contact beta rows allowed        = 0
+```
+
+The residual physical-flow nullity remains unchanged:
+
+```text
+nullity before Gate 114 = 3
+nullity after Gate 114  = 3
+```
+
+The next true gate should return to the other branch: contact local-bundle obstruction / representation-row construction attempt. Until a real local field map or a real constraint complex exists, threshold-corrected `Δb_i(L)`, physical `alpha`, physical `thetaW`, `M*`, `g_*`, and masses remain sealed.
