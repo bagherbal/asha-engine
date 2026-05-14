@@ -3049,3 +3049,28 @@ The matching-correction branch audits the already available finite traces and sc
 The two-loop branch computes exact rational standard-QFT preflight coefficients for the sealed carriers, while keeping their provenance separate from the finite core. The resulting correction is not perturbatively small in the high-scale `SU(3)` segment, so Gate 213 warns that the Gate-211 one-loop convergence is not proven stable without full two-loop integration and matching corrections.
 
 This gate therefore strengthens the architecture: Gate 211 supplies viable one-loop witnesses; Gate 212 proves they are degenerate; Gate 213 seals one witness for inspection and shows exactly what higher-order data are still missing before precision phenomenology can be trusted.
+
+### Gate 214 — Sealed two-loop RG integration / matching-correction uncertainty envelope audit
+
+Package: `pkg/bridge/twoloopintegration`
+
+Gate 214 sits after the Gate-213 `ThresholdSpectrumSeal`. Its purpose is not to derive a spectrum, but to test whether the sealed Gate-211 ranked witness survives full no-Yukawa two-loop integration.
+
+Architectural placement:
+
+```text
+Layer 11: Threshold-spectrum seal + 2-loop preflight  → Gate 213
+Layer 12: Sealed two-loop numerical integration       → Gate 214
+```
+
+The gate integrates the piecewise coupled two-loop RG system in `u=1/g²` coordinates using fixed-step RK4 and solves the three continuous scale parameters with a damped Newton method. The corrected central scales are approximately:
+
+```text
+M_B[(1,3,Y=1)]      ≈ 2.74e6 GeV
+M_B[(8,2,Y=1/2)]    ≈ 2.60e6 GeV
+M_*                 ≈ 1.74e17 GeV
+```
+
+The scale solve remains conditional on the quarantined Z-pole ledger and the selected `ThresholdSpectrumSeal` test subject. The gate also introduces a `MatchingUncertaintyEnvelope`, using `±1/(16π²)` in `u`-space as an explicit phenomenological proxy for the missing threshold matching corrections.
+
+This gate keeps the finite-to-continuum firewall intact. The envelope is not a derived matching theorem. The corrected scales are numerical phenomenology, not finite-core predictions. The next precision frontier is either a finite spectral matching map, a sealed SM-Yukawa extension, or a full comparison of all Gate-211 unordered spectra under the same two-loop envelope.

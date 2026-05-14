@@ -2472,3 +2472,48 @@ CONDITIONAL_PHENOMENOLOGY_ON_THRESHOLD_SPECTRUM_SEAL
 ```
 
 The one-loop Gate-211 scales remain reference values only. No corrected two-loop scale, matching correction, unique spectrum, physical prediction, or finite-derived threshold mass is claimed.
+
+## v2.12 — Gate 214: Sealed two-loop RG integration / matching-correction uncertainty envelope audit
+
+Gate 214 adds `pkg/bridge/twoloopintegration`.
+
+Gate 213 proved that the Gate-211 one-loop scales are not precision-stable under the heavy two-loop preflight and that exact matching corrections remain un-derived. Gate 214 therefore performs the next legal operation: a **sealed numerical two-loop integration** under the existing `ThresholdSpectrumSeal`.
+
+The integrated no-Yukawa equation is:
+
+```text
+du_i/dlnμ = -b_i/(8π²) - Σ_j B_ij/u_j /(128π⁴)
+```
+
+with `u_i = 1/g_i²`. The selected sealed test subject remains:
+
+```text
+Dirac (1,3,Y=1)      Δb = (12/5,8/3,0)
+Dirac (8,2,Y=1/2)    Δb = (16/5,16/3,8)
+```
+
+The central two-loop fit to `u_*=(1,1,1)` is:
+
+```text
+M_B[(1,3,Y=1)]      ≈ 2.73797183e6 GeV
+M_B[(8,2,Y=1/2)]    ≈ 2.60478578e6 GeV
+M_*                 ≈ 1.74457638e17 GeV
+```
+
+The threshold ordering flips relative to the one-loop witness: `(8,2,Y=1/2)` activates slightly before `(1,3,Y=1)`. This is recorded as a two-loop phenomenological fit result, not as a finite-derived ordering theorem.
+
+Because the engine still lacks derived `δ_i^match`, Gate 214 introduces a `MatchingUncertaintyEnvelope` using a deterministic loop-factor proxy `ε_u = 1/(16π²)`. The resulting envelope is:
+
+```text
+M_B1 ∈ [1.57840858e6, 4.74995204e6] GeV
+M_B2 ∈ [2.41692805e6, 2.80741458e6] GeV
+M_*  ∈ [1.45661625e17, 2.08954763e17] GeV
+```
+
+Gate 214 records:
+
+```text
+CONDITIONAL_PHENOMENOLOGY_ON_THRESHOLD_SPECTRUM_AND_MATCHING_ENVELOPE
+```
+
+No finite-derived mass, matching correction, unique spectrum, SM-Yukawa-corrected running, or physical prediction is claimed.

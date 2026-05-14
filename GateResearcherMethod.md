@@ -44,3 +44,7 @@
 - Matching corrections require more than finite traces: demand a subtraction scheme, counterterm functional, heat-kernel/spectral-action map, and threshold matching convention before deriving `δ_i^match`.
 - Two-loop coefficients may be computed as standard-QFT preflight data, but their provenance must stay separate from finite-core theorems unless the engine derives the action, field normalization, and scheme.
 - For two-loop preflights, report correction-size diagnostics before claiming stability. If the two-loop/one-loop derivative ratio is not small, keep one-loop scales as reference values only and require full integration plus matching envelopes.
+- For two-loop integration gates, solve in the same coupling coordinate used by the previous gate. In the ASHA RG branch this means `u=1/g²`, so the two-loop equation is `du_i/dlnμ = -b_i/(8π²) - Σ_j B_ij/u_j /(128π⁴)`.
+- Treat two-loop numerical solves as phenomenological unless the engine has derived the action, normalization, and subtraction scheme. Corrected scales are not automatically finite-core predictions.
+- When matching corrections are not derived, use an explicit uncertainty envelope rather than hiding scheme dependence. Label the envelope as a proxy and record its size as theory uncertainty.
+- Allow higher-order integration to change threshold ordering if the spectrum is sealed and the scales are continuous fit parameters. Record the ordering change, but do not reinterpret it as a finite theorem.

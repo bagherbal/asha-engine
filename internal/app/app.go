@@ -168,6 +168,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitytexturelift"
+	"github.com/bagherbal/asha-engine/pkg/bridge/twoloopintegration"
 	"github.com/bagherbal/asha-engine/pkg/bridge/twothresholdminimality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/twothresholdviability"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1completion"
@@ -438,6 +439,7 @@ func Run() error {
 		twothresholdviability.TwoThresholdRationalLatticeViabilityFilterTheorem(),
 		twothresholdminimality.TwoThresholdSolutionMinimalityFiniteOriginParentageAuditTheorem(),
 		thresholdspectrumseal.ThresholdSpectrumSealMatchingCorrectionTwoLoopPreflightTheorem(),
+		twoloopintegration.SealedTwoLoopRGIntegrationMatchingEnvelopeTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
