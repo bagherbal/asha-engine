@@ -2120,3 +2120,35 @@ negative: no Yukawa amplitudes, masses, CKM, PMNS, or physical constants are der
 ```
 
 Gate 172 reframes the next obstruction: the engine needs at least two finite non-commuting generation-space texture operators before any mixing theorem is allowed.
+
+### Gate 173 — finite non-commuting texture-pair search
+
+Package: `pkg/bridge/noncommutingtexturepair`
+
+Gate 173 follows the Gate-172 recognition that CKM/PMNS mixing requires at least two non-commuting generation-space Yukawa texture operators. It audits the derived finite operators on the 3D generation carrier:
+
+- triality identity/cycle/reflection actions,
+- triality-invariant texture algebra,
+- Higgs/contact diagonal generation spurion,
+- BF and active-to-generation curvature residuals,
+- scalar-shape contact-kind projector lifted to generation space,
+- spectral-triple real structure on generation indices,
+- source-tensor variational minimum.
+
+The theorem distinguishes raw non-commuting linear maps from qualified Yukawa texture sources. Raw non-commutation appears in the triality permutation representation, but those maps are symmetry/label actions. The qualified texture requirement is stricter: a source must be canonical, nonzero, generation-breaking, charge-compatible, and capable of entering the finite Dirac/Yukawa amplitude matrix. No pair satisfying those conditions is found.
+
+Gate 173 status:
+
+```text
+Status: FAILED_ROUTE
+raw non-commuting maps: present
+qualified non-commuting Yukawa texture pair: absent
+BF/source residual: zero
+Higgs/contact diagonal spurion: bridge-required and aligned
+scalar-shape lift: generation-blind
+real structure: generation-blind/conjugation data, not texture data
+mass-generation problem: structurally open at current stage
+residual nullity: 3 -> 3
+```
+
+Consequence: the mass-generation line is sealed until new finite input is introduced. The correct next independent line is absolute gauge-coupling normalization from the topological action seal.

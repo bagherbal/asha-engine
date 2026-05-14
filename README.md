@@ -1273,3 +1273,53 @@ residual nullity:                         3 -> 3
 The positive result is architectural: the engine now knows exactly what the mass problem is. It is not a gauge-ratio problem and not a contact-mode-classification problem. It is the problem of deriving four finite non-commuting 3×3 Yukawa matrices, with masses as singular values and CKM/PMNS as relative left-eigenbasis misalignments.
 
 Next gate: Gate 173 — finite non-commuting texture-pair search: audit available finite operators for two non-commuting generation-space textures, the minimal precondition for any CKM/PMNS theorem.
+
+## v1.71 — Gate 173: Finite non-commuting texture-pair search
+
+Gate 173 adds `pkg/bridge/noncommutingtexturepair`.
+
+Gate 172 located the mass problem precisely: after the triality lift, CKM/PMNS requires at least two finite non-commuting generation-space Yukawa texture operators. Gate 173 audits every currently derived operator on the 3-dimensional generation carrier:
+
+```text
+I_gen
+C3 triality cycle
+S3 triality reflection
+triality-invariant singlet projector / texture algebra
+Higgs/contact diagonal generation spurion
+BF / active-generation curvature residual
+scalar-shape contact-kind projector lifted to generation space
+spectral-triple real structure on generation indices
+source-tensor variational minimum
+```
+
+The gate separates two facts that must not be conflated:
+
+```text
+raw non-commuting generation maps exist
+qualified non-commuting Yukawa texture sources do not exist
+```
+
+The raw triality permutation generators do not commute as linear maps, but they are symmetry/label actions. They are not Hermitian generation-breaking Yukawa amplitude operators. The diagonal Higgs/contact spurion splits three weights, but it is bridge-required and produces no mixing by itself. The BF/source routes remain zero. The scalar-shape/contact-kind lift is generation-blind. The real structure acts as conjugation/pairing, not as a generation texture.
+
+Gate 173 theorem ledger:
+
+```text
+operator candidates audited:              9
+canonical operators:                       >= 6
+linear texture candidates:                 >= 5
+raw non-commuting pairs:                   > 0
+qualified texture operators:               0
+qualified non-commuting texture pairs:     0
+canonical generation-breaking textures:    0
+canonical mixing sources:                  0
+BF/source nonzero curvature maps:          0
+Yukawa amplitudes derived:                 false
+fermion masses derived:                    false
+CKM / PMNS derived:                        false
+physical constants derived:                false
+residual nullity:                          3 -> 3
+```
+
+This is a clean mass-generation no-go at the current finite-data stage. The mass problem is not erased; it is sealed as structurally open until a new finite source appears that is simultaneously canonical, generation-breaking, nonzero, charge-compatible, and non-commuting with another qualified texture source.
+
+Next gate: Gate 174 — spectral-action normalization from the topological action seal. The gauge ratio is closed and the mass route is sealed for now, so the next independent attack is the absolute coupling normalization: whether the topological action seal `S_top = 8π²` fixes the spectral-action prefactor `f₀` and reduces nullity from 3 to 2.

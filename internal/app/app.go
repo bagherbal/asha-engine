@@ -106,6 +106,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
+	"github.com/bagherbal/asha-engine/pkg/bridge/noncommutingtexturepair"
 	"github.com/bagherbal/asha-engine/pkg/bridge/o3quotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedconnection"
@@ -356,6 +357,7 @@ func Run() error {
 		higgsconjugatequotient.HiggsConjugateChannelQuotientTheorem(),
 		contactkindassignment.ContactSpectrumToFermionKindAssignmentTheorem(),
 		trialitytexturelift.TrialityLiftedYukawaTextureOperatorSearchTheorem(),
+		noncommutingtexturepair.FiniteNonCommutingTexturePairSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
