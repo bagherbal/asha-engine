@@ -72,3 +72,7 @@ Exact triality is now treated as a replication principle, not as a texture-selec
 ## Gate 84 — Finite Scalar Covariant Derivative / Gauge-Boson Mass Matrix
 
 Gate 84 constructs an abstract finite scalar covariant-derivative template on the four-real-dimensional scalar/contact frame. It verifies the W/Z/photon signature at the dimensionless bridge level: two degenerate charged modes, one neutral massive mode, and one electromagnetic null direction. It deliberately does not claim physical W/Z masses because scalar kinetic normalization, gauge couplings, gauge-field Hessian, and canonical vacuum orientation remain open.
+
+## Gate 85 — Scalar kinetic / gauge-eating diagnostic
+
+Gate 85 strengthens the scalar covariant-derivative bridge by auditing the scalar kinetic frame and Goldstone image structure. It verifies that the diagnostic scalar vacuum has one radial direction, three independent broken-generator images from `{T1,T2,Z=T3−YΦ}`, and an electromagnetic null generator `Q=T3+YΦ`. The result is still bridge-level: the Euclidean scalar metric is not yet an action-selected kinetic normalization, and physical W/Z masses remain forbidden until the gauge Hessian, couplings, and vacuum orientation are derived.

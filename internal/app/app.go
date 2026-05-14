@@ -30,6 +30,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeaction"
+	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeeating"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugehessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
@@ -180,6 +181,7 @@ func Run() error {
 		gaugeaction.GaugeKineticActionSelectionRGBoundaryAuditTheorem(),
 		gaugehessian.GaugeKineticHessianSecondVariationTheorem(),
 		scalarcovariant.FiniteScalarCovariantDerivativeMassMatrixTheorem(),
+		gaugeeating.FiniteScalarKineticGaugeEatingSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
