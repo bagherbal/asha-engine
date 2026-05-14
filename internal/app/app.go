@@ -272,6 +272,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/pevobservabilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/pfaffianhierarchy"
 	"github.com/bagherbal/asha-engine/pkg/bridge/physicalfinitehilbertcompletion"
+	"github.com/bagherbal/asha-engine/pkg/bridge/postflavorarchitectureboard"
 	"github.com/bagherbal/asha-engine/pkg/bridge/productspectralactioncoefficients"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedconnection"
@@ -838,6 +839,7 @@ func Run() error {
 		minimalsectorsourceaxiom.MinimalSectorSourceAxiomConsistencyParameterCountingSieveTheorem(),
 		complexsectorsourcephase.ComplexSectorSourceCPPhaseAxiomSieveTheorem(),
 		familyaxiomclosureledger.FamilyAxiomClosureLedgerFlavorFrontierSealTheorem(),
+		postflavorarchitectureboard.PostFlavorArchitectureConsolidationFinalLawSpaceBoardTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
