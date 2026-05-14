@@ -4566,3 +4566,17 @@ Gate 260 adds `pkg/bridge/noncartanflavorvacuum` and registers `NonCartanFlavorV
 The gate closes the proposed non-Cartan rescue of the `8_v` neutral-kernel route. It retrieves the full `U12` local weak algebra, including `T1`, `T2`, and `W±`, but proves that these operators only rotate the weak basis. Since every `su(2)` element is conjugate to a Cartan representative, the charge spectrum and kernel dimension are gauge-invariant. Therefore the Gate 259 maximum `8_v` kernel dimension remains `2`, not `3`.
 
 The gate then opens a parallel direct-generation route. It treats `tau_eta=(2,-2,1)` as a native three-component operator on `G_tau = span{Q^TQ, Z^TZ, T3L^T Y_phi}`, not as a vector inside `8_v`. This is recorded only as a generation-breaking source-map candidate; Yukawa textures, masses, CKM, and PMNS remain blocked until a finite bilinear/action map is derived.
+
+## Gate 261 — Direct tau_eta Yukawa Source Map / Generation Bilinear Carrier Audit
+
+Gate 261 adds `pkg/bridge/tauetayukawasourcemap` and registers `DirectTauEtaYukawaSourceMapGenerationBilinearCarrierAuditTheorem`.
+
+The gate preserves the Gate 260 closure of the `8_v` neutral-kernel route and moves the flavor problem into the direct bilinear carrier:
+
+```text
+G_L ≅ C^3_L, G_R ≅ C^3_R, Hom(G_R,G_L) ≅ M_3(C)
+```
+
+It proves that `tau_eta=(2,-2,1)` lawfully opens a diagonal signed `1⊕1⊕1` generation-breaking source map, and that `ad_tau` decomposes the texture algebra into a `3D` diagonal commutant plus a `6D` off-diagonal mixing complement with absolute gaps `{1,3,4}`.
+
+The gate does not derive a physical Yukawa matrix, CKM/PMNS, observed masses, numerical amplitudes, or a spectral-action normalization. It records `FAILED_ROUTE_NO_CANONICAL_NONCOMMUTING_PHASE_PARTNER_SELECTED` and points Gate 262 toward the finite non-commuting partner / phase-mixing source audit.

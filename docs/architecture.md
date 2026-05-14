@@ -4717,3 +4717,22 @@ Architecturally, this gate separates two paths:
 2. **Opened path:** the direct `tau_eta` generation carrier. The three-component signed operator `(2,-2,1)` is recognized as a native generation-breaking source candidate living on an operator carrier, not inside the vector representation.
 
 This updates the ontology: the missing flavor structure should be sought as a direct generation bilinear/source-map theorem, not as a forced neutral 3-plane inside `8_v`.
+
+## Gate 261 — Direct tau_eta Yukawa Source Map / Generation Bilinear Carrier Audit
+
+Gate 261 adds `pkg/bridge/tauetayukawasourcemap` and registers `DirectTauEtaYukawaSourceMapGenerationBilinearCarrierAuditTheorem`.
+
+The gate formalizes the direct generation route opened by Gate 260. Instead of searching for a neutral `8_v` vector 3-plane, it defines the correct operator-valued arena:
+
+```text
+Y_f : G_R -> G_L
+Hom(G_R,G_L) ≅ M_3(C)
+```
+
+Within this arena, `tau_eta=diag(2,-2,1)` is a lawful diagonal source map. Its adjoint action satisfies:
+
+```text
+[tau_eta,E_ij] = (lambda_i-lambda_j)E_ij
+```
+
+so the texture algebra splits into a `3D` commutant and a `6D` off-diagonal complement. This exposes the precise arena where mixing must arise, while preserving the firewall: no non-commuting partner, finite action, CKM/PMNS, or mass spectrum is derived in Gate 261.
