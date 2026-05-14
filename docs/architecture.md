@@ -855,3 +855,55 @@ L = ln(M*/μ)
 ```
 
 The next gate should test whether invariant quotient data can be lifted back to row-level data without reintroducing an arbitrary contact-to-Fano bijection.
+
+### Gate 121 — Contact spectral reconstruction / invariant-to-row lifting obstruction theorem
+
+Gate 121 adds `pkg/bridge/contactreconstruction`. It takes the Gate 120 quotient fork and asks whether anonymous quotient/invariant data can be lifted back to row-level contact representation data without secretly choosing a contact-to-Fano labeling.
+
+The gate separates three different notions of reconstruction:
+
+```text
+weighted singleton lift  = canonical and row-preserving, but identity-only
+anonymous one-orbit lift = symmetric, but row recovery has 7! choices
+spectral multiset lift   = recovers values, not row/Fano/local-field semantics
+```
+
+The spectral multiset reconstructs the seven numerical overlap values:
+
+```text
+0.2839121926
+0.3333333333
+0.4411227573
+0.5000000000
+0.6666666667
+0.7440966380
+0.8975350788
+```
+
+But it does not reconstruct which value belongs to a Fano point, Fano line, local field variable, gauge representation row, mass threshold, or decoupling class. Expanding the anonymous one-orbit invariant back into row-level contact-Fano data requires choosing one of:
+
+```text
+7! = 5040
+```
+
+labelings. None is selected by the current finite data.
+
+Therefore Gate 121 proves a no-loss/no-choice obstruction:
+
+```text
+no-loss weighted lift exists   = true, but not Fano-like / representation-complete
+choice-free anonymous lift     = false
+canonical contact-Fano row map = false
+representation-complete rows   = 0 / 7
+contact beta rows allowed      = 0
+```
+
+Result: no contact representation row, zero-row cancellation, threshold-corrected beta tensor, physical coupling, boundary scale, or mass is derived. The residual physical-flow nullity remains unchanged:
+
+```text
+u = 1/g_*²
+L = ln(M*/μ)
+Δb_i(L)
+```
+
+The next gate should test whether incidence-weighted spectral data can provide row semantics: a local variable reconstruction, constraint semantic map, or finite representation-row rule that is stronger than anonymous quotient lifting.
