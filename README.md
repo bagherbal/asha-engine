@@ -3747,3 +3747,53 @@ tau_eta is not yet in its domain.
 ```
 
 The next hard target is no longer the Clifford action itself. It is a carrier theorem that represents the scalar fundamental class as a form, finite index class, or labelled operator on the Fock/generation carriers.
+
+## v2.42 — Gate 244: Characteristic class / operator-to-mode pullback audit
+
+Gate 244 adds `pkg/bridge/characteristicpullback` after the Clifford-action domain obstruction of Gate 243.
+
+Gate 243 proved that the action map
+
+```text
+c: Λ*(W) -> End(S_C)
+```
+
+exists, but that `tau_eta=(2,-2,1)` is not yet an exterior form, basis-blade coefficient vector, or finite index class in the domain of that action. Gate 244 therefore traces the exact source of the three numbers.
+
+The recovered source records are:
+
+```text
+tau_eta(Q^T Q)        =  2
+tau_eta(Z^T Z)        = -2
+tau_eta(T3L^T Y_phi)  =  1
+```
+
+This confirms the sequence is exact and stable. However, the source operators are scalar-bundle curvature observables on `H_Phi`, not spatial Fock-mode projectors on `W`. Therefore the tempting representative
+
+```text
+omega_tau ?= 2 e_1 - 2 e_2 + e_3
+```
+
+is rejected as hand-labelled.
+
+Gate 244 status:
+
+```text
+CONDITIONAL_SUPPORT_TAU_ETA_OPERATOR_ORIGIN_TRACED
+CONDITIONAL_SUPPORT_NATIVE_TRACE_SEQUENCE_STABLE
+FAILED_ROUTE_SOURCE_OPERATORS_NOT_SPATIAL_FOCK_MODES
+FAILED_ROUTE_EXTERIOR_FORM_REPRESENTATIVE_DERIVATION
+FAILED_ROUTE_CHARACTERISTIC_CLASS_REPRESENTATIVE_DERIVATION
+FAILED_ROUTE_CHARACTERISTIC_PULLBACK_WEAK_PLANE_SELECTION
+FAILED_ROUTE_CHARACTERISTIC_PULLBACK_GENERATION_TEXTURE
+FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
+```
+
+The key theorem distinction is now:
+
+```text
+tau_eta origin known: yes
+carrier projection known: no
+```
+
+The weak-plane and generation-breaking capacities remain visible, but no exterior representative, spinor endomorphism, weak plane, global `H`, or generation texture is derived.

@@ -25,6 +25,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/canonicalboundary"
 	"github.com/bagherbal/asha-engine/pkg/bridge/carrieractivationseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
+	"github.com/bagherbal/asha-engine/pkg/bridge/characteristicpullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiralweakselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/cliffordcontactcommutant"
@@ -498,6 +499,7 @@ func Run() error {
 		reebweakselection.ReebVectorSpatialIsotropyWeakPlaneSieveAuditTheorem(),
 		tauetaspatialtagging.TauEtaSpatialTaggingGenerationBreakingAuditTheorem(),
 		cliffordpullback.CliffordActionPullbackTauEtaEndomorphismAuditTheorem(),
+		characteristicpullback.CharacteristicClassOperatorToModePullbackAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

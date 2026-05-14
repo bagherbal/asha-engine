@@ -291,3 +291,12 @@
 - Reject hypothetical number-operator matrices if their slot labels are assigned manually rather than derived.
 - For weak-plane selection, keep conditional selector rules separate from native S3-breaking endomorphisms.
 - For generation breaking, keep three-eigenvalue capacity separate from a full texture theorem with non-commuting operators and mixing.
+
+## Gate 244 method refinement — source labels are not carrier labels
+
+- When a scalar trace sequence has the right selector shape, trace its source operators before constructing any matrix or form representative.
+- Distinguish exact source expressions from target-carrier basis labels. `tau_eta(Q^TQ)` is a scalar-bundle trace record; it is not automatically a coefficient of `e_1`.
+- Cardinality matches are not pullbacks. Three trace slots and three spatial modes do not justify a map between them.
+- Reject candidate exterior representatives when their basis-blade labels are assigned by recognition rather than derived from an operator-to-carrier theorem.
+- Preserve conditional roadmaps: a failed pullback does not erase selector capacity, but it prevents promotion to weak-plane selection or generation texture.
+- The next useful gate should derive a carrier projection or tensor-lift map, not search for another numerically attractive three-component signature.

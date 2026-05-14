@@ -4103,3 +4103,48 @@ global H summand: still unselected
 ```
 
 This moves the obstruction one categorical level lower. The missing bridge is not generic Clifford multiplication; it is a theorem identifying how the scalar-bundle functional `tau_eta=(2,-2,1)` becomes a form, index class, or labelled operator on the relevant carrier.
+
+## Gate 244 — Characteristic class and operator-to-mode pullback audit
+
+Gate 244 adds `pkg/bridge/characteristicpullback` after Gate 243's Clifford-action pullback audit.
+
+The gate traces the three entries of the scalar fundamental class back to their exact source expressions:
+
+```text
+tau_eta(Q^T Q)       =  2
+tau_eta(Z^T Z)       = -2
+tau_eta(T3L^T Y_phi) =  1
+```
+
+This confirms that `tau_eta=(2,-2,1)` is not an arbitrary sequence. It is an exact eta-graded scalar-bundle trace signature on the audited scalar curvature-observable algebra.
+
+However, the source operators `Q^TQ`, `Z^TZ`, and `T3L^T Y_phi` live on the sealed scalar bundle `H_Phi`. They are not Fock spatial-mode projectors, exterior basis blades, or generation-carrier labels. Therefore the candidate representative
+
+```text
+omega_tau ?= 2 e_1 - 2 e_2 + e_3
+```
+
+is not constructed. It would require manually assigning scalar trace slots to spatial axes.
+
+Architecturally, Gate 244 moves the obstruction to a sharper location:
+
+```text
+scalar fundamental class known: yes
+source operators known: yes
+Clifford action available: yes
+characteristic/exterior representative: no
+H_Phi -> W_spatial carrier projection: no
+H_Phi -> triality generation carrier projection: no
+```
+
+Consequences:
+
+```text
+weak-plane selector capacity: yes
+weak plane derived: no
+generation-breaking capacity: yes
+generation texture derived: no
+global H summand: still unselected
+```
+
+The next finite-algebra frontier is a lawful carrier-projection theorem from scalar-bundle curvature observables to Fock/generation labels, or an explicit seal admitting that this projection is a physical boundary condition rather than a finite derivation.
