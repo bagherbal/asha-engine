@@ -1200,3 +1200,20 @@ J = D_contact - mean(D_contact) I
 It is canonical as a contact diagnostic, trace-zero, and signed. It gives a `3|4` sign pattern matching the largest-gap contact split. However, it is still not a physical C-odd source current. It has no selected charge-conjugation action, no source-current coupling theorem, no Fock/contact pullback, no local field map, no T3R or hypercharge semantics, and no mass activation/decoupling rule.
 
 Therefore the signed-current construction remains diagnostic only. Contact representation rows, threshold beta rows, physical electroweak constants, and masses remain sealed.
+
+## Gate 146 — Contact Charge Lattice Embedding / Rational-Spectrum Obstruction
+
+Package: `pkg/bridge/contactchargelattice`
+
+Gate 146 tests whether the canonical centered contact spectral current from Gate 144/145 can be embedded into a finite rational charge lattice strongly enough to become a physical charge operator.
+
+It audits the half-integer `T3R`-style lattice, sixth-integer charge/hypercharge-style lattice, the balanced `1/7` trace-zero split, bounded rational approximation, free rational scaling, and observed-charge fitting. The result is negative:
+
+- the raw centered contact spectrum is not contained in the half-integer or sixth-integer lattices;
+- the balanced `+4/7,-3/7` split lies in a seventh lattice, but it is only a two-level diagnostic summary, not the raw spectrum and not a physical charge row;
+- bounded rational approximations require denominator choices not selected by the finite action;
+- free scaling and observed-charge fits are forbidden.
+
+Therefore contact `T3R`, `B-L`, chirality, `SU(2)L`, hypercharge rows, threshold beta rows, physical electroweak constants, and masses remain sealed.
+
+Next: Gate 147 — contact irrational-spectrum algebraic-origin / minimal-polynomial obstruction theorem.

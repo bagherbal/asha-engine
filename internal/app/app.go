@@ -28,6 +28,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactasymmetry"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactautaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactbundle"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactchargelattice"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactchargenorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactcoddsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactcohomology"
@@ -302,6 +303,7 @@ func Run() error {
 		contactasymmetry.ContactChargeConjugationBreakingSourceAsymmetrySelectorSearchTheorem(),
 		contactcoddsource.ContactCoddSourceFunctionalFiniteSignedCurrentConstructionTheorem(),
 		contactchargenorm.CenteredContactSpectralCurrentChargeOperatorNormalizationObstructionTheorem(),
+		contactchargelattice.ContactChargeLatticeEmbeddingRationalSpectrumObstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
