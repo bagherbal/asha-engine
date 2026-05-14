@@ -44,3 +44,20 @@ new structural constraint.
 go test ./...
 go run ./cmd/asha
 ```
+
+## v0.10 — Projected connection truth: finite Higgs/vacuum-mixing sector
+
+Gate 11 adds `pkg/gauge/higgs`. It keeps the off-diagonal blocks discarded by strict Boolean compression:
+
+```text
+Φ_i = P_C A_i P_K + P_K A_i P_C
+```
+
+The gate verifies that `Φ_i` is purely off-diagonal and skew, builds positive mixing operators on the contact vacuum and its complement, and reports the derived finite spectra. This gate does not claim the physical Higgs mass. It identifies the finite object that the bridge layer must use for electroweak symmetry breaking, Yukawa texture, and vacuum mixing.
+
+Current finite result:
+
+- Higgs/vacuum-mixing span rank: 2
+- Contact-vacuum mixing rank: 4 inside `dim(K)=7`
+- Unmixed contact directions: 3
+- Trace balance: `Tr(M_K)=Tr(M_C)=1.1333333333`

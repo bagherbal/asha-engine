@@ -10,6 +10,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/gauge"
 	"github.com/bagherbal/asha-engine/pkg/gauge/boundary"
 	"github.com/bagherbal/asha-engine/pkg/gauge/connection"
+	"github.com/bagherbal/asha-engine/pkg/gauge/higgs"
 	"github.com/bagherbal/asha-engine/pkg/gauge/lift"
 	"github.com/bagherbal/asha-engine/pkg/geometry/boolean"
 	"github.com/bagherbal/asha-engine/pkg/geometry/contact"
@@ -31,6 +32,7 @@ func Run() error {
 		lift.BooleanCompressionTheorem(),
 		boundary.BoundaryFixedClosureTheorem(),
 		connection.ProjectedConnectionTheorem(),
+		higgs.VacuumMixingTheorem(),
 	)
 
 	results := registry.RunAll()
