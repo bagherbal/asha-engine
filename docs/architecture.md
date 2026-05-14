@@ -1611,3 +1611,85 @@ The finite Dirac-like candidates `Omega_contact`, `Omega_contact^{-1}`, the cent
 Therefore Gate 163 does not reject the spectral-action path. It proves that the path requires a prior finite Dirac/spectral-triple construction before any zeta or heat coefficient may be interpreted as a gauge coupling, threshold contribution, mass, scale, or physical constant.
 
 Next gate: Gate 164 — finite Dirac candidate construction / order-one axiom obstruction audit.
+
+### Gate 164 — Finite Dirac candidate construction / order-one axiom obstruction audit
+
+Package: `pkg/bridge/diracorderone`
+
+Gate 164 consumes the Gate 163 finite spectral-action pre-data and audits whether a genuine finite Dirac operator can be selected by the order-one axiom.
+
+The gate separates three different notions that must not be conflated:
+
+1. exact contact spectral diagnostics;
+2. vacuous order-one satisfaction inside a commutative contact spectral algebra;
+3. nontrivial finite Dirac operators capable of generating one-forms and gauge fluctuations.
+
+Audited representation candidates:
+
+```text
+contact spectral algebra C[Omega]
+Boolean/G2 projector algebra on Lambda^4 R^8
+Cl(1,7) bookkeeping action
+Fock/scalar matter representation fragments
+formal total direct-sum algebra
+```
+
+Only the first two are canonical finite representations on their own carriers, and neither is a faithful representation on the total spectral Hilbert space. The contact spectral algebra is commutative and gauge-trivial; it produces no nonzero one-forms.
+
+Audited real structures:
+
+```text
+real conjugation on the rational contact carrier
+Fock particle/antiparticle conjugation diagnostic
+quartic ghost-pairing real structure
+global finite spectral-triple J
+```
+
+No global KO-compatible real structure is available. The quartic ghost-pairing option would require the nontrivial quartic split already forbidden by the Galois grading firewall.
+
+Audited gradings:
+
+```text
+uniform contact grading
+quartic two/two ghost grading
+scalar active-sector grading
+matter chirality/T3R grading
+global finite spectral-triple gamma
+```
+
+Partial carrier-level gradings exist, but no global nontrivial Galois-safe grading `gamma` is canonical or compatible with a nontrivial odd Dirac operator.
+
+Audited finite Dirac candidates:
+
+```text
+D = Omega_contact
+D = Omega_contact - Tr(Omega)/7 I
+D = Omega_contact^{-1}
+D = p_q(Omega_contact)
+D = [[0, M_KC], [M_KC^*, 0]]
+D_Y = Y + Y^*
+D_Q = Q + Q^*
+```
+
+The four contact spectral functions are exact and order-one testable, but their order-one verification is vacuous because they commute with the contact spectral algebra. The BRST symmetrization is also inert because the only canonical differential remains `Q=0`. The two nontrivial mixed-sector candidates have the right qualitative shape for a finite Dirac block, but they require missing canonical sector maps, a total algebra representation, `J`, and `gamma`, so the order-one axiom cannot be lawfully tested for them.
+
+Gate 164 theorem ledger:
+
+```text
+Dirac candidates audited:          7
+order-one testable candidates:     4
+order-one verified candidates:     4
+order-one vacuous candidates:      5
+nontrivial commutator candidates:  2
+nontrivial order-one verified:     0
+promotable finite Dirac operators: 0
+gauge kinetic rows:                0
+boundary constraints:              0
+threshold beta rows:               0
+physical constants derived:        false
+residual nullity:                  3 -> 3
+```
+
+Therefore Gate 164 does not reject the spectral-triple path. It proves that the next missing object is not another scalar spectral functional, but a faithful canonical finite-algebra representation on the total spectral Hilbert space. Until that representation exists, no nontrivial Dirac operator, real structure, grading, order-one calculus, gauge fluctuation map, beta row, or physical constant may be claimed.
+
+Next gate: Gate 165 — finite algebra representation on total spectral Hilbert space / faithful action obstruction audit.

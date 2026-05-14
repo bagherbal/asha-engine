@@ -78,6 +78,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentembedding"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currenthessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentprojection"
+	"github.com/bagherbal/asha-engine/pkg/bridge/diracorderone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcarrier"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcoupling"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewcurvature"
@@ -338,6 +339,7 @@ func Run() error {
 		quarticspectralfunctional.CollectiveQuarticSpectralFunctionalActionLevelContributionTheorem(),
 		contactzeta.FiniteContactSpectralZetaRegularizationSevenRootActionFunctionalAuditTheorem(),
 		spectralaction.FiniteSpectralActionPrincipleSpectralTripleConstructionAuditTheorem(),
+		diracorderone.FiniteDiracCandidateOrderOneAxiomObstructionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
