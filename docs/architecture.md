@@ -2421,3 +2421,24 @@ Rejected as threshold origins:
 The continuum bridge branch requires an oriented four-cycle/principal-bundle/Chern-Weil style normalization, a local field map, physical mass units, activation predicates, decoupling laws, and gauge representation rows. The new-sector branch requires a new finite carrier, canonical gauge representation, finite mass or activation scale, matching law, beta-index row, and anomaly/vacuum compatibility.
 
 No branch is currently derived, so neither strict nor conditional nullity is reduced.
+
+### Gate 180 — continuum decoupling bridge axiom inventory / finite heat-kernel matching preflight
+
+Package: `pkg/bridge/continuumdecouplingbridge`
+
+Gate 180 audits the existing-spectrum threshold-origin branch left open by Gate 179. It does not compute threshold corrections. It inventories the axioms required to promote finite spectra into continuum heat-kernel/decoupling data and verifies that the current engine lacks the bridge.
+
+Required bridge pieces include an oriented four-dimensional carrier or finite four-cycle surrogate, a principal gauge bundle/connection map, Chern-Weil normalization, continuum trace convention, local field map, Laplace-type operator, heat-kernel moment convention, Seeley-DeWitt coefficient extraction, physical mass scale, activation predicate, decoupling/matching law, and representation-complete beta rows.
+
+The exact finite anchors from previous gates remain valuable predata, but none is currently promotable:
+
+- scalar active finite eigenvalue anchors;
+- B-sector spectral gaps;
+- seven contact partial-overlap modes;
+- collective quartic/contact zeta ledgers;
+- representation-trace gauge ratio;
+- topological action seal.
+
+The gate records that `a0`, `a2`, and `a4` heat-kernel coefficients are not derived, no finite decoupling law exists, no non-universal `Δb_i` row is produced, and both strict and conditional nullity remain unchanged.
+
+Recommended next gate: Gate 181 — finite oriented four-cycle / Chern-Weil carrier construction search.

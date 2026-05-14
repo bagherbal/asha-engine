@@ -75,6 +75,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactu4kernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactu4projection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactzeta"
+	"github.com/bagherbal/asha-engine/pkg/bridge/continuumdecouplingbridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentcontact"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentembedding"
@@ -370,6 +371,7 @@ func Run() error {
 		normalizationthresholdaudit.NormalizationPrefactorThresholdDeformationAuditTheorem(),
 		finitethresholdoperator.FiniteThresholdOperatorDecouplingSpectrumSearchTheorem(),
 		thresholdorigindichotomy.ThresholdOriginDichotomyNewSectorContinuumBridgeAuditTheorem(),
+		continuumdecouplingbridge.ContinuumDecouplingBridgeAxiomInventoryHeatKernelPreflightTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

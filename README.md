@@ -1697,3 +1697,56 @@ conditional nullity: 2 -> 2
 ```
 
 The next bridge should either construct a continuum decoupling / heat-kernel matching preflight for the existing finite spectra, or derive new finite heavy sectors with representation-complete beta rows.
+
+## v1.78 — Gate 180: Continuum decoupling bridge axiom inventory / finite heat-kernel matching preflight
+
+Gate 180 adds `pkg/bridge/continuumdecouplingbridge`.
+
+Gate 179 left two lawful threshold-origin branches open: existing finite spectra plus a missing continuum decoupling bridge, or genuinely new finite heavy sectors. Gate 180 audits the first branch and asks what must exist before a finite spectrum can be promoted to heat-kernel or threshold data.
+
+The required bridge axioms are now explicit:
+
+```text
+oriented four-dimensional carrier / finite four-cycle
+principal gauge bundle / connection map
+Chern-Weil normalization and instanton-number map
+continuum trace / kinetic normalization convention
+local field map from finite anchors to continuum sections
+Laplace-type positive elliptic operator
+heat-kernel cutoff/test function and moment convention
+Seeley-DeWitt coefficient extraction a0/a2/a4
+physical mass dimension / scale map
+heavy-light activation predicate
+decoupling and matching logarithm law
+gauge representation rows for threshold modes
+anomaly/vacuum compatibility for any heavy sector
+```
+
+The gate audits all current finite anchors inherited from Gate 179. Exact spectra and zeta ledgers exist, but none is promotable to a heat-kernel coefficient or threshold beta row because no anchor currently has the full analytic/geometric chain:
+
+```text
+finite spectrum
+→ local continuum field carrier
+→ Laplace-type operator / heat-kernel coefficient extraction
+→ physical mass unit
+→ activation predicate
+→ decoupling/matching law
+→ Δb_i contribution
+```
+
+Gate 180 status:
+
+```text
+Status: BRIDGE_REQUIRED
+finite heat-kernel matching derived: false
+continuum decoupling bridge derived: false
+Seeley-DeWitt a0/a2/a4 coefficients derived: false
+non-universal finite Δb_i derived: false
+absolute coupling promoted: false
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+```
+
+This is a preflight theorem, not a new no-go against heat-kernel methods. It proves that the missing object is geometric/analytic rather than spectral: the engine has finite spectra, but it does not yet have the oriented carrier, bundle, Chern-Weil trace map, Laplace-type operator, mass unit, activation predicate, or matching law required to use them as continuum threshold data.
+
+Next gate: Gate 181 — finite oriented four-cycle / Chern-Weil carrier construction search.
