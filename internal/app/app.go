@@ -92,6 +92,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticgrading"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticlocalfield"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticmultiplet"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticscalaryukawabundle"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotientsemantics"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactreconstruction"
@@ -796,6 +797,7 @@ func Run() error {
 		dynamicgenerationlabels.RepresentationOriginDynamicGenerationLabelsTheorem(),
 		threeobjectsource.EndogenousThreeObjectSourceBeyondSpinorChiralityTheorem(),
 		contactsingletonflavorfunctor.ContactSingletonFiniteDiracFlavorFunctorSieveTheorem(),
+		contactquarticscalaryukawabundle.ContactQuarticPrimaryScalarYukawaBundleFunctorAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

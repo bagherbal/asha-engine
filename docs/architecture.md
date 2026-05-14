@@ -5890,3 +5890,38 @@ dim M_charged = 13
 ```
 
 Architecturally, Gate 397 redirects the contact route away from generation labels and toward the four-dimensional quartic primary block, which is already dimension-compatible with the scalar/Higgs carrier and should be audited next as a possible scalar/Yukawa bundle functor.
+
+## Gate 398 — Quartic primary scalar/Yukawa bundle boundary
+
+Gate 398 adds `pkg/bridge/contactquarticscalaryukawabundle` and audits the remaining non-singleton contact spectral datum: the exact four-dimensional quartic primary block.
+
+The architectural question is whether the abstract quartic module
+
+```text
+Q[x]/(q4), q4 = 3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271
+```
+
+is canonically the same object as the scalar/Higgs carrier `H_phi`, and whether that identification can act on the finite one-form/Yukawa bundle.
+
+The result separates resonance from theorem:
+
+```text
+quartic primary dim = 4
+H_phi active real dim = 4
+```
+
+but no native functor is derived:
+
+```text
+rho_4: Q[x]/(q4) -> End(H_phi)
+```
+
+The audit rejects dimension-only identification, quarantines companion-matrix stress tests as arbitrary basis choices, and blocks promotion to the ten-slot one-form edge module or the sixteen-entry Yukawa scalar-fiber ledger. Therefore the scalar/Higgs lane is preserved, but no Yukawa coupling reduction or flavor-moduli reduction follows.
+
+Next architectural obligation:
+
+```text
+Gate 399 — Scalar Bundle Identity Selector or Obstruction
+```
+
+The next theorem must either derive a canonical `H_phi` endomorphism/complex-structure/one-form invariant that identifies the quartic primary, or seal the quartic block as contact-spectral-only for scalar/Yukawa purposes.

@@ -6272,3 +6272,38 @@ FIREWALL_PRESERVED_13_MODULI
 The three rational singleton projectors are exact and native, but only in the contact spectral domain. The finite-Dirac/Yukawa edge target remains generation-uniform, and assigning the three roots to generations requires a circular `3!` choice. A sealed diagonal-plus-cycle stress test has noncommuting capacity, but it is not promoted to a native theorem.
 
 The next logical gate is Gate 398: audit the remaining exact contact spectral datum, the four-dimensional quartic primary block, as a possible scalar/Yukawa bundle functor rather than a generation-label source.
+
+## Gate 398 — Contact quartic primary to scalar/Yukawa bundle functor audit
+
+Gate 398 implements `pkg/bridge/contactquarticscalaryukawabundle` after the Gate-397 singleton flavor obstruction. It redirects the remaining exact contact spectral datum — the four-dimensional quartic primary block — to the place where it has the strongest dimensional resonance: the scalar/Higgs and Yukawa bundle lane.
+
+The claim tested is precise:
+
+```text
+rho_4: Q[x]/(q4) -> End(H_phi)
+```
+
+with compatibility against `A_F`, `J`, first-order, electroweak charges, the ten-slot J-doubled one-form edge support, and the gauge-compatible Yukawa channel/fiber ledger.
+
+The result is conservative but useful:
+
+```text
+CONDITIONAL_SUPPORT_QUARTIC_PRIMARY_SCALAR_DIMENSION_MATCH
+CONDITIONAL_SUPPORT_ABSTRACT_QUARTIC_MODULE_EXISTS
+CONDITIONAL_SUPPORT_HIGGS_SCALAR_CARRIER_FOUR_REAL_DERIVED
+FAILED_ROUTE_NO_CANONICAL_HPHI_IDENTIFICATION
+FAILED_ROUTE_NO_SCALAR_OPERATOR_WITH_QUARTIC_MINIMAL_POLYNOMIAL
+FAILED_ROUTE_NO_QUARTIC_TO_ONEFORM_EDGE_FUNCTOR
+FAILED_ROUTE_NO_YUKAWA_COUPLING_REDUCTION
+FIREWALL_PRESERVED_13_MODULI
+```
+
+The quartic block and the scalar carrier are both four-dimensional, but this is not enough. The gate finds no native scalar operator on `H_phi` with the quartic minimal polynomial, no basis-free identification of the quartic ideal with the Higgs carrier, and no compatible action on the one-form edge module or Yukawa fibers.
+
+So Gate 398 preserves the existing scalar/Higgs lane instead of rewriting it. The scalar normal form and one-form edge-measure Higgs proxy remain intact, but the quartic primary does not yet derive Yukawa couplings or reduce the charged flavor firewall:
+
+```text
+dim M_charged = 13
+```
+
+The next logical gate is Gate 399: search for a scalar-bundle identity selector or obstruction, i.e. a canonical `H_phi` endomorphism, complex structure, or one-form identity whose minimal polynomial/invariant functional could identify the quartic primary without arbitrary basis choice.
