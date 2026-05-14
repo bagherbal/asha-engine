@@ -23,6 +23,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactembedding"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactfieldmap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactpropagator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentcontact"
@@ -232,6 +233,7 @@ func Run() error {
 		betamatching.ThresholdRepresentationCompletionBetaMatchingTensorSearchTheorem(),
 		modeclass.FiniteMassActivationClassClassifierTheorem(),
 		contactpropagator.ContactOverlapKineticSignLocalityPropagatorClassifierTheorem(),
+		contactfieldmap.ContactOverlapLocalFieldMapConstraintBRSTClassifierTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

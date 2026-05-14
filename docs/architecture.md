@@ -490,3 +490,39 @@ nullity after Gate 110  = 3
 ```
 
 The next true gate must derive a contact-overlap local field map or a constraint/BRST classifier. Until locality, kinetic operator, pole residue, representation, activation, and decoupling are all selected, threshold-corrected beta coefficients and physical constants remain sealed.
+
+## Gate 111 — Contact-Overlap Local Field Map / Constraint-BRST Classifier Search
+
+Gate 111 adds `pkg/bridge/contactfieldmap`. Gate 110 established that the seven contact partial-overlap modes have positive finite overlap eigenvalues, but that positivity was not enough to classify them as physical propagating fields, regulators, constrained modes, or vacuum-frustration modes.
+
+Gate 111 tests the next stricter preconditions. A contact partial-overlap mode can only become a physical local threshold field after deriving:
+
+```text
+finite contact eigenmode
+→ local spacetime support / bundle-section map
+→ Lorentzian quadratic kinetic action
+→ gauge representation row
+→ pole and residue theorem
+→ mass unit + activation + decoupling rule
+```
+
+It can only become a BRST/regulator/constrained nonphysical mode after deriving:
+
+```text
+constraint generator
+→ ghost grading
+→ nilpotent Q with Q² = 0
+→ BRST pair/quartet assignment
+→ supertrace/cancellation ledger
+```
+
+Current finite data provides neither chain for the seven contact partial-overlap modes. Therefore they remain **finite-overlap local-map-open modes**. They may not be inserted into threshold beta coefficients as scalar doublets, singlets, regulators, constrained fields, or vacuum-frustration descendants.
+
+The residual physical-flow nullity remains:
+
+```text
+nullity before Gate 111 = 3
+nullity after Gate 111  = 3
+```
+
+The next true gate must decide the representation-or-constraint dichotomy and keep the beta-permission firewall closed until local field class, representation, activation, mass unit, and decoupling are all derived.
