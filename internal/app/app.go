@@ -24,6 +24,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactalgebraic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactassignment"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactasymmetry"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactautaction"
@@ -304,6 +305,7 @@ func Run() error {
 		contactcoddsource.ContactCoddSourceFunctionalFiniteSignedCurrentConstructionTheorem(),
 		contactchargenorm.CenteredContactSpectralCurrentChargeOperatorNormalizationObstructionTheorem(),
 		contactchargelattice.ContactChargeLatticeEmbeddingRationalSpectrumObstructionTheorem(),
+		contactalgebraic.ContactIrrationalSpectrumAlgebraicOriginMinimalPolynomialObstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

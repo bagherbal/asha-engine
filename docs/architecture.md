@@ -1217,3 +1217,11 @@ It audits the half-integer `T3R`-style lattice, sixth-integer charge/hypercharge
 Therefore contact `T3R`, `B-L`, chirality, `SU(2)L`, hypercharge rows, threshold beta rows, physical electroweak constants, and masses remain sealed.
 
 Next: Gate 147 — contact irrational-spectrum algebraic-origin / minimal-polynomial obstruction theorem.
+
+## Gate 147 — Contact Irrational-Spectrum Algebraic-Origin / Minimal-Polynomial Obstruction
+
+Gate 147 audits whether the seven contact partial-overlap eigenvalues can be promoted from numerical finite spectral diagnostics into exact algebraic row data with certified minimal polynomials.
+
+It confirms that the contact overlap is a legitimate finite symmetric operator and that three partial-overlap rows are recognized as rational diagnostics (`2/3`, `1/2`, `1/3`). The remaining four rows stay numerical algebraic candidates. The project does not yet contain an exact number-field lift, exact characteristic polynomial, or row-wise minimal-polynomial certificates.
+
+Therefore the contact spectrum still does not supply contact `T3R`, `B−L`, hypercharge, representation rows, local field variables, mass activation, decoupling, or threshold beta permission.
