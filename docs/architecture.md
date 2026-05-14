@@ -4428,3 +4428,49 @@ complex triality map: not canonical
 J compatibility: not checked
 finite flavor theorem: not derived
 ```
+
+## Gate 252 — Lie-algebra triality pullback and Hermitian `Q_8vC` neutral 3-plane audit
+
+Gate 252 adds `pkg/bridge/lietrialitypullback`.
+
+It sharpens the Gate-251 obstruction. The complex carrier `8_vC` is the right setting for odd-dimensional Hermitian weight spaces, but the engine still needs the actual electroweak matrices on `8_vC`. Gate 252 tests the proposed representation-theoretic bridge: infinitesimal `Spin(8)` triality should transport `so(8)` generator actions between spinor and vector realizations.
+
+The valid preflight is:
+
+```text
+so(8) = Λ²R⁸
+Out(Spin(8)) ≅ S3
+infinitesimal triality acts at the Lie-algebra representation level
+```
+
+The obstruction is domain-specific. The electroweak bridge generators are known as scalar/Fock representation data, but not as explicit `so(8)` coordinates suitable for the infinitesimal-triality map:
+
+```text
+T3L as bridge generator: yes
+Y_phi as bridge generator: yes
+T3L as explicit so(8) element: no
+Y_phi as explicit so(8) element: no
+explicit Lie-triality automorphism: no
+```
+
+Therefore the route cannot yet construct:
+
+```text
+H_T3 = i R_8v(T3L)
+H_Y  = i R_8v(Y_phi)
+Q_8vC = H_T3 + H_Y
+ker(Q_8vC)
+v_tau
+Yukawa texture
+```
+
+Architectural status:
+
+```text
+complex Hermitian route: open
+infinitesimal triality: right kind of bridge
+explicit so(8) input coordinates: missing
+explicit triality automorphism: missing
+J-compatible vector-to-spinor transport: missing
+flavor theorem: not derived
+```

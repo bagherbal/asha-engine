@@ -141,6 +141,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/leptoquarkdynamicsseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/liecarrierprojection"
+	"github.com/bagherbal/asha-engine/pkg/bridge/lietrialitypullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingcorrectionseal"
@@ -514,6 +515,7 @@ func Run() error {
 		neutraleigenspacekernel.NeutralEigenspaceKernelInvariant3PlaneAuditTheorem(),
 		adjointbivectoraction.AdjointBivectorActionExplicitQ8VMatrixAuditTheorem(),
 		complexweightspacekernel.ComplexWeightSpaceDecompositionNeutralKernelAuditTheorem(),
+		lietrialitypullback.LieAlgebraTrialityPullbackHermitianQ8VCNeutral3PlaneAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

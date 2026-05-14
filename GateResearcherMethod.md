@@ -353,3 +353,11 @@ When a later gate proposes a functor such as Spin(8) triality, first verify that
 - Complex Spin(8) triality is a representation-theoretic arena, not a canonical type-cast. Check the explicit automorphism, the target basis, and real-structure compatibility before transporting data from `8_vC` to spinors.
 - Keep the sequence strict: derive Hermitian Cartan matrices, compute the weight spaces, prove a canonical scalar-slot frame, construct `v_tau`, then test triality transport.
 - Preserve CKM/PMNS and Yukawa claims as blocked until the spinor endomorphism is actually constructed.
+
+## Gate 252 method note — representation transport before kernel computation
+
+- When a proposed kernel depends on a gauge operator acting on a new carrier, first prove the representation matrices exist on that carrier.
+- Treat named generators such as `T3L` and `Y_phi` as insufficient unless their typed coordinates in the required algebra are available.
+- For triality routes, separate three claims: abstract triality arena, explicit automorphism matrices, and real-structure-compatible transport.
+- Never compute a neutral kernel, `v_tau`, or a Yukawa texture from representation names alone.
+- If the matrices are missing, log the missing domain data precisely instead of forcing weights or basis assignments.

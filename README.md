@@ -4183,3 +4183,31 @@ v_tau: missing
 J-compatible complex triality map: missing
 Yukawa/CKM/PMNS: blocked
 ```
+
+## Gate 252 — Lie-algebra triality pullback and Hermitian `Q_8vC` audit
+
+Gate 252 adds `pkg/bridge/lietrialitypullback`.
+
+It tests the natural next bridge after Gate 251. Complexification makes an odd-dimensional neutral kernel possible in principle, but the physical Hermitian operator `Q_8vC` is still missing. Gate 252 asks whether infinitesimal `Spin(8)` triality can transport the known electroweak actions from the spinor/Fock side to the vector carrier.
+
+The route is mathematically correct in type:
+
+```text
+so(8) = Λ²R⁸
+Out(Spin(8)) ≅ S3
+8_vC, 8_sC, 8_cC belong to the same triality arena
+```
+
+but it remains obstructed. The engine has bridge-level electroweak generators `T3L` and `Y_phi`; it does not yet have them as explicit `so(8)` spinor bivector coordinates. It also does not derive explicit infinitesimal-triality automorphism matrices or a real-structure-compatible transport theorem.
+
+Architectural status:
+
+```text
+infinitesimal triality route: valid preflight
+spinor EW bridge data: inherited
+T3L/Y_phi as so(8) coordinates: missing
+explicit Lie-triality map: missing
+Q_8vC/Z_8vC: missing
+neutral complex 3-plane: not computed
+v_tau and Yukawa texture: still blocked
+```
