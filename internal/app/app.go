@@ -97,6 +97,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockcontactkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockrepresentationtrace"
+	"github.com/bagherbal/asha-engine/pkg/bridge/fourcyclechernweil"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeaction"
@@ -372,6 +373,7 @@ func Run() error {
 		finitethresholdoperator.FiniteThresholdOperatorDecouplingSpectrumSearchTheorem(),
 		thresholdorigindichotomy.ThresholdOriginDichotomyNewSectorContinuumBridgeAuditTheorem(),
 		continuumdecouplingbridge.ContinuumDecouplingBridgeAxiomInventoryHeatKernelPreflightTheorem(),
+		fourcyclechernweil.FiniteOrientedFourCycleChernWeilCarrierConstructionSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

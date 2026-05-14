@@ -1750,3 +1750,52 @@ conditional nullity: 2 -> 2
 This is a preflight theorem, not a new no-go against heat-kernel methods. It proves that the missing object is geometric/analytic rather than spectral: the engine has finite spectra, but it does not yet have the oriented carrier, bundle, Chern-Weil trace map, Laplace-type operator, mass unit, activation predicate, or matching law required to use them as continuum threshold data.
 
 Next gate: Gate 181 — finite oriented four-cycle / Chern-Weil carrier construction search.
+
+## v1.79 — Gate 181: Finite oriented four-cycle / Chern-Weil carrier construction search
+
+Gate 181 adds `pkg/bridge/fourcyclechernweil`.
+
+Gate 180 identified the missing bridge as geometric/analytic rather than spectral. Gate 181 searches the currently derived finite objects for the first required geometric object: an oriented four-dimensional carrier, or finite four-cycle surrogate, capable of supporting a Chern-Weil pairing.
+
+The gate audits the following candidate carriers:
+
+```text
+Λ⁴R⁸ middle exterior chamber
+Boolean Λ³→Λ⁴ incidence complex
+Lorentzian H_base ≅ R^{1,3}
+active scalar/Higgs 4-space H_Φ
+contact vacuum K₇
+Fano incidence plane
+16D Fock-spinor spectral Hilbert space
+Gate 174 topological action seal S_top=8π²
+collective contact/zeta spectral ledger
+```
+
+The result is a clean construction no-go for the current finite inventory. Several candidates carry useful predata: grade-four algebra, four-dimensional vector spaces, contact spectra, J/γ spectral-triple ingredients, and the topological action seal. None supplies the complete Chern-Weil chain:
+
+```text
+boundaryless oriented fundamental four-cycle
+integration functional / finite fundamental class
+principal gauge bundle and connection map
+curvature two-form and tr(F∧F) pairing
+trace normalization
+integer topological-charge map
+```
+
+Gate 181 status:
+
+```text
+Status: FAILED_ROUTE
+finite oriented four-cycle derived: false
+Chern-Weil carrier derived: false
+instanton trace bridge promoted: false
+absolute coupling promoted: false
+heat-kernel matching derived: false
+threshold beta rows derived: false
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+```
+
+This does not reject future Chern-Weil geometry. It proves that no existing finite carrier already provides the oriented-cycle/integration/bundle/curvature structure needed to promote `S_top` or the finite spectra into continuum gauge-action normalization.
+
+Recommended next gate: Gate 182 — finite local field/bundle map construction search.

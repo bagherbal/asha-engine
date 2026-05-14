@@ -2442,3 +2442,30 @@ The exact finite anchors from previous gates remain valuable predata, but none i
 The gate records that `a0`, `a2`, and `a4` heat-kernel coefficients are not derived, no finite decoupling law exists, no non-universal `Δb_i` row is produced, and both strict and conditional nullity remain unchanged.
 
 Recommended next gate: Gate 181 — finite oriented four-cycle / Chern-Weil carrier construction search.
+
+### Gate 181 — finite oriented four-cycle / Chern-Weil carrier construction search
+
+Package: `pkg/bridge/fourcyclechernweil`
+
+Gate 181 follows Gate 180's heat-kernel/decoupling preflight. Since exact finite spectra alone cannot serve as continuum threshold or instanton data, the engine next searches for an oriented four-cycle or Chern-Weil carrier among the currently derived finite objects.
+
+Candidates audited include the Λ⁴R⁸ middle exterior chamber, Boolean incidence complex, Lorentzian 4D base, active scalar 4-space, K₇ contact vacuum, Fano incidence geometry, the 16D Fock-spinor Hilbert space, the topological action seal, and the collective contact/zeta spectral ledger.
+
+The audit separates suggestive predata from a lawful carrier. Grade-four data are not a selected oriented four-cycle. A 4D vector space is not a boundaryless integration carrier. Internal scalar/Fock spaces are not spacetime bases. The topological scalar `S_top = 8π²` is an action value, not an integer Chern-Weil charge map. The contact and Fano structures have transitive symmetry/quotient obstructions and do not select a canonical oriented 4-subcycle.
+
+Required but still missing:
+
+```text
+boundaryless nonzero four-cycle
+canonical fundamental class and orientation sign
+finite integration functional
+principal gauge bundle / connection on the carrier
+curvature two-form and wedge pairing tr(F∧F)
+absolute trace normalization
+integer topological-charge map
+Hochschild four-cycle realizing the grading, if the NCG route is used
+```
+
+The gate records no promotion of the instanton normalization branch, no heat-kernel coefficient extraction, no threshold beta rows, and no nullity reduction.
+
+Recommended next gate: Gate 182 — finite local field/bundle map construction search.
