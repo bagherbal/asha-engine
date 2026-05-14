@@ -25,6 +25,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactassignment"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactasymmetry"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactautaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactbundle"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactcohomology"
@@ -296,6 +297,7 @@ func Run() error {
 		contactsignsplit.ContactT3RSignSplitNaturalitySpectralCutObstructionTheorem(),
 		contactorientation.ContactSpectralGapOrientationSignChoiceObstructionTheorem(),
 		contactsignsource.ContactSignOrientationSourceChargeConjugationObstructionTheorem(),
+		contactasymmetry.ContactChargeConjugationBreakingSourceAsymmetrySelectorSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
