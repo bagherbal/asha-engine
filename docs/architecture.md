@@ -4935,3 +4935,7 @@ Morita H_F ledger
 ```
 
 This preserves the central firewall: a trace multiplicity is not a mass amplitude. A future gate must derive either a native weak/quaternionic finite algebra action, a physical charge-conjugation `J`, or a finite action normalization theorem that fixes the relative edge norms before the Seeley-de Witt Higgs-ratio path can be reopened.
+
+## Gate 274 — Native Weak Quaternionic Algebra Boundary
+
+The engine now separates local quaternionic closure from global finite-algebra derivation. On a selected weak doublet, the quaternionic units close exactly (`I²=J²=K²=-1`, `IJ=K`). This is conditional support for a weak `H` factor. It is not yet a full `C ⊕ H ⊕ M3(C)` spectral-triple theorem because the weak-plane selector remains sealed/conditional, and the physical finite Hilbert space, anti-linear opposite action, and Dirac edge-norm action are still missing. Consequently `x:y` and the Seeley-de Witt `a₂/a₄` route remain blocked.

@@ -161,6 +161,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
 	"github.com/bagherbal/asha-engine/pkg/bridge/moritabimodulesearch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativefinitealgebra"
+	"github.com/bagherbal/asha-engine/pkg/bridge/nativeweakquaternionicalgebra"
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutraleigenspacekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutrinotextureaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncartanflavorvacuum"
@@ -558,6 +559,7 @@ func Run() error {
 		fullscrepresentationsearch.FullSCFiniteAlgebraRepresentationSearchOppositeActionConstructionAuditTheorem(),
 		moritabimodulesearch.FiniteAlgebraRepresentationObstructionClassificationMoritaBimoduleSearchAuditTheorem(),
 		weakquaternionicnormalization.WeakQuaternionicSubBimoduleSelectorFiniteInnerProductNormalizationAuditTheorem(),
+		nativeweakquaternionicalgebra.NativeWeakQuaternionicAlgebraPhysicalFiniteHilbertSpaceReconstructionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

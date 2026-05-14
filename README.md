@@ -5016,3 +5016,7 @@ FAILED_ROUTE_EMPIRICAL_YUKAWA_SEAL_REMAINS_ACTIVE
 ```
 
 The next lawful target is a native weak/quaternionic finite-Hilbert-space reconstruction or equivalent finite action theorem that can select the physical sub-bimodule and edge norms without importing empirical masses.
+
+### Gate 274 — Native Weak Quaternionic Algebra / Physical Finite Hilbert Space Reconstruction Audit
+
+Gate 274 verifies exact local quaternionic closure on the selected weak doublet using the native finite/Fock weak-plane lineage. It assembles a conditional candidate `C ⊕ H_U12 ⊕ M3(C)` but refuses to promote local `H` into an unsealed global Standard Model finite algebra theorem. The physical finite Hilbert space, physical opposite action `J`, edge-map norm theorem, and `a₂/a₄` Higgs-ratio extraction remain blocked.
