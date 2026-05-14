@@ -5260,3 +5260,7 @@ FAILED_ROUTE_PER_SLOT_MONOTONIC_BOUND_IS_EXTRA_SELECTION_AXIOM
 FAILED_ROUTE_BRANCH_NOT_SELECTED_BY_TRACE_CAPACITY_BOUND
 FAILED_ROUTE_HIGGS_MASS_RATIO_STILL_NOT_DERIVED
 ```
+
+## Gate 291 — Sealed final spectral synthesis
+
+The Per-Slot Monotonicity Seal is a phenomenological orientation rule, not a native finite theorem. It chooses the quark-per-slot-heavy branch `r_+` and vetoes `r_-` only under seal. The resulting reduced spectral trace identity closes the raw scalar-Morita/contact synthesis while preserving the Higgs firewall: the proxy ratio equals `1197/4624`, but it is not promoted to a Seeley-de Witt `a₂/a₄` prediction.

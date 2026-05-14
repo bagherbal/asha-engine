@@ -179,6 +179,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/normalizationthresholdaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/o3quotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/orientationtruechirality"
+	"github.com/bagherbal/asha-engine/pkg/bridge/perslotmonotonicityseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/pevobservabilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/physicalfinitehilbertcompletion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
@@ -592,6 +593,7 @@ func Run() error {
 		contactspectralcutoff.ContactSpectralCutoffIdentificationSTopBranchSelectorAuditTheorem(),
 		chiraljanomalysieve.ChiralJStructureAnomalySieveAsymmetricTraceAuditTheorem(),
 		bimoduletracecapacity.BimoduleTraceCapacitySieveSectorHierarchyAuditTheorem(),
+		perslotmonotonicityseal.PerSlotMonotonicitySealFinalSpectralSynthesisAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

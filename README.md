@@ -5624,3 +5624,7 @@ FAILED_ROUTE_HIGGS_MASS_RATIO_STILL_NOT_DERIVED
 ## Gate 290 — Bimodule Trace Capacity Sieve
 
 Gate 290 stress-tests whether Morita `1⊕3` trace multiplicities can veto the lower scalar-Morita branch. The weak total-capacity inequality is satisfied by both `r_+` and `r_-`; a stronger per-slot monotonicity diagnostic would select `r_+`, but it is not a derived theorem. The amplitude branch and Higgs ratio remain unselected.
+
+### Gate 291 — Per-Slot Monotonicity Seal / Final Spectral Synthesis Audit
+
+Gate 291 activates the `PerSlotMonotonicitySeal`, explicitly quarantining the phenomenological per-slot ordering rule that selects the `r_+` scalar-Morita branch. Under that seal, the reduced trace moments are recomputed and the raw dimensionless proxy `Tr(D_F^4)/(Tr(D_F^2))^2` exactly reproduces the Gate-169 contact scalar shape `1197/4624`. The gate does not claim a physical Higgs mass prediction: heat-kernel projection, scalar/gauge normalization, physical `J`, and the full six-point Higgs firewall remain active.
