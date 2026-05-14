@@ -475,3 +475,12 @@ Gate 96 adds `pkg/bridge/brokengaugefields`. Gate 95 identified `diag(1,1,4)` as
 Gate 96 types the broken gauge variables `{W1, W2, Z_raw}` and audits their closure. The crucial result is that the broken sector alone is not closed: `[T1,T2]=T3=(Z+Q)/2`, so the electromagnetic direction `Q=T3+Y_phi` is required in any finite curvature construction. The next action must therefore be a full electroweak connection curvature term, not a broken-only curvature term.
 
 Current result: typed finite gauge variables exist, but the finite field-strength action and second variation remain open. No physical coupling, weak angle, alpha, or W/Z mass is claimed.
+
+
+## Gate 97 — Full Electroweak Connection Curvature / Field-Strength Audit
+
+Gate 97 adds `pkg/bridge/ewcurvature`. Gate 96 showed that the broken-only variables `{T1,T2,Z=T3-Y_phi}` are not closed because `[T1,T2]=T3=(Z+Q)/2`. Gate 97 therefore keeps the full connection `{T1,T2,Z,Q}` and audits its Lie closure and adjoint/Killing diagnostic.
+
+The full connection closes and supports a formal field-strength carrier. However, the adjoint diagnostic is rank three and has the pure abelian direction `Q-Z=2Y_phi` as a null vector. It sees the semisimple neutral direction `T3=(Z+Q)/2`, not a positive physical `U(1)` kinetic Hessian. Consequently `diag(1,1,4)` remains a strong broken-image metric-whitening candidate, not an action-selected physical Hessian.
+
+Truth: full electroweak curvature must include the electromagnetic direction, but the curvature algebra alone still does not derive `g2`, `gY`, `thetaW`, `alpha`, or physical W/Z masses.
