@@ -5770,3 +5770,28 @@ Gate 372 / Gate 387 firewall preserved:
 ```
 
 The architectural continuation is Gate 394: search for a native noncentral map into `End(C^3_gen)` from triality branch incidence, Morita bimodule edge incidence, and finite one-form support.
+
+## Gate 394 — Native generation-address functor boundary
+
+Gate 394 continues the flavor-frontier audit after the Gate-393 triality sieve. Its target is the missing native functor
+
+```text
+Phi : finite ASHA support/topology/Morita-edge/one-form data → End(C^3_gen)
+```
+
+with successful noncentral form `Phi(s)=aI3+bT_gen`, `b != 0`, and with compatibility against `A_F`, `J`, the first-order condition, hypercharge, and `SU(2)_L` channels.
+
+The implemented package `pkg/bridge/generationaddressfunctor` enumerates the actual candidate sources:
+
+```text
+identity generation broadcast              → central native I3
+Morita edge uniform incidence              → central native I3-like edge count
+inner-fluctuation one-form edge support    → central native I3-like edge support
+abstract triality branch cycle             → sealed/circular label action
+protected contact anisotropy spurion       → sealed diagonal-only capacity
+Fock number ladder N=diag(0,1,2)           → sealed/circular hierarchy capacity
+```
+
+No native noncentral generation-address operator is derived, and no native noncommuting operator pair exists. The sealed noncommuting stress tests are recorded but quarantined because they depend on non-native/circular address data. Therefore the 13 charged flavor moduli remain a firewall, not a solved sector.
+
+Architecturally this means the flavor continuation must move one level deeper than static support incidence: the next gate must search for the representation-origin of dynamic generation labels before a modular Hamiltonian or CKM-capacity theorem can be claimed.

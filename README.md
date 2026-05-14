@@ -6140,3 +6140,34 @@ native charged finite-Dirac flavor moduli = 13
 ```
 
 The next logical gate is Gate 394: a native generation-address functor search using triality branch data, Morita edge incidence, and one-form edge support.
+
+## Gate 394 — Native generation-address functor sieve
+
+Gate 394 implements `pkg/bridge/generationaddressfunctor` and audits the object that Gate 393 left missing:
+
+```text
+finite ASHA support / topology / Morita-edge / one-form data
+→ End(C^3_gen)
+```
+
+The package tests triality branch incidence, Morita bimodule edge incidence, the Gate-385 inner-fluctuation one-form edge support, protected-contact anisotropy, and the bridge-level Fock number ladder `N=diag(0,1,2)`.
+
+The native result remains conservative:
+
+```text
+FAILED_ROUTE_GENERATION_ADDRESS_REMAINS_CENTRAL
+FAILED_ROUTE_DIAGONAL_ONLY_NO_CKM
+FAILED_ROUTE_CIRCULAR_TAU_OR_N_INSERTION
+FAILED_ROUTE_NO_NATIVE_NONCOMMUTING_TEXTURE_PAIR
+FIREWALL_PRESERVED_13_MODULI
+```
+
+The current native ledger supplies only central generation broadcasts such as `I3`, uniform Morita edge incidence, and uniform one-form edge support. Sealed noncentral operators exist as stress tests, but they are not promoted to native theorems: the triality branch cycle still requires a generation-to-triality carrier, protected-contact anisotropy is diagonal-only and unassigned, and `N=diag(0,1,2)` is hierarchy-capable but not derived.
+
+Thus Gate 394 preserves the Gate-372 charged flavor firewall:
+
+```text
+dim M_charged = 13
+```
+
+The next logical gate is Gate 395: a representation-origin search for dynamic generation labels, because static support/edge/one-form ledgers still broadcast uniformly over generation space.

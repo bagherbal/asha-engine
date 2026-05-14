@@ -175,6 +175,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeeating"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugehessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugekineticdiag"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generationaddressfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/geometricmeanresonance"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/grandnormalizationsieve"
@@ -788,6 +789,7 @@ func Run() error {
 		cosmologicalobservablesdarksector.CosmologicalObservablesDarkSectorPredictionAfterHiggsSealSieveTheorem(),
 		ashafinalarchitectureledger.AshaFrameworkFinalArchitectureLedgerEpistemologicalSealTheorem(),
 		trialitymodulisieve.TrialityDomainAdmissionEquivariantYukawaCentralizerSieveTheorem(),
+		generationaddressfunctor.NativeGenerationAddressFunctorTrialityMoritaEdgeIncidenceTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
