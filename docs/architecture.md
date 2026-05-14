@@ -2773,3 +2773,32 @@ Gate 204 therefore records `CONDITIONAL_SUPPORT` for the representation shapes o
 The seven contact partial-overlap modes are audited again and remain unpromoted: they still lack canonical charge labels, gauge-representation semantics, Dynkin indices, spin-statistics, mass-activation, and decoupling laws. No contact mode is assigned to a beta-row generator.
 
 Next structural obligation: Gate 205 — finite carrier activation / contact-to-row semantics obstruction audit.
+
+### Gate 205 — Finite carrier activation / contact-to-row semantics obstruction audit
+
+Package: `pkg/bridge/finitecarrieractivation`
+
+Gate 205 consumes the Gate-204 result that the Gate-201 non-universal shapes are exact rational row-lattice generators. It then isolates the missing semantic bridge between finite contact modes and physical heavy beta rows.
+
+A contact partial-overlap mode may enter threshold beta matching only if three independent semantic pillars are present:
+
+```text
+charge semantics        -> SU(3)c/SU(2)L/U(1)Y labels and Dynkin data
+spin-statistics         -> local kinetic class selecting Weyl/Dirac/scalar coefficient
+mass activation         -> VEV-independent scale, activation predicate, decoupling rule
+```
+
+Gate 205 audits the seven contact modes and finds:
+
+```text
+finite positive contact carrier: true
+charge semantics: false
+spin-statistics semantics: false
+mass activation semantics: false
+candidate rows assigned: 0
+contact beta rows allowed: 0
+```
+
+This seals the contact-to-row promotion route under current axioms. The Gate-201 shapes remain conditional row-lattice support only; they are not finite-derived particles, activated thresholds, or a physical unification claim.
+
+Next structural obligation: Gate 206 — carrier-activation seal / local-field semantic bifurcation audit.

@@ -100,6 +100,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierzsign"
 	"github.com/bagherbal/asha-engine/pkg/bridge/filtration"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitebundlemap"
+	"github.com/bagherbal/asha-engine/pkg/bridge/finitecarrieractivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockcontactkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockrepresentationtrace"
@@ -420,6 +421,7 @@ func Run() error {
 		universaltracedeformation.UniversalTraceDeformationTopologicalBoundaryOffsetAuditTheorem(),
 		universalbetasource.UniversalBetaSourceClassificationAuditTheorem(),
 		representationrowlattice.RepresentationRowLatticeCompletionAuditTheorem(),
+		finitecarrieractivation.FiniteCarrierActivationContactToRowSemanticsObstructionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

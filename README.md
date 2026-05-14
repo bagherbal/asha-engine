@@ -2101,3 +2101,21 @@ Weyl SU(2)L adjoint fermion:   (0,4/3,0)
 ```
 
 This is recorded as `CONDITIONAL_SUPPORT` for representation-shape viability only. The universal beta row, threshold scales, contact-mode activation, finite matching corrections, and physical unification remain sealed.
+
+## Gate 205 — Finite carrier activation / contact-to-row semantics obstruction audit
+
+Gate 205 adds `pkg/bridge/finitecarrieractivation`.
+
+Gate 204 proved that the two Gate-201 non-universal shapes are legal exact rational row-lattice generators. Gate 205 asks whether the seven contact partial-overlap modes can be canonically activated as carriers of those rows.
+
+The audit formalizes three required semantic pillars:
+
+```text
+1. Gauge charge semantics: SU(3)c, SU(2)L, U(1)Y labels and Dynkin indices.
+2. Spin-statistics semantics: Weyl, Dirac, or scalar coefficient from a local kinetic class.
+3. Mass-activation semantics: VEV-independent activation, decoupling, and matching law.
+```
+
+All three pillars are absent for the contact partial-overlap modes under current axioms. The modes remain positive finite spectral anchors, but no contact mode is assigned to `(3,2,1/6)`, `(1,3,0)`, or any other beta-row generator.
+
+Gate 205 therefore records a strict `FAILED_ROUTE`: carrier activation is a bridge obstruction, not a finite-derived particle prediction.
