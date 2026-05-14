@@ -267,6 +267,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalaryukawasupport"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sealedcarrierwitness"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sealedthresholdstresstest"
+	"github.com/bagherbal/asha-engine/pkg/bridge/sectorchargepullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectoroperators"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/seesawoverlapmatrix"
@@ -730,6 +731,7 @@ func Run() error {
 		nonunitaryprojectortexture.NonUnitaryProjectorKineticSafeFlavorTextureSieveTheorem(),
 		exponentialtauetatexture.ExponentialTauEtaTextureBGapMixingHierarchyAuditTheorem(),
 		topologicalamplifierflavorsector.TopologicalAmplifierBimoduleFlavorSectorSieveTheorem(),
+		sectorchargepullback.SectorChargePullbackCKMMoritaMisalignmentSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
