@@ -10,6 +10,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fieldmap"
+	"github.com/bagherbal/asha-engine/pkg/bridge/fierz"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
@@ -124,6 +125,7 @@ func Run() error {
 		topkernel.TopLikeOverlapKernelSearchTheorem(),
 		gapledger.NJLGapKernelCriticalityLedgerTheorem(),
 		fourfermion.NativeFourFermionKernelTheorem(),
+		fierz.FiniteFierzProjectionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
