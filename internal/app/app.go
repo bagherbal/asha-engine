@@ -222,6 +222,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarmoritaspectralbridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarorientationseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarorientationsource"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalarquarticchannel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarsu2"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalartrialitytexture"
@@ -622,6 +623,7 @@ func Run() error {
 		cutoffmomentsource.CutoffMomentSourcePositiveF0TestFunctionClassAuditTheorem(),
 		contactspectralcutoffpromotion.ContactSpectralCutoffPromotionCanonicalPositiveTestProfileConstructionAuditTheorem(),
 		scalarheatkernelsubtraction.ScalarHeatKernelSubtractionHiggsPotentialChannelSeparationAuditTheorem(),
+		scalarquarticchannel.ScalarQuarticChannelExtractionDimensionlessCouplingSieveAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
