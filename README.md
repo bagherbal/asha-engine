@@ -2726,3 +2726,31 @@ CONDITIONAL_PHENOMENOLOGY_WITH_STABLE_RELIC_WARNING
 ```
 
 It does not compute a relic abundance, proton lifetime, or observed collider signal.
+
+## v2.19 — Gate 221: Heavy-carrier decay and cosmological-relic safety audit
+
+Gate 221 adds `pkg/bridge/heavycarrierdecayaudit`. It inherits Gate 220's result: the sealed PeV spectrum
+
+```text
+Dirac (1,3,Y=1) + Dirac (8,2,Y=1/2),   M_B ≈ 2.57e6 GeV
+```
+
+is safely hidden from direct production, EW precision, and Higgs-loop probes by PeV decoupling, but it carries a serious stable-relic warning.
+
+Gate 221 audits whether the engine can legally supply decay or splitting semantics. It checks representative renormalizable, dimension-five, and dimension-six portal classes, together with the possibility of leptoquark-mediated decay. No native decay portal is derived. The leptoquark-mediated channel remains blocked by the `LeptoquarkDynamicsSeal`.
+
+The BBN threshold is used only as a safety filter:
+
+```text
+τ < 1 second
+Γ_required > 6.582119569e-25 GeV
+```
+
+Since no decay operator or width is legal, the lifetime is classified as unbounded/infinite for cosmological safety. The result is:
+
+```text
+FAILED_ROUTE_COSMOLOGICAL_PATHOLOGY
+RELIC_DECAY_SEAL_REQUIRED_NOT_GRANTED
+```
+
+This does not invalidate the RG bridge. It identifies the next missing phenomenological bridge: a finite or explicitly sealed decay/splitting sector capable of making the neutral, charged, and colored PeV carriers disappear before BBN without inventing arbitrary couplings.

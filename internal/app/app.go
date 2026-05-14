@@ -116,6 +116,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugehessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugekineticdiag"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
+	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/inputsensitivityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/instantontracebridge"
@@ -452,6 +453,7 @@ func Run() error {
 		matchingcorrectionseal.MatchingCorrectionSealFullSMYukawaTwoLoopIntegrationAuditTheorem(),
 		inputsensitivityaudit.InputSensitivityBottomTauYukawaCompletenessAuditTheorem(),
 		pevobservabilityaudit.PeVThresholdIndirectSignatureObservabilityAuditTheorem(),
+		heavycarrierdecayaudit.HeavyCarrierDecayRelicSafetyAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

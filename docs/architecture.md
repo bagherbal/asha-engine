@@ -3253,3 +3253,43 @@ The gate distinguishes three categories:
 3. **Open cosmological threat:** the same seals that prevent invented decays mean the engine currently lacks a decay/splitting theorem for the neutral, charged, and colored heavy carriers. This is logged as a stable-relic warning, not as a dark-matter claim.
 
 The next structural requirement is a sealed or derived heavy-carrier decay operator / relic-safety audit.
+
+## Gate 221 — Heavy-carrier decay and relic-safety layer
+
+Gate 221 sits after the PeV observability audit. Gate 220 showed that the sealed PeV threshold is precision-safe by decoupling, but not cosmologically safe by default. Gate 221 therefore moves the project into the relic/decay sector.
+
+Architectural placement:
+
+```text
+finite core
+→ Fock/gauge scaffold
+→ empirical and stability seals
+→ rational threshold lattice
+→ ThresholdSpectrumSeal + MatchingCorrectionSeal
+→ full-SM two-loop sensitivity audit
+→ PeV observability audit
+→ heavy-carrier decay/relic safety audit
+```
+
+The gate audits the specific sealed carriers:
+
+```text
+(1,3,Y=1)      charges {0,1,2}
+(8,2,Y=1/2)    colored weak doublet with neutral/charged components
+```
+
+It finds no finite-derived portal operator, no charged-neutral splitting theorem, no colored-state decay rule, and no computable decay width. The BBN lifetime threshold is therefore failed by operator absence, not by a numerical lifetime calculation.
+
+The result is a strict cosmological failed route:
+
+```text
+FAILED_ROUTE_COSMOLOGICAL_PATHOLOGY
+```
+
+and a future seal obligation:
+
+```text
+RelicDecaySeal required, not granted
+```
+
+This preserves the firewalls: the engine does not invent dark matter, decay couplings, mass splittings, or relic abundance to rescue the PeV spectrum.

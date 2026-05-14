@@ -99,3 +99,12 @@
 - Do not invent decay operators, heavy Yukawa couplings, or mass splittings to make a PeV spectrum phenomenologically safe.
 - Use dimensionless suppression proxies first (`v/M`, `v²/M²`) before attempting model-specific observable calculations.
 - If decay/splitting data is absent, log a warning and push it into a dedicated future gate rather than computing relic abundance from missing dynamics.
+
+## Gate 221 workflow refinement — relic safety requires dynamics, not decoupling
+
+- Treat precision safety and cosmological safety as separate ledgers. A PeV state can decouple from EW/Higgs observables while still being fatal as a stable relic.
+- Search decay portals by required semantics: gauge invariance, Lorentz/local-field map, coupling coefficient, suppression scale, seal compatibility, and width calculation. Missing any one piece blocks a lifetime theorem.
+- Do not use toy dimension-5 or dimension-6 widths to rescue a spectrum unless the operator coefficient and scale are derived or explicitly sealed.
+- Use BBN only as a safety threshold when dynamics are absent. If no width exists, classify the lifetime as unbounded for safety purposes and log a failed route.
+- Keep leptoquark-mediated decays blocked while the `LeptoquarkDynamicsSeal` is active; dormant current slots are not propagators.
+- A `RelicDecaySeal` can be required without being granted. Grant it only after a concrete decay/splitting sector supplies BBN-safe lifetimes.
