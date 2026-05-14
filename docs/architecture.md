@@ -63,3 +63,8 @@ Cached default constructors now protect the repeated construction path for:
 - Matter/Fock bridge layers through the triality Yukawa extension.
 
 The boundary-fixed Lie closure diagnostic is intentionally runtime-capped. Its scientific purpose is to expose dimension growth under the current projection, not to regenerate a large closure basis at every full run.
+
+
+## Gate 28 — Generation-Breaking Texture Search
+
+Exact triality is now treated as a replication principle, not as a texture-selection principle. The gate classifies the `3×3` flavor texture spaces exposed by the Yukawa/triality audit and proves the immediate no-go: a symmetric texture invariant under exact triality has only a singlet plus doublet spectrum. Therefore the engine must discover an additional finite generation-breaking operator before making any mass, CKM, or PMNS claim.

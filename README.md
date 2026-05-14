@@ -210,3 +210,7 @@ e_L   ⊗ Φ_- → e_R
 ```
 
 Each scalar branch has the finite pair multiplicity inherited from the 2+2 Higgs/contact spectrum, so the eight minimal channels correspond to sixteen scalar-fiber entries. This gate is intentionally a selection-rule theorem only: coupling constants, masses, flavor mixing, and generation structure remain open bridge problems.
+
+### v0.27 — Gate 28: Generation-Breaking Texture Search
+
+Added `pkg/matter/texture`, a no-go/search gate for Yukawa texture selection. The gate proves that exact triality can replicate the one-generation Yukawa channel pattern into three generations, but cannot by itself select numerical `3×3` Yukawa matrices or three distinct generation eigenvalues. A triality-invariant symmetric texture has a `1+2` eigenvalue pattern, so a real hierarchy requires a new finite generation-breaking operator compatible with the contact/BF/Higgs geometry.

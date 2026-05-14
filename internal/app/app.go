@@ -28,6 +28,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/matter/su2lgauge"
 	"github.com/bagherbal/asha-engine/pkg/matter/t3r"
 	"github.com/bagherbal/asha-engine/pkg/matter/tensor"
+	"github.com/bagherbal/asha-engine/pkg/matter/texture"
 	"github.com/bagherbal/asha-engine/pkg/matter/trialityyukawa"
 	"github.com/bagherbal/asha-engine/pkg/matter/yukawa"
 	"github.com/bagherbal/asha-engine/pkg/matter/yukawaintertwiner"
@@ -66,6 +67,7 @@ func Run() error {
 		su2lgauge.GeneratorAuditTheorem(),
 		yukawaintertwiner.GaugeCompatibleYukawaTheorem(),
 		trialityyukawa.GenerationTrialityYukawaTheorem(),
+		texture.GenerationBreakingTextureSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
