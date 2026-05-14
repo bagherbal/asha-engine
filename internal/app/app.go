@@ -41,6 +41,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqt3r"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqtensor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactnaturality"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactorientation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactpropagator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquotientsemantics"
@@ -292,6 +293,7 @@ func Run() error {
 		fockcontactkernel.FockContactKernelSelectionOperatorIntertwiningObstructionTheorem(),
 		contacttargetoperator.ContactTargetOperatorReconstructionQuotientSideT3RSpectrumSearchTheorem(),
 		contactsignsplit.ContactT3RSignSplitNaturalitySpectralCutObstructionTheorem(),
+		contactorientation.ContactSpectralGapOrientationSignChoiceObstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
