@@ -6384,3 +6384,9 @@ Result: the existing fermionic carrier reconstructs charge, chirality, color, co
 Gate 410 continues after Gate 409's fermionic-generation audit. It tests whether advanced representation extensions already present in ASHA — KO/twisted real structures, modular nontracial/KMS states, primitive ideal extensions, contact family candidates, triality local systems, or a sealed U(3) family connection stress test — replace the standard trivial `C^3_gen` multiplicity by a native nontrivial family bundle.
 
 Result: no native extension derives a family connection, family curvature, or two noncommuting family texture operators. KO/twists change real-structure compatibility rather than multiplicity; KMS/nontracial states need an external Hamiltonian; primitive ideal/family-bundle extensions require a new axiom; and the sealed U(3) stress test is capacity only. The 13 charged flavor moduli firewall remains preserved.
+
+### Gate 411 — Axiom-Candidate Ledger for Nontrivial Family Bundle Extensions
+
+Gate 411 follows Gate 410 by accepting the boundary that the current ASHA finite geometry does not derive a nontrivial family bundle. It does not promote empirical Yukawa matrices or a new theorem. Instead, it compiles a quarantined ledger of minimal mathematical extensions that could be tested as future axioms: a modular family Hamiltonian, a nontrivial U(3)_gen family connection, a primitive-ideal finite-algebra extension, a triality/contact functor, and the excluded unconstrained Yukawa source.
+
+The ledger ranks the modular family Hamiltonian as the lowest-cost empirical-independent candidate for hierarchy, while true CKM/PMNS capacity requires a nontrivial family connection or algebra extension. All candidates remain explicit extensions rather than native consequences of the current ASHA tower. Therefore no axiom is promoted, no empirical data is inserted, and the Gate-372/Gate-387 charged flavor firewall remains preserved: `dim M_charged = 13`.

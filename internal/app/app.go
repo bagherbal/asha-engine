@@ -148,6 +148,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeselection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exponentialtauetatexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/faithfuloppositeactionrep"
+	"github.com/bagherbal/asha-engine/pkg/bridge/familybundleaxiomledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fermionicfamilybundleextension"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fermionicgenerationorigin"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fermionicroottracesieve"
@@ -822,6 +823,7 @@ func Run() error {
 		hphivariationalselector.HphiVariationalFunctionalCanonicalCoefficientSelectorSieveTheorem(),
 		fermionicgenerationorigin.FermionicMatterCarrierOriginNontrivialGenerationRepresentationSieveTheorem(),
 		fermionicfamilybundleextension.FermionicRepresentationExtensionNontrivialFamilyBundleSieveTheorem(),
+		familybundleaxiomledger.AxiomCandidateLedgerNontrivialFamilyBundleExtensionsTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -6011,3 +6011,15 @@ Gate 410 audits the first post-Gate-409 non-surrender route: replacing the trivi
 - A sealed U(3) family connection has CKM capacity but is quarantined as the missing external structure.
 
 The result preserves the Gate-372/Gate-387 charged flavor firewall: `dim M_charged = 13` under current ASHA functors.
+
+### Gate 411 — Axiom-candidate ledger for nontrivial family bundle extensions
+
+Gate 411 turns the Gate-410 boundary into an explicit ranked ledger. The current finite spectral triple, scalar lane, and fermionic carrier remain native law-space machinery, but family/generation structure still appears as an unselected trivial `C^3_gen` multiplicity. Gate 411 therefore classifies possible extensions without promoting them:
+
+- Modular/KMS family Hamiltonian axiom: lowest-cost hierarchy candidate, but diagonal and not native.
+- Nontrivial `U(3)_gen` family connection: CKM/PMNS-capable if constrained, but exactly the missing new structure.
+- Primitive ideal algebra extension: structural family irreps, but changes `A_F` and requires revalidation.
+- Triality/contact functor axiom: uses existing threefold arenas, but needs a typed functor and breaking datum.
+- Unconstrained Yukawa source: phenomenologically complete but rejected as curve-fitting.
+
+This gate documents the epistemological boundary: current ASHA derives the gauge/Higgs law-space scaffold but does not derive the 13 charged flavor moduli. Any future flavor theorem must enter through an explicit, minimal axiom/extension and then pass compatibility with `A_F`, `J`, `Gamma`, first-order, and gauge-charge constraints.
