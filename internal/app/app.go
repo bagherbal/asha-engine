@@ -41,6 +41,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
+	"github.com/bagherbal/asha-engine/pkg/bridge/u1kinetic"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/higgspotential"
@@ -160,6 +161,7 @@ func Run() error {
 		dualcarrier.DualCarrierGaugeArchitectureSplitTheorem(),
 		dualcoupling.DualCarrierCouplingTensorActionSearchTheorem(),
 		abelianmixing.AbelianMixingHyperchargeNormalizationTheorem(),
+		u1kinetic.U1KineticMixingHessianSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
