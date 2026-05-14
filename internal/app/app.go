@@ -9,6 +9,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/adjointbivectoraction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/admissibleoperatorclosure"
+	"github.com/bagherbal/asha-engine/pkg/bridge/almostcommutativeproduct"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomaly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomalykinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/asha_final_closing_theorem"
@@ -762,6 +763,7 @@ func Run() error {
 		holographicvacuumentropy.HolographicVacuumEntropyGravitationalModuliConstraintSieveTheorem(),
 		ashafinalclosingtheorem.AshaFinalClosingTheoremThirteenModuliVacuumManifoldTheorem(),
 		cosmologicalobservables.CosmologicalObservablesDarkSectorPredictionSieveTheorem(),
+		almostcommutativeproduct.AlmostCommutativeProductGeometryFullSMGravitySpectralActionAssemblyTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -5912,3 +5912,50 @@ FAILED_ROUTE_COSMOLOGICAL_CONSTANT_NOT_DERIVED
 ```
 
 The gate does not close cosmology negatively. It defines the next required layer: a continuum cosmology extension that derives the dark-sector Lagrangian, Boltzmann kernel, RG/bounce functional, and vacuum-energy renormalization from ASHA rather than fitting them from observation.
+
+## Gate 376 — Almost-Commutative Product Geometry / Full SM+Gravity Spectral Action Assembly
+
+Gate 376 corrects the direction of the continuum bridge. The finite ASHA factor `F` is not asked to derive spacetime. Instead the lawful noncommutative-geometric construction is the product
+
+```text
+M x F
+```
+
+with
+
+```text
+A = C∞(M) ⊗ (C ⊕ H ⊕ M3(C))
+H = L²(M,S) ⊗ H_F
+D = D_M ⊗ 1_F + gamma5 ⊗ D_F
+J = J_M ⊗ J_F
+gamma = gamma_M ⊗ gamma_F
+```
+
+The new package `pkg/bridge/almostcommutativeproduct` assembles the product spectral-action ledger. The Seeley-deWitt expansion multiplies ordinary continuum invariants on `M` by ASHA finite spectral invariants:
+
+```text
+Tr f(D_total²/Lambda²) ~ Σ f_{4-n} Lambda^{4-n} a_n(D_total²)
+```
+
+The gate substitutes the finite invariants already established by the project:
+
+```text
+Tr_F(1) = 96 in the doubled three-generation finite carrier
+f0 = 7
+f2 (Lambda/M_P)^2 = pi/64
+sin²(theta_W) = 3/8
+alpha_branch^-1 = 8pi
+lambda_H/g_*² = 1197/4624
+dim M_charged(D_F) = 13
+```
+
+The assembled action contains the structural Standard Model plus Einstein-gravity channels:
+
+- Einstein-Hilbert gravity;
+- bare cosmological/vacuum-energy channel;
+- `SU(3) x SU(2) x U(1)` gauge kinetic terms;
+- one complex Higgs doublet with kinetic and potential channels;
+- Yukawa/fermionic terms governed by the finite Dirac operator;
+- higher-curvature gravitational terms.
+
+The result is a bridge theorem, not a cosmological prediction theorem. It makes continuum computations such as RG running, Boltzmann evolution, bounce actions, and gravitational EFT calculations well-posed by installing the finite ASHA data as coefficients of the product-action Lagrangian. It does not predict `Lambda_cosmo`, dark-matter relic density, universe lifetime, or the numerical Yukawa/CKM texture without the additional continuum model inputs identified in Gate 375.

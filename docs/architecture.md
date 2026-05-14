@@ -5461,3 +5461,43 @@ continuum cosmology extension -> relic abundance, vacuum lifetime, Lambda_cosmo
 ```
 
 The PeV threshold lane, intermediate scale ledger, and quartic jump witness are valuable inputs for a future cosmological model, but Gate 375 forbids promoting them into predictions without the missing continuum kernels. This preserves the empirical firewall and prevents observed `Omega_DM`, dark-energy density, or metastability numbers from being smuggled into the finite theory.
+
+## Gate 376 architectural update: the continuum bridge is product geometry, not derivation
+
+Gate 376 adds `pkg/bridge/almostcommutativeproduct` and corrects the long-standing directionality issue in the continuum program. The finite algebra does not become spacetime. The physical architecture is the almost-commutative product:
+
+```text
+Total geometry = M x F
+D_total = D_M ⊗ 1 + gamma5 ⊗ D_F
+```
+
+This moves the project into the standard spectral-action architecture:
+
+| Layer | Source | Role |
+|---|---|---|
+| `M` | supplied smooth spin 4-manifold | metric, curvature, continuum fields, volume, topology, initial data |
+| `F` | ASHA finite spectral triple | internal algebra, representation, gauge/Higgs content, finite Dirac moduli, boundary ratios |
+| `M x F` | product spectral triple | full SM+gravity action through heat-kernel expansion |
+
+The important architectural output is that continuum observables are now downstream calculations from a product Lagrangian rather than attempted derivations from the finite factor alone.
+
+| Product-action channel | Continuum factor | ASHA finite factor | Gate-376 status |
+|---|---|---|---|
+| Einstein-Hilbert | `int sqrt(g) R` | `f2 Lambda²`, `Tr_F(1)` | assembled; `f2(Lambda/M_P)^2=pi/64` |
+| Cosmological/vacuum | `int sqrt(g)` | `f4 Lambda⁴`, vacuum multiplicity/counterterm | present but not predicted |
+| Gauge kinetic | `int sqrt(g) F²` | representation trace / inner fluctuations | `SU(3)xSU(2)xU(1)`, `sin²=3/8`, `alpha_branch^-1=8pi` |
+| Higgs kinetic | `int sqrt(g) |nabla H|²` | finite one-form Higgs doublet | assembled |
+| Higgs potential | `int sqrt(g)(lambda |H|⁴ - mu²|H|²)` | `Tr(D_F²)`, `Tr(D_F⁴)` | `lambda_H/g_*²=1197/4624`; threshold ledger preserved |
+| Yukawa/fermions | `int sqrt(g) psibar D_total psi` | finite Dirac edge graph and moduli | assembled; 13 charged flavor moduli remain |
+| Gravity squared | `int sqrt(g) C²`, etc. | finite multiplicity | structural higher-curvature channel |
+
+This resolves the Gate-375 obstruction without falsely claiming the missing cosmological numbers. RG running, Boltzmann equations, bounce actions, and dark-sector computations become available only after specifying the continuum metric/topology, renormalization scheme, initial conditions, and the remaining moduli/counterterms. Therefore the architecture is now:
+
+```text
+ASHA finite geometry -> product spectral action coefficients
+spacetime M -> continuum dynamical fields and histories
+M x F action -> SM+Einstein-gravity Lagrangian skeleton
+continuum model + initial data -> cosmological observables
+```
+
+Gate 376 is the marriage gate. It opens the correct continuum program while preserving all empirical firewalls.
