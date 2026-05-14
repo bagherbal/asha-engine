@@ -145,6 +145,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingresidualstructure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativefinitealgebra"
+	"github.com/bagherbal/asha-engine/pkg/bridge/neutraleigenspacekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutrinotextureaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncommutingtexturepair"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonuniversalrgfit"
@@ -508,6 +509,7 @@ func Run() error {
 		scalartrialitytexture.ScalarBundleToTrialityPullbackYukawaGenerationTextureAuditTheorem(),
 		spin8trialityfunctor.Spin8TrialityAutomorphismScalarToSpinorFunctorAuditTheorem(),
 		vectorrepresentative8v.VectorRepresentative8VScalarToVectorBundleMapAuditTheorem(),
+		neutraleigenspacekernel.NeutralEigenspaceKernelInvariant3PlaneAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

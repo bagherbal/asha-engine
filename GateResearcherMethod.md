@@ -326,3 +326,12 @@ When a later gate proposes a functor such as Spin(8) triality, first verify that
 - distinguish dimensional embeddability from a canonical representation map;
 - reject basis assignments like `Q/Z/T3Y -> Gamma_i` unless a native map is derived;
 - keep the downstream texture/CKM/PMNS claims blocked until the representative exists.
+
+## Gate 249 method note — neutral kernels require operator actions
+
+- When a coordinate-free eigenspace is proposed, first verify that the defining operator actually acts on the target carrier.
+- `ker(Q_8v)` is a well-typed route only after `Q_8v` is derived as a matrix or endomorphism of `8_v`.
+- Do not infer a neutral three-plane from the word “neutral” in a scalar trace ledger; compute the kernel and its dimension.
+- Even if the kernel has dimension three, a second theorem must identify the scalar trace slots with a canonical frame or basis-independent structure inside that kernel.
+- Do not construct `v_tau = 2 n_1 - 2 n_2 + n_3` until both the neutral kernel and scalar-slot pairing are derived.
+- Preserve downstream triality/Yukawa/CKM/PMNS claims as blocked until the actual `8_v` representative exists.

@@ -4319,3 +4319,38 @@ v_tau representative: missing
 Spin(8) pullback to spinor flavor carrier: missing
 Yukawa/CKM/PMNS derivation: missing
 ```
+
+## Gate 249 — Neutral eigenspace kernel / invariant 3-plane isomorphism audit
+
+Gate 249 adds `pkg/bridge/neutraleigenspacekernel`.
+
+It refines the Gate-248 scalar-to-vector obstruction. Instead of assigning the neutral scalar trace slots to arbitrary `8_v` basis vectors, it proposes a coordinate-free subspace: the electromagnetic neutral kernel inside the Spin(8) vector carrier.
+
+The lawful target would be:
+
+```text
+ker(Q_8v) ⊂ 8_v
+```
+
+and the required success condition would be:
+
+```text
+dim ker(Q_8v) = 3
+```
+
+This would give a candidate invariant three-plane for the neutral scalar trace data. However, the finite engine has not derived `Q_8v` or `Z_8v` matrices acting on the vector representation. Therefore the kernel cannot be computed, its dimension cannot be checked, and the scalar trace triple cannot be paired with a canonical basis of the neutral kernel.
+
+Architectural status:
+
+```text
+8_v carrier: known
+neutral scalar trace origin: known
+coordinate-free neutral-kernel strategy: valid preflight
+Q/Z action on 8_v: missing
+neutral three-plane: missing
+v_tau: missing
+triality pullback: still blocked
+Yukawa texture: still blocked
+```
+
+This gate preserves the central firewall: `tau_eta=(2,-2,1)` cannot become a Spin(8) vector by dimensional embeddability alone. A representation of the electroweak derivations on `8_v` is now the next required bridge.

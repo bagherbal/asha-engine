@@ -3996,3 +3996,66 @@ Yukawa texture: not derived
 ```
 
 The next frontier is deriving a lawful scalar-to-vector representation map, not invoking triality before `tau_eta` enters the triality domain.
+
+## v2.47 — Gate 249: Neutral eigenspace kernel / invariant 3-plane isomorphism audit
+
+Gate 249 adds `pkg/bridge/neutraleigenspacekernel` after Gate 248 identified `8_v` as the correct Spin(8) vector carrier but refused to assign the neutral scalar trace triple to arbitrary `Gamma_i` coordinates.
+
+The gate tests the coordinate-free neutral-kernel strategy:
+
+```text
+ker(Q_8v) = { v in 8_v | Q_8v v = 0 }
+```
+
+If the finite engine could derive an electromagnetic-charge matrix `Q_8v` on the Spin(8) vector carrier and prove `dim ker(Q_8v)=3`, that kernel would be the invariant three-plane needed to host the scalar trace representative `v_tau`.
+
+The inherited scalar trace ledger remains:
+
+```text
+tau_eta(Q^T Q)        =  2
+tau_eta(Z^T Z)        = -2
+tau_eta(T3L^T Y_phi)  =  1
+```
+
+The result is a precise obstruction. `Q` and `Z` are known as neutral electroweak scalar/charge observables, but the project has not derived their representation matrices acting on `8_v`:
+
+```text
+Q_8v: missing
+Z_8v: missing
+charge spectrum on 8_v: missing
+neutral kernel dimension: not computable
+```
+
+Gate 249 therefore blocks:
+
+```text
+v_tau ?= 2 n_1 - 2 n_2 + n_3,  n_i in ker(Q_8v)
+```
+
+because both the neutral kernel and its scalar-slot frame are missing.
+
+Gate 249 status:
+
+```text
+CONDITIONAL_SUPPORT_8V_CARRIER_INHERITED
+CONDITIONAL_SUPPORT_NEUTRAL_KERNEL_STRATEGY_PREFLIGHT
+CONDITIONAL_SUPPORT_NEUTRAL_SCALAR_TRACE_SLOTS_INHERITED
+FAILED_ROUTE_EW_DERIVATION_ACTION_ON_8V
+FAILED_ROUTE_NEUTRAL_KERNEL_3PLANE_DERIVATION
+FAILED_ROUTE_SCALAR_TO_NEUTRAL_3PLANE_ISOMORPHISM
+FAILED_ROUTE_NEUTRAL_KERNEL_V_TAU_CONSTRUCTION
+FAILED_ROUTE_TRIALITY_PREFLIGHT_WITHOUT_NEUTRAL_8V_VECTOR
+FAILED_ROUTE_YUKAWA_TEXTURE_DERIVATION
+```
+
+The theorem distinction is now:
+
+```text
+8_v carrier known: yes
+neutral-kernel strategy well typed: yes
+Q/Z action on 8_v derived: no
+neutral three-plane derived: no
+v_tau representative: no
+triality pullback: blocked
+Yukawa/CKM/PMNS derivation: blocked
+```
