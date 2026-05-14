@@ -1416,3 +1416,21 @@ The propagator route remains incomplete: no base-space support, local sections, 
 The constraint route also remains incomplete: no constraint equations, ghost grading, nilpotent BRST operator, pairing, exactness/cohomology proof, supertrace cancellation, or zero-beta ledger is derived.
 
 Therefore the dichotomy is unresolved. The quartic block remains exact finite spectral data, not a physical threshold field and not a proven nonphysical cancellation block. Contact beta rows, threshold corrections, physical electroweak constants, masses, `M*`, and `g_*` remain sealed.
+
+### Gate 158 — Quartic BRST candidate differential / zero-supertrace construction attempt
+
+Gate 158 attacks the constraint/BRST route from Gate 157 directly. It audits candidate differentials on the exact four-row quartic contact block and ghost gradings capable of producing a zero-supertrace ledger.
+
+The only canonical square-zero differential is `Q = 0`, but it is inert: all four quartic classes survive in cohomology. Nonzero square-zero pair maps can be written abstractly only after choosing pairings/orderings inside the quartic Galois orbit. Likewise, a two-even/two-odd grading can make a formal signed count vanish, but it breaks the quartic orbit into chosen branches and has no canonical zero-beta ledger.
+
+The firewall remains closed: the quartic block is not BRST-cancelled, not a proven zero-beta block, and not a threshold field.
+
+### Gate 159 — Quartic ghost-grading Galois invariance / nontrivial parity obstruction theorem
+
+Gate 159 isolates the ghost-grading obstruction itself. The four quartic contact roots form one transitive Galois orbit. On a transitive orbit, a Galois-invariant parity function must be constant. Therefore the only Galois-invariant ghost gradings are all-even and all-odd, both non-cancelling.
+
+All nontrivial parity assignments are branch choices. In particular, the six two-even/two-odd assignments have zero signed count but require choosing a two-subset of four Galois-conjugate branches. They are not canonical, do not define a zero-supertrace ledger, and do not prove a zero-beta contribution.
+
+The quartic block remains exact finite spectral data. Contact beta rows, threshold corrections, physical constants, masses, `M*`, and `g_*` remain sealed.
+
+Next gate: Gate 160 — quartic parity branch-breaking source / external-selector firewall theorem.
