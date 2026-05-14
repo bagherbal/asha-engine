@@ -5182,3 +5182,29 @@ The stationarity equation is:
 This shows why the gate cannot yet promote the idea to a theorem. The action constraint is one scalar equation over free cutoff moments, the absolute `D_F` scale, field normalizations, and the still-missing physical spectral triple. It therefore cannot uniquely select `r_+` or `r_-`, cannot derive `J` as an extremum symmetry, and cannot compute `(4/π)/B_gap` as a finite instanton action.
 
 Architecturally, this gate unifies the Path-B and Path-C blockages: both now require a completed spectral-action moment/normalization theorem before dynamics can be claimed.
+
+## Gate 288 — Contact-Spectral Cutoff Identification Boundary
+
+Gate 288 connects Dataset A, the Gate-162 contact spectrum, to Dataset B, the Gate-275 scalar-Morita Dirac moment proxy. The tested identification is:
+
+```text
+f0 = 7,
+f2 = 61/25,
+f4 = 257629/202500.
+```
+
+Substitution into `S_top=8π²` removes the free-cutoff-moment ambiguity exposed by Gate 287 and yields a concrete quadratic for the absolute scale `X=|x|²` on each Gate-275 branch. With the reduced Morita identity trace `a0=4`, both branches have positive real solutions:
+
+```text
+r_+ branch: X≈0.9680658202595966
+r_- branch: X≈1.905352660102002
+```
+
+A notable structural result is that both branches produce the same total reduced moments:
+
+```text
+Tr(D_F²)≈5.746836960723197,
+Tr(D_F⁴)≈8.549369303330813.
+```
+
+Thus the contact cutoff selects total spectral moment size but remains blind to the distribution between lepton and quark edge amplitudes. Architecturally this gate lowers the ambiguity from free cutoff moments to a two-branch amplitude redistribution, but the heat-kernel normalization, physical `a0`, physical `J`, chiral/hypercharge representation, and dimensionless Higgs observable remain missing.

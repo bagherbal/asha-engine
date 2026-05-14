@@ -89,6 +89,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsignsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsignsplit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsource"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactspectralcutoff"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsymmetry"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactt3rpullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contacttargetoperator"
@@ -586,6 +587,7 @@ func Run() error {
 		finitehopfconnectioncurvature.FiniteHopfConnectionCurvatureChernSimonsBoundaryWindingAuditTheorem(),
 		finitencginstantonaction.FiniteSpectralActionSaddlePointBGapInstantonActionAuditTheorem(),
 		topologicalactionvariationalprinciple.TopologicalActionVariationalPrincipleBoundarySelectorAuditTheorem(),
+		contactspectralcutoff.ContactSpectralCutoffIdentificationSTopBranchSelectorAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

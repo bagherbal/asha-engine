@@ -5519,3 +5519,60 @@ d/dr [(1+3r²)/(1+3r)²] = 6(r-1)/(1+3r)³
 has its extremum at `r=1`, not at the Gate-275 branches. Therefore `S_top=8π²` does not currently select `r_+` or `r_-`, derive physical `J`, extract `f0:f2:f4`, or generate `(4/π)/B_gap`.
 
 Gate 287 keeps the proposal alive as a future top-down route, but records the present theorem status as bridge-required.
+
+## Gate 288 — Contact-Spectral Cutoff Identification
+
+Gate 288 tests the proposed identification of the spectral-action cutoff moments with the exact Gate-162 contact spectral ledger:
+
+```text
+f0 = ζ_contact(0) = 7
+f2 = Tr(Ω²) = 61/25
+f4 = Tr(Ω⁴) = 257629/202500
+```
+
+Using the Gate-275/273 reduced scalar-Morita proxy,
+
+```text
+Tr(D_F²)=X(1+3r),
+Tr(D_F⁴)=X²(1+3r²),
+X=|x|²,
+r=|y/x|²,
+```
+
+the topological action boundary becomes the quadratic scale constraint
+
+```text
+7·X²(1+3r²) + (61/25)·X(1+3r) + (257629/202500)·a0 = 8π².
+```
+
+With the reduced `1⊕3` proxy `a0=κ_C+κ_Q=4`, both Gate-275 branches survive the positivity sieve:
+
+```text
+r_+ ≈ 1.645470463011191   X_+ ≈ 0.9680658202595966
+r_- ≈ 0.672051318208557   X_- ≈ 1.905352660102002
+```
+
+The contact cutoff locks the total reduced trace moments, not the branch distribution:
+
+```text
+Tr(D_F²) ≈ 5.746836960723197
+Tr(D_F⁴) ≈ 8.549369303330813
+Tr(D_F⁴)/Tr(D_F²)² = 1197/4624
+```
+
+Therefore the contact-spectral identification is a meaningful reduction of Gate-287 underdetermination, but it does not select `r_+` versus `r_-`, does not complete the heat-kernel projection, and does not derive a Higgs mass ratio.
+
+Statuses:
+
+```text
+CONDITIONAL_SUPPORT_CONTACT_SPECTRAL_CUTOFF_MOMENTS_RETRIEVED
+CONDITIONAL_SUPPORT_CONTACT_SPECTRAL_CUTOFF_IDENTIFICATION_AUDITED
+CONDITIONAL_SUPPORT_QUADRATIC_SCALE_CONSTRAINT_CONSTRUCTED
+CONDITIONAL_SUPPORT_R_BRANCH_POSITIVITY_SIEVE_COMPLETED
+CONDITIONAL_SUPPORT_TOTAL_TRACE_MOMENTS_LOCKED_IN_REDUCED_PROXY
+FAILED_ROUTE_BOTH_R_BRANCHES_ADMIT_POSITIVE_REAL_X
+FAILED_ROUTE_CONTACT_SPECTRAL_CUTOFF_DOES_NOT_SELECT_R_BRANCH
+FAILED_ROUTE_CUTOFF_FUNCTION_EQUALS_CONTACT_SPECTRUM_NOT_DERIVED_AS_HEAT_KERNEL_THEOREM
+FAILED_ROUTE_A0_IDENTITY_TRACE_NORMALIZATION_STILL_PROXY_LEVEL
+FAILED_ROUTE_HIGGS_MASS_RATIO_STILL_NOT_DERIVED
+```
