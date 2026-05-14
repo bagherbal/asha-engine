@@ -269,6 +269,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/topyukawagenerationtensor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tracesynthesiscarrierequivalence"
+	"github.com/bagherbal/asha-engine/pkg/bridge/trialitygenerationpullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitytexturelift"
 	"github.com/bagherbal/asha-engine/pkg/bridge/truebimodulerepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/twoloopintegration"
@@ -656,6 +657,7 @@ func Run() error {
 		seesawoverlapmatrix.SeesawOverlapMatrixConstructionMajoranaHiggsMixingSieveAuditTheorem(),
 		heavypropagatorselfquartic.HeavyPropagatorSelfQuarticSieveThresholdNormalizationAuditTheorem(),
 		fullthresholdrgtransport.FullThresholdRGTransportConditionalHiggsMassPredictionAuditTheorem(),
+		trialitygenerationpullback.TrialityGenerationPullbackNativeTopYukawaBoundarySieveAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
