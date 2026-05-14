@@ -6,6 +6,7 @@ import (
 	"github.com/bagherbal/asha-engine/internal/report"
 	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
+	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fieldmap"
@@ -112,6 +113,7 @@ func Run() error {
 		goldstone.GaugeEatingGoldstoneAuditTheorem(),
 		scalarsu2.ScalarContactSU2ActionSearchTheorem(),
 		scalarcomplex.ScalarComplexQuaternionicStructureSearchTheorem(),
+		condensate.CompositeHiggsCondensateDirectionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
