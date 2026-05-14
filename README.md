@@ -484,3 +484,27 @@ Gate 97 adds `pkg/bridge/ewcurvature`. Gate 96 showed that the broken-only varia
 The full connection closes and supports a formal field-strength carrier. However, the adjoint diagnostic is rank three and has the pure abelian direction `Q-Z=2Y_phi` as a null vector. It sees the semisimple neutral direction `T3=(Z+Q)/2`, not a positive physical `U(1)` kinetic Hessian. Consequently `diag(1,1,4)` remains a strong broken-image metric-whitening candidate, not an action-selected physical Hessian.
 
 Truth: full electroweak curvature must include the electromagnetic direction, but the curvature algebra alone still does not derive `g2`, `gY`, `thetaW`, `alpha`, or physical W/Z masses.
+
+## v1.58 — Gate 160: Quartic External Selector Firewall
+
+Adds `pkg/bridge/quarticexternalselector`.
+
+Gate 159 proved that the quartic contact block cannot be ghost-graded internally: the four quartic roots form one transitive Galois orbit, so any nontrivial parity split is a branch choice. Gate 160 tests the logically prior escape hatch before moving to spectral-action methods: whether any already-derived external physical source can break the quartic orbit canonically.
+
+Audited selector sources:
+
+- scalar vacuum orientation;
+- broken gauge generator images `{T1,T2,Z}`;
+- matter-side `B−L` charge pullback;
+- canonical action second variation;
+- rational/quartic spectral cross-coupling.
+
+Current result:
+
+- scalar and broken-gauge sources do not yet have canonical maps into the contact quartic block;
+- matter-side `B−L` still lacks a canonical Fock-to-contact pullback;
+- the action second variation can restrict to the quartic primary block only as a Galois-safe isotropic scalar action, with spectrum `[1,1,1,1]`;
+- `P_rational Ω P_quartic = 0` exactly by spectral orthogonality, so rational roots do not select quartic branches;
+- no nondegenerate spectrum, no 2+2 split, no ghost grading, no BRST cancellation, no contact beta row, and no physical constant is derived.
+
+The mode-by-mode quartic route is now blocked both internally and by all currently available external finite sources. The next gate should treat the quartic data collectively through Galois-invariant spectral functionals.

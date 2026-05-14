@@ -1434,3 +1434,48 @@ All nontrivial parity assignments are branch choices. In particular, the six two
 The quartic block remains exact finite spectral data. Contact beta rows, threshold corrections, physical constants, masses, `M*`, and `g_*` remain sealed.
 
 Next gate: Gate 160 — quartic parity branch-breaking source / external-selector firewall theorem.
+
+### Gate 160 — Quartic parity branch-breaking external-selector firewall theorem
+
+Package: `pkg/bridge/quarticexternalselector`
+
+Gate 160 tests the final mode-by-mode escape hatch left after Gate 159. Gate 159 proved that the quartic primary contact block cannot be split internally by a nontrivial Galois-invariant parity function. Gate 160 asks whether an already-derived external physical source can canonically break the quartic orbit.
+
+Five selector candidates are audited:
+
+```text
+(a) scalar vacuum orientation
+(b) broken gauge generator images {T1,T2,Z}
+(c) matter-side B−L charge pullback
+(d) canonical action second variation
+(e) rational/quartic spectral cross-coupling P_rational Ω P_quartic
+```
+
+Result:
+
+```text
+external sources audited:        5
+sources reaching quartic block:  2
+nondegenerate selectors:         0
+canonical 2+2 splits:            0
+successful branch breakers:      0
+contact beta rows allowed:       0
+contact zero rows proved:        0
+residual nullity:                3 -> 3
+```
+
+The scalar vacuum source only selects the lower active scalar pair plane; it does not select a unique vector or a canonical map into the quartic contact block. The broken gauge images are action-normalized on the scalar/gauge carrier, but the protected-contact/broken-generator intertwiner is still absent. The matter-side `B−L` charge is canonical on the Fock side, but Gate 138 has not derived a canonical Fock-to-contact kernel or target contact operator.
+
+The action second variation is the only external quadratic source that can be restricted to the quartic primary block without choosing branches. Its restriction is isotropic on the irreducible Galois block, with spectrum `[1,1,1,1]`; it therefore induces no nondegenerate spectrum and no 2+2 split.
+
+The rational/quartic cross-coupling fails exactly:
+
+```text
+P_rational Ω P_quartic = 0
+```
+
+because `P_rational` and `P_quartic` are orthogonal spectral projectors of the same self-adjoint contact-overlap operator `Ω`.
+
+Gate 160 therefore records a definitive external-selector firewall for all currently available finite objects. The quartic block remains exact finite spectral data, but cannot be used mode-by-mode for threshold beta rows, BRST cancellation, or physical constant derivation.
+
+Next gate: Gate 161 — collective quartic spectral functional / action-level coupling contribution.
