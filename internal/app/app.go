@@ -227,6 +227,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingcorrectionseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingresidualstructure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matrixinvariantkoideaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/mixededgelaplaciansieve"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modularhamiltonianorigin"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modularkmsstateselection"
@@ -800,6 +801,7 @@ func Run() error {
 		contactsingletonflavorfunctor.ContactSingletonFiniteDiracFlavorFunctorSieveTheorem(),
 		contactquarticscalaryukawabundle.ContactQuarticPrimaryScalarYukawaBundleFunctorAuditTheorem(),
 		quaternionicscalarbundleidentity.QuaternionicScalarBundleIdentitySieveTheorem(),
+		mixededgelaplaciansieve.NonQuaternionicScalarIdentityMixedEdgeLaplacianSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
