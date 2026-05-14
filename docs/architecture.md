@@ -5096,3 +5096,19 @@ Architecturally this gate separates three ledgers:
 3. **Missing finite mechanism:** hidden-sector order parameter, contact/Hopf action normalization, breaking potential, and residual matching theorem.
 
 The `IntermediateBreakingSeal` remains required and ungranted. Path C is now open, but the next theorem must derive the action map or order parameter rather than re-rank numerical coincidences.
+
+## Gate 284 — Contact-Vacuum Hopf Action Firewall
+
+Gate 284 converts the Gate-283 `4/π` resonance into an explicit action-map checklist. The candidate hidden-sector instanton form is now written as:
+
+```text
+S_inst = S_top/(π Vol(S³) B_gap) = (4/π)/B_gap.
+```
+
+This is a valid and sharp Path-C target, but it is not yet an intermediate-scale theorem. The architecture now distinguishes:
+
+1. **Exact topology:** `S_top=8π²`, `Vol(S³)=2π²`, hence `4/π`.
+2. **Candidate hierarchy form:** `M_* exp(-S_inst)`.
+3. **Missing dynamics:** contact-vacuum boundary map, finite connection/curvature, Chern-Simons density, `B_gap` coupling semantics, hidden order parameter, and residual correction theorem.
+
+The `IntermediateBreakingSeal` remains ungranted. Future progress must derive a physical order parameter or action functional rather than improving the numerical fit.

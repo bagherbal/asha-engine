@@ -94,6 +94,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contacttargetoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactu4kernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactu4projection"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactvacuumhopfaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactzeta"
 	"github.com/bagherbal/asha-engine/pkg/bridge/continuumdecouplingbridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
@@ -578,6 +579,7 @@ func Run() error {
 		resolventbranchsemantics.ResolventBranchSemanticsProjectorSectorOrientationSealAuditTheorem(),
 		spectralactioncapstone.SpectralActionEpistemologicalCapstoneHiggsPredictionFirewallAuditTheorem(),
 		bgaphierarchycoefficient.BGapHierarchyCoefficientTopologicalVolumeRatioAuditTheorem(),
+		contactvacuumhopfaction.NativeContactVacuumHopfActionMapHiddenSectorOrderParameterAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

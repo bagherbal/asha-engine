@@ -5329,3 +5329,60 @@ FAILED_ROUTE_FOUR_OVER_PI_DOES_NOT_EXACTLY_REPRODUCE_M_INT_WITH_CURRENT_BGAP
 FAILED_ROUTE_INTERMEDIATE_SCALE_THEOREM_NOT_UPGRADED
 FAILED_ROUTE_INTERMEDIATE_BREAKING_SEAL_REMAINS_REQUIRED
 ```
+
+## Gate 284 — Native Contact-Vacuum Hopf Action Map / Hidden-Sector Order Parameter Audit
+
+Gate 284 follows the Path-C resonance from Gate 283 and asks whether the exact Hopf ratio can become an operational B-gap instanton/action theorem.
+
+It formalizes the candidate action:
+
+```text
+S_inst,candidate = S_top / (π Vol(S³) B_gap)
+                 = (4/π) / B_gap
+```
+
+using:
+
+```text
+S_top = 8π²
+Vol(S³) = 2π²
+S_top/(π Vol(S³)) = 4/π
+```
+
+The gate preserves the tight intermediate-scale resonance:
+
+```text
+M_hidden = M_* exp(-(4/π)/B_gap)
+M_hidden ≈ 6.908660279e11 GeV
+M_int target ≈ 6.650726477e11 GeV
+log10 gap ≈ 0.016524751 decades
+```
+
+But it does not derive the mechanism that would make this formula physical. Missing objects remain:
+
+```text
+finite Hopf/contact connection and curvature
+Chern-Simons or instanton boundary density on S³
+contact-vacuum-to-Hopf-fiber boundary embedding
+B_gap as inverse coupling / instanton order parameter
+hidden-sector scalar/condensate field and breaking potential
+finite-volume, threshold, loop, or subtraction correction for the residual
+```
+
+Statuses:
+
+```text
+CONDITIONAL_SUPPORT_GATE283_BGAP_RESONANCE_INHERITED
+CONDITIONAL_SUPPORT_INSTANTON_TOPOLOGICAL_ACTION_FUNCTIONAL_FORMALIZED
+CONDITIONAL_SUPPORT_CONTACT_VACUUM_BOUNDARY_MAP_REQUIREMENTS_AUDITED
+CONDITIONAL_SUPPORT_HIDDEN_SECTOR_ORDER_PARAMETER_REQUIREMENTS_DEFINED
+CONDITIONAL_SUPPORT_BGAP_RESIDUAL_CORRECTION_LEDGER_COMPUTED
+CONDITIONAL_SUPPORT_CONTACT_VACUUM_HOPF_FIREWALLS_PRESERVED
+FAILED_ROUTE_FINITE_HOPF_CONNECTION_AND_CURVATURE_NOT_DERIVED
+FAILED_ROUTE_CONTACT_VACUUM_TO_HOPF_FIBER_MAP_NOT_DERIVED
+FAILED_ROUTE_BGAP_AS_INSTANTON_COUPLING_NOT_DERIVED
+FAILED_ROUTE_HIDDEN_SECTOR_ORDER_PARAMETER_NOT_DERIVED
+FAILED_ROUTE_RESIDUAL_MATCHING_CORRECTION_NOT_DERIVED
+FAILED_ROUTE_CONTACT_VACUUM_ACTION_MAP_NOT_DERIVED
+FAILED_ROUTE_INTERMEDIATE_BREAKING_SEAL_REMAINS_REQUIRED
+```
