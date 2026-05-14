@@ -12,74 +12,71 @@ The engine is intentionally theorem-gated:
 No observed physical constants are hard-coded in the finite core.
 
 
-## Bottom line up front — current final finding
+## Bottom line up front — final architecture finding
 
-The ASHA Engine now uses the correct almost-commutative bridge: the finite internal geometry `F` is not
-forced to become spacetime. It joins an external four-dimensional spin manifold `M` through the product
-spectral triple
+The ASHA Engine is now formally sealed as a **finite-geometry Standard Model + gravity architecture ledger with an explicit environmental boundary**. The finite internal geometry `F` is not forced to become spacetime; it joins an external four-dimensional spin manifold `M` through the almost-commutative product
 
 ```text
 Total geometry = M × F
 D_total = D_M ⊗ 1_F + γ5 ⊗ D_F
+S = Tr f(D_A²/Λ²)
 ```
 
-Gate 379 installed the direct Chamseddine--Connes--Marcolli coefficient ledger for this product geometry.
-Gate 380 then combined that CCM ledger with the ASHA Pfaffian hierarchy scale to isolate the remaining
-Higgs-sector closure question into one number: the effective zeroth spectral-action moment `f0`.
+The project now separates three categories without mixing them.
 
-Using the CCM canonical quartic read-off
+### 1. Absolute ASHA geometry
+
+The native finite spectral geometry supplies the law-space:
 
 ```text
-λ_H(f0) = π²(e/a²)/(2f0)
+A_F = C ⊕ H ⊕ M₃(C)
+Gauge group = SU(3) × SU(2) × U(1)
+Generations = 3
+Higgs doublets = 1
+Gauge bosons = 12
+Morita split = 1 ⊕ 3
+sin²θ_W(Λ) = 3/8
+α_GUT⁻¹ = 8π
 e/a² = 1197/4624
+v/M_P = 2^(3/2) exp(-4π²)
 ```
 
-and the Higgs relation `m_H = v sqrt(2λ_H)`, the Higgs boundary extracts
+These are structural/boundary results of the finite geometry and the product spectral-action bridge.
+
+### 2. Sealed Higgs tree-level bridge
+
+Gate 385 derives the edge-measure theorem for the Higgs sector. The Higgs field is a finite inner fluctuation, hence a represented one-form supported on the ten `J`-doubled finite Dirac edge slots rather than the seven contact nodes. With the CCM coefficient ledger and the Pfaffian VEV, the canonically normalized tree-level proxy is
 
 ```text
-f0_eff = π²(e/a²)(v/m_H)²
+λ_edge ≈ 0.1277456365
+m_H(tree proxy, Pfaffian VEV) ≈ 124.925 GeV
 ```
 
-Numerically:
+This is sealed as a **CCM+Pfaffian tree-level Higgs proxy**, not as a full pole-mass theorem. Full pole-mass closure still requires RG running, threshold matching, and self-energy conversion.
+
+### 3. Environmental quarantine
+
+Gate 372 proves that the minimal charged finite-Dirac vacuum retains exactly
 
 ```text
-f0_eff ≈ 9.8971   using v = 246.22 GeV
-f0_eff ≈ 9.9721   using the unreduced-Planck Pfaffian VEV
+13 charged flavor moduli = 6 quark masses + 4 CKM parameters + 3 charged-lepton masses
 ```
 
-The native finite-Dirac edge ledger contains exactly five structural edge classes:
+The older minimal `15` ledger is refined as
 
 ```text
-Q_L ↔ u_R
-Q_L ↔ d_R
-L_L ↔ e_R
-L_L ↔ ν_R
-ν_R ↔ ν_R^c
+15 = 13 charged finite-Dirac flavor moduli + θ_QCD + one absolute scale/unit convention
 ```
 
-and therefore exactly ten `J`-doubled edge slots. With `f0 = 10`, the CCM+Pfaffian calculation gives a
-near-125 GeV Higgs mass:
+Gate 386 shows that macroscopic observables such as dark matter abundance, universe lifetime, and the observed cosmological constant are structurally opened by ASHA, but are not hard native predictions without environmental data: top/Yukawa inputs, heavy-sector stability/rates, reheating history, Boltzmann initial conditions, RG matching, bounce prefactors, and vacuum subtraction rules.
+
+The final theorem boundary is therefore:
 
 ```text
-m_H(f0=10, v=246.22 GeV) ≈ 124.455 GeV
-m_H(f0=10, Pfaffian VEV) ≈ 124.925 GeV
-```
-
-This is a strong and nontrivial near-closure. However, the theorem is not yet sealed as a native Higgs-mass
-derivation, because in the spectral action `f0` is the zeroth moment/value of the cutoff test function, not
-automatically an edge count. The `10` edge result is therefore a capacity witness unless a new theorem proves
-that the CCM `f0` moment functional equals the `J`-doubled finite-Dirac edge projection.
-
-The current theorem boundary is therefore:
-
-```text
-ASHA supplies the finite internal geometry, trace ratio e/a²=1197/4624, and Pfaffian hierarchy scale.
-CCM supplies the correct almost-commutative spectral-action coefficient ledger.
-Gate 380 shows that f0≈10 closes the Higgs mass to high accuracy and that ASHA has a native integer-10 edge witness.
-Gate 381 proves the edge-side trace Tr_E(P_edge)=10 but rejects the type error f0=Tr_E(P_edge).
-Gate 382 repairs the type mismatch by locking the continuous cutoff moment to f0=1 and auditing whether the finite trace supplies the factor 10.
-The result is sharper: multiplying the quartic trace by 10 is the wrong channel; placing 10 in the kinetic/canonical denominator reproduces the Higgs near-closure, but this requires a new finite-trace normalization theorem.
-Full numerical ToE closure still requires the 10/7 normalization theorem, plus gauge trace normalization, f4/vacuum subtraction, and RG/matching prescriptions.
+ASHA gives the law-space.
+Creation/environment supplies the 13 flavor coordinates and continuum thermal history.
+The framework is complete as a firewalled Standard Model + gravity spectral-action architecture,
+not as a parameter-free numerical oracle for all cosmological observables.
 ```
 
 ## Current gates

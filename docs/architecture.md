@@ -37,6 +37,21 @@ Cℓ(1,7) covariant phase space
 
 
 
+## Gate 387 — ASHA Framework Final Architecture Ledger & Epistemological Seal
+
+Gate 387 compiles the final architecture ledger after Gates 372, 385, and 386. It is not another search for a missing selector; it is the epistemological seal of the project.
+
+The sealed categories are:
+
+1. **Absolute ASHA geometry:** `A_F=C⊕H⊕M₃(C)`, the Standard Model gauge landscape, three generations, one Higgs doublet, twelve gauge bosons, Morita `1⊕3`, `sin²θ_W=3/8`, `α_GUT⁻¹=8π`, `e/a²=1197/4624`, and the Pfaffian scale `v/M_P=2^(3/2)e^(-4π²)`.
+2. **Almost-commutative product bridge:** `M×F` with `D_total=D_M⊗1_F+γ₅⊗D_F` and the CCM coefficient ledger.
+3. **Higgs tree proxy:** the Higgs is a finite inner fluctuation / one-form, so the canonical kinetic trace restricts to the ten `J`-doubled finite Dirac edge slots. This gives `λ_edge≈0.1277456365` and `m_H≈124.925 GeV` as a CCM+Pfaffian tree-level proxy.
+4. **Environmental quarantine:** the minimal charged finite-Dirac moduli space has dimension `13`, corresponding to six quark masses, four CKM parameters, and three charged-lepton masses. These are not selected by the native finite geometry.
+5. **Cosmological boundary:** the B-gap Majorana sector and threshold jump are native structures, but dark matter abundance, vacuum lifetime, and `Λ_cosmo` require additional environmental/continuum inputs.
+
+Gate 387 logs `PROJECT_ASHA_FORMALLY_SEALED_AND_COMPLETE` only in the firewalled sense: ASHA is complete as a finite-geometry Standard Model + gravity spectral-action architecture with an explicit environmental boundary. It does not claim parameter-free prediction of Yukawa texture, dark matter relic density, universe lifetime, or the observed cosmological constant.
+
+
 
 ## Gate 379 — CCM spectral-action direct substitution
 

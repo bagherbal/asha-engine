@@ -13,6 +13,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomaly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomalykinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/asha_final_closing_theorem"
+	"github.com/bagherbal/asha-engine/pkg/bridge/ashafinalarchitectureledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/axionphenomenologyseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/baryonleptonoperatoraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
@@ -784,6 +785,7 @@ func Run() error {
 		rawfinitetracerecomputation.RawFiniteTraceRecomputationEdgeMeasureSieveTheorem(),
 		innerfluctuationedgemeasure.InnerFluctuationOneFormSupportCCMEdgeMeasureSelectionSieveTheorem(),
 		cosmologicalobservablesdarksector.CosmologicalObservablesDarkSectorPredictionAfterHiggsSealSieveTheorem(),
+		ashafinalarchitectureledger.AshaFrameworkFinalArchitectureLedgerEpistemologicalSealTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
