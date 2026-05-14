@@ -4512,3 +4512,29 @@ The physical electroweak pair is still not obtained as native Fock Cartan data:
 - `T0/T3R` is Fock-number coordinate-ready, but it is a matter-side right-isospin diagnostic and must not be conflated with `T3L`.
 
 Thus `Q_8vC = iR_8v(τ(T3L+Y_phi))` remains blocked. The active obstruction is a representation-carrier unification problem, not a generic coordinate-dictionary problem.
+
+## Gate 255 — Carrier intertwiner / `T3L`-`Y_phi` representation unification audit
+
+Gate 255 adds `pkg/bridge/carrierintertwiner` and registers `CarrierIntertwinerT3LYPhiRepresentationUnificationAuditTheorem`.
+
+The gate asks whether the existing finite theorem state already contains the functor needed to unify the scalar/contact and left-doublet electroweak observables on one carrier:
+
+```text
+H_phi  --?-->  S_C = Λ*(C^4)
+Q_L⊕L_L --?--> S_C = Λ*(C^4)
+```
+
+The answer is no. The native Fock carrier `S_C` is available and the Witt dictionary is valid for true number-operator ledgers, but the physical electroweak objects remain typed elsewhere. `T3L` is a derived left-doublet action. `Y_phi` is a scalar/contact action. A formal direct sum or tensor product can list them together, but it does not make them a single `S_C` endomorphism and does not produce four coefficients over `(N_0,N_1,N_2,N_3)`.
+
+Architectural consequence:
+
+```text
+carrier unification: blocked
+T3L/Y_phi unified Fock ledger: absent
+physical so(8) coordinates: absent
+triality branch selection: blocked
+Q_8vC and neutral 3-plane: blocked
+v_tau and Yukawa texture: blocked
+```
+
+This gate sharpens the next required object. The missing datum is either a real finite representation functor into a common carrier, or an explicit sealed carrier convention containing the spontaneous scalar orientation, gauge frame, and left-doublet state-index embedding.

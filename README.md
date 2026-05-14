@@ -4278,3 +4278,57 @@ FAILED_ROUTE_YUKAWA_TEXTURE_STILL_BLOCKED
 ```
 
 The next logical gate is a carrier-intertwiner theorem: derive a native map from scalar/contact `H_phi` and derived left-doublet `SU(2)_L` data into the same Spin(8) representation carrier, or prove that the electroweak pair cannot live as pure Fock Cartan number ledgers.
+
+## Gate 255 — Carrier intertwiner / `T3L`-`Y_phi` representation unification audit
+
+Gate 255 adds `pkg/bridge/carrierintertwiner`.
+
+Gate 254 proved that the obstruction is a carrier mismatch rather than a missing generic dictionary. Gate 255 therefore audits the exact missing functor: a lawful representation map that would place both physical electroweak observables on the same complexified four-mode Fock carrier
+
+```text
+S_C = Λ*(C^4)
+```
+
+The result is a strict obstruction theorem. The local objects are real and useful, but they are not yet one representation:
+
+```text
+S_C                         canonical Fock/Witt carrier for N_k Cartan coordinates
+T3L                         derived Gate-24 matrix on Q_L⊕L_L, dimension 8
+Y_phi                       scalar/contact H_phi operator, dimension 4
+H_Fock⊗H_phi                bookkeeping tensor block, dimension 64, not S_C
+8_v                         eventual triality target, not an S_C input ledger
+```
+
+Candidate maps are audited and rejected as unifiers:
+
+```text
+identity on S_C             valid only for data already in S_C
+left-doublet inclusion      missing state-to-occupation injection
+H_phi -> S_C embedding      missing scalar/contact-to-Fock map
+formal direct sum           bookkeeping, not an intertwiner
+matter-scalar tensor block  changes the carrier to S_C⊗H_phi
+H_phi -> 8_v                blocked by the scalar/vector representative obstruction
+A_total functor             faithful total representation still unconstructed
+```
+
+Therefore Gate 255 does not emit `T3L` or `Y_phi` coefficients over `(N_0,N_1,N_2,N_3)`, and the Gate-253 Witt dictionary remains unable to construct physical electroweak `so(8)` coordinates.
+
+Status:
+
+```text
+CONDITIONAL_SUPPORT_GATE254_CARRIER_MISMATCH_INHERITED
+CONDITIONAL_SUPPORT_COMPLEXIFIED_FOCK_CARRIER_KNOWN
+CONDITIONAL_SUPPORT_LOCAL_CARRIER_ACTIONS_AUDITED
+CONDITIONAL_SUPPORT_SCALAR_ORIENTATION_CLASSIFIED_SPONTANEOUS
+CONDITIONAL_SUPPORT_FORMAL_ASSEMBLIES_REJECTED_AS_INTERTWINERS
+FAILED_ROUTE_T3L_LEFT_DOUBLET_TO_SC_INCLUSION_NOT_DERIVED
+FAILED_ROUTE_Y_PHI_HPHI_TO_SC_EMBEDDING_NOT_DERIVED
+FAILED_ROUTE_FAITHFUL_TOTAL_REPRESENTATION_FUNCTOR_MISSING
+FAILED_ROUTE_UNIFIED_T3L_Y_PHI_FOCK_LEDGER_BLOCKED
+FAILED_ROUTE_PHYSICAL_EW_SO8_COORDINATES_STILL_BLOCKED
+FAILED_ROUTE_TRIALITY_PULLBACK_STILL_BLOCKED
+FAILED_ROUTE_Q8VC_NEUTRAL_3PLANE_STILL_BLOCKED
+FAILED_ROUTE_YUKAWA_TEXTURE_STILL_BLOCKED
+```
+
+The next logical move is not to force the map. If the project chooses to proceed, the missing data must be sealed explicitly as spontaneous/gauge-fixed carrier data: scalar orientation, gauge frame, and a state-index ledger that identifies how the left-doublet table embeds into the Fock basis.

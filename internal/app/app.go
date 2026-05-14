@@ -25,6 +25,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/canonicalaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/canonicalboundary"
 	"github.com/bagherbal/asha-engine/pkg/bridge/carrieractivationseal"
+	"github.com/bagherbal/asha-engine/pkg/bridge/carrierintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/characteristicpullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
@@ -520,6 +521,7 @@ func Run() error {
 		lietrialitypullback.LieAlgebraTrialityPullbackHermitianQ8VCNeutral3PlaneAuditTheorem(),
 		wittso8coordinates.WittDecompositionFockToSO8BivectorCoordinateAuditTheorem(),
 		ewcartanledger.ElectroweakCartanLedgerRetrievalAuditTheorem(),
+		carrierintertwiner.CarrierIntertwinerT3LYPhiRepresentationUnificationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
