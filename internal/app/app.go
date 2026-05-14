@@ -93,6 +93,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierz"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierzsign"
 	"github.com/bagherbal/asha-engine/pkg/bridge/filtration"
+	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockcontactkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockrepresentationtrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
@@ -366,6 +367,7 @@ func Run() error {
 		instantontracebridge.FiniteToContinuumInstantonTraceNormalizationBridgeTheorem(),
 		conditionalrgbranch.ConditionalRGBoundaryScaleSolvabilityAuditTheorem(),
 		normalizationthresholdaudit.NormalizationPrefactorThresholdDeformationAuditTheorem(),
+		finitethresholdoperator.FiniteThresholdOperatorDecouplingSpectrumSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -2363,3 +2363,40 @@ physical constants: not derived
 ```
 
 This establishes the next required object: a finite threshold/decoupling operator that can produce non-universal `Δb_i` without external fitting.
+
+### Gate 178 — finite threshold operator / decoupling spectrum search
+
+Package: `pkg/bridge/finitethresholdoperator`
+
+Gate 178 follows the Gate-177 result that non-universal threshold deformations can fit the external comparison ledger by construction but are not finite-derived. It asks whether any currently available finite object can supply the required non-universal `Δb_i` threshold operator.
+
+A valid threshold operator must provide the full chain:
+
+```text
+finite mode → activation / decoupling predicate → gauge representation → beta-index row
+```
+
+The current engine has partial data:
+
+- scalar/contact aggregate: representation-complete baseline row, not a heavy threshold;
+- scalar active eigenvalues, radial response, B-sector gap, and contact partial overlaps: finite spectral anchors but no activation/decoupling law;
+- quartic zeta ledger: exact collective spectral data but no rowwise local-field interpretation;
+- Fock Dirac/Yukawa arena: mass-texture data, but amplitudes and physical masses are not derived;
+- Gate-177 `Δb_i` witness: non-universal and repair-capable only as an external comparison fit.
+
+No candidate has all required pieces at once. Therefore Gate 178 records a clean no-go for currently derived threshold operators.
+
+Gate 178 status:
+
+```text
+Status: FAILED_ROUTE
+threshold operator derived: false
+physical threshold mass spectrum: false
+activation predicate: false
+decoupling/matching law: false
+non-universal finite Δb_i: false
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+```
+
+This does not prove that thresholds cannot exist. It proves that the present finite algebra has not yet supplied the missing threshold-origin object. The next question is whether such an object requires a new finite sector or a continuum-decoupling bridge.

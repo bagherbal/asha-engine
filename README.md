@@ -1595,3 +1595,58 @@ threshold corrections: not derived
 ```
 
 Next gate: Gate 178 — finite threshold operator / decoupling spectrum search.
+
+## v1.76 — Gate 178: Finite threshold operator / decoupling spectrum search
+
+Gate 178 adds `pkg/bridge/finitethresholdoperator`.
+
+Gate 177 showed that a non-universal threshold vector `Δb_i` can repair the external comparison ledger only as an underived fit family. Gate 178 asks whether the engine already contains a finite object that can lawfully produce such a deformation.
+
+The gate requires the full threshold chain:
+
+```text
+finite mode carrier
+→ physical mass unit or activation predicate
+→ gauge representation row
+→ decoupling / matching law
+→ beta-index contribution Δb_i
+```
+
+The audit finds many partial ingredients but no complete threshold operator:
+
+```text
+exact finite spectral anchors: yes
+baseline scalar representation row: yes
+collective contact zeta data: yes
+Gate-177 non-universal Δb witness: yes, but comparison-fitted
+physical mass unit: no
+activation predicate: no
+decoupling law: no
+complete finite threshold operator: no
+```
+
+Important rejected shortcuts:
+
+```text
+contact spectrum × scalar representation row
+Gate-177 fitted Δb vector × finite spectral anchors
+quartic zeta functional as threshold beta row
+Fock Dirac eigenvalues as heavy thresholds
+topological normalization as threshold shift
+```
+
+The scalar/contact active aggregate remains a baseline complex-doublet row already counted in the one-loop inventory. It is not a heavy threshold correction. The B-sector gap and contact partial-overlap spectrum remain exact finite data, but not a physical decoupling spectrum.
+
+Gate 178 status:
+
+```text
+Status: FAILED_ROUTE
+finite threshold operator: not derived
+non-universal Δb_i operator: not derived
+Gate-177 repair branch: not promoted
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+physical constants: not derived
+```
+
+Next gate: Gate 179 — threshold-origin dichotomy / new-sector versus continuum-decoupling bridge audit.
