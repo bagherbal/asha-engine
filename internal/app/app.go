@@ -21,6 +21,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/matter/charge"
 	"github.com/bagherbal/asha-engine/pkg/matter/electroweak"
 	"github.com/bagherbal/asha-engine/pkg/matter/embedding"
+	"github.com/bagherbal/asha-engine/pkg/matter/hyperaudit"
 	"github.com/bagherbal/asha-engine/pkg/matter/hypercharge"
 	"github.com/bagherbal/asha-engine/pkg/matter/t3r"
 	"github.com/bagherbal/asha-engine/pkg/matter/tensor"
@@ -55,6 +56,7 @@ func Run() error {
 		electroweak.OperatorSearchTheorem(),
 		hypercharge.ScalarHyperchargeBridgeTheorem(),
 		t3r.MatterT3RSearchTheorem(),
+		hyperaudit.HyperchargeTableAuditTheorem(),
 	)
 
 	results := registry.RunAll()
