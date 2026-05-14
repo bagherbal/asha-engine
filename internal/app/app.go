@@ -308,6 +308,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactioncapstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactioncouplingnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactionvariationalgradient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/spectralgraphedgeadjacency"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralgraphf0index"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralgraphtracenormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralmomentledger"
@@ -804,6 +805,7 @@ func Run() error {
 		quaternionicscalarbundleidentity.QuaternionicScalarBundleIdentitySieveTheorem(),
 		mixededgelaplaciansieve.NonQuaternionicScalarIdentityMixedEdgeLaplacianSieveTheorem(),
 		derivededgeweightoperator.DerivedEdgeWeightOperatorHyperchargeLaplacianSieveTheorem(),
+		spectralgraphedgeadjacency.SpectralGraphEdgeAdjacencyOperatorSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
