@@ -4869,3 +4869,35 @@ formal D_F family
 ```
 
 The gate preserves all empirical and spectral firewalls: no observed masses, no VEV, no cutoff scale, no imported Connes algebra, and no Higgs prediction are inserted.
+
+## Gate 270 — Faithful Opposite-Action / One-Form Calculus Audit
+
+Gate 270 refines the dynamics-phase obstruction after the order-one mode sieve.
+
+It separates three representation layers:
+
+1. **mode-level same-side action:** gives `M=diag(x,yI3)` but vacuous one-forms;
+2. **chiral mode-bimodule diagnostic:** gives nonzero one-form candidates but fails the full order-one residual;
+3. **true doubled-`S_C` spectral triple:** still missing.
+
+The diagnostic action uses different left and right actions on the small `W=C⊕C^3` carrier:
+
+```text
+ρ_L(λ,B)=diag(λ,B)
+ρ_R(λ,B)=diag(λ,χ(B)I3)
+```
+
+This exposes the desired non-vacuous mechanism, but it is not a theorem on the actual `S_C⊕S_C*` Hilbert carrier and it does not supply a physical `Jρ(b*)J^{-1}` opposite action.
+
+Architecturally, Gate 270 updates the spectral-action branch as follows:
+
+```text
+formal D_F family
+  → order-one mode sieve
+  → M=diag(x,yI3)
+  → chiral diagnostic creates nonzero one-forms
+  → naive opposite action fails order-one
+  → full doubled-S_C bimodule theorem required
+```
+
+The Higgs ratio remains blocked. The raw moment ratio is still amplitude-dependent across allowed `x:y` representatives, and no mass-sector prediction is claimed.

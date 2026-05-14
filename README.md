@@ -4904,3 +4904,58 @@ FAILED_ROUTE_EMPIRICAL_YUKAWA_SEAL_REMAINS_ACTIVE
 ```
 
 The next lawful target is a faithful opposite-action representation and non-vacuous one-form calculus on doubled `S_C`.
+
+## Gate 270 — Faithful Opposite-Action Representation / Non-Vacuous One-Form Calculus Audit
+
+Gate 270 adds `pkg/bridge/faithfuloppositeactionrep` and registers `FaithfulOppositeActionRepresentationNonVacuousOneFormCalculusAuditTheorem`.
+
+Gate 269 showed that the mode-level order-one sieve reduces the finite Dirac block to
+
+```text
+M_order1(x,y)=diag(x,y,y,y),
+```
+
+but the same-side mode representation makes one-forms vacuous. Gate 270 tests the next missing ingredient: a faithful doubled-`S_C` representation with a physical opposite action through `J`.
+
+The gate audits a deliberately limited chiral mode-bimodule diagnostic:
+
+```text
+ρ_L(λ,B)=diag(λ,B)
+ρ_R(λ,B)=diag(λ,χ(B)I3),  χ(B)=Tr(B)/3
+```
+
+For a traceless color probe, it computes a nonzero candidate one-form:
+
+```text
+Mρ_R(a)-ρ_L(a)M = diag_spatial(-1,1,0)
+||Mρ_R(a)-ρ_L(a)M||² = 2
+```
+
+This proves that a chiral representation mismatch can make `[D_F,a]` non-vacuous. However, the naive swap/opposite action fails the full order-one residual:
+
+```text
+residual = diag_spatial(-1,0,0)
+||residual||² = 1
+```
+
+Therefore the diagnostic is not a physical spectral triple. The project still lacks the faithful action on the full `32`-complex-dimensional doubled `S_C` carrier, a derived anti-linear `J`, and an opposite algebra action that gives nonzero one-forms while satisfying order-one.
+
+Gate 270 logs:
+
+```text
+CONDITIONAL_SUPPORT_GATE269_ORDER_ONE_SIEVE_INHERITED
+CONDITIONAL_SUPPORT_FAITHFUL_SC_REPRESENTATION_LIFT_AUDITED
+CONDITIONAL_SUPPORT_CHIRAL_BIMODULE_PREFLIGHT_CONSTRUCTED
+CONDITIONAL_SUPPORT_CANDIDATE_NONVACUOUS_ONE_FORMS_EXPOSED
+CONDITIONAL_SUPPORT_FULL_ORDER_ONE_RESIDUAL_COMPUTED
+CONDITIONAL_SUPPORT_ORDER_ONE_FAMILY_MOMENTS_RECHECKED
+FAILED_ROUTE_FAITHFUL_TOTAL_SC_REPRESENTATION_STILL_MISSING
+FAILED_ROUTE_PHYSICAL_J_OPPOSITE_ACTION_STILL_MISSING
+FAILED_ROUTE_CANDIDATE_CHIRAL_ACTION_FAILS_FULL_ORDER_ONE
+FAILED_ROUTE_FAITHFUL_ACTION_DOES_NOT_SELECT_CANONICAL_DF
+FAILED_ROUTE_XY_RATIO_STILL_UNCONSTRAINED
+FAILED_ROUTE_INVARIANT_HIGGS_RATIO_NOT_DERIVED
+FAILED_ROUTE_EMPIRICAL_YUKAWA_SEAL_REMAINS_ACTIVE
+```
+
+The next lawful target is a full `S_C` finite algebra representation and physical opposite-action construction, not another trace-ratio computation.
