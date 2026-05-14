@@ -5365,3 +5365,33 @@ Valid next gates must not repeat eta traces or manually inject `tau_eta`. They m
 1. derive a nontrivial generation address from the finite representation itself;
 2. prove a stronger no-go that all current `Cℓ(1,7)` support contractions are generation-equivariant;
 3. or open a Phase-IV extension where generation labels become dynamical/topological degrees of freedom rather than copied multiplicities.
+
+## Gate 371 architectural update: finite Fock / quantum-information generation hypothesis
+
+Gate 371 reframes the Gate-370 obstruction. The problem may not be another support trace or another geometric intertwiner. It may be that the three generations are not merely copied geometric multiplicities but finite information/vibration levels.
+
+The new package `pkg/bridge/schrodingervibrationalintertwiner` audits this hypothesis with a truncated three-level Fock basis:
+
+```text
+|0>, |1>, |2>,     N|n> = n|n>
+```
+
+Architecturally, this is a genuine expansion of the search space. The number operator is noncentral and has nontrivial commutators with flavor generators, so it supplies the missing kind of generation address. But Gate 371 preserves the derivation firewall: a noncentral address is not enough. ASHA must derive the basis and the coupling from its finite ledger.
+
+The gate separates three levels:
+
+| Level | Status |
+|---|---|
+| Current geometric generation copies | Native, but central: `I_3`. |
+| Hypothesized finite Fock operator `N` | Noncentral capacity witness, not yet ASHA-derived. |
+| Target polynomial `P_tau(N)=tau_eta` | Exact, but circular unless polynomial coefficients are topologically derived. |
+
+Therefore Gate 371 does not activate internal thermal time. It converts the next problem into a precise Phase-IV theorem target:
+
+```text
+derive generation labels as finite oscillator/information states
+derive N from Cℓ(1,7) / triality / phase data
+derive Phi_support→N(Tr_support^eta(C_LR)) without fitting tau_eta
+```
+
+Until that theorem exists, `tau_eta` remains a kinematic topology / capacity witness rather than the selected modular Hamiltonian.

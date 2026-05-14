@@ -274,6 +274,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalartrialitytexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalaryukawasupport"
+	"github.com/bagherbal/asha-engine/pkg/bridge/schrodingervibrationalintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sealedcarrierwitness"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sealedthresholdstresstest"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectorchargepullback"
@@ -752,6 +753,7 @@ func Run() error {
 		bimodulemodularcurvature.BimoduleModularCurvatureInternalThermalTimeOriginSieveTheorem(),
 		etagradedlrtrace.EtaGradedLeftRightTraceNoncentralHamiltonianExtractionSieveTheorem(),
 		supportgenerationintertwiner.SupportToGenerationIntertwinerTopologicalIndexMapSieveTheorem(),
+		schrodingervibrationalintertwiner.SchrodingerVibrationalModesQuantumInformationIntertwinerAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
