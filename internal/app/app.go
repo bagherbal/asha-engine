@@ -16,6 +16,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/betamatching"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betapermission"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bgaphierarchycoefficient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/bgapmajoranaactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bimoduletracecapacity"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bminuslweakselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/boundaryselector"
@@ -634,6 +635,7 @@ func Run() error {
 		conditionalhiggsmassrgtransport.ConditionalHiggsMassFromQuarticRGTransportAuditTheorem(),
 		twoloopmatchingpoleledger.TwoLoopMatchingPoleMassConversionLedgerAuditTheorem(),
 		masterstatusledger.ASHAEngineMasterStatusLedgerProjectCapstoneAuditTheorem(),
+		bgapmajoranaactivation.BGapMajoranaActivationSpectralActionSigmaHMixedQuarticCorrectionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
