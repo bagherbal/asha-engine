@@ -971,3 +971,9 @@ kernel = central + color su(3)    -> quotient = B-L + leptoquark
 Both quotients have dimension seven, but both are current-side Pati-Salam sector quotients, not contact-row semantics. Their coexistence proves ambiguity rather than resolving it. No finite action, source functional, equivalence relation, representation row, contact-semantic kernel, or symmetry criterion selects one. Therefore the contact beta firewall remains closed: representation-complete contact rows are still `0 / 7`, contact beta rows allowed remain `0`, and no contact zero-row cancellation is proved.
 
 The next gate should search for a current-side sector quotient semantics or contact-row equivalence relation strong enough to relate the current carrier to the seven contact rows without inserting observed physics.
+
+### Gate 128 — current-side sector quotient semantics / contact-row equivalence relation search
+
+Package: `pkg/bridge/contactquotientsemantics`
+
+Gate 128 tests whether the current-side sector quotients exposed by Gate 127 can be promoted into contact-row equivalence relations. It records that two natural seven-dimensional quotient targets exist on the U(4)/Pati-Salam current side, but their semantics are typed sector patterns `1+6`, not seven contact spectral singleton rows. The canonical contact singleton relation preserves row data but is only diagnostic and not current-derived; the anonymous one-orbit relation restores symmetry by destroying row data. Fano-transport and spectral-cutoff refinements require a hidden assignment or arbitrary cutoff. Therefore contact representation rows, contact beta rows, and zero-row cancellations remain forbidden.
