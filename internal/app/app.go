@@ -130,6 +130,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeselection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/faithfuloppositeactionrep"
+	"github.com/bagherbal/asha-engine/pkg/bridge/fermionicroottracesieve"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fieldmap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierz"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierzsign"
@@ -714,6 +715,7 @@ func Run() error {
 		crosssectorreductionaudit.CrossSectorReductionAuditVacuumParameterCompressionSieveTheorem(),
 		vacuumcriticalityradiative.VacuumCriticalityRadiativeHierarchySieveTheorem(),
 		matrixinvariantkoideaudit.MatrixInvariantKoideTypeTracePolynomialAuditTheorem(),
+		fermionicroottracesieve.FermionicEffectiveActionRootTracePfaffianSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
