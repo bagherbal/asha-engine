@@ -4059,3 +4059,58 @@ v_tau representative: no
 triality pullback: blocked
 Yukawa/CKM/PMNS derivation: blocked
 ```
+
+## v2.48 — Gate 250: Adjoint bivector action / explicit Q_8v matrix derivation audit
+
+Gate 250 adds `pkg/bridge/adjointbivectoraction` after Gate 249 identified the neutral-kernel route but blocked it because `Q_8v` and `Z_8v` were not derived.
+
+The gate verifies that explicit Clifford grade-2 blades do act on the vector carrier `8_v` by the standard commutator:
+
+```text
+R(B)v = [B,v]
+[e_i e_j,e_k] = 2(η_jk e_i - η_ik e_j)
+```
+
+For a diagnostic simple bivector:
+
+```text
+B = e1 ∧ e2
+```
+
+the resulting `8 × 8` real matrix is computable, skew-symmetric, rank `2`, and has kernel dimension `6`. Thus the Clifford adjoint mechanism itself is available.
+
+The electroweak route still fails because the project has not derived `T3L` or `Y_phi` as `Cl(1,7)` grade-2 blades:
+
+```text
+T3L blade: missing
+Y_phi blade: missing
+Q_8v: missing
+Z_8v: missing
+```
+
+Gate 250 also records a stronger structural obstruction: a real Clifford-bivector adjoint action on `8_v` is skew-adjoint, so its rank is even and its real kernel dimension in eight dimensions is also even. Therefore an exact `3`-dimensional neutral kernel cannot be produced by a single real-bivector-adjoint `Q_8v` matrix.
+
+Gate 250 status:
+
+```text
+CONDITIONAL_SUPPORT_CLIFFORD_BIVECTOR_ADJOINT_ACTION_AVAILABLE
+CONDITIONAL_SUPPORT_CANDIDATE_BIVECTOR_8V_MATRICES_COMPUTABLE
+FAILED_ROUTE_REAL_BIVECTOR_ADJOINT_THREE_KERNEL_OBSTRUCTION
+FAILED_ROUTE_EW_BIVECTOR_RETRIEVAL
+FAILED_ROUTE_EXPLICIT_Q8V_MATRIX_DERIVATION
+FAILED_ROUTE_Q8V_NEUTRAL_3PLANE_DERIVATION
+FAILED_ROUTE_SCALAR_TO_NEUTRAL_3PLANE_ISOMORPHISM
+FAILED_ROUTE_TRIALITY_PREFLIGHT_WITHOUT_NEUTRAL_8V_VECTOR
+FAILED_ROUTE_YUKAWA_TEXTURE_DERIVATION
+```
+
+The theorem distinction is now:
+
+```text
+Clifford adjoint action: available for explicit bivectors
+EW bivectors T3/Y_phi: not derived
+Q_8v and Z_8v: not constructed
+real 3D neutral kernel from bivector route: impossible
+v_tau: not constructed
+triality/Yukawa/CKM/PMNS: still blocked
+```

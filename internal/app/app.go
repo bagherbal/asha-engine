@@ -7,6 +7,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/abeliancoupling"
 	"github.com/bagherbal/asha-engine/pkg/bridge/abelianmixing"
 	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
+	"github.com/bagherbal/asha-engine/pkg/bridge/adjointbivectoraction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomaly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomalykinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/axionphenomenologyseal"
@@ -510,6 +511,7 @@ func Run() error {
 		spin8trialityfunctor.Spin8TrialityAutomorphismScalarToSpinorFunctorAuditTheorem(),
 		vectorrepresentative8v.VectorRepresentative8VScalarToVectorBundleMapAuditTheorem(),
 		neutraleigenspacekernel.NeutralEigenspaceKernelInvariant3PlaneAuditTheorem(),
+		adjointbivectoraction.AdjointBivectorActionExplicitQ8VMatrixAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -4354,3 +4354,37 @@ Yukawa texture: still blocked
 ```
 
 This gate preserves the central firewall: `tau_eta=(2,-2,1)` cannot become a Spin(8) vector by dimensional embeddability alone. A representation of the electroweak derivations on `8_v` is now the next required bridge.
+
+## Gate 250 — Adjoint bivector action and explicit `Q_8v` audit
+
+Gate 250 adds `pkg/bridge/adjointbivectoraction`.
+
+It tests the missing representation action identified in Gate 249. The valid Clifford mechanism is:
+
+```text
+R(B)v = [B,v]
+```
+
+For `B=e_i e_j`, the action on the grade-1 basis is:
+
+```text
+[e_i e_j,e_k] = 2(η_jk e_i - η_ik e_j)
+```
+
+This proves that explicit grade-2 blades can generate real `8 × 8` matrices on the `8_v` carrier. A simple blade has rank `2` and kernel dimension `6`.
+
+However, Gate 250 does not derive the electroweak vector action, because `T3L` and `Y_phi` are still scalar/contact bridge generators rather than native `Cl(1,7)` bivector representatives. Consequently, `Q_8v` and `Z_8v` remain missing.
+
+The gate also adds a structural warning: the kernel of a real skew-adjoint bivector action on an eight-dimensional real vector space must be even-dimensional. Therefore the exact `3`-dimensional neutral kernel proposed in Gate 249 cannot come from a single real Clifford bivector adjoint action.
+
+Architectural status:
+
+```text
+8_v carrier: known
+Clifford bivector commutator action: known for explicit blades
+EW bivectors T3/Y_phi: missing
+Q_8v/Z_8v: missing
+neutral 3-plane from real bivector kernel: blocked
+v_tau and Spin(8) triality pullback: blocked
+Yukawa/CKM/PMNS: blocked
+```

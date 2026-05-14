@@ -335,3 +335,12 @@ When a later gate proposes a functor such as Spin(8) triality, first verify that
 - Even if the kernel has dimension three, a second theorem must identify the scalar trace slots with a canonical frame or basis-independent structure inside that kernel.
 - Do not construct `v_tau = 2 n_1 - 2 n_2 + n_3` until both the neutral kernel and scalar-slot pairing are derived.
 - Preserve downstream triality/Yukawa/CKM/PMNS claims as blocked until the actual `8_v` representative exists.
+
+## Gate 250 method note — commutator actions still need derived generators
+
+- When an operator action is missing, distinguish the general action law from the specific physical generator required by the gate.
+- The Clifford commutator `[B,v]` is lawful for explicit bivectors `B`, but this does not identify `T3L` or `Y_phi` with any particular blade.
+- Before computing a kernel, verify that the defining matrix is derived on the target carrier; do not assign charges or bivectors to basis vectors by recognition.
+- Track structural impossibility theorems: a real skew-adjoint bivector action on an 8D real carrier cannot have a 3D kernel.
+- If a desired eigenspace has odd dimension, consider whether the intended route should be a complex weight-space decomposition or a different representation functor, not a real bivector kernel.
+- Preserve downstream maps (`v_tau`, Spin(8) triality, Yukawa texture, CKM/PMNS) as blocked until the actual target-carrier representative exists.
