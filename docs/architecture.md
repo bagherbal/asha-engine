@@ -5128,3 +5128,24 @@ S_inst = (4/π)/B_gap
 The audit confirms that the local quaternionic weak algebra gives the right `su(2)` hint for a Hopf/BPST-like connection, and the Gate-283/284 `4/π` coefficient remains exact as a topological volume ratio. But the finite ASHA core has not yet derived the connection one-form, finite differential calculus, boundary measure, Chern-Simons functional, integer winding map, or `B_gap` inverse-coupling semantics.
 
 Therefore the intermediate scale remains a conditional Path-C resonance. The next viable theorem must derive the actual finite connection/action map or formally cap Path C with a connection/action/coupling firewall.
+
+## Gate 286 — Finite NCG Instanton Saddle Boundary
+
+Gate 286 redirects Path C inward. The continuum Hopf/Chern-Simons machinery rejected in Gate 285 is replaced by finite NCG calculus:
+
+```text
+da=[D_F,a]
+A=Σa_i[D_F,b_i]
+F=[D_F,A]+A²
+S≈Tr(F†F)
+```
+
+This is the correct categorical arena for finite spectral dynamics. The gate verifies that the local quaternionic block extracted in Gate 274 can produce nonzero one-forms and a finite curvature trace. However, the resulting diagnostic action is
+
+```text
+Tr(F†F)=32μ⁴(t²+t⁴),
+```
+
+with only a trivial real saddle and positive-power `μ` scaling. It does not generate an inverse-`B_gap` action or the topological coefficient `4/π`.
+
+Architecturally, Gate 286 keeps Path C open but narrows the next obligation: the engine must derive a physical finite `D_F`, a `B_gap` Majorana/bilinear map, full finite-algebra representation with `J`, and a nontrivial finite action saddle before the intermediate scale can be upgraded from resonance to theorem.

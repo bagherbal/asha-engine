@@ -5430,3 +5430,52 @@ FAILED_ROUTE_HIDDEN_SECTOR_ORDER_PARAMETER_STILL_NOT_DERIVED
 FAILED_ROUTE_FINITE_HOPF_CONNECTION_AND_ACTION_NOT_EVALUATED
 FAILED_ROUTE_INTERMEDIATE_BREAKING_SEAL_REMAINS_REQUIRED
 ```
+
+## Gate 286 — Finite NCG Instanton Saddle Audit
+
+Gate 286 corrects the Gate-285 continuum category error. Instead of trying to build continuum Hopf forms inside a finite algebra, it audits the native Noncommutative Geometry route:
+
+```text
+δ(a)=[D_F,a]
+Ω¹_D(A_F)=span{a[D_F,b]}
+A=Σa_i[D_F,b_i]
+F=[D_F,A]+A²
+S_finite≈Tr(F†F)
+```
+
+A local quaternionic weak-doublet diagnostic is non-vacuous:
+
+```text
+D_μ=μσ_x
+J_H=[[0,1],[-1,0]]
+Tr([D_μ,J_H]†[D_μ,J_H])=8μ²
+```
+
+and its one-parameter finite curvature trace is:
+
+```text
+A=t[D_μ,J_H]
+F=4μ²(tJ_H+t²I)
+Tr(F†F)=32μ⁴(t²+t⁴)
+```
+
+This proves the finite NCG route is alive, but it does not derive the Path-C instanton law:
+
+```text
+S_inst=(4/π)/B_gap.
+```
+
+The local action has only the trivial real saddle `t=0` and scales as a positive power of the inserted Dirac amplitude. Treating `B_gap` as a Majorana entry or inverse coupling remains un-derived. Therefore the intermediate scale remains a resonance behind the `IntermediateBreakingSeal`.
+
+Statuses:
+
+```text
+CONDITIONAL_SUPPORT_NCG_FINITE_DIFFERENTIAL_CALCULUS_FORMALIZED
+CONDITIONAL_SUPPORT_LOCAL_QUATERNIONIC_INNER_FLUCTUATION_DIAGNOSTIC_BUILT
+CONDITIONAL_SUPPORT_FINITE_CURVATURE_TRACE_ACTION_EVALUATED
+FAILED_ROUTE_BGAP_TO_MAJORANA_DF_ENTRY_NOT_DERIVED
+FAILED_ROUTE_NO_NONTRIVIAL_FINITE_ACTION_SADDLE_DERIVED
+FAILED_ROUTE_FINITE_TRACE_DOES_NOT_YIELD_INVERSE_BGAP_ACTION
+FAILED_ROUTE_FOUR_OVER_PI_NOT_GENERATED_BY_FINITE_SADDLE
+FAILED_ROUTE_FINITE_INSTANTON_ACTION_NOT_DERIVED_VIA_NCG
+```
