@@ -1532,3 +1532,66 @@ physical constants: not derived
 ```
 
 Next gate: Gate 177 — normalization-prefactor or threshold-deformation branch audit after conditional `u=1` M_Z rejection.
+
+## v1.75 — Gate 177: Normalization-prefactor or threshold-deformation branch audit
+
+Gate 177 adds `pkg/bridge/normalizationthresholdaudit`.
+
+Gate 176 rejected the quarantined `u=1` branch under unthresholded one-loop running. Gate 177 asks what kind of deformation could repair that failure without pretending the repair is already finite-derived.
+
+It separates three possibilities:
+
+```text
+1. free absolute normalization prefactor u, no thresholds
+2. universal threshold shift δ added to all beta rows
+3. non-universal sector threshold vector Δb_i
+```
+
+The normalization-only branch solves the least-squares system
+
+```text
+A_i(M_Z) = α_i⁻¹/4π = u + (b_i/8π²)L
+```
+
+with fixed closed beta vector `b=(41/10,-19/6,-7)`. It improves the comparison but remains overconstrained:
+
+```text
+unknowns: 2
+comparison equations: 3
+best u ≈ 3.2975
+best L ≈ 28.1953
+exact three-sector solution: no
+pairwise L values: inconsistent
+```
+
+A universal threshold shift has the form
+
+```text
+A_i = u + ((b_i+δ)/8π²)L
+```
+
+but subtracting sectors cancels `δ`. Therefore it adds no relative-running freedom and cannot repair the Gate-176 ratio obstruction.
+
+The only mathematically flexible repair is non-universal threshold deformation:
+
+```text
+A_i = u + ((b_i+Δb_i)/8π²)L
+Δb_i(L,u) = 8π²(A_i-u)/L - b_i
+```
+
+This can fit the comparison ledger by construction for infinitely many choices of `L`, but that is not a finite theorem. It is an underived deformation family. The minimum-norm `u=1` witness is selected by an external Euclidean criterion, not by the finite algebra, and it even changes the beta sign pattern.
+
+Gate 177 status:
+
+```text
+Status: BRIDGE_REQUIRED
+normalization prefactor alone: insufficient
+universal threshold shift: insufficient
+non-universal thresholds: fit by construction, not derived
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+physical constants: not derived
+threshold corrections: not derived
+```
+
+Next gate: Gate 178 — finite threshold operator / decoupling spectrum search.

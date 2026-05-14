@@ -2323,3 +2323,43 @@ conditional nullity: 2 -> 2
 physical constants: not derived
 observed values: comparison-only, not theorem input
 ```
+
+### Gate 177 — normalization-prefactor or threshold-deformation branch audit
+
+Package: `pkg/bridge/normalizationthresholdaudit`
+
+Gate 177 follows the Gate-176 rejection of the quarantined `u=1` one-loop branch. It does not fit constants into the finite core. Instead, it classifies what type of missing structure would be mathematically capable of repairing the mismatch.
+
+The gate tests three repair classes:
+
+```text
+normalization-only:      A_i = u + (b_i/8π²)L
+universal threshold:     A_i = u + ((b_i+δ)/8π²)L
+non-universal threshold: A_i = u + ((b_i+Δb_i)/8π²)L
+```
+
+The normalization-only branch has two unknowns, `u` and `L`, for three comparison equations. Its best least-squares witness is positive and physically ordered, but it is not an exact triple solution. Pair fits give inconsistent log intervals, so changing the absolute prefactor alone cannot repair the ratio obstruction.
+
+The universal-threshold branch is equivalent to an intercept shift for relative running. Sector differences remove `δ`, so the Gate-176 ratio mismatch survives unchanged.
+
+The non-universal branch can fit by construction:
+
+```text
+Δb_i(L,u) = 8π²(A_i-u)/L - b_i
+```
+
+but this introduces an underived sector-specific threshold vector. The minimum-norm `u=1` vector is a numerical comparison witness, not a finite object. No finite threshold activation predicate, decoupling spectrum, or beta-row deformation operator is derived.
+
+Gate 177 status:
+
+```text
+Status: BRIDGE_REQUIRED
+normalization-only repair: overconstrained
+universal-threshold repair: no relative-running freedom
+non-universal-threshold repair: solvable only as underived fit family
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+physical constants: not derived
+```
+
+This establishes the next required object: a finite threshold/decoupling operator that can produce non-universal `Δb_i` without external fitting.
