@@ -19,6 +19,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/bgapmajoranaactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bimoduletracecapacity"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bminuslweakselector"
+	"github.com/bagherbal/asha-engine/pkg/bridge/bosonicspectraltraceconvention"
 	"github.com/bagherbal/asha-engine/pkg/bridge/boundaryselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/branchprojector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/branchselector"
@@ -670,6 +671,7 @@ func Run() error {
 		spectralactioncouplingnormalization.SpectralActionCouplingNormalizationAlphaGUTAuditTheorem(),
 		topologicalcouplingnormalization.TopologicalActionChernWeilCouplingNormalizationFactorAuditTheorem(),
 		doubledbosonictraceindex.DoubledBosonicTraceIndexJMirrorGaugeCapacityAuditTheorem(),
+		bosonicspectraltraceconvention.BosonicSpectralActionTraceConventionFullDoubledSpaceAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
