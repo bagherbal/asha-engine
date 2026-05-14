@@ -1130,3 +1130,16 @@ threshold-corrected Δb_i(L)          = not derived
 ```
 
 Next: Gate 137 — contact T3R pullback obstruction / Fock-to-contact intertwiner search.
+
+## Gate 137 — Contact T3R Pullback / Fock-to-Contact Intertwiner Search
+
+Gate 137 searches for the missing map that would transport matter-side `T3R` and chirality diagnostics onto the seven contact partial-overlap rows.
+
+Result: generic maps exist, but no canonical intertwiner is derived.
+
+- `H_Fock → R7_contact` generic rank-seven maps exist, but require a noncanonical 9-dimensional kernel.
+- `H_Fock ⊗ H_phi → R7_contact` generic rank-seven maps exist, but require a noncanonical 57-dimensional kernel.
+- the six leptoquark current slots still require an `S6 = 720` assignment to contact rows.
+- the contact spectral identity preserves contact diagnostics, but does not pull back matter-side `T3R` or chirality.
+
+Therefore contact hypercharge rows, threshold beta rows, physical electroweak constants, and masses remain sealed.

@@ -48,6 +48,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactrowsemantics"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactsymmetry"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactt3rpullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactu4kernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactu4projection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
@@ -284,6 +285,7 @@ func Run() error {
 		contactlqbetapermission.LeptoquarkHyperchargeLocalFieldBetaPermissionTheorem(),
 		contactlqcharge.LeptoquarkContactHyperchargeSourceBLChargeLatticeObstructionTheorem(),
 		contactlqt3r.ContactT3RChiralitySourceSearchLeptoquarkHyperchargeTheorem(),
+		contactt3rpullback.ContactT3RPullbackFockToContactIntertwinerSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
