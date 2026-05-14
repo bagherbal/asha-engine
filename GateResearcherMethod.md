@@ -300,3 +300,11 @@
 - Reject candidate exterior representatives when their basis-blade labels are assigned by recognition rather than derived from an operator-to-carrier theorem.
 - Preserve conditional roadmaps: a failed pullback does not erase selector capacity, but it prevents promotion to weak-plane selection or generation texture.
 - The next useful gate should derive a carrier projection or tensor-lift map, not search for another numerically attractive three-component signature.
+
+## Gate 245 method note — carrier projection audits
+
+- Decompose scalar observables back to their exact generator expressions before proposing any carrier map.
+- Reject equal-length arrays as evidence of projection; slot labels must be derived from the operator domains.
+- Distinguish neutral electroweak combinations such as `Q=T3+Y` and `Z=T3-Y` from the full nonabelian basis `{T1,T2,T3}`.
+- Treat abstract `su(2)` capacity of spatial bivectors as a preflight only until an ordered contact-generator-to-axis map is derived.
+- Preserve the weak-plane and generation-breaking capacities as roadmaps, not completed theorems.

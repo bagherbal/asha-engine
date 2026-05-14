@@ -3797,3 +3797,50 @@ carrier projection known: no
 ```
 
 The weak-plane and generation-breaking capacities remain visible, but no exterior representative, spinor endomorphism, weak plane, global `H`, or generation texture is derived.
+
+## v2.43 — Gate 245: Lie algebra isomorphism / scalar-to-spatial carrier projection audit
+
+Gate 245 adds `pkg/bridge/liecarrierprojection` after Gate 244's characteristic-class pullback obstruction.
+
+The gate decomposes the three scalar fundamental-class source labels back to the electroweak generator language:
+
+```text
+tau_eta(Q^T Q)        =  2, with Q = T3L + Y_phi
+tau_eta(Z^T Z)        = -2, with Z = T3L - Y_phi
+tau_eta(T3L^T Y_phi)  =  1
+```
+
+This confirms that the source labels are structured. However, it also sharpens the obstruction: the three `tau_eta` slots are scalar quadratic records in the two-dimensional neutral electroweak plane `span{T3L,Y_phi}`. They are not the three `su(2)` basis generators `{T1,T2,T3}`, and `T1,T2` do not appear as scalar trace-slot origins.
+
+Gate 245 also audits the second link in the requested chain. Spatial bivectors have abstract `su(2)` capacity, but the engine still has no native theorem identifying the contact-preserving `su(2)` generators with an ordered spatial-axis or bivector basis on `W`. Therefore the chained projection
+
+```text
+tau_eta(Q^TQ, Z^TZ, T3L^T Y_phi) -> (2e_1, -2e_2, e_3)
+```
+
+is rejected as hand-labelled.
+
+Gate 245 status:
+
+```text
+CONDITIONAL_SUPPORT_EW_OPERATOR_DECOMPOSITION_TRACED
+FAILED_ROUTE_TAU_ETA_SLOTS_NOT_SU2_BASIS
+CONDITIONAL_SUPPORT_SU2_BIVECTOR_CAPACITY_PREFLIGHT
+FAILED_ROUTE_NATIVE_SU2_TO_SPATIAL_AXIS_ISOMORPHISM
+FAILED_ROUTE_SCALAR_TO_SPATIAL_CARRIER_PROJECTION
+FAILED_ROUTE_LIE_PULLBACK_EXTERIOR_FORM_REPRESENTATIVE
+FAILED_ROUTE_LIE_PULLBACK_WEAK_PLANE_SELECTION
+FAILED_ROUTE_LIE_PULLBACK_GENERATION_TEXTURE
+FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
+```
+
+The new theorem distinction is:
+
+```text
+tau_eta operator decomposition known: yes
+scalar trace slots = su(2) basis: no
+contact-su(2) -> spatial axes: no
+carrier projection theorem: no
+```
+
+The weak-plane and generation-breaking capacities remain visible, but no exterior representative, weak plane, global `H`, or generation texture is derived.

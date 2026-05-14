@@ -138,6 +138,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/inversebsectordeformation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/leptoquarkdynamicsseal"
+	"github.com/bagherbal/asha-engine/pkg/bridge/liecarrierprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingcorrectionseal"
@@ -500,6 +501,7 @@ func Run() error {
 		tauetaspatialtagging.TauEtaSpatialTaggingGenerationBreakingAuditTheorem(),
 		cliffordpullback.CliffordActionPullbackTauEtaEndomorphismAuditTheorem(),
 		characteristicpullback.CharacteristicClassOperatorToModePullbackAuditTheorem(),
+		liecarrierprojection.LieAlgebraIsomorphismScalarToSpatialCarrierProjectionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

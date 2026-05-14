@@ -4148,3 +4148,34 @@ global H summand: still unselected
 ```
 
 The next finite-algebra frontier is a lawful carrier-projection theorem from scalar-bundle curvature observables to Fock/generation labels, or an explicit seal admitting that this projection is a physical boundary condition rather than a finite derivation.
+
+## Gate 245 — Lie algebra isomorphism and scalar-to-spatial carrier projection audit
+
+Gate 245 adds `pkg/bridge/liecarrierprojection` after Gate 244's operator-origin audit.
+
+The gate tests whether the source labels behind `tau_eta=(2,-2,1)` can be chained through electroweak derivations and then through spatial Fock modes. It recovers the exact neutral electroweak decomposition:
+
+```text
+Q = T3L + Y_phi
+Z = T3L - Y_phi
+T3L^T Y_phi = mixed neutral scalar pairing
+```
+
+This is informative but obstructive. The `tau_eta` triple is not a labelled copy of the three `su(2)` generators. It is a triple of scalar curvature observables built from the two-dimensional neutral plane `span{T3L,Y_phi}`. Therefore the first link of the proposed projection chain does not land in `{T1,T2,T3}`.
+
+The second link also remains open. Spatial bivectors such as `e_1∧e_2`, `e_2∧e_3`, and `e_3∧e_1` have the expected abstract `su(2)` capacity, but the finite core has not derived an ordered isomorphism from the contact-preserving `su(2)` to those bivectors or to the spatial Fock axes.
+
+Consequences:
+
+```text
+EW scalar decomposition: yes
+three su(2) basis slots: no
+spatial bivector capacity: yes
+canonical su(2)->axis map: no
+omega_tau exterior representative: no
+weak plane selected: no
+generation texture derived: no
+global H summand: still unselected
+```
+
+Gate 245 narrows the missing theorem. It is no longer enough to cite a Lie algebra analogy; the engine needs either an explicit `H_Phi -> W` representation functor, or a future seal admitting the scalar-to-spatial projection as phenomenological boundary data rather than finite derivation.
