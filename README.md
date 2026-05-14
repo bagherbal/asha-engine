@@ -90,3 +90,13 @@ It intentionally does **not** claim Standard Model hypercharge, Yukawa masses, a
 Gate 15 tests whether the finite Higgs/contact active eigenstructure is already sufficient to assign the four active directions to the Fock `1+3` split. The result is intentionally honest: the active sector is four-dimensional and the Fock sector has a `1 temporal + 3 spatial` bookkeeping split, but the current Higgs/contact spectrum is pair-degenerate `2+2`. Therefore the eigenvectors are not canonically aligned with lepton/color modes yet.
 
 The new missing object is a finite charge-polarizing operator compatible with the block connection on `K ⊕ K⊥`, such as a `B−L`, hypercharge, or central `U(1)` action.
+
+## v0.15 — Charge polarization bridge
+
+Gate 16 adds the first explicit charge-polarizing bridge. Gate 15 showed that the finite Higgs/contact active spectrum is pair-degenerate (`2+2`) and cannot by itself determine the required Fock `1+3` split. Gate 16 resolves the missing object on the Fock side with the standard B−L number operator:
+
+```text
+Q_B-L = (1/3)(N1+N2+N3) - N0
+```
+
+This supplies a one-particle charge spectrum `[-1, 1/3, 1/3, 1/3]`, exactly the `1+3` polarization. The gate also rejects a false shortcut: the active Higgs/contact scalar eigenvalues must not be identified directly with the three color modes. Charge polarization and scalar/vacuum mixing are separate structures until a true tensor-factor or representation-action bridge is constructed.
