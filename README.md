@@ -1164,3 +1164,52 @@ residual nullity:                            3 -> 3
 ```
 
 Next gate: Gate 171 — contact-spectrum-to-fermion-kind assignment theorem: test whether any finite operator canonically chooses which two of `{u,d,ν,e}` receive the high contact weights and which two receive the low weights.
+
+## v1.69 — Gate 171: Contact-spectrum-to-fermion-kind assignment obstruction
+
+Gate 171 adds `pkg/bridge/contactkindassignment`.
+
+Gate 169 converted the Gate-37 contact/Higgs scalar shape into a finite Yukawa moment target:
+
+```text
+λ_contact = 1197/4624
+|y_high|² ∝ (34+√41)/120, multiplicity 2
+|y_low|²  ∝ (34-√41)/120, multiplicity 2
+```
+
+Gate 170 showed that the available four-class object is the fermion-kind support quotient,
+
+```text
+3_u + 3_d + 1_ν + 1_e → {u,d,ν,e},
+```
+
+not a Higgs-conjugate channel-pair quotient. Gate 171 therefore audits whether any currently derived finite object canonically assigns the two high and two low contact weights to the four fermion kinds.
+
+The result is negative but precise. Finite data supplies canonical 2+2 partitions, but more than one:
+
+```text
+scalar branch / T3 sign: {u,ν} | {d,e}
+color / B-L split:       {u,d} | {ν,e}
+```
+
+These partitions are both canonical at the support/charge level, but they are incompatible. More importantly, neither is tied to the contact high eigenspace. Choosing "high = Φ+", "high = quark", or the opposite choices would be an extra branch selection, not a theorem. The diagonal mixed partition `{u,e}|{d,ν}` can be produced only by ad hoc rank/order diagnostics such as charge-magnitude cuts; it is not a currently derived contact-kind selector.
+
+Gate 171 theorem ledger:
+
+```text
+contact scalar-shape target available:           true
+four-kind support quotient visible:              true
+oriented high/low assignments among four kinds:  6
+canonical 2+2 partitions found:                  2
+canonical oriented high/low assignments found:   0
+assignments tied to contact high eigenspace:     0
+unique contact-kind assignment derived:          false
+surviving branch choices:                        6
+scalar-shape closure achieved:                   false
+Yukawa amplitudes derived:                       false
+generation texture / masses / CKM / PMNS:        false
+physical constants derived:                      false
+residual nullity:                                3 -> 3
+```
+
+The scalar-shape match from Gate 169 remains a meaningful finite target, but it is still conditional. The next theorem should move from one-generation kind labels to the generation/triality problem: whether Gate-26 triality plus the earlier Gate-28 to Gate-36 no-go machinery can provide a nontrivial Yukawa texture operator, rather than merely an assignment of two scalar weights to four one-generation kinds.

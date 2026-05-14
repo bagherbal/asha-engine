@@ -2050,3 +2050,38 @@ negative: scalar-shape closure remains conditional
 ```
 
 The next theorem target is the contact-spectrum-to-kind assignment problem: from four fermion kinds and two high/two low contact weights, the current ambiguity is six assignments.
+
+### Gate 171 — contact-spectrum-to-fermion-kind assignment obstruction
+
+Package: `pkg/bridge/contactkindassignment`
+
+Gate 171 follows the quotient correction of Gate 170. Gate 169 supplied a conditional scalar-shape match if the two high and two low contact/Higgs active weights can be assigned to the four fermion-kind classes `{u,d,ν,e}`. Gate 170 established that the available four-class support is a fermion-kind quotient rather than a Higgs-conjugate pair quotient. Gate 171 audits the remaining assignment problem.
+
+The active scalar target has two unlabeled high weights and two unlabeled low weights:
+
+```text
+λ_contact = 1197/4624
+high squared weight = (34+√41)/120, multiplicity 2
+low squared weight  = (34-√41)/120, multiplicity 2
+```
+
+The finite one-generation data gives several canonical partitions of the four fermion kinds:
+
+```text
+T3 / scalar branch: {u,ν} | {d,e}
+color / B-L:        {u,d} | {ν,e}
+```
+
+These are useful diagnostics, but not a contact assignment theorem. They are mutually incompatible and neither comes with a derived map from the contact high eigenspace to one side of the partition. Thus no currently available finite operator selects which two of `{u,d,ν,e}` receive the high weights.
+
+Status:
+
+```text
+positive: exact contact high/low scalar target retained
+positive: four fermion-kind signatures are available
+positive: multiple finite 2+2 partitions identified
+negative: no partition is tied to the contact high eigenspace
+negative: no canonical high/low orientation is selected
+negative: all six oriented assignments remain branch choices
+negative: scalar-shape closure, Yukawa amplitudes, generation texture, masses, CKM/PMNS, and physical constants remain underived
+```

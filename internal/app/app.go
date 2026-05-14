@@ -42,6 +42,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactfieldmap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactidempotent"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactincidence"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactkindassignment"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqbetapermission"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqblock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqcharge"
@@ -352,6 +353,7 @@ func Run() error {
 		scalarfockspectralpotential.FockDiracScalarSpectralActionContactShapeComparisonTheorem(),
 		yukawashapeconstraint.FiniteYukawaAmplitudeTextureScalarShapeConstraintTheorem(),
 		higgsconjugatequotient.HiggsConjugateChannelQuotientTheorem(),
+		contactkindassignment.ContactSpectrumToFermionKindAssignmentTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
