@@ -191,3 +191,22 @@ Q = T3 + Y
 ```
 
 This upgrades `U-13A-SU2L-GENERATORS` from missing to solved at the audited left-doublet representation level. The remaining deeper bridge is to derive the same generators directly from the finite Boolean/contact block connection rather than from the hypercharge table.
+
+## v0.24 — Gate 25: Gauge-Compatible Yukawa/Intertwiner Audit
+
+Gate 25 adds the first explicit one-generation Yukawa channel audit. It uses the finite left-doublet representation from Gate 24 and the scalar branch charges from Gate 20, then enforces the selection rule:
+
+```text
+Y_R = Y_L + Y_Φ
+```
+
+The engine derives eight minimal channels without fitting masses:
+
+```text
+u_L^c ⊗ Φ_+ → u_R^c  for c=1,2,3
+d_L^c ⊗ Φ_- → d_R^c  for c=1,2,3
+ν_L   ⊗ Φ_+ → ν_R
+e_L   ⊗ Φ_- → e_R
+```
+
+Each scalar branch has the finite pair multiplicity inherited from the 2+2 Higgs/contact spectrum, so the eight minimal channels correspond to sixteen scalar-fiber entries. This gate is intentionally a selection-rule theorem only: coupling constants, masses, flavor mixing, and generation structure remain open bridge problems.

@@ -28,6 +28,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/matter/t3r"
 	"github.com/bagherbal/asha-engine/pkg/matter/tensor"
 	"github.com/bagherbal/asha-engine/pkg/matter/yukawa"
+	"github.com/bagherbal/asha-engine/pkg/matter/yukawaintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/phase"
 	"github.com/bagherbal/asha-engine/pkg/spinor"
 	"github.com/bagherbal/asha-engine/pkg/theorem"
@@ -61,6 +62,7 @@ func Run() error {
 		hyperaudit.HyperchargeTableAuditTheorem(),
 		su2l.DoubletAuditTheorem(),
 		su2lgauge.GeneratorAuditTheorem(),
+		yukawaintertwiner.GaugeCompatibleYukawaTheorem(),
 	)
 
 	results := registry.RunAll()
