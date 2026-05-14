@@ -217,6 +217,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/orientationtruechirality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/perslotmonotonicityseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/pevobservabilityaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/pfaffianhierarchy"
 	"github.com/bagherbal/asha-engine/pkg/bridge/physicalfinitehilbertcompletion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedconnection"
@@ -692,6 +693,7 @@ func Run() error {
 		higgsonshellrenormalizationscheme.OnShellRenormalizationSchemePassarinoVeltmanPoleMatchingAuditTheorem(),
 		hierarchyscalingaudit.GaugeHierarchyScalingAuditPlanckFactorSieveTheorem(),
 		hierarchyrankpromotion.Rank56HalfInstantonHierarchyPromotionSieveTheorem(),
+		pfaffianhierarchy.PfaffianHalfActionHierarchyFermionicFluctuationDeterminantTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
