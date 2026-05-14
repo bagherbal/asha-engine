@@ -149,3 +149,13 @@ Gate 97 adds `pkg/bridge/ewcurvature`. Gate 96 showed that the broken-only varia
 The full connection closes and supports a formal field-strength carrier. However, the adjoint diagnostic is rank three and has the pure abelian direction `Q-Z=2Y_phi` as a null vector. It sees the semisimple neutral direction `T3=(Z+Q)/2`, not a positive physical `U(1)` kinetic Hessian. Consequently `diag(1,1,4)` remains a strong broken-image metric-whitening candidate, not an action-selected physical Hessian.
 
 Truth: full electroweak curvature must include the electromagnetic direction, but the curvature algebra alone still does not derive `g2`, `gY`, `thetaW`, `alpha`, or physical W/Z masses.
+
+## Gate 98 — Full Electroweak Quadratic Action / Abelian Completion
+
+Gate 98 completes the Gate 97 full electroweak curvature carrier by adding the missing abelian quadratic term as a one-parameter family:
+
+```text
+K(kappa)=K_SU2+kappa(Q-Z)(Q-Z)^T
+```
+
+In the basis `[T1,T2,Z,Q]`, the semisimple curvature sees the `SU(2)` direction but leaves the pure abelian `Q-Z=2Y_phi` direction null.  The abelian completion exposes the correct missing coefficient problem.  In the chosen convention, the earlier raw broken-coordinate candidate `diag(1,1,4)` is reachable at `kappa=6`, but this value is not action-selected.  The gate therefore keeps `g2`, `gY`, `thetaW`, `alpha`, and physical W/Z masses bridge-gated.

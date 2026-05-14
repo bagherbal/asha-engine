@@ -26,6 +26,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcoupling"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewcurvature"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
+	"github.com/bagherbal/asha-engine/pkg/bridge/ewquadratic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeselection"
@@ -206,6 +207,7 @@ func Run() error {
 		brokenaction.BrokenSectorActionSecondVariationSearchTheorem(),
 		brokengaugefields.FiniteBrokenGaugeFieldVariablesCurvatureSearchTheorem(),
 		ewcurvature.FullElectroweakConnectionCurvatureAuditTheorem(),
+		ewquadratic.FullElectroweakQuadraticActionAbelianCompletionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
