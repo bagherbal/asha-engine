@@ -5085,3 +5085,39 @@ r_- ≈ 0.672051318208557, |y/x|_- ≈ 0.819787361581378
 The gate then audits whether the branches can be promoted to a Seeley-de Witt `a₂/a₄` Higgs-ratio prediction. They cannot yet. Positivity, charge/anomaly ledgers, and the available finite data do not select a unique branch. The formal heat-kernel expansion is known, but the cutoff moments, subtraction scheme, scalar/gauge projection, field normalization, physical `J`, and full chiral hypercharge representation are still missing.
 
 Gate 276 therefore records conditional support for the finite scalar-Morita shape bridge and strict failed routes for branch selection, heat-kernel projection, `a₂/a₄`, and Higgs mass prediction.
+
+## Gate 277 — Resolvent Cubic Selector / B-Gap and Tau-Eta Symmetry Breaking Audit
+
+Gate 277 tests whether the topological tags `τ_eta` and `B_gap` can resolve the Gate-186/Gate-187 quartic resolvent ambiguity and the Gate-275/Gate-276 `r_±` amplitude ambiguity.
+
+It retrieves the quartic contact block:
+
+```text
+q4(x) = 3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271
+```
+
+and the exact resolvent cubic:
+
+```text
+5832000z^3 - 11566800z^2 + 7569900z - 1637467
+```
+
+whose three branches encode the three formal `2+2` pairings of the four quartic roots.
+
+The new result is a strict two-layer verdict:
+
+```text
+τ_eta binds {u,d}
+B_gap tags ν / Majorana sector
+=> sector-level pairing {u,d}|{e,ν} is uniquely selected
+```
+
+But Gate 277 refuses to promote this semantic sector pairing into a contact-root theorem:
+
+```text
+quartic roots q1..q4 are not natively bijected to {u,d,e,ν}
+selected sector pairing is not yet a selected contact resolvent root
+selected contact resolvent root is not yet mapped to r_+ or r_-
+```
+
+Therefore the Gate-275 two-branch amplitude ambiguity remains unresolved, and no Higgs ratio is claimed.

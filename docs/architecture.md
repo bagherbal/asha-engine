@@ -4986,3 +4986,23 @@ Tr(f(D/Λ)) ~ f₄Λ⁴ a₀ + f₂Λ² a₂ + f₀ a₄ + ...
 ```
 
 The missing structures are branch selection, physical charge conjugation `J`, chiral hypercharge completion, cutoff moments, subtraction scheme, scalar/gauge projection, and field normalization. Until these are derived, `a₂/a₄` and the Higgs mass ratio remain behind a bridge-required firewall.
+
+## Gate 277 — Resolvent Cubic / Topological Tag Selector Boundary
+
+Gate 277 audits the proposed link between the quartic contact resolvent ambiguity and the scalar-Morita amplitude-branch ambiguity. It confirms that `τ_eta` and `B_gap` have enough semantic force to select the Standard-Model sector pairing
+
+```text
+{u,d}|{e,ν}
+```
+
+among the three abstract Yukawa-sector `2+2` pairings. This is conditional support for a topological sector sieve.
+
+The gate also records the remaining categorical obstruction. The quartic contact roots are still an unlabeled Galois orbit. Without a native bijection
+
+```text
+{q1,q2,q3,q4} ↔ {u,d,e,ν}
+```
+
+the selected sector pairing cannot be identified with one exact resolvent root. Without a selected resolvent root and a theorem mapping resolvent branches to the scalar-Morita `r_±` branches, the Gate-275 amplitude branch and Seeley-de Witt/Higgs-ratio path remain blocked.
+
+The next lawful target is a contact-root/projector semantics theorem, not a Higgs prediction.
