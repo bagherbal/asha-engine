@@ -17,6 +17,8 @@
 package charge
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 	"sort"
@@ -60,7 +62,20 @@ type Analysis struct {
 	RemainingUnknown string
 }
 
+var (
+	chargeDefaultOnce  sync.Once
+	chargeDefaultValue Analysis
+	chargeDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	chargeDefaultOnce.Do(func() {
+		chargeDefaultValue, chargeDefaultErr = buildChargeDefaultUncached()
+	})
+	return chargeDefaultValue, chargeDefaultErr
+}
+
+func buildChargeDefaultUncached() (Analysis, error) {
 	a, err := matteraction.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

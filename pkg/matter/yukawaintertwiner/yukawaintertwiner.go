@@ -14,6 +14,8 @@
 package yukawaintertwiner
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 	"sort"
@@ -93,7 +95,20 @@ type Analysis struct {
 	RemainingUnknowns                      []string
 }
 
+var (
+	yukawaIntertwinerDefaultOnce  sync.Once
+	yukawaIntertwinerDefaultValue Analysis
+	yukawaIntertwinerDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	yukawaIntertwinerDefaultOnce.Do(func() {
+		yukawaIntertwinerDefaultValue, yukawaIntertwinerDefaultErr = buildYukawaIntertwinerDefaultUncached()
+	})
+	return yukawaIntertwinerDefaultValue, yukawaIntertwinerDefaultErr
+}
+
+func buildYukawaIntertwinerDefaultUncached() (Analysis, error) {
 	a, err := su2lgauge.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

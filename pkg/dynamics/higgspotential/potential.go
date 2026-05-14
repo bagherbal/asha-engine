@@ -14,6 +14,8 @@
 package higgspotential
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 
@@ -50,7 +52,20 @@ type Analysis struct {
 	MexicanHatKinematics bool // true when the finite spectrum has the correct 4+3 kinematic pattern.
 }
 
+var (
+	higgsPotentialDefaultOnce  sync.Once
+	higgsPotentialDefaultValue Analysis
+	higgsPotentialDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	higgsPotentialDefaultOnce.Do(func() {
+		higgsPotentialDefaultValue, higgsPotentialDefaultErr = buildHiggsPotentialDefaultUncached()
+	})
+	return higgsPotentialDefaultValue, higgsPotentialDefaultErr
+}
+
+func buildHiggsPotentialDefaultUncached() (Analysis, error) {
 	m, err := gaugehiggs.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

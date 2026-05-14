@@ -10,6 +10,8 @@
 package su2lgauge
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 	"sort"
@@ -72,7 +74,20 @@ type Analysis struct {
 	RemainingUnknowns               []string
 }
 
+var (
+	su2lgaugeDefaultOnce  sync.Once
+	su2lgaugeDefaultValue Analysis
+	su2lgaugeDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	su2lgaugeDefaultOnce.Do(func() {
+		su2lgaugeDefaultValue, su2lgaugeDefaultErr = buildSu2lgaugeDefaultUncached()
+	})
+	return su2lgaugeDefaultValue, su2lgaugeDefaultErr
+}
+
+func buildSu2lgaugeDefaultUncached() (Analysis, error) {
 	a, err := su2l.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

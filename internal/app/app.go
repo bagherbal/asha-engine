@@ -7,6 +7,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/higgspotential"
+	"github.com/bagherbal/asha-engine/pkg/engine/cache"
 	"github.com/bagherbal/asha-engine/pkg/exterior"
 	"github.com/bagherbal/asha-engine/pkg/gauge"
 	"github.com/bagherbal/asha-engine/pkg/gauge/boundary"
@@ -65,6 +66,7 @@ func Run() error {
 		su2lgauge.GeneratorAuditTheorem(),
 		yukawaintertwiner.GaugeCompatibleYukawaTheorem(),
 		trialityyukawa.GenerationTrialityYukawaTheorem(),
+		cache.RuntimeFixtureCacheTheorem(),
 	)
 
 	results := registry.RunAll()

@@ -47,3 +47,19 @@ The G₂ gate constructs the octonionic matter-calibration sector inside `Λ⁴R
 and its Hodge-dual coassociative form `*φ` to build two seven-dimensional calibration copies, `7_t` and `7_s`. Their direct sum is the rank-14 sector `M₁₄ᴳ`.
 
 This gate verifies `P_G² = P_G`, `P_Gᵀ = P_G`, and `Tr(P_G)=14`. It does not yet compare the G₂ support to the Boolean support. The contact theorem belongs to the next gate.
+
+## Gate 27 — finite-core cache / fixture layer
+
+The theorem ladder now treats the heavy finite-core constructions as reusable runtime fixtures. This does not change the mathematics; it makes the engine behave like an instrument rather than a disposable script.
+
+Cached default constructors now protect the repeated construction path for:
+
+- Boolean–Octonionic contact space `K`.
+- B-sector vacuum operator `O_B`.
+- Boolean lift/compression diagnostics.
+- Projected connection analysis.
+- Higgs/vacuum-mixing sector.
+- Higgs potential candidate.
+- Matter/Fock bridge layers through the triality Yukawa extension.
+
+The boundary-fixed Lie closure diagnostic is intentionally runtime-capped. Its scientific purpose is to expose dimension growth under the current projection, not to regenerate a large closure basis at every full run.

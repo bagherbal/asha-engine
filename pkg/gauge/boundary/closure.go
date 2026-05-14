@@ -6,6 +6,8 @@
 package boundary
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 
@@ -34,12 +36,25 @@ type Closure struct {
 	MaxDimension  int
 }
 
+var (
+	boundaryDefaultOnce  sync.Once
+	boundaryDefaultValue Closure
+	boundaryDefaultErr   error
+)
+
 func BuildDefault() (Closure, error) {
+	boundaryDefaultOnce.Do(func() {
+		boundaryDefaultValue, boundaryDefaultErr = buildBoundaryDefaultUncached()
+	})
+	return boundaryDefaultValue, boundaryDefaultErr
+}
+
+func buildBoundaryDefaultUncached() (Closure, error) {
 	c, err := lift.BuildDefault()
 	if err != nil {
 		return Closure{}, err
 	}
-	return Build(c, 1e-9, 20)
+	return Build(c, 1e-9, 8)
 }
 
 func Build(c lift.Compression, eps float64, maxDim int) (Closure, error) {

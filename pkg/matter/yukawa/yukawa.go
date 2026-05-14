@@ -20,6 +20,8 @@
 package yukawa
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 	"sort"
@@ -70,7 +72,20 @@ type Analysis struct {
 	RemainingUnknowns             []string
 }
 
+var (
+	yukawaDefaultOnce  sync.Once
+	yukawaDefaultValue Analysis
+	yukawaDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	yukawaDefaultOnce.Do(func() {
+		yukawaDefaultValue, yukawaDefaultErr = buildYukawaDefaultUncached()
+	})
+	return yukawaDefaultValue, yukawaDefaultErr
+}
+
+func buildYukawaDefaultUncached() (Analysis, error) {
 	t, err := tensor.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

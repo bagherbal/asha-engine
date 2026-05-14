@@ -18,6 +18,8 @@
 package bsector
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 
@@ -36,7 +38,20 @@ type Vacuum struct {
 	ContactProjector  linear.Projector // Boolean-coordinate projector onto K.
 }
 
+var (
+	bsectorDefaultOnce  sync.Once
+	bsectorDefaultValue Vacuum
+	bsectorDefaultErr   error
+)
+
 func BuildDefault() (Vacuum, error) {
+	bsectorDefaultOnce.Do(func() {
+		bsectorDefaultValue, bsectorDefaultErr = buildBsectorDefaultUncached()
+	})
+	return bsectorDefaultValue, bsectorDefaultErr
+}
+
+func buildBsectorDefaultUncached() (Vacuum, error) {
 	space, err := contact.BuildDefault()
 	if err != nil {
 		return Vacuum{}, err

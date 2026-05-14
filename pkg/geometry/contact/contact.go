@@ -1,6 +1,8 @@
 package contact
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 
@@ -35,7 +37,20 @@ type Space struct {
 	BareLeakage        linear.Matrix
 }
 
+var (
+	contactDefaultOnce  sync.Once
+	contactDefaultValue Space
+	contactDefaultErr   error
+)
+
 func BuildDefault() (Space, error) {
+	contactDefaultOnce.Do(func() {
+		contactDefaultValue, contactDefaultErr = buildContactDefaultUncached()
+	})
+	return contactDefaultValue, contactDefaultErr
+}
+
+func buildContactDefaultUncached() (Space, error) {
 	b, err := boolean.BuildIncidenceSupport(8, 3, 4)
 	if err != nil {
 		return Space{}, err

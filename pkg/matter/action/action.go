@@ -17,6 +17,8 @@
 package action
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 	"sort"
@@ -56,7 +58,20 @@ type Analysis struct {
 	YukawaTextureConstructed                 bool
 }
 
+var (
+	matterActionDefaultOnce  sync.Once
+	matterActionDefaultValue Analysis
+	matterActionDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	matterActionDefaultOnce.Do(func() {
+		matterActionDefaultValue, matterActionDefaultErr = buildMatterActionDefaultUncached()
+	})
+	return matterActionDefaultValue, matterActionDefaultErr
+}
+
+func buildMatterActionDefaultUncached() (Analysis, error) {
 	b, err := matter.BuildDefaultFockContactBridge()
 	if err != nil {
 		return Analysis{}, err

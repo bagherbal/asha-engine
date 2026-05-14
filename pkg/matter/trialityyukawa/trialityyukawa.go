@@ -13,6 +13,8 @@
 package trialityyukawa
 
 import (
+	"sync"
+
 	"fmt"
 	"sort"
 	"strings"
@@ -73,7 +75,20 @@ type Analysis struct {
 	RemainingUnknowns []string
 }
 
+var (
+	trialityYukawaDefaultOnce  sync.Once
+	trialityYukawaDefaultValue Analysis
+	trialityYukawaDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	trialityYukawaDefaultOnce.Do(func() {
+		trialityYukawaDefaultValue, trialityYukawaDefaultErr = buildTrialityYukawaDefaultUncached()
+	})
+	return trialityYukawaDefaultValue, trialityYukawaDefaultErr
+}
+
+func buildTrialityYukawaDefaultUncached() (Analysis, error) {
 	one, err := yukawaintertwiner.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

@@ -16,6 +16,8 @@
 package tensor
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 	"sort"
@@ -66,7 +68,20 @@ type Analysis struct {
 	SelectionRuleFormulated                bool
 }
 
+var (
+	tensorDefaultOnce  sync.Once
+	tensorDefaultValue Analysis
+	tensorDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	tensorDefaultOnce.Do(func() {
+		tensorDefaultValue, tensorDefaultErr = buildTensorDefaultUncached()
+	})
+	return tensorDefaultValue, tensorDefaultErr
+}
+
+func buildTensorDefaultUncached() (Analysis, error) {
 	a, err := charge.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

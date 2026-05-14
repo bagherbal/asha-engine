@@ -7,6 +7,8 @@
 package matter
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 
@@ -39,7 +41,20 @@ type FockContactBridge struct {
 	YukawaOperatorConstructed     bool
 }
 
+var (
+	fockContactBridgeDefaultOnce  sync.Once
+	fockContactBridgeDefaultValue FockContactBridge
+	fockContactBridgeDefaultErr   error
+)
+
 func BuildDefaultFockContactBridge() (FockContactBridge, error) {
+	fockContactBridgeDefaultOnce.Do(func() {
+		fockContactBridgeDefaultValue, fockContactBridgeDefaultErr = buildFockContactBridgeDefaultUncached()
+	})
+	return fockContactBridgeDefaultValue, fockContactBridgeDefaultErr
+}
+
+func buildFockContactBridgeDefaultUncached() (FockContactBridge, error) {
 	f, err := spinor.NewCovariantPhaseFockSpace(4)
 	if err != nil {
 		return FockContactBridge{}, err

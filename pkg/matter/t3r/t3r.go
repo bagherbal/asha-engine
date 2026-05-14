@@ -21,6 +21,8 @@
 package t3r
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 	"sort"
@@ -83,7 +85,20 @@ type Analysis struct {
 	RemainingUnknowns                     []string
 }
 
+var (
+	t3rDefaultOnce  sync.Once
+	t3rDefaultValue Analysis
+	t3rDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	t3rDefaultOnce.Do(func() {
+		t3rDefaultValue, t3rDefaultErr = buildT3rDefaultUncached()
+	})
+	return t3rDefaultValue, t3rDefaultErr
+}
+
+func buildT3rDefaultUncached() (Analysis, error) {
 	h, err := hypercharge.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

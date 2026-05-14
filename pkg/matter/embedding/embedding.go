@@ -11,6 +11,8 @@
 package embedding
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 
@@ -47,7 +49,20 @@ type Analysis struct {
 	Obstruction                string
 }
 
+var (
+	embeddingDefaultOnce  sync.Once
+	embeddingDefaultValue Analysis
+	embeddingDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	embeddingDefaultOnce.Do(func() {
+		embeddingDefaultValue, embeddingDefaultErr = buildEmbeddingDefaultUncached()
+	})
+	return embeddingDefaultValue, embeddingDefaultErr
+}
+
+func buildEmbeddingDefaultUncached() (Analysis, error) {
 	a, err := matteraction.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

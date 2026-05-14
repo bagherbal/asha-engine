@@ -13,6 +13,8 @@
 package higgs
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 
@@ -45,7 +47,20 @@ type Analysis struct {
 	TotalMixingNormSquared      float64 // Σ ||Φ_i||².
 }
 
+var (
+	higgsDefaultOnce  sync.Once
+	higgsDefaultValue Analysis
+	higgsDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	higgsDefaultOnce.Do(func() {
+		higgsDefaultValue, higgsDefaultErr = buildHiggsDefaultUncached()
+	})
+	return higgsDefaultValue, higgsDefaultErr
+}
+
+func buildHiggsDefaultUncached() (Analysis, error) {
 	a, err := connection.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

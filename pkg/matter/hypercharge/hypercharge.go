@@ -24,6 +24,8 @@
 package hypercharge
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 	"sort"
@@ -88,7 +90,20 @@ type Analysis struct {
 	RemainingUnknowns               []string
 }
 
+var (
+	hyperchargeDefaultOnce  sync.Once
+	hyperchargeDefaultValue Analysis
+	hyperchargeDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	hyperchargeDefaultOnce.Do(func() {
+		hyperchargeDefaultValue, hyperchargeDefaultErr = buildHyperchargeDefaultUncached()
+	})
+	return hyperchargeDefaultValue, hyperchargeDefaultErr
+}
+
+func buildHyperchargeDefaultUncached() (Analysis, error) {
 	ew, err := electroweak.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

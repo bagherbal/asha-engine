@@ -15,6 +15,8 @@
 package connection
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 
@@ -33,7 +35,20 @@ type Analysis struct {
 	MaxCurvatureIdentityRelative   float64
 }
 
+var (
+	connectionDefaultOnce  sync.Once
+	connectionDefaultValue Analysis
+	connectionDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	connectionDefaultOnce.Do(func() {
+		connectionDefaultValue, connectionDefaultErr = buildConnectionDefaultUncached()
+	})
+	return connectionDefaultValue, connectionDefaultErr
+}
+
+func buildConnectionDefaultUncached() (Analysis, error) {
 	c, err := lift.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

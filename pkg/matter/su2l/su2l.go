@@ -14,6 +14,8 @@
 package su2l
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 	"sort"
@@ -67,7 +69,20 @@ type Analysis struct {
 	RemainingUnknowns               []string
 }
 
+var (
+	su2lDefaultOnce  sync.Once
+	su2lDefaultValue Analysis
+	su2lDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	su2lDefaultOnce.Do(func() {
+		su2lDefaultValue, su2lDefaultErr = buildSu2lDefaultUncached()
+	})
+	return su2lDefaultValue, su2lDefaultErr
+}
+
+func buildSu2lDefaultUncached() (Analysis, error) {
 	a, err := hyperaudit.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

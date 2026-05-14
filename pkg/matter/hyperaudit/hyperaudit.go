@@ -23,6 +23,8 @@
 package hyperaudit
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 	"sort"
@@ -66,7 +68,20 @@ type Analysis struct {
 	RemainingUnknowns                 []string
 }
 
+var (
+	hyperauditDefaultOnce  sync.Once
+	hyperauditDefaultValue Analysis
+	hyperauditDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	hyperauditDefaultOnce.Do(func() {
+		hyperauditDefaultValue, hyperauditDefaultErr = buildHyperauditDefaultUncached()
+	})
+	return hyperauditDefaultValue, hyperauditDefaultErr
+}
+
+func buildHyperauditDefaultUncached() (Analysis, error) {
 	a, err := t3r.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

@@ -17,6 +17,8 @@
 package electroweak
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 	"sort"
@@ -69,7 +71,20 @@ type Analysis struct {
 	RemainingUnknowns        []string
 }
 
+var (
+	electroweakDefaultOnce  sync.Once
+	electroweakDefaultValue Analysis
+	electroweakDefaultErr   error
+)
+
 func BuildDefault() (Analysis, error) {
+	electroweakDefaultOnce.Do(func() {
+		electroweakDefaultValue, electroweakDefaultErr = buildElectroweakDefaultUncached()
+	})
+	return electroweakDefaultValue, electroweakDefaultErr
+}
+
+func buildElectroweakDefaultUncached() (Analysis, error) {
 	y, err := yukawa.BuildDefault()
 	if err != nil {
 		return Analysis{}, err

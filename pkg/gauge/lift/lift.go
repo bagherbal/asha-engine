@@ -12,6 +12,8 @@
 package lift
 
 import (
+	"sync"
+
 	"fmt"
 	"math"
 
@@ -41,7 +43,20 @@ type Compression struct {
 	ClosureRelativeResidual float64
 }
 
+var (
+	liftDefaultOnce  sync.Once
+	liftDefaultValue Compression
+	liftDefaultErr   error
+)
+
 func BuildDefault() (Compression, error) {
+	liftDefaultOnce.Do(func() {
+		liftDefaultValue, liftDefaultErr = buildLiftDefaultUncached()
+	})
+	return liftDefaultValue, liftDefaultErr
+}
+
+func buildLiftDefaultUncached() (Compression, error) {
 	k, err := contact.BuildDefault()
 	if err != nil {
 		return Compression{}, err
