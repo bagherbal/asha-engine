@@ -907,3 +907,7 @@ L = ln(M*/μ)
 ```
 
 The next gate should test whether incidence-weighted spectral data can provide row semantics: a local variable reconstruction, constraint semantic map, or finite representation-row rule that is stronger than anonymous quotient lifting.
+
+### Gate 122 — Contact Row Semantics / Local Variable Reconstruction
+
+Gate 122 tests whether incidence-weighted contact spectral data can reconstruct row-level semantics for the seven unresolved contact partial-overlap modes. The canonical Fano incidence degree is uniform: each point lies on three lines and each line has three points. Degree-three weighting preserves the seven distinct contact rows, but it does not select a contact-to-Fano row assignment, local variable, constraint semantic map, representation row, Lorentz kinetic row, mass activation, or decoupling rule. Signed incidence remains noncanonical because it requires choosing one of 7! contact-Fano labelings. The contact beta firewall remains closed.
