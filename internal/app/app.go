@@ -107,6 +107,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitecarrieractivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitespectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
+	"github.com/bagherbal/asha-engine/pkg/bridge/flavoralignmentdmabsence"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockcontactkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockrepresentationtrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourcyclechernweil"
@@ -458,6 +459,7 @@ func Run() error {
 		heavycarrierdecayaudit.HeavyCarrierDecayRelicSafetyAuditTheorem(),
 		eftdecayportal.EFTDecayPortalRelicDecaySealActivationAuditTheorem(),
 		coloredoctetportal.ColoredOctetPureSMPortalSearchSpectrumFalsificationAuditTheorem(),
+		flavoralignmentdmabsence.FlavorAlignmentSafetyDarkMatterAbsenceTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

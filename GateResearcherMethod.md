@@ -126,3 +126,10 @@
 - Distinguish operator existence from coefficient existence. Finding a dimension-six portal permits a `RelicDecaySeal`, but the Wilson coefficient and suppression scale remain phenomenological unless derived.
 - If a portal is found, compute BBN safety as a bound on `Λ` or `c`, not as a relic abundance. Full abundance and flavor constraints require a later gate.
 - If no portal exists within the bounded field alphabet and dimension limit, falsify the sealed spectrum before moving to lower-ranked RG candidates.
+
+## Gate 224 method note — flavor and relic closure
+
+- After a decay seal is granted, immediately audit flavor tensors; gauge invariance does not imply flavor safety.
+- Distinguish three levels: operator existence, BBN lifetime safety, and flavor/rare-decay safety.
+- Introduce a flavor seal only when exact rare-decay machinery is missing; never claim FCNC bounds are passed without Wilson matrices, basis choice, and matrix elements.
+- If a sector is forced to decay before BBN, log its present-day dark-matter contribution as zero for that sector and defer dark matter to a separate inventory audit.

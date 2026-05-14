@@ -3377,3 +3377,55 @@ future relic Boltzmann audit
 ```
 
 Gate 223 does not derive these quantities from the finite core. It only proves that the Rank-1 PeV spectrum is not immediately falsified by the colored relic problem once a pure-SM dimension-six portal is allowed as sealed phenomenology.
+
+## Gate 224 — Flavor alignment and heavy-sector dark matter absence
+
+Gate 224 extends the relic/decay frontier after Gate 223. Gate 223 found pure-SM EFT portals that allow the sealed PeV carriers to decay before BBN, but it left the flavor structure of those portals unprotected.
+
+Architectural placement:
+
+```text
+finite core
+→ Fock/gauge scaffold
+→ empirical and stability seals
+→ rational threshold lattice
+→ ThresholdSpectrumSeal + MatchingCorrectionSeal
+→ full-SM two-loop sensitivity audit
+→ PeV observability audit
+→ heavy-carrier decay/relic safety audit
+→ EFT decay portal audit
+→ colored-octet pure-SM tensor search
+→ flavor-alignment and dark-matter absence audit
+```
+
+The audited decay portals contain flavor tensors:
+
+```text
+y_T^i Ψ_3^a(L_i σ^a H†)
+(c_8^{ijk}/Λ²) bar(Ψ8)(Q_i u^c_j e^c_k)
+(c'_8{}^k/Λ²) bar(Ψ8)σ e^c_k H†G
+```
+
+Generic flavor-anarchic tensors are not accepted as safe. Gate 224 therefore introduces the `FlavorAlignmentSeal`, requiring third-generation-dominant portal entries unless a future finite flavor theorem derives a different safe structure.
+
+This seal quarantines:
+
+```text
+portal flavor tensors
+generation basis
+CKM/PMNS leakage model
+rare-decay Wilson matrices
+hadronic matrix elements
+experimental flavor likelihoods
+```
+
+It also forbids a false inference: gauge invariance of the portal does not imply flavor safety.
+
+With the `RelicDecaySeal` and `FlavorAlignmentSeal` both active, the sealed PeV carriers decay before BBN. The heavy threshold sector cannot then be the present-day dark matter sector:
+
+```text
+Heavy_Sector_Dark_Matter_Absence_Theorem
+Ω_heavy h² = 0
+```
+
+The dark-matter problem is therefore shifted away from the PeV unification carriers and back to unassigned finite inventory: contact modes, the B-sector gap, sterile/Fock seeds, or a future finite neutral sector.

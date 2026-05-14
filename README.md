@@ -2853,3 +2853,46 @@ RANK1_SPECTRUM_NOT_FALSIFIED_BY_RELIC_DECAY
 ```
 
 This grants the `RelicDecaySeal` only as phenomenology. The finite core still does not derive the Wilson coefficient, flavor choice, EFT suppression scale, relic abundance, or thermal history.
+
+## v2.22 — Gate 224: Flavor alignment safety audit / Dark Matter absence theorem
+
+Gate 224 adds `pkg/bridge/flavoralignmentdmabsence`. It inherits Gate 223's conditional `RelicDecaySeal`, where both sealed PeV carriers have EFT decay portals:
+
+```text
+Dirac (1,3,Y=1)      → y_T Ψ_3^a(L σ^a H†)
+Dirac (8,2,Y=1/2)    → bar(Ψ8) Q u^c e^c and bar(Ψ8) σ e^c H†G
+```
+
+The new issue is flavor. The octet portal carries a generic tensor `c_8^{ijk}`, and the triplet portal carries `y_T^i`. Gauge invariance alone does not make these tensors flavor-safe. Arbitrary first- and second-generation entries would open the door to LFV, FCNC, and meson-mixing constraints.
+
+Gate 224 therefore introduces:
+
+```text
+FlavorAlignmentSeal
+```
+
+The seal quarantines the assumption that the decay portals are third-generation dominated:
+
+```text
+Q_3 u^c_3 τ^c
+τ^c
+L_3
+```
+
+This is not a finite theorem. The engine does not derive CKM/PMNS leakage, rare-decay Wilson matrices, hadronic matrix elements, or flavor branching ratios.
+
+With `RelicDecaySeal + FlavorAlignmentSeal` active, both PeV carriers decay before BBN. The heavy threshold sector therefore has no present-day stable dark-matter component:
+
+```text
+Ω_heavy h² = 0
+```
+
+Gate 224 records this as the `Heavy_Sector_Dark_Matter_Absence_Theorem`. Dark matter is now deferred to another sector, such as the seven unassigned contact modes, the B-sector gap/axion-like route, or a future finite neutral sector.
+
+Gate 224 status:
+
+```text
+CONDITIONAL_PHENOMENOLOGY_FLAVOR_ALIGNMENT_SEAL_GRANTED
+HEAVY_SECTOR_DARK_MATTER_ABSENCE_THEOREM
+RELIC_DECAY_SEAL_PRESERVED_UNDER_FLAVOR_ALIGNMENT
+```
