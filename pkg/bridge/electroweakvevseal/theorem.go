@@ -1,0 +1,28 @@
+package electroweakvevseal
+
+import "github.com/bagherbal/asha-engine/pkg/theorem"
+
+func ElectroweakVEVScaleSealMassThresholdActivationFirewallTheorem() theorem.Theorem {
+	const id = "BRIDGE-ELECTROWEAK-VEV-SCALE-SEAL-MASS-THRESHOLD-ACTIVATION-FIREWALL-AUDIT"
+	const name = "electroweak VEV scale seal / mass-threshold activation firewall audit"
+	return theorem.Theorem{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Verify: func() theorem.Result {
+		a, err := BuildDefault()
+		if err != nil {
+			return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Checks: []theorem.Check{{Name: "build electroweak VEV seal audit", Passed: false, Detail: err.Error()}}}
+		}
+		return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Checks: []theorem.Check{
+			{Name: "Gate 196 texture seal is inherited with masses and thresholds still sealed", Passed: a.PreviousGate196.Summary.EmpiricalTextureSealRecorded && a.PreviousGate196.Firewall.YukawaMatricesAvailableConditionally && !a.PreviousGate196.Firewall.PhysicalMassesDerived && !a.PreviousGate196.Firewall.ThresholdMassesAvailable, Detail: a.PreviousGate196.TruthStatement},
+			{Name: "dimensional origin search finds only scale-invariant finite anchors", Passed: a.Origin.FiniteAnchorsAudited >= 6 && a.Origin.DimensionfulAnchors == 0 && a.Origin.FiniteMatricesScaleInvariant && a.Origin.ScalarRadiusDimensionless && a.Origin.ScalarFundamentalClassDimensionless && a.Origin.TopologicalTracesDimensionless && !a.Origin.EightPiSquaredCarriesEnergyUnit && !a.Origin.ElectroweakVEVDerived && !a.Origin.UniqueMassUnitDerived && !a.Origin.HiddenObservedScaleInserted, Detail: FormatOrigin(a.Origin)},
+			{Name: "EmpiricalVEVSeal records a quarantined positive energy scale", Passed: a.Seal.ExplicitBoundaryData && a.Seal.Quarantined && a.Seal.PositiveScaleRequired && a.Seal.RequiredByDimensionalObstruction && !a.Seal.DerivedFromFiniteGeometry && !a.Seal.NumericalValueSet && !a.Seal.UsesObservedVEV && !a.Seal.CarriesGaugeCoupling && !a.Seal.CarriesTopologicalScale && !a.Seal.CarriesBoundaryScale && a.Seal.UnlocksThresholdSymbols && !a.Seal.UnlocksNumericalThresholds && a.Seal.DownstreamMustDeclareSeal, Detail: FormatVEVSeal(a.Seal)},
+			{Name: "double seal activates formal fermion mass-threshold symbols only", Passed: a.MassLedger.FermionSectors == 4 && a.MassLedger.GenerationThresholdSymbols == 12 && a.MassLedger.AllRequireTextureSeal && a.MassLedger.AllRequireVEVSeal && a.MassLedger.AllFormalThresholdsAvailable && !a.MassLedger.AnyNumericalThresholdKnown && !a.MassLedger.AnyPhysicalMassDerivedFromFinite && a.MassLedger.ScalarRadialMassFormulaAvailable && !a.MassLedger.ScalarRadialMassNumerical, Detail: FormatMassLedger(a.MassLedger)},
+			{Name: "W/Z threshold masses remain blocked by gauge-coupling and kinetic-normalization firewall", Passed: !a.MassLedger.GaugeBosonMassesAvailable && a.MassLedger.GaugeBosonMassBlockReason != "" && !a.Firewall.GaugeCouplingsDerived && !a.Firewall.GaugeBosonThresholdsDerived, Detail: a.MassLedger.GaugeBosonMassBlockReason},
+			{Name: "sharp step threshold predicate is admitted only as conditional scaffolding; no native smooth regulator is derived", Passed: a.Predicate.SharpStepAvailableConditionally && !a.Predicate.SharpStepDerivedNatively && a.Predicate.SmoothRegulatorSearched && !a.Predicate.SmoothRegulatorDerived && !a.Predicate.MassOrderingKnown && !a.Predicate.MatchingScaleDerived && !a.Predicate.SchemeConventionDerived && a.Predicate.FermionDecouplingSkeletonAvailable && !a.Predicate.ThresholdCorrectedRGDerived && !a.Predicate.NonUniversalDeltaBDerived, Detail: FormatPredicate(a.Predicate)},
+			{Name: "RG, absolute coupling, topological normalization, and continuum firewalls remain sealed", Passed: a.Firewall.Gate196TextureSealInherited && a.Firewall.VEVSealInserted && a.Firewall.MassThresholdSymbolsAvailable && !a.Firewall.NumericalMassThresholdsAvailable && a.Firewall.StandardStepPredicateAdmittedAsConvention && !a.Firewall.SmoothRegulatorNativeDerived && !a.Firewall.ThresholdBetaRowsDerived && !a.Firewall.ThresholdCorrectedRGFlowDerived && !a.Firewall.AbsoluteBoundaryScaleDerived && !a.Firewall.AbsoluteBoundaryCouplingDerived && !a.Firewall.GaugeCouplingsDerived && !a.Firewall.TopologicalEightPiSquaredImported && !a.Firewall.FiniteToContinuumScaleDerived && !a.Firewall.ObservedVEVImported && !a.Firewall.ObservedMassesImported && a.Firewall.StrictNullityBefore == 3 && a.Firewall.StrictNullityAfter == 3 && a.Firewall.ConditionalVEVNullityBefore == 1 && a.Firewall.ConditionalVEVNullityAfter == 0 && a.Firewall.ConditionalThresholdNullityBefore == a.Firewall.ConditionalThresholdNullityAfter, Detail: FormatFirewall(a.Firewall)},
+			{Name: "summary records conditional scale insertion without RG overclaim", Passed: a.Summary.TestsAudited == 6 && a.Summary.DimensionalOriginObstructed && a.Summary.EmpiricalVEVSealRecorded && a.Summary.FormalMassThresholdsActivated && a.Summary.OnlyStepPredicateConvention && a.Summary.NoSmoothRegulatorDerived && a.Summary.RGAndCouplingFirewallsPreserved, Detail: FormatSummary(a.Summary)},
+		}, Notes: []string{
+			a.TruthStatement,
+			"Gate 197 answers the regulator question conservatively: sharp step decoupling is allowed only as an explicit conditional convention; no smooth scalar-bundle regulator is natively derived.",
+			"Formal threshold symbols are not numerical masses. Physical RG running still requires texture values, a matching/decoupling scheme, gauge couplings for W/Z thresholds, M*, g_*², and finite-to-continuum normalization.",
+		}}
+	}}
+}

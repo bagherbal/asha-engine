@@ -87,6 +87,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/diracorderone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcarrier"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcoupling"
+	"github.com/bagherbal/asha-engine/pkg/bridge/electroweakvevseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewcurvature"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewquadratic"
@@ -404,6 +405,7 @@ func Run() error {
 		scalaryukawasupport.TensorLiftedScalarFundamentalClassYukawaBilinearSupportTheorem(),
 		yukawaamplitudesource.FiniteYukawaTextureOperatorAmplitudeSourceObstructionTheorem(),
 		yukawaamplitudeseal.SpontaneousYukawaAmplitudeSealEmpiricalTextureAxiomFirewallTheorem(),
+		electroweakvevseal.ElectroweakVEVScaleSealMassThresholdActivationFirewallTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
