@@ -122,6 +122,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/currenthessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/cutoffmomentsource"
+	"github.com/bagherbal/asha-engine/pkg/bridge/derivededgeweightoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/diracorderone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/doubledbosonictraceindex"
 	"github.com/bagherbal/asha-engine/pkg/bridge/doubledspacerepresentation"
@@ -802,6 +803,7 @@ func Run() error {
 		contactquarticscalaryukawabundle.ContactQuarticPrimaryScalarYukawaBundleFunctorAuditTheorem(),
 		quaternionicscalarbundleidentity.QuaternionicScalarBundleIdentitySieveTheorem(),
 		mixededgelaplaciansieve.NonQuaternionicScalarIdentityMixedEdgeLaplacianSieveTheorem(),
+		derivededgeweightoperator.DerivedEdgeWeightOperatorHyperchargeLaplacianSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
