@@ -1225,3 +1225,22 @@ Gate 147 audits whether the seven contact partial-overlap eigenvalues can be pro
 It confirms that the contact overlap is a legitimate finite symmetric operator and that three partial-overlap rows are recognized as rational diagnostics (`2/3`, `1/2`, `1/3`). The remaining four rows stay numerical algebraic candidates. The project does not yet contain an exact number-field lift, exact characteristic polynomial, or row-wise minimal-polynomial certificates.
 
 Therefore the contact spectrum still does not supply contact `T3R`, `B−L`, hypercharge, representation rows, local field variables, mass activation, decoupling, or threshold beta permission.
+
+## Gate 148 — Exact Contact Overlap Characteristic Polynomial / Symbolic Number-Field Construction Attempt
+
+Package: `pkg/bridge/contactcharpoly`
+
+Gate 148 makes the strongest safe symbolic move after Gate 147. It rationally reconstructs a characteristic-polynomial candidate for the seven partial contact-overlap rows:
+
+```text
+P_partial(x) = (2x - 1)(3x - 2)(3x - 1)
+               (3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271) / 58320
+```
+
+The candidate covers all seven partial rows numerically. It isolates the three rational diagnostics (`1/2`, `2/3`, `1/3`) and groups the four non-rational-looking rows into a quartic number-field candidate.
+
+This is a real symbolic advance, but not yet an exact finite proof. The project still has no exact rational/number-field lift of the contact overlap matrix, no exact determinant computation, no independent characteristic-polynomial certificate, no root-isolation proof, and no row-wise semantic map from the algebraic roots to contact charge or representation rows.
+
+Therefore contact `T3R`, `B−L`, hypercharge, local field variables, mass activation, decoupling, threshold beta rows, physical electroweak constants, and masses remain sealed.
+
+Next: Gate 149 — exact rational contact-overlap matrix lift / determinant certificate search.

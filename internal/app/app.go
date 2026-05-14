@@ -31,6 +31,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactbundle"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactchargelattice"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactchargenorm"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactcharpoly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactcoddsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactcohomology"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactdualcurrenttarget"
@@ -306,6 +307,7 @@ func Run() error {
 		contactchargenorm.CenteredContactSpectralCurrentChargeOperatorNormalizationObstructionTheorem(),
 		contactchargelattice.ContactChargeLatticeEmbeddingRationalSpectrumObstructionTheorem(),
 		contactalgebraic.ContactIrrationalSpectrumAlgebraicOriginMinimalPolynomialObstructionTheorem(),
+		contactcharpoly.ExactContactOverlapCharacteristicPolynomialSymbolicNumberFieldAttemptTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
