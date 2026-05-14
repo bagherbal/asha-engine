@@ -6023,3 +6023,9 @@ Gate 411 turns the Gate-410 boundary into an explicit ranked ledger. The current
 - Unconstrained Yukawa source: phenomenologically complete but rejected as curve-fitting.
 
 This gate documents the epistemological boundary: current ASHA derives the gauge/Higgs law-space scaffold but does not derive the 13 charged flavor moduli. Any future flavor theorem must enter through an explicit, minimal axiom/extension and then pass compatibility with `A_F`, `J`, `Gamma`, first-order, and gauge-charge constraints.
+
+## Gate 412 — Minimal Modular Family Hamiltonian Axiom Consistency Sieve
+
+After Gate 411 ranked the modular family Hamiltonian as the least-cost empirical-independent extension candidate, Gate 412 treats it explicitly as an axiom. It checks a minimal centered three-level operator on the family fiber, `K_gen = diag(-1,0,1)`, and the induced nontracial KMS state `rho = exp(-beta K_gen)/Z`.
+
+The axiom is compatible with the already-derived Standard Model gauge action when it acts only on the family fiber, and it gives conditional hierarchy capacity. However, it is not native ASHA data and it is diagonal-only: all functions of `K_gen` commute. Therefore it cannot generate CKM/PMNS mixing or reduce the 13 charged flavor moduli without an additional noncommuting family operator or connection axiom.

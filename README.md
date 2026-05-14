@@ -6390,3 +6390,9 @@ Result: no native extension derives a family connection, family curvature, or tw
 Gate 411 follows Gate 410 by accepting the boundary that the current ASHA finite geometry does not derive a nontrivial family bundle. It does not promote empirical Yukawa matrices or a new theorem. Instead, it compiles a quarantined ledger of minimal mathematical extensions that could be tested as future axioms: a modular family Hamiltonian, a nontrivial U(3)_gen family connection, a primitive-ideal finite-algebra extension, a triality/contact functor, and the excluded unconstrained Yukawa source.
 
 The ledger ranks the modular family Hamiltonian as the lowest-cost empirical-independent candidate for hierarchy, while true CKM/PMNS capacity requires a nontrivial family connection or algebra extension. All candidates remain explicit extensions rather than native consequences of the current ASHA tower. Therefore no axiom is promoted, no empirical data is inserted, and the Gate-372/Gate-387 charged flavor firewall remains preserved: `dim M_charged = 13`.
+
+## Gate 412 — Minimal Modular Family Hamiltonian Axiom Consistency Sieve
+
+Gate 412 tests the lowest-cost Gate-411 extension candidate as an explicit axiom, not as a native derivation. The package `pkg/bridge/minimalmodularfamilyhamiltonian` formalizes a centered family Hamiltonian `K_gen = diag(-1,0,1)`, verifies that it can activate a nontracial KMS family state, and audits compatibility with the derived gauge/family-broadcast structure.
+
+Result: the axiom is consistent and hierarchy-capable, but diagonal-only. A single `K_gen` supplies no native noncommuting texture pair, no CKM/PMNS capacity, and no reduction of the Gate-372 charged flavor firewall. The firewall remains `dim M_charged = 13`.
