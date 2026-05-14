@@ -192,3 +192,13 @@
 - Use neutrino mass observations as comparison bounds, not as inputs to tune the finite core.
 
 - For flavor gates, separate three layers explicitly: inherited scale, texture proxy, and mixing matrix. A ratio-level texture resonance is not a PMNS derivation and must remain behind a seal unless the finite algebra supplies the full matrix structure.
+
+## Gate 233 method note — initialize matrix arenas before claiming spectral actions
+
+- When returning from phenomenology to the finite core, separate matrix-family existence from physical-operator derivation.
+- A balanced Fock grading can define a legal odd self-adjoint `D_F` ansatz, but physical chirality requires a separate theorem.
+- For finite Dirac work, always audit three ledgers independently: carrier Hilbert space, real/grading structures, and canonical block selection.
+- A scalar spectral gap may be inserted into a diagnostic matrix only as an ansatz unless a finite theorem maps it to a bilinear amplitude.
+- Computing `Tr(D²)` and `Tr(D⁴)` is not enough. Spectral-action physics also requires gauge projection, heat-kernel/cutoff data, and a subtraction scheme.
+- Never insert `v`, `M_B`, `M_*`, or observed fermion masses into a finite `D_F` initialization gate.
+- If the legal matrix family exists but the canonical selector is missing, record conditional support for the search space and a failed route for the physical operator.

@@ -3230,3 +3230,63 @@ Gate 232 introduces `pkg/bridge/neutrinotextureaudit`. It activates `NeutrinoTex
 The audit inherits Gate 231's third-generation atmospheric fit, `m_D3 ≈ 5.7666 GeV` (`y_ν3 ≈ 0.02342`). Direct SM mass proxies are too hierarchical: charged-lepton, up-quark, and down-quark proportional textures all fail the `sqrt(Δm²_sol/Δm²_atm) ≈ 0.173` ratio test. A simple quadratic generation-index texture, `m_Di ∝ i²`, gives `m2/m3 ≈ 0.1975`, which is close enough to record conditional support under the seal.
 
 Gate 232 does not derive the PMNS matrix, CP phases, mass ordering, Dirac texture, Majorana matrix, or right-handed neutrino fields from the finite core.
+
+## v2.31 — Gate 233: Finite Dirac Operator initialization over the 16-state Fock scaffold
+
+Gate 233 introduces `pkg/bridge/finitediracinitialization`. It returns from the phenomenological tower to the finite core and asks what can be initialized for a finite spectral-triple program without importing continuum masses.
+
+The native 16-state Fock carrier admits an occupation-parity split:
+
+```text
+even states = 8
+odd states  = 8
+```
+
+Using this split, Gate 233 constructs the legal dimensionless odd self-adjoint matrix family
+
+```text
+D_F(M) = [[0, M], [M^T, 0]],  M ∈ Mat_{8×8}(R).
+```
+
+This gives a rigorous finite `D_F` ansatz with `64` free real entries. A unit representative verifies the matrix identities:
+
+```text
+{γ, D} = 0
+D = D^T
+Tr(D²) = 16
+Tr(D⁴) = 16
+```
+
+However, the finite core does not select the block `M`, derive the real structure `J`, identify occupation parity with physical chirality, or verify the order-one calculus. Therefore Gate 233 does not derive a physical finite Dirac operator.
+
+The B-sector gap is also audited:
+
+```text
+B_gap = 0.102464921191
+```
+
+A uniform diagnostic embedding
+
+```text
+D_B = [[0, B_gap I_8], [B_gap I_8, 0]]
+```
+
+is algebraically allowed but not canonical. Its traces are diagnostics only:
+
+```text
+Tr(D_B²) = 0.167984961193
+Tr(D_B⁴) = 0.0017636841992
+```
+
+The engine does not promote `B_gap` into a mass, VEV insertion, Yukawa amplitude, or Majorana term.
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_DIMENSIONLESS_ODD_SELF_ADJOINT_DF_ANSATZ
+FAILED_ROUTE_CANONICAL_FINITE_DIRAC_OPERATOR_DERIVATION
+FAILED_ROUTE_CANONICAL_BGAP_DF_EMBEDDING
+BROADER_HILBERT_OR_REAL_STRUCTURE_REQUIRED
+```
+
+Gate 233 establishes the correct finite matrix search space, but a broader Hilbert-space / real-structure / order-one-calculus theorem is still required before the spectral action can become physical.

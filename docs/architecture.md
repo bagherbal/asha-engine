@@ -3754,3 +3754,40 @@ finite neutrino matrix: not derived
 Gate 232 adds `pkg/bridge/neutrinotextureaudit` after the Gate-231 seesaw preflight. It introduces `NeutrinoTextureSeal` to quarantine the assumption of three-generation Dirac/Majorana neutrino matrices and tests only ratio-level texture proxies.
 
 The gate finds that direct charged-lepton and quark mass hierarchy proxies generate active-neutrino ratios that are much too small, while a simple quadratic generation-index texture produces a solar/atmospheric ratio close to the observed scale. This is logged as conditional phenomenology only. The finite algebra still does not derive neutrino mass matrices, PMNS angles, CP phases, or mass ordering.
+
+## Gate 233 — Finite Dirac Operator initialization and the return to Layer 0
+
+Gate 233 adds `pkg/bridge/finitediracinitialization`. Architecturally, it is the first post-phenomenology return to the finite spectral-triple obstruction exposed by Gates 217 and 230.
+
+The gate distinguishes three layers:
+
+```text
+1. finite carrier:        available — the 16-state Fock space
+2. legal D_F family:      available — D_F(M) = [[0,M],[M^T,0]]
+3. canonical physical D_F: not derived
+```
+
+The occupation-parity split gives an `8 + 8` grading candidate, but the engine does not identify it with physical chirality. The general odd self-adjoint finite Dirac family has `64` real free parameters. This is useful because it defines the exact search space for future finite Dirac work.
+
+The B-sector gap is audited as a possible off-diagonal amplitude. A uniform block candidate is computable, but not canonical:
+
+```text
+B_gap = 0.102464921191
+D_B = [[0, B_gap I_8], [B_gap I_8, 0]]
+```
+
+This candidate does not derive the Hopf coefficient, matching constants, mass scales, or physical Yukawa/Majorana terms. The missing architectural components are:
+
+```text
+finite algebra representation on total H_F
+real structure J
+KO-dimension data
+physical chirality map
+canonical selector for the 8×8 block M
+B-gap-to-bilinear theorem
+order-one calculus
+gauge fluctuation map
+cutoff/subtraction scheme
+```
+
+Thus Gate 233 does not solve the finite spectral action. It creates the legal matrix arena in which the next finite-core theorem must operate.

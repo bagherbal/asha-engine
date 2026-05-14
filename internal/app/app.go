@@ -107,6 +107,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/finiteanchordm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitebundlemap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitecarrieractivation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/finitediracinitialization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitehopfaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitespectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
@@ -476,6 +477,7 @@ func Run() error {
 		finitehopfaction.OctonionicInstantonFiniteHopfActionMapAuditTheorem(),
 		intermediatebreakingseesaw.IntermediateBreakingSealNeutrinoSeesawPreflightAuditTheorem(),
 		neutrinotextureaudit.NeutrinoFlavorTextureAuditSealTheorem(),
+		finitediracinitialization.FiniteDiracOperatorInitializationFockMatrixAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
