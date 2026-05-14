@@ -100,3 +100,15 @@ Q_B-L = (1/3)(N1+N2+N3) - N0
 ```
 
 This supplies a one-particle charge spectrum `[-1, 1/3, 1/3, 1/3]`, exactly the `1+3` polarization. The gate also rejects a false shortcut: the active Higgs/contact scalar eigenvalues must not be identified directly with the three color modes. Charge polarization and scalar/vacuum mixing are separate structures until a true tensor-factor or representation-action bridge is constructed.
+
+## v0.16 — Tensor-factor matter/Higgs bridge
+
+Gate 17 adds `pkg/matter/tensor`. Gate 16 supplied the `B−L` charge polarization on the Fock/matter side, but it also showed that the pair-degenerate finite Higgs/contact scalar spectrum must not be collapsed into color charges. Gate 17 resolves this by introducing the standard tensor product bridge:
+
+```text
+H_total = H_Fock ⊗ H_Φ
+Q_total = Q_B-L ⊗ I_Φ
+S_total = I_Fock ⊗ S_Φ
+```
+
+The gate verifies that matter charge and scalar/contact response commute because they live on different tensor factors. It also verifies the trace identities, the neutral vacuum scalar fiber `|Ω⟩⊗H_Φ`, and the charge-sector scalar fibers. The result is a cleaner architecture for the next missing object: a gauge-compatible Yukawa/intertwiner map between matter states and the scalar factor. No Yukawa texture or physical mass matrix is claimed yet.

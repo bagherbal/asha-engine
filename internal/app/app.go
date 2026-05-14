@@ -20,6 +20,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/matter/action"
 	"github.com/bagherbal/asha-engine/pkg/matter/charge"
 	"github.com/bagherbal/asha-engine/pkg/matter/embedding"
+	"github.com/bagherbal/asha-engine/pkg/matter/tensor"
 	"github.com/bagherbal/asha-engine/pkg/phase"
 	"github.com/bagherbal/asha-engine/pkg/spinor"
 	"github.com/bagherbal/asha-engine/pkg/theorem"
@@ -45,6 +46,7 @@ func Run() error {
 		action.RepresentationActionTheorem(),
 		embedding.CanonicalEmbeddingTheorem(),
 		charge.ChargePolarizationTheorem(),
+		tensor.TensorFactorBridgeTheorem(),
 	)
 
 	results := registry.RunAll()
