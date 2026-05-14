@@ -216,3 +216,46 @@ The generation source selected at this gate is intentionally modest: the quotien
 It splits the three generation labels but does not claim CKM/PMNS mixing.  The previous 3x4 active-to-generation source action still selects zero, so physical Yukawa textures remain sealed until a non-commuting generation operator or nonzero active-to-generation map is derived.
 
 The gate is marked `VARIATIONAL`, but only for dimensionless finite action data.  It still does not derive `alpha`, `thetaW`, the electroweak vev, Higgs mass, fermion masses, CKM, or PMNS.
+
+## Gate 101 — Canonical Finite RG Boundary Seed / Scale Firewall
+
+Gate 101 adds `pkg/bridge/canonicalboundary`.  It takes the Gate 100 action-selected Hessian in the closed carrier
+
+```text
+[T1, T2, Z=T3-Y_phi, Q=T3+Y_phi]
+```
+
+and performs the quotient-safe basis change to
+
+```text
+[T1, T2, T3=(Z+Q)/2, Y_phi=(Q-Z)/2].
+```
+
+The transformed Hessian is
+
+```text
+K_gen = diag(1,1,1,3).
+```
+
+This is an important strengthening.  The `SU(2)_L` kinetic block is now isotropic and action-selected, while the scalar/contact abelian seed has coefficient `K(Y_phi)=3`.  In inverse-kinetic diagnostic language this gives a contact-sector no-running value
+
+```text
+sin²_contact = (1/3) / (1 + 1/3) = 1/4.
+```
+
+The gate keeps this separate from the finite matter-table hypercharge normalization
+
+```text
+k_Y = 5/3,
+qquad sin²_matter = 1/(1+k_Y) = 3/8.
+```
+
+Therefore Gate 101 does **not** claim a physical weak mixing angle.  Instead it exposes the next true obstruction: the contact scalar `U(1)` coefficient `3` is not automatically the matter hypercharge normalization `5/3`.  If one demands a direct embedding `Y = lambda Y_phi`, the required square scale is
+
+```text
+lambda² = (5/3)/3 = 5/9,
+```
+
+but Gate 101 deliberately does not select that map.
+
+Remaining sealed quantities: `alpha`, physical `thetaW`, `g2`, `gY`, W/Z masses, Higgs vev, Higgs mass, boundary scale `M*`, beta coefficients, and finite threshold matching.  The next gate must either derive or reject the contact-to-matter hypercharge embedding / threshold map without using observed constants.
