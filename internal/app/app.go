@@ -28,6 +28,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiralweakselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/cliffordcontactcommutant"
+	"github.com/bagherbal/asha-engine/pkg/bridge/cliffordpullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coloredoctetportal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/complexifiedhilbertspace"
@@ -496,6 +497,7 @@ func Run() error {
 		spinctwistedchirality.SpinCTwistedChiralityHyperchargeWeakSieveAuditTheorem(),
 		reebweakselection.ReebVectorSpatialIsotropyWeakPlaneSieveAuditTheorem(),
 		tauetaspatialtagging.TauEtaSpatialTaggingGenerationBreakingAuditTheorem(),
+		cliffordpullback.CliffordActionPullbackTauEtaEndomorphismAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

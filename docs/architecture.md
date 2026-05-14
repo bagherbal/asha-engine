@@ -4077,3 +4077,29 @@ global H summand: still unselected
 ```
 
 The next structural problem is no longer numerical. It is functorial: derive the pullback from the scalar fundamental class to the Fock/generation carriers, or seal that map as an additional physical boundary condition.
+
+## Gate 243 — Clifford action pullback and tau_eta endomorphism audit
+
+Gate 243 adds `pkg/bridge/cliffordpullback` after Gate 242's scalar fundamental-class selector-capacity audit.
+
+Architecturally, this gate distinguishes the existence of a canonical action map from the existence of an object in its domain. The complexified spinor carrier supports the native Clifford action
+
+```text
+c: Λ*(W) -> End(S_C)
+```
+
+This is the correct kind of map for turning an exterior form or Clifford element into an operator on spinors. But the scalar fundamental class currently appears as a three-component scalar trace ledger, not as an exterior form, not as a finite index class with a spinor representative, and not as a carrier-labelled operator.
+
+Gate 243 therefore records:
+
+```text
+Clifford action map available: yes
+tau_eta selector capacity: yes
+tau_eta in Clifford-action domain: no
+tau_eta endomorphism on S_C: no
+weak plane selected: no
+generation texture derived: no
+global H summand: still unselected
+```
+
+This moves the obstruction one categorical level lower. The missing bridge is not generic Clifford multiplication; it is a theorem identifying how the scalar-bundle functional `tau_eta=(2,-2,1)` becomes a form, index class, or labelled operator on the relevant carrier.

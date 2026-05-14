@@ -282,3 +282,12 @@
 - For weak-plane selection, distinguish conditional complement rules from native axis-tagging theorems.
 - For generation breaking, distinguish a three-eigenvalue diagonal capacity from a full texture theorem with non-commuting operators and mixing.
 - Prefer the next gate to derive the missing functor/map rather than search for new numerological signatures.
+
+## Gate 243 method refinement — action maps need domain objects
+
+- When proposing a pullback through Clifford multiplication, first verify that the datum is actually an exterior form, Clifford element, or finite index class with basis-blade coefficients.
+- Do not treat a scalar trace ledger as a spinor endomorphism just because its component count matches a carrier dimension.
+- Separate three stages: action map exists, source object lies in the action map's domain, and resulting operator has the required spectrum on the target carrier.
+- Reject hypothetical number-operator matrices if their slot labels are assigned manually rather than derived.
+- For weak-plane selection, keep conditional selector rules separate from native S3-breaking endomorphisms.
+- For generation breaking, keep three-eigenvalue capacity separate from a full texture theorem with non-commuting operators and mixing.

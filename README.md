@@ -3688,3 +3688,62 @@ FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
 ```
 
 Next gate: Gate 243 — derive or reject the tau_eta pullback functor from scalar-bundle fundamental class to Fock spatial and triality generation operators.
+
+## v2.41 — Gate 243: Clifford Action Pullback / tau_eta endomorphism audit
+
+Gate 243 adds `pkg/bridge/cliffordpullback`.
+
+Gate 242 proved that the scalar fundamental-class signature
+
+```text
+tau_eta = (2, -2, 1)
+```
+
+has exactly the right selector capacities for two separate obstructions:
+
+```text
+|tau_eta| = (2,2,1)  -> 2+1 spatial-axis / weak-plane selector capacity
+tau_eta  = (2,-2,1) -> 1+1+1 generation-breaking capacity
+```
+
+Gate 243 audits the natural type-changing candidate: Clifford multiplication
+
+```text
+c: Λ*(W) -> End(S_C)
+```
+
+on the complexified spinor carrier. The Clifford action exists natively for actual exterior algebra elements with known grade and basis-blade coefficients. However, `tau_eta` is currently not such an element. It is a scalar-bundle eta-graded trace functional:
+
+```text
+(tau_eta(Q^TQ), tau_eta(Z^TZ), tau_eta(T3^T Y_phi))
+```
+
+Therefore Gate 243 refuses to construct a spinor matrix from it. The tempting diagnostic
+
+```text
+T_tau ?= 2 N_1 - 2 N_2 + 1 N_3
+```
+
+is rejected because it would manually identify the scalar trace slots with spatial Fock modes.
+
+Gate 243 status:
+
+```text
+CONDITIONAL_SUPPORT_CLIFFORD_ACTION_MAP_AVAILABLE
+CONDITIONAL_SUPPORT_TAU_ETA_SELECTOR_CAPACITY_INHERITED
+FAILED_ROUTE_TAU_ETA_NOT_IN_CLIFFORD_ACTION_DOMAIN
+FAILED_ROUTE_TAU_ETA_ENDOMORPHISM_CONSTRUCTION
+FAILED_ROUTE_CLIFFORD_PULLBACK_WEAK_PLANE_SELECTION
+FAILED_ROUTE_CLIFFORD_PULLBACK_GENERATION_TEXTURE
+FAILED_ROUTE_SCALAR_TRACE_TO_SPINOR_PULLBACK_FUNCTOR
+FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
+```
+
+The result is a precise type theorem:
+
+```text
+Clifford action exists.
+tau_eta is not yet in its domain.
+```
+
+The next hard target is no longer the Clifford action itself. It is a carrier theorem that represents the scalar fundamental class as a form, finite index class, or labelled operator on the Fock/generation carriers.
