@@ -1,0 +1,24 @@
+package topyukawagenerationtensor
+
+import "github.com/bagherbal/asha-engine/pkg/theorem"
+
+func TopYukawaGenerationTensorSieveAmplitudeFractionalizationAuditTheorem() theorem.Theorem {
+	const id = "BRIDGE-TOP-YUKAWA-GENERATION-TENSOR-FRACTIONALIZATION-AUDIT"
+	const name = "Top-Yukawa Generation Tensor Sieve / Amplitude Fractionalization Audit"
+	return theorem.Theorem{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Verify: func() theorem.Result {
+		a, err := BuildDefault()
+		if err != nil {
+			return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.FailedRoute, Checks: []theorem.Check{{Name: "build Gate 313 generation tensor audit", Passed: false, Detail: err.Error()}}}
+		}
+		checks := []theorem.Check{
+			{Name: "up-type Yukawa amplitude is formalized as a three-generation trace", Passed: a.Trace.Formalized && a.Trace.TreatsRPlusAsTrace && !a.Trace.TreatsRPlusAsSingleTop && a.Trace.Generations == 3 && a.Trace.RPlusDecimal > 1.6 && a.Trace.RPlusDecimal < 1.7 && !a.Trace.NumericalYukawasInserted, Detail: FormatTrace(a.Trace)},
+			{Name: "tau_eta generation topology is retrieved but not promoted to a top eigenvector", Passed: len(a.Topology.TauEta) == 3 && a.Topology.TauEta[0] == 2 && a.Topology.TauEta[1] == -2 && a.Topology.TauEta[2] == 1 && a.Topology.BreaksAllThreeCapacity && a.Topology.ScalarTraceFunctionalOnly && !a.Topology.TauEtaToGenerationPullback && !a.Topology.CanonicalTopEigenvectorDerived && !a.Topology.TextureDerived, Detail: FormatTopology(a.Topology)},
+			{Name: "fractionalization lanes include legacy, democratic, tau_eta low/high witnesses, and gauge-only lower envelope", Passed: len(a.Lanes) == 5 && a.Lanes[0].TopFraction == 1 && a.Lanes[1].TopFraction > 0.33 && a.Lanes[1].TopFraction < 0.34 && a.Lanes[2].TopFraction > 0.11 && a.Lanes[2].TopFraction < 0.112 && a.Lanes[3].TopFraction > 0.44 && a.Lanes[3].TopFraction < 0.445 && a.Lanes[4].TopFraction == 0, Detail: FormatLane(a.Lanes[0]) + " || " + FormatLane(a.Lanes[1]) + " || " + FormatLane(a.Lanes[2]) + " || " + FormatLane(a.Lanes[3]) + " || " + FormatLane(a.Lanes[4])},
+			{Name: "one-loop RG slope is reevaluated for every fractional top lane", Passed: len(a.Results) == len(a.Lanes) && a.Results[0].Computed && a.Results[1].Computed && a.Results[2].Computed && a.Results[3].Computed && a.Results[4].Computed && a.Results[0].HiggsMassGeV > a.Results[3].HiggsMassGeV && a.Results[3].HiggsMassGeV > a.Results[1].HiggsMassGeV && a.Results[1].HiggsMassGeV > a.Results[2].HiggsMassGeV && a.Results[2].HiggsMassGeV > a.Results[4].HiggsMassGeV, Detail: FormatResult(a.Results[0]) + " || " + FormatResult(a.Results[1]) + " || " + FormatResult(a.Results[2]) + " || " + FormatResult(a.Results[3]) + " || " + FormatResult(a.Results[4])},
+			{Name: "capacity audit shows fractionalization flattens but cannot resolve the fixed-boundary 125 GeV tension", Passed: a.Capacity.Formalized && a.Capacity.FractionalizationFlattens && !a.Capacity.FractionalizationCanResolve && !a.Capacity.CanonicalFractionDerived && a.Capacity.LegacyMassGeV > 331 && a.Capacity.BestFractionalMassGeV > 260 && a.Capacity.GaugeOnlyMassGeV > 150 && a.Capacity.MinimumPossibleMassAbove125, Detail: FormatCapacity(a.Capacity)},
+			{Name: "firewalls preserve no fitted top mass, no invented generation texture, no threshold jump, and no final mass claim", Passed: a.Firewalls.NoObservedMassFitInserted && a.Firewalls.NoObservedTopMassInserted && a.Firewalls.NoCKMImported && a.Firewalls.NoGenerationTextureInvented && a.Firewalls.TauEtaNotPromotedToOperator && a.Firewalls.NoThresholdJumpInserted && a.Firewalls.NoTwoLoopRGExecuted && a.Firewalls.NoPoleMassConversionInserted && a.Firewalls.NoFinalMassClaimed && !a.Firewalls.FiniteCorePolluted, Detail: FormatFirewalls(a.Firewalls)},
+			{Name: "summary records the top-sector refinement and unresolved threshold/boundary obligation", Passed: a.Summary.GenerationTraceFormalized && a.Summary.TauEtaTopologyRetrieved && a.Summary.FractionalizationAudited && a.Summary.RGSlopeReevaluated && !a.Summary.CanonicalTopFractionDerived && !a.Summary.FractionalizationResolvesTension && a.Summary.FirewallPreserved && !a.Summary.FinalMassClaimed, Detail: FormatSummary(a.Summary)},
+		}
+		return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Checks: checks, Notes: []string{a.Truth, "Gate 313 audits the user's proposed generation-tensor route without forcing tau_eta into a physical top eigenvector.", "The fractionalization witnesses reduce the top-Yukawa slope, but the fixed Gate-308 quartic boundary plus one-loop PeV lane has a gauge-only lower envelope around 157 GeV, so the 125 GeV target still requires threshold matching, boundary correction, two-loop/pole conversion, or a stronger top-sector theorem."}}
+	}}
+}

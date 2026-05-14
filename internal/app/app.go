@@ -257,6 +257,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalactionvariationalprinciple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalboundaryviability"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalnormalization"
+	"github.com/bagherbal/asha-engine/pkg/bridge/topyukawagenerationtensor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tracesynthesiscarrierequivalence"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitytexturelift"
@@ -636,6 +637,7 @@ func Run() error {
 		twoloopmatchingpoleledger.TwoLoopMatchingPoleMassConversionLedgerAuditTheorem(),
 		masterstatusledger.ASHAEngineMasterStatusLedgerProjectCapstoneAuditTheorem(),
 		bgapmajoranaactivation.BGapMajoranaActivationSpectralActionSigmaHMixedQuarticCorrectionAuditTheorem(),
+		topyukawagenerationtensor.TopYukawaGenerationTensorSieveAmplitudeFractionalizationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
