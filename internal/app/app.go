@@ -141,6 +141,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarsu2"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarvacuum"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalaryukawasupport"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectoroperators"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/shellfunctor"
@@ -398,6 +399,7 @@ func Run() error {
 		scalarorientationseal.SpontaneousScalarOrientationSealGaugeFixedHphiTrivializationTheorem(),
 		scalarchernweiltaudit.SealedScalarBundleChernWeilCarrierHeatKernelPreflightTheorem(),
 		scalarfundamentalclass.FiniteFundamentalClassScalarBundleIntegrationFunctionalSearchAuditTheorem(),
+		scalaryukawasupport.TensorLiftedScalarFundamentalClassYukawaBilinearSupportTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
