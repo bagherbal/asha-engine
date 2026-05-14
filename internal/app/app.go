@@ -155,6 +155,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topdownspectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
+	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalboundaryviability"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitytexturelift"
@@ -410,6 +411,7 @@ func Run() error {
 		electroweakvevseal.ElectroweakVEVScaleSealMassThresholdActivationFirewallTheorem(),
 		conditionalthresholdbeta.ConditionalThresholdBetaRowActivationDecouplingSchemeFirewallTheorem(),
 		gaugecouplingboundaryseal.GaugeCouplingBoundarySealSymbolicRGEvaluationFirewallTheorem(),
+		topologicalboundaryviability.TopologicalBoundaryViabilityBottomUpConvergenceComparisonTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
