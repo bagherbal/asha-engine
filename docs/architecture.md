@@ -1322,3 +1322,23 @@ The four quartic roots are isolated by disjoint rational sign-change intervals:
 Because the intervals are disjoint, each has an exact sign change, and the quartic has degree four, the four non-rational roots are isolated one per interval.
 
 This gives exact root-isolation certificates for all seven non-unit contact roots, while preserving the firewall: root isolation is not a number-field eigenprojector construction, row-wise physical assignment, charge operator, representation row, local field map, mass activation, decoupling rule, threshold beta correction, or physical constant derivation.
+
+### Gate 151 — Exact contact eigenprojector number-field / spectral idempotent construction attempt
+
+Gate 151 upgrades the Gate 149/150 contact spectral certificate from exact matrix, characteristic polynomial, and root isolation into the strongest exact spectral-idempotent decomposition available over `Q`.
+
+The exact rational factorization supports five primary spectral blocks:
+
+```text
+(x - 1)                         unit eigenspace block, dimension 7
+(3x - 1)                        rational root 1/3, dimension 1
+(2x - 1)                        rational root 1/2, dimension 1
+(3x - 2)                        rational root 2/3, dimension 1
+3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271   quartic primary block, dimension 4
+```
+
+So Gate 151 constructs exact `Q`-primary spectral idempotent blocks. This is a genuine algebraic strengthening: the contact spectrum is no longer only numeric, and it is no longer only root-isolated. It now has a rational primary block decomposition.
+
+The firewall remains closed. The four quartic roots are still not split into individual exact eigenprojectors because that requires choosing a quartic root/embedding and building exact number-field arithmetic. The spectral blocks also do not assign roots to contact modes, do not define `T3R`, `B-L`, hypercharge, local field variables, mass activation, decoupling, threshold beta rows, or physical constants.
+
+Next gate: Gate 152 — quartic contact number-field branch / Galois symmetry obstruction theorem.
