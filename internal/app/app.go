@@ -157,6 +157,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hopfgeometricnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hyperchargediracassembly"
+	"github.com/bagherbal/asha-engine/pkg/bridge/innerfluctuationfieldcontent"
 	"github.com/bagherbal/asha-engine/pkg/bridge/inputsensitivityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/instantontracebridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/intermediatebreakingaudit"
@@ -606,6 +607,7 @@ func Run() error {
 		truebimodulerepresentation.TrueBimoduleAssemblyLeftRightRepresentationAuditTheorem(),
 		hyperchargediracassembly.HyperchargeLedgerSieveCanonicalFiniteDiracAssemblyAuditTheorem(),
 		fullphysicalfirstorder.FullPhysicalFirstOrderVerificationFiniteSpectralTripleCompletionAuditTheorem(),
+		innerfluctuationfieldcontent.InnerFluctuationGaugeHiggsFieldContentAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
