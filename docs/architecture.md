@@ -676,3 +676,94 @@ nullity after Gate 114  = 3
 ```
 
 The next true gate should return to the other branch: contact local-bundle obstruction / representation-row construction attempt. Until a real local field map or a real constraint complex exists, threshold-corrected `Δb_i(L)`, physical `alpha`, physical `thetaW`, `M*`, `g_*`, and masses remain sealed.
+
+## Gate 115 — Contact Local-Bundle Obstruction / Representation-Row Construction Attempt
+
+Gate 115 adds `pkg/bridge/contactbundle`. Gate 114 blocked the constraint/BRST shortcut: the zero differential leaves seven contact cohomology classes alive and no nontrivial canonical differential is selected. Gate 115 therefore returns to the local-bundle branch and asks whether the seven positive finite-overlap contact modes can become local continuum fields with threshold representation rows.
+
+The gate confirms the finite carrier is real:
+
+```text
+seven positive finite-overlap contact modes
+survive Gate 114 zero-differential cohomology
+```
+
+but no local-bundle lift is derived:
+
+```text
+base-space/support map      = false
+fiber and transition data   = false
+local sections              = false
+gauge representation row    = false
+Lorentz kinetic/residue     = false
+mass activation/decoupling  = false
+```
+
+Therefore:
+
+```text
+contact representation-complete rows = 0 / 7
+contact beta rows allowed           = 0
+contact zero rows proved            = 0
+open contact rows after Gate 115    = 7
+```
+
+The contact beta firewall remains closed. The next honest gate should test whether the Fano/contact incidence already present in the finite geometry can define a canonical fiber functor, chart system, or representation-row map.
+
+## Gate 116 — Contact Incidence / Fiber Functor Search from Fano-Contact Geometry
+
+Gate 116 adds `pkg/bridge/contactincidence`. It tests the strongest incidence structure already present in the finite engine: the octonionic/Fano plane data behind the G₂ calibration.
+
+The Fano carrier is exact:
+
+```text
+Fano points = 7
+Fano lines  = 7
+each point degree = 3
+each line size    = 3
+```
+
+and it resonates perfectly with the seven unresolved contact partial-overlap modes:
+
+```text
+contact rows = 7
+Fano points  = 7
+Fano lines   = 7
+```
+
+But Gate 116 refuses to turn this resonance into a physical threshold theorem. The missing object is a canonical natural transformation:
+
+```text
+contact partial-overlap row → Fano point/line → local fiber/chart/field representation
+```
+
+The current finite data still leaves many compatible choices:
+
+```text
+direct contact-to-Fano bijection      requires choosing among 7! maps
+spectral-rank functor                 inherits ordering/orientation ambiguity
+Fano-line chart atlas                 lacks base-space and transition/cocycle law
+octonion multiplication fiber attempt lacks Lorentz kinetic, gauge row, mass, decoupling
+```
+
+Thus the gate proves an incidence/functor obstruction:
+
+```text
+Fano incidence carrier available = true
+Fano/contact cardinality match   = true
+canonical contact-to-Fano map    = false
+fiber functor derived            = false
+chart atlas / cocycle derived    = false
+representation rows complete     = 0 / 7
+contact beta rows allowed        = 0
+```
+
+The residual physical-flow nullity remains unchanged:
+
+```text
+u = 1/g_*²
+L = ln(M*/μ)
+Δb_i(L)
+```
+
+The next true gate should test automorphism/naturality: whether any contact-to-Fano assignment is invariant under the finite symmetry data or whether all assignments are convention-dependent.
