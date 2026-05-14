@@ -214,6 +214,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcovariant"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarfockspectralpotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarfundamentalclass"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalarkinetictracepositivity"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarmoritaspectralbridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarorientationseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarorientationsource"
@@ -612,6 +613,7 @@ func Run() error {
 		innerfluctuationfieldcontent.InnerFluctuationGaugeHiggsFieldContentAuditTheorem(),
 		heatkerneldynamicspreflight.SeeleyDeWittHeatKernelFormalizationSpectralActionDynamicsPreflightTheorem(),
 		grandnormalizationsieve.GrandNormalizationSieveWaveFunctionRenormalizationExtractionAuditTheorem(),
+		scalarkinetictracepositivity.ScalarKineticTraceFunctionalPositiveZHEvaluableCarrierAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
