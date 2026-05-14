@@ -52,6 +52,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedmetric"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quotientedcorrespondence"
+	"github.com/bagherbal/asha-engine/pkg/bridge/rgfirewall"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcomplex"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcovariant"
@@ -216,6 +217,7 @@ func Run() error {
 		canonicalaction.CanonicalFiniteVariationalActionTheorem(),
 		canonicalboundary.CanonicalFiniteRGBoundarySeedTheorem(),
 		contactembedding.ContactMatterHyperchargeEmbeddingTheorem(),
+		rgfirewall.FiniteRGFlowBoundaryScaleFirewallTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

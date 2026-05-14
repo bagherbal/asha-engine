@@ -300,3 +300,15 @@ sin² = 1/(1+k_Y)=3/8
 from a representation-table-only diagnostic to an embedded finite boundary diagnostic.  It is still not the physical low-energy weak mixing angle.  The boundary scale `M*`, RG flow, finite threshold activation, electromagnetic coupling normalization, and scalar mass unit remain sealed.
 
 The next gate must therefore move from normalized finite boundary data to an RG/scale firewall: derive, or reject, the boundary scale and continuum-active beta/threshold map without inserting observed `alpha`, `thetaW`, `g2`, `gY`, W/Z masses, or Higgs data.
+
+## Gate 103 — Finite RG Flow and Boundary-Scale Selection Firewall
+
+Gate 103 consumes the Gate 102 embedded boundary Hessian `diag(1,1,1,5/3)` and the finite-spectrum beta diagnostic.  It constructs the formal one-loop flow family
+
+```text
+1/g_Y²(μ)=k_Y u + (b1/8π²)L
+1/g_2²(μ)=u     + (b2/8π²)L
+L=ln(M*/μ), u=1/g_*²
+```
+
+with `k_Y=5/3`, `b1=41/10`, `b2=-19/6`, and `b3=-7` under the explicitly stated continuum one-loop assumption.  The gate is a firewall theorem: it proves that the current project has a finite boundary seed and beta diagnostic, but still does not have a selected boundary scale `M*`, absolute boundary coupling `g_*²`, native finite RG theorem, or threshold/decoupling map.  Therefore no physical `alpha`, `thetaW`, `g2`, `gY`, W/Z mass, Higgs vev, or fermion mass may be claimed from the current data.
