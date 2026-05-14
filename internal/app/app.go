@@ -163,6 +163,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsquarticratioverification"
+	"github.com/bagherbal/asha-engine/pkg/bridge/hilbertspacetracecapacity"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hopfgeometricnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hyperchargediracassembly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/innerfluctuationfieldcontent"
@@ -644,6 +645,7 @@ func Run() error {
 		intermediatethresholdjump.IntermediateThresholdDecouplingQuarticJumpTransportAuditTheorem(),
 		higgsquarticratioverification.EmpiricalHiggsQuarticRatioVerificationTheorem(),
 		nativeunifiedcouplingorigin.NativeUnifiedCouplingOriginAbsoluteGaugeCouplingTraceCapacityAuditTheorem(),
+		hilbertspacetracecapacity.HilbertSpaceDimensionTraceCapacityLedgerAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
