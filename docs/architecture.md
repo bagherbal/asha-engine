@@ -37,6 +37,40 @@ Cℓ(1,7) covariant phase space
 
 
 
+
+## Gate 379 — CCM spectral-action direct substitution
+
+Gate 379 replaces the Gate-378 generic Einstein-channel bookkeeping with the direct
+Chamseddine--Connes--Marcolli coefficient ledger for the almost-commutative Standard Model geometry.
+The installed action channel is
+
+```text
+S = ∫_M d⁴x√g / π² {
+  48 f₄Λ⁴ - f₂Λ² c + (f₀/4)d
+  + [(96 f₂Λ² - f₀c)/24] R
+  + f₀a |D_μ φ|² - (f₂Λ²a/2)|φ|² + (f₀e/2)|φ|⁴
+  + gauge kinetic representation-trace terms
+} + ψ̄(D_M⊗1 + γ₅⊗D_F)ψ.
+```
+
+The Einstein-Hilbert read-off is now
+
+```text
+C_R/M_P² = (96 F₂ - f₀ c/M_P²)/(24π²),
+F₂ = f₂Λ²/M_P².
+```
+
+Canonical `C_R/M_P² = 1/2` gives
+
+```text
+F₂_required = π²/8 + (f₀/96)(c/M_P²).
+```
+
+Thus the old ledger value `π/64` is short by `8π` in the leading `c << M_P²` approximation.
+This gate strengthens the product-action bridge, but it does not declare full numerical ToE closure.
+It also reclassifies `1197/4624` as the finite trace ratio `e/a²`; the canonically normalized Higgs
+quartic must be read through the CCM kinetic normalization and field convention.
+
 ## Gate 378 — Complete normalization-factor audit
 
 Gate 378 audits the six finite-to-continuum normalization factors proposed after the product spectral-action

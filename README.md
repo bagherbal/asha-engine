@@ -14,63 +14,63 @@ No observed physical constants are hard-coded in the finite core.
 
 ## Bottom line up front — current final finding
 
-The ASHA Engine has completed the finite internal-factor audit and the first lawful continuum bridge.
-A follow-up coefficient audit corrected the earlier Gate 376 limitation: the product geometry was formally
-assembled first, and Gate 377 then performed the explicit spectral-action coefficient arithmetic.
-
-The central result is not that the finite algebra becomes spacetime, but that the finite spectral triple
-`F` joins an external four-dimensional spin manifold `M` through the almost-commutative product geometry:
+The ASHA Engine now uses the correct almost-commutative bridge: the finite internal geometry `F` is not
+forced to become spacetime. It joins an external four-dimensional spin manifold `M` through the product
+spectral triple
 
 ```text
 Total geometry = M × F
 D_total = D_M ⊗ 1_F + γ5 ⊗ D_F
 ```
 
-From the finite side, the engine reconstructs the Standard Model internal landscape and supplies rigid
-spectral-action boundary data. The current ledger supports the following structural findings:
+Gate 379 supersedes the earlier generic heat-kernel normalization attempt by substituting the ASHA finite
+data directly into the Chamseddine--Connes--Marcolli almost-commutative spectral-action coefficient ledger.
+This is the right bridge formula for the Standard Model finite algebra coupled to gravity.
 
-- the internal algebraic factor is the Standard Model finite algebra
-  `A_F = C ⊕ H ⊕ M₃(C)`;
-- the product spectral action yields the Standard Model plus Einstein-gravity action skeleton;
-- the explicit coefficient audit gives `C_Λ/(f₄Λ⁴)=96/(16π²)≈0.607927`,
-  raw `|C_R|/M_P²≈0.0024868` in the declared heat-kernel convention, and
-  prompt-skeleton `C_R/M_P²=3π/4`, exposing the remaining gravitational normalization seal;
-- the finite boundary ratios include
-  `sin²θ_W(Λ) = 3/8`, `α_branch⁻¹ = 8π`,
-  `λ_H / g_*² = 1197 / 4624`, and
-  `f₂(Λ/M_P)² = π/64`;
-- the native charged finite-Dirac moduli space has dimension `13`, corresponding to
-  the charged fermion masses and CKM mixing parameters;
-- the broader external vacuum ledger is therefore
-  `15 = 13 charged finite-Dirac flavor moduli + θ_QCD + one absolute scale`.
-
-The project’s present scientific boundary is equally important: the 13 charged flavor moduli are not
-predicted by the pure finite geometry. They remain flat directions of `D_F` unless an additional lawful
-selection principle is supplied. Likewise, dark matter relic density, vacuum lifetime, and the observed
-cosmological constant are not yet numerical predictions of the engine; they require continuum inputs such
-as stability/interaction data for the dark sector, RG and threshold matching for vacuum decay, and a
-renormalized vacuum-energy or holographic subtraction principle.
-
-Gate 378 adds the complete normalization-factor audit for the product spectral action. It confirms that
-several suspected factors are real and computable, but also corrects the bookkeeping: the six factors do
-not form one universal product. They belong to separate heat-kernel channels. In particular, the
-Lichnerowicz `R/4` term must be combined with the universal `a₂` curvature term, giving a Dirac
-Einstein-Hilbert magnitude `1/12` under the declared Laplace-type convention, not a standalone `1/4`.
-With the current ledger value `f₂(Λ/M_P)² = π/64`, the canonical Einstein-Hilbert coefficient is still not
-closed: the doubled trace is short by `64π`, and the possible `J`-reduced half trace is short by `128π`.
-Therefore full numerical ToE closure requires a spectral-action moment/Planck-normalization theorem, an
-`f₀` slot theorem, and an absolute gauge representation-trace theorem, not only multiplication of the
-known finite factors.
-
-Therefore, the current status is:
+The decisive correction is the Einstein-Hilbert coefficient. Under the CCM ledger,
 
 ```text
-ASHA supplies the finite internal geometry and several spectral boundary ratios.
-M supplies spacetime and continuum dynamics.
-M × F supplies the lawful SM + gravity action framework.
-Gate 377 performs the first explicit coefficient arithmetic.
-Gate 378 audits the six finite-to-continuum normalization factors and shows which remaining seals are real.
-The 13 flavor moduli and major cosmological observables remain open quantitative targets.
+C_R = (96 f₂Λ² - f₀ c) / (24π²)
+```
+
+where `c = Tr(D_F²)`. In the leading `c << M_P²` approximation, canonical Einstein gravity
+`C_R = M_P²/2` requires
+
+```text
+f₂(Λ/M_P)² = π²/8
+```
+
+not the previous ledger value
+
+```text
+f₂(Λ/M_P)² = π/64
+```
+
+The mismatch is exactly
+
+```text
+(π²/8) / (π/64) = 8π
+```
+
+So the current status is clearer and stronger:
+
+- the product `M × F` bridge is structurally correct;
+- the CCM coefficient ledger is now installed directly;
+- the old `π/64` gravitational cutoff moment is not canonical under the CCM Einstein-Hilbert coefficient;
+- the ASHA Higgs number `1197/4624` is a finite trace ratio `e/a²`, not automatically the canonically normalized Higgs quartic;
+- canonical Higgs normalization introduces explicit `f₀` and, depending on field convention, possible `π²` factors;
+- the 13 charged finite-Dirac flavor moduli remain free coordinates of `D_F`;
+- cosmological observables remain conditional targets, not native predictions.
+
+The current theorem boundary is therefore:
+
+```text
+ASHA supplies the finite internal geometry and finite trace ratios.
+CCM supplies the correct almost-commutative spectral-action coefficient ledger.
+M × F supplies the Standard Model + Einstein-gravity action framework.
+Gate 379 identifies the exact 8π correction required in the gravitational cutoff moment.
+Full numerical ToE closure still requires the f₀ moment theorem, the c/a/e trace scale seals,
+gauge representation-trace normalization, f₄/vacuum subtraction, and RG/matching prescriptions.
 ```
 
 ## Current gates
