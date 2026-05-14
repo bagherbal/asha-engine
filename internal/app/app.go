@@ -20,6 +20,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/matter"
 	"github.com/bagherbal/asha-engine/pkg/matter/action"
 	"github.com/bagherbal/asha-engine/pkg/matter/bfbridge"
+	"github.com/bagherbal/asha-engine/pkg/matter/bfcurvature"
 	"github.com/bagherbal/asha-engine/pkg/matter/charge"
 	"github.com/bagherbal/asha-engine/pkg/matter/electroweak"
 	"github.com/bagherbal/asha-engine/pkg/matter/embedding"
@@ -74,6 +75,7 @@ func Run() error {
 		generationbreak.FiniteGenerationBreakingSearchTheorem(),
 		gencurvature.CurvatureOnGenerationCarrierTheorem(),
 		bfbridge.ActiveGenerationProjectionBridgeTheorem(),
+		bfcurvature.FiniteMaurerCartanCurvatureTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

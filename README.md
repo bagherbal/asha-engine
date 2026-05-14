@@ -253,3 +253,22 @@ B_i F_active^T F_active B_j^T
 ```
 
 The result is a no-go for the current implementation: active curvature exists, but the existing connection gives no nonzero active-to-protected bridge. Therefore the engine refuses to claim CKM/PMNS or generation mixing from active Higgs curvature alone. The next missing theorem is a genuine finite BF/Maurer-Cartan curvature operator or another canonical active-generation projection principle.
+
+
+## v0.31 — Gate 32: Finite BF / Maurer-Cartan curvature
+
+Added `pkg/matter/bfcurvature`.
+
+This gate implements the first genuine finite Maurer-Cartan residual of the Boolean-compressed block connection:
+
+```text
+F_ij = [A_i, A_j] - Π_seed([A_i, A_j])
+```
+
+It then restricts that residual to:
+
+- the protected 3D generation carrier `G`,
+- the active 4D Higgs/contact carrier `H`,
+- the cross bridge `Gᵀ F H`.
+
+The result is a useful no-go: the finite curvature is real on the full Boolean support and active Higgs/contact sector, but it does not yet project into protected generation mixing. Therefore CKM/PMNS and non-diagonal Yukawa textures remain open.
