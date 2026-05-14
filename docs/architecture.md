@@ -5986,3 +5986,11 @@ Gate 407 follows the Gate-406 contact-only classification of `q4` and restarts t
 The selected scalar observables remain pair-degenerate. The mature scalar response and the canonical edge quotient have quadratic minimal polynomials and no generation semantics. Thus the scalar/Higgs lane remains blind to charged flavor moduli at the level of selected native observables.
 
 The full algebraic closure is nevertheless larger: left/right quaternionic actions plus the scalar pair split generate all of `End_R(H_phi)`, giving generic degree-four/nondegenerate capacity. Gate 407 explicitly quarantines this as capacity only, because selecting a concrete anisotropic element would require coefficients or an action functional not yet derived. Consequently no Yukawa coupling is reduced, no CKM/PMNS capacity is derived, and the Gate-372 thirteen-moduli firewall remains preserved. The next architectural task is a variational/coefficient-selector sieve internal to `H_phi`.
+
+### Gate 408 — Hphi variational functional / canonical coefficient selector sieve
+
+Gate 408 follows the Gate-407 capacity/no-selector split. It audits whether native scalar functionals can choose coefficients inside the full `End_R(H_phi)` algebra without empirical Yukawa input or arbitrary source insertion.
+
+The audited functionals do not select a nondegenerate scalar theorem. The scalar potential selects only the radial norm, the spectral-action Hessian selects the known pair-degenerate scalar response, the one-form kinetic trace leaves a compatible minimizer family, and quaternionic invariant trace/norm data is central. A source functional of the form `1/2||A||^2 - <J,A>` would select `A=J`, but `J` is external unless derived by another theorem.
+
+Thus Gate 408 preserves the flavor firewall: the scalar lane has algebraic capacity but no native variational coefficient selector. The architectural meaning is that Yukawa amplitudes/source data must now be treated as a separate seal or sourced from a non-scalar theorem; it cannot be smuggled in through `H_phi` variational freedom.

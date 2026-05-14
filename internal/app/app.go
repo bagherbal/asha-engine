@@ -209,6 +209,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/holographicvacuumentropy"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hopfgeometricnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hphinativescalaralgebra"
+	"github.com/bagherbal/asha-engine/pkg/bridge/hphivariationalselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hyperchargediracassembly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/innerfluctuationedgemeasure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/innerfluctuationfieldcontent"
@@ -816,6 +817,7 @@ func Run() error {
 		contactedgepullback.ContactToEdgeNaturalTransformationPullbackSieveTheorem(),
 		contacteigenoperatorreconstruction.ContactEigenoperatorInternalReconstructionQ4ContactOnlyTheorem(),
 		hphinativescalaralgebra.HphiNativeScalarSelectorAlgebraPairDegeneracyClosureSieveTheorem(),
+		hphivariationalselector.HphiVariationalFunctionalCanonicalCoefficientSelectorSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
