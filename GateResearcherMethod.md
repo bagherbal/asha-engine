@@ -26,3 +26,5 @@
 - External experimental limits belong in a quarantined ledger. Use them for stress-testing sealed phenomenology, never for finite-core derivation.
 - When a boundary scale is near proton-decay danger, first audit mediator/operator support. Do not compute a lifetime unless the engine derives or explicitly seals the relevant `B/L`-violating operator basis.
 - For high-scale beta completions, test one-loop pole/asymptotic-safety behavior before declaring numerical predictions viable. A sub-Planck pole is a failed route unless a new UV completion or matching theorem is supplied.
+- For proton-decay gates, do not use `B-L` as a blanket firewall: the standard `QQQL` and `UUD E` classes preserve `B-L`, so the real question is operator construction and mediator activation.
+- Distinguish current-connection stability from absolute baryon conservation. If quark-lepton current slots exist but lack an action/propagator/coefficient, record an operator-construction obstruction, not an all-future conservation theorem.

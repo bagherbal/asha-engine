@@ -2193,3 +2193,42 @@ Weyl branch SU(2) pole: 3.21767041e18 GeV
 These are sub-Planck obstructions. Gate 207 therefore records `FAILED_ROUTE_UNIVERSAL_COMPLETION_STRESS`: the Gate-206 universal-completion scenario is not viable as a high-scale one-loop bridge under the current assumptions. This failure does not falsify the finite core, the Gate-204 row lattice, or the Gate-206 anomaly compatibility result; it rejects the external universal beta completion as currently formulated.
 
 Next structural obligation: Gate 208 — baryon/lepton violating operator basis audit / proton-decay channel construction obstruction.
+
+## v2.06 — Gate 208: Baryon/lepton violating operator basis audit / proton-decay channel construction obstruction
+
+Gate 208 adds `pkg/bridge/baryonleptonoperatoraudit`.
+
+Gate 207 showed that the sealed boundary scale is dangerous for naive unified-theory proton decay, but that ASHA currently lacks the `X/Y` mediator or dimension-six operator support needed to instantiate such a decay. Gate 208 audits that statement directly inside the finite engine.
+
+The matter-current inventory remains:
+
+```text
+u(4) = central:1 + su(3)c:8 + B-L:1 + leptoquark off-diagonal:6
+```
+
+The six leptoquark slots mean the engine must not overclaim exact baryon conservation. However, those slots remain unactivated matter-current inventory only. They are not contact-gauge bosons, not `X/Y` curvature, and not local operator coefficients.
+
+Gate 208 audits the standard dimension-six operator templates:
+
+```text
+QQQL
+uude / UUD E type conjugate channel
+mixed QQLd-like classes
+```
+
+These templates are SM-gauge-neutral and preserve `B-L`, so `B-L` cannot be used as a fake proton-stability proof. Nevertheless, ASHA constructs none of them from the current connection, scalar-bundle `tau_eta`, or activated `u(4)` current dynamics. No suppression scale or proton lifetime is computed.
+
+The theorem records:
+
+```text
+FAILED_ROUTE_PROTON_DECAY_CHANNEL_CONSTRUCTION
+```
+
+Interpretation:
+
+```text
+Current-connection algebraic proton stability: yes.
+Absolute baryon conservation theorem: not yet.
+```
+
+The next unresolved branch is whether the six `u(4)` leptoquark current slots can be dynamically activated or permanently sealed.

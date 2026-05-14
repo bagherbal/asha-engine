@@ -2875,3 +2875,34 @@ puts the `U(1)` pole below the Planck scale in both sealed branches and the `SU(
 The theorem status is `FAILED_ROUTE_UNIVERSAL_COMPLETION_STRESS`. The failure is local to the universal-completion bridge. It does not remove the Gate-204 rational row-lattice support or the Gate-206 anomaly compatibility theorem.
 
 Next structural obligation: Gate 208 — baryon/lepton violating operator basis audit / proton-decay channel construction obstruction.
+
+### Gate 208 — Baryon/lepton violating operator basis audit / proton-decay channel construction obstruction
+
+Package: `pkg/bridge/baryonleptonoperatoraudit`
+
+Gate 208 is the proton-decay operator firewall required by Gate 207. It asks whether the engine can build any native `B`/`L`-violating local operator basis from its own finite connection, matter-current inventory, or scalar integration functional.
+
+The audited matter-current inventory is the existing Pati-Salam-shaped Fock sector:
+
+```text
+u(4) = central u(1) + su(3)c + B-L + leptoquark off-diagonal
+     = 1 + 8 + 1 + 6
+```
+
+This inventory contains six quark-lepton current slots. That fact is important: it prevents an overstrong claim that baryon number is absolutely protected by all future ASHA dynamics. The gate therefore separates three statements:
+
+1. **Contact-connection statement:** the currently derived contact-preserving gauge connection is only `su(2)+u(1)` and has no `X/Y` or leptoquark curvature.
+2. **Operator-basis statement:** standard dimension-six templates such as `QQQL` and conjugate `UUD E` are not constructed by the finite algebra, scalar `tau_eta`, or a derived current-current action.
+3. **Absolute-conservation statement:** exact all-future baryon conservation is not proven, because the unactivated `u(4)` leptoquark inventory remains open.
+
+The gate explicitly rejects a false shortcut: `B-L` cannot forbid standard proton-decay operators, because the usual dimension-six templates preserve `B-L`. Color triality also does not forbid the `QQQL` color-singlet contraction. Therefore the firewall is not a fake symmetry argument; it is an operator-construction obstruction.
+
+Gate 208 records:
+
+```text
+FAILED_ROUTE_PROTON_DECAY_CHANNEL_CONSTRUCTION
+```
+
+The theorem can be read as a current-connection algebraic proton-stability theorem. It is not yet an absolute baryon-conservation theorem. No proton lifetime or symbolic suppression scale is emitted, because no `B/L`-violating operator coefficient has been derived or sealed.
+
+Next structural obligation: Gate 209 — Pati-Salam leptoquark current dynamics / B-L-preserving proton-decay operator seal audit.

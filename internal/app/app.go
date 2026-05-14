@@ -9,6 +9,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomaly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomalykinetic"
+	"github.com/bagherbal/asha-engine/pkg/bridge/baryonleptonoperatoraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betamatching"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betapermission"
@@ -426,6 +427,7 @@ func Run() error {
 		finitecarrieractivation.FiniteCarrierActivationContactToRowSemanticsObstructionAuditTheorem(),
 		carrieractivationseal.CarrierActivationSealLocalFieldSemanticBifurcationAuditTheorem(),
 		sealedthresholdstresstest.SealedThresholdPredictionStressTestTheorem(),
+		baryonleptonoperatoraudit.BaryonLeptonViolatingOperatorBasisAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
