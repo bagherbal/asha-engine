@@ -134,6 +134,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcontactselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcovariant"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarfockspectralpotential"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalarorientationsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarsu2"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarvacuum"
@@ -390,6 +391,7 @@ func Run() error {
 		resolventvacuum.ResolventVacuumSpontaneousHiggsPairingTheorem(),
 		branchprojector.BranchwiseQuadraticIdempotentScalarProjectorTheorem(),
 		scalarbundlemap.ScalarBundleMapHphiProjectorIdentificationAuditTheorem(),
+		scalarorientationsource.EtaOddScalarOrientationSourceMatterPullbackSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
