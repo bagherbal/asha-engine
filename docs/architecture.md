@@ -1180,3 +1180,7 @@ This operator is real finite contact data, but it is not a quotient-side T3R ope
 Therefore the canonical contact spectral diagonal remains diagnostic only. Contact T3R, chirality, B-L, SU(2)L, hypercharge rows, threshold beta rows, physical electroweak constants, and masses remain sealed.
 
 Next: Gate 140 — contact T3R sign-split naturality / spectral-cut obstruction theorem.
+
+### Gate 140 — Contact T3R sign-split naturality / spectral-cut obstruction
+
+Gate 140 tests whether the seven-row contact spectrum can select a quotient-side `T3R` sign operator by spectral cuts. It finds a real finite diagnostic: the contact spectrum has a unique largest gap, producing a canonical `3|4` spectral partition. The gate still refuses to promote this into contact `T3R`, because the `+/-` orientation is not selected, the split is spectral rather than representation-theoretic, and no Fock-contact intertwiner, chirality row, B-L pullback, SU(2)L action, hypercharge row, local field map, mass activation, or decoupling rule is derived. Contact threshold beta rows remain forbidden.
