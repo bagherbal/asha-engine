@@ -3791,3 +3791,15 @@ cutoff/subtraction scheme
 ```
 
 Thus Gate 233 does not solve the finite spectral action. It creates the legal matrix arena in which the next finite-core theorem must operate.
+
+## Gate 234 — Real Structure and Order-One Calculus preflight
+
+Gate 234 adds `pkg/bridge/realstructureorderone` after the Gate-233 finite Dirac initialization. Architecturally, this gate applies the first NCG-style real-structure sieve to the 16-state Fock matrix arena.
+
+The native Fock space supports a finite occupation-complement permutation `J_c`, and this candidate satisfies `J_c²=+1` and commutes with the occupation-parity grading. If one imposes `JD=DJ`, the `8×8` off-diagonal block is constrained from `64` free real entries to `32` complement-pair orbits.
+
+This is useful, but not enough. The gate explicitly refuses to identify this bookkeeping candidate with physical charge conjugation because the antiunitary component, KO-dimension theorem, physical chirality, and particle/antiparticle doubled carrier are not derived.
+
+The order-one condition remains unavailable as a physical theorem because the engine still lacks a faithful finite-algebra representation on the total Hilbert space. Provisional diagonal tests are not promoted: the full diagonal occupation algebra is too strong and not the NCG algebra, while `B-L` bookkeeping is too weak to derive the Standard Model block structure.
+
+The B-sector gap remains a dimensionless scalar datum. Gate 234 does not promote it to a Majorana mass, and it does not isolate a right-handed-neutrino slot. A broader Hilbert-space / real-structure theorem is required before the finite spectral action can become physical.

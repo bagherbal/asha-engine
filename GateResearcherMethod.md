@@ -202,3 +202,12 @@
 - Computing `Tr(D²)` and `Tr(D⁴)` is not enough. Spectral-action physics also requires gauge projection, heat-kernel/cutoff data, and a subtraction scheme.
 - Never insert `v`, `M_B`, `M_*`, or observed fermion masses into a finite `D_F` initialization gate.
 - If the legal matrix family exists but the canonical selector is missing, record conditional support for the search space and a failed route for the physical operator.
+
+## Gate 234 method note — real-structure candidates are sieves, not spectral triples
+
+- A candidate `J` can be valuable even if it is not yet physical. Record which matrix parameters it removes, but do not call it charge conjugation without antiunitary structure and particle/antiparticle semantics.
+- Compute KO signs as preflight data only unless the project has fixed a KO convention, physical chirality, and the `JD=±DJ` condition for the actual selected `D_F`.
+- When applying order-one logic, first ask whether the finite algebra representation is faithful and non-vacuous. A diagonal bookkeeping algebra may be useful diagnostically but must not be mistaken for the spectral triple algebra.
+- Distinguish three reductions: grading oddness, `J`-reality, and order-one calculus. Passing the first two does not imply the third.
+- Do not force a B-gap Majorana term into the neutral state unless a doubled Hilbert carrier, right-handed-neutrino identification, and Majorana bilinear theorem exist.
+- If a gate halves the search space but still leaves many parameters, report it as conditional finite support plus a failed route for physical operator selection.

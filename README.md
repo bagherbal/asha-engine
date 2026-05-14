@@ -3290,3 +3290,51 @@ BROADER_HILBERT_OR_REAL_STRUCTURE_REQUIRED
 ```
 
 Gate 233 establishes the correct finite matrix search space, but a broader Hilbert-space / real-structure / order-one-calculus theorem is still required before the spectral action can become physical.
+
+## v2.32 — Gate 234: Real Structure (`J`) and Order-One Calculus audit
+
+Gate 234 introduces `pkg/bridge/realstructureorderone`. It applies the first real spectral-geometry sieve to the Gate-233 finite Dirac matrix arena.
+
+The gate constructs an occupation-complement candidate real structure on the native four-mode Fock basis:
+
+```text
+J_c |n0 n1 n2 n3⟩ = |1-n0, 1-n1, 1-n2, 1-n3⟩.
+```
+
+This candidate satisfies:
+
+```text
+J_c² = +1
+J_c γ = γ J_c
+```
+
+If `JD_F = D_FJ` is imposed on the Gate-233 block `D_F(M) = [[0,M],[M^T,0]]`, the condition
+
+```text
+M[e,o] = M[J(e),J(o)]
+```
+
+reduces the free real entries from `64` to `32`. This is a genuine finite preflight constraint.
+
+However, Gate 234 does not promote this into a physical spectral triple. The antiunitary part of `J`, physical charge conjugation, KO-dimension convention, faithful finite algebra representation, and non-vacuous order-one calculus are still missing. The order-one condition
+
+```text
+[[D_F,a], Jb*J^{-1}] = 0
+```
+
+cannot yet derive color/weak subblocks or a physical mass matrix.
+
+The B-sector gap is also audited. Although `B_gap = 0.102464921191` is available as a finite scalar diagnostic, the current 16-state Fock carrier does not derive a particle/antiparticle doubled Majorana bilinear space. Therefore the engine does not force the B-gap into a right-handed-neutrino slot.
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_OCCUPATION_COMPLEMENT_J_PREFLIGHT
+CONDITIONAL_SUPPORT_CANDIDATE_KO0_SIGNS_PREORDERONE
+CONDITIONAL_SUPPORT_J_REALITY_REDUCES_DF_64_TO_32
+FAILED_ROUTE_FULL_ORDER_ONE_CALCULUS_DERIVATION
+FAILED_ROUTE_CANONICAL_BGAP_MAJORANA_SIEVE
+FAILED_ROUTE_FINITE_SPECTRAL_TRIPLE_AXIOMS
+```
+
+Gate 234 is progress in the finite-core direction: it halves the legal `D_F` search space, but it still does not derive the physical finite Dirac operator.

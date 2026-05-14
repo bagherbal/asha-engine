@@ -153,6 +153,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticscalaroperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticspectralfunctional"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quotientedcorrespondence"
+	"github.com/bagherbal/asha-engine/pkg/bridge/realstructureorderone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/representationrowlattice"
 	"github.com/bagherbal/asha-engine/pkg/bridge/resolventvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgfirewall"
@@ -478,6 +479,7 @@ func Run() error {
 		intermediatebreakingseesaw.IntermediateBreakingSealNeutrinoSeesawPreflightAuditTheorem(),
 		neutrinotextureaudit.NeutrinoFlavorTextureAuditSealTheorem(),
 		finitediracinitialization.FiniteDiracOperatorInitializationFockMatrixAuditTheorem(),
+		realstructureorderone.RealStructureKOOrderOneCalculusAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
