@@ -107,6 +107,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeaction"
+	"github.com/bagherbal/asha-engine/pkg/bridge/gaugecouplingboundaryseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeeating"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugehessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugekineticdiag"
@@ -408,6 +409,7 @@ func Run() error {
 		yukawaamplitudeseal.SpontaneousYukawaAmplitudeSealEmpiricalTextureAxiomFirewallTheorem(),
 		electroweakvevseal.ElectroweakVEVScaleSealMassThresholdActivationFirewallTheorem(),
 		conditionalthresholdbeta.ConditionalThresholdBetaRowActivationDecouplingSchemeFirewallTheorem(),
+		gaugecouplingboundaryseal.GaugeCouplingBoundarySealSymbolicRGEvaluationFirewallTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
