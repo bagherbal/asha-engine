@@ -266,6 +266,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactioncapstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactioncouplingnormalization"
+	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactionvariationalgradient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralmomentledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spin8trialityfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spinctwistedchirality"
@@ -702,6 +703,7 @@ func Run() error {
 		gravityspectralactionf2.GravitationalSpectralActionF2CutoffMomentSieveTheorem(),
 		spectralmomentledger.CompleteSpectralMomentLedgerCosmologicalConstantTripleHierarchyAuditTheorem(),
 		vacuumparametercensus.VacuumParameterCensusMinimalInputTheoremAuditTheorem(),
+		spectralactionvariationalgradient.SpectralActionVariationalGradientPhaseIIIVacuumInitializationSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
