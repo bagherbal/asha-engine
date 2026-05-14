@@ -5925,3 +5925,10 @@ Gate 399 — Scalar Bundle Identity Selector or Obstruction
 ```
 
 The next theorem must either derive a canonical `H_phi` endomorphism/complex-structure/one-form invariant that identifies the quartic primary, or seal the quartic block as contact-spectral-only for scalar/Yukawa purposes.
+
+
+## Gate 399 — Quaternionic Scalar Bundle Identity Sieve
+
+Gate 399 audits whether the weak quaternionic `H` action on the four-real-dimensional scalar carrier `H_phi` supplies the missing basis-free identity selector requested by Gate 398. The gate confirms the positive scalar-doublet fact: `H_phi` supports local quaternionic/complex weak structure inherited from the Morita `H` lane. It then computes the invariant endomorphism fingerprints of the quaternionic generators. Every native single `H` endomorphism has quadratic minimal polynomial and characteristic polynomial equal to a square of a quadratic, for example `(x^2 + 1)^2`; this is disjoint from the irreducible contact quartic primary `q4 = 3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271`. Therefore the quaternionic route preserves the Higgs weak-doublet interpretation but does not identify the contact quartic block with `H_phi`, does not act on one-form edges as `q4`, and does not reduce Yukawa/flavor moduli.
+
+Status: `FAILED_ROUTE_QUATERNIONIC_ACTION_POLYNOMIAL_DISJOINT_FROM_Q4`, `FAILED_ROUTE_H_ACTION_MINIMAL_POLYNOMIAL_QUADRATIC_NOT_QUARTIC`, `FAILED_ROUTE_NO_NATIVE_Q4_SCALAR_ENDOMORPHISM`, `FIREWALL_PRESERVED_13_MODULI`.

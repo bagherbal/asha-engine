@@ -262,6 +262,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticexternalselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticscalaroperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticspectralfunctional"
+	"github.com/bagherbal/asha-engine/pkg/bridge/quaternionicscalarbundleidentity"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quotientedcorrespondence"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rawfinitetracerecomputation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/realstructurekofactorization"
@@ -798,6 +799,7 @@ func Run() error {
 		threeobjectsource.EndogenousThreeObjectSourceBeyondSpinorChiralityTheorem(),
 		contactsingletonflavorfunctor.ContactSingletonFiniteDiracFlavorFunctorSieveTheorem(),
 		contactquarticscalaryukawabundle.ContactQuarticPrimaryScalarYukawaBundleFunctorAuditTheorem(),
+		quaternionicscalarbundleidentity.QuaternionicScalarBundleIdentitySieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
