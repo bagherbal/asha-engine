@@ -1404,3 +1404,15 @@ Gate 156 consumes the exact four-row quartic contact block from Gates 149–155 
 Result: the gate is `VARIATIONAL` and passing, but it is a firewall theorem. It audits five degree-matching interpretations — real scalar quartet, complex scalar doublet, Weyl/Dirac spinor candidate, ghost/regulator quartet, and auxiliary/constrained quartet — and rejects all as physical threshold fields because none supplies local spacetime support, section variables, Lorentz representation, kinetic/pole-residue theorem, spin-statistics rule, gauge/hypercharge row, mass activation, or decoupling.
 
 The exact quartic block remains an exact finite spectral diagnostic. It does not yet contribute threshold beta rows or physical constants.
+
+Next gate: Gate 157 — quartic block constraint-or-propagator dichotomy / BRST-locality firewall theorem.
+
+### Gate 157 — Quartic block constraint-or-propagator dichotomy / BRST-locality firewall theorem
+
+Gate 157 makes the quartic-block permission rule explicit. After Gate 156, the exact four-row quartic contact block can enter threshold beta matching only through one of two complete routes: a propagating local-field route or a constraint/BRST cancellation route.
+
+The propagator route remains incomplete: no base-space support, local sections, Lorentz representation, kinetic denominator, pole/residue theorem, gauge/hypercharge row, mass activation, or decoupling rule is derived.
+
+The constraint route also remains incomplete: no constraint equations, ghost grading, nilpotent BRST operator, pairing, exactness/cohomology proof, supertrace cancellation, or zero-beta ledger is derived.
+
+Therefore the dichotomy is unresolved. The quartic block remains exact finite spectral data, not a physical threshold field and not a proven nonphysical cancellation block. Contact beta rows, threshold corrections, physical electroweak constants, masses, `M*`, and `g_*` remain sealed.

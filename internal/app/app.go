@@ -53,6 +53,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactorientation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactpropagator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticcompression"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticdichotomy"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticgalois"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticlocalfield"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticmultiplet"
@@ -324,6 +325,7 @@ func Run() error {
 		contactquarticcompression.QuarticOrbitSemanticCompressionFourRowBlockBetaFirewallTheorem(),
 		contactquarticmultiplet.QuarticBlockMultipletRepresentationBetaIndexObstructionTheorem(),
 		contactquarticlocalfield.QuarticBlockLocalFieldSpinStatisticsObstructionTheorem(),
+		contactquarticdichotomy.QuarticBlockConstraintOrPropagatorDichotomyFirewallTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
