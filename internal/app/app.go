@@ -19,6 +19,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/canonicalboundary"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
+	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactembedding"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
@@ -220,6 +221,7 @@ func Run() error {
 		contactembedding.ContactMatterHyperchargeEmbeddingTheorem(),
 		rgfirewall.FiniteRGFlowBoundaryScaleFirewallTheorem(),
 		boundaryselector.BoundaryScaleOperatorAbsoluteCouplingSearchTheorem(),
+		coarsegrain.NativeFiniteCoarseGrainingThresholdActivationSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

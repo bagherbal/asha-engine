@@ -336,3 +336,38 @@ M*, μ, threshold masses -> ρ(...) leaves all dimensionless finite data unchang
 ```
 
 Therefore Gate 104 does not claim `alpha`, physical `thetaW`, couplings, W/Z masses, Higgs scale, fermion masses, or a GUT/boundary scale.  The next true gate must construct a native finite coarse-graining / threshold activation operator, or a genuine dimensional anchor, before physical running can begin.
+
+## Gate 105 — Native Finite Coarse-Graining / Threshold Activation Operator Search
+
+Gate 105 adds `pkg/bridge/coarsegrain`.  Gate 104 proved that the current finite data do not select the three missing physical-flow objects:
+
+```text
+u = 1/g_*²,
+L = ln(M*/μ),
+Δb_i(L).
+```
+
+Gate 105 asks the next stricter question: is there already a native finite RG/coarse-graining operator hidden in the available structure?  The gate inventories every plausible candidate currently present in the engine:
+
+```text
+P_active                         active-sector projection
+q: carrier -> carrier/O(3)       quotient/orientation map
+T_ε(B)                           B-sector spectral truncation family
+spec(P_contact)                  contact partial-overlap ordering
+exp(-8π²I_BG)                    topological action weight
+b=(41/10,-19/6,-7)               continuum beta diagnostic
+A(mode)                          threshold activation classifier
+```
+
+A true native RG operator must satisfy more than finite existence.  It must supply a composable semigroup or shell law, a canonical scale/log parameter, a fixed point or stationary boundary condition, a threshold crossing predicate, a decoupling/matching contribution `Δb_i`, and a rule for the absolute gauge-action prefactor.
+
+Gate 105 proves that the current candidates do not satisfy those conditions.  Projection and quotient maps are static/idempotent.  Spectral orderings are useful but need a selected cutoff.  Contact-overlap modes remain threshold-open.  The topological action weight is dimensionless.  The beta vector is a continuum diagnostic, not a native finite flow.  The threshold classifier records the current epistemic state but does not activate or decouple modes.
+
+The gate therefore preserves the Gate 104 residual nullity:
+
+```text
+nullity before Gate 105 = 3
+nullity after Gate 105  = 3
+```
+
+This is progress because the obstruction is now sharper.  The next true gate must attempt an actual finite shell functor / semigroup construction.  Until that exists, threshold-corrected beta coefficients, `alpha`, physical `thetaW`, W/Z/Higgs masses, and fermion masses remain sealed.
