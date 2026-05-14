@@ -148,7 +148,9 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/exchangeselection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/exponentialtauetatexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/faithfuloppositeactionrep"
+	"github.com/bagherbal/asha-engine/pkg/bridge/familyboundarysourceaxiom"
 	"github.com/bagherbal/asha-engine/pkg/bridge/familybundleaxiomledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/familycoefficientselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fermionicfamilybundleextension"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fermionicgenerationorigin"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fermionicroottracesieve"
@@ -252,6 +254,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutraleigenspacekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutrinotextureaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncartanflavorvacuum"
+	"github.com/bagherbal/asha-engine/pkg/bridge/noncommutingmodularpair"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncommutingtexturepair"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonperturbativeportalcoupling"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nontracialmodularstate"
@@ -826,6 +829,9 @@ func Run() error {
 		fermionicfamilybundleextension.FermionicRepresentationExtensionNontrivialFamilyBundleSieveTheorem(),
 		familybundleaxiomledger.AxiomCandidateLedgerNontrivialFamilyBundleExtensionsTheorem(),
 		minimalmodularfamilyhamiltonian.MinimalModularFamilyHamiltonianAxiomConsistencySieveTheorem(),
+		noncommutingmodularpair.SecondFamilyOperatorNoncommutingModularPairAxiomSieveTheorem(),
+		familycoefficientselector.FamilyCoefficientSelectorConstrainedConnectionCurvatureSieveTheorem(),
+		familyboundarysourceaxiom.FamilyBoundaryConditionSectorSourceAxiomMinimalitySieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

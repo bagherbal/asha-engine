@@ -6396,3 +6396,23 @@ The ledger ranks the modular family Hamiltonian as the lowest-cost empirical-ind
 Gate 412 tests the lowest-cost Gate-411 extension candidate as an explicit axiom, not as a native derivation. The package `pkg/bridge/minimalmodularfamilyhamiltonian` formalizes a centered family Hamiltonian `K_gen = diag(-1,0,1)`, verifies that it can activate a nontracial KMS family state, and audits compatibility with the derived gauge/family-broadcast structure.
 
 Result: the axiom is consistent and hierarchy-capable, but diagonal-only. A single `K_gen` supplies no native noncommuting texture pair, no CKM/PMNS capacity, and no reduction of the Gate-372 charged flavor firewall. The firewall remains `dim M_charged = 13`.
+
+### Gate 413 — Second Family Operator / Noncommuting Modular Pair Axiom Sieve
+
+Gate 413 continues after Gate 412's diagonal-only modular family Hamiltonian boundary. The package `pkg/bridge/noncommutingmodularpair` tests an explicit cyclic family-shift axiom complementary to `K_gen = diag(-1,0,1)`. The gate verifies that the real family shift and its Hermitian observable do not commute with `K_gen`, while the complex Weyl clock/shift fingerprint supplies a clean `Z_3` algebraic structure.
+
+The result is conditional rather than native: the shift acts only on the family fiber and is compatible with the already-derived gauge, charge, chirality, and first-order broadcast structure, but ASHA does not derive the shift operator. The pair activates CKM/PMNS-capable texture capacity, yet roots of unity do not fix physical mixing angles and the sector coefficients remain free. Therefore the 13 charged flavor moduli firewall remains preserved until a coefficient-selector theorem or axiom is supplied.
+
+### Gate 414 — Family Coefficient Selector / Constrained Connection Curvature Sieve
+
+Gate 414 continues after Gate 413's conditional noncommuting family-pair axiom. The package `pkg/bridge/familycoefficientselector` audits whether trace norms, spectral-action class functionals, constrained family-connection curvature, or sector source functionals can select the coefficients of the `K_gen`/shift texture algebra without empirical Yukawa input.
+
+The gate confirms that the family pair has mixing capacity, but no native coefficient selector. Trace and spectral functionals are too invariant, curvature minimization selects flat commuting connections, and nonzero CKM-capable curvature requires an external sector source or boundary condition. Therefore the 13 charged flavor moduli firewall remains preserved until a source/boundary axiom is explicitly added and quarantined.
+
+## Gate 415 — Family Boundary Condition / Sector Source Axiom Minimality Sieve
+
+Gate 415 adds `pkg/bridge/familyboundarysourceaxiom` after Gate 414 proved that trace, curvature, and spectral-action class functionals do not select the coefficients of the conditional `K_gen`/shift family texture algebra. This gate does not attempt to promote flavor data as native. It compiles a minimal boundary/source axiom ledger and ranks possible extra assumptions by mathematical cost, CKM/PMNS capacity, and empirical independence.
+
+The audit finds that a universal family source is the lowest-cost source, but it is flavor-blind and cannot generate CKM/PMNS. The lowest-cost CKM-capable empirical-independent candidate is a charge-sector source boundary assigning coefficient rays to the up, down, charged-lepton, and neutrino sectors. This candidate is gauge-compatible and does not import observed Yukawa matrices, but it is still a new source/boundary axiom and does not fix the numerical coefficient values or physical mixing angles. Z3/Weyl phase sources provide roots-of-unity structure but underdetermine magnitudes and angles. Flat family holonomy and modular/KMS sources also require new boundary data. A full observed Yukawa source is explicitly rejected as curve-fitting.
+
+Gate 415 therefore documents the least-cost non-surrender extension route while preserving the native ASHA firewall: no boundary condition is derived from current ASHA data, no CKM/PMNS angles are predicted, and the charged flavor moduli remain `dim M_charged = 13`. The next valid theorem is Gate 416: formalize the minimal sector-source axiom and compute its exact parameter count under the finite spectral-triple compatibility constraints.

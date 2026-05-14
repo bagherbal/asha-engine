@@ -6029,3 +6029,31 @@ This gate documents the epistemological boundary: current ASHA derives the gauge
 After Gate 411 ranked the modular family Hamiltonian as the least-cost empirical-independent extension candidate, Gate 412 treats it explicitly as an axiom. It checks a minimal centered three-level operator on the family fiber, `K_gen = diag(-1,0,1)`, and the induced nontracial KMS state `rho = exp(-beta K_gen)/Z`.
 
 The axiom is compatible with the already-derived Standard Model gauge action when it acts only on the family fiber, and it gives conditional hierarchy capacity. However, it is not native ASHA data and it is diagonal-only: all functions of `K_gen` commute. Therefore it cannot generate CKM/PMNS mixing or reduce the 13 charged flavor moduli without an additional noncommuting family operator or connection axiom.
+
+### Gate 413 — Second Family Operator / Noncommuting Modular Pair Axiom Sieve
+
+Gate 413 audits the next least-cost family-bundle extension after the minimal modular Hamiltonian. It adds a cyclic shift operator on the three-dimensional family fiber as an explicit, quarantined axiom and tests the Weyl clock/shift structure against the finite spectral-triple constraints.
+
+The gate confirms:
+
+```text
+K_gen = diag(-1,0,1)
+S_gen^3 = I
+[K_gen, S_gen] != 0
+```
+
+This is enough to activate conditional CKM/PMNS-capable noncommuting texture algebra, because `K_gen` and a Hermitian shift observable generate full three-family matrix capacity. However, the shift is not native ASHA data, and the coefficients controlling up/down/lepton sector textures are not fixed by the `Z_3` roots of unity. Gate 413 therefore preserves the native flavor firewall while identifying the next precise missing object: a family coefficient selector or constrained family-connection curvature rule.
+
+### Gate 414 — Family Coefficient Selector / Constrained Connection Curvature Sieve
+
+Gate 414 audits the missing object identified by Gate 413: a coefficient selector for the conditional noncommuting family texture pair. It formalizes the `K_gen`/shift coefficient arena and tests trace, curvature, spectral-action, and sector-source functionals.
+
+The result is a boundary theorem. Native invariant functionals do not fix sector coefficients or CKM/PMNS angles. Curvature minimization prefers flat/commuting family connections, while nonzero mixing requires source or boundary data not present in current ASHA. Gate 414 therefore preserves `dim M_charged = 13` and points to a future minimal source/boundary axiom ledger.
+
+### Gate 415 — Family Boundary Condition / Sector Source Axiom Minimality Sieve
+
+Gate 415 follows the Gate-414 result that native trace/curvature functionals do not select the coefficients of the conditional `K_gen`/shift family texture pair. It shifts from derivation to explicit axiom accounting: what is the least additional source or boundary condition required to select sector coefficient rays without inserting observed Yukawa matrices?
+
+The ledger ranks candidate extensions. A universal family source is mathematically cheapest but remains flavor-blind. A charge-sector source boundary is the least-cost CKM/PMNS-capable empirical-independent axiom: it can assign different coefficient rays to up/down/lepton/neutrino sectors while preserving gauge compatibility. However, its coefficient values remain new boundary data. Z3 phase rules, flat U(3) family holonomy, and modular KMS sector sources all have capacity but underdetermine physical angles. Direct observed Yukawa matrices are rejected as curve-fitting.
+
+Thus Gate 415 keeps the native charged-flavor firewall intact: no current ASHA theorem derives the family boundary condition, and `dim M_charged = 13` remains the honest native moduli count. The next route is not another native search but a parameter-counting consistency sieve for the minimal sector-source axiom itself.
