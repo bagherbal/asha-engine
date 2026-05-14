@@ -316,3 +316,13 @@
 - Separate three claims: abstract triality exists, explicit triality matrices on `S_C` are derived, and a scalar trace has an `8_v` representative. The first does not imply the other two.
 - Preserve raw texture capacity diagnostics such as `diag(2,-2,1)` and nonzero commutators, but do not promote them to Yukawa matrices without a lawful scalar-to-spinor pullback.
 - Never use triality as a universal type-cast from scalar-bundle ledgers to spinor endomorphisms. The bridge must specify carrier, basis, normalization, and spectral-triple permission.
+
+## Gate 248 method note — representation-domain audits
+
+When a later gate proposes a functor such as Spin(8) triality, first verify that the source object actually lies in the functor domain. For Gate 248, the correct sequence was:
+
+- retrieve the native target representation (`8_v`) before constructing anything;
+- inherit the exact source labels of `tau_eta` from earlier scalar-bundle audits;
+- distinguish dimensional embeddability from a canonical representation map;
+- reject basis assignments like `Q/Z/T3Y -> Gamma_i` unless a native map is derived;
+- keep the downstream texture/CKM/PMNS claims blocked until the representative exists.

@@ -4278,3 +4278,44 @@ CKM/PMNS derived: no
 ```
 
 The next frontier is deriving a representative of `tau_eta` in the actual domain of Spin(8) triality, rather than treating abstract triality as a universal converter.
+
+## Gate 248 — 8_v vector representative and scalar-to-vector bundle map audit
+
+Gate 248 adds `pkg/bridge/vectorrepresentative8v`.
+
+It answers the domain problem isolated in Gate 247. Spin(8) triality rotates `8_v`, `8_s`, and `8_c`, but `tau_eta=(2,-2,1)` is not currently an element of `8_v`. Gate 248 therefore audits whether the neutral scalar trace bundle `H_Phi` can be canonically represented as a subspace of the native vector carrier.
+
+The engine confirms the target carrier:
+
+```text
+8_v native to Cl(1,7) / Spin(8)
+8_v basis: Gamma_0 ... Gamma_7
+8_v ≅ R ⊕ R^7
+```
+
+It also inherits the stable scalar trace origin:
+
+```text
+tau_eta(Q^T Q)        =  2
+tau_eta(Z^T Z)        = -2
+tau_eta(T3L^T Y_phi)  =  1
+```
+
+This gives a three-slot capacity that is dimensionally embeddable in `8_v`, but it does not derive a vector representative. The engine rejects:
+
+```text
+v_tau ?= 2 Gamma_a - 2 Gamma_b + Gamma_c
+```
+
+unless a future theorem derives the scalar-to-vector map and the invariant 3-plane. Consequently, the scalar-to-spinor Spin(8) triality functor remains blocked.
+
+Architectural status:
+
+```text
+Cl(1,7) vector carrier: known
+H_Phi scalar trace origin: known
+H_Phi -> 8_v map: missing
+v_tau representative: missing
+Spin(8) pullback to spinor flavor carrier: missing
+Yukawa/CKM/PMNS derivation: missing
+```

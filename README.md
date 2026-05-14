@@ -3943,3 +3943,56 @@ YUKAWA_AMPLITUDE_SEAL_REMAINS_BINDING
 ```
 
 No Yukawa matrices, CKM/PMNS matrices, observed fermion masses, Connes algebra, or finite flavor theorem are derived.
+
+## v2.46 — Gate 248: 8_v vector representative / scalar-to-vector bundle map audit
+
+Gate 248 adds `pkg/bridge/vectorrepresentative8v` after Gate 247 proved that Spin(8) triality is the correct representation-theoretic arena but cannot act on `tau_eta=(2,-2,1)` while it remains a scalar trace ledger.
+
+The gate retrieves the native vector carrier:
+
+```text
+8_v = Spin(8) vector representation from the Cl(1,7) vector carrier
+8_v ≅ R ⊕ R^7
+```
+
+and confirms that the neutral scalar trace triple is dimensionally embeddable in `8_v`. The trace origin is inherited as:
+
+```text
+tau_eta(Q^T Q)        =  2
+tau_eta(Z^T Z)        = -2
+tau_eta(T3L^T Y_phi)  =  1
+```
+
+However, Gate 248 blocks the tempting assignment:
+
+```text
+(Q^TQ, Z^TZ, T3L^T Y_phi) ?-> (Gamma_1, Gamma_2, Gamma_3)
+```
+
+because no basis-independent `H_Phi -> 8_v` map, invariant scalar 3-plane in `8_v`, or Q/Z/T3Y-to-Gamma coordinate theorem is derived.
+
+Gate 248 status:
+
+```text
+CONDITIONAL_SUPPORT_8V_BASIS_RETRIEVED_PREFLIGHT
+CONDITIONAL_SUPPORT_NEUTRAL_SCALAR_TRACE_ORIGIN_INHERITED
+CONDITIONAL_SUPPORT_THREE_SLOT_VECTOR_CAPACITY_PREFLIGHT
+FAILED_ROUTE_SCALAR_TO_8V_BUNDLE_MAP_DERIVATION
+FAILED_ROUTE_V_TAU_VECTOR_REPRESENTATIVE_DERIVATION
+FAILED_ROUTE_TRIALITY_PREFLIGHT_WITHOUT_8V_VECTOR
+FAILED_ROUTE_YUKAWA_TEXTURE_DERIVATION
+YUKAWA_AMPLITUDE_SEAL_REMAINS_BINDING
+```
+
+The theorem distinction is now:
+
+```text
+8_v carrier known: yes
+scalar trace origin known: yes
+dimensional embeddability: yes
+vector representative v_tau: not derived
+triality pullback: still blocked
+Yukawa texture: not derived
+```
+
+The next frontier is deriving a lawful scalar-to-vector representation map, not invoking triality before `tau_eta` enters the triality domain.

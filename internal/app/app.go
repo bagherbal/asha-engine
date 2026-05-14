@@ -211,6 +211,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1source"
 	"github.com/bagherbal/asha-engine/pkg/bridge/universalbetasource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/universaltracedeformation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/vectorrepresentative8v"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawaamplitudeseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawaamplitudesource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawashapeconstraint"
@@ -506,6 +507,7 @@ func Run() error {
 		liecarrierprojection.LieAlgebraIsomorphismScalarToSpatialCarrierProjectionAuditTheorem(),
 		scalartrialitytexture.ScalarBundleToTrialityPullbackYukawaGenerationTextureAuditTheorem(),
 		spin8trialityfunctor.Spin8TrialityAutomorphismScalarToSpinorFunctorAuditTheorem(),
+		vectorrepresentative8v.VectorRepresentative8VScalarToVectorBundleMapAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
