@@ -143,3 +143,7 @@ This gate does not derive fermion masses. It turns `U-07-YUKAWA` into a precise 
 ## Gate 20 — Scalar Hypercharge / T3 Bridge Search
 
 The engine now extracts the finite part genuinely supported by the active Higgs/contact sector: a 2+2 real scalar doublet with a canonical trace-zero scalar charge `T_Φ = diag(+1/2,+1/2,-1/2,-1/2)`. It also proves the harder truth: this scalar-side charge is not yet full Standard Model hypercharge. The matter-side `T3_R` and physical chirality operator remain open bridge theorems.
+
+## v0.20 — Gate 21: Matter-side T3_R / chirality search
+
+Adds `pkg/matter/t3r`, which searches for the matter-side operator missing after the scalar hypercharge bridge. The gate tests the canonical temporal occupation polarization `T0 = 1/2 - N0`, verifies that it is compatible with `B-L`, rejects the vectorlike version as physical chirality, and shows that chiral restrictions of `T0` unlock gauge-compatible grading-flipping channels. The result remains bridge-layer: the even/odd physical orientation is still open, and no Yukawa texture or mass spectrum is claimed.
