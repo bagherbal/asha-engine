@@ -9,6 +9,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomaly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomalykinetic"
+	"github.com/bagherbal/asha-engine/pkg/bridge/axionphenomenologyseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/baryonleptonoperatoraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betamatching"
@@ -462,6 +463,7 @@ func Run() error {
 		coloredoctetportal.ColoredOctetPureSMPortalSearchSpectrumFalsificationAuditTheorem(),
 		flavoralignmentdmabsence.FlavorAlignmentSafetyDarkMatterAbsenceTheorem(),
 		finiteanchordm.FiniteAnchorDarkMatterViabilityAuditTheorem(),
+		axionphenomenologyseal.AxionPhenomenologySealBGapMisalignmentScaleAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

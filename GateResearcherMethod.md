@@ -142,3 +142,12 @@
 - For a contact-mode dark-sector claim, require gauge-singlet semantics, a stability symmetry, a dark action, and mass/production laws; non-promotion to SM carriers is not enough.
 - Near loop-factor numerical values should be logged as diagnostics only. Never insert a coefficient to turn a finite scalar into a matching, mass, or relic-density fit.
 - Use the observed dark-matter abundance as a target for future validation, not as an input for deriving finite scales.
+
+## Gate 226 method note — sealed cosmology is not native cosmology
+
+- After a finite-anchor dark-matter route fails, a phenomenological seal may be used to ask scale questions, but only after explicitly preserving the failed native theorem.
+- For ALP audits, keep four ledgers separate: shift symmetry, anomaly coupling, decay constant, and relic production. Sealing one does not derive the others.
+- Use observed `Ω_DM h²` only as a target for a conditional parameter extraction, not as input that rewrites the finite core.
+- Compare any extracted dark scale against existing hierarchy scales in log space; report non-resonance as clearly as resonance.
+- Diagnostic variants such as `θ_i = B_gap` are useful only if marked noncanonical unless a prior gate derived that identification.
+- Do not claim dark matter is solved when the result depends on an un-derived axion seal. The native task remains deriving the symmetry, `f_a`, and anomaly map.

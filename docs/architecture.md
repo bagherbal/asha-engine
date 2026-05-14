@@ -3494,3 +3494,40 @@ FAILED_ROUTE_FINITE_ANCHOR_DARK_MATTER_DERIVATION
 ```
 
 This failure preserves the firewall. It does not falsify dark matter as a requirement; it proves that the current finite anchors are not yet enough to derive it.
+
+## Gate 226 — AxionPhenomenologySeal and sealed ALP scale audit
+
+Gate 226 lives in the phenomenological dark-matter layer after the `Heavy_Sector_Dark_Matter_Absence_Theorem` and the failed finite-anchor ALP audit.
+
+It introduces:
+
+```text
+pkg/bridge/axionphenomenologyseal
+AxionPhenomenologySeal
+SEAL-AXION-PHENOMENOLOGY-GATE226
+```
+
+The seal conditionally grants ALP semantics to the B-sector gap for a controlled misalignment calculation only. It explicitly does **not** convert the finite B-gap into a native quantum field.
+
+The sealed calculation uses:
+
+```text
+Ω_a h² = 0.12 × θ_i² × (f_a / 10¹² GeV)^(7/6)
+θ_i = 1
+```
+
+and obtains:
+
+```text
+f_a = 1.0e12 GeV
+```
+
+This scale is compared to the current sealed hierarchy:
+
+```text
+v   ≈ 246 GeV
+M_B ≈ 2.56895727e6 GeV
+M_* ≈ 1.72179441e17 GeV
+```
+
+No resonance is found within the one-decade criterion. The axion route remains a sealed phenomenological route, not a finite-core theorem. A future gate must derive a shift generator, anomaly coupling, and dimensionful `f_a` before the dark-matter sector can be claimed as native ASHA physics.

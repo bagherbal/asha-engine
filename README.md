@@ -2950,3 +2950,39 @@ HEAVY_SECTOR_DM_ABSENCE_REMAINS_BINDING
 ```
 
 Dark matter remains an open problem. The finite anchors are not discarded; they are deferred until a future gate derives a shift generator, a stable singlet action, or a dimensionful dark scale without using the observed relic density as an input.
+
+## v2.24 — Gate 226: AxionPhenomenologySeal / B-gap misalignment scale audit
+
+Gate 226 introduces `pkg/bridge/axionphenomenologyseal`. Gate 225 proved that the B-sector gap and seven contact modes do not natively provide dark matter. Gate 226 therefore adds an explicit `AxionPhenomenologySeal` and asks only a conditional phenomenology question: if the B-gap is treated as an ALP anchor, what axion decay constant is required by the standard QCD-like misalignment proxy?
+
+Using
+
+```text
+Ω_a h² = 0.12 × θ_i² × (f_a / 10¹² GeV)^(7/6)
+```
+
+with `θ_i = 1`, the required scale is:
+
+```text
+f_a = 1.00000000e12 GeV
+```
+
+The resonance audit compares this against the sealed ASHA hierarchy:
+
+```text
+v   ≈ 2.46e2 GeV
+M_B ≈ 2.56895727e6 GeV
+M_* ≈ 1.72179441e17 GeV
+```
+
+No scale resonance is found. The closest comparison is still more than five decades away. A diagnostic `θ_i = B_gap` variant is also rejected as noncanonical.
+
+Result:
+
+```text
+CONDITIONAL_PHENOMENOLOGY_AXION_SEAL_NO_SCALE_RESONANCE
+AXION_SEMANTICS_QUARANTINED_NOT_DERIVED
+DARK_MATTER_SCALE_INTERMEDIATE_NOT_ASHA_HIERARCHY_MATCH
+```
+
+Gate 226 does not derive an axion, `f_a`, a shift symmetry, a Pontryagin coupling, or a relic abundance from the finite core. It only parameterizes a sealed ALP route and identifies that the required dark-matter scale is intermediate rather than naturally coincident with `M_B` or `M_*`.
