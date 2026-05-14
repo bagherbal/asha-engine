@@ -3424,3 +3424,45 @@ FAILED_ROUTE_FULL_NATIVE_FINITE_ALGEBRA_DERIVATION
 ```
 
 Gate 236 therefore moves the finite spectral-triple program from “algebra missing” to “`C⊕M₃(C)` preflight found; `H` still missing.” The next gate should target the explicit `su(2)` action on `S_C` and test whether its associative closure forces a quaternionic module.
+
+## v2.35 — Gate 237: Explicit su(2) spinor lift / quaternionic closure audit
+
+Gate 237 introduces `pkg/bridge/su2spinorlift`. It targets the exact obstruction left by Gate 236: the native `1⊕3` split supports `C⊕M₃(C)`, but the weak quaternionic summand `H` was not derived.
+
+The gate audits exterior `su(2)` lifts on the complexified spinor
+
+```text
+S_C = Λ*(W),  W = C⁴.
+```
+
+For every candidate two-mode plane `U ⊂ W`, the exterior decomposition is
+
+```text
+Λ*(W) = Λ*(U) ⊗ Λ*(V)
+Λ*(U) = 1 ⊕ 2 ⊕ 1
+```
+
+Since `dim Λ*(V)=4`, each chosen plane produces
+
+```text
+4 doublets + 8 singlet states
+8 complex doublet-state dimensions + 8 complex singlet-state dimensions
+```
+
+This is a strong structural preflight: the doublet sector has exactly the complex dimension of one generation of Standard Model left doublets, `Q_L ⊕ L_L`.
+
+The fundamental `su(2)` doublet is pseudo-real, so each selected doublet factor supports a local quaternionic module. However, the finite geometry still does not select which two-mode plane is the electroweak plane, does not identify the contact-preserving `su(2)` with one of these candidate wedge lifts, and does not attach hypercharge/color bookkeeping to the doublet projection.
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_CANDIDATE_WEDGE_SU2_LIFTS
+CONDITIONAL_SUPPORT_DOUBLET_DIMENSION_MATCH_PREFLIGHT
+CONDITIONAL_SUPPORT_PSEUDOREAL_DOUBLETS_LOCAL_H_PREFLIGHT
+FAILED_ROUTE_CONTACT_SU2_TO_SC_NATIVE_LIFT_DERIVATION
+FAILED_ROUTE_CANONICAL_WEAK_PLANE_SELECTION
+FAILED_ROUTE_NATIVE_GLOBAL_QUATERNIONIC_H_SUMMAND_DERIVATION
+FAILED_ROUTE_COMPLETED_CONNES_ALGEBRA_DERIVATION
+```
+
+Gate 237 therefore upgrades the weak-algebra obstruction: `H` is locally supported on any selected doublet plane, but the global native quaternionic summand is still not derived. The next finite-core task is to derive the missing selector/intertwiner that identifies the contact-preserving `su(2)` with one canonical plane in `S_C`, then attach the opposite algebra and order-one calculus.

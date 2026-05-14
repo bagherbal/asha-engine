@@ -229,3 +229,12 @@
 - Keep `u(1) → C`, `spatial 3 → M₃(C)`, and `su(2) → H` as three independent ledgers. Passing two does not derive the third.
 - The order-one condition remains blocked until the faithful algebra representation and opposite action are available. Do not use order-one language to force mass-matrix zeros before that.
 - Report partial algebraic shapes as preflights. Only claim the Standard Model finite algebra when the exact associative algebra, representation, opposite action, and order-one readiness are all derived.
+
+## Gate 237 method note — local quaternionic support is not global H derivation
+
+- When deriving the weak algebra, distinguish an `su(2)` Lie action, an exterior spinor lift, a local pseudo-real doublet, and a global associative `H` summand. These are different achievements.
+- Test all candidate two-mode planes rather than selecting the most Standard-Model-looking one. A plane selector must be derived by finite geometry, not chosen by recognition.
+- Dimension matches such as an eight-complex-dimensional doublet sector are strong structural diagnostics, but they do not attach hypercharge, color, or physical chirality by themselves.
+- A pseudo-real fundamental doublet supports a quaternionic module locally. Claim only local `H` support unless the action is globally selected and represented faithfully on the full carrier.
+- Never import Pauli matrices, Connes’ algebra, or the Standard Model weak-doublet assignment as the proof. The gate may use representation identities only as preflight tests.
+- Keep the order-one calculus blocked until a faithful finite algebra representation, opposite action, and canonical weak-plane selector are all available.

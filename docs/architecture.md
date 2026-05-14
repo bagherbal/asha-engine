@@ -3868,3 +3868,36 @@ quaternionic weak module missing
 faithful finite algebra representation missing
 order-one calculus still blocked
 ```
+
+## Gate 237 — Explicit su(2) spinor lift and quaternionic closure audit
+
+Gate 237 adds `pkg/bridge/su2spinorlift` after the Gate-236 native algebra preflight. Architecturally, it addresses the remaining missing summand of the Connes-like finite algebra.
+
+The audit does not import Pauli matrices as the answer. Instead, it examines the exterior action available for every two-mode plane `U` inside the native four-mode carrier `W`:
+
+```text
+S_C = Λ*(W),      W = U ⊕ V,      dim_C U = 2.
+```
+
+For each of the six possible two-mode planes, the exterior representation decomposes into four copies of the fundamental doublet plus singlets:
+
+```text
+Λ*(U) = Λ⁰(U) ⊕ Λ¹(U) ⊕ Λ²(U) = 1 ⊕ 2 ⊕ 1
+Λ*(W) = (1 ⊕ 2 ⊕ 1) ⊗ Λ*(V)
+```
+
+Thus every candidate plane contains an eight-complex-dimensional doublet sector and an eight-complex-dimensional singlet sector. This exactly matches the size of `Q_L ⊕ L_L` for one generation, so Gate 237 records a genuine doublet-dimensional resonance.
+
+The pseudo-real nature of the `su(2)` fundamental means each candidate doublet carries a local quaternionic structure. This is the first positive preflight for the weak `H` summand. But the gate does not claim the global algebra `H`: the finite core has not selected the electroweak plane, has not mapped the contact-preserving `su(2)` derivations to one explicit plane, has not attached hypercharge/color labels to the doublets, and has not derived the opposite-algebra action or order-one calculus.
+
+The spectral-triple frontier is therefore:
+
+```text
+complexified carrier available
+C⊕M₃(C) preflight available
+local pseudo-real doublet/H preflight available
+canonical weak-plane selector missing
+global H summand missing
+faithful C⊕H⊕M₃(C) representation missing
+order-one calculus still blocked
+```

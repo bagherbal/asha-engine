@@ -179,6 +179,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/shellfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/singlescalematchingaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralaction"
+	"github.com/bagherbal/asha-engine/pkg/bridge/su2spinorlift"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdorigindichotomy"
@@ -484,6 +485,7 @@ func Run() error {
 		realstructureorderone.RealStructureKOOrderOneCalculusAuditTheorem(),
 		complexifiedhilbertspace.ComplexifiedHilbertSpaceFiniteAlgebraRepresentationAuditTheorem(),
 		nativefinitealgebra.NativeFiniteAlgebraContactPreservingSubalgebraSearchTheorem(),
+		su2spinorlift.SU2SpinorLiftQuaternionicClosureAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
