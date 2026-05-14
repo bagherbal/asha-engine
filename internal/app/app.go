@@ -13,6 +13,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/betamatching"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betapermission"
 	"github.com/bagherbal/asha-engine/pkg/bridge/boundaryselector"
+	"github.com/bagherbal/asha-engine/pkg/bridge/branchprojector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/branchselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokenaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/brokengaugefields"
@@ -386,6 +387,7 @@ func Run() error {
 		quarticscalaroperator.QuarticScalarOperatorMinimalPolynomialTheorem(),
 		scalarcontactselector.ScalarContactQuarticIdentificationSelectorObstructionTheorem(),
 		resolventvacuum.ResolventVacuumSpontaneousHiggsPairingTheorem(),
+		branchprojector.BranchwiseQuadraticIdempotentScalarProjectorTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
