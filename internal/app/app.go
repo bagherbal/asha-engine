@@ -105,6 +105,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentembedding"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currenthessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentprojection"
+	"github.com/bagherbal/asha-engine/pkg/bridge/cutoffmomentsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/diracorderone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/doubledspacerepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcarrier"
@@ -616,6 +617,7 @@ func Run() error {
 		grandnormalizationsieve.GrandNormalizationSieveWaveFunctionRenormalizationExtractionAuditTheorem(),
 		scalarkinetictracepositivity.ScalarKineticTraceFunctionalPositiveZHEvaluableCarrierAuditTheorem(),
 		heatkernelconventionledger.HeatKernelConventionLedgerPositivePrefactorNormalizationAuditTheorem(),
+		cutoffmomentsource.CutoffMomentSourcePositiveF0TestFunctionClassAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
