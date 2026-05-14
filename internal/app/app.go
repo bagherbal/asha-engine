@@ -219,6 +219,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncartanflavorvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncommutingtexturepair"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonperturbativeportalcoupling"
+	"github.com/bagherbal/asha-engine/pkg/bridge/nonunitaryprojectortexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonuniversalrgfit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/normalizationthresholdaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/o3quotient"
@@ -724,6 +725,7 @@ func Run() error {
 		leptogenesiscpasymmetry.LeptogenesisDecayCPAsymmetryBGapMajoranaCosmogenesisAuditTheorem(),
 		tauetargtexture.TauEtaDiagonalTextureRGEvolutionMassHierarchyAuditTheorem(),
 		nativenondiagonaltexture.NativeNonDiagonalTextureFlavorOrientationSieveTheorem(),
+		nonunitaryprojectortexture.NonUnitaryProjectorKineticSafeFlavorTextureSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
