@@ -5386,3 +5386,47 @@ FAILED_ROUTE_RESIDUAL_MATCHING_CORRECTION_NOT_DERIVED
 FAILED_ROUTE_CONTACT_VACUUM_ACTION_MAP_NOT_DERIVED
 FAILED_ROUTE_INTERMEDIATE_BREAKING_SEAL_REMAINS_REQUIRED
 ```
+
+## Gate 285 — Finite Hopf Connection & Curvature / Chern-Simons Boundary Winding Audit
+
+Gate 285 asks whether the Gate-284 candidate instanton action can be promoted from a sharp target into an evaluated finite gauge-theoretic action.
+
+Inherited target:
+
+```text
+S_inst,candidate = S_top/(π Vol(S³) B_gap) = (4/π)/B_gap
+```
+
+The gate identifies the correct missing machinery:
+
+```text
+finite Hopf connection one-form A
+finite exterior differential / wedge calculus
+curvature F = dA + A∧A
+Chern-Simons 3-form CS₃(A)=Tr(A∧dA+(2/3)A∧A∧A)
+S³ boundary orientation/measure and embedding
+integer winding map
+B_gap as inverse instanton coupling
+hidden-sector order parameter / condensate
+```
+
+It records the continuum Hopf/BPST connection as the target shape, and it records the local quaternionic `su(2)` hint as structurally relevant. But it does not invent the finite connection, curvature, Chern-Simons evaluator, integer winding, or coupling map.
+
+Statuses:
+
+```text
+CONDITIONAL_SUPPORT_GATE284_CONTACT_VACUUM_ACTION_REQUIREMENTS_INHERITED
+CONDITIONAL_SUPPORT_HOPF_CONNECTION_TARGETS_FORMALIZED
+CONDITIONAL_SUPPORT_CURVATURE_TWO_FORM_REQUIREMENTS_AUDITED
+CONDITIONAL_SUPPORT_CHERN_SIMONS_BOUNDARY_WINDING_REQUIREMENTS_AUDITED
+CONDITIONAL_SUPPORT_INSTANTON_ACTION_FUNCTIONAL_REEVALUATED
+CONDITIONAL_SUPPORT_FINITE_HOPF_CONNECTION_FIREWALLS_PRESERVED
+FAILED_ROUTE_FINITE_HOPF_CONNECTION_NOT_DERIVED
+FAILED_ROUTE_FINITE_CURVATURE_TWO_FORM_NOT_DERIVED
+FAILED_ROUTE_CHERN_SIMONS_BOUNDARY_FUNCTIONAL_NOT_DERIVED
+FAILED_ROUTE_INTEGER_BOUNDARY_WINDING_NOT_DERIVED
+FAILED_ROUTE_BGAP_AS_INSTANTON_COUPLING_NOT_DERIVED
+FAILED_ROUTE_HIDDEN_SECTOR_ORDER_PARAMETER_STILL_NOT_DERIVED
+FAILED_ROUTE_FINITE_HOPF_CONNECTION_AND_ACTION_NOT_EVALUATED
+FAILED_ROUTE_INTERMEDIATE_BREAKING_SEAL_REMAINS_REQUIRED
+```

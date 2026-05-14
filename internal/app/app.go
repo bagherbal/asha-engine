@@ -127,6 +127,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitecarrieractivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitediracinitialization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitehopfaction"
+	"github.com/bagherbal/asha-engine/pkg/bridge/finitehopfconnectioncurvature"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitespectralactionreattempt"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitespectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
@@ -580,6 +581,7 @@ func Run() error {
 		spectralactioncapstone.SpectralActionEpistemologicalCapstoneHiggsPredictionFirewallAuditTheorem(),
 		bgaphierarchycoefficient.BGapHierarchyCoefficientTopologicalVolumeRatioAuditTheorem(),
 		contactvacuumhopfaction.NativeContactVacuumHopfActionMapHiddenSectorOrderParameterAuditTheorem(),
+		finitehopfconnectioncurvature.FiniteHopfConnectionCurvatureChernSimonsBoundaryWindingAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

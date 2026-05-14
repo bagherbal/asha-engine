@@ -5112,3 +5112,19 @@ This is a valid and sharp Path-C target, but it is not yet an intermediate-scale
 3. **Missing dynamics:** contact-vacuum boundary map, finite connection/curvature, Chern-Simons density, `B_gap` coupling semantics, hidden order parameter, and residual correction theorem.
 
 The `IntermediateBreakingSeal` remains ungranted. Future progress must derive a physical order parameter or action functional rather than improving the numerical fit.
+
+## Gate 285 — Finite Hopf Connection and Chern-Simons Barrier
+
+Gate 285 refines Path C by separating topological-volume numerology from evaluated gauge theory. The engine now has a precise target:
+
+```text
+A on the Hopf S³ fiber
+F = dA + A∧A
+CS₃(A)=Tr(A∧dA+(2/3)A∧A∧A)
+∫_{S³} CS₃(A) = integer winding
+S_inst = (4/π)/B_gap
+```
+
+The audit confirms that the local quaternionic weak algebra gives the right `su(2)` hint for a Hopf/BPST-like connection, and the Gate-283/284 `4/π` coefficient remains exact as a topological volume ratio. But the finite ASHA core has not yet derived the connection one-form, finite differential calculus, boundary measure, Chern-Simons functional, integer winding map, or `B_gap` inverse-coupling semantics.
+
+Therefore the intermediate scale remains a conditional Path-C resonance. The next viable theorem must derive the actual finite connection/action map or formally cap Path C with a connection/action/coupling firewall.
