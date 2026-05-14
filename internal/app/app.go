@@ -161,6 +161,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/geometricmeanresonance"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/grandnormalizationsieve"
+	"github.com/bagherbal/asha-engine/pkg/bridge/grandunifiedledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heatkernelconventionledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heatkerneldynamicspreflight"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
@@ -662,6 +663,7 @@ func Run() error {
 		trialitygenerationpullback.TrialityGenerationPullbackNativeTopYukawaBoundarySieveAuditTheorem(),
 		flavororientationoperator.FlavorOrientationOperatorTrialityToMassEigenstateTextureAuditTheorem(),
 		flavorprojectionmetric.FlavorProjectionMetricVariationalVacuumSelectorAuditTheorem(),
+		grandunifiedledger.GrandUnifiedLedgerProjectCapstoneAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
