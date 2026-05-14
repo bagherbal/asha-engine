@@ -2701,3 +2701,28 @@ worst case: α_s(M_Z) -1σ
 ```
 
 This is conditional phenomenology only. The engine does not derive the low-energy empirical inputs, Yukawa matrices, or matching corrections from the finite core. The result says that the sealed PeV-scale target remains robust under the audited `1σ` input variations.
+
+## v2.18 — Gate 220: PeV-threshold indirect-signature / experimental observability audit
+
+Gate 220 adds `pkg/bridge/pevobservabilityaudit`. It inherits the Gate-219 sealed single-scale spectrum
+
+```text
+Dirac (1,3,Y=1) + Dirac (8,2,Y=1/2),   M_B ≈ 2.57e6 GeV
+```
+
+and audits indirect observability without promoting the PeV scale to a finite-core derivation.
+
+Result:
+
+- direct production is parametrically out of reach for a 100 TeV proxy collider;
+- electroweak precision effects are suppressed by `v²/M_B²`, with a proxy `T ≪ 1`;
+- Higgs-loop imprints decouple under the current seals because no heavy Higgs-generated mass or heavy Yukawa coupling is derived;
+- cosmology remains a serious warning: without a derived decay operator or mass-splitting theorem, the neutral, charged, and colored heavy carriers must not be declared relic-safe.
+
+Gate 220 status:
+
+```text
+CONDITIONAL_PHENOMENOLOGY_WITH_STABLE_RELIC_WARNING
+```
+
+It does not compute a relic abundance, proton lifetime, or observed collider signal.

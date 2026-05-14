@@ -92,3 +92,10 @@
 - If a parameter changes a running variable that does not feed back at the current loop order, say so directly instead of inventing an effect.
 - Preserve the difference between experimental uncertainty, theoretical matching uncertainty, and finite-core derivation. They are three separate ledgers.
 - For speed, avoid full-grid covariance scans until one-at-a-time `±1σ` scans establish whether the envelope is threatened.
+
+## Gate 220 workflow refinement
+
+- Separate indirect-observable safety from cosmological safety: decoupling can make EW/Higgs effects tiny while stable relics remain dangerous.
+- Do not invent decay operators, heavy Yukawa couplings, or mass splittings to make a PeV spectrum phenomenologically safe.
+- Use dimensionless suppression proxies first (`v/M`, `v²/M²`) before attempting model-specific observable calculations.
+- If decay/splitting data is absent, log a warning and push it into a dedicated future gate rather than computing relic abundance from missing dynamics.

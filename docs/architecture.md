@@ -3229,3 +3229,27 @@ worst residual ratio ≈ 0.411919 < 1
 ```
 
 This gate does not convert the sealed spectrum into a finite-core prediction. It only proves that the sealed PeV-threshold hypothesis is stable under the audited empirical input uncertainties.
+
+## Gate 220 — PeV-threshold observability layer
+
+Gate 220 lives after the precision RG and matching-seal layer. It does not alter the finite core and does not claim observed physics. Its purpose is to stress-test the sealed PeV spectrum against indirect phenomenological channels.
+
+Ontological placement:
+
+```text
+finite core
+→ Fock/gauge scaffold
+→ empirical and stability seals
+→ rational threshold lattice
+→ ThresholdSpectrumSeal + MatchingCorrectionSeal
+→ full-SM two-loop sensitivity audit
+→ PeV observability audit
+```
+
+The gate distinguishes three categories:
+
+1. **Decoupling-safe channels:** EWPO and Higgs-loop imprints are parametrically suppressed by the PeV mass scale unless a future theorem introduces non-decoupling Higgs couplings.
+2. **Direct-production separation:** the central threshold is far beyond a 100 TeV proxy collider.
+3. **Open cosmological threat:** the same seals that prevent invented decays mean the engine currently lacks a decay/splitting theorem for the neutral, charged, and colored heavy carriers. This is logged as a stable-relic warning, not as a dark-matter claim.
+
+The next structural requirement is a sealed or derived heavy-carrier decay operator / relic-safety audit.

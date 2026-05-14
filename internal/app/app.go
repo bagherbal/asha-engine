@@ -131,6 +131,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonuniversalrgfit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/normalizationthresholdaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/o3quotient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/pevobservabilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedconnection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedintertwiner"
@@ -450,6 +451,7 @@ func Run() error {
 		finitespectraltriple.FiniteSpectralTripleHeavySectorGaugeCurvatureProjectionAuditTheorem(),
 		matchingcorrectionseal.MatchingCorrectionSealFullSMYukawaTwoLoopIntegrationAuditTheorem(),
 		inputsensitivityaudit.InputSensitivityBottomTauYukawaCompletenessAuditTheorem(),
+		pevobservabilityaudit.PeVThresholdIndirectSignatureObservabilityAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
