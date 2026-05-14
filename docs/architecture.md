@@ -2995,3 +2995,35 @@ separated thresholds
 The result is asymmetric. The `u=1` branch has conditional viable two-threshold witnesses; the centroid branch has none under the ordering filter. This does not make the viable witnesses finite-derived particles. They remain sealed phenomenological row-pair solutions requiring later audits for carrier origin, matching corrections, two-loop stability, and scheme dependence.
 
 The best witnesses also do not preserve strict non-Abelian asymptotic freedom (`b_total_SU2` and/or `b_total_SU3` are positive), but they do pass the requested one-loop no-sub-Planck-Landau-pole filter. This distinction is part of the architecture: Landau safety is a viability condition, while asymptotic freedom preservation is recorded as a diagnostic rather than silently assumed.
+
+### Gate 212 — Two-threshold solution minimality / finite-origin and multiplet-parentage audit
+
+Package: `pkg/bridge/twothresholdminimality`
+
+Gate 212 sits immediately after the first successful two-threshold viability bridge. Its role is epistemic control: Gate 211 produced viable witnesses, but a fundamental theory must not silently pick one witness from a degenerate set using an external taste metric.
+
+Architectural placement:
+
+```text
+Layer 4: Rational row grammar                  → Gate 204
+Layer 7: Proton/operator seal                  → Gates 208–209
+Layer 8: Single-scale lattice no-go             → Gate 210
+Layer 9: Two-threshold viability filter         → Gate 211
+Layer 10: Degeneracy / spectrum-selector audit  → Gate 212
+```
+
+Gate 212 reduces the ordered Gate-211 solutions to unordered physical pair classes and audits three possible selectors:
+
+1. **Finite-origin combinatorics:** do row dimensions or Weyl-equivalent dimensions match the seven contact partial-overlap modes or B-sector geometry?
+2. **Spectral matching:** does threshold splitting match the B-sector gap or exact contact partial-overlap numbers?
+3. **Parentage:** do closely split thresholds derive from an ASHA-native parent multiplet and splitting rule?
+
+All three fail as canonical selectors. External group-theory hints are treated only as hints: the engine has not derived a parent `SU(5)`, `SO(10)`, or Pati-Salam gauge connection, nor a branching theorem, nor missing partner spectrum. Threshold splitting proximity is therefore not promoted into a derivation.
+
+Gate 212 records:
+
+```text
+FAILED_ROUTE_CANONICAL_THRESHOLD_UNIQUENESS
+```
+
+This failure preserves Gate 211 rather than overturning it. Gate 211 says viable paths exist. Gate 212 says the current finite algebra does not uniquely select one path. The correct next architectural move is a `ThresholdSpectrumSeal` or a future finite spectrum-selector theorem before matching corrections, two-loop stability, or experimental interpretation are allowed.

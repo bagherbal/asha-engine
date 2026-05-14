@@ -36,3 +36,7 @@
 - When a prompt gives an explicit logarithmic cutoff, treat that as the operative filter even if a named physical scale would imply a slightly different logarithm.
 - For viable multi-threshold witnesses, record reverse orderings carefully: ordered threshold labels may be mathematically distinct even when the unordered physical row set is the same.
 - Record asymptotic freedom and Landau safety separately. Positive high-scale beta coefficients can still pass a bounded no-pole audit over a finite interval, but they are not asymptotically free.
+- For degenerate viable witness sets, separate ordered solver labels from unordered physical spectra before doing minimality or uniqueness analysis.
+- Never treat a ranking function as a finite theorem. Ranking can prioritize witnesses for inspection, but uniqueness requires a derived selector, symmetry, spectrum rule, or explicit seal.
+- For parentage audits, external branching patterns are only hints unless the engine derives the parent gauge connection, branching map, missing partners, and splitting rule.
+- For threshold-splitting arguments, numerical closeness of logs is not a mass theorem. Require an activation/splitting mechanism or log a `ThresholdSpectrumSeal` obligation.

@@ -2374,3 +2374,42 @@ CONDITIONAL_VIABLE_TWO_THRESHOLD_LATTICE
 This is not a physical prediction. The Z-pole ledger remains phenomenological input, the `LeptoquarkDynamicsSeal` remains active, no contact/B-sector mode is promoted to a row, no matching correction is derived, and no finite-core mass scale is claimed.
 
 Next structural obligation: Gate 212 — two-threshold solution minimality / finite-origin and matching-correction preflight audit.
+
+## v2.10 — Gate 212: Two-threshold solution minimality / finite-origin and multiplet-parentage audit
+
+Gate 212 adds `pkg/bridge/twothresholdminimality`.
+
+Gate 211 found 44 ordered viable two-threshold witnesses for the `u_* = 1` branch. Gate 212 audits whether that witness space has a canonical finite selector. It does **not** rerun the RG closure problem and does **not** promote the Gate-211 ranking into a physical derivation.
+
+The ordered witnesses reduce to physical unordered pair classes:
+
+```text
+ordered Gate-211 witnesses: 44
+unordered pair classes:     22
+```
+
+Three possible uniqueness mechanisms are audited:
+
+```text
+finite-origin dimensions / contact-mode count
+B-sector gap and contact partial-overlap spectral matching
+multiplet parentage / threshold splitting
+```
+
+The result is a strict uniqueness obstruction:
+
+```text
+FAILED_ROUTE_CANONICAL_THRESHOLD_UNIQUENESS
+```
+
+No viable pair has total gauge dimension `7`, Weyl-equivalent dimension `7`, an individual row dimension `7`, an exact B-sector gap split, or an exact contact partial-overlap split. Some pairs have small threshold separations, but the engine has no finite splitting rule or parent-gauge branching theorem that turns closeness into a selector.
+
+Gate 212 therefore introduces a future obligation rather than a new physical claim:
+
+```text
+ThresholdSpectrumSeal required before selecting one Gate-211 pair as the heavy spectrum.
+```
+
+The `EmpiricalCarrierSeal` and `LeptoquarkDynamicsSeal` remain active. No `SU(5)`, `SO(10)`, or Pati-Salam parent gauge group is imported as dynamics. No matching correction, two-loop correction, proton lifetime, physical mass derivation, or unique threshold spectrum is claimed.
+
+Next structural obligation: Gate 213 — ThresholdSpectrumSeal / matching-correction and two-loop stability preflight audit.
