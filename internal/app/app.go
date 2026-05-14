@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/bagherbal/asha-engine/internal/report"
+	"github.com/bagherbal/asha-engine/pkg/bridge/abeliancoupling"
 	"github.com/bagherbal/asha-engine/pkg/bridge/abelianmixing"
 	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/anomaly"
@@ -172,6 +173,7 @@ func Run() error {
 		u1orientation.ChiralOrientationalAbelianSourceSearchTheorem(),
 		anomaly.AbelianAnomalyCancellationLedgerTheorem(),
 		anomalykinetic.AnomalyConstrainedU1KineticHessianSearchTheorem(),
+		abeliancoupling.AbelianCouplingNormalizationFromDiagonalHessianAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
