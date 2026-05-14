@@ -133,6 +133,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourcyclechernweil"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fullflavorledgerclosure"
+	"github.com/bagherbal/asha-engine/pkg/bridge/fullscrepresentationsearch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugecouplingboundaryseal"
@@ -552,6 +553,7 @@ func Run() error {
 		finitespectralactionreattempt.FiniteSpectralActionReAttemptSeeleyDeWittCoefficientAuditTheorem(),
 		canonicalfinitediracselector.CanonicalFiniteDiracSelectorOrderOneSpectralTripleCompletionAuditTheorem(),
 		faithfuloppositeactionrep.FaithfulOppositeActionRepresentationNonVacuousOneFormCalculusAuditTheorem(),
+		fullscrepresentationsearch.FullSCFiniteAlgebraRepresentationSearchOppositeActionConstructionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

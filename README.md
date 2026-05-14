@@ -4959,3 +4959,8 @@ FAILED_ROUTE_EMPIRICAL_YUKAWA_SEAL_REMAINS_ACTIVE
 ```
 
 The next lawful target is a full `S_C` finite algebra representation and physical opposite-action construction, not another trace-ratio computation.
+
+
+### Gate 271 — Full S_C Representation Search
+
+Gate 271 audits the native lift of `C ⊕ M3(C)` to the full `S_C=Λ*(C^4)` carrier. It confirms the 16-state Fock carrier and CAR operator calculus, but shows the obvious lifts are insufficient: `Γ(A)` is not additive, `dΓ(A)=ΣA_ij a†_i a_j` is not a unital associative algebra representation, and the faithful one-particle action does not define the full carrier. The physical opposite action and full order-one theorem remain blocked, so the Higgs spectral ratio is not derived.
