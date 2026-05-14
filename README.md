@@ -2080,3 +2080,24 @@ The regulator audit rejects `τ_η`, contact zeta traces, quartic BRST routes, a
 Therefore Gate 203 records a strict `FAILED_ROUTE`: the universal beta completion remains external phenomenological data under current axioms.
 
 Next gate: Gate 204 — representation-row lattice completion / finite heavy-sector basis search.
+
+## Gate 204 — Representation-row lattice completion
+
+Gate 204 adds `pkg/bridge/representationrowlattice`. It decouples the exact rational representation problem from the continuous threshold-scale problem exposed by Gates 201--203.
+
+The gate constructs a finite beta-row grammar from the audited gauge/charge alphabet:
+
+```text
+SU(3)c: 1, 3, 3bar, 8
+SU(2)L: 1, 2, 3
+|Y|:    0, 1/6, 1/3, 1/2, 2/3, 1
+```
+
+It generates `220` exact rational candidate rows, `158` unique rows, embedded in `(1/180)Z^3`. The Gate-201 non-universal shapes are direct lattice generators:
+
+```text
+Dirac vectorlike quark doublet: (2/15,2,4/3)
+Weyl SU(2)L adjoint fermion:   (0,4/3,0)
+```
+
+This is recorded as `CONDITIONAL_SUPPORT` for representation-shape viability only. The universal beta row, threshold scales, contact-mode activation, finite matching corrections, and physical unification remain sealed.

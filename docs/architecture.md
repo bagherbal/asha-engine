@@ -2728,3 +2728,48 @@ Third, the gate audits regulator/ghost/measure sources: `τ_η`, contact zeta tr
 Gate 203 is therefore a `FAILED_ROUTE`. It preserves the Gate-202 obstruction and prevents the engine from replacing a missing source theorem with complete-multiplet or regulator numerology.
 
 Next structural obligation: construct or seal a finite representation-row lattice/heavy-sector basis before trying to repair the universal beta completion again.
+
+### Gate 204 — Representation-row lattice completion / finite heavy-sector basis search
+
+Package: `pkg/bridge/representationrowlattice`
+
+Gate 204 follows the Gate-203 obstruction that the universal beta row required by the Gate-201 conditional threshold shapes is neither a complete-multiplet source nor a regulator/ghost trace under current axioms. It therefore decouples the discrete representation problem from the continuous RG-scale problem.
+
+The gate constructs an exact rational one-loop beta-row grammar using the finite gauge/charge alphabet already present in the engine:
+
+```text
+SU(3)c: 1, 3, 3bar, 8
+SU(2)L: 1, 2, 3
+|Y|:    0, 1/6, 1/3, 1/2, 2/3, 1
+```
+
+For each admitted row `(R_3,R_2,Y)` it computes
+
+```text
+Δb_1 = κ (3/5)Y² dim(R_2)dim(R_3)
+Δb_2 = κ T_2(R_2)dim(R_3)
+Δb_3 = κ T_3(R_3)dim(R_2)
+```
+
+with `κ=2/3` for Weyl fermions, `4/3` for Dirac fermions, `1/3` for complex scalars, and `1/6` for real scalars. The enumeration is deliberately finite and bounded; it is not an all-representations scan and does not solve for threshold scales.
+
+Result:
+
+```text
+candidate rows: 220
+unique rational rows: 158
+common row denominator: 180
+```
+
+The two Gate-201 non-universal shapes are direct row-lattice generators:
+
+```text
+Dirac vectorlike quark doublet: (3,2,1/6) -> Δb=(2/15,2,4/3)
+Weyl SU(2)L adjoint fermion:   (1,3,0)   -> Δb=(0,4/3,0)
+```
+
+Gate 204 therefore records `CONDITIONAL_SUPPORT` for the representation shapes only. It does not derive the universal beta row, `M_B`, `M_*`, physical matching corrections, or unification.
+
+The seven contact partial-overlap modes are audited again and remain unpromoted: they still lack canonical charge labels, gauge-representation semantics, Dynkin indices, spin-statistics, mass-activation, and decoupling laws. No contact mode is assigned to a beta-row generator.
+
+Next structural obligation: Gate 205 — finite carrier activation / contact-to-row semantics obstruction audit.
