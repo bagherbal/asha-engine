@@ -211,6 +211,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
 	"github.com/bagherbal/asha-engine/pkg/bridge/moritabimodulesearch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativefinitealgebra"
+	"github.com/bagherbal/asha-engine/pkg/bridge/nativenondiagonaltexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativeunifiedcouplingorigin"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativeweakquaternionicalgebra"
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutraleigenspacekernel"
@@ -722,6 +723,7 @@ func Run() error {
 		yukawairfixedpoint.YukawaInfraredFixedPointBasinRGAttractorReductionAuditTheorem(),
 		leptogenesiscpasymmetry.LeptogenesisDecayCPAsymmetryBGapMajoranaCosmogenesisAuditTheorem(),
 		tauetargtexture.TauEtaDiagonalTextureRGEvolutionMassHierarchyAuditTheorem(),
+		nativenondiagonaltexture.NativeNonDiagonalTextureFlavorOrientationSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
