@@ -87,3 +87,18 @@ metric. It deliberately does not declare a gauge-eating theorem: an abstract
 O(3) family of isometries exists between 3D frames, but the finite action has
 not yet selected one. The next mathematical target is a protected-contact metric
 or connection form that can reduce this O(3) freedom canonically.
+
+## Gate 88 — Protected-Contact Metric / Connection Form Search
+
+Gate 88 audits the protected side of the gauge-eating resonance.  Gate 87
+showed the count-level match `3 protected contact directions ↔ 3 broken
+generator images`, but count equality left an abstract `O(3)` family of
+possible intertwiners.  Gate 88 therefore distinguishes an abstract Euclidean
+metric on a three-dimensional carrier from a metric or connection actually
+derived from finite BF/contact dynamics.
+
+Current result: the protected side admits an abstract `I_3` metric, and the
+broken-generator image metric is positive with condition number 4.  Pulling that
+metric back to the protected side would be circular until the protected-to-broken
+intertwiner is independently derived.  The `O(3)` freedom may be pure gauge, but
+that quotient theorem remains open.
