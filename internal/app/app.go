@@ -211,6 +211,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingresidualstructure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matrixinvariantkoideaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
+	"github.com/bagherbal/asha-engine/pkg/bridge/modulartimeflowvacuumselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/moritabimodulesearch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativefinitealgebra"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativenondiagonaltexture"
@@ -734,6 +735,7 @@ func Run() error {
 		topologicalamplifierflavorsector.TopologicalAmplifierBimoduleFlavorSectorSieveTheorem(),
 		sectorchargepullback.SectorChargePullbackCKMMoritaMisalignmentSieveTheorem(),
 		admissibleoperatorclosure.AdmissibleOperatorClosureVacuumSelectionNoGoTheorem(),
+		modulartimeflowvacuumselector.ModularTimeFlowVacuumSelectorExtensionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

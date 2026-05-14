@@ -5274,3 +5274,18 @@ Gate 292 confirms that the Gate-234 occupation-complement candidate factorizes a
 Gate 294 separates the KO-sign problem from the representation problem. The doubled swap `J_swap` on `H_F⊕H_F*` satisfies `J²=+1` and `Jγ=-γJ`, so it is the correct architectural home for a physical real structure. However, the full finite algebra representation is still not derived.
 
 The naive quark-doublet action using both weak and color matrices on `C²⊗C³` fails as a direct-sum representation: in `C⊕H⊕M3(C)`, weak-only and color-only elements multiply to zero, but their images multiply to `q⊗B`. Conversely, a block-separated direct-sum action is associative but no longer represents the physical Standard Model bimodule. Thus the physical opposite algebra action and order-one theorem remain firewalled behind the missing `H_F` sub-bimodule, chirality/hypercharge attachment, and canonical `D_F`.
+
+## Gate 362 architectural shift: static closure to flow selection
+
+Gate 361 established an operator-closure no-go theorem for the current static ASHA core. The core derives the landscape but does not select the unique physical vacuum point. Gate 362 therefore marks the start of **Path B**, the Phase III dynamical extension.
+
+From this gate forward, vacuum-selection work must be framed as **flow-based selection**, not as another static flavor texture search. The required new object is a modular/Lorentzian time-flow operator, provisionally denoted `Θ_flow`, whose task is to select vacuum coordinates dynamically while preserving the rigid algebraic results already derived.
+
+Future gates should be rejected as misleading if they merely search for another static resonance inside the already-closed finite core. A valid Phase III gate must supply one of:
+
+- an explicit candidate for `Θ_flow`;
+- a theorem proving that the candidate breaks the flat flavor orbit safely;
+- a preservation proof for the derived landscape under the flow;
+- or a no-go theorem for that flow class.
+
+The remaining vacuum data stay quarantined until such a flow kernel is constructed.

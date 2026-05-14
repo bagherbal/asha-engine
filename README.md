@@ -5671,3 +5671,26 @@ Q_L ≈ C²_weak ⊗ C³_color,
 Because `(0,q,0)(0,0,B)=0` in the direct-sum algebra but `ρ_H(q)ρ_M(B)=q⊗B≠0`, this is not a representation of `C⊕H⊕M3(C)`. A block-separated action is associative, but it loses the physical weak-doublet/color-triplet bimodule.
 
 Therefore `ρ°(a)=J_swapρ(a*)J_swap^{-1}` remains a formal conditional formula, not a constructed physical opposite action. The full order-one condition and canonical `D_F` remain blocked until the physical finite Hilbert bimodule is derived.
+
+## v3.60 — Gate 362: Path B / Flow-based vacuum selection
+
+Gate 361 closed the current finite `Cℓ(1,7)` ASHA core as a **landscape theory**: the admitted static operator classes derive the rigid Standard Model landscape, but they do not contain a unique, kinetic-safe selector for the 15 continuous vacuum coordinates.
+
+From **Gate 362 onward**, the project focus changes. Any earlier wording that implies the static finite core should keep deriving the physical vacuum by trying more texture ansätze is superseded by the Phase III rule:
+
+```text
+The landscape is static algebra.
+The vacuum must be selected by flow.
+```
+
+Gate 362 introduces the minimal Path-B extension target: a native modular/Lorentzian time-flow operator `Θ_flow`. A valid future vacuum-selection gate must introduce a new flow operator theorem, a theorem about its admissibility, or a no-go result for that operator. It must not merely try another static numerical resonance.
+
+Mandatory admissibility constraints for `Θ_flow`:
+
+1. it is a genuinely new operator class beyond the Gate-361 static closure;
+2. it acts nontrivially on the flavor/vacuum orbit, so it is not a unitary trace invariant;
+3. it preserves the derived ASHA landscape ratios and structures;
+4. it remains kinetic-safe and does not create ghosts or rank collapse;
+5. it selects a vacuum coordinate or proves that this extension is still degenerate.
+
+Gate 362 does **not** claim the vacuum point. It installs the flow program and preserves the quarantine of the remaining 15 vacuum coordinates until an explicit `Θ_flow` kernel is derived.
