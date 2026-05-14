@@ -5170,3 +5170,39 @@ Gate 279 preserves the Gate-277 sector result
 ```
 
 but does not derive a contact root projector, contact resolvent root, root-to-sector bijection, Gate-275 `r_±` branch, or Higgs mass ratio.
+
+## Gate 280 — Resolvent Field Adjunction / Contact Projector Construction Audit
+
+Gate 280 activates a `ResolventAdjunctionSeal` to audit the mathematically legal field extension required by Gate 279. Over the native rational base, the contact quartic companion module has no non-trivial idempotents. After adjoining a resolvent root `z_res`, the quartic conditionally factors into a `2+2` pair of quadratics, and the engine constructs two commuting orthogonal projectors for each branch.
+
+The three conditional branches are:
+
+```text
+(q1,q2)|(q3,q4)  z ≈ 0.793092963834819
+(q1,q3)|(q2,q4)  z ≈ 0.607181256713348
+(q1,q4)|(q2,q3)  z ≈ 0.583059112785166
+```
+
+For each branch, Gate 280 verifies:
+
+```text
+P_A^2 = P_A
+P_B^2 = P_B
+[P_A,C_q4] = [P_B,C_q4] = 0
+P_A + P_B = I
+P_A P_B = 0
+```
+
+The result is conditional support for the projector construction, not a native branch theorem. The adjunction seal does not select which resolvent root is physical, does not map projectors to `{u,d}|{e,ν}`, and does not map a branch to Gate 275's `r_+` or `r_-` amplitude branch.
+
+Statuses:
+
+```text
+CONDITIONAL_SUPPORT_RESOLVENT_ADJUNCTION_SEAL_ACTIVATED
+CONDITIONAL_SUPPORT_CONDITIONAL_CONTACT_PROJECTORS_CONSTRUCTED
+FAILED_ROUTE_NO_NATIVE_RESOLVENT_ROOT_SELECTOR_DERIVED
+FAILED_ROUTE_PROJECTORS_NOT_MAPPED_TO_PHYSICAL_SECTORS
+FAILED_ROUTE_RESOLVENT_TO_RPLUS_RMINUS_BRANCH_MAP_MISSING
+FAILED_ROUTE_AMPLITUDE_BRANCH_NOT_LOCKED
+FAILED_ROUTE_HIGGS_MASS_RATIO_STILL_NOT_DERIVED
+```

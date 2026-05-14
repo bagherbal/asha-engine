@@ -186,6 +186,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/reebweakselection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/representationrowlattice"
 	"github.com/bagherbal/asha-engine/pkg/bridge/resolventcubictagselector"
+	"github.com/bagherbal/asha-engine/pkg/bridge/resolventfieldadjunction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/resolventvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgfirewall"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
@@ -570,6 +571,7 @@ func Run() error {
 		resolventcubictagselector.ResolventCubicSelectorBGapTauEtaSymmetryBreakingAuditTheorem(),
 		contactrootsectorbijection.QuarticRootToYukawaSectorBijectionContactProjectorSemanticsAuditTheorem(),
 		contactprojectorcompanion.ContactProjectorActionQuarticCompanionModuleSemanticsAuditTheorem(),
+		resolventfieldadjunction.ResolventFieldAdjunctionContactProjectorConstructionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

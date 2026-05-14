@@ -5035,3 +5035,19 @@ The Gate-277 sector split `{u,d}|{e,ν}` remains supported, but the root-level r
 The contact quartic is now represented by its rational companion module rather than by ordered numerical roots. Gate 279 constructs `C_q4` and verifies that the quartic remains irreducible over `Q`; hence the commutant is the field `Q[C_q4]` and contains no nontrivial rational idempotents. This is the algebraic reason the engine cannot split the contact root space into physical `2+2` sectors without adjoining a resolvent root.
 
 The finite tags `τ_eta`, `B_gap`, and Morita multiplicity remain semantically important, but they do not supply a lawful commuting projector on the companion module. The sector split `{u,d}|{e,ν}` remains topologically supported; the contact-root pairing and scalar-Morita amplitude branch remain bridge-required.
+
+## Gate 280 — Resolvent Adjunction Projectors
+
+Gate 280 crosses the rational field barrier only under an explicit seal. The `ResolventAdjunctionSeal` authorizes the conditional extension `Q -> Q(z_res)`, where `z_res` is a root of the resolvent cubic. On each of the three possible branches, the contact quartic splits into two quadratics and yields a pair of commuting orthogonal projectors on the companion module.
+
+This resolves the algebraic construction problem but not the semantic one. The engine now knows how projectors appear after field extension, but it still does not know which resolvent root is selected by the finite core, which projector maps to `{u,d}` versus `{e,ν}`, or which branch corresponds to the Gate-275 `r_+`/`r_-` scalar-Morita amplitude ambiguity.
+
+The architecture therefore gains a conditional projector layer while preserving the Galois firewall:
+
+```text
+Q-base irreducibility
+  -> ResolventAdjunctionSeal
+  -> three conditional 2+2 projector branches
+  -> unresolved projector-to-sector semantics
+  -> unresolved r-branch selection
+```
