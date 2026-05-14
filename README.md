@@ -3466,3 +3466,51 @@ FAILED_ROUTE_COMPLETED_CONNES_ALGEBRA_DERIVATION
 ```
 
 Gate 237 therefore upgrades the weak-algebra obstruction: `H` is locally supported on any selected doublet plane, but the global native quaternionic summand is still not derived. The next finite-core task is to derive the missing selector/intertwiner that identifies the contact-preserving `su(2)` with one canonical plane in `S_C`, then attach the opposite algebra and order-one calculus.
+
+## v2.36 — Gate 238: Chiral alignment gamma and weak plane selector audit
+
+Gate 238 introduces `pkg/bridge/chiralweakselector`. It tests whether the native occupation-parity grading
+
+```text
+γ = (-1)^N
+```
+
+can break the sixfold weak-plane degeneracy left by Gate 237.
+
+The audit confirms that `γ` splits the complexified spinor into balanced sectors:
+
+```text
+even occupation: 8 complex states
+odd occupation:  8 complex states
+```
+
+However, for every candidate two-mode plane `U⊂W`, the exterior `su(2)` doublet sector contains both parities:
+
+```text
+doublet states: 4 even + 4 odd
+singlet states: 4 even + 4 odd
+```
+
+So raw Fock occupation parity does not isolate the weak doublets into a single chiral sector. The lifted `su(2)` preserves `γ`; it does not act only on one parity.
+
+The native `1⊕3` temporal/spatial split distinguishes temporal-spatial planes from purely spatial planes, but only into two classes of three:
+
+```text
+3 temporal-spatial planes
+3 pure-spatial planes
+```
+
+Therefore the physical weak plane remains unselected.
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_GAMMA_PARITY_PREFLIGHT
+CONDITIONAL_SUPPORT_TEMPORAL_SPATIAL_CLASS_SIEVE
+FAILED_ROUTE_UNIFORM_CHIRAL_DOUBLET_ALIGNMENT
+FAILED_ROUTE_CHIRAL_WEAK_PLANE_SELECTION
+FAILED_ROUTE_LEFT_HANDED_WEAK_ACTION_DERIVATION
+FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
+```
+
+Gate 238 preserves Gate 237's local quaternionic support but proves that occupation parity alone is not the Standard Model chirality theorem. The next finite-core target is a stronger selector/intertwiner, likely from contact-vacuum orientation, η-source structure, or opposite-algebra/order-one compatibility.

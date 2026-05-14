@@ -3901,3 +3901,40 @@ global H summand missing
 faithful C⊕H⊕M₃(C) representation missing
 order-one calculus still blocked
 ```
+
+## Gate 238 — Chiral alignment and weak plane selector audit
+
+Gate 238 adds `pkg/bridge/chiralweakselector` after the Gate-237 local quaternionic preflight.
+
+The purpose is to test whether the native occupation-parity grading can select the physical weak plane among the six candidate two-mode planes in the four-mode carrier.
+
+The grading is:
+
+```text
+γ = (-1)^N
+```
+
+It is a genuine finite grading and gives an `8⊕8` split on `S_C`. But when each candidate two-mode plane is audited, the weak-doublet subspace is parity-mixed:
+
+```text
+for every U_ij:
+  doublet sector = 4 even + 4 odd
+  singlet sector = 4 even + 4 odd
+```
+
+Thus the exterior `su(2)` action commutes with occupation parity and does not become a left-handed weak action. The temporal/spatial `1⊕3` split distinguishes two classes of planes, but both classes are still threefold degenerate.
+
+Architecturally, the finite algebra frontier is now:
+
+```text
+complexified carrier available
+C⊕M₃(C) mode-commutant preflight available
+local pseudo-real doublet/H support available
+raw γ parity selector failed
+canonical weak-plane selector missing
+global H summand missing
+faithful C⊕H⊕M₃(C) representation missing
+order-one calculus still blocked
+```
+
+Gate 238 is therefore a useful no-go: it prevents identifying Fock parity with physical Standard Model chirality without a separate theorem.

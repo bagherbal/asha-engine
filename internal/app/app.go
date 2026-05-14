@@ -26,6 +26,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/carrieractivationseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
+	"github.com/bagherbal/asha-engine/pkg/bridge/chiralweakselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/cliffordcontactcommutant"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coloredoctetportal"
@@ -486,6 +487,7 @@ func Run() error {
 		complexifiedhilbertspace.ComplexifiedHilbertSpaceFiniteAlgebraRepresentationAuditTheorem(),
 		nativefinitealgebra.NativeFiniteAlgebraContactPreservingSubalgebraSearchTheorem(),
 		su2spinorlift.SU2SpinorLiftQuaternionicClosureAuditTheorem(),
+		chiralweakselector.ChiralAlignmentWeakPlaneSelectorAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

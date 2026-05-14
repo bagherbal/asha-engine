@@ -238,3 +238,12 @@
 - A pseudo-real fundamental doublet supports a quaternionic module locally. Claim only local `H` support unless the action is globally selected and represented faithfully on the full carrier.
 - Never import Pauli matrices, Connes’ algebra, or the Standard Model weak-doublet assignment as the proof. The gate may use representation identities only as preflight tests.
 - Keep the order-one calculus blocked until a faithful finite algebra representation, opposite action, and canonical weak-plane selector are all available.
+
+## Gate 238 method note — chirality must be tested, not recognized
+
+- When a candidate grading has the right dimension split, compute its action on the actual candidate representation sectors. An `8⊕8` split alone does not make it Standard Model chirality.
+- For weak-plane selection, audit all candidate planes and compare parity distributions. Do not pick the plane that looks physically familiar.
+- Distinguish three layers: finite grading, physical chirality, and left-handed weak action. Passing the first does not imply the second or third.
+- If a Lie action preserves a grading, it is not automatically chiral with respect to that grading. A chiral weak action must be isolated to the appropriate sector by a derived projection.
+- Temporal/spatial class distinctions are meaningful, but class-level reduction is not unique plane selection.
+- Preserve local quaternionic support from prior gates while logging failed global `H` derivation when the selector is missing.
