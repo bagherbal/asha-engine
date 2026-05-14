@@ -162,6 +162,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/heatkerneldynamicspreflight"
 	"github.com/bagherbal/asha-engine/pkg/bridge/heavycarrierdecayaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsconjugatequotient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/higgsquarticratioverification"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hopfgeometricnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hyperchargediracassembly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/innerfluctuationfieldcontent"
@@ -640,6 +641,7 @@ func Run() error {
 		bgapmajoranaactivation.BGapMajoranaActivationSpectralActionSigmaHMixedQuarticCorrectionAuditTheorem(),
 		topyukawagenerationtensor.TopYukawaGenerationTensorSieveAmplitudeFractionalizationAuditTheorem(),
 		intermediatethresholdjump.IntermediateThresholdDecouplingQuarticJumpTransportAuditTheorem(),
+		higgsquarticratioverification.EmpiricalHiggsQuarticRatioVerificationTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
