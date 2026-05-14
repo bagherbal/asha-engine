@@ -4211,3 +4211,31 @@ Q_8vC/Z_8vC: missing
 neutral complex 3-plane: not computed
 v_tau and Yukawa texture: still blocked
 ```
+
+## Gate 253 — Witt decomposition / Fock-to-`so(8)` bivector coordinate audit
+
+Gate 253 adds `pkg/spinor/witt.go` and `pkg/bridge/wittso8coordinates`.
+
+It reads the native four-mode Fock dictionary backwards:
+
+```text
+mode k <-> span{e_{2k}, e_{2k+1}}
+N_k - 1/2 I -> (i/2) e_{2k}∧e_{2k+1}
+```
+
+This derives the missing generic coordinate dictionary from diagonal Fock number operators to the Cartan torus of `so(8)=Λ²R⁸`. Known number-operator ledgers such as `B-L`, temporal `T0`, and a conditional weak-plane Cartan candidate are now coordinate-ready.
+
+The gate deliberately does not claim the physical neutral three-plane. The project still needs a native theorem identifying `T3L` and `Y_phi` as coefficient vectors over `(N_0,N_1,N_2,N_3)` or as direct Spin(8) bivector representatives. It also still needs to select the exact `8_s -> 8_v` triality branch from representation data, not from the desired kernel outcome.
+
+Architectural status:
+
+```text
+native Witt pairing: derived
+N_k -> so(8) Cartan coordinates: derived
+known Fock ledgers: coordinate-ready
+T3L/Y_phi physical coordinates: missing
+explicit 8_s -> 8_v triality branch: unselected
+Q_8vC: not constructed
+neutral 3-plane: not derived
+v_tau and Yukawa texture: still blocked
+```

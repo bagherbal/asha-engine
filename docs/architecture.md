@@ -4474,3 +4474,27 @@ explicit triality automorphism: missing
 J-compatible vector-to-spinor transport: missing
 flavor theorem: not derived
 ```
+
+## Gate 253 — Witt decomposition / Fock-to-`so(8)` bivector coordinate audit
+
+Gate 253 adds `pkg/spinor/witt.go` and `pkg/bridge/wittso8coordinates`.
+
+It resolves the generic coordinate-dictionary part of the Gate-252 obstruction by making the native Fock/Witt pairing explicit:
+
+```text
+a†_k = 1/2(e_{2k} - i e_{2k+1})
+a_k  = 1/2(e_{2k} + i e_{2k+1})
+N_k - 1/2 I -> (i/2) e_{2k}∧e_{2k+1}
+```
+
+Thus every diagonal Fock number ledger now has a typed Cartan coordinate in `so(8)`. The central identity shift is explicitly removed because it is not a Lie-algebra coordinate.
+
+The gate preserves the more important ontology firewall:
+
+```text
+T3L and Y_phi are known bridge names, but not yet native coefficient vectors over N_k.
+D4 Cartan triality candidates exist, but the physical 8_s -> 8_v branch is not selected.
+Q_8vC and ker(Q_8vC) are therefore still unconstructed.
+```
+
+The next required theorem is not another generic dictionary theorem. It is the electroweak Cartan ledger theorem: retrieve or derive the actual `T3L` / `Y_phi` coordinates, then select triality by representation weights.

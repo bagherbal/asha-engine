@@ -216,6 +216,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/universalbetasource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/universaltracedeformation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/vectorrepresentative8v"
+	"github.com/bagherbal/asha-engine/pkg/bridge/wittso8coordinates"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawaamplitudeseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawaamplitudesource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/yukawashapeconstraint"
@@ -516,6 +517,7 @@ func Run() error {
 		adjointbivectoraction.AdjointBivectorActionExplicitQ8VMatrixAuditTheorem(),
 		complexweightspacekernel.ComplexWeightSpaceDecompositionNeutralKernelAuditTheorem(),
 		lietrialitypullback.LieAlgebraTrialityPullbackHermitianQ8VCNeutral3PlaneAuditTheorem(),
+		wittso8coordinates.WittDecompositionFockToSO8BivectorCoordinateAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
