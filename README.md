@@ -345,3 +345,7 @@ It classifies finite threshold anchors by activation status:
 - contact partial-overlap modes: threshold-open, no physical-field/regulator/frustration decision.
 
 The gate explicitly rejects threshold-corrected beta coefficients until a physical unit, activation rule, representation assignment, and decoupling prescription are derived.
+
+## v0.58 — Gate 59: Current Action on Scalar LR Projector
+
+Adds `pkg/bridge/currentprojection`, which lifts the finite `u(4)`-shaped current inventory to the left×scalar domain and right-singlet image of the scalar LR projector. The gate computes finite representation-overlap diagnostics for central, color, B−L, and leptoquark current sectors while keeping Fierz signs, current kinetic normalization, propagator rules, and up/down splitting explicitly open.

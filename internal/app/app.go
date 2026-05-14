@@ -9,6 +9,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
+	"github.com/bagherbal/asha-engine/pkg/bridge/currentprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fieldmap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierz"
@@ -128,6 +129,7 @@ func Run() error {
 		fourfermion.NativeFourFermionKernelTheorem(),
 		fierz.FiniteFierzProjectionAuditTheorem(),
 		chiraltrace.FiniteChiralBilinearMetricTheorem(),
+		currentprojection.CurrentActionScalarProjectionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
