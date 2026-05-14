@@ -1077,3 +1077,7 @@ threshold-corrected Δb_i(L)          = not derived
 ```
 
 Next: Gate 134 — leptoquark hypercharge-row and local-field obstruction / beta-permission theorem.
+
+## Gate 134 — Leptoquark Hypercharge / Local Field Beta-Permission Firewall
+
+Gate 134 takes the Gate 133 result that the six current-side leptoquark slots carry only `3 colors × 2 real symmetric/skew orientations`. It audits the remaining permission requirements before any of those slots may enter threshold beta matching: weak SU(2)L action, hypercharge row, local field map, Lorentz kinetic pole/residue data, mass activation, and decoupling/matching. None is selected by the finite data, so the contact leptoquark branch remains diagnostic only and contributes no `Δb_i` row.

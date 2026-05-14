@@ -34,6 +34,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactequivrefinement"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactfieldmap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactincidence"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqbetapermission"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqblock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqsu2"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactlqtensor"
@@ -278,6 +279,7 @@ func Run() error {
 		contactlqblock.ContactLeptoquarkSixBlockS6PermutationObstructionTheorem(),
 		contactlqtensor.ContactLeptoquarkSlotRepresentationTensorColorDoubletObstructionTheorem(),
 		contactlqsu2.LeptoquarkRealOrientationWeakDoubletSU2ActionSearchTheorem(),
+		contactlqbetapermission.LeptoquarkHyperchargeLocalFieldBetaPermissionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
