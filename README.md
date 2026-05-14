@@ -2597,3 +2597,48 @@ gap_B/(16π²) = 0.000648866694
 which is a rejected near-miss, about `1.1557×` the required magnitude. Gate 216 does not fit a coefficient to close that gap.
 
 The heat-kernel bridge remains open because the engine has not derived a finite Dirac operator, complete spectral triple, canonical cutoff function, gauge-curvature projection, or threshold subtraction scheme. The Gate-215 residual remains a target for future finite matching theory, not a derived correction.
+
+## v2.15 — Gate 217: Finite spectral triple / heavy-sector gauge-curvature projection audit
+
+Gate 217 adds `pkg/bridge/finitespectraltriple`.
+
+Gate 216 showed that the required Gate-215 matching residual cannot be derived from raw finite scalars or sign-only trace resonances. Gate 217 therefore audits the actual mathematical machinery required by a finite spectral action:
+
+```text
+(A, H, D_F, J, gamma, gauge fluctuation, heat-kernel projection, cutoff moments, subtraction scheme)
+```
+
+The inherited matching target remains:
+
+```text
+δ_match_required = (-0.000561193804, +0.000561440698, -0.000560508948)
+```
+
+The sealed heavy test subject remains:
+
+```text
+Dirac (1,3,Y=1) + Dirac (8,2,Y=1/2)
+```
+
+Gate 217 audits whether the finite algebra can build a heavy-sector spectral triple for this sealed spectrum. It records the following obstruction:
+
+```text
+FAILED_ROUTE_FINITE_SPECTRAL_TRIPLE_MATCHING_DERIVATION
+```
+
+The heavy rows can be named as continuum representations, but they are still sealed phenomenology. The finite core does not yet derive:
+
+```text
+heavy finite Hilbert carrier
+inner product / real structure J / grading gamma
+nontrivial self-adjoint finite Dirac operator D_F
+order-one calculus for the heavy sector
+gauge fluctuation map D_A
+a_2/a_4 heat-kernel projection onto U(1), SU(2), SU(3)
+canonical cutoff moments
+finite subtraction / threshold matching scheme
+```
+
+The gate rejects all hand-built shortcuts. A zero `D_F` is vacuous and cannot produce threshold traces. An identity mass ansatz `D_F = M_B I` would import the phenomenological PeV scale by hand. An off-diagonal map between `(1,3,1)` and `(8,2,1/2)` is not a gauge-equivariant finite intertwiner. Reusing the older top-down Fock spectral-triple ansatz does not act on the sealed heavy sector.
+
+Therefore Gate 217 does not derive `δ_i^match`. It only sharpens the missing bridge: future work must construct a true finite heavy-sector spectral triple and a canonical heat-kernel/subtraction map before the Gate-215 residual can become a finite theorem.

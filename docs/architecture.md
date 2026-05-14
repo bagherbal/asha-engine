@@ -3140,3 +3140,37 @@ FAILED_ROUTE_SPECTRAL_MATCHING_RESIDUAL_DERIVATION
 ```
 
 The obstruction is not a failure of the Gate-215 spectrum. It identifies the next missing bridge: a finite spectral triple / heat-kernel gauge projection / subtraction scheme capable of deriving actual `δ_i^match` rows.
+
+## Gate 217 — Finite spectral triple / heavy-sector gauge-curvature projection audit
+
+Package: `pkg/bridge/finitespectraltriple`
+
+Gate 217 sits after the Gate-216 matching-residual structure audit. Gate 216 identified the target vector but rejected raw scalar fitting. Gate 217 asks the stronger question: can the engine construct the finite spectral-action machinery that would lawfully turn finite traces into physical threshold matching constants?
+
+Architectural placement:
+
+```text
+Layer 14: Spectral matching-residual origin audit     → Gate 216
+Layer 15: Finite heavy-sector spectral triple audit   → Gate 217
+```
+
+The audit inherits the single-scale target from Gate 215:
+
+```text
+Dirac (1,3,Y=1) + Dirac (8,2,Y=1/2)
+δ_match_required ≈ (-5.6119e-4, +5.6144e-4, -5.6051e-4)
+```
+
+Gate 217 then decomposes the missing spectral-action bridge into three independent requirements:
+
+1. **Finite Dirac operator:** a heavy-sector Hilbert space, real structure `J`, grading `gamma`, and nontrivial self-adjoint `D_F` dictated by the finite algebra.
+2. **Gauge-curvature projection:** a heat-kernel map from finite traces to the three gauge curvature invariants `U(1)_Y`, `SU(2)_L`, and `SU(3)_C`.
+3. **Cutoff/subtraction scheme:** canonical cutoff moments and a threshold subtraction prescription converting heat-kernel traces into physical finite constants `δ_i^match`.
+
+The result is a strict obstruction:
+
+```text
+FAILED_ROUTE_FINITE_SPECTRAL_TRIPLE_MATCHING_DERIVATION
+```
+
+This result preserves the finite-to-continuum firewall. The heavy spectrum is still selected only by the `ThresholdSpectrumSeal`; no `D_F`, cutoff function, heat-kernel coefficient, or matching row is invented to fit the Gate-215 residual.

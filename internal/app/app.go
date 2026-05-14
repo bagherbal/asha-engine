@@ -103,6 +103,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/filtration"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitebundlemap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitecarrieractivation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/finitespectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockcontactkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockrepresentationtrace"
@@ -444,6 +445,7 @@ func Run() error {
 		twoloopintegration.SealedTwoLoopRGIntegrationMatchingEnvelopeTheorem(),
 		singlescalematchingaudit.SingleScaleDegenerateLimitMatchingAuditTheorem(),
 		matchingresidualstructure.MatchingResidualStructureSpectralHeatKernelSearchTheorem(),
+		finitespectraltriple.FiniteSpectralTripleHeavySectorGaugeCurvatureProjectionAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

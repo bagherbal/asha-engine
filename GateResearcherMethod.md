@@ -65,3 +65,12 @@
 - Heat-kernel language requires concrete structure: finite Dirac operator, spectral triple, gauge-curvature projection, cutoff moments, and subtraction scheme.
 - Existing finite traces may be action-level diagnostics while still lacking permission to become `δ_i^match` rows.
 - Preserve the difference between a future matching target and a derived matching correction in every theorem, audit, and README summary.
+
+## Gate 217 method refinement — spectral-action machinery must be complete before matching constants exist
+
+- Treat a required matching vector as a target, not as evidence that a finite coefficient has been derived.
+- Split spectral-action audits into separate gates: finite Hilbert/`D_F`, gauge projection, and cutoff/subtraction. A failure in any one piece blocks `δ_i^match`.
+- Reject vacuous or hand-built `D_F` candidates: zero operators, identity mass matrices, and phenomenological mass insertions are diagnostics only.
+- Keep representation-trace facts separate from heat-kernel matching facts. A beta row or Dynkin index is not a finite threshold constant.
+- Never import `MSbar`, dimensional regularization, or a cutoff function as a finite theorem. They must be explicit seals or external phenomenological inputs.
+- For speed, test the new bridge package and its direct predecessor only; use `go list` for registry wiring and avoid the known full-registry compile path unless intentionally validating the whole historical ladder.
