@@ -4744,3 +4744,25 @@ Gate 262 extends the direct flavor route opened by Gates 260-261. It keeps the c
 The exact triality cycle, reflection, and Hermitian combinations `C+C^T` and `i(C-C^T)` are audited against `tau_eta=diag(2,-2,1)`. They nontrivially populate the six-dimensional off-diagonal complement of `ad_tau`, so the finite core does contain raw non-commuting mixing algebra.
 
 The result remains a bridge/no-go rather than a physical Yukawa theorem. The triality operators are symmetry/label data, not selected finite amplitude sources. The `B_gap` ledger has no derived generation-endomorphism map, and Hopf phase residuals have no derived projection into the `M_3(C)` off-diagonal phase basis. CKM/PMNS, fermion masses, and empirical Yukawa data remain sealed.
+
+## Gate 263 — Finite Yukawa Action Functional / Triality-Hopf Amplitude Qualification Audit
+
+Gate 263 keeps the direct generation-bilinear route opened by Gates 260-262 and asks for dynamics rather than kinematics. Gate 262 showed that exact Hermitian triality matrices populate the six-dimensional off-diagonal complement of `ad_tau`. Gate 263 audits whether the finite core already has an action functional that assigns physical coefficients to that basis.
+
+The gate evaluates exact `M_3(C)` trace diagnostics on the real and phase triality bases. They confirm that the basis is well-typed and nonzero, but they are degenerate:
+
+```text
+Tr(A†A)=Tr(K†K)=6
+Tr(A†K)=0
+Tr([tau,A]†[tau,A])=Tr([tau,K]†[tau,K])=52
+```
+
+Thus trace functionals provide a norm and a diagnostic, not a finite amplitude selector. Existing action-like ledgers either act on scalar/gauge variables, initialize a formal Dirac family without selecting a block, or act as number-operator responses on the Fock basis. None currently acts as a canonical Yukawa action on `Hom(G_R,G_L) ≅ M_3(C)`.
+
+The exposed texture family is:
+
+```text
+Y_f = alpha*tau_eta + beta*(C+C^T) + gamma*i(C-C^T)
+```
+
+but the coefficients remain behind the `EmpiricalYukawaSeal` unless a future finite action, finite `D_F`, Hopf projection, or order-one calculus selects them.

@@ -120,6 +120,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitehopfaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitespectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
+	"github.com/bagherbal/asha-engine/pkg/bridge/finiteyukawaaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/flavoralignmentdmabsence"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockcontactkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fockrepresentationtrace"
@@ -536,6 +537,7 @@ func Run() error {
 		noncartanflavorvacuum.NonCartanFlavorVacuumOffDiagonalU12MixingAuditTheorem(),
 		tauetayukawasourcemap.DirectTauEtaYukawaSourceMapGenerationBilinearCarrierAuditTheorem(),
 		tauetamixingpartner.TauEtaNonCommutingPartnerFinitePhaseMixingSourceAuditTheorem(),
+		finiteyukawaaction.FiniteYukawaActionFunctionalTrialityHopfAmplitudeQualificationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

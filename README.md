@@ -4609,3 +4609,66 @@ FAILED_ROUTE_CKM_PMNS_AND_FERMION_MASSES_STILL_BLOCKED
 ```
 
 Gate 262 does not run the full internal suite or full package suite. The next gate must audit whether a finite Yukawa action functional or lawful Hopf projection can turn the exposed Hermitian triality basis into a qualified amplitude source.
+
+## Gate 263 — Finite Yukawa Action Functional / Triality-Hopf Amplitude Qualification Audit
+
+Gate 263 adds `pkg/bridge/finiteyukawaaction` and registers `FiniteYukawaActionFunctionalTrialityHopfAmplitudeQualificationAuditTheorem`.
+
+The gate inherits Gate 262's direct flavor arena:
+
+```text
+Hom(G_R,G_L) ≅ M_3(C)
+tau_eta = diag(2,-2,1)
+A = C+C^T
+K = i(C-C^T)
+```
+
+It then audits whether any existing finite action functional can turn the Hermitian triality real/phase basis into physical Yukawa amplitudes.
+
+The exact local trace diagnostics are evaluated on the two off-diagonal bases:
+
+```text
+Tr(A) = 0
+Tr(K) = 0
+Tr(A†A) = 6
+Tr(K†K) = 6
+Tr(A†K) = 0
+Tr([tau,A]†[tau,A]) = 52
+Tr([tau,K]†[tau,K]) = 52
+```
+
+These results are useful but deliberately insufficient. The trace metric and commutator norm evaluate the basis, but they are degenerate on the real/phase pair and do not select coefficients.
+
+Gate 263 audits five action-like ledgers:
+
+1. the local `M_3(C)` trace/Hilbert-Schmidt diagnostic functional,
+2. the canonical scalar/gauge finite variational action,
+3. the finite spectral-action / spectral-triple audit,
+4. the finite Dirac `D_F` initialization family,
+5. the matter Fock representation action.
+
+None qualifies as a finite Yukawa amplitude functional on `Hom(G_R,G_L)`. The lawful ansatz is exposed:
+
+```text
+Y_f = alpha*tau_eta + beta*(C+C^T) + gamma*i(C-C^T)
+```
+
+but `alpha`, `beta`, `gamma`, the overall Yukawa scale, fermion-kind dependence, and left/right basis convention remain unselected.
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_GATE262_HERMITIAN_TRIALITY_BASIS_INHERITED
+CONDITIONAL_SUPPORT_M3_TRACE_FUNCTIONALS_EVALUATED
+FAILED_ROUTE_TRACE_FUNCTIONALS_DO_NOT_SELECT_AMPLITUDES
+FAILED_ROUTE_CANONICAL_ACTION_HAS_NO_NONCOMMUTING_TEXTURE_TERM
+FAILED_ROUTE_FINITE_SPECTRAL_ACTION_NOT_READY_FOR_YUKAWA_AMPLITUDES
+FAILED_ROUTE_B_GAP_ACTION_MAP_TO_M3_OFFDIAGONAL_MISSING
+FAILED_ROUTE_HOPF_PHASE_TO_TRIALITY_PHASE_PROJECTION_MISSING
+FAILED_ROUTE_FINITE_YUKAWA_ACTION_FUNCTIONAL_NOT_DERIVED
+CONDITIONAL_SUPPORT_EMPIRICAL_YUKAWA_SEAL_PRESERVED
+FAILED_ROUTE_PHYSICAL_YUKAWA_TEXTURE_STILL_BLOCKED
+FAILED_ROUTE_CKM_PMNS_AND_FERMION_MASSES_STILL_BLOCKED
+```
+
+Gate 263 does not use observed masses, CKM/PMNS angles, or empirical Yukawa values. The next gate must either derive a finite `D_F` / order-one Yukawa block selector, or explicitly activate a quarantined `EmpiricalYukawaSeal` for phenomenological texture fitting.
