@@ -255,6 +255,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalboundaryviability"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/tracesynthesiscarrierequivalence"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitytexturelift"
 	"github.com/bagherbal/asha-engine/pkg/bridge/truebimodulerepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/twoloopintegration"
@@ -624,6 +625,7 @@ func Run() error {
 		contactspectralcutoffpromotion.ContactSpectralCutoffPromotionCanonicalPositiveTestProfileConstructionAuditTheorem(),
 		scalarheatkernelsubtraction.ScalarHeatKernelSubtractionHiggsPotentialChannelSeparationAuditTheorem(),
 		scalarquarticchannel.ScalarQuarticChannelExtractionDimensionlessCouplingSieveAuditTheorem(),
+		tracesynthesiscarrierequivalence.RawTraceSynthesisCarrierEquivalenceQuarticKineticRatioAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
