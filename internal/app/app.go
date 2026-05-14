@@ -305,6 +305,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/unificationtraceledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/universalbetasource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/universaltracedeformation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/vacuumparametercensus"
 	"github.com/bagherbal/asha-engine/pkg/bridge/vectorrepresentative8v"
 	"github.com/bagherbal/asha-engine/pkg/bridge/weakquaternionicnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/wittso8coordinates"
@@ -700,6 +701,7 @@ func Run() error {
 		trialitygaussianmeasure.TrialityGaussianMeasureZeroModeNormalizationAuditTheorem(),
 		gravityspectralactionf2.GravitationalSpectralActionF2CutoffMomentSieveTheorem(),
 		spectralmomentledger.CompleteSpectralMomentLedgerCosmologicalConstantTripleHierarchyAuditTheorem(),
+		vacuumparametercensus.VacuumParameterCensusMinimalInputTheoremAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
