@@ -1323,3 +1323,80 @@ residual nullity:                          3 -> 3
 This is a clean mass-generation no-go at the current finite-data stage. The mass problem is not erased; it is sealed as structurally open until a new finite source appears that is simultaneously canonical, generation-breaking, nonzero, charge-compatible, and non-commuting with another qualified texture source.
 
 Next gate: Gate 174 — spectral-action normalization from the topological action seal. The gauge ratio is closed and the mass route is sealed for now, so the next independent attack is the absolute coupling normalization: whether the topological action seal `S_top = 8π²` fixes the spectral-action prefactor `f₀` and reduces nullity from 3 to 2.
+
+## v1.72 — Gate 174: Spectral-action normalization from the topological action seal
+
+Gate 174 adds `pkg/bridge/topologicalnormalization`.
+
+Gates 166-167 closed the relative gauge-kinetic problem: the Fock representation trace gives
+
+```text
+K_rep = (2,2,2,10/3)
+normalized = diag(1,1,1,5/3)
+sin²_* = 3/8
+```
+
+Gate 173 sealed the mass-generation route at the current finite-data stage. Gate 174 therefore tests the next independent question: can the topological action seal
+
+```text
+S_top = 8π² I_BG, with I_BG = 1
+```
+
+fix the absolute spectral-action prefactor `f0` and the common boundary inverse coupling
+
+```text
+u = 1/g_*²?
+```
+
+The gate computes the conditional instanton-matching branch:
+
+```text
+S_YM(k=I_BG) = 8π² I_BG / g_*²
+S_top        = 8π² I_BG
+therefore, if the finite seal is identified with the continuum unit-instanton normalization,
+
+u = 1/g_*² = 1
+g_*² = 1
+```
+
+Combined with the Fock representation trace this gives stable boundary physics:
+
+```text
+1/g_2² = 1
+1/g_Y² = 5/3
+sin²_* = 3/8
+```
+
+The spectral-action prefactor itself remains convention-dependent. Under the convention
+
+```text
+1/g_a² = f0 · Tr_rep(T_a²)
+```
+
+one gets `f0 = 1/2`. Under the convention
+
+```text
+1/g_a² = 2 f0 · Tr_rep(T_a²)
+```
+
+one gets `f0 = 1/4`. The physical conditional boundary value `u=1` and ratio `5/3` are unchanged; only the bookkeeping definition of `f0` changes.
+
+Strict theorem status: **BRIDGE_REQUIRED**.
+
+The topological seal alone does not yet derive the absolute coupling. Two bridges remain missing:
+
+```text
+1. finite contact index -> continuum Yang-Mills topological charge
+2. finite trace/kinetic normalization -> continuum gauge kinetic normalization
+```
+
+Therefore Gate 174 records:
+
+```text
+strict nullity:      3 -> 3
+conditional nullity: 3 -> 2
+```
+
+No observed coupling is inserted. No physical low-energy alpha, physical weak angle, boundary scale, threshold correction, or mass is claimed.
+
+Next gate: Gate 175 — finite-to-continuum instanton trace-normalization bridge.

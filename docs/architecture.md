@@ -2152,3 +2152,69 @@ residual nullity: 3 -> 3
 ```
 
 Consequence: the mass-generation line is sealed until new finite input is introduced. The correct next independent line is absolute gauge-coupling normalization from the topological action seal.
+
+### Gate 174 — spectral-action normalization from the topological action seal
+
+Package: `pkg/bridge/topologicalnormalization`
+
+Gate 174 follows the Gate-167 gauge-ratio closure and the Gate-173 mass-generation no-go. It tests whether the exact topological action seal can fix the absolute spectral-action normalization.
+
+Inputs:
+
+```text
+K_rep = (2,2,2,10/3)
+K_* = diag(1,1,1,5/3)
+sin²_* = 3/8
+S_top = 8π² I_BG
+I_BG = 1
+```
+
+The gate computes the conditional Yang-Mills instanton matching:
+
+```text
+S_YM(k=I_BG) = 8π² I_BG / g_*²
+S_top        = 8π² I_BG
+=> u = 1/g_*² = 1
+```
+
+This would make the boundary inverse kinetic coefficients
+
+```text
+1/g_2² = 1
+1/g_Y² = 5/3
+```
+
+and preserve `sin²_* = 3/8`. The result is conditional because the finite engine has not yet derived the two required matching maps:
+
+```text
+finite contact index -> continuum topological charge
+finite trace/kinetic form -> continuum gauge kinetic normalization
+```
+
+The gate also records the convention dependence of the spectral-action prefactor. If
+
+```text
+1/g_a² = f0 Tr_rep(T_a²),
+```
+
+then `f0 = 1/2` on the conditional branch. If
+
+```text
+1/g_a² = 2 f0 Tr_rep(T_a²),
+```
+
+then `f0 = 1/4`. The conditional boundary coupling `u=1` is invariant under this bookkeeping change; `f0` is not.
+
+Gate 174 status:
+
+```text
+Status: BRIDGE_REQUIRED
+relative gauge ratio: closed
+conditional absolute coupling: available
+strict absolute coupling theorem: not derived
+strict nullity: 3 -> 3
+conditional nullity: 3 -> 2
+physical alpha / masses / thresholds / RG scale: not derived
+```
+
+Next gate: Gate 175 — finite-to-continuum instanton trace-normalization bridge.

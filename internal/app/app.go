@@ -132,6 +132,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topdownspectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
+	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitytexturelift"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1completion"
@@ -358,6 +359,7 @@ func Run() error {
 		contactkindassignment.ContactSpectrumToFermionKindAssignmentTheorem(),
 		trialitytexturelift.TrialityLiftedYukawaTextureOperatorSearchTheorem(),
 		noncommutingtexturepair.FiniteNonCommutingTexturePairSearchTheorem(),
+		topologicalnormalization.SpectralActionTopologicalNormalizationTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
