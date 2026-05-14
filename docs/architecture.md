@@ -1184,3 +1184,19 @@ Next: Gate 140 — contact T3R sign-split naturality / spectral-cut obstruction 
 ### Gate 140 — Contact T3R sign-split naturality / spectral-cut obstruction
 
 Gate 140 tests whether the seven-row contact spectrum can select a quotient-side `T3R` sign operator by spectral cuts. It finds a real finite diagnostic: the contact spectrum has a unique largest gap, producing a canonical `3|4` spectral partition. The gate still refuses to promote this into contact `T3R`, because the `+/-` orientation is not selected, the split is spectral rather than representation-theoretic, and no Fock-contact intertwiner, chirality row, B-L pullback, SU(2)L action, hypercharge row, local field map, mass activation, or decoupling rule is derived. Contact threshold beta rows remain forbidden.
+
+## Gate 144 — Contact C-odd Source Functional / Finite Signed-Current Construction Attempt
+
+Package: `pkg/bridge/contactcoddsource`
+
+Gate 144 tests whether the contact carrier itself can construct a finite signed source functional strong enough to break the charge-conjugation orientation degeneracy found in Gates 141–143.
+
+The strongest available object is the centered contact spectral functional:
+
+```text
+J = D_contact - mean(D_contact) I
+```
+
+It is canonical as a contact diagnostic, trace-zero, and signed. It gives a `3|4` sign pattern matching the largest-gap contact split. However, it is still not a physical C-odd source current. It has no selected charge-conjugation action, no source-current coupling theorem, no Fock/contact pullback, no local field map, no T3R or hypercharge semantics, and no mass activation/decoupling rule.
+
+Therefore the signed-current construction remains diagnostic only. Contact representation rows, threshold beta rows, physical electroweak constants, and masses remain sealed.
