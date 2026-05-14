@@ -252,6 +252,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/normalizationthresholdaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/o3quotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/orientationtruechirality"
+	"github.com/bagherbal/asha-engine/pkg/bridge/orientededgeincidence"
 	"github.com/bagherbal/asha-engine/pkg/bridge/perslotmonotonicityseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/pevobservabilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/pfaffianhierarchy"
@@ -806,6 +807,7 @@ func Run() error {
 		mixededgelaplaciansieve.NonQuaternionicScalarIdentityMixedEdgeLaplacianSieveTheorem(),
 		derivededgeweightoperator.DerivedEdgeWeightOperatorHyperchargeLaplacianSieveTheorem(),
 		spectralgraphedgeadjacency.SpectralGraphEdgeAdjacencyOperatorSearchTheorem(),
+		orientededgeincidence.OrientedEdgeIncidenceBoundaryOperatorSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
