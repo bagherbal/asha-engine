@@ -977,3 +977,11 @@ The next gate should search for a current-side sector quotient semantics or cont
 Package: `pkg/bridge/contactquotientsemantics`
 
 Gate 128 tests whether the current-side sector quotients exposed by Gate 127 can be promoted into contact-row equivalence relations. It records that two natural seven-dimensional quotient targets exist on the U(4)/Pati-Salam current side, but their semantics are typed sector patterns `1+6`, not seven contact spectral singleton rows. The canonical contact singleton relation preserves row data but is only diagnostic and not current-derived; the anonymous one-orbit relation restores symmetry by destroying row data. Fano-transport and spectral-cutoff refinements require a hidden assignment or arbitrary cutoff. Therefore contact representation rows, contact beta rows, and zero-row cancellations remain forbidden.
+
+### Gate 129 — contact-row equivalence refinement / sector-pattern mismatch obstruction theorem
+
+Gate 129 refines the Gate 128 obstruction. Gate 128 showed that the natural current-side quotients have the right carrier dimension seven, but with sector pattern `1+6`; the contact carrier has seven distinct singleton spectral rows. Gate 129 asks whether the current-side `1+6` pattern can be canonically refined into seven contact rows.
+
+The result is negative. Keeping the `1+6` relation preserves current semantics but leaves the six-row block unresolved. Splitting it into seven rows requires choosing which contact row receives the current singlet and then permuting the remaining six rows, giving `7*6! = 5040` hidden choices per current quotient branch. Since two natural current quotient branches coexist, the obstruction is not removed; it is doubled.
+
+The gate therefore keeps the contact beta firewall closed: no representation-complete contact rows, no contact beta rows, no proven contact zero rows, and no threshold-corrected `Δb_i(L)` are derived.
