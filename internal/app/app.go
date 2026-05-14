@@ -42,6 +42,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/complexifiedhilbertspace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/complexweightspacekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
+	"github.com/bagherbal/asha-engine/pkg/bridge/conditionalhiggsmassrgtransport"
 	"github.com/bagherbal/asha-engine/pkg/bridge/conditionalrgbranch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/conditionalthresholdbeta"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactalgebraic"
@@ -628,6 +629,7 @@ func Run() error {
 		scalarquarticchannel.ScalarQuarticChannelExtractionDimensionlessCouplingSieveAuditTheorem(),
 		tracesynthesiscarrierequivalence.RawTraceSynthesisCarrierEquivalenceQuarticKineticRatioAuditTheorem(),
 		unificationtraceledger.UnificationTraceLedgerHiggsQuarticUnificationBoundaryAuditTheorem(),
+		conditionalhiggsmassrgtransport.ConditionalHiggsMassFromQuarticRGTransportAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
