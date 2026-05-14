@@ -167,6 +167,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitytexturelift"
+	"github.com/bagherbal/asha-engine/pkg/bridge/twothresholdviability"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1completion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1kinetic"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1nonfactor"
@@ -432,6 +433,7 @@ func Run() error {
 		baryonleptonoperatoraudit.BaryonLeptonViolatingOperatorBasisAuditTheorem(),
 		leptoquarkdynamicsseal.LeptoquarkDynamicsSealBaryonConservationTheorem(),
 		nonuniversalrgfit.NonUniversalRationalLatticeRGFitAuditTheorem(),
+		twothresholdviability.TwoThresholdRationalLatticeViabilityFilterTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

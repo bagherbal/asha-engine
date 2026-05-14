@@ -31,3 +31,8 @@
 - For dormant-current gates, separate inventory from dynamics. A current slot becomes dangerous only after curvature/action/local-field/propagator/mass/coefficient semantics are derived or explicitly sealed.
 - When sealing a dormant threat surface, state what the seal forbids operationally and what future theorem could lift it. The seal must not rewrite the native failed route.
 - For rational RG-lattice gates, check exact determinant/field-structure obstructions before brute-force search; use bounded enumeration only as supporting evidence, never as the sole proof of an infinite semigroup no-go.
+- For multi-threshold RG gates, separate algebraic solvability from physical viability. Once the number of independent threshold rows equals the coupling-space dimension, closure is a linear solve; the theorem lives in ordering, positivity, pole, anomaly, and seal filters.
+- Use the correct coupling convention before solving: `α⁻¹` formulas carry `2π`, while `u=1/g²` formulas carry `8π²`. Do not mix them across gates.
+- When a prompt gives an explicit logarithmic cutoff, treat that as the operative filter even if a named physical scale would imply a slightly different logarithm.
+- For viable multi-threshold witnesses, record reverse orderings carefully: ordered threshold labels may be mathematically distinct even when the unordered physical row set is the same.
+- Record asymptotic freedom and Landau safety separately. Positive high-scale beta coefficients can still pass a bounded no-pole audit over a finite interval, but they are not asymptotically free.

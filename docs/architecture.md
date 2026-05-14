@@ -2966,3 +2966,32 @@ Layer 8: Non-universal lattice search  → Gate 210
 Gate 210 proves an exact single-scale obstruction. With rational Z-pole ledger values and rational row-lattice beta vectors, exact closure at the topological `alpha_*^-1 = 4π` boundary would require rational determinant data to equal a nonzero multiple of `π`. The determinant split forces the deformation row onto the SM beta ray, which is incompatible with the nonnegative threshold semigroup.
 
 Thus the engine learns that the mismatch triangle cannot be repaired by one rational non-universal threshold. This protects the project from replacing the failed universal beta row with a disguised near-fit. The next architectural branch must either introduce multiple threshold scales, derive finite matching corrections, or prove a stronger obstruction.
+
+### Gate 211 — Two-threshold rational lattice viability filter
+
+Package: `pkg/bridge/twothresholdviability`
+
+Gate 211 is the first post-Gate-210 multi-threshold viability layer. It does not repeat the single-scale search. It uses the mathematical fact that `b_SM` plus two independent rational threshold rows generically spans the full three-dimensional gauge-coupling space, so exact closure is a 3×3 linear solve rather than a Diophantine miracle.
+
+Architectural placement:
+
+```text
+Layer 4: Rational row grammar             → Gate 204
+Layer 7: Proton/operator seal             → Gates 208–209
+Layer 8: Single-scale lattice no-go        → Gate 210
+Layer 9: Two-threshold viability filter    → Gate 211
+```
+
+The gate audits two boundary targets: the quarantined `u=1` topological branch and the Gate-200 centroid comparison branch `u≈3.33`. It inherits the 108 Gate-210 safe generators and applies five physical filters after solving `(L_*, L_B1, L_B2)`:
+
+```text
+scale ordering
+sub-Planck boundary using L* < 37.8
+positive couplings
+no sub-Planck Landau pole
+separated thresholds
+```
+
+The result is asymmetric. The `u=1` branch has conditional viable two-threshold witnesses; the centroid branch has none under the ordering filter. This does not make the viable witnesses finite-derived particles. They remain sealed phenomenological row-pair solutions requiring later audits for carrier origin, matching corrections, two-loop stability, and scheme dependence.
+
+The best witnesses also do not preserve strict non-Abelian asymptotic freedom (`b_total_SU2` and/or `b_total_SU3` are positive), but they do pass the requested one-loop no-sub-Planck-Landau-pole filter. This distinction is part of the architecture: Landau safety is a viability condition, while asymptotic freedom preservation is recorded as a diagnostic rather than silently assumed.

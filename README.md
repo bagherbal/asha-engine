@@ -2322,3 +2322,55 @@ BOUNDED_OPTIMAL_NEAR_MISS_ONLY
 No `M_B`, `M_*`, physical unification, or threshold-corrected fit is emitted.
 
 Next structural obligation: Gate 211 — multi-threshold rational lattice deformation or matching-correction obstruction audit.
+
+## v2.09 — Gate 211: Two-threshold rational lattice viability filter / scale-ordered Landau safety audit
+
+Gate 211 adds `pkg/bridge/twothresholdviability`.
+
+Gate 210 proved that one rational threshold row cannot exactly close the mismatch triangle. Gate 211 uses the resulting dimension-counting pivot: with two independent threshold rows, the unknowns `(L_*, L_B1, L_B2)` are fixed by a 3×3 linear system in `u=1/g²` space:
+
+```text
+A_i = u_target + [(b_i + Δb_i^(1) + Δb_i^(2))/(8π²)] L*
+      - [Δb_i^(1)/(8π²)] L_B1 - [Δb_i^(2)/(8π²)] L_B2
+```
+
+The gate inherits the 108 anomaly-safe, leptoquark-compatible nonzero rational generators from Gate 210 and runs the filter for two boundary targets:
+
+```text
+u_topological = 1
+u_centroid    = 3.33
+```
+
+The topological branch returns conditional viable two-threshold witnesses:
+
+```text
+ordered pairs audited: 11556
+invertible systems:    11350
+scale ordered:         518
+sub-Planck:            110
+no Landau pole:        44
+viable pairs:          44
+```
+
+The centroid branch returns no viable pair because no solved system satisfies the required threshold ordering.
+
+The best ranked topological witness is:
+
+```text
+row 1: Dirac fermion (1,3,Y=1)        Δb = (12/5,8/3,0)
+row 2: Dirac fermion (8,2,Y=1/2)      Δb = (16/5,16/3,8)
+L_B1  = 7.11786258        M_B1 = 1.12508213e5 GeV
+L_B2  = 7.49883655        M_B2 = 1.64679341e5 GeV
+L_*   = 34.3263535        M_*  = 7.37363563e16 GeV
+b_total = (9.7, 4.83333333333, 1)
+```
+
+The theorem records:
+
+```text
+CONDITIONAL_VIABLE_TWO_THRESHOLD_LATTICE
+```
+
+This is not a physical prediction. The Z-pole ledger remains phenomenological input, the `LeptoquarkDynamicsSeal` remains active, no contact/B-sector mode is promoted to a row, no matching correction is derived, and no finite-core mass scale is claimed.
+
+Next structural obligation: Gate 212 — two-threshold solution minimality / finite-origin and matching-correction preflight audit.
