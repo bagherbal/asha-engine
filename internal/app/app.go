@@ -90,6 +90,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/diracorderone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcarrier"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcoupling"
+	"github.com/bagherbal/asha-engine/pkg/bridge/eftdecayportal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/electroweakvevseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewcurvature"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
@@ -454,6 +455,7 @@ func Run() error {
 		inputsensitivityaudit.InputSensitivityBottomTauYukawaCompletenessAuditTheorem(),
 		pevobservabilityaudit.PeVThresholdIndirectSignatureObservabilityAuditTheorem(),
 		heavycarrierdecayaudit.HeavyCarrierDecayRelicSafetyAuditTheorem(),
+		eftdecayportal.EFTDecayPortalRelicDecaySealActivationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

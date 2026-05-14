@@ -108,3 +108,12 @@
 - Use BBN only as a safety threshold when dynamics are absent. If no width exists, classify the lifetime as unbounded for safety purposes and log a failed route.
 - Keep leptoquark-mediated decays blocked while the `LeptoquarkDynamicsSeal` is active; dormant current slots are not propagators.
 - A `RelicDecaySeal` can be required without being granted. Grant it only after a concrete decay/splitting sector supplies BBN-safe lifetimes.
+
+## Gate 222 workflow refinement — relic seals require every carrier to decay
+
+- Correct representation identities before building portals. A field with `(8,2,Y=1/2)` is not SM `Q=(3,2,Y=1/6)`, so simple mass mixing is illegal.
+- Audit each heavy carrier separately. A BBN-safe decay for the neutral/colorless carrier does not rescue a stable colored carrier.
+- A partial portal can be useful, but full relic safety requires neutral, charged, and colored components to have legal decay/cascade paths.
+- Keep EFT portals quarantined: gauge-invariant operators, Wilson coefficients, and suppression scales are phenomenological unless derived from the finite core.
+- Use BBN bounds to constrain sealed couplings/scales, not to invent operators. If the operator is not certified, its width formula is diagnostic only.
+- Keep leptoquark-mediated decays blocked while `LeptoquarkDynamicsSeal` is active. Do not use dormant current slots to rescue relic safety.

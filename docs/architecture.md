@@ -3293,3 +3293,32 @@ RelicDecaySeal required, not granted
 ```
 
 This preserves the firewalls: the engine does not invent dark matter, decay couplings, mass splittings, or relic abundance to rescue the PeV spectrum.
+
+## Gate 222 — EFT decay portal and partial relic-seal audit
+
+Gate 222 extends the relic/decay sector after Gate 221. It asks whether the required `RelicDecaySeal` can be granted through explicit EFT operators.
+
+Architectural placement:
+
+```text
+finite core
+→ Fock/gauge scaffold
+→ empirical and stability seals
+→ rational threshold lattice
+→ ThresholdSpectrumSeal + MatchingCorrectionSeal
+→ full-SM two-loop sensitivity audit
+→ PeV observability audit
+→ heavy-carrier decay/relic safety audit
+→ EFT decay portal audit
+```
+
+The gate separates the two sealed carriers:
+
+```text
+(1,3,Y=1)      electroweak triplet
+(8,2,Y=1/2)    colored weak doublet
+```
+
+The triplet admits a quarantined EFT Yukawa portal to `L H†`, with a tiny BBN lower bound on its sealed coupling. The colored octet does not admit simple mass mixing with the SM quark doublet because its color and hypercharge differ from `Q=(3,2,Y=1/6)`. A leptoquark-assisted decay remains blocked by the `LeptoquarkDynamicsSeal`.
+
+Thus Gate 222 records partial triplet support but denies the full `RelicDecaySeal`. The cosmology frontier is narrowed to a colored-octet decay problem.

@@ -2754,3 +2754,41 @@ RELIC_DECAY_SEAL_REQUIRED_NOT_GRANTED
 ```
 
 This does not invalidate the RG bridge. It identifies the next missing phenomenological bridge: a finite or explicitly sealed decay/splitting sector capable of making the neutral, charged, and colored PeV carriers disappear before BBN without inventing arbitrary couplings.
+
+## v2.20 — Gate 222: EFT decay portal construction / RelicDecaySeal activation audit
+
+Gate 222 adds `pkg/bridge/eftdecayportal`. It inherits Gate 221's result: the sealed PeV spectrum is precision-safe but cosmologically pathological unless the heavy carriers can decay before BBN.
+
+A critical correction is made in this gate:
+
+```text
+(8,2,Y=1/2) is not identical to the SM quark doublet Q=(3,2,Y=1/6)
+```
+
+Therefore a simple `Ψ_8-Q` mass-mixing portal is rejected. The engine does not grant the full `RelicDecaySeal` from a false representation identity.
+
+Gate 222 finds one partial rescue channel:
+
+```text
+y_T Ψ_3^a (L σ^a H†) + h.c.
+```
+
+for the Dirac `(1,3,Y=1)` triplet. This is gauge invariant and BBN-safe if sealed with
+
+```text
+|y_T| > 2.53760706e-15
+```
+
+using `Γ ≈ |y_T|² M_B/(8π)` and `τ < 1s`.
+
+However, the colored `(8,2,Y=1/2)` carrier remains obstructed. No certified pure-SM dimension≤6 decay portal is found in the audited basis, and leptoquark-assisted decay remains blocked by the `LeptoquarkDynamicsSeal`.
+
+Gate 222 status:
+
+```text
+PARTIAL_EFT_PORTAL_SUPPORT_TRIPLET_ONLY
+FAILED_ROUTE_COLORED_OCTET_DECAY_PORTAL
+RELIC_DECAY_SEAL_NOT_GRANTED_FULL_SPECTRUM
+```
+
+The full PeV spectrum is therefore still not cosmologically safe. Gate 222 preserves the firewalls: the triplet portal is a quarantined EFT possibility, not a finite-core derivation, and no arbitrary colored decay operator is invented.
