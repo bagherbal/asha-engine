@@ -100,6 +100,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcoupling"
 	"github.com/bagherbal/asha-engine/pkg/bridge/eftdecayportal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/electroweakvevseal"
+	"github.com/bagherbal/asha-engine/pkg/bridge/ewcartanledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewcurvature"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewquadratic"
@@ -518,6 +519,7 @@ func Run() error {
 		complexweightspacekernel.ComplexWeightSpaceDecompositionNeutralKernelAuditTheorem(),
 		lietrialitypullback.LieAlgebraTrialityPullbackHermitianQ8VCNeutral3PlaneAuditTheorem(),
 		wittso8coordinates.WittDecompositionFockToSO8BivectorCoordinateAuditTheorem(),
+		ewcartanledger.ElectroweakCartanLedgerRetrievalAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

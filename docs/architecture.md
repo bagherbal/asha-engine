@@ -4498,3 +4498,17 @@ Q_8vC and ker(Q_8vC) are therefore still unconstructed.
 ```
 
 The next required theorem is not another generic dictionary theorem. It is the electroweak Cartan ledger theorem: retrieve or derive the actual `T3L` / `Y_phi` coordinates, then select triality by representation weights.
+
+## Gate 254 — Electroweak Cartan ledger retrieval / native `T3L`-`Y_phi` coefficient audit
+
+Gate 254 adds `pkg/bridge/ewcartanledger` and registers `ElectroweakCartanLedgerRetrievalAuditTheorem`.
+
+The gate searches the existing theorem chain for the exact coefficient ledgers that Gate 253 requires. It retrieves and coordinates true Fock ledgers such as `B-L`, the native diagonal `u(1)` bookkeeping, and the temporal seed `T0=1/2−N0`. It also audits all two-mode candidate weak-plane Cartans `T3_Uij=1/2(N_i−N_j)`, with the Spin^c/u(1) sieve leaving the three pure-spatial candidates as an unselected degenerate family.
+
+The physical electroweak pair is still not obtained as native Fock Cartan data:
+
+- `T3L` exists as a Gate-24 derived left-doublet matrix on the `Q_L⊕L_L` carrier.
+- `Y_phi/T_phi` exists as a scalar/contact operator on the 4D active scalar/contact factor.
+- `T0/T3R` is Fock-number coordinate-ready, but it is a matter-side right-isospin diagnostic and must not be conflated with `T3L`.
+
+Thus `Q_8vC = iR_8v(τ(T3L+Y_phi))` remains blocked. The active obstruction is a representation-carrier unification problem, not a generic coordinate-dictionary problem.

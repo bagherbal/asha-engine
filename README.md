@@ -4239,3 +4239,42 @@ Q_8vC: not constructed
 neutral 3-plane: not derived
 v_tau and Yukawa texture: still blocked
 ```
+
+## Gate 254 — Electroweak Cartan ledger retrieval / native `T3L`-`Y_phi` coefficient audit
+
+Gate 254 adds `pkg/bridge/ewcartanledger`.
+
+Gate 253 made the Witt dictionary explicit, so any true Fock-number ledger over `(N_0,N_1,N_2,N_3)` can now be translated into a Cartan coordinate in `so(8)=Λ²R⁸`. Gate 254 performs the next strict search: it audits the active registry for the actual physical electroweak ledgers needed for `T3L` and `Y_phi`.
+
+The result is deliberately conservative:
+
+```text
+B-L                         = -N_0 + (1/3)(N_1+N_2+N_3)       coordinate-ready
+Y_native                    = same native 1+3 Fock u(1) class   coordinate-ready
+T0 temporal polarization     = 1/2 I - N_0                      coordinate-ready as T0/T3R diagnostic
+candidate T3_Uij             = 1/2(N_i-N_j)                     coordinate-ready as candidate weak-plane Cartans
+T3L                          = Gate-24 left-doublet matrix      not a native N_k ledger
+Y_phi / T_phi                = scalar/contact H_phi operator    not a native N_k ledger
+```
+
+Therefore Gate 254 retrieves real nearby ledgers and translates the valid Fock ledgers through the Gate-253 dictionary, but it refuses to identify them with the physical pair `T3L,Y_phi`. The obstruction is no longer merely “missing text”; it is a carrier mismatch. Current `T3L` lives on the derived left-doublet representation, while current `Y_phi` lives on the scalar/contact factor. No theorem yet embeds both into a shared Spin(8) `so(8)` coordinate ledger.
+
+Status:
+
+```text
+CONDITIONAL_SUPPORT_GATE253_WITT_DICTIONARY_INHERITED
+CONDITIONAL_SUPPORT_EW_LEDGER_REGISTRY_SEARCH_COMPLETED
+CONDITIONAL_SUPPORT_FOCK_NUMBER_LEDGERS_RETRIEVED
+CONDITIONAL_SUPPORT_MATTER_T0_T3R_DIAGNOSTIC_COORDINATE_READY
+CONDITIONAL_SUPPORT_Y_PHI_TYPED_AS_SCALAR_CONTACT_NOT_FOCK_LEDGER
+CONDITIONAL_SUPPORT_T3L_TYPED_AS_LEFT_DOUBLET_MATRIX_NOT_NATIVE_FOCK_LEDGER
+CONDITIONAL_SUPPORT_CANDIDATE_WEAK_PLANE_CARTANS_AUDITED
+FAILED_ROUTE_T3L_NATIVE_NUMBER_OPERATOR_LEDGER_MISSING
+FAILED_ROUTE_Y_PHI_NATIVE_NUMBER_OPERATOR_LEDGER_MISSING
+FAILED_ROUTE_PHYSICAL_EW_SO8_COORDINATES_STILL_MISSING
+FAILED_ROUTE_TRIALITY_BRANCH_SELECTION_STILL_BLOCKED
+FAILED_ROUTE_Q8VC_NEUTRAL_3PLANE_STILL_BLOCKED
+FAILED_ROUTE_YUKAWA_TEXTURE_STILL_BLOCKED
+```
+
+The next logical gate is a carrier-intertwiner theorem: derive a native map from scalar/contact `H_phi` and derived left-doublet `SU(2)_L` data into the same Spin(8) representation carrier, or prove that the electroweak pair cannot live as pure Fock Cartan number ledgers.
