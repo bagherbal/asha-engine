@@ -444,3 +444,11 @@ The formal current-contact coupling tensor has dimension `16×4 = 64`, but no fi
 ## v0.76 — Gate 77: Non-Factorized Abelian Action / Kinetic-Mixing Search
 
 Adds `pkg/bridge/u1nonfactor`, which tests the first non-factorized abelian source candidate: the Yukawa-incidence correlation between matter-side `B-L` and scalar/contact `T_phi`. The gate finds nonzero local correlation on the gauge-compatible Yukawa support, but the signed moment cancels exactly between up/down quark branches and neutrino/electron lepton branches. Therefore no net `B-L`/contact-`u1` kinetic source or physical `U(1)_Y` coupling is derived yet.
+
+### v0.86 — Gate 87: Protected-Contact / Broken-Generator Intertwiner
+
+Adds a bridge audit for the would-be gauge-eating map. The engine now verifies
+that protected contact directions, scalar angular directions, and broken gauge
+images all have dimension three, while refusing to identify them by hand. The
+remaining obstruction is the absence of a canonical protected-contact metric or
+connection selecting a unique O(3) intertwiner.

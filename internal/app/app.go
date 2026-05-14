@@ -37,6 +37,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
+	"github.com/bagherbal/asha-engine/pkg/bridge/protectedintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcomplex"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcovariant"
@@ -184,6 +185,7 @@ func Run() error {
 		scalarcovariant.FiniteScalarCovariantDerivativeMassMatrixTheorem(),
 		gaugeeating.FiniteScalarKineticGaugeEatingSearchTheorem(),
 		scalarvacuum.ScalarVacuumOrientationFiniteMinimizerSearchTheorem(),
+		protectedintertwiner.ProtectedContactBrokenGeneratorIntertwinerSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

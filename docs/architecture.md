@@ -76,3 +76,14 @@ Gate 84 constructs an abstract finite scalar covariant-derivative template on th
 ## Gate 85 — Scalar kinetic / gauge-eating diagnostic
 
 Gate 85 strengthens the scalar covariant-derivative bridge by auditing the scalar kinetic frame and Goldstone image structure. It verifies that the diagnostic scalar vacuum has one radial direction, three independent broken-generator images from `{T1,T2,Z=T3−YΦ}`, and an electromagnetic null generator `Q=T3+YΦ`. The result is still bridge-level: the Euclidean scalar metric is not yet an action-selected kinetic normalization, and physical W/Z masses remain forbidden until the gauge Hessian, couplings, and vacuum orientation are derived.
+
+## Gate 87 — Protected-Contact / Broken-Generator Intertwiner
+
+Gate 87 tests whether the three protected contact directions can be canonically
+identified with the three broken electroweak generator image directions.
+
+The gate verifies the 3-3-3 count-level resonance and the positive broken-image
+metric. It deliberately does not declare a gauge-eating theorem: an abstract
+O(3) family of isometries exists between 3D frames, but the finite action has
+not yet selected one. The next mathematical target is a protected-contact metric
+or connection form that can reduce this O(3) freedom canonically.
