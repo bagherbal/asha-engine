@@ -68,6 +68,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierz"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierzsign"
 	"github.com/bagherbal/asha-engine/pkg/bridge/filtration"
+	"github.com/bagherbal/asha-engine/pkg/bridge/fockcontactkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeaction"
@@ -286,6 +287,7 @@ func Run() error {
 		contactlqcharge.LeptoquarkContactHyperchargeSourceBLChargeLatticeObstructionTheorem(),
 		contactlqt3r.ContactT3RChiralitySourceSearchLeptoquarkHyperchargeTheorem(),
 		contactt3rpullback.ContactT3RPullbackFockToContactIntertwinerSearchTheorem(),
+		fockcontactkernel.FockContactKernelSelectionOperatorIntertwiningObstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
