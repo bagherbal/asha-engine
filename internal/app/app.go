@@ -245,6 +245,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/topologicalnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/totalrepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/trialitytexturelift"
+	"github.com/bagherbal/asha-engine/pkg/bridge/truebimodulerepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/twoloopintegration"
 	"github.com/bagherbal/asha-engine/pkg/bridge/twothresholdminimality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/twothresholdviability"
@@ -600,6 +601,7 @@ func Run() error {
 		realstructurekofactorization.RealStructureJFactorizationKODimensionAuditTheorem(),
 		ko6twistedrealstructure.KO6TwistedRealStructurePhysicalJDerivationAuditTheorem(),
 		doubledspacerepresentation.DoubledSpaceRepresentationOppositeAlgebraActionAssemblyAuditTheorem(),
+		truebimodulerepresentation.TrueBimoduleAssemblyLeftRightRepresentationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
