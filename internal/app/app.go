@@ -153,6 +153,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/nativefinitealgebra"
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutraleigenspacekernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/neutrinotextureaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/noncartanflavorvacuum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncommutingtexturepair"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonuniversalrgfit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/normalizationthresholdaudit"
@@ -530,6 +531,7 @@ func Run() error {
 		sealedcarrierwitness.SealedCarrierEmbeddingDataWeakFrameTrialityBranchWitnessAuditTheorem(),
 		bminuslweakselector.WeakPlaneSelectorBMinusLEmbeddingOrientationConstraintAuditTheorem(),
 		tauetaweakselector.SpatialS3SieveTauEtaTopologicalOrientationSelectorAuditTheorem(),
+		noncartanflavorvacuum.NonCartanFlavorVacuumOffDiagonalU12MixingAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

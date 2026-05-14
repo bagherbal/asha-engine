@@ -4706,3 +4706,14 @@ Thus the architecture now separates three facts:
 3. The diagonal Cartan `Q=T3L+Y_phi` route still does not generate the neutral triality three-plane.
 
 The downstream Yukawa texture remains sealed.
+
+## Gate 260 — Non-Cartan Flavor Vacuum / Off-Diagonal U12 Mixing Audit
+
+Gate 260 adds `pkg/bridge/noncartanflavorvacuum` and registers `NonCartanFlavorVacuumOffDiagonalU12MixingAuditTheorem`.
+
+Architecturally, this gate separates two paths:
+
+1. **Closed path:** the `8_v` neutral-kernel route. Off-diagonal `U12` weak generators are audited and rejected as a source of larger kernels because `su(2)` gauge rotations preserve the spectrum of `Q=T3+Y`.
+2. **Opened path:** the direct `tau_eta` generation carrier. The three-component signed operator `(2,-2,1)` is recognized as a native generation-breaking source candidate living on an operator carrier, not inside the vector representation.
+
+This updates the ontology: the missing flavor structure should be sought as a direct generation bilinear/source-map theorem, not as a forced neutral 3-plane inside `8_v`.

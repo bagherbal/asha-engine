@@ -4558,3 +4558,11 @@ FAILED_ROUTE_YUKAWA_TEXTURE_STILL_SEALED
 ```
 
 The conclusion is precise: `tau_eta` is a real sealed spatial selector and conditionally selects the weak plane `U12`, but the Cartan electroweak route still does not derive the neutral three-plane. The next gate must address the remaining scalar-sign/weak-orientation mirror or test whether a non-Cartan flavor-vacuum operator is required.
+
+## Gate 260 — Non-Cartan Flavor Vacuum / Off-Diagonal U12 Mixing Audit
+
+Gate 260 adds `pkg/bridge/noncartanflavorvacuum` and registers `NonCartanFlavorVacuumOffDiagonalU12MixingAuditTheorem`.
+
+The gate closes the proposed non-Cartan rescue of the `8_v` neutral-kernel route. It retrieves the full `U12` local weak algebra, including `T1`, `T2`, and `W±`, but proves that these operators only rotate the weak basis. Since every `su(2)` element is conjugate to a Cartan representative, the charge spectrum and kernel dimension are gauge-invariant. Therefore the Gate 259 maximum `8_v` kernel dimension remains `2`, not `3`.
+
+The gate then opens a parallel direct-generation route. It treats `tau_eta=(2,-2,1)` as a native three-component operator on `G_tau = span{Q^TQ, Z^TZ, T3L^T Y_phi}`, not as a vector inside `8_v`. This is recorded only as a generation-breaking source-map candidate; Yukawa textures, masses, CKM, and PMNS remain blocked until a finite bilinear/action map is derived.
