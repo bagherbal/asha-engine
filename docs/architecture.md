@@ -3803,3 +3803,23 @@ This is useful, but not enough. The gate explicitly refuses to identify this boo
 The order-one condition remains unavailable as a physical theorem because the engine still lacks a faithful finite-algebra representation on the total Hilbert space. Provisional diagonal tests are not promoted: the full diagonal occupation algebra is too strong and not the NCG algebra, while `B-L` bookkeeping is too weak to derive the Standard Model block structure.
 
 The B-sector gap remains a dimensionless scalar datum. Gate 234 does not promote it to a Majorana mass, and it does not isolate a right-handed-neutrino slot. A broader Hilbert-space / real-structure theorem is required before the finite spectral action can become physical.
+
+## Gate 235 — Complexified Hilbert space and native finite algebra preflight
+
+Gate 235 adds `pkg/bridge/complexifiedhilbertspace` after the Gate-234 real-structure/order-one audit. Architecturally, it is the first doubled-carrier gate, but it makes the doubling internal rather than external.
+
+The key construction is:
+
+```text
+S_C = S ⊗_R C
+```
+
+where `S` is the native 16-real-dimensional `Cℓ(1,7)` / four-mode Fock carrier. Therefore the resulting space is `16` complex dimensions or `32` real dimensions. This resolves the previous “no particle/antiparticle carrier” obstruction at the bookkeeping level without adding model-building states.
+
+The canonical anti-linear candidate on this complexified space is complex conjugation. It has `J²=+1` and sends a representation to its conjugate representation. Gate 235 logs this as a candidate real structure only. Physical charge conjugation, KO convention, and the opposite-algebra action remain unproven.
+
+The finite algebra representation remains the main obstruction. Gate 235 does not import the standard NCG algebra `C ⊕ H ⊕ M₃(C)`. It only records the correct search problem: derive the associative algebra acting faithfully on `S_C` from the already-derived contact-preserving `su(2)⊕u(1)` data, contact constraints, and the color/lepton Fock split. The current engine lacks the explicit doubled-space gauge matrices needed to compute that maximal associative algebra.
+
+The doubled carrier permits neutral Majorana bilinears in principle, because neutral states now have conjugate partners. But the right-handed-neutrino slot, order-one compatibility, and B-gap placement are not derived. The B-gap is still a dimensionless spectral datum, not a Majorana mass.
+
+Gate 235 therefore moves the finite spectral-triple program forward from “space too small” to “space available, algebra missing.” The next finite-core gate must derive the native associative algebra representation before the order-one condition can become non-vacuous.

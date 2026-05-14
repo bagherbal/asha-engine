@@ -3338,3 +3338,47 @@ FAILED_ROUTE_FINITE_SPECTRAL_TRIPLE_AXIOMS
 ```
 
 Gate 234 is progress in the finite-core direction: it halves the legal `D_F` search space, but it still does not derive the physical finite Dirac operator.
+
+## v2.33 — Gate 235: Complexified Hilbert space and finite algebra representation audit
+
+Gate 235 introduces `pkg/bridge/complexifiedhilbertspace`. It corrects the naive phrasing of “adding antiparticles” by deriving the doubled real carrier through complexification of the already-existing real Clifford/Fock spinor:
+
+```text
+S_C = S ⊗_R C
+ dim_R(S)   = 16
+ dim_C(S_C) = 16
+ dim_R(S_C) = 32
+```
+
+Thus the `32`-real-dimensional carrier is not external model-building. It is the complex completion of the native `Cℓ(1,7)` spinor scaffold. The candidate real structure is anti-linear complex conjugation on `S_C`:
+
+```text
+J ψ = ψ*
+J² = +1
+```
+
+This gives a legitimate preflight particle/conjugate bookkeeping arena, but the engine does not yet promote it to the full physical Standard Model charge-conjugation operator. The physical representation, KO convention, and opposite-algebra action remain to be derived.
+
+The gate then audits the finite algebra question. It explicitly refuses to import Connes’ algebra
+
+```text
+C ⊕ H ⊕ M₃(C)
+```
+
+and instead asks what associative algebra is generated natively from the contact-preserving `su(2)⊕u(1)` structure and the color/lepton Fock split. The current project does not yet expose explicit doubled-space gauge matrices or a faithful finite-algebra representation on `S_C`, so the maximal associative algebra is not derived.
+
+The doubled space does create a kinematic neutral Majorana-bilinear capacity: neutral states in `S_C` have conjugate partners. This is real progress because such a bilinear could not exist on the previous undoubled scaffold. However, the engine still does not derive a right-handed-neutrino slot, order-one compatibility, or a canonical placement for the B-sector gap.
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_COMPLEXIFICATION_DERIVED_DOUBLING
+CONDITIONAL_SUPPORT_ANTILINEAR_CONJUGATION_J_PREFLIGHT
+CONDITIONAL_SUPPORT_NEUTRAL_MAJORANA_BILINEAR_CAPACITY
+FAILED_ROUTE_NATIVE_FINITE_ALGEBRA_REPRESENTATION_DERIVATION
+FAILED_ROUTE_CONNES_ALGEBRA_IMPORT_BLOCKED
+FAILED_ROUTE_CANONICAL_BGAP_MAJORANA_IDENTIFICATION
+FAILED_ROUTE_FULL_DOUBLED_SPECTRAL_TRIPLE_DERIVATION
+```
+
+Gate 235 therefore closes the Gate-234 Hilbert-space obstruction at the level of carrier kinematics, while preserving the deeper obstruction: the native associative algebra and the B-gap Majorana theorem are still missing.
