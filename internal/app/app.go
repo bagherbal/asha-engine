@@ -13,6 +13,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fieldmap"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fierz"
+	"github.com/bagherbal/asha-engine/pkg/bridge/fierzsign"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
@@ -132,6 +133,7 @@ func Run() error {
 		chiraltrace.FiniteChiralBilinearMetricTheorem(),
 		currentprojection.CurrentActionScalarProjectionTheorem(),
 		kineticnorm.GeneratorKineticNormalizationTheorem(),
+		fierzsign.CliffordLorentzFierzSignTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
