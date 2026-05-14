@@ -15,7 +15,10 @@ No observed physical constants are hard-coded in the finite core.
 ## Bottom line up front — current final finding
 
 The ASHA Engine has completed the finite internal-factor audit and the first lawful continuum bridge.
-Its central result is not that the finite algebra becomes spacetime, but that the finite spectral triple
+A follow-up coefficient audit corrected the earlier Gate 376 limitation: the product geometry was formally
+assembled first, and Gate 377 then performed the explicit spectral-action coefficient arithmetic.
+
+The central result is not that the finite algebra becomes spacetime, but that the finite spectral triple
 `F` joins an external four-dimensional spin manifold `M` through the almost-commutative product geometry:
 
 ```text
@@ -29,6 +32,9 @@ spectral-action boundary data. The current ledger supports the following structu
 - the internal algebraic factor is the Standard Model finite algebra
   `A_F = C ⊕ H ⊕ M₃(C)`;
 - the product spectral action yields the Standard Model plus Einstein-gravity action skeleton;
+- the explicit coefficient audit gives `C_Λ/(f₄Λ⁴)=96/(16π²)≈0.607927`,
+  raw `|C_R|/M_P²≈0.0024868` in the declared heat-kernel convention, and
+  prompt-skeleton `C_R/M_P²=3π/4`, exposing the remaining gravitational normalization seal;
 - the finite boundary ratios include
   `sin²θ_W(Λ) = 3/8`, `α_branch⁻¹ = 8π`,
   `λ_H / g_*² = 1197 / 4624`, and
@@ -45,12 +51,25 @@ cosmological constant are not yet numerical predictions of the engine; they requ
 as stability/interaction data for the dark sector, RG and threshold matching for vacuum decay, and a
 renormalized vacuum-energy or holographic subtraction principle.
 
+Gate 378 adds the complete normalization-factor audit for the product spectral action. It confirms that
+several suspected factors are real and computable, but also corrects the bookkeeping: the six factors do
+not form one universal product. They belong to separate heat-kernel channels. In particular, the
+Lichnerowicz `R/4` term must be combined with the universal `a₂` curvature term, giving a Dirac
+Einstein-Hilbert magnitude `1/12` under the declared Laplace-type convention, not a standalone `1/4`.
+With the current ledger value `f₂(Λ/M_P)² = π/64`, the canonical Einstein-Hilbert coefficient is still not
+closed: the doubled trace is short by `64π`, and the possible `J`-reduced half trace is short by `128π`.
+Therefore full numerical ToE closure requires a spectral-action moment/Planck-normalization theorem, an
+`f₀` slot theorem, and an absolute gauge representation-trace theorem, not only multiplication of the
+known finite factors.
+
 Therefore, the current status is:
 
 ```text
-ASHA supplies the finite internal geometry and spectral boundary coefficients.
+ASHA supplies the finite internal geometry and several spectral boundary ratios.
 M supplies spacetime and continuum dynamics.
 M × F supplies the lawful SM + gravity action framework.
+Gate 377 performs the first explicit coefficient arithmetic.
+Gate 378 audits the six finite-to-continuum normalization factors and shows which remaining seals are real.
 The 13 flavor moduli and major cosmological observables remain open quantitative targets.
 ```
 

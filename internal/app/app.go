@@ -236,6 +236,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/nontracialmodularstate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonunitaryprojectortexture"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonuniversalrgfit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/normalizationfactoraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/normalizationthresholdaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/o3quotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/orientationtruechirality"
@@ -243,6 +244,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/pevobservabilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/pfaffianhierarchy"
 	"github.com/bagherbal/asha-engine/pkg/bridge/physicalfinitehilbertcompletion"
+	"github.com/bagherbal/asha-engine/pkg/bridge/productspectralactioncoefficients"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedconnection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedintertwiner"
@@ -764,6 +766,8 @@ func Run() error {
 		ashafinalclosingtheorem.AshaFinalClosingTheoremThirteenModuliVacuumManifoldTheorem(),
 		cosmologicalobservables.CosmologicalObservablesDarkSectorPredictionSieveTheorem(),
 		almostcommutativeproduct.AlmostCommutativeProductGeometryFullSMGravitySpectralActionAssemblyTheorem(),
+		productspectralactioncoefficients.ProductSpectralActionCoefficientCalculatorClosureAuditTheorem(),
+		normalizationfactoraudit.CompleteNormalizationFactorAuditProductSpectralActionConventionSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

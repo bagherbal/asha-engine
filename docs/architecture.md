@@ -36,6 +36,29 @@ Cℓ(1,7) covariant phase space
 - `INVALID_COMPARISON`
 
 
+
+## Gate 378 — Complete normalization-factor audit
+
+Gate 378 audits the six finite-to-continuum normalization factors proposed after the product spectral-action
+coefficient calculation. The result is channel-separated rather than a single product closure:
+
+- the four-dimensional heat-kernel volume factor is fixed: `(4π)^(-2) = 1/(16π²)`;
+- the Dirac/Lichnerowicz curvature contribution to `a₂` is corrected to magnitude `1/12` in the declared
+  Laplace-type convention, because the `R/4` Lichnerowicz potential combines with the universal `R/6`
+  heat-kernel term;
+- the possible `J`/reality half-trace is audited as an alternative trace convention, not a universal
+  bosonic normalization factor;
+- `f₀ = 7` remains a candidate contact-cutoff/topological value, but must be proven to occupy the spectral
+  action test-function moment slot before it can normalize all `a₄` gauge/Higgs channels;
+- the Einstein-Hilbert channel with current `f₂(Λ/M_P)² = π/64` remains under-normalized relative to the
+  canonical `M_P²/2` coefficient: the doubled trace is short by `64π`, while the half trace is short by
+  `128π`;
+- the absolute gauge coupling branch still requires a representation-trace normalization theorem, although
+  relative gauge ratios such as `sin²θ_W = 3/8` remain intact.
+
+This gate preserves the SM+gravity structural product action, but rejects full numerical ToE closure until
+these remaining moment, trace, and Planck-normalization seals are mathematically fixed.
+
 ## Gate 4 — Octonionic / G₂ Calibration
 
 The G₂ gate constructs the octonionic matter-calibration sector inside `Λ⁴R⁸`. The engine uses the standard Fano convention
@@ -5501,3 +5524,21 @@ continuum model + initial data -> cosmological observables
 ```
 
 Gate 376 is the marriage gate. It opens the correct continuum program while preserving all empirical firewalls.
+
+## Gate 377 coefficient-audit correction
+
+Gate 376 established the lawful almost-commutative bridge `M × F`, but it was primarily a formal assembly theorem. Gate 377 adds the explicit coefficient arithmetic in a declared four-dimensional heat-kernel convention:
+
+```text
+Tr f(D²/Λ²) ≃ f₄Λ⁴a₀ + f₂Λ²a₂ + f₀a₄ + …
+```
+
+With `Tr_F(1)=96` and `f₂(Λ/M_P)²=π/64`, the audit computes:
+
+```text
+C_Λ/(f₄Λ⁴) = 96/(16π²) ≈ 0.607927101854
+raw |C_R|/M_P² = 96(π/64)/(192π²) ≈ 0.002486795986
+prompt-skeleton C_R/M_P² = (1/2)96(π/64) = 3π/4 ≈ 2.35619449019
+```
+
+This confirms structural SM+gravity product-action recovery while exposing that the full numerical Einstein-Hilbert normalization still requires a final heat-kernel/sign/trace-renormalization convention. The cosmological constant requires `f₄Λ⁴` and a vacuum subtraction rule. The 13 charged flavor moduli remain free.
