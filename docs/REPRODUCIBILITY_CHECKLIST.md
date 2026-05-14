@@ -37,3 +37,9 @@ go test -p=1 ./pkg/bridge/publicationbundlepreflight -count=1
 go test -p=1 ./pkg/bridge/publicationbundlepreflight ./pkg/bridge/artifactindexexport ./pkg/bridge/reviewerobjectionmatrix ./pkg/bridge/executiveabstractclaimaudit ./pkg/bridge/manuscriptskeletonexport ./pkg/bridge/publicationtheorematlas -count=1
 go list ./internal/app
 ```
+
+## Final manuscript export
+
+The final manuscript artifacts are in `docs/paper/final/`.
+The PDF was generated from the DOCX using LibreOffice headless conversion.
+The bibliography intentionally excludes the project author's own repository entry; source-code access is recorded in the manuscript body and can be replaced by a DOI/archive citation when available.

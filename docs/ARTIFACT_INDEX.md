@@ -54,3 +54,9 @@ The repository root is intentionally small. Generated audits and report outputs 
 - `docs/paper/FIGURE_SLOT_LEDGER.md` — reserved visual slots and source expectations.
 - `docs/paper/CLAIM_FIREWALL_CHECKLIST.md` — publication claim/firewall checklist.
 - `docs/paper/ASSEMBLY_CHECKLIST.md` — paper assembly workflow and targeted validation commands.
+
+## Final paper artifacts
+
+- `docs/paper/final/asha_paper_final_manuscript.docx` — finalized editable manuscript with source-code link, acknowledgments, final unified formula, and completed bibliography.
+- `docs/paper/final/asha_paper_final_manuscript.pdf` — PDF export generated from the DOCX.
+- `docs/audits/final/final_result.md` — formula-first final ASHA result ledger updated after Gates 0–425.
