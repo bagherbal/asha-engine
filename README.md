@@ -79,3 +79,7 @@ S_B[b] = ||(I − P_G)Wb||² = bᵀO_Bb
 ```
 
 The engine verifies that the kernel of `O_B` has dimension 7 and equals the Boolean-coordinate image of the contact space `K = Im(P_B) ∩ Im(P_G)`. This upgrades the contact space from a static intersection to a finite zero-energy sector. No physical constants are inferred from this gate.
+
+## v0.6 — Gauge centralizer gate
+
+Adds octonion multiplication matrices, standard octonion derivations, the compact `g₂` derivation span, the contact-copy involution `R = diag(-,+,-,+,+,+,+)`, and the centralizer theorem. The gate verifies `dim(g₂)=14`, `dim(g₂ᴿ)=4`, Lie closure, one-dimensional center, and three-dimensional derived algebra. This supports the tangent-level identification `g₂ᴿ ≅ su(2) ⊕ u(1)` without claiming the Boolean-compressed finite gauge theorem yet.

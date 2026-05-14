@@ -7,6 +7,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
 	"github.com/bagherbal/asha-engine/pkg/exterior"
+	"github.com/bagherbal/asha-engine/pkg/gauge"
 	"github.com/bagherbal/asha-engine/pkg/geometry/boolean"
 	"github.com/bagherbal/asha-engine/pkg/geometry/contact"
 	"github.com/bagherbal/asha-engine/pkg/geometry/g2"
@@ -23,6 +24,7 @@ func Run() error {
 		g2.CalibrationSupportTheorem(),
 		contact.ContactSpaceTheorem(),
 		bsector.ContactVacuumTheorem(),
+		gauge.ContactCentralizerTheorem(),
 	)
 
 	results := registry.RunAll()
