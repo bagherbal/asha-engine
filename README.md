@@ -6062,3 +6062,40 @@ The Higgs kinetic term is structurally supported by the finite Dirac interaction
 Using the edge denominator `10` in the CCM+Pfaffian Higgs lane reproduces the near-125 GeV Higgs mass found in Gate 380. However, the engine does not yet seal this as a theorem: CCM canonical normalization already uses `a=Tr_F(Y†Y)`, and the stored finite ratio `e/a²=1197/4624` may already contain the edge support. Applying `10/7` after the fact could double-count unless raw `a` and `e` are recomputed under node-measure and edge-measure conventions.
 
 The precise missing theorem is now a `SpectralGraphKineticNormalizationTheorem` proving that the canonical Higgs kinetic trace replaces the contact-node normalization `7` by the J-doubled edge normalization `10` without double-counting the finite trace ratio.
+
+## Gate 385 — Inner Fluctuation 1-Form Support / CCM Edge Measure Selection Sieve
+
+Gate 385 derives the missing finite-measure selection theorem isolated by Gate 384.
+
+The Higgs field in the finite ASHA spectral triple is not a scalar placed on the seven contact nodes. It is the finite inner fluctuation
+
+```text
+A_F = Σ_i a_i [D_F, b_i]
+```
+
+and is therefore a represented finite one-form. Its support is the nonzero finite Dirac edge graph, not the 0-form contact-node ledger.
+
+The support projection is
+
+```text
+P_E = support projection of Ω¹_D(A_F)
+A_F = P_E A_F P_E
+Tr_HF(A_F†A_F) = Tr_E(A_F†A_F)
+```
+
+so the canonical Higgs kinetic inner product selects the `J`-doubled finite-Dirac edge measure:
+
+```text
+N_node = 7
+N_edge,J = 10
+R_edge = (e/a²)_edge = (7/10)(1197/4624)
+λ = π² R_edge/(2·7) = π²(1197/4624)/(2·10)
+```
+
+With the Pfaffian VEV lane this gives
+
+```text
+m_H ≈ 124.925 GeV
+```
+
+This closes the Higgs coefficient lane at the CCM+Pfaffian tree-level proxy. The project still does not claim a full physical pole-mass theorem or full numerical Theory-of-Everything closure: RG transport, threshold matching, pole/self-energy conversion, cosmology, and the 13 flavor moduli remain separate tasks.

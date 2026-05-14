@@ -199,6 +199,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/holographicvacuumentropy"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hopfgeometricnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hyperchargediracassembly"
+	"github.com/bagherbal/asha-engine/pkg/bridge/innerfluctuationedgemeasure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/innerfluctuationfieldcontent"
 	"github.com/bagherbal/asha-engine/pkg/bridge/inputsensitivityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/instantontracebridge"
@@ -780,6 +781,7 @@ func Run() error {
 		finitetraceedgemultiplicity.FiniteTraceEdgeMultiplicityEffectiveCoefficientSieveTheorem(),
 		spectralgraphtracenormalization.SpectralGraphTraceNodeToEdgeKineticNormalizationSieveTheorem(),
 		rawfinitetracerecomputation.RawFiniteTraceRecomputationEdgeMeasureSieveTheorem(),
+		innerfluctuationedgemeasure.InnerFluctuationOneFormSupportCCMEdgeMeasureSelectionSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
