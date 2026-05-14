@@ -5848,3 +5848,18 @@ Main result: Gate 371 opens a strong Phase-IV quantum-information path, but inte
 ## Gate 372 — Native Moduli Space Dimension / Exact Dirac Parameter Census Sieve
 
 Gate 372 replaces the external “19 minus 4 equals 15” bookkeeping question with a native finite-Dirac moduli-space computation. The result is category-refining rather than vacuum-selecting: the minimal charged finite-Dirac flavor space has dimension 13, while the older external 15 ledger is `13 + theta_QCD + one absolute scale`. If the all-allowed right-neutrino Majorana sector is included, the finite-Dirac moduli dimension is 31. No hidden cross-sector generation constraints are found, and the physical vacuum point remains unselected.
+
+## Gate 373 — Holographic Vacuum Entropy / Gravitational Moduli Constraint Sieve
+
+Gate 373 tests the macroscopic gravity pivot after Gate 372's native finite-Dirac census. The package `pkg/bridge/holographicvacuumentropy` audits whether ASHA's gravitational boundary data can become actual equations on the 13 charged finite-Dirac flavor moduli.
+
+Inherited gravitational facts:
+
+```text
+f2 (Lambda/M_P)^2 = pi/64
+v/M_P = 2^(3/2) exp(-4 pi^2)
+```
+
+The result is strict but clarifying: these are scale/hierarchy constraints, not generation-texture equations. A symbolic vacuum-energy/trace-anomaly functional can be written using flavor invariants such as `T2`, `T4`, and possible misalignment commutators, but it is not a unique native functional without a renormalized vacuum counterterm, continuum scale choice, and extra coefficients. Holographic and Bekenstein bounds are inequalities on aggregate energy/entropy unless a native saturation theorem is derived.
+
+Therefore Gate 373 does not reduce the 13 charged finite-Dirac moduli. It preserves the gravity/information direction as a possible later Phase-IV/continuum program, but rejects the claim that the current ledger already fixes Yukawa texture or CKM data from holography.

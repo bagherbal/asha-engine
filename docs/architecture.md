@@ -5399,3 +5399,25 @@ Until that theorem exists, `tau_eta` remains a kinematic topology / capacity wit
 ## Gate 372 — Native Moduli Space Dimension / Exact Dirac Parameter Census Sieve
 
 Gate 372 audits the finite Dirac operator directly instead of relying on external Standard-Model parameter-count conventions. The spectral-triple axioms restrict the allowed block architecture to generic Yukawa matrices and, in the extended ledger, a symmetric Majorana block. After quotienting unphysical generation-basis rotations, the minimal charged finite-Dirac moduli dimension is 13; the canonical all-allowed Majorana/seesaw finite-Dirac dimension is 31. The older 15-vacuum-input statement is preserved only as a category-correct minimal ledger: `13 finite-Dirac flavor moduli + theta_QCD + absolute scale`.
+
+## Gate 373 architectural update: holographic gravity constrains scale, not flavor texture yet
+
+Gate 373 moves beyond finite kinematic geometry and asks whether the macroscopic ASHA gravity ledger can constrain the native flavor moduli found in Gate 372. The audit distinguishes scale equations from flavor-coordinate equations.
+
+| Candidate | Architectural verdict |
+|---|---|
+| `f2 (Lambda/M_P)^2 = pi/64` | Native gravitational cutoff normalization; no Yukawa texture equation. |
+| `v/M_P = 2^(3/2) exp(-4 pi^2)` | Native hierarchy scale; fixes scale relation, not dimensionless flavor ratios. |
+| `rho_vac(Y)` trace/anomaly functional | Symbolically writable in terms of `T2`, `T4`, etc., but not unique without counterterm and continuum scheme. |
+| Bekenstein / holographic entropy bounds | Aggregate inequalities unless a native equality-saturation theorem is proven. |
+| Asymptotic-safety fixed-point equations | Potentially important, but require a continuum beta-function ledger not installed in this finite gate. |
+| Gate-371 information horizon | The number operator remains unselected; gravity does not yet provide a generation-address theorem. |
+
+Gate 373 therefore preserves the minimal census:
+
+```text
+13 charged finite-Dirac flavor moduli remain free
+15 external minimal vacuum ledger = 13 + theta_QCD + absolute scale
+```
+
+This is not a rejection of the Theory-of-Everything direction. It is the category boundary: current ASHA gravity data supplies scale relations and aggregate bounds, not the independent equations required to collapse the flavor moduli space.

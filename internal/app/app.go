@@ -190,6 +190,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsprecisionroutesieve"
 	"github.com/bagherbal/asha-engine/pkg/bridge/higgsquarticratioverification"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hilbertspacetracecapacity"
+	"github.com/bagherbal/asha-engine/pkg/bridge/holographicvacuumentropy"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hopfgeometricnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/hyperchargediracassembly"
 	"github.com/bagherbal/asha-engine/pkg/bridge/innerfluctuationfieldcontent"
@@ -756,6 +757,7 @@ func Run() error {
 		supportgenerationintertwiner.SupportToGenerationIntertwinerTopologicalIndexMapSieveTheorem(),
 		schrodingervibrationalintertwiner.SchrodingerVibrationalModesQuantumInformationIntertwinerAuditTheorem(),
 		nativemodulispacecensus.NativeModuliSpaceDimensionExactDiracParameterCensusSieveTheorem(),
+		holographicvacuumentropy.HolographicVacuumEntropyGravitationalModuliConstraintSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
