@@ -3980,3 +3980,34 @@ faithful finite algebra/order-one calculus still blocked
 ```
 
 Gate 239 is therefore a second chirality no-go: finite orientation exists, but the current orientation endomorphism is not distinct enough to produce Standard Model left-handed weak action.
+
+## Gate 240 — Spin^c twisted chirality and hypercharge weak-plane sieve audit
+
+Gate 240 adds `pkg/bridge/spinctwistedchirality` after the Gate-239 orientation no-go.
+
+Architecturally, it tests the first gauge-twisted chirality candidate. Gates 238 and 239 showed that both occupation parity and the Clifford-volume orientation fail because every candidate weak plane has a parity-mixed doublet sector. Gate 240 therefore combines the parity grading with the native diagonal `u(1)` bookkeeping:
+
+```text
+χ_twist = γ Y_native
+Y_native weights = (-1, 1/3, 1/3, 1/3)
+```
+
+The result is a class-level sieve rather than a final chirality theorem. The diagonal `u(1)` commutes with exterior `su(2)` only for planes whose two generator modes have equal `u(1)` weight. This rejects the three temporal-spatial planes and preserves the three pure-spatial planes.
+
+The finite algebra frontier is now:
+
+```text
+complexified carrier available
+C⊕M₃(C) mode-commutant preflight available
+local pseudo-real doublet/H support available
+raw γ parity selector failed
+Clifford-volume χ is equivalent to γ
+τ_η orientation pullback missing
+Spin^c γY twist rejects temporal-spatial planes
+three pure-spatial weak-plane candidates remain
+physical chirality still missing
+global H summand still missing
+faithful finite algebra/order-one calculus still blocked
+```
+
+Gate 240 is therefore progress but not completion: the native `u(1)` data gives a mathematically meaningful compatibility filter, but no unique electroweak plane or left-handed action follows yet.

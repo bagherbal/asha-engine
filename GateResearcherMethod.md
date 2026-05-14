@@ -256,3 +256,12 @@
 - Keep three objects separate: finite orientation grading, scalar-bundle integration functional, and Standard Model chirality. Passing the first two does not derive the third.
 - Never tune signs of `χ` or choose a weak plane manually to create a left-handed action. The selector must come from a derived operator, commutator, or faithful algebra representation.
 - If orientation improves the conceptual map but not the plane sieve, log it as conditional support plus a failed route for physical chirality.
+
+## Gate 240 method note — gauge twists can be sieves without being chirality
+
+- When bare chirality and orientation fail, test gauge-twisted operators as diagnostics, but keep physical chirality as a separate theorem.
+- Do not import Standard Model hypercharge values. Use only the native diagonal `u(1)` weights already present in the Fock bookkeeping unless a previous theorem derives more.
+- Check two things separately: whether an `su(2)` plane preserves the diagonal `u(1)`, and whether the resulting twisted operator has uniform eigenvalues on doublet sectors.
+- A commutator sieve can reduce candidate classes without selecting a unique physical plane. Report class reduction as progress, not as derivation.
+- If `χ_twist = γY` is not an involution or has multiple eigenvalues across the doublet sector, do not call it Standard Model chirality.
+- Preserve the global `H` obstruction until a canonical weak-plane selector, faithful finite algebra representation, and order-one calculus are all available.

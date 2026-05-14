@@ -3561,3 +3561,46 @@ FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
 ```
 
 Gate 239 preserves Gate 237's local quaternionic support but proves that the currently available orientation data still does not select physical chirality or a unique weak plane. The next finite-core task is to derive a nontrivial orientation pullback, contact-vacuum intertwiner, or faithful finite algebra/order-one calculus that distinguishes physical chirality from Fock parity.
+
+## v2.38 — Gate 240: Spin^c twisted chirality and hypercharge weak-plane sieve audit
+
+Gate 240 introduces `pkg/bridge/spinctwistedchirality`. It tests whether the failure of bare parity/orientation chirality in Gates 238–239 can be repaired by twisting the grading with the native diagonal `u(1)` bookkeeping on the Fock carrier.
+
+The native diagonal generator used by the audit is not imported Standard Model hypercharge. It is the existing finite charge seed on the four Fock modes:
+
+```text
+Y_native(|n⟩) = Σ_i w_i n_i
+w = (-1, 1/3, 1/3, 1/3)
+```
+
+The candidate Spin^c diagnostic is:
+
+```text
+χ_twist = γ · Y_native
+γ = (-1)^N
+```
+
+This operator is diagonal and distinct from raw occupation parity, but it is not an involutive physical chirality operator. It is a sieve.
+
+The sieve has a real effect: an `su(2)` plane can preserve the diagonal `u(1)` only if the two modes inside the plane have equal `Y_native` weight. Therefore:
+
+```text
+3 temporal-spatial planes: rejected by [su(2),Y_native] ≠ 0
+3 pure-spatial planes:     preserve Y_native
+```
+
+However, the three pure-spatial planes remain exactly degenerate, and none has a uniform `χ_twist` doublet sector. The weak plane is therefore not selected.
+
+Result:
+
+```text
+CONDITIONAL_SUPPORT_NATIVE_U1_DIAGONAL_GENERATOR_PREFLIGHT
+CONDITIONAL_SUPPORT_SPINC_GAMMA_U1_TWIST_PREFLIGHT
+CONDITIONAL_SUPPORT_U1_COMMUTANT_TEMPORAL_SPATIAL_CLASS_SIEVE
+FAILED_ROUTE_UNIFORM_TWISTED_CHIRALITY_ALIGNMENT
+FAILED_ROUTE_SPINC_WEAK_PLANE_SELECTION
+FAILED_ROUTE_SPINC_PHYSICAL_CHIRALITY_DERIVATION
+FAILED_ROUTE_GLOBAL_H_SUMMAND_STILL_UNSELECTED
+```
+
+Gate 240 improves the finite weak-plane search by reducing the six candidate planes to the pure-spatial conjugacy class, but it still does not derive Standard Model chirality, a unique weak plane, or the global quaternionic `H` summand. The next hard target is a selector that breaks the remaining pure-spatial `S_3` degeneracy without importing Standard Model assignments.

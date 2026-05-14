@@ -181,6 +181,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/shellfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/singlescalematchingaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralaction"
+	"github.com/bagherbal/asha-engine/pkg/bridge/spinctwistedchirality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/su2spinorlift"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
@@ -490,6 +491,7 @@ func Run() error {
 		su2spinorlift.SU2SpinorLiftQuaternionicClosureAuditTheorem(),
 		chiralweakselector.ChiralAlignmentWeakPlaneSelectorAuditTheorem(),
 		orientationtruechirality.OrientationOperatorTrueChiralityDerivationAuditTheorem(),
+		spinctwistedchirality.SpinCTwistedChiralityHyperchargeWeakSieveAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
