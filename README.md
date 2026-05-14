@@ -2517,3 +2517,40 @@ CONDITIONAL_PHENOMENOLOGY_ON_THRESHOLD_SPECTRUM_AND_MATCHING_ENVELOPE
 ```
 
 No finite-derived mass, matching correction, unique spectrum, SM-Yukawa-corrected running, or physical prediction is claimed.
+
+## v2.13 — Gate 215: Single-scale degenerate-limit matching audit / global two-loop class scan
+
+Gate 215 adds `pkg/bridge/singlescalematchingaudit`.
+
+Gate 214 showed that the sealed Gate-211 ranked witness becomes almost degenerate under no-Yukawa two-loop running (`ΔL ≈ 0.049867`). Gate 215 therefore forces each of the 22 unordered Gate-211 viable pair classes into a single common threshold `M_B` and asks how large the missing threshold matching correction must be.
+
+The gate scans all 22 classes under the same two-loop convention:
+
+```text
+du_i/dlnμ = -b_i/(8π²) - Σ_j B_ij/u_j /(128π⁴)
+```
+
+and compares the required residual to the inherited Gate-214 loop-factor envelope:
+
+```text
+ε_u = 1/(16π²)
+```
+
+Result:
+
+```text
+CONDITIONAL_PHENOMENOLOGY_SINGLE_SCALE_MATCHING_AUDIT
+classes=22 plausible=1
+```
+
+Only the Gate-211 ranked witness survives the forced single-scale plausibility filter:
+
+```text
+Dirac (1,3,Y=1) + Dirac (8,2,Y=1/2)
+M_B ≈ 2.60752425e6 GeV
+M_* ≈ 1.71690311e17 GeV
+max |u_i(M*) - 1| ≈ 0.000561440698
+max |residual| / ε_u ≈ 0.0886592
+```
+
+This means the required matching correction is smaller than 9% of the explicit loop-factor envelope. The result is a strong conditional signal for the degenerate single-scale interpretation of the Gate-211 ranked witness, but it is **not** a finite-core derivation. The matching vector remains a target for future spectral/heat-kernel matching theory.

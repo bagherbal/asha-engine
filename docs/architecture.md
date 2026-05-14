@@ -3074,3 +3074,33 @@ M_*                 ≈ 1.74e17 GeV
 The scale solve remains conditional on the quarantined Z-pole ledger and the selected `ThresholdSpectrumSeal` test subject. The gate also introduces a `MatchingUncertaintyEnvelope`, using `±1/(16π²)` in `u`-space as an explicit phenomenological proxy for the missing threshold matching corrections.
 
 This gate keeps the finite-to-continuum firewall intact. The envelope is not a derived matching theorem. The corrected scales are numerical phenomenology, not finite-core predictions. The next precision frontier is either a finite spectral matching map, a sealed SM-Yukawa extension, or a full comparison of all Gate-211 unordered spectra under the same two-loop envelope.
+
+### Gate 215 — Single-scale degenerate-limit matching audit / global two-loop class scan
+
+Package: `pkg/bridge/singlescalematchingaudit`
+
+Gate 215 sits after the sealed two-loop integration of Gate 214. Its purpose is to test the hypothesis suggested by Gate 214: the two separated heavy thresholds may actually be a single common threshold, with the remaining closure defect absorbed by finite matching corrections.
+
+Architectural placement:
+
+```text
+Layer 11: Threshold-spectrum seal + 2-loop preflight  → Gate 213
+Layer 12: Sealed two-loop numerical integration       → Gate 214
+Layer 13: Degenerate-limit matching plausibility scan → Gate 215
+```
+
+The gate sequentially applies the `ThresholdSpectrumSeal` to all 22 unordered Gate-211 viable spectra. For each class it enforces `M_B1 = M_B2 = M_B`, performs no-Yukawa two-loop running, and minimizes the residual at the topological boundary `u_* = 1`. The required residual vector is interpreted only as a required matching correction:
+
+```text
+δ_i^req = 1 - u_i(M_*)
+```
+
+It is compared to the explicit Gate-214 matching uncertainty proxy `ε_u = 1/(16π²)`. Only one class lies within this envelope: the Gate-211 ranked pair `Dirac (1,3,Y=1) + Dirac (8,2,Y=1/2)`. The degenerate solution is approximately:
+
+```text
+M_B ≈ 2.61e6 GeV
+M_* ≈ 1.72e17 GeV
+max |δ_i^req| / ε_u ≈ 0.0887
+```
+
+This does not derive threshold matching corrections. It narrows the phenomenological target: a future finite spectral matching theorem should explain the small alternating residual vector required by this pair, or else the single-scale interpretation must remain sealed.

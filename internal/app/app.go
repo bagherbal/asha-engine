@@ -156,6 +156,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectoroperators"
 	"github.com/bagherbal/asha-engine/pkg/bridge/sectorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/shellfunctor"
+	"github.com/bagherbal/asha-engine/pkg/bridge/singlescalematchingaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdactivation"
@@ -440,6 +441,7 @@ func Run() error {
 		twothresholdminimality.TwoThresholdSolutionMinimalityFiniteOriginParentageAuditTheorem(),
 		thresholdspectrumseal.ThresholdSpectrumSealMatchingCorrectionTwoLoopPreflightTheorem(),
 		twoloopintegration.SealedTwoLoopRGIntegrationMatchingEnvelopeTheorem(),
+		singlescalematchingaudit.SingleScaleDegenerateLimitMatchingAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

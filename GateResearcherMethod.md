@@ -48,3 +48,11 @@
 - Treat two-loop numerical solves as phenomenological unless the engine has derived the action, normalization, and subtraction scheme. Corrected scales are not automatically finite-core predictions.
 - When matching corrections are not derived, use an explicit uncertainty envelope rather than hiding scheme dependence. Label the envelope as a proxy and record its size as theory uncertainty.
 - Allow higher-order integration to change threshold ordering if the spectrum is sealed and the scales are continuous fit parameters. Record the ordering change, but do not reinterpret it as a finite theorem.
+
+## Gate 215 method refinement — global sealed scan before interpretation
+
+- When a previous gate hints that a multi-scale result is nearly degenerate, do not collapse the scales by assumption. First run a forced-degenerate scan and measure the residual.
+- Compare residuals to an explicit uncertainty envelope already declared by earlier gates; do not silently widen the envelope to save a preferred spectrum.
+- Scan all previously viable classes, not only the favorite witness, before claiming a spectrum is structurally preferred.
+- Rank by required correction size, but keep ranking separate from derivation. A small required correction is a target for the next theorem, not proof that the correction exists.
+- Keep the validation focused: new package tests, direct predecessor tests, `go list` wiring checks, and no timeout-prone full registry execution unless the gate specifically requires it.
