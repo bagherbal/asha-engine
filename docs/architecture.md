@@ -5960,3 +5960,15 @@ Q: edge-slot space -> H_phi
 The audit distinguishes true native quotients from arbitrary four-mode selections. Native quotients exist: the Higgs/Yukawa edge restriction, scalar branch quotient, J-even quotient from the ten J-doubled one-form edge slots, and the existing contact/scalar response. All are compatible with the finite one-form/first-order/J ledger, but all remain too symmetric. They are rank-two or pair-degenerate and have quadratic minimal polynomial, not the irreducible contact quartic `q4`.
 
 The full five-edge graph has quartic capacity only after choosing which edge/eigenmode to discard; this is exactly the missing theorem and is not promoted. A q4 companion can be inserted only by arbitrary basis choice. Gate 404 therefore rejects a native edge-to-`H_phi` `q4` selector, preserves the Higgs/scalar and flavor firewalls, and redirects the next search toward a contact-to-edge natural transformation/pullback theorem.
+
+### Gate 405 — Contact-to-edge natural transformation / pullback sieve
+
+Gate 405 follows the Gate-404 quotient obstruction by reversing the categorical arrow:
+
+```text
+Q[x]/(q4) contact primary -> Omega^1_D(A_F) one-form edge ledger
+```
+
+The theorem asks whether the irreducible contact quartic can be transported into the edge module by a native pullback or natural transformation. The contact primary, structural edge module, J-doubled edge module, Higgs/Yukawa edge restriction, and `H_phi` scalar carrier are all typed, but no ASHA functor currently maps contact-primary basis elements into one-form edge endomorphisms.
+
+The canonical Yukawa edge restriction exists only in the opposite direction, from edge slots to the scalar carrier, and reversing it requires the very `H_phi = Q[x]/(q4)` identity under test. Exact q4 preservation on edge space is possible only by manually placing a q4 companion matrix on a chosen four-edge subspace, or by J-doubling that manual placement. These sealed constructions fail the native `D_F` edge-graph intertwiner and naturality checks. Gate 405 therefore rejects a canonical contact-to-edge q4 pullback, preserves the scalar/contact and flavor firewalls, and redirects the next search toward internal q4 reconstruction in the contact projector algebra or toward a different scalar identity selector.

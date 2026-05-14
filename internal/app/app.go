@@ -67,6 +67,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactcohomology"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactdualcurrenttarget"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactdualpairing"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactedgepullback"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactembedding"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactequivrefinement"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactfieldmap"
@@ -810,6 +811,7 @@ func Run() error {
 		spectralgraphedgeadjacency.SpectralGraphEdgeAdjacencyOperatorSearchTheorem(),
 		orientededgeincidence.OrientedEdgeIncidenceBoundaryOperatorSieveTheorem(),
 		edgetohphiquotient.CanonicalEdgeToHphiQuotientContactEdgeIntertwinerSieveTheorem(),
+		contactedgepullback.ContactToEdgeNaturalTransformationPullbackSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
