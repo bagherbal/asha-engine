@@ -217,6 +217,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcovariant"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarfockspectralpotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarfundamentalclass"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalarheatkernelsubtraction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarkinetictracepositivity"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarmoritaspectralbridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarorientationseal"
@@ -620,6 +621,7 @@ func Run() error {
 		heatkernelconventionledger.HeatKernelConventionLedgerPositivePrefactorNormalizationAuditTheorem(),
 		cutoffmomentsource.CutoffMomentSourcePositiveF0TestFunctionClassAuditTheorem(),
 		contactspectralcutoffpromotion.ContactSpectralCutoffPromotionCanonicalPositiveTestProfileConstructionAuditTheorem(),
+		scalarheatkernelsubtraction.ScalarHeatKernelSubtractionHiggsPotentialChannelSeparationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
