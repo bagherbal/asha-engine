@@ -30,6 +30,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/fourfermion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gapledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeaction"
+	"github.com/bagherbal/asha-engine/pkg/bridge/gaugehessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
@@ -176,6 +177,7 @@ func Run() error {
 		anomalykinetic.AnomalyConstrainedU1KineticHessianSearchTheorem(),
 		abeliancoupling.AbelianCouplingNormalizationFromDiagonalHessianAuditTheorem(),
 		gaugeaction.GaugeKineticActionSelectionRGBoundaryAuditTheorem(),
+		gaugehessian.GaugeKineticHessianSecondVariationTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
