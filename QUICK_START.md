@@ -48,7 +48,7 @@ docs/runtime/reports/
 Current scenario names:
 
 ```text
-all | native | higgs | family | dark-stable-thermal | cosmology | ci
+all | native | higgs | family | dark-stable-thermal | cosmology | environment | ci
 ```
 
 ## What not to run by default
@@ -111,6 +111,7 @@ Useful report formats:
 go run ./cmd/asha --scenario ci --format json --strict
 go run ./cmd/asha --scenario higgs --format markdown --strict
 go run ./cmd/asha --scenario dark-stable-thermal --format text --strict
+go run ./cmd/asha --scenario environment --format markdown --strict
 ```
 
 Runtime package:
@@ -125,5 +126,6 @@ Runtime documentation:
 docs/runtime/README.md
 docs/runtime/reports/asha_runtime_ci.md
 docs/runtime/reports/asha_runtime_ci.json
+docs/runtime/reports/asha_runtime_environment_latest.md
 ```
 

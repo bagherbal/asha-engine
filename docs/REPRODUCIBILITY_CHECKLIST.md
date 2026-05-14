@@ -56,3 +56,14 @@ docs/audits/final/runtime_verification_gate425_20260514.md
 ```
 
 The verification found no mismatch requiring manuscript updates.
+
+
+## Runtime environment scenario checks
+
+```bash
+go run ./cmd/asha --scenario environment --format markdown --strict
+go run ./cmd/asha --scenario dark-stable-thermal --format markdown --strict
+go run ./cmd/asha --scenario cosmology --format markdown --strict
+```
+
+These commands compute conditional dark-sector, cosmology, and vacuum-fate diagnostics while preserving the environmental firewall.

@@ -62,3 +62,28 @@ func TestFormatters(t *testing.T) {
 		}
 	}
 }
+
+func TestEnvironmentalScenarioComputesNumbers(t *testing.T) {
+	e := New()
+	dm := ComputeDarkMatterConditional(e.Bridge.HeavyBGapMajoranaGeV)
+	if !nearly(dm.OverclosureFactor, 1.309310776326e13, 1e8) {
+		t.Fatalf("unexpected dark overclosure %.12e", dm.OverclosureFactor)
+	}
+	if !(dm.RequiredFractionOfThermal > 7e-14 && dm.RequiredFractionOfThermal < 8e-14) {
+		t.Fatalf("unexpected required fraction %.12e", dm.RequiredFractionOfThermal)
+	}
+	cc := ComputeCosmologyConditional(e.Bridge.PlanckMassGeV, e.Bridge.VPfGeV)
+	if !nearly(cc.DigitsOfCancellation, 120.686941491987, 1e-9) {
+		t.Fatalf("unexpected cancellation digits %.12f", cc.DigitsOfCancellation)
+	}
+	if !nearly(cc.EWVacuumOverGate344Target, 1.679361894449e55, 1e49) {
+		t.Fatalf("unexpected EW/Gate344 target ratio %.12e", cc.EWVacuumOverGate344Target)
+	}
+	r, err := e.Report(ScenarioEnvironment)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(r.Sections) != 2 {
+		t.Fatalf("expected cosmology + vacuum fate sections, got %d", len(r.Sections))
+	}
+}

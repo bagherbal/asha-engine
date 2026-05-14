@@ -656,15 +656,76 @@ Heavy-sector relic seal path:
 
 only after sealed decay/portal assumptions; otherwise stable heavy relics are unsafe.
 
-Simple stable thermal B-gap Majorana relic interpretation is rejected by overclosure:
+Simple stable thermal B-gap Majorana relic interpretation is rejected by overclosure, but the full conditional yield arithmetic is now part of the runtime board:
 
 ```math
-\Omega_{B{\rm -gap~Majorana}}h^2\gg\Omega_{\rm DM}h^2,
+M_B=1.46774973718\times10^6\ {\rm GeV},
 \qquad
-\frac{\Omega_{\rm candidate}}{\Omega_{\rm DM}}\sim1.3\times10^{13}.
+\Omega_{\rm DM}h^2|_{\rm target}=0.120,
 ```
 
-Thus the B-gap sector is not a simple stable thermal dark-matter theorem.
+```math
+Y_{\rm required}=2.97981078152\times10^{-16},
+\qquad
+Y_{\rm thermal}=3.90149836766\times10^{-3},
+```
+
+```math
+\Omega_{\rm thermal}h^2=1.57117293159\times10^{12},
+\qquad
+\frac{\Omega_{\rm thermal}}{\Omega_{\rm DM}}=1.30931077633\times10^{13},
+```
+
+```math
+\frac{Y_{\rm required}}{Y_{\rm thermal}}
+=7.63760612134\times10^{-14}.
+```
+
+Thus the B-gap sector is not a simple stable thermal dark-matter theorem. A suppressed/nonthermal, diluted, decaying, leptogenesis-like, or axion-like route remains logically possible only after an explicit production/history axiom is added.
+
+Conditional vacuum-fate stress tests are also computable after empirical top/Higgs inputs, a continuum RG scheme, and the ASHA B-gap threshold jump are supplied:
+
+```math
+\Delta\lambda_{B}=-0.097846792207.
+```
+
+Pole-top stress lane:
+
+```math
+\lambda_{\rm before}=-0.006880640805,
+\quad
+\lambda_{\rm after}=-0.104727433012,
+\quad
+\mu_{\rm inst}=5.76733268667\times10^5\ {\rm GeV},
+```
+
+```math
+\lambda_{\min}=-0.122793907974,
+\quad
+S_E=214.334289900,
+\quad
+\log_{10}(\tau/{\rm yr})=55.642486182.
+```
+
+One-loop-QCD MSbar-like top seed:
+
+```math
+\lambda_{\rm before}=0.032625459630,
+\quad
+\lambda_{\rm after}=-0.065221332577,
+\quad
+\mu_{\rm inst}=1.46774973718\times10^6\ {\rm GeV},
+```
+
+```math
+\lambda_{\min}=-0.077446343073,
+\quad
+S_E=339.834574820,
+\quad
+\log_{10}(\tau/{\rm yr})=109.740890393.
+```
+
+These are conditional phenomenology diagnostics, not native predictions of the fate or lifetime of the universe.
 
 Holographic IR/UV bridge route:
 
@@ -680,7 +741,49 @@ from the Cohen-Kaplan-Nelson style bound, is a possible continuum/cosmology brid
 \Lambda=M_Pe^{-\sigma(x)}.
 ```
 
-**Boundary:** ASHA currently does not predict
+Runtime cosmology diagnostics under the bare CCM convention `f_4=1, Λ=M_P` are
+
+```math
+\frac{\rho_{\rm bare}}{M_P^4}=\frac{48}{\pi^2}=4.863416814832,
+\qquad
+\frac{\rho_{\Lambda,{\rm target}}}{M_P^4}=10^{-120},
+```
+
+```math
+\frac{\rho_{\rm bare}}{\rho_{\Lambda,{\rm target}}}
+=4.863416814832\times10^{120},
+\qquad
+\log_{10}\left(\frac{\rho_{\rm bare}}{\rho_{\Lambda,{\rm target}}}\right)=120.686941492.
+```
+
+The holographic/dilaton scale needed for the diagnostic target is
+
+```math
+L M_P\sim10^{60},
+```
+
+while the Gate-344 `10^{-122}` target convention gives
+
+```math
+L M_P\sim10^{61}.
+```
+
+The electroweak vacuum scale alone remains too large:
+
+```math
+\left(\frac{v_{\rm Pf}}{M_P}\right)^4
+=1.67936189445\times10^{-67},
+```
+
+```math
+\frac{(v_{\rm Pf}/M_P)^4}{10^{-120}}
+=1.67936189445\times10^{53},
+\qquad
+\frac{(v_{\rm Pf}/M_P)^4}{10^{-122}}
+=1.67936189445\times10^{55}.
+```
+
+**Boundary:** ASHA currently computes these conditional scenarios but still does not natively predict
 
 ```math
 \Omega_{\rm DM}h^2,
@@ -729,9 +832,11 @@ q_4\ {\rm irreducible},
 Failed scalar/edge promotions:
 
 ```math
-q_4\not\Rightarrow H_\Phi\ {m selector},
+q_4\not\Rightarrow H_\Phi\ {
+m selector},
 \qquad
-q_4\not\Rightarrow\Omega_D^1(A_F)\ {m edge~weight},
+q_4\not\Rightarrow\Omega_D^1(A_F)\ {
+m edge~weight},
 \qquad
 q_4\not\Rightarrow\text{Yukawa~amplitudes}.
 ```
@@ -797,7 +902,8 @@ not a flavor texture.
 Conclusion:
 
 ```math
-H_\Phi\ {m is~flavor\text{-}blind~under~native~ASHA~selectors}.
+H_\Phi\ {
+m is~flavor\text{-}blind~under~native~ASHA~selectors}.
 ```
 
 ---

@@ -84,3 +84,9 @@ docs/audits/final/runtime_verification_gate425_20260514.md
 ```
 
 The verification found no mismatch requiring manuscript updates.
+
+
+## Runtime environment scenario update
+
+- `docs/audits/final/runtime_environment_scenarios_gate425_20260514.md` — conditional dark/cosmology/vacuum-fate numeric scenario verification.
+- `docs/runtime/reports/asha_runtime_environment_latest.md` — latest environment scenario runtime report.

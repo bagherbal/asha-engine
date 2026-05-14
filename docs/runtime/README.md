@@ -32,6 +32,7 @@ higgs
 family
 dark-stable-thermal
 cosmology
+environment
 ci
 ```
 
@@ -48,6 +49,7 @@ json
 ```bash
 go test -p=1 ./pkg/asha ./cmd/asha -count=1
 go run ./cmd/asha --scenario ci --format json --strict > docs/runtime/reports/asha_runtime_ci.json
+go run ./cmd/asha --scenario environment --format markdown --strict > docs/runtime/reports/asha_runtime_environment_latest.md
 ```
 
 ## Runtime epistemology
@@ -66,7 +68,7 @@ It does not promote any quarantined axiom to native ASHA theorem.
 
 ## Verification run — 2026-05-14
 
-The runtime board was rerun across all scenarios (`all`, `native`, `higgs`, `family`, `dark-stable-thermal`, `cosmology`, `ci`) against the current embedded Gate-425 data. The verification report found no mismatch against the final manuscript/result ledger.
+The runtime board was rerun across all scenarios (`all`, `native`, `higgs`, `family`, `dark-stable-thermal`, `cosmology`, `environment`, `ci`) against the current embedded Gate-425 data. The environment scenario now reports conditional numerical paths for dark-sector yield constraints, cosmological subtraction severity, holographic/dilaton scale, and vacuum-fate stress tests. These remain bridge/environmental diagnostics, not native predictions.
 
 See:
 

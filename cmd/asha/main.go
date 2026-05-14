@@ -11,7 +11,7 @@ import (
 func main() {
 	var (
 		formatFlag   = flag.String("format", "text", "output format: text, markdown, json")
-		scenarioFlag = flag.String("scenario", "all", "scenario: all, native, higgs, family, dark-stable-thermal, cosmology, ci")
+		scenarioFlag = flag.String("scenario", "all", "scenario: all, native, higgs, family, dark-stable-thermal, cosmology, environment, ci")
 		betaFlag     = flag.Float64("beta", asha.DefaultBeta, "family KMS beta for quarantined K_gen scenario")
 		planckFlag   = flag.Float64("planck-gev", asha.DefaultPlanckMassGeV, "Planck mass in GeV for Pfaffian bridge convention")
 		outFlag      = flag.String("out", "", "optional output path; stdout if empty")

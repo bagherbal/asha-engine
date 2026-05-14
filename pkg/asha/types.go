@@ -27,16 +27,19 @@ const (
 	ScenarioFamily            Scenario = "family"
 	ScenarioDarkStableThermal Scenario = "dark-stable-thermal"
 	ScenarioCosmology         Scenario = "cosmology"
+	ScenarioEnvironment       Scenario = "environment"
 	ScenarioCI                Scenario = "ci"
 )
 
 func ParseScenario(s string) (Scenario, error) {
 	s = strings.TrimSpace(strings.ToLower(s))
 	switch Scenario(s) {
-	case ScenarioAll, ScenarioNative, ScenarioHiggs, ScenarioFamily, ScenarioDarkStableThermal, ScenarioCosmology, ScenarioCI:
+	case ScenarioAll, ScenarioNative, ScenarioHiggs, ScenarioFamily, ScenarioDarkStableThermal, ScenarioCosmology, ScenarioEnvironment, ScenarioCI:
 		return Scenario(s), nil
 	case "dark", "dark-sector", "thermal-majorana":
 		return ScenarioDarkStableThermal, nil
+	case "env", "phenomenology", "environmental", "cosmo-dark", "vacuum-fate":
+		return ScenarioEnvironment, nil
 	case "kxy", "flavor":
 		return ScenarioFamily, nil
 	default:

@@ -70,13 +70,19 @@ func (e Engine) Report(s Scenario) (Report, error) {
 	if s == ScenarioAll || s == ScenarioDarkStableThermal || s == ScenarioCI {
 		add(e.darkSection())
 	}
-	if s == ScenarioAll || s == ScenarioCosmology || s == ScenarioCI {
+	if s == ScenarioAll || s == ScenarioCosmology || s == ScenarioEnvironment || s == ScenarioCI {
 		add(e.cosmologySection())
+	}
+	if s == ScenarioAll || s == ScenarioCosmology || s == ScenarioEnvironment || s == ScenarioCI {
+		add(e.vacuumFateSection())
 	}
 	if len(sections) == 0 {
 		return Report{}, fmt.Errorf("scenario %q produced no sections", s)
 	}
 	checks := e.Checks()
+	for _, sec := range sections {
+		checks = append(checks, sec.Checks...)
+	}
 	boundaries := e.Boundaries()
 	verdict := "PASS: ASHA runtime board is internally consistent; native law-space separated from bridge, quarantined, and environmental data."
 	for _, c := range checks {
@@ -130,9 +136,60 @@ func (e Engine) familySection() Section {
 }
 
 func (e Engine) darkSection() Section {
-	return Section{Name: "Dark-sector scenarios", Summary: "Heavy finite sectors are scenario-classified. Stable thermal B-gap Majorana relics are rejected by overclosure; decay/nonthermal routes require extra history.", Quantities: []Quantity{{Symbol: "M_B", Value: e.Bridge.HeavyBGapMajoranaGeV, Unit: "GeV", Status: StatusBridge}, {Symbol: "Ω_candidate/Ω_DM", Value: e.Bridge.MajoranaOverclosure, Status: StatusFailedRoute}}, Boundaries: e.Environment.DarkSectorScenarios}
+	dm := ComputeDarkMatterConditional(e.Bridge.HeavyBGapMajoranaGeV)
+	q := []Quantity{
+		{Symbol: "M_B", Value: dm.MassGeV, Unit: "GeV", Formula: "B-gap heavy Majorana scale", Status: StatusBridge},
+		{Symbol: "Ω_DM h² target", Value: dm.TargetOmegaH2, Formula: "observational comparator", Status: StatusEnvironmental},
+		{Symbol: "Y_required", Value: dm.RequiredYield, Formula: "Ω h² ρ_c/(m s_0)", Status: StatusBridge, Note: "yield needed if B-gap particle were all dark matter"},
+		{Symbol: "Y_thermal", Value: dm.ThermalRelativisticYield, Formula: "135 ζ(3)/(8π⁴) · g/g_*S", Status: StatusBridge, Note: "stable relativistic thermal abundance stress test"},
+		{Symbol: "Ω_thermal h²", Value: dm.ThermalStableOmegaH2, Formula: "m Y_thermal s_0/ρ_c", Status: StatusFailedRoute},
+		{Symbol: "Ω_thermal/Ω_DM", Value: dm.OverclosureFactor, Formula: "stable thermal B-gap relic overclosure", Status: StatusFailedRoute},
+		{Symbol: "Y_required/Y_thermal", Value: dm.RequiredFractionOfThermal, Formula: "required suppression / dilution fraction", Status: StatusBridge, Note: "viable only with nonthermal production, dilution, or decay history"},
+	}
+	checks := []Check{
+		{Name: "Stable thermal B-gap Majorana rejected", Passed: dm.OverclosureFactor > 1e12, Detail: "overclosure ratio computed, not guessed"},
+		{Name: "Suppressed/nonthermal target computed", Passed: dm.RequiredFractionOfThermal > 0 && dm.RequiredFractionOfThermal < 1e-10, Detail: "conditional yield fraction exists, production history remains sealed"},
+	}
+	return Section{Name: "Dark-sector conditional scenarios", Summary: "The runtime now computes the viable and rejected dark-sector paths. A stable thermal B-gap Majorana relic is ruled out by overclosure; a suppressed/nonthermal or decaying route remains a conditional cosmological-history bridge.", Quantities: q, Checks: checks, Boundaries: e.Environment.DarkSectorScenarios}
 }
 
 func (e Engine) cosmologySection() Section {
-	return Section{Name: "Cosmology boundary", Summary: "The spectral-action cosmological term is present, but observed cosmology requires continuum subtraction, history, or holographic/dilaton bridge data.", Boundaries: e.Environment.CosmologyScenarios}
+	cc := ComputeCosmologyConditional(e.Bridge.PlanckMassGeV, e.Bridge.VPfGeV)
+	q := []Quantity{
+		{Symbol: "ρ_bare/M_P⁴", Value: cc.BareVacuumPlanckUnits, Formula: "48/π²", Status: StatusBridge, Note: "diagnostic CCM bare vacuum convention f₄=1, Λ=M_P"},
+		{Symbol: "ρ_Λ/M_P⁴ target", Value: cc.TargetDarkEnergyPlanckUnits, Formula: "diagnostic observed-scale comparator", Status: StatusEnvironmental},
+		{Symbol: "counterterm severity", Value: cc.CancellationRatio, Formula: "ρ_bare/ρ_target", Status: StatusEnvironmental},
+		{Symbol: "digits cancellation", Value: cc.DigitsOfCancellation, Formula: "log₁₀(ρ_bare/ρ_target)", Status: StatusEnvironmental},
+		{Symbol: "L·M_P target", Value: cc.HolographicLMpForTarget, Formula: "1/sqrt(ρ_Λ/M_P⁴)", Status: StatusBridge, Note: "holographic/dilaton bridge scale for 10^-120 target"},
+		{Symbol: "L·M_P Gate344 target", Value: cc.Gate344HolographicLMpForTarget, Formula: "1/sqrt(10^-122)", Status: StatusBridge, Note: "alternate Gate-344 target convention"},
+		{Symbol: "(v_Pf/M_P)^4", Value: cc.ElectroweakVacuumPlanckFourth, Formula: "ρ^4", Status: StatusBridge},
+		{Symbol: "EW vacuum / target", Value: cc.EWVacuumOverTarget, Formula: "(v_Pf/M_P)^4 / 10^-120", Status: StatusFailedRoute},
+		{Symbol: "EW vacuum / Gate344 target", Value: cc.EWVacuumOverGate344Target, Formula: "(v_Pf/M_P)^4 / 10^-122", Status: StatusFailedRoute},
+	}
+	checks := []Check{
+		{Name: "Cosmological constant not solved natively", Passed: cc.DigitsOfCancellation > 120, Detail: "bare spectral term needs subtraction/history rule"},
+		{Name: "Holographic/dilaton bridge computable", Passed: cc.HolographicLMpForTarget > 1e59, Detail: "conditional IR-UV scale is numerical but not native saturation theorem"},
+	}
+	return Section{Name: "Cosmology conditional scenarios", Summary: "The runtime reports conditional cosmology numbers with warnings: bare spectral-action vacuum severity, holographic/dilaton target scales, and electroweak-vacuum tension. These are bridge diagnostics, not native predictions of dark energy.", Quantities: q, Checks: checks, Boundaries: e.Environment.CosmologyScenarios}
+}
+
+func (e Engine) vacuumFateSection() Section {
+	vfs := ComputeVacuumFateConditionals(e.Bridge.PlanckMassGeV, e.Bridge.HeavyBGapMajoranaGeV)
+	q := make([]Quantity, 0, 18)
+	for _, vf := range vfs {
+		prefix := vf.SeedMode
+		q = append(q,
+			Quantity{Symbol: prefix + " λ_before", Value: vf.LambdaBeforeThreshold, Formula: "one-loop RG to M_B", Status: StatusBridge},
+			Quantity{Symbol: prefix + " λ_after", Value: vf.LambdaAfterThreshold, Formula: "λ_before + Δλ_ASHA", Status: StatusBridge},
+			Quantity{Symbol: prefix + " μ_inst", Value: vf.InstabilityScaleGeV, Unit: "GeV", Formula: "λ crossing scale", Status: StatusBridge},
+			Quantity{Symbol: prefix + " λ_min", Value: vf.LambdaMin, Formula: "conditional one-loop minimum", Status: StatusBridge},
+			Quantity{Symbol: prefix + " S_E", Value: vf.BounceAction, Formula: "8π²/(3|λ_min|)", Status: StatusBridge},
+			Quantity{Symbol: prefix + " log10 τ/yr", Value: vf.Log10LifetimeYears, Formula: "conditional bounce proxy", Status: StatusBridge},
+		)
+	}
+	checks := []Check{
+		{Name: "Vacuum-fate ensemble computed", Passed: len(vfs) == 2, Detail: "pole and one-loop-QCD top seeds audited"},
+		{Name: "Vacuum fate remains conditional", Passed: true, Detail: "requires empirical top/Higgs inputs and continuum RG scheme"},
+	}
+	return Section{Name: "Vacuum-fate conditional scenario", Summary: "A conditional one-loop RG/bounce stress test can be computed once empirical top/Higgs inputs and the ASHA B-gap threshold jump are supplied. It is useful phenomenology, but it is not a native ASHA universe-lifetime theorem.", Quantities: q, Checks: checks, Boundaries: []Boundary{{Name: "vacuum lifetime", Formula: "top/Higgs/RG scheme + threshold convention + bounce prefactor", Status: StatusEnvironmental, Meaning: "conditional scenario only; no native lifetime prediction"}}}
 }

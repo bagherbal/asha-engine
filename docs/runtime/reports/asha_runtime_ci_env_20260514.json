@@ -1,0 +1,839 @@
+{
+  "metadata": {
+    "runtime_version": "gate425-runtime-env-scenarios-20260514",
+    "latest_gate": 425,
+    "title": "ASHA final runtime board",
+    "keywords": [
+      "Clifford algebra",
+      "noncommutative geometry",
+      "spectral action",
+      "Standard Model",
+      "Higgs",
+      "flavor firewall",
+      "finite geometry"
+    ],
+    "pacs": [
+      "02.10.Ud",
+      "04.50.Kd",
+      "11.10.Nx",
+      "11.15.-q",
+      "12.10.-g",
+      "12.15.Ff"
+    ],
+    "source": "github.com/bagherbal/asha-engine"
+  },
+  "scenario": "ci",
+  "sections": [
+    {
+      "name": "Native finite law-space",
+      "summary": "Finite measurement ladder, Boolean/G₂ contact vacuum, charge skeleton, and inner-fluctuation field inventory.",
+      "quantities": [
+        {
+          "symbol": "dim Cℓ(1,7)",
+          "value": 256,
+          "formula": "2^8",
+          "status": "native/audited"
+        },
+        {
+          "symbol": "grades",
+          "text": "[1 8 28 56 70 56 28 8 1]",
+          "formula": "dim Λ^k R^8 = C(8,k)",
+          "status": "native/audited"
+        },
+        {
+          "symbol": "rank(P_B)",
+          "value": 56,
+          "status": "native/audited"
+        },
+        {
+          "symbol": "rank(P_G)",
+          "value": 14,
+          "status": "native/audited"
+        },
+        {
+          "symbol": "dim K",
+          "value": 7,
+          "formula": "Im(P_B)∩Im(P_G)",
+          "status": "native/audited"
+        },
+        {
+          "symbol": "I_BG",
+          "text": "1",
+          "formula": "dim K / 7",
+          "status": "native/audited"
+        },
+        {
+          "symbol": "k_Y",
+          "text": "5/3",
+          "formula": "Tr(Y²)/Tr(T₃²)",
+          "status": "native/audited"
+        },
+        {
+          "symbol": "sin²θ*",
+          "text": "3/8",
+          "formula": "1/(1+k_Y)",
+          "status": "native/audited"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Clifford dimension",
+          "passed": true,
+          "detail": "dim Cℓ(1,7)=2^8"
+        },
+        {
+          "name": "Exterior grade dimensions",
+          "passed": true,
+          "detail": "[1,8,28,56,70,56,28,8,1]"
+        },
+        {
+          "name": "Boolean/G2 contact vacuum",
+          "passed": true,
+          "detail": "rank(P_B)=56 rank(P_G)=14 dim K=7"
+        },
+        {
+          "name": "Scalar shape",
+          "passed": true,
+          "detail": "Tr(M_K^2)/Tr(M_K)^2"
+        },
+        {
+          "name": "Hypercharge normalization",
+          "passed": true,
+          "detail": "k_Y=5/3"
+        },
+        {
+          "name": "Boundary weak angle",
+          "passed": true,
+          "detail": "sin²θ*=3/8"
+        },
+        {
+          "name": "Gauge/Higgs inventory",
+          "passed": true,
+          "detail": "U(1)_Y × SU(2)_L × SU(3)_C + one complex Higgs doublet"
+        }
+      ]
+    },
+    {
+      "name": "Higgs and coefficient bridge",
+      "summary": "One-form edge measure and Pfaffian scale lane yield the tree-level Higgs proxy; pole-mass and RG thresholds remain bridge work.",
+      "quantities": [
+        {
+          "symbol": "f₂(Λ/M_P)²",
+          "text": "π²/8",
+          "formula": "f₂(Λ/M_P)² = π²/8",
+          "status": "bridge-required",
+          "note": "CCM/Einstein normalization bridge"
+        },
+        {
+          "symbol": "8π",
+          "value": 25.132741228718345,
+          "formula": "(π²/8)/(π/64)=8π",
+          "status": "bridge-required",
+          "note": "correction of earlier coefficient route"
+        },
+        {
+          "symbol": "v_Pf",
+          "value": 247.15113555713546,
+          "unit": "GeV",
+          "formula": "v_Pf = M_P 2^(3/2) exp(-4π²)",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "(e/a²)_node",
+          "text": "1197/4624",
+          "formula": "1197/4624",
+          "status": "native/audited"
+        },
+        {
+          "symbol": "(e/a²)_edge",
+          "value": 0.1812067474048443,
+          "formula": "(7/10)(1197/4624)",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "λ_H",
+          "value": 0.12774563654956705,
+          "formula": "π²(1197/4624)/20",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "m_H^tree",
+          "value": 124.92537028755119,
+          "unit": "GeV",
+          "formula": "v_Pf sqrt(2λ_H)",
+          "status": "bridge-required",
+          "note": "tree-level proxy, not pole-mass theorem"
+        },
+        {
+          "symbol": "M_B",
+          "value": 1467749.73718,
+          "unit": "GeV",
+          "formula": "sealed B-gap Majorana ledger",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "Ω_candidate/Ω_DM",
+          "value": 13000000000000,
+          "formula": "stable thermal B-gap Majorana relic overclosure",
+          "status": "failed-route"
+        }
+      ],
+      "boundaries": [
+        {
+          "name": "Higgs pole mass",
+          "formula": "m_H^tree + RG + thresholds + self-energy",
+          "status": "bridge-required",
+          "meaning": "runtime reports tree proxy only"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Pfaffian scale positive",
+          "passed": true,
+          "detail": "v_Pf computed from Planck mass bridge"
+        },
+        {
+          "name": "Higgs tree proxy",
+          "passed": true,
+          "detail": "m_H^tree ≈ 124.925 GeV under project Planck convention"
+        },
+        {
+          "name": "Majorana stable thermal relic rejected",
+          "passed": true,
+          "detail": "overcloses by ~1.3e13"
+        }
+      ]
+    },
+    {
+      "name": "Family/flavor frontier",
+      "summary": "Native flavor remains 13-dimensional; quarantined K/X/Y axioms activate hierarchy, mixing, and CP capacity with 9 symbolic charged coefficients.",
+      "quantities": [
+        {
+          "symbol": "dim M_charged^native",
+          "value": 13,
+          "formula": "6 quark masses + 4 CKM + 3 charged-lepton masses",
+          "status": "environmental",
+          "note": "native firewall"
+        },
+        {
+          "symbol": "K_gen",
+          "text": "diag(-1,0,1)",
+          "formula": "K_gen = diag(-1,0,1)",
+          "status": "quarantined-axiom",
+          "note": "hierarchy capacity only"
+        },
+        {
+          "symbol": "ρ_β",
+          "text": "[0.665240955775, 0.244728471055, 0.0900305731704]",
+          "formula": "exp(-βK)/Tr exp(-βK)",
+          "status": "quarantined-axiom"
+        },
+        {
+          "symbol": "ρ_max/ρ_min",
+          "value": 7.38905609893065,
+          "formula": "exp(2β)",
+          "status": "quarantined-axiom"
+        },
+        {
+          "symbol": "X_gen",
+          "text": "S+S^T",
+          "formula": "real shift quadrature",
+          "status": "quarantined-axiom",
+          "note": "real mixing capacity"
+        },
+        {
+          "symbol": "Y_gen",
+          "text": "i(S-S^T)",
+          "formula": "imaginary shift quadrature",
+          "status": "quarantined-axiom",
+          "note": "CP capacity"
+        },
+        {
+          "symbol": "||[K,S]||_F",
+          "value": 2.449489742783178,
+          "formula": "sqrt(6)",
+          "status": "quarantined-axiom"
+        },
+        {
+          "symbol": "||[K,X]||_F",
+          "value": 3.4641016151377544,
+          "formula": "sqrt(12)",
+          "status": "quarantined-axiom"
+        },
+        {
+          "symbol": "Im Tr([M_u,M_d]^3)",
+          "value": 8.397024,
+          "formula": "sample nonzero CP-capacity witness",
+          "status": "quarantined-axiom"
+        },
+        {
+          "symbol": "dim C_KXY^charged",
+          "value": 9,
+          "formula": "3 charged sectors × 3 symbolic coefficients",
+          "status": "quarantined-axiom"
+        }
+      ],
+      "boundaries": [
+        {
+          "name": "charged flavor",
+          "formula": "dim M_charged^native = 13",
+          "status": "environmental",
+          "meaning": "Yukawa values and CKM coordinates are not native ASHA outputs."
+        },
+        {
+          "name": "K/X/Y coefficients",
+          "formula": "{a_s,b_s,c_s}_{s=u,d,e}",
+          "status": "environmental",
+          "meaning": "conditional family source coefficients remain boundary data."
+        }
+      ],
+      "checks": [
+        {
+          "name": "Native charged flavor firewall",
+          "passed": true,
+          "detail": "dim M_charged^native=13"
+        },
+        {
+          "name": "KMS family hierarchy capacity",
+          "passed": true,
+          "detail": "ρβ nontracial for β≠0"
+        },
+        {
+          "name": "Noncommuting capacity",
+          "passed": true,
+          "detail": "K does not commute with shift/quadrature"
+        },
+        {
+          "name": "CP capacity not CP prediction",
+          "passed": true,
+          "detail": "phase coefficients remain free"
+        }
+      ]
+    },
+    {
+      "name": "Dark-sector conditional scenarios",
+      "summary": "The runtime now computes the viable and rejected dark-sector paths. A stable thermal B-gap Majorana relic is ruled out by overclosure; a suppressed/nonthermal or decaying route remains a conditional cosmological-history bridge.",
+      "quantities": [
+        {
+          "symbol": "M_B",
+          "value": 1467749.73718,
+          "unit": "GeV",
+          "formula": "B-gap heavy Majorana scale",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "Ω_DM h² target",
+          "value": 0.12,
+          "formula": "observational comparator",
+          "status": "environmental"
+        },
+        {
+          "symbol": "Y_required",
+          "value": 2.979810781520093e-16,
+          "formula": "Ω h² ρ_c/(m s_0)",
+          "status": "bridge-required",
+          "note": "yield needed if B-gap particle were all dark matter"
+        },
+        {
+          "symbol": "Y_thermal",
+          "value": 0.0039014983676562576,
+          "formula": "135 ζ(3)/(8π⁴) · g/g_*S",
+          "status": "bridge-required",
+          "note": "stable relativistic thermal abundance stress test"
+        },
+        {
+          "symbol": "Ω_thermal h²",
+          "value": 1571172931591.0386,
+          "formula": "m Y_thermal s_0/ρ_c",
+          "status": "failed-route"
+        },
+        {
+          "symbol": "Ω_thermal/Ω_DM",
+          "value": 13093107763258.654,
+          "formula": "stable thermal B-gap relic overclosure",
+          "status": "failed-route"
+        },
+        {
+          "symbol": "Y_required/Y_thermal",
+          "value": 7.637606121337816e-14,
+          "formula": "required suppression / dilution fraction",
+          "status": "bridge-required",
+          "note": "viable only with nonthermal production, dilution, or decay history"
+        }
+      ],
+      "boundaries": [
+        {
+          "name": "B-gap Majorana stable thermal relic",
+          "formula": "Ω_candidate/Ω_DM ~ 1.3×10¹³",
+          "status": "failed-route",
+          "meaning": "simple stable thermal interpretation is rejected by overclosure."
+        },
+        {
+          "name": "decaying/portal heavy sector",
+          "formula": "Ω_heavy h² = 0 after decay assumptions",
+          "status": "bridge-required",
+          "meaning": "allowed only with sealed decay/portal dynamics."
+        },
+        {
+          "name": "nonthermal/axion-like routes",
+          "formula": "requires production-history axiom",
+          "status": "environmental",
+          "meaning": "not native ASHA output."
+        }
+      ],
+      "checks": [
+        {
+          "name": "Stable thermal B-gap Majorana rejected",
+          "passed": true,
+          "detail": "overclosure ratio computed, not guessed"
+        },
+        {
+          "name": "Suppressed/nonthermal target computed",
+          "passed": true,
+          "detail": "conditional yield fraction exists, production history remains sealed"
+        }
+      ]
+    },
+    {
+      "name": "Cosmology conditional scenarios",
+      "summary": "The runtime reports conditional cosmology numbers with warnings: bare spectral-action vacuum severity, holographic/dilaton target scales, and electroweak-vacuum tension. These are bridge diagnostics, not native predictions of dark energy.",
+      "quantities": [
+        {
+          "symbol": "ρ_bare/M_P⁴",
+          "value": 4.863416814832213,
+          "formula": "48/π²",
+          "status": "bridge-required",
+          "note": "diagnostic CCM bare vacuum convention f₄=1, Λ=M_P"
+        },
+        {
+          "symbol": "ρ_Λ/M_P⁴ target",
+          "value": 1e-120,
+          "formula": "diagnostic observed-scale comparator",
+          "status": "environmental"
+        },
+        {
+          "symbol": "counterterm severity",
+          "value": 4.863416814832213e+120,
+          "formula": "ρ_bare/ρ_target",
+          "status": "environmental"
+        },
+        {
+          "symbol": "digits cancellation",
+          "value": 120.68694149198733,
+          "formula": "log₁₀(ρ_bare/ρ_target)",
+          "status": "environmental"
+        },
+        {
+          "symbol": "L·M_P target",
+          "value": 1e+60,
+          "formula": "1/sqrt(ρ_Λ/M_P⁴)",
+          "status": "bridge-required",
+          "note": "holographic/dilaton bridge scale for 10^-120 target"
+        },
+        {
+          "symbol": "L·M_P Gate344 target",
+          "value": 1e+61,
+          "formula": "1/sqrt(10^-122)",
+          "status": "bridge-required",
+          "note": "alternate Gate-344 target convention"
+        },
+        {
+          "symbol": "(v_Pf/M_P)^4",
+          "value": 1.679361894449435e-67,
+          "formula": "ρ^4",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "EW vacuum / target",
+          "value": 1.679361894449435e+53,
+          "formula": "(v_Pf/M_P)^4 / 10^-120",
+          "status": "failed-route"
+        },
+        {
+          "symbol": "EW vacuum / Gate344 target",
+          "value": 1.679361894449435e+55,
+          "formula": "(v_Pf/M_P)^4 / 10^-122",
+          "status": "failed-route"
+        }
+      ],
+      "boundaries": [
+        {
+          "name": "spectral-action cosmological term",
+          "formula": "48 f₄ Λ⁴ + subtraction/renormalization",
+          "status": "bridge-required",
+          "meaning": "bare term exists; observed ρΛ needs continuum/history rule."
+        },
+        {
+          "name": "holographic/dilaton bridge",
+          "formula": "ρΛ ~ M_P²/L², Λ → Λ(x)",
+          "status": "bridge-required",
+          "meaning": "possible pathway, not native prediction."
+        },
+        {
+          "name": "cosmological coordinates",
+          "formula": "(Ω_DM h², ρΛ, t_universe, η_B)",
+          "status": "environmental",
+          "meaning": "history/state dependent and not predicted by current law-space."
+        }
+      ],
+      "checks": [
+        {
+          "name": "Cosmological constant not solved natively",
+          "passed": true,
+          "detail": "bare spectral term needs subtraction/history rule"
+        },
+        {
+          "name": "Holographic/dilaton bridge computable",
+          "passed": true,
+          "detail": "conditional IR-UV scale is numerical but not native saturation theorem"
+        }
+      ]
+    },
+    {
+      "name": "Vacuum-fate conditional scenario",
+      "summary": "A conditional one-loop RG/bounce stress test can be computed once empirical top/Higgs inputs and the ASHA B-gap threshold jump are supplied. It is useful phenomenology, but it is not a native ASHA universe-lifetime theorem.",
+      "quantities": [
+        {
+          "symbol": "tree-pole-top-seed λ_before",
+          "value": -0.006880640805409461,
+          "formula": "one-loop RG to M_B",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "tree-pole-top-seed λ_after",
+          "value": -0.10472743301240946,
+          "formula": "λ_before + Δλ_ASHA",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "tree-pole-top-seed μ_inst",
+          "value": 576733.268667478,
+          "unit": "GeV",
+          "formula": "λ crossing scale",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "tree-pole-top-seed λ_min",
+          "value": -0.12279390797372498,
+          "formula": "conditional one-loop minimum",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "tree-pole-top-seed S_E",
+          "value": 214.33428989981536,
+          "formula": "8π²/(3|λ_min|)",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "tree-pole-top-seed log10 τ/yr",
+          "value": 55.64248618209556,
+          "formula": "conditional bounce proxy",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "one-loop-QCD-MSbar-top-seed λ_before",
+          "value": 0.032625459629777975,
+          "formula": "one-loop RG to M_B",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "one-loop-QCD-MSbar-top-seed λ_after",
+          "value": -0.06522133257722203,
+          "formula": "λ_before + Δλ_ASHA",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "one-loop-QCD-MSbar-top-seed μ_inst",
+          "value": 1467749.73718,
+          "unit": "GeV",
+          "formula": "λ crossing scale",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "one-loop-QCD-MSbar-top-seed λ_min",
+          "value": -0.07744634307299245,
+          "formula": "conditional one-loop minimum",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "one-loop-QCD-MSbar-top-seed S_E",
+          "value": 339.8345748199662,
+          "formula": "8π²/(3|λ_min|)",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "one-loop-QCD-MSbar-top-seed log10 τ/yr",
+          "value": 109.74089039318616,
+          "formula": "conditional bounce proxy",
+          "status": "bridge-required"
+        }
+      ],
+      "boundaries": [
+        {
+          "name": "vacuum lifetime",
+          "formula": "top/Higgs/RG scheme + threshold convention + bounce prefactor",
+          "status": "environmental",
+          "meaning": "conditional scenario only; no native lifetime prediction"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Vacuum-fate ensemble computed",
+          "passed": true,
+          "detail": "pole and one-loop-QCD top seeds audited"
+        },
+        {
+          "name": "Vacuum fate remains conditional",
+          "passed": true,
+          "detail": "requires empirical top/Higgs inputs and continuum RG scheme"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "Clifford dimension",
+      "passed": true,
+      "detail": "dim Cℓ(1,7)=2^8"
+    },
+    {
+      "name": "Exterior grade dimensions",
+      "passed": true,
+      "detail": "[1,8,28,56,70,56,28,8,1]"
+    },
+    {
+      "name": "Boolean/G2 contact vacuum",
+      "passed": true,
+      "detail": "rank(P_B)=56 rank(P_G)=14 dim K=7"
+    },
+    {
+      "name": "Scalar shape",
+      "passed": true,
+      "detail": "Tr(M_K^2)/Tr(M_K)^2"
+    },
+    {
+      "name": "Hypercharge normalization",
+      "passed": true,
+      "detail": "k_Y=5/3"
+    },
+    {
+      "name": "Boundary weak angle",
+      "passed": true,
+      "detail": "sin²θ*=3/8"
+    },
+    {
+      "name": "Gauge/Higgs inventory",
+      "passed": true,
+      "detail": "U(1)_Y × SU(2)_L × SU(3)_C + one complex Higgs doublet"
+    },
+    {
+      "name": "Pfaffian scale positive",
+      "passed": true,
+      "detail": "v_Pf computed from Planck mass bridge"
+    },
+    {
+      "name": "Higgs tree proxy",
+      "passed": true,
+      "detail": "m_H^tree ≈ 124.925 GeV under project Planck convention"
+    },
+    {
+      "name": "Majorana stable thermal relic rejected",
+      "passed": true,
+      "detail": "overcloses by ~1.3e13"
+    },
+    {
+      "name": "Native charged flavor firewall",
+      "passed": true,
+      "detail": "dim M_charged^native=13"
+    },
+    {
+      "name": "KMS family hierarchy capacity",
+      "passed": true,
+      "detail": "ρβ nontracial for β≠0"
+    },
+    {
+      "name": "Noncommuting capacity",
+      "passed": true,
+      "detail": "K does not commute with shift/quadrature"
+    },
+    {
+      "name": "CP capacity not CP prediction",
+      "passed": true,
+      "detail": "phase coefficients remain free"
+    },
+    {
+      "name": "Latest gate marker",
+      "passed": true,
+      "detail": "gate=425"
+    },
+    {
+      "name": "Clifford dimension",
+      "passed": true,
+      "detail": "dim Cℓ(1,7)=2^8"
+    },
+    {
+      "name": "Exterior grade dimensions",
+      "passed": true,
+      "detail": "[1,8,28,56,70,56,28,8,1]"
+    },
+    {
+      "name": "Boolean/G2 contact vacuum",
+      "passed": true,
+      "detail": "rank(P_B)=56 rank(P_G)=14 dim K=7"
+    },
+    {
+      "name": "Scalar shape",
+      "passed": true,
+      "detail": "Tr(M_K^2)/Tr(M_K)^2"
+    },
+    {
+      "name": "Hypercharge normalization",
+      "passed": true,
+      "detail": "k_Y=5/3"
+    },
+    {
+      "name": "Boundary weak angle",
+      "passed": true,
+      "detail": "sin²θ*=3/8"
+    },
+    {
+      "name": "Gauge/Higgs inventory",
+      "passed": true,
+      "detail": "U(1)_Y × SU(2)_L × SU(3)_C + one complex Higgs doublet"
+    },
+    {
+      "name": "Pfaffian scale positive",
+      "passed": true,
+      "detail": "v_Pf computed from Planck mass bridge"
+    },
+    {
+      "name": "Higgs tree proxy",
+      "passed": true,
+      "detail": "m_H^tree ≈ 124.925 GeV under project Planck convention"
+    },
+    {
+      "name": "Majorana stable thermal relic rejected",
+      "passed": true,
+      "detail": "overcloses by ~1.3e13"
+    },
+    {
+      "name": "Native charged flavor firewall",
+      "passed": true,
+      "detail": "dim M_charged^native=13"
+    },
+    {
+      "name": "KMS family hierarchy capacity",
+      "passed": true,
+      "detail": "ρβ nontracial for β≠0"
+    },
+    {
+      "name": "Noncommuting capacity",
+      "passed": true,
+      "detail": "K does not commute with shift/quadrature"
+    },
+    {
+      "name": "CP capacity not CP prediction",
+      "passed": true,
+      "detail": "phase coefficients remain free"
+    },
+    {
+      "name": "Stable thermal B-gap Majorana rejected",
+      "passed": true,
+      "detail": "overclosure ratio computed, not guessed"
+    },
+    {
+      "name": "Suppressed/nonthermal target computed",
+      "passed": true,
+      "detail": "conditional yield fraction exists, production history remains sealed"
+    },
+    {
+      "name": "Cosmological constant not solved natively",
+      "passed": true,
+      "detail": "bare spectral term needs subtraction/history rule"
+    },
+    {
+      "name": "Holographic/dilaton bridge computable",
+      "passed": true,
+      "detail": "conditional IR-UV scale is numerical but not native saturation theorem"
+    },
+    {
+      "name": "Vacuum-fate ensemble computed",
+      "passed": true,
+      "detail": "pole and one-loop-QCD top seeds audited"
+    },
+    {
+      "name": "Vacuum fate remains conditional",
+      "passed": true,
+      "detail": "requires empirical top/Higgs inputs and continuum RG scheme"
+    }
+  ],
+  "boundaries": [
+    {
+      "name": "charged flavor",
+      "formula": "dim M_charged^native = 13",
+      "status": "environmental",
+      "meaning": "Yukawa values and CKM coordinates are not native ASHA outputs."
+    },
+    {
+      "name": "K/X/Y coefficients",
+      "formula": "{a_s,b_s,c_s}_{s=u,d,e}",
+      "status": "environmental",
+      "meaning": "conditional family source coefficients remain boundary data."
+    },
+    {
+      "name": "spectral-action cosmological term",
+      "formula": "48 f₄ Λ⁴ + subtraction/renormalization",
+      "status": "bridge-required",
+      "meaning": "bare term exists; observed ρΛ needs continuum/history rule."
+    },
+    {
+      "name": "holographic/dilaton bridge",
+      "formula": "ρΛ ~ M_P²/L², Λ → Λ(x)",
+      "status": "bridge-required",
+      "meaning": "possible pathway, not native prediction."
+    },
+    {
+      "name": "cosmological coordinates",
+      "formula": "(Ω_DM h², ρΛ, t_universe, η_B)",
+      "status": "environmental",
+      "meaning": "history/state dependent and not predicted by current law-space."
+    },
+    {
+      "name": "B-gap Majorana stable thermal relic",
+      "formula": "Ω_candidate/Ω_DM ~ 1.3×10¹³",
+      "status": "failed-route",
+      "meaning": "simple stable thermal interpretation is rejected by overclosure."
+    },
+    {
+      "name": "decaying/portal heavy sector",
+      "formula": "Ω_heavy h² = 0 after decay assumptions",
+      "status": "bridge-required",
+      "meaning": "allowed only with sealed decay/portal dynamics."
+    },
+    {
+      "name": "nonthermal/axion-like routes",
+      "formula": "requires production-history axiom",
+      "status": "environmental",
+      "meaning": "not native ASHA output."
+    },
+    {
+      "name": "q4 sector",
+      "formula": "q4 ∈ contact spectral sector, q4 ∉ HΦ selector",
+      "status": "failed-route",
+      "meaning": "contact invariant not promoted to scalar/flavor theorem."
+    },
+    {
+      "name": "HΦ flavor blindness",
+      "formula": "HΦ ⇒ weak doublet + scalar potential, not flavor selector",
+      "status": "failed-route",
+      "meaning": "native scalar selectors are central or pair-degenerate."
+    },
+    {
+      "name": "family axioms",
+      "formula": "K/X/Y ⇒ capacity, not coefficient prediction",
+      "status": "quarantined-axiom",
+      "meaning": "family extension is explicit and quarantined."
+    }
+  ],
+  "verdict": "PASS: ASHA runtime board is internally consistent; native law-space separated from bridge, quarantined, and environmental data."
+}
