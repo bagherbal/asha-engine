@@ -9,6 +9,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/fieldmap"
+	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/threshold"
@@ -106,6 +107,7 @@ func Run() error {
 		thresholdrep.ThresholdRepresentationAssignmentAuditTheorem(),
 		thresholdactivation.ThresholdActivationDecouplingAuditTheorem(),
 		fieldmap.FiniteToContinuumFieldMapAuditTheorem(),
+		goldstone.GaugeEatingGoldstoneAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
