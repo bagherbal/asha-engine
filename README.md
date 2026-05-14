@@ -11,6 +11,49 @@ The engine is intentionally theorem-gated:
 
 No observed physical constants are hard-coded in the finite core.
 
+
+## Bottom line up front — current final finding
+
+The ASHA Engine has completed the finite internal-factor audit and the first lawful continuum bridge.
+Its central result is not that the finite algebra becomes spacetime, but that the finite spectral triple
+`F` joins an external four-dimensional spin manifold `M` through the almost-commutative product geometry:
+
+```text
+Total geometry = M × F
+D_total = D_M ⊗ 1_F + γ5 ⊗ D_F
+```
+
+From the finite side, the engine reconstructs the Standard Model internal landscape and supplies rigid
+spectral-action boundary data. The current ledger supports the following structural findings:
+
+- the internal algebraic factor is the Standard Model finite algebra
+  `A_F = C ⊕ H ⊕ M₃(C)`;
+- the product spectral action yields the Standard Model plus Einstein-gravity action skeleton;
+- the finite boundary ratios include
+  `sin²θ_W(Λ) = 3/8`, `α_branch⁻¹ = 8π`,
+  `λ_H / g_*² = 1197 / 4624`, and
+  `f₂(Λ/M_P)² = π/64`;
+- the native charged finite-Dirac moduli space has dimension `13`, corresponding to
+  the charged fermion masses and CKM mixing parameters;
+- the broader external vacuum ledger is therefore
+  `15 = 13 charged finite-Dirac flavor moduli + θ_QCD + one absolute scale`.
+
+The project’s present scientific boundary is equally important: the 13 charged flavor moduli are not
+predicted by the pure finite geometry. They remain flat directions of `D_F` unless an additional lawful
+selection principle is supplied. Likewise, dark matter relic density, vacuum lifetime, and the observed
+cosmological constant are not yet numerical predictions of the engine; they require continuum inputs such
+as stability/interaction data for the dark sector, RG and threshold matching for vacuum decay, and a
+renormalized vacuum-energy or holographic subtraction principle.
+
+Therefore, the current status is:
+
+```text
+ASHA supplies the finite internal geometry and spectral boundary coefficients.
+M supplies spacetime and continuum dynamics.
+M × F supplies the lawful SM + gravity action framework.
+The 13 flavor moduli and major cosmological observables remain open quantitative targets.
+```
+
 ## Current gates
 
 - `ALG-EXT-GRADES-R8` — exterior grade structure of `R^8`.
