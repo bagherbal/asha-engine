@@ -112,3 +112,29 @@ S_total = I_Fock ⊗ S_Φ
 ```
 
 The gate verifies that matter charge and scalar/contact response commute because they live on different tensor factors. It also verifies the trace identities, the neutral vacuum scalar fiber `|Ω⟩⊗H_Φ`, and the charge-sector scalar fibers. The result is a cleaner architecture for the next missing object: a gauge-compatible Yukawa/intertwiner map between matter states and the scalar factor. No Yukawa texture or physical mass matrix is claimed yet.
+
+
+## v0.17 — Yukawa/intertwiner selection rule
+
+Gate 18 adds `pkg/matter/yukawa`. The tensor-factor bridge made the correct domain explicit:
+
+```text
+H_total = H_Fock ⊗ H_Φ
+Q_total = Q_B-L ⊗ I_Φ
+```
+
+The new gate formulates the first honest Yukawa/intertwiner selection rule:
+
+```text
+[Q_total, Y] = 0
+```
+
+With the scalar factor currently neutral under `B−L`, the allowed neutral intertwiner space is block-diagonal in charge sectors. The engine computes:
+
+- `dim End(H_total) = 4096`;
+- `dim{Y : [Q,Y]=0} = 672`;
+- `3424` charge-changing entries are forbidden unless the scalar/contact factor receives its own charge/hypercharge bridge;
+- the one-particle neutral selection space has dimension `160`;
+- parity-preserving and parity-flipping dimensions are balanced, but true chirality remains an open theorem.
+
+This gate does not derive fermion masses. It turns `U-07-YUKAWA` into a precise mathematical problem: construct a non-arbitrary hypercharge/chirality-compatible intertwiner rather than a fitted mass matrix.
