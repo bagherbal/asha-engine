@@ -122,6 +122,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedmetric"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticexternalselector"
+	"github.com/bagherbal/asha-engine/pkg/bridge/quarticscalaroperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticspectralfunctional"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quotientedcorrespondence"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgfirewall"
@@ -380,6 +381,7 @@ func Run() error {
 		finitebundlemap.FiniteAlgebraicLocalFieldBundleMapConstructionSearchTheorem(),
 		contactmoduleaction.ContactModuleToFockScalarRepresentationActionSearchTheorem(),
 		cliffordcontactcommutant.CliffordContactSpectralIdempotentCommutantObstructionTheorem(),
+		quarticscalaroperator.QuarticScalarOperatorMinimalPolynomialTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

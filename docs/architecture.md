@@ -2565,3 +2565,45 @@ conditional nullity: 2 -> 2
 ```
 
 Recommended next gate: Gate 185 — quartic scalar operator / minimal-polynomial construction on `H_Φ`.
+
+### Gate 185 — quartic scalar operator / minimal-polynomial construction on H_Φ
+
+Package: `pkg/bridge/quarticscalaroperator`
+
+Gate 185 follows Gate 184's isolation of the quartic scalar route. It constructs the exact rational companion operator for the quartic contact primary factor
+
+```text
+q4(x) = 3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271.
+```
+
+The companion operator is the multiplication-by-`x` action on the cyclic quotient module `Q[x]/(q4)`. It is an exact branch-free `4×4` rational operator, not a numerical diagonalization of the quartic roots. The gate verifies the polynomial identity `q4(T_q)=0` exactly and confirms that the cyclic vector rank is four, so the module has minimal polynomial `q4`.
+
+The exact trace moments match the Gate-161 quartic spectral-functional ledger:
+
+```text
+Tr(T_q)   = 71/30
+Tr(T_q²)  = 1471/900
+Tr(T_q³)  = 33581/27000
+Tr(T_q⁴)  = 809891/810000
+```
+
+This is a positive abstract-module theorem: the quartic primary ideal has a lawful 4D scalar module, and no branch choices or observed physical constants are used.
+
+The physical promotion fails in this gate. The Gate-37 active scalar/Higgs mixing operator is pair-degenerate, so its minimal polynomial is quadratic rather than the quartic contact factor. It supplies the scalar-potential shape target `1197/4624`, but it is not the same operator as the quartic companion module. The exact block restriction `P_Φ Ω_contact P_Φ` is not computed as a physical `H_Φ` operator because the engine still lacks a canonical map/projector identifying `H_Φ` with the quartic contact primary block.
+
+Gate 185 records:
+
+```text
+abstract quartic operator Q[x]/(q4): derived
+exact quartic polynomial identity: verified
+quartic moment ledger: verified
+physical H_Φ quartic-minimal operator: not derived
+scalar/contact identification map: not derived
+Chern-Weil carrier: not derived
+heat-kernel / threshold beta rows: not derived
+absolute coupling promotion: not derived
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+```
+
+Recommended next gate: Gate 186 — scalar/contact quartic identification selector or obstruction theorem.

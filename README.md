@@ -1925,3 +1925,58 @@ conditional nullity: 2 -> 2
 ```
 
 Recommended next gate: Gate 185 — quartic scalar operator / minimal-polynomial construction on `H_Φ`.
+
+## v1.83 — Gate 185: Quartic scalar operator / minimal-polynomial construction on H_Φ
+
+Gate 185 adds `pkg/bridge/quarticscalaroperator`.
+
+Gate 184 isolated the only dimensionally viable finite-bundle path: the quartic primary ideal has dimension four, matching the active scalar carrier `H_Φ`. Gate 185 tests this route by constructing the exact rational companion operator for the contact quartic factor
+
+```text
+q4(x) = 3240x^4 - 7668x^3 + 6426x^2 - 2235x + 271.
+```
+
+The abstract construction succeeds. In the cyclic basis `{1,x,x²,x³}` of `Q[x]/(q4)`, multiplication by `x` gives a branch-free `4×4` rational operator `T_q`. Exact rational arithmetic verifies
+
+```text
+q4(T_q) = 0
+minimal polynomial = q4
+cyclic module rank = 4
+```
+
+and reproduces the quartic Galois-invariant moment ledger from Gate 161:
+
+```text
+Tr(T_q)   = 71/30
+Tr(T_q²)  = 1471/900
+Tr(T_q³)  = 33581/27000
+Tr(T_q⁴)  = 809891/810000
+```
+
+This proves the quartic scalar escape hatch is algebraically real: `Q[x]/(q4)` is an exact 4D branch-free module carrying the quartic contact primary action.
+
+However, Gate 185 does **not** promote this abstract module to the physical scalar bundle. The already-derived Gate-37 active scalar/Higgs operator is pair-degenerate, with two high and two low eigenvalues. Therefore its minimal polynomial is quadratic, not the quartic contact polynomial. The Gate-37 scalar shape still equals the exact target `1197/4624`, but the operator that produced the scalar potential is not the quartic companion operator.
+
+The requested block restriction
+
+```text
+T_Φ = P_Φ Ω_contact P_Φ
+```
+
+is also not yet available as a physical construction: the exact contact overlap and quartic primary projector exist, but the engine has not derived a canonical physical `H_Φ` projector or map into the quartic contact primary block.
+
+Gate 185 status:
+
+```text
+abstract quartic companion module: derived
+q4(T)=0 exact polynomial identity: verified
+quartic moment ledger: verified
+Gate-37 scalar operator quartic-minimal: false
+canonical H_Φ identification with quartic module: false
+physical scalar bundle: not derived
+Chern-Weil carrier / heat-kernel matching / threshold rows: not derived
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+```
+
+Recommended next gate: Gate 186 — scalar/contact quartic identification selector or obstruction theorem.
