@@ -7,6 +7,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
+	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
@@ -94,6 +95,7 @@ func Run() error {
 		actionscale.ActionNormalizationScaleBridgeTheorem(),
 		couplingnorm.CouplingNormalizationBridgeTheorem(),
 		ewprojection.ElectroweakProjectionTheorem(),
+		rgflow.RGBoundaryFlowAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
