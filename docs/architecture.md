@@ -2607,3 +2607,55 @@ conditional nullity: 2 -> 2
 ```
 
 Recommended next gate: Gate 186 — scalar/contact quartic identification selector or obstruction theorem.
+
+### Gate 186 — scalar/contact quartic identification selector or obstruction theorem
+
+Package: `pkg/bridge/scalarcontactselector`
+
+Gate 186 follows the Gate-185 result that the abstract quartic module `Q[x]/(q4)` exists exactly, while the physical Gate-37 scalar/Higgs operator is pair-degenerate and therefore quadratic-minimal. The gate tests whether there is a canonical selector that identifies the irreducible quartic contact orbit with the Higgs `2+2` scalar structure.
+
+The input conflict is:
+
+```text
+quartic contact module: degree-4 minimal polynomial, four distinct real roots
+physical H_Φ scalar operator: 2+2 pair-degenerate, quadratic minimal polynomial
+```
+
+A map from the first to the second requires choosing one of the three partitions of four roots into two pairs. Gate 186 computes the exact partition resolvent cubic:
+
+```text
+z^3 - (119/60)z^2 + (8411/6480)z - 1637467/5832000 = 0
+```
+
+or in integer form:
+
+```text
+5832000z^3 - 11566800z^2 + 7569900z - 1637467 = 0.
+```
+
+The three roots encode the three pairings `12|34`, `13|24`, and `14|23`. Deriving the physical scalar bundle requires selecting one of these roots without diagonalizing the quartic or choosing branches by hand.
+
+Gate 186 proves three obstructions:
+
+1. **Internal Galois obstruction.** The quartic primary block remains one transitive Galois orbit. A purely internal Galois-invariant parity or pairing is constant and cannot choose one of the three pair partitions.
+2. **External selector obstruction.** Current external finite data either do not act on the quartic block, are fully symmetric on it, or require the same branch choice. The audited data include the quartic moment/zeta ledger, Gate-37 scalar operator, B−L/Fock charges, scalar covariant derivative diagnostics, topological action seal, and the quartic companion operator.
+3. **Complex/symplectic obstruction.** A commuting rational complex structure on the quartic companion module would be an element of `Q[T_q] ≅ Q[x]/(q4)` satisfying `J²=-1`. Since the quartic centralizer is a totally real field, no such element exists in the current finite data.
+
+Gate 186 therefore records:
+
+```text
+abstract quartic module inherited: true
+resolvent partition audit complete: true
+canonical 2+2 selector derived: false
+physical scalar bundle derived: false
+Chern-Weil carrier: false
+heat-kernel matching: false
+threshold rows: false
+absolute coupling promotion: false
+strict nullity: 3 -> 3
+conditional nullity: 2 -> 2
+```
+
+This gate seals the current scalar/contact identification route. The missing object is a vacuum or external selector mechanism that chooses one resolvent partition and thereby converts the irreducible quartic contact module into the pair-degenerate Higgs scalar carrier.
+
+Recommended next gate: Gate 187 — scalar vacuum selector / spontaneous `2+2` pairing source audit.

@@ -128,6 +128,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgfirewall"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcomplex"
+	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcontactselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarcovariant"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarfockspectralpotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/scalarscale"
@@ -382,6 +383,7 @@ func Run() error {
 		contactmoduleaction.ContactModuleToFockScalarRepresentationActionSearchTheorem(),
 		cliffordcontactcommutant.CliffordContactSpectralIdempotentCommutantObstructionTheorem(),
 		quarticscalaroperator.QuarticScalarOperatorMinimalPolynomialTheorem(),
+		scalarcontactselector.ScalarContactQuarticIdentificationSelectorObstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
