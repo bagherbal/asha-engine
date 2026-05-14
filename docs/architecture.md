@@ -1025,3 +1025,23 @@ threshold-corrected Δb_i(L)          = not derived
 ```
 
 The next gate should test whether the six leptoquark slots can receive a representation tensor — for example color/doublet semantics — without relying on an arbitrary `S6` assignment.
+
+### Gate 132 — Contact leptoquark slot representation tensor / color-doublet semantic obstruction
+
+Gate 132 tests whether the current-side six leptoquark slots can be promoted into contact threshold representation rows.
+
+The current inventory really contains six leptoquark generators, organized as three color directions times two real off-diagonal orientations:
+
+```text
+LQ_c_sym, LQ_c_skew for c = 1,2,3
+```
+
+This gives the tempting count `3 × 2 = 6`, but the second factor is a real symmetric/skew orientation, not a derived `SU(2)L` weak-doublet component. Therefore the gate rejects the shortcut:
+
+```text
+3 colors × 2 real orientations ≠ color triplet weak doublet theorem
+```
+
+No hypercharge row, local field map, mass activation rule, decoupling rule, or contact-row assignment is selected. The six leptoquark slots remain valid current-sector representation data, but they do not yet open the contact beta firewall.
+
+Next: Gate 133 — leptoquark real-orientation versus weak-doublet obstruction / SU(2)L action search.
