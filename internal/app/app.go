@@ -6,6 +6,7 @@ import (
 	"github.com/bagherbal/asha-engine/internal/report"
 	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
+	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
 	"github.com/bagherbal/asha-engine/pkg/bridge/couplingnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/ewprojection"
@@ -126,6 +127,7 @@ func Run() error {
 		gapledger.NJLGapKernelCriticalityLedgerTheorem(),
 		fourfermion.NativeFourFermionKernelTheorem(),
 		fierz.FiniteFierzProjectionAuditTheorem(),
+		chiraltrace.FiniteChiralBilinearMetricTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
