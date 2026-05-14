@@ -5233,3 +5233,48 @@ FAILED_ROUTE_PROJECTOR_ORIENTATION_DOES_NOT_DERIVE_RESOLVENT_TO_R_BRANCH_MAP
 FAILED_ROUTE_AMPLITUDE_BRANCH_NOT_LOCKED
 FAILED_ROUTE_HIGGS_MASS_RATIO_STILL_NOT_DERIVED
 ```
+
+## Gate 282 — Spectral Action Epistemological Capstone / Higgs Prediction Firewall Audit
+
+Gate 282 formally closes the current Path-B spectral-action attempt. It does not add a new physical derivation; it compiles the exact scaffold already obtained and hard-seals the Higgs mass-ratio target behind a six-point firewall.
+
+Derived or conditionally constructed scaffold:
+
+```text
+C ⊕ H ⊕ M3(C) candidate finite algebra              Gate 274
+first-quantized Morita bimodule H_F                 Gate 272
+κ_C:κ_Q = 1:3 trace multiplicity                    Gate 273
+λ_contact = 1197/4624 scalar-Morita bridge          Gate 275
+r = (3591 ± 136√123)/3099 two-branch shape          Gate 275
+resolvent 2⊕2 contact projectors                    Gate 280
+ProjectorSectorOrientationSeal                      Gate 281
+```
+
+The Higgs-ratio firewall ledger is:
+
+```text
+1. missing functor: z_res -> r_±
+2. missing physical anti-linear J and opposite action
+3. missing chiral/hypercharge representation on H_F
+4. missing heat-kernel / Seeley-de Witt subtraction scheme
+5. missing scalar-vs-gauge kinetic normalization
+6. missing exact dimensionless predicted observable
+```
+
+Until these six objects are derived by future native theorems or explicitly quarantined seals, raw finite traces, scalar-Morita branches, and sealed contact-projector orientations cannot be promoted to a physical `a2/a4` Higgs mass-ratio prediction.
+
+Statuses:
+
+```text
+CONDITIONAL_SUPPORT_SPECTRAL_ACTION_SCAFFOLD_MANIFEST_COMPILED
+CONDITIONAL_SUPPORT_SIX_POINT_HIGGS_FIREWALL_LEDGER_COMPILED
+CONDITIONAL_SUPPORT_HIGGS_PREDICTION_FIREWALL_ESTABLISHED
+CONDITIONAL_SUPPORT_SPECTRAL_ACTION_CAPSTONE_AND_HIGGS_FIREWALL_ESTABLISHED
+FAILED_ROUTE_HIGGS_MASS_RATIO_REMAINS_UNDERIVED
+FAILED_ROUTE_RESOLVENT_TO_SCALAR_MORITA_FUNCTOR_MISSING
+FAILED_ROUTE_PHYSICAL_REAL_STRUCTURE_J_MISSING
+FAILED_ROUTE_CHIRAL_HYPERCHARGE_REPRESENTATION_MISSING
+FAILED_ROUTE_HEAT_KERNEL_SUBTRACTION_SCHEME_MISSING
+FAILED_ROUTE_SCALAR_GAUGE_NORMALIZATION_MISSING
+FAILED_ROUTE_DIMENSIONLESS_HIGGS_OBSERVABLE_DEFINITION_MISSING
+```

@@ -5057,3 +5057,18 @@ Q-base irreducibility
 Gate 281 resolves the immediate question left by Gate 280: whether the Morita `1⊕3` trace multiplicities can choose one of the six sealed projector-sector orientations. They cannot. The contact projectors produced by resolvent adjunction split the irreducible quartic companion module as `2⊕2`, while the Morita multiplicities count finite-Hilbert-bimodule sectors as `1⊕3`. These are different carriers, and the multiplicity ledger does not provide an invariant contact-projector orientation.
 
 A `ProjectorSectorOrientationSeal` is therefore introduced as a conditional boundary. It may choose a representative branch and assign one projector to `{u,d}` and its complement to `{e,ν}`, but this remains a sealed orientation. The seal does not derive the missing map from resolvent branches to Gate-275 `r_±`, and the Seeley-de Witt/Higgs-ratio path remains blocked pending a real branch map, physical `J`, hypercharge/chirality completion, heat-kernel projection, and scalar/gauge normalization.
+
+## Gate 282 — Spectral Action Capstone and Higgs Firewall
+
+Gate 282 is the Path-B capstone. It records that the spectral-action scaffold is substantial but not yet a physical Higgs prediction. The finite core has provided the candidate algebraic arena, Morita multiplicities, the scalar-Morita quadratic shape constraint, and conditional contact projectors. It has not provided the projection machinery required to convert those objects into Seeley-de Witt Lagrangian coefficients.
+
+The capstone firewall has six required missing structures:
+
+1. A native functor from contact resolvent branches to scalar-Morita amplitude branches.
+2. The physical anti-linear real structure `J` and opposite action.
+3. The completed chiral/hypercharge representation on the finite Hilbert space.
+4. A heat-kernel subtraction and cutoff-moment scheme.
+5. Separate scalar and gauge kinetic normalizations.
+6. A pre-defined dimensionless observable to be predicted before comparison.
+
+This gate permanently prevents the engine from claiming a Higgs mass ratio from raw trace ratios, from the Gate-275 two-branch `r_±` shape constraint, or from the Gate-281 sealed projector orientation. The spectral action remains a valid future target, but the present theorem status is bridge-required, not exact finite.

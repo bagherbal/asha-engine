@@ -213,6 +213,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/shellfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/singlescalematchingaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spectralaction"
+	"github.com/bagherbal/asha-engine/pkg/bridge/spectralactioncapstone"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spin8trialityfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spinctwistedchirality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spontaneouscarrierseal"
@@ -574,6 +575,7 @@ func Run() error {
 		contactprojectorcompanion.ContactProjectorActionQuarticCompanionModuleSemanticsAuditTheorem(),
 		resolventfieldadjunction.ResolventFieldAdjunctionContactProjectorConstructionAuditTheorem(),
 		resolventbranchsemantics.ResolventBranchSemanticsProjectorSectorOrientationSealAuditTheorem(),
+		spectralactioncapstone.SpectralActionEpistemologicalCapstoneHiggsPredictionFirewallAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
