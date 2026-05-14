@@ -6057,3 +6057,24 @@ Gate 415 follows the Gate-414 result that native trace/curvature functionals do 
 The ledger ranks candidate extensions. A universal family source is mathematically cheapest but remains flavor-blind. A charge-sector source boundary is the least-cost CKM/PMNS-capable empirical-independent axiom: it can assign different coefficient rays to up/down/lepton/neutrino sectors while preserving gauge compatibility. However, its coefficient values remain new boundary data. Z3 phase rules, flat U(3) family holonomy, and modular KMS sector sources all have capacity but underdetermine physical angles. Direct observed Yukawa matrices are rejected as curve-fitting.
 
 Thus Gate 415 keeps the native charged-flavor firewall intact: no current ASHA theorem derives the family boundary condition, and `dim M_charged = 13` remains the honest native moduli count. The next route is not another native search but a parameter-counting consistency sieve for the minimal sector-source axiom itself.
+
+### Gate 416 — Minimal Sector-Source Axiom Consistency / Parameter-Counting Sieve
+
+Gate 416 adds `pkg/bridge/minimalsectorsourceaxiom` after Gate 415 identified the charge-sector source boundary as the least-cost CKM/PMNS-capable extension. This gate no longer searches for a native derivation. It treats the source as an explicit axiom and asks what the formal parameter count becomes under the already-derived finite spectral-triple constraints.
+
+The source acts only on the family fiber, so it is compatible with the Standard Model gauge action, `J`, `Gamma`, and the first-order broadcast structure. For charged sectors, the minimal real model has
+
+```text
+M_s = a_s K_gen + b_s X_gen,
+    s in {up, down, charged-lepton}
+```
+
+and therefore six real charged-sector coefficients. The mixing criterion is explicit:
+
+```text
+[M_u, M_d] = (a_u b_d - b_u a_d)[K_gen, X_gen].
+```
+
+Thus nonzero real mixing capacity exists when sector coefficient rays differ. However, the determinant factor is not derived; it is boundary data. The real model also has no CKM CP phase. A complex phase/quadrature extension can add CP capacity, but raises the charged ledger to nine coefficients and still leaves values free.
+
+Gate 416 therefore records conditional parameter compression under an axiom but preserves the native flavor firewall: current ASHA still has no native sector-source boundary and `dim M_charged = 13` remains the honest native moduli count.
