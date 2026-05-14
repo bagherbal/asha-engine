@@ -5650,3 +5650,24 @@ Jγ_F=-γ_FJ,
 ```
 
 but they come in a twofold orientation family and no native selector chooses one internal Witt direction.  The `JD=DJ` sieve leaves three real odd-block parameters, so no canonical `D_F` or physical opposite algebra action is derived.  Paths B and C remain firewalled.
+
+## Gate 294 — Doubled-Space Representation Boundary
+
+Gate 294 verifies that the doubled-space swap operator `J_swap` has the correct KO6-style signs on `H_F⊕H_F*`:
+
+```text
+J_swap²=+1,
+J_swap γ=-γ J_swap.
+```
+
+This solves the sign problem exposed in Gates 292–293, but it does not by itself construct the finite spectral triple. The gate audits the tempting left action of `C⊕H⊕M3(C)` on a quark doublet:
+
+```text
+Q_L ≈ C²_weak ⊗ C³_color,
+ρ_H(q)=q⊗I3,
+ρ_M(B)=I2⊗B.
+```
+
+Because `(0,q,0)(0,0,B)=0` in the direct-sum algebra but `ρ_H(q)ρ_M(B)=q⊗B≠0`, this is not a representation of `C⊕H⊕M3(C)`. A block-separated action is associative, but it loses the physical weak-doublet/color-triplet bimodule.
+
+Therefore `ρ°(a)=J_swapρ(a*)J_swap^{-1}` remains a formal conditional formula, not a constructed physical opposite action. The full order-one condition and canonical `D_F` remain blocked until the physical finite Hilbert bimodule is derived.

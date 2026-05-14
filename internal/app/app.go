@@ -106,6 +106,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/currenthessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/currentprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/diracorderone"
+	"github.com/bagherbal/asha-engine/pkg/bridge/doubledspacerepresentation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcarrier"
 	"github.com/bagherbal/asha-engine/pkg/bridge/dualcoupling"
 	"github.com/bagherbal/asha-engine/pkg/bridge/eftdecayportal"
@@ -598,6 +599,7 @@ func Run() error {
 		perslotmonotonicityseal.PerSlotMonotonicitySealFinalSpectralSynthesisAuditTheorem(),
 		realstructurekofactorization.RealStructureJFactorizationKODimensionAuditTheorem(),
 		ko6twistedrealstructure.KO6TwistedRealStructurePhysicalJDerivationAuditTheorem(),
+		doubledspacerepresentation.DoubledSpaceRepresentationOppositeAlgebraActionAssemblyAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -5268,3 +5268,9 @@ The Per-Slot Monotonicity Seal is a phenomenological orientation rule, not a nat
 ## Gate 292–293 — Real Structure Boundary
 
 Gate 292 confirms that the Gate-234 occupation-complement candidate factorizes across the Gate-3 split, but its internal/fiber restriction is KO0-like rather than KO6-like.  Gate 293 then audits twists.  Even grading/volume twists fail to flip the parity sign, while odd one-mode twists expose KO6 sign candidates.  This is a sign-level partial opening, not a physical finite spectral triple: the one-mode odd twist is not canonically selected, `JD=DJ` does not select a canonical `D_F`, and the opposite algebra action remains unconstructed.
+
+## Gate 294 — Doubled-space representation boundary
+
+Gate 294 separates the KO-sign problem from the representation problem. The doubled swap `J_swap` on `H_F⊕H_F*` satisfies `J²=+1` and `Jγ=-γJ`, so it is the correct architectural home for a physical real structure. However, the full finite algebra representation is still not derived.
+
+The naive quark-doublet action using both weak and color matrices on `C²⊗C³` fails as a direct-sum representation: in `C⊕H⊕M3(C)`, weak-only and color-only elements multiply to zero, but their images multiply to `q⊗B`. Conversely, a block-separated direct-sum action is associative but no longer represents the physical Standard Model bimodule. Thus the physical opposite algebra action and order-one theorem remain firewalled behind the missing `H_F` sub-bimodule, chirality/hypercharge attachment, and canonical `D_F`.
