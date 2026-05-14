@@ -439,3 +439,8 @@ S_total = S_PS[j] + S_contact[A,Φ] + S_coupling[j,A,Φ]
 ```
 
 The formal current-contact coupling tensor has dimension `16×4 = 64`, but no finite theorem selects its entries yet. Therefore the current Hessian, propagator rule, NJL attraction, top condensation, and fermion masses remain open.
+
+
+## v0.76 — Gate 77: Non-Factorized Abelian Action / Kinetic-Mixing Search
+
+Adds `pkg/bridge/u1nonfactor`, which tests the first non-factorized abelian source candidate: the Yukawa-incidence correlation between matter-side `B-L` and scalar/contact `T_phi`. The gate finds nonzero local correlation on the gauge-compatible Yukawa support, but the signed moment cancels exactly between up/down quark branches and neutrino/electron lepton branches. Therefore no net `B-L`/contact-`u1` kinetic source or physical `U(1)_Y` coupling is derived yet.

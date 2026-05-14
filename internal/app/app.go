@@ -42,6 +42,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/thresholdrep"
 	"github.com/bagherbal/asha-engine/pkg/bridge/topkernel"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1kinetic"
+	"github.com/bagherbal/asha-engine/pkg/bridge/u1nonfactor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/u1source"
 	"github.com/bagherbal/asha-engine/pkg/clifford"
 	"github.com/bagherbal/asha-engine/pkg/dynamics/bsector"
@@ -164,6 +165,7 @@ func Run() error {
 		abelianmixing.AbelianMixingHyperchargeNormalizationTheorem(),
 		u1kinetic.U1KineticMixingHessianSearchTheorem(),
 		u1source.ContactU1BLKineticSourceSearchTheorem(),
+		u1nonfactor.NonFactorizedAbelianActionSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
