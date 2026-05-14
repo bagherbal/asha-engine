@@ -3222,3 +3222,11 @@ CONDITIONAL_SUPPORT_TYPE_I_SEESAW_WITH_EMPIRICAL_YUKAWA_AMPLITUDE_SEAL
 FAILED_ROUTE_FINITE_NEUTRINO_MASS_MATRIX_DERIVATION
 FINITE_INTERMEDIATE_DYNAMICS_STILL_NOT_DERIVED
 ```
+
+### Gate 232 — Neutrino flavor texture audit / NeutrinoTextureSeal activation
+
+Gate 232 introduces `pkg/bridge/neutrinotextureaudit`. It activates `NeutrinoTextureSeal` and audits whether simple three-generation Dirac neutrino textures can reproduce the solar/atmospheric active-neutrino hierarchy under the sealed intermediate scale `M_R = M_int ≈ 6.6507e11 GeV`.
+
+The audit inherits Gate 231's third-generation atmospheric fit, `m_D3 ≈ 5.7666 GeV` (`y_ν3 ≈ 0.02342`). Direct SM mass proxies are too hierarchical: charged-lepton, up-quark, and down-quark proportional textures all fail the `sqrt(Δm²_sol/Δm²_atm) ≈ 0.173` ratio test. A simple quadratic generation-index texture, `m_Di ∝ i²`, gives `m2/m3 ≈ 0.1975`, which is close enough to record conditional support under the seal.
+
+Gate 232 does not derive the PMNS matrix, CP phases, mass ordering, Dirac texture, Majorana matrix, or right-handed neutrino fields from the finite core.

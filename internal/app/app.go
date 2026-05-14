@@ -138,6 +138,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingcorrectionseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/matchingresidualstructure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/modeclass"
+	"github.com/bagherbal/asha-engine/pkg/bridge/neutrinotextureaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/noncommutingtexturepair"
 	"github.com/bagherbal/asha-engine/pkg/bridge/nonuniversalrgfit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/normalizationthresholdaudit"
@@ -474,6 +475,7 @@ func Run() error {
 		hopfgeometricnormalization.HopfFibrationGeometricNormalizationBGapSensitivityAuditTheorem(),
 		finitehopfaction.OctonionicInstantonFiniteHopfActionMapAuditTheorem(),
 		intermediatebreakingseesaw.IntermediateBreakingSealNeutrinoSeesawPreflightAuditTheorem(),
+		neutrinotextureaudit.NeutrinoFlavorTextureAuditSealTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

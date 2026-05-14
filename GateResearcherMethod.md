@@ -190,3 +190,5 @@
 - Activating a seal can permit phenomenological testing, but it does not retroactively derive the instanton, order parameter, or field content that previous gates obstructed.
 - If a target mass can be recovered only by choosing a Yukawa value, report the required Yukawa as a sealed conditional parameter, not as a finite prediction.
 - Use neutrino mass observations as comparison bounds, not as inputs to tune the finite core.
+
+- For flavor gates, separate three layers explicitly: inherited scale, texture proxy, and mixing matrix. A ratio-level texture resonance is not a PMNS derivation and must remain behind a seal unless the finite algebra supplies the full matrix structure.

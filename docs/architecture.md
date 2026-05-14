@@ -3748,3 +3748,9 @@ order-one seesaw: failed
 small-Yukawa seesaw: conditionally plausible
 finite neutrino matrix: not derived
 ```
+
+### Gate 232 — NeutrinoTextureSeal and ratio-level flavor texture preflight
+
+Gate 232 adds `pkg/bridge/neutrinotextureaudit` after the Gate-231 seesaw preflight. It introduces `NeutrinoTextureSeal` to quarantine the assumption of three-generation Dirac/Majorana neutrino matrices and tests only ratio-level texture proxies.
+
+The gate finds that direct charged-lepton and quark mass hierarchy proxies generate active-neutrino ratios that are much too small, while a simple quadratic generation-index texture produces a solar/atmospheric ratio close to the observed scale. This is logged as conditional phenomenology only. The finite algebra still does not derive neutrino mass matrices, PMNS angles, CP phases, or mass ordering.
