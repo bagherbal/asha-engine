@@ -1,4 +1,4 @@
-# ASHA Engine Architecture
+# Asha Engine v0.89 — O(3) Gauge Quotient
 
 The codebase is organized around a theorem ladder:
 

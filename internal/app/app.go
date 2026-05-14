@@ -36,6 +36,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/kineticnorm"
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
+	"github.com/bagherbal/asha-engine/pkg/bridge/o3quotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedconnection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedintertwiner"
@@ -190,6 +191,7 @@ func Run() error {
 		protectedintertwiner.ProtectedContactBrokenGeneratorIntertwinerSearchTheorem(),
 		protectedmetric.ProtectedContactMetricConnectionSearchTheorem(),
 		protectedconnection.ProtectedCarrierOperatorBFContactConnectionSearchTheorem(),
+		o3quotient.O3GaugeQuotientPhysicalOrientationAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
