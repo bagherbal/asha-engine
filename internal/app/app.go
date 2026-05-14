@@ -24,6 +24,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/chiraltrace"
 	"github.com/bagherbal/asha-engine/pkg/bridge/coarsegrain"
 	"github.com/bagherbal/asha-engine/pkg/bridge/condensate"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactassignment"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactautaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactbundle"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactcohomology"
@@ -270,6 +271,7 @@ func Run() error {
 		contactu4kernel.U4ProjectionKernelCanonicalQuotientRelationSearchTheorem(),
 		contactquotientsemantics.CurrentSideSectorQuotientSemanticsContactRowEquivalenceSearchTheorem(),
 		contactequivrefinement.ContactRowEquivalenceRefinementSectorPatternMismatchObstructionTheorem(),
+		contactassignment.ContactSingletLeptoquarkAssignmentNaturalityPermutationObstructionTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -985,3 +985,22 @@ Gate 129 refines the Gate 128 obstruction. Gate 128 showed that the natural curr
 The result is negative. Keeping the `1+6` relation preserves current semantics but leaves the six-row block unresolved. Splitting it into seven rows requires choosing which contact row receives the current singlet and then permuting the remaining six rows, giving `7*6! = 5040` hidden choices per current quotient branch. Since two natural current quotient branches coexist, the obstruction is not removed; it is doubled.
 
 The gate therefore keeps the contact beta firewall closed: no representation-complete contact rows, no contact beta rows, no proven contact zero rows, and no threshold-corrected `Δb_i(L)` are derived.
+
+### Gate 130 — contact singlet/leptoquark assignment naturality / permutation obstruction theorem
+
+Package: `pkg/bridge/contactassignment`
+
+Gate 130 sharpens the Gate 129 sector-pattern mismatch. The current-side seven-dimensional quotients have a `1+6` semantics: one singlet-like current sector plus a six-dimensional leptoquark-like sector. The contact carrier has seven distinct singleton spectral rows. Gate 130 asks whether the finite data naturally chooses which contact row receives the current singlet and how the remaining six contact rows receive the leptoquark slots.
+
+The answer remains negative. Current-side data supplies the `1+6` block, but not the row assignment. A row-level assignment needs seven hidden choices for the singlet row and then `6! = 720` hidden choices for the remaining six slots, giving `7*6! = 5040` choices per current quotient branch. Spectral minimum, maximum, and median conventions can distinguish rows diagnostically, but they are contact-spectrum conventions rather than current-derived naturality laws; they still do not provide gauge representation rows, Lorentz kinetic rows, mass activation, decoupling, or beta-matching rows.
+
+Therefore the contact beta firewall remains closed:
+
+```text
+representation-complete contact rows = 0 / 7
+contact beta rows allowed            = 0
+contact zero rows proved             = 0
+threshold-corrected Δb_i(L)          = not derived
+```
+
+The next gate should examine the six-row leptoquark block itself and decide whether its internal `S6` permutation ambiguity can be broken by native finite data without importing observed physics.
