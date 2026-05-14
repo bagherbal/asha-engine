@@ -281,6 +281,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedconnection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedmetric"
+	"github.com/bagherbal/asha-engine/pkg/bridge/publicationbundlepreflight"
 	"github.com/bagherbal/asha-engine/pkg/bridge/publicationtheorematlas"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticexternalselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/quarticscalaroperator"
@@ -850,6 +851,7 @@ func Run() error {
 		executiveabstractclaimaudit.ExecutiveAbstractClaimAuditSummaryExportTheorem(),
 		reviewerobjectionmatrix.ReviewerObjectionMatrixRebuttalReadinessExportTheorem(),
 		artifactindexexport.ArtifactIndexReproducibilityChecklistExportTheorem(),
+		publicationbundlepreflight.FinalPaperAssemblyPublicationBundlePreflightTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -6563,6 +6563,23 @@ no Yukawa value, CKM angle, CKM CP phase, PMNS parameter, cosmology coordinate, 
 
 Gate 424 logs `PROJECT_ARTIFACT_INDEX_READY`. The next useful gate is a final paper assembly / publication bundle preflight, not another physics search.
 
+
+## Gate 425 — Final Paper Assembly / Publication Bundle Preflight
+
+Gate 425 adds `pkg/bridge/publicationbundlepreflight` after Gate 424 made the repository artifact tree navigable. It compiles the paper-facing bundle preflight, bundle manifest, section source map, figure slot ledger, assembly checklist, and claim-firewall checklist.
+
+It is an export and publication-assembly gate only. It introduces no new physical derivation, does not reopen flavor or cosmology, and does not promote any quarantined K/X/Y family axiom. Its purpose is to make the final paper workspace ready while preserving claim boundaries.
+
+The final boundary remains:
+
+```text
+native charged flavor dim = 13
+conditional K/X/Y family axiom ledger = 9 symbolic charged coefficients
+no Yukawa value, CKM angle, CKM CP phase, PMNS parameter, cosmology coordinate, or quarantined family axiom is promoted to a native ASHA theorem
+```
+
+Gate 425 logs `PROJECT_PUBLICATION_BUNDLE_PREFLIGHT_READY`. The next useful gate is paper draft integration / claim-tracked manuscript assembly, not another physics search.
+
 <!-- ASHA-DOC-STRUCTURE-START -->
 
 ## Documentation and artifact layout

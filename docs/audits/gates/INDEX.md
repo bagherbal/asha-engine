@@ -8,7 +8,7 @@ Rules:
 - New generated gate audits should be written here as `gateNNN_registry_audit.md`.
 - Missing numbers are allowed when no audit was generated for that gate.
 
-Total audits indexed: 227
+Total audits indexed: 228
 
 Known missing audit numbers in the current range:
 
@@ -245,3 +245,5 @@ Known missing audit numbers in the current range:
 - Gate 422: [`gate422_registry_audit.md`](gate422_registry_audit.md)
 - Gate 423: [`gate423_registry_audit.md`](gate423_registry_audit.md)
 - Gate 424: [`gate424_registry_audit.md`](gate424_registry_audit.md)
+
+- Gate 425: [`gate425_registry_audit.md`](gate425_registry_audit.md)

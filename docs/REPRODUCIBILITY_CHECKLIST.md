@@ -8,7 +8,7 @@ Use targeted validation by default. Avoid broad test commands unless a full vali
 |---|---:|---|---|---|
 | CLI wiring | `true` | low | `go list ./cmd/asha` | confirm command entrypoint resolves |
 | Registry wiring | `true` | low | `go list ./internal/app` | confirm app registry imports resolve without running timeout-prone tests |
-| New gate package | `true` | low | `go test -p=1 ./pkg/bridge/artifactindexexport -count=1` | validate Gate 424 package only |
+| New gate package | `true` | low | `go test -p=1 ./pkg/bridge/publicationbundlepreflight -count=1` | validate Gate 424 package only |
 | Publication support bridge group | `true` | medium | `go test -p=1 ./pkg/bridge/artifactindexexport ./pkg/bridge/reviewerobjectionmatrix ./pkg/bridge/executiveabstractclaimaudit ./pkg/bridge/manuscriptskeletonexport ./pkg/bridge/publicationtheorematlas -count=1` | validate recent publication-support chain |
 | Selected matter guardrail | `true` | medium | `go test -p=1 ./pkg/matter/yukawaintertwiner ./pkg/matter/trialityyukawa ./pkg/matter/texture ./pkg/matter/generationbreak ./pkg/matter/hypercharge ./pkg/matter/su2l -count=1` | preserve flavor/matter boundary packages |
 | Full suite | `false` | high / timeout-prone | `go test ./...` | expensive full validation only when intentionally needed |
@@ -25,6 +25,15 @@ Use targeted validation by default. Avoid broad test commands unless a full vali
 ## Minimal validation for this export
 
 ```bash
-go test -p=1 ./pkg/bridge/artifactindexexport -count=1
+go test -p=1 ./pkg/bridge/publicationbundlepreflight -count=1
+go list ./internal/app
+```
+
+
+## Gate 425 publication bundle validation
+
+```bash
+go test -p=1 ./pkg/bridge/publicationbundlepreflight -count=1
+go test -p=1 ./pkg/bridge/publicationbundlepreflight ./pkg/bridge/artifactindexexport ./pkg/bridge/reviewerobjectionmatrix ./pkg/bridge/executiveabstractclaimaudit ./pkg/bridge/manuscriptskeletonexport ./pkg/bridge/publicationtheorematlas -count=1
 go list ./internal/app
 ```

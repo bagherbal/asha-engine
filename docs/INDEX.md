@@ -13,6 +13,7 @@ docs/
 ├── REPRODUCIBILITY_CHECKLIST.md  # targeted validation commands and run policy
 ├── ARTIFACT_MAINTENANCE_CHECKLIST.md
 ├── PUBLICATION_WORKSPACE.md
+├── paper/PUBLICATION_BUNDLE_PREFLIGHT.md # paper-facing preflight report
 ├── architecture.md               # detailed architecture ledger
 ├── audits/                       # generated audit artifacts
 │   ├── gates/                    # gate registry audits and index
@@ -27,6 +28,7 @@ docs/
 
 - [`QUICK_START.md`](../QUICK_START.md) — how to run targeted tests and avoid timeout-prone commands.
 - [`ARTIFACT_INDEX.md`](ARTIFACT_INDEX.md) — canonical map of generated artifacts, summaries, paper workspace, visuals, and code locations.
+- [`paper/PUBLICATION_BUNDLE_PREFLIGHT.md`](paper/PUBLICATION_BUNDLE_PREFLIGHT.md) — final paper assembly preflight and bundle readiness report.
 - [`REPRODUCIBILITY_CHECKLIST.md`](REPRODUCIBILITY_CHECKLIST.md) — exact command policy for targeted validation.
 - [`audits/gates/INDEX.md`](audits/gates/INDEX.md) — gate audit index.
 

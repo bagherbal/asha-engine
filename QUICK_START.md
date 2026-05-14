@@ -17,7 +17,7 @@ go list ./cmd/asha
 go list ./internal/app
 
 # Run a specific gate package only
-go test -p=1 ./pkg/bridge/reviewerobjectionmatrix -count=1
+go test -p=1 ./pkg/bridge/publicationbundlepreflight -count=1
 
 # Run selected related packages only, not the full suite
 go test -p=1   ./pkg/bridge/reviewerobjectionmatrix   ./pkg/bridge/executiveabstractclaimaudit   ./pkg/bridge/manuscriptskeletonexport   -count=1
@@ -40,6 +40,7 @@ README.md                         # high-level project status and boundaries
 docs/architecture.md              # detailed architecture ledger
 docs/INDEX.md                     # documentation/artifact structure
 docs/ARTIFACT_INDEX.md            # canonical artifact index
+docs/paper/PUBLICATION_BUNDLE_PREFLIGHT.md # paper-facing bundle preflight
 docs/REPRODUCIBILITY_CHECKLIST.md # targeted validation policy
 docs/audits/gates/INDEX.md        # gate audit index
 docs/summaries/                   # summary docs and logical tower maps

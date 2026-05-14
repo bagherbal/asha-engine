@@ -32,8 +32,8 @@ The repository root is intentionally small. Generated audits and report outputs 
 
 ## Audit coverage
 
-- Gate audits indexed: 227
-- Gate range: G187--G424
+- Gate audits indexed: 228
+- Gate range: G187--G425
 - Known missing audit numbers: 191, 192, 198, 324, 329, 360, 388, 389, 390, 391, 392
 - Phenomenology reports: 1
 - Final aggregate reports: 1
@@ -44,3 +44,13 @@ The repository root is intentionally small. Generated audits and report outputs 
 - Native charged flavor moduli remain `13`.
 - Conditional K/X/Y family axiom ledger remains `9` symbolic charged coefficients.
 - No Yukawa values, CKM angles, CP phase, PMNS parameters, cosmology coordinates, or quarantined axioms are promoted by this index.
+
+
+## Gate 425 publication bundle additions
+
+- `docs/paper/PUBLICATION_BUNDLE_PREFLIGHT.md` — paper-facing bundle readiness report.
+- `docs/paper/BUNDLE_MANIFEST.md` — manifest of required paper/support artifacts.
+- `docs/paper/SECTION_SOURCE_MAP.md` — manuscript section-to-gate source map.
+- `docs/paper/FIGURE_SLOT_LEDGER.md` — reserved visual slots and source expectations.
+- `docs/paper/CLAIM_FIREWALL_CHECKLIST.md` — publication claim/firewall checklist.
+- `docs/paper/ASSEMBLY_CHECKLIST.md` — paper assembly workflow and targeted validation commands.

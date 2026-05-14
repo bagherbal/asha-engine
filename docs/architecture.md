@@ -6231,3 +6231,10 @@ docs/visuals/                     # figures, diagrams, and visual source assets
 This layout does not alter any theorem status. It only separates source code, generated audits, summary documents, manuscript materials, and visual assets.
 
 <!-- ASHA-ARTIFACT-LAYOUT-ADDENDUM-END -->
+
+
+## Gate 425 — Final Paper Assembly / Publication Bundle Preflight
+
+Gate 425 introduces `pkg/bridge/publicationbundlepreflight` as the paper-facing assembly layer after Gate 424 indexed artifacts and reproducibility paths. It exports the publication bundle preflight, bundle manifest, section source map, figure slot ledger, paper assembly checklist, and claim-firewall checklist under `docs/paper/`.
+
+This gate is publication support only. It adds no new physical derivation, does not reopen flavor or cosmology, and does not promote any quarantined family axiom. It preserves the native charged-flavor firewall `dim M_charged = 13` and the quarantined K/X/Y family axiom chain as a nine-symbolic-coefficient capacity ledger.
