@@ -4812,3 +4812,41 @@ The recommended next direction is therefore a finite spectral-action re-attempt 
 ```text
 Gate 268 — Finite Spectral Action Re-Attempt / Seeley-de Witt a0-a2-a4 Coefficient Audit on doubled S_C
 ```
+
+## Gate 268 — Finite Spectral Action Re-Attempt / Seeley-de Witt Coefficient Audit
+
+Gate 268 adds `pkg/bridge/finitespectralactionreattempt` and registers `FiniteSpectralActionReAttemptSeeleyDeWittCoefficientAuditTheorem`.
+
+After Gate 267 closed the Standard Model flavor ledger, Gate 268 returns to the dynamics question through the only lawful route named by the closure manifest: a finite spectral action. The gate retrieves the existing scaffold — the `S_C` Fock carrier, grading `gamma`, candidate real structure `J`, and native finite algebra `C ⊕ M_3(C)` — then audits the formal odd self-adjoint finite Dirac family:
+
+```text
+D_F(M) = [[0,M],[M†,0]]
+```
+
+The gate can compute raw finite spectral moments for representative dimensionless `D_F` blocks:
+
+```text
+unit diagnostic:     Tr(D_F²)=16, Tr(D_F⁴)=16, Tr(D_F²)/Tr(D_F⁴)=1
+one-mode deformation: Tr(D_F²)=22, Tr(D_F⁴)=46, Tr(D_F²)/Tr(D_F⁴)≈0.47826087
+```
+
+This exposes the central obstruction: the raw moment ratio changes under legal unselected `D_F` deformations. Therefore these moments are not yet Seeley-de Witt coefficients and cannot be used to claim a Higgs mass ratio.
+
+Gate 268 logs:
+
+```text
+CONDITIONAL_SUPPORT_GATE267_FLAVOR_LEDGER_CLOSURE_INHERITED
+CONDITIONAL_SUPPORT_SPECTRAL_SCAFFOLD_RETRIEVED
+CONDITIONAL_SUPPORT_FORMAL_ODD_SELF_ADJOINT_DF_FAMILY_AVAILABLE
+CONDITIONAL_SUPPORT_RAW_FINITE_SPECTRAL_MOMENTS_EVALUATED
+CONDITIONAL_SUPPORT_DF_MOMENT_AMPLITUDE_DEPENDENCE_EXPOSED
+FAILED_ROUTE_CANONICAL_FINITE_DIRAC_OPERATOR_NOT_DERIVED
+FAILED_ROUTE_SEELEY_DE_WITT_COEFFICIENTS_NOT_DERIVED
+FAILED_ROUTE_GAUGE_KINETIC_PROJECTION_MISSING
+FAILED_ROUTE_SCALAR_FLUCTUATION_MAP_MISSING
+FAILED_ROUTE_CUTOFF_MOMENTS_AND_SUBTRACTION_SCHEME_MISSING
+FAILED_ROUTE_HIGGS_MASS_RATIO_NOT_DERIVED
+FAILED_ROUTE_EMPIRICAL_YUKAWA_SEAL_REMAINS_ACTIVE
+```
+
+Thus the spectral-action path is reopened as a precise theorem obligation, not as a premature prediction. The next lawful step is a canonical finite `D_F` selector and non-vacuous order-one spectral-triple completion before any `a_0,a_2,a_4` coefficient or Higgs-to-gauge mass ratio can be promoted.

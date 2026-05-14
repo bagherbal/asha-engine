@@ -121,6 +121,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitecarrieractivation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitediracinitialization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitehopfaction"
+	"github.com/bagherbal/asha-engine/pkg/bridge/finitespectralactionreattempt"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitespectraltriple"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finitethresholdoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/finiteyukawaaction"
@@ -546,6 +547,7 @@ func Run() error {
 		empiricalfulltexture.EmpiricalFullTextureSealSVDCKMObservableReconstructionAuditTheorem(),
 		empiricalflavorledger.FullEmpiricalFlavorLedgerLeptonPMNSSectorFirewallExtensionAuditTheorem(),
 		fullflavorledgerclosure.FullFlavorLedgerClosureQuarkLeptonEmpiricalFirewallSummaryAuditTheorem(),
+		finitespectralactionreattempt.FiniteSpectralActionReAttemptSeeleyDeWittCoefficientAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

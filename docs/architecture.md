@@ -4820,3 +4820,29 @@ The closure separates three layers:
 - **Observable reconstruction verified:** SVD for quark and charged-lepton textures, Takagi for the representative Majorana neutrino witness, and left-unitary misalignment for CKM/PMNS.
 
 This gate records the architectural truth that the engine derives the flavor stage but not the numerical flavor dynamics. Any future theorem that attempts to break this boundary must derive a native finite spectral/action functional, not merely fit the sealed texture data.
+
+## Gate 268 — Finite Spectral Action Re-Attempt
+
+Gate 268 begins the post-flavor transition from kinematics to dynamics. It does not reopen the `EmpiricalYukawaSeal`; instead it asks whether the already-built spectral scaffold is sufficient to compute genuine Seeley-de Witt data.
+
+The gate records that the following ingredients are present as scaffold data:
+
+- complex Fock carrier `S_C = Λ*(C^4)`;
+- grading `gamma` with balanced parity trace;
+- candidate real structure `J` from occupation complement preflight;
+- native finite algebra `C ⊕ M_3(C)`;
+- formal odd self-adjoint Dirac family `D_F(M)`.
+
+It then computes raw spectral moments for representative dimensionless `D_F` choices and shows that the ratio `Tr(D_F²)/Tr(D_F⁴)` is not invariant under legal unselected deformations. This prevents the raw trace ratio from being interpreted as a physical `a_2/a_4` coefficient ratio.
+
+The gate therefore preserves the architecture:
+
+- **available:** formal finite Dirac matrix family and raw trace diagnostics;
+- **missing:** canonical `D_F`, physical chirality, `JD` compatibility, non-vacuous order-one calculus, heat-kernel/cutoff map, gauge kinetic projection, scalar fluctuation/Higgs Hessian map, and subtraction scheme;
+- **blocked:** Higgs mass ratio and physical spectral-action coefficients.
+
+The recommended continuation is:
+
+```text
+Gate 269 — Canonical Finite Dirac Selector / Order-One Spectral Triple Completion Audit
+```
