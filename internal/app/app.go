@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/bagherbal/asha-engine/internal/report"
+	"github.com/bagherbal/asha-engine/pkg/bridge/abelianmixing"
 	"github.com/bagherbal/asha-engine/pkg/bridge/actionscale"
 	"github.com/bagherbal/asha-engine/pkg/bridge/betacoeff"
 	"github.com/bagherbal/asha-engine/pkg/bridge/casimirkernel"
@@ -158,6 +159,7 @@ func Run() error {
 		currentcontact.CurrentToContactEmbeddingMapSearchTheorem(),
 		dualcarrier.DualCarrierGaugeArchitectureSplitTheorem(),
 		dualcoupling.DualCarrierCouplingTensorActionSearchTheorem(),
+		abelianmixing.AbelianMixingHyperchargeNormalizationTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
