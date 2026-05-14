@@ -37,6 +37,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/loopoperator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/looppotential"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
+	"github.com/bagherbal/asha-engine/pkg/bridge/protectedconnection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/protectedmetric"
 	"github.com/bagherbal/asha-engine/pkg/bridge/rgflow"
@@ -188,6 +189,7 @@ func Run() error {
 		scalarvacuum.ScalarVacuumOrientationFiniteMinimizerSearchTheorem(),
 		protectedintertwiner.ProtectedContactBrokenGeneratorIntertwinerSearchTheorem(),
 		protectedmetric.ProtectedContactMetricConnectionSearchTheorem(),
+		protectedconnection.ProtectedCarrierOperatorBFContactConnectionSearchTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 
