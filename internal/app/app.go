@@ -70,6 +70,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactmoduleaction"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactnaturality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactorientation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/contactprojectorcompanion"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactpropagator"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticbrst"
 	"github.com/bagherbal/asha-engine/pkg/bridge/contactquarticcompression"
@@ -568,6 +569,7 @@ func Run() error {
 		scalarmoritaspectralbridge.ScalarMoritaSpectralShapeBridgeBranchSelectorHeatKernelNormalizationAuditTheorem(),
 		resolventcubictagselector.ResolventCubicSelectorBGapTauEtaSymmetryBreakingAuditTheorem(),
 		contactrootsectorbijection.QuarticRootToYukawaSectorBijectionContactProjectorSemanticsAuditTheorem(),
+		contactprojectorcompanion.ContactProjectorActionQuarticCompanionModuleSemanticsAuditTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

@@ -5029,3 +5029,9 @@ B_gap scale semantics is not a contact-root projector;
 ```
 
 The Gate-277 sector split `{u,d}|{e,ν}` remains supported, but the root-level resolvent branch and Gate-275 `r_±` branch remain blocked.
+
+## Gate 279 — Companion Module Projector Firewall
+
+The contact quartic is now represented by its rational companion module rather than by ordered numerical roots. Gate 279 constructs `C_q4` and verifies that the quartic remains irreducible over `Q`; hence the commutant is the field `Q[C_q4]` and contains no nontrivial rational idempotents. This is the algebraic reason the engine cannot split the contact root space into physical `2+2` sectors without adjoining a resolvent root.
+
+The finite tags `τ_eta`, `B_gap`, and Morita multiplicity remain semantically important, but they do not supply a lawful commuting projector on the companion module. The sector split `{u,d}|{e,ν}` remains topologically supported; the contact-root pairing and scalar-Morita amplitude branch remain bridge-required.

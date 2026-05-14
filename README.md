@@ -5127,3 +5127,46 @@ Therefore the Gate-275 two-branch amplitude ambiguity remains unresolved, and no
 Gate 278 audits whether the four quartic contact roots can be natively assigned to the four Yukawa sectors `{u,d,e,ν}`. It retrieves the quartic roots and applies the Gate-273 Morita multiplicity `κ_C:κ_Q = 1:3`, the `B_gap` neutrino/Majorana tag, and the `τ_eta` weak-doublet tag.
 
 The result preserves the Gate-277 sector-level pairing `{u,d}|{e,ν}`, but it does not derive a root-level bijection. The quartic roots remain one irreducible Galois orbit. Individual root projectors require the splitting field, and 2+2 pair projectors require choosing a resolvent root. Therefore no contact resolvent root, no Gate-275 `r_±` amplitude branch, and no Higgs-ratio proxy are selected.
+
+## Gate 279 — Contact Projector Action / Quartic Companion Module Semantics Audit
+
+Gate 279 upgrades the Gate-278 root firewall from numerical-root semantics to companion-module algebra. The contact quartic is treated as an action on the 4-dimensional module
+
+```text
+Q[x]/(q4),  basis {1,x,x²,x³}
+q4(x)=3240x⁴-7668x³+6426x²-2235x+271.
+```
+
+The normalized companion matrix is constructed over `Q` for
+
+```text
+x⁴ -(71/30)x³ +(119/60)x² -(149/216)x + 271/3240.
+```
+
+The gate certifies the obstruction:
+
+```text
+q4 is irreducible over Q  (mod-7 witness)
+resolvent cubic is irreducible over Q  (mod-11 witness)
+centralizer_Q(C_q4) = Q[C_q4], dimension 4
+Q[C_q4] is a field
+idempotents over Q are only 0 and 1
+```
+
+Therefore the contact companion module cannot be block-diagonalized into `2x2` invariant subspaces over the native rational base. A nontrivial `2+2` contact projector requires adjoining/selecting a resolvent root, which is exactly the branch choice that previous gates refused to guess.
+
+Native finite data are audited as candidate actions:
+
+```text
+τ_eta=(2,-2,1)            reaches sector topology, not the 4D contact module
+κ_C:κ_Q=1:3               diagnostic diag(1,3,3,3), but does not commute with C_q4
+B_gap                     scalar/identity-like on contact roots, cannot distinguish them
+```
+
+Gate 279 preserves the Gate-277 sector result
+
+```text
+{u,d}|{e,ν}
+```
+
+but does not derive a contact root projector, contact resolvent root, root-to-sector bijection, Gate-275 `r_±` branch, or Higgs mass ratio.
