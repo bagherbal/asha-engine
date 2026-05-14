@@ -5694,3 +5694,50 @@ Mandatory admissibility constraints for `Θ_flow`:
 5. it selects a vacuum coordinate or proves that this extension is still degenerate.
 
 Gate 362 does **not** claim the vacuum point. It installs the flow program and preserves the quarantine of the remaining 15 vacuum coordinates until an explicit `Θ_flow` kernel is derived.
+
+## v3.66 — Gate 368: Bimodule Modular Curvature / Internal Thermal Time Origin Sieve
+
+Gate 368 continues the Phase III flow program after Gate 367 proved that ordinary Lorentzian time `e0/gamma0` is physical spinor time but flavor-central on the generation orbit. The new gate audits the finite Left-Right Morita bimodule as the next admissible internal source of modular time.
+
+The theorem formalizes the candidate curvature
+
+```text
+C_LR = Omega_Hsigma Omega_Hsigma^dagger - J_swap Omega_Hsigma^dagger Omega_Hsigma J_swap^{-1}
+K_LR = Pi_gen Tr_support^eta(C_LR)
+```
+
+and then runs four explicit lanes:
+
+1. pure `B_gap · I_3`;
+2. pure `Omega_Hsigma` support index;
+3. ungraded Left-Right commutant curvature;
+4. eta/tau-weighted triality capacity witness.
+
+The result is strict. The pure B-gap lane, pure `Omega_Hsigma` support lane, and ungraded Left-Right curvature lane remain flavor-central after generation projection. The eta/tau-weighted lane has the correct noncentral KMS capacity, with nonzero commutators against `E_12`, `E_13`, and `E_23`, but the current finite bimodule audit does not derive `tau_eta` from the Left-Right contraction. Therefore promoting it would be circular.
+
+Gate 368 preserves the rigid ASHA landscape and all flavor firewalls. It does not import CKM, PMNS, observed Yukawas, observed masses, or a final vacuum point. The 15 vacuum coordinates remain unreduced.
+
+The exact next success target is now localized:
+
+```text
+Pi_gen Tr_support^eta(C_LR) = aI_3 + b tau_eta, b != 0
+```
+
+Until this eta-graded Left-Right trace theorem is derived, the internal thermal-time origin remains unproved.
+
+Key statuses:
+
+```text
+CONDITIONAL_SUPPORT_BIMODULE_MODULAR_CURVATURE_FORMALIZED
+CONDITIONAL_SUPPORT_LEFT_RIGHT_COMMUTANT_FRAMEWORK_AUDITED
+CONDITIONAL_SUPPORT_HEAVY_LIGHT_OVERLAP_INHERITED
+CONDITIONAL_SUPPORT_KMS_RECONSTRUCTION_EXECUTED
+CONDITIONAL_SUPPORT_NONTRIVIAL_MODULAR_CAPACITY_WITNESSED_UNDER_ETA_INSERTION
+CONDITIONAL_TENSION_PURE_BGAP_IS_FLAVOR_CENTRAL
+CONDITIONAL_TENSION_PURE_OMEGA_OVERLAP_IS_SUPPORT_INDEX_NOT_GENERATION_HAMILTONIAN
+CONDITIONAL_TENSION_LR_CURVATURE_REQUIRES_ETA_GRADED_PROJECTION
+CONDITIONAL_TENSION_TAU_ETA_INSERTION_WOULD_BE_CIRCULAR
+FAILED_ROUTE_INTERNAL_THERMAL_TIME_ORIGIN_NOT_DERIVED
+FAILED_ROUTE_TAU_ETA_HAMILTONIAN_STILL_NOT_SELECTED
+FAILED_ROUTE_VACUUM_PARAMETER_CENSUS_NOT_REDUCED
+```

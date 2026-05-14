@@ -18,6 +18,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/betapermission"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bgaphierarchycoefficient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bgapmajoranaactivation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/bimodulemodularcurvature"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bimoduletracecapacity"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bminuslweakselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/bosonicspectraltraceconvention"
@@ -746,6 +747,7 @@ func Run() error {
 		modularkmsstateselection.ModularKMSStateSelectionEntropyVariationalPrincipleAuditTheorem(),
 		modularhamiltonianorigin.ModularHamiltonianOriginTrialityEnergyConstraintDerivationAuditTheorem(),
 		lorentziantimepullback.LorentzianTimePullbackE0ModularKernelSieveTheorem(),
+		bimodulemodularcurvature.BimoduleModularCurvatureInternalThermalTimeOriginSieveTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

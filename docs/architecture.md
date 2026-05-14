@@ -5289,3 +5289,22 @@ Future gates should be rejected as misleading if they merely search for another 
 - or a no-go theorem for that flow class.
 
 The remaining vacuum data stay quarantined until such a flow kernel is constructed.
+
+## Gate 368 architectural update: internal thermal-time origin sieve
+
+Gate 368 tests the first internal finite source after the Lorentzian-time no-go of Gate 367. The candidate source is not ordinary spacetime time, but the Left-Right Morita bimodule asymmetry involving the doubled/opposite action, `J_swap`, the Majorana/heavy sector, `Omega_Hsigma`, and the B-gap ledger.
+
+Architecturally, the gate separates four objects that must not be conflated:
+
+1. `B_gap` as a scalar thermal/topological magnitude;
+2. `Omega_Hsigma` as a heavy-light support index;
+3. ungraded Left-Right bimodule curvature;
+4. eta-graded or triality-weighted Left-Right curvature.
+
+Only the fourth class can be noncentral on generation space. However, Gate 368 does not allow the project to simply insert `tau_eta` as the answer. It treats `B_gap · tau_eta` as a capacity witness only. The actual derivation target remains
+
+```text
+Pi_gen Tr_support^eta(C_LR) = aI_3 + b tau_eta, b != 0.
+```
+
+This refines the Phase III program. A valid next gate must either derive the eta-graded support trace from the finite bimodule, or prove that the bimodule modular-curvature route cannot generate the internal thermal-time Hamiltonian. Merely showing a noncentral `tau_eta` KMS state is no longer sufficient; Gate 366 already established that capacity. The missing theorem is the origin of the modular energy operator.
