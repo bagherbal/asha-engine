@@ -10,12 +10,13 @@ import (
 type Status string
 
 const (
-	StatusNative        Status = "native/audited"
-	StatusBridge        Status = "bridge-required"
-	StatusQuarantined   Status = "quarantined-axiom"
-	StatusEnvironmental Status = "environmental"
-	StatusFailedRoute   Status = "failed-route"
-	StatusDerived       Status = "derived-runtime"
+	StatusNative         Status = "native/audited"
+	StatusBridge         Status = "bridge-required"
+	StatusQuarantined    Status = "quarantined-axiom"
+	StatusGeometricAxiom Status = "geometrically-forced-axiom"
+	StatusEnvironmental  Status = "environmental"
+	StatusFailedRoute    Status = "failed-route"
+	StatusDerived        Status = "derived-runtime"
 )
 
 type Scenario string

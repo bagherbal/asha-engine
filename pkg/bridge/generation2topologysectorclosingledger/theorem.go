@@ -1,0 +1,22 @@
+package generation2topologysectorclosingledger
+
+import "github.com/bagherbal/asha-engine/pkg/theorem"
+
+func Generation2TopologySectorClosingLedgerAndNativeFrontierSelectionTheorem() theorem.Theorem {
+	const id = AuditID
+	const name = "Generation 2 topology sector closing ledger and native frontier selection"
+	return theorem.Theorem{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Verify: func() theorem.Result {
+		a, err := BuildDefault()
+		if err != nil {
+			return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.FailedRoute, Checks: []theorem.Check{{Name: "construct Gate525 topology-sector closing ledger", Passed: false, Detail: err.Error()}}}
+		}
+		checks := []theorem.Check{
+			{Name: "inherit completed topology, flavor, electroweak, and gravity airlocks", Passed: a.Inheritance.Executed && a.Inheritance.Gate524InflowCapacityConfirmed && a.Inheritance.Gate524CompatibleClassCount == 3 && a.Inheritance.Gate524HeterogeneousGuard && a.Inheritance.Gate524CrossFixtureMergeRejected && !a.Inheritance.Gate524BoundarySelected && !a.Inheritance.Gate524EtaSpectrumDerived && !a.Inheritance.Gate524ObservedTopologyImported && a.Inheritance.Gate524NativeWriteBlocked && a.Inheritance.Gate489FlavorAirlockClosed && a.Inheritance.Gate489NativeYukawaWriteBlocked && a.Inheritance.Gate489CKMEnvironmental && !a.Inheritance.Gate489ObservedFlavorImported && a.Inheritance.Gate508ElectroweakFirewallClosed && a.Inheritance.Gate508Diag114NotMassRatio && a.Inheritance.Gate508WeakAngleBlocked && a.Inheritance.Gate508WZMassesBlocked && !a.Inheritance.Gate508ObservedEWImported && a.Inheritance.Gate514GravityAirlockClosed && a.Inheritance.Gate514CutoffBlocked && a.Inheritance.Gate514F2F4Blocked && a.Inheritance.Gate514NewtonBlocked && a.Inheritance.Gate514CosmologicalBlocked && !a.Inheritance.Gate514ObservedGravityCosmologyImported, Detail: FormatInheritance(a.Inheritance)},
+			{Name: "close topology ledger as sockets/capacity, not representative selection", Passed: a.Ledger.Executed && a.Ledger.NativeLawEntries == 4 && a.Ledger.BridgeComparatorEntries == 4 && a.Ledger.EnvironmentalHistoryEntries == 4 && a.Ledger.ClosedFirewallEntries == 4 && a.Ledger.AnomalyCancellationNative && a.Ledger.CharacteristicClassSocketsNative && a.Ledger.APSInflowCapacityNative && a.Ledger.BordismClassifierBridgeReady && a.Ledger.TopologyResidualReportBridgeReady && !a.Ledger.GlobalManifoldSelected && !a.Ledger.BoundaryConditionSelected && !a.Ledger.EtaSpectrumDerived && !a.Ledger.CharacteristicNumbersDerived && !a.Ledger.HeterogeneousFixturesMerged, Detail: FormatLedger(a.Ledger)},
+			{Name: "lock completed environmental sectors", Passed: a.Locks.Executed && a.Locks.FlavorSectorClosed && a.Locks.ElectroweakScaleSectorClosed && a.Locks.GravityNormalizationSectorClosed && a.Locks.TopologySectorClosed && a.Locks.MassFlavorHistoryQuarantined && a.Locks.EWScaleHistoryQuarantined && a.Locks.CutoffCosmologyHistoryQuarantined && a.Locks.GlobalTopologyHistoryQuarantined && !a.Locks.ReopenFlavorFirewall && !a.Locks.ReopenEWScaleFirewall && !a.Locks.ReopenGravityScaleFirewall && !a.Locks.ReopenTopologySelectionFirewall, Detail: FormatLocks(a.Locks)},
+			{Name: "select Lorentzian/causal signature as next non-environmental frontier", Passed: a.Frontier.Executed && a.Frontier.SelectedGate == 526 && a.Frontier.LorentzianCausalSignatureLive && !a.Frontier.RequiresObservedConstants && !a.Frontier.ReopensSealedFirewalls && !a.Frontier.PredictsMassesOrScales && !a.Frontier.SelectsManifoldTopology && len(a.Frontier.RejectedCandidates) == 4, Detail: FormatFrontier(a.Frontier)},
+			{Name: "preserve closing-ledger native-write firewall", Passed: a.Firewall.Executed && !a.Firewall.ObservedFlavorImported && !a.Firewall.ObservedElectroweakImported && !a.Firewall.ObservedGravityCosmologyImported && !a.Firewall.ObservedTopologyBoundaryImported && !a.Firewall.NativeYukawaWrite && !a.Firewall.NativeCKMWrite && !a.Firewall.NativeWZMassWrite && !a.Firewall.NativeNewtonWrite && !a.Firewall.NativeCosmologicalWrite && !a.Firewall.NativeManifoldWrite && !a.Firewall.NativeBoundaryWrite && !a.Firewall.NativeEtaWrite && !a.Firewall.NativeRegistryWritten, Detail: FormatFirewall(a.Firewall)},
+		}
+		return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Checks: checks, Notes: append(statuses(), a.Truth)}
+	}}
+}

@@ -8,7 +8,7 @@ Rules:
 - New generated gate audits should be written here as `gateNNN_registry_audit.md`.
 - Missing numbers are allowed when no audit was generated for that gate.
 
-Total audits indexed: 228
+Total audits indexed: 236
 
 Known missing audit numbers in the current range:
 
@@ -247,3 +247,120 @@ Known missing audit numbers in the current range:
 - Gate 424: [`gate424_registry_audit.md`](gate424_registry_audit.md)
 
 - Gate 425: [`gate425_registry_audit.md`](gate425_registry_audit.md)
+
+- Gate 444: [`gate444_registry_audit.md`](gate444_registry_audit.md)
+- Gate 445: [`gate445_registry_audit.md`](gate445_registry_audit.md)
+- Gate 446: [`gate446_registry_audit.md`](gate446_registry_audit.md)
+- Gate 447: [`gate447_registry_audit.md`](gate447_registry_audit.md)
+- Gate 448: [`gate448_registry_audit.md`](gate448_registry_audit.md)
+- Gate 449: [`gate449_registry_audit.md`](gate449_registry_audit.md)
+
+- Gate 450: [`gate450_registry_audit.md`](gate450_registry_audit.md)
+
+- Gate 451: [`gate451_registry_audit.md`](gate451_registry_audit.md)
+
+- Gate 452: [`gate452_registry_audit.md`](gate452_registry_audit.md)
+
+- Gate 453: [`gate453_registry_audit.md`](gate453_registry_audit.md)
+
+- Gate 454: [`gate454_registry_audit.md`](gate454_registry_audit.md)
+
+- Gate 455: [`gate455_registry_audit.md`](gate455_registry_audit.md)
+- Gate 456: [`gate456_registry_audit.md`](gate456_registry_audit.md)
+- Gate 457: [`gate457_registry_audit.md`](gate457_registry_audit.md)
+- Gate 458: [`gate458_registry_audit.md`](gate458_registry_audit.md)
+- Gate 459: [`gate459_registry_audit.md`](gate459_registry_audit.md)
+- Gate 460: [`gate460_registry_audit.md`](gate460_registry_audit.md)
+- Gate 461: [`gate461_registry_audit.md`](gate461_registry_audit.md)
+- Gate 462: [`gate462_registry_audit.md`](gate462_registry_audit.md)
+
+- Gate 463: [`gate463_registry_audit.md`](gate463_registry_audit.md)
+
+- Gate 464: [`gate464_registry_audit.md`](gate464_registry_audit.md)
+
+- Gate 465: [`gate465_registry_audit.md`](gate465_registry_audit.md)
+
+- Gate 466: [`gate466_registry_audit.md`](gate466_registry_audit.md)
+- Gate 467: [`gate467_registry_audit.md`](gate467_registry_audit.md)
+
+- Gate 468: [`gate468_registry_audit.md`](gate468_registry_audit.md)
+- Gate 469: [`gate469_registry_audit.md`](gate469_registry_audit.md)
+- Gate 470: [`gate470_registry_audit.md`](gate470_registry_audit.md)
+
+- Gate 471: [`gate471_registry_audit.md`](gate471_registry_audit.md)
+- Gate 473: [`gate473_registry_audit.md`](gate473_registry_audit.md)
+- Gate 474: [`gate474_registry_audit.md`](gate474_registry_audit.md)
+- Gate 475: [`gate475_registry_audit.md`](gate475_registry_audit.md)
+- Gate 476: [`gate476_registry_audit.md`](gate476_registry_audit.md)
+- Gate 477: [`gate477_registry_audit.md`](gate477_registry_audit.md)
+- Gate 478: [`gate478_registry_audit.md`](gate478_registry_audit.md)
+- Gate 480: [`gate480_registry_audit.md`](gate480_registry_audit.md)
+- Gate 481: [`gate481_registry_audit.md`](gate481_registry_audit.md)
+- Gate 482: [`gate482_registry_audit.md`](gate482_registry_audit.md)
+- Gate 483: [`gate483_registry_audit.md`](gate483_registry_audit.md)
+- Gate 484: [`gate484_registry_audit.md`](gate484_registry_audit.md)
+- Gate 485: [`gate485_registry_audit.md`](gate485_registry_audit.md)
+- Gate 486: [`gate486_registry_audit.md`](gate486_registry_audit.md)
+- Gate 487: [`gate487_registry_audit.md`](gate487_registry_audit.md)
+- Gate 488: [`gate488_registry_audit.md`](gate488_registry_audit.md)
+
+- Gate 489: [`gate489_registry_audit.md`](gate489_registry_audit.md)
+
+- Gate 490: [`gate490_registry_audit.md`](gate490_registry_audit.md)
+
+- Gate 491: [`gate491_registry_audit.md`](gate491_registry_audit.md)
+- [Gate 492 — Scalar Covariant Derivative and Goldstone Intertwiner Audit](gate492_registry_audit.md)
+- [Gate 493 — Full Electroweak Curvature Action and Gauge Hessian Selection Audit](gate493_registry_audit.md)
+- [Gate 494 — Abelian U(1) Completion Coefficient Selection Audit](gate494_registry_audit.md)
+
+- [Gate 495 — Finite Electroweak Action Second Variation Source Audit](gate495_registry_audit.md)
+
+- [Gate 496 — Scalar Kinetic Metric Provenance and Vacuum Orientation Closure Audit](gate496_registry_audit.md)
+- [Gate 497 — Vacuum Gauge-Orbit Quotient and Unitary-Gauge Representative Audit](gate497_registry_audit.md)
+- [Gate 498 — Scalar SU(2)L Complex-Structure and Gauge-Orbit Provenance Audit](gate498_registry_audit.md)
+- [Gate 499 — Inner-Fluctuation DΦ Provenance Audit](gate499_registry_audit.md)
+- [Gate 500 — Product Spectral-Action Scalar Kinetic Projection Audit](gate500_registry_audit.md)
+- [Gate 501 — Yukawa-Trace Scalar Normalization Airlock Audit](gate501_registry_audit.md)
+
+- [Gate 502 — Scalar-Normalization-Independent Electroweak Quotient Audit](gate502_registry_audit.md)
+- [Gate 503 — Electroweak Kernel Index Native Closure Audit](gate503_registry_audit.md)
+
+- [Gate 504 — Continuum Matching Permission Ledger for Electroweak Scales](gate504_registry_audit.md)
+
+- [Gate 505 — Synthetic Electroweak Matching Adapter Dry-Run](gate505_registry_audit.md)
+
+- [Gate 506 — Observed Electroweak Comparator Airlock Preflight](gate506_registry_audit.md)
+
+- [Gate 507 — Observed Electroweak Comparator File Adapter Firewall](gate507_registry_audit.md)
+
+- [Gate 508 — Electroweak Comparator Residual Geometry Airlock](gate508_registry_audit.md)
+
+- [Gate 509 — Topological Anomalies & Gravitational Spectral Redirect](gate509_registry_audit.md)
+
+- [Gate 510 — Curvature Coefficient Provenance and Heat-Kernel Trace Convention Audit](gate510_registry_audit.md)
+- [Gate 511 — Gravitational a4 Curvature-Squared and Topological Counterterm Audit](gate511_registry_audit.md)
+- [Gate 512 — Cosmological f4 Vacuum Energy and Subtraction Airlock Audit](gate512_registry_audit.md)
+- Gate 513: [`gate513_registry_audit.md`](gate513_registry_audit.md)
+- [Gate 514 — Spectral Cutoff and Renormalization Airlock Comparator](gate514_registry_audit.md)
+- [Gate 515 — Bridge-Only Gravity/Cosmology Adapter Dry-Run](gate515_registry_audit.md)
+- [Gate 516 — Topological Gravity Characteristic-Class Ledger](gate516_registry_audit.md)
+
+- [Gate 517 — Gravitational Index and Boundary Eta Airlock](gate517_registry_audit.md)
+
+- [Gate 518 — Synthetic APS Index Boundary Ledger Dry-Run](gate518_registry_audit.md)
+
+- [Gate 519 — Observed Topology and Boundary Comparator Preflight](gate519_registry_audit.md)
+
+- [Gate 520 — Observed Topology and Boundary File Adapter Firewall](gate520_registry_audit.md)
+
+- [Gate 521 — Bordism and Cobordism Classifier Airlock](gate521_registry_audit.md)
+- [Gate 522 — Bordism Comparator File Adapter and Stiefel-Whitney Metadata Firewall](gate522_registry_audit.md)
+
+- [Gate 523 — Topology Residual Classifier Report and Native Non-Selection Audit](gate523_registry_audit.md)
+
+- [Gate 524 — Anomaly-Inflow Compatibility Classifier for Bridge Topology Classes](gate524_registry_audit.md)
+- [Gate 525 — Topology Sector Closing Ledger and Native Frontier Selection](gate525_registry_audit.md)
+- [Gate 526 — Lorentzian Causal Signature Provenance and Wick/Time Firewall Audit](gate526_registry_audit.md)
+- [Gate 527 — Lorentzian Spinor Adjoint, Reflection-Positivity, and 3+1 Projection Airlock Audit](gate527_registry_audit.md)
+- [Gate 528 — Physical 3+1 Projection and Internal Complement Selector Audit](gate528_registry_audit.md)
+- [Gate 529 — 3+1 Projection and Internal Complement Bridge Airlock Preflight](gate529_registry_audit.md)

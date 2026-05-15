@@ -1,0 +1,25 @@
+{
+  "gate": 470,
+  "ledger_name": "pdg_observed_ledger",
+  "description": "Explicit observed-data airlock ledger for Gate 470. PDG-style quark mass rows and Cabibbo target are admitted as bridge-only metadata. ASHA-specific rank-complete comparators I_spec/I_K and branch tags are intentionally null unless supplied by an external bridge ledger; PDG mass tables alone do not publish I_K.",
+  "empirical_import": true,
+  "bridge_only": true,
+  "native_registry_write": false,
+  "common_scale": "not supplied by PDG mass rows; required for numerical d_ud",
+  "common_scheme": "MS-bar where applicable; top mass convention requires explicit bridge normalization before use",
+  "rows": [
+    {"name":"m_u","sector":"u","observable":"running_quark_mass","value":2.16,"unit":"MeV","source":"PDG Review of Particle Physics","source_version":"explicit Gate470 bridge ledger; PDG-style mass row","scale":"2 GeV","scheme":"MS-bar","uncertainty":"+0.49/-0.26 MeV","bridge_only":true},
+    {"name":"m_c","sector":"u","observable":"running_quark_mass","value":1.27,"unit":"GeV","source":"PDG Review of Particle Physics","source_version":"explicit Gate470 bridge ledger; PDG-style mass row","scale":"mu=m_c","scheme":"MS-bar","uncertainty":"±0.02 GeV","bridge_only":true},
+    {"name":"m_t","sector":"u","observable":"top_quark_mass","value":172.57,"unit":"GeV","source":"PDG Review of Particle Physics","source_version":"explicit Gate470 bridge ledger; PDG-style mass row","scale":"top mass convention declared separately by PDG","scheme":"experiment-dependent/top mass scheme; not a common MS-bar u-sector row","uncertainty":"±0.29 GeV stat+syst-style bridge metadata","bridge_only":true},
+    {"name":"m_d","sector":"d","observable":"running_quark_mass","value":4.67,"unit":"MeV","source":"PDG Review of Particle Physics","source_version":"explicit Gate470 bridge ledger; PDG-style mass row","scale":"2 GeV","scheme":"MS-bar","uncertainty":"+0.48/-0.17 MeV","bridge_only":true},
+    {"name":"m_s","sector":"d","observable":"running_quark_mass","value":93.4,"unit":"MeV","source":"PDG Review of Particle Physics","source_version":"explicit Gate470 bridge ledger; PDG-style mass row","scale":"2 GeV","scheme":"MS-bar","uncertainty":"+8.6/-3.4 MeV","bridge_only":true},
+    {"name":"m_b","sector":"d","observable":"running_quark_mass","value":4.18,"unit":"GeV","source":"PDG Review of Particle Physics","source_version":"explicit Gate470 bridge ledger; PDG-style mass row","scale":"mu=m_b","scheme":"MS-bar","uncertainty":"±0.03 GeV","bridge_only":true},
+    {"name":"V_us","sector":"u-d","observable":"cabibbo_target_abs_vus","value":0.225,"unit":"dimensionless","source":"PDG Review of Particle Physics / CKM summary","source_version":"explicit Gate470 bridge target, rounded by project prompt","scale":"weak-scale phenomenology target","scheme":"CKM magnitude convention","uncertainty":"declared external uncertainty required for production run; rounded prompt value used only as target label","bridge_only":true},
+    {"name":"I_spec_u","sector":"u","observable":"I_spec","value":null,"unit":"dimensionless","source":"not a PDG-published invariant; requires ASHA bridge preprocessing","source_version":"missing explicit value","scale":"common scale required","scheme":"common scheme required","uncertainty":"missing","bridge_only":true},
+    {"name":"I_K_u","sector":"u","observable":"I_K","value":null,"unit":"dimensionless","source":"not a PDG-published invariant; independent ASHA K-axis comparator required","source_version":"missing explicit value","scale":"common scale required","scheme":"common scheme required","uncertainty":"missing","bridge_only":true},
+    {"name":"branch_u","sector":"u","observable":"branch_tag","sigma_cp":null,"n_c3":null,"unit":"dimensionless","source":"not supplied by PDG masses","source_version":"missing explicit branch tag","scale":"common scale required","scheme":"common scheme required","uncertainty":"missing","bridge_only":true},
+    {"name":"I_spec_d","sector":"d","observable":"I_spec","value":null,"unit":"dimensionless","source":"not a PDG-published invariant; requires ASHA bridge preprocessing","source_version":"missing explicit value","scale":"common scale required","scheme":"common scheme required","uncertainty":"missing","bridge_only":true},
+    {"name":"I_K_d","sector":"d","observable":"I_K","value":null,"unit":"dimensionless","source":"not a PDG-published invariant; independent ASHA K-axis comparator required","source_version":"missing explicit value","scale":"common scale required","scheme":"common scheme required","uncertainty":"missing","bridge_only":true},
+    {"name":"branch_d","sector":"d","observable":"branch_tag","sigma_cp":null,"n_c3":null,"unit":"dimensionless","source":"not supplied by PDG masses","source_version":"missing explicit branch tag","scale":"common scale required","scheme":"common scheme required","uncertainty":"missing","bridge_only":true}
+  ]
+}

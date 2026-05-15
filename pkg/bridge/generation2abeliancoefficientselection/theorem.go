@@ -1,0 +1,23 @@
+package generation2abeliancoefficientselection
+
+import "github.com/bagherbal/asha-engine/pkg/theorem"
+
+func Generation2AbelianU1CompletionCoefficientSelectionAuditTheorem() theorem.Theorem {
+	const id = AuditID
+	const name = "Generation 2 abelian U(1) completion coefficient selection audit"
+	return theorem.Theorem{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Verify: func() theorem.Result {
+		a, err := BuildDefault()
+		if err != nil {
+			return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.FailedRoute, Checks: []theorem.Check{{Name: "construct Gate494 abelian coefficient audit", Passed: false, Detail: err.Error()}}}
+		}
+		checks := []theorem.Check{
+			{Name: "inherits Gate493 electroweak action-family obstruction", Passed: a.Inheritance.Executed && a.Inheritance.Gate493FullConnectionClosed && a.Inheritance.Gate493QuadraticFamilyTyped && a.Inheritance.Gate493PositiveCompletionFamily && a.Inheritance.Gate493KappaTarget == 6 && !a.Inheritance.Gate493KappaSelected && !a.Inheritance.Gate493GaugeHessianSelected && a.Inheritance.Gate493PhysicalRegistryBlocked && a.Inheritance.Gate494Requested && a.Inheritance.NoElectroweakFlavorDataImported, Detail: FormatInheritance(a.Inheritance)},
+			{Name: "confirms finite hypercharge trace normalization", Passed: a.Hypercharge.Executed && a.Hypercharge.ChargeIdentityDerived && a.Hypercharge.HyperchargeCommutesWithSU2 && a.Hypercharge.KYConfirmed && a.Hypercharge.BoundarySin238Confirmed && !a.Hypercharge.GaugeKineticNormalizationDerived && !a.Hypercharge.PhysicalWeakMixingAngleDerived && !a.Hypercharge.FineStructureDerived && !a.Hypercharge.HiddenObservedInputUsed && !a.Hypercharge.SelectsKappaU1, Detail: FormatHypercharge(a.Hypercharge)},
+			{Name: "inherits kappa_U1=6 as whitening candidate only", Passed: a.Kappa.Executed && a.Kappa.CompletionFamilyTyped && a.Kappa.TargetKappa == 6 && a.Kappa.WhiteningSelectsKappa && !a.Kappa.ActionSelectsKappa && !a.Kappa.FiniteSecondVariation && a.Kappa.CandidateHitCount > 1 && !a.Kappa.UniqueDerivation && !a.Kappa.CountResonanceSelected && !a.Kappa.KappaPhysical && !a.Kappa.GaugeKineticHessianFixed && !a.Kappa.PhysicalCouplingsOrMasses, Detail: FormatKappa(a.Kappa)},
+			{Name: "keeps representation metric distinct from gauge Hessian", Passed: a.Metric.Executed && a.Metric.DiagonalTraceGramAsRepresentationMetric && a.Metric.CanonicalGeneratorDiagnosticsDerived && !a.Metric.DiagonalTraceGramAsGaugeKineticHessian && !a.Metric.PhysicalGaugeCouplingsDerived && !a.Metric.FineStructureDerived && !a.Metric.RGBoundaryScaleDerived && !a.Metric.HiddenObservedInputUsed, Detail: FormatMetric(a.Metric)},
+			{Name: "blocks trace-to-kappa native promotion", Passed: a.Boundary.Executed && a.Boundary.TraceLedgerAvailable && a.Boundary.KappaWhiteningCandidateAvailable && !a.Boundary.TraceToKappaNativeMapDerived && !a.Boundary.KYEqualsTargetKappa && !a.Boundary.KYAndKappaSameObject && !a.Boundary.UnimodularitySelectsKappa && !a.Boundary.AnomalyCancellationSelectsKappa && !a.Boundary.SecondVariationSelectsKappa && !a.Boundary.NativeKappaSelected && !a.Boundary.NativeGaugeHessianSelected && !a.Boundary.NativeWeakAngleDerived && !a.Boundary.NativeWZMassesDerived, Detail: FormatBoundary(a.Boundary)},
+			{Name: "preserves electroweak/flavor firewall", Passed: a.Firewall.Executed && !a.Firewall.ObservedWMassImported && !a.Firewall.ObservedZMassImported && !a.Firewall.ObservedHiggsMassImported && !a.Firewall.FermiConstantImported && !a.Firewall.WeakAngleImported && !a.Firewall.FineStructureImported && !a.Firewall.GaugeCouplingImported && !a.Firewall.YukawaImported && !a.Firewall.CKMPMNSImported && !a.Firewall.NativeKappaWritten && !a.Firewall.NativeGaugeHessianWritten && !a.Firewall.NativeWeakAngleWritten && !a.Firewall.NativeWZMassWritten, Detail: FormatFirewall(a.Firewall)},
+		}
+		return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Checks: checks, Notes: []string{StatusGate493Inherited, StatusHyperchargeTraceNormalizationFound, StatusBoundarySin238Preserved, StatusU1CompletionKappaTargetInherited, StatusFiniteCountResonancesAudited, StatusRepresentationMetricLedgerAvailable, StatusTraceKappaAirlockDefined, StatusFailedTraceDoesNotSelectKappa, StatusFailedKYIsNotAbelianHessian, StatusFailedCountResonanceNotAction, StatusFailedRepresentationMetricNotAction, StatusFailedSecondVariationStillMissing, StatusFailedGaugeCouplingsNotDerived, StatusFailedWeakAngleNotDerived, StatusFailedWZMassesNotDerived, StatusFirewallPreserved, StatusKappaRegistryWriteBlocked, StatusGate495RedirectDefined, a.Truth}}
+	}}
+}

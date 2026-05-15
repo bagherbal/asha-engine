@@ -13,7 +13,7 @@ Each manuscript section must trace to gate outputs and include its boundary lang
 | 6. Finite Spectral Triple and Inner Fluctuations | Gates 272--299 | A_F, bimodule, first-order condition, SM field inventory | theorem atlas | field inventory not flavor amplitudes | ready |
 | 7. Product Geometry and Spectral-Action Coefficient Lane | Gates 376--385 | M x F product, CCM substitution, edge measure | architecture ledger | bridge conventions explicit | ready |
 | 8. Scale / Higgs Tree Proxy Lane | Gates 341--343, 380, 384--387 | Pfaffian scale and edge-supported Higgs tree proxy | final architecture ledger | tree proxy/transport limits explicit | ready |
-| 9. Flavor Frontier and Family Axiom Ledger | Gates 393--418 | native flavor firewall plus quarantined K/X/Y capacity chain | family closure ledger | dim M_charged=13 remains native firewall | ready |
+| 9. Flavor Frontier and Family Axiom Ledger | Gates 393--418 + Gates 444--449 | native 13-moduli flavor firewall plus post-444 structural K/X family-board refinement | family closure ledger + post-444 manuscript delta | `K_gen`, Generation-2 bare zero, and unsigned X support may be structural; Y/phase/coefficients remain sealed | ready |
 | 10. Cosmology / Dark Sector Boundary | Gates 344, 375, 386, 387 | cosmology observables sealed as environmental/frontier | final board | no DM/CC prediction promoted | ready |
 | 11. Failed Routes and Reviewer Objections | Gates 398--423 | explain q4/Hphi, triality, flavor, and scalar no-go routes | reviewer matrix | failed route is not hidden result | ready |
 | 12. Reproducibility, Artifact Index, and Conclusion | Gates 420--425 | atlas, manuscript skeleton, claim audit, artifact preflight | artifact/repro docs | publication support only | ready |
@@ -24,3 +24,4 @@ Each manuscript section must trace to gate outputs and include its boundary lang
 2. Failed-route and firewall ledger.
 3. Reproducibility and targeted-test policy.
 4. Figure and artifact manifest.
+5. Post-444 structural family board delta.

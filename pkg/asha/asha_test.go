@@ -17,7 +17,7 @@ func TestRuntimeReportAllPasses(t *testing.T) {
 			t.Fatalf("check failed: %+v", c)
 		}
 	}
-	if e.Metadata.LatestGate != 425 {
+	if e.Metadata.LatestGate != 529 {
 		t.Fatalf("unexpected latest gate %d", e.Metadata.LatestGate)
 	}
 }
@@ -34,7 +34,7 @@ func TestHiggsProxy(t *testing.T) {
 
 func TestFamilyAxiomBoundary(t *testing.T) {
 	e := New(WithBeta(1))
-	if e.Family.NativeChargedFlavorDim != 13 || e.Family.KXYChargedCoeffDim != 9 {
+	if e.Family.NativeChargedFlavorDim != 13 || e.Family.KXYChargedCoeffDim != 9 || !e.Family.KGenGeometricallyForced || !e.Family.Generation2BareZero {
 		t.Fatalf("bad family dims: %+v", e.Family)
 	}
 	if e.Family.CommKXNorm <= 0 || e.Family.CPWitness == 0 {

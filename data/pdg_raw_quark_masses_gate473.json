@@ -1,0 +1,88 @@
+{
+  "gate": 473,
+  "ledger_name": "pdg_raw_quark_masses_gate473",
+  "description": "Raw quark-mass hierarchy fixture for Gate473. Values are PDG-style reference masses in GeV, used only to audit whether mass hierarchy alone can derive ASHA I_K=0.5. No CKM values, no branch tags, and no precomputed I_K values are included.",
+  "empirical_import": true,
+  "bridge_only": true,
+  "native_registry_write": false,
+  "rows": [
+    {
+      "name": "m_u_MSbar_2GeV",
+      "sector": "u",
+      "generation": 1,
+      "quark": "up",
+      "mass_gev": 0.00216,
+      "source": "Particle Data Group Review of Particle Physics",
+      "source_version": "PDG-style light-quark mass reference; ASHA Gate473 raw hierarchy fixture",
+      "scale": "2 GeV",
+      "scheme": "MS-bar",
+      "uncertainty": "+0.00049/-0.00026 GeV",
+      "bridge_only": true
+    },
+    {
+      "name": "m_c_MSbar_mc",
+      "sector": "u",
+      "generation": 2,
+      "quark": "charm",
+      "mass_gev": 1.27,
+      "source": "Particle Data Group Review of Particle Physics",
+      "source_version": "PDG-style charm mass reference; ASHA Gate473 raw hierarchy fixture",
+      "scale": "m_c",
+      "scheme": "MS-bar",
+      "uncertainty": "0.02 GeV",
+      "bridge_only": true
+    },
+    {
+      "name": "m_t_MSbar_mt_reference",
+      "sector": "u",
+      "generation": 3,
+      "quark": "top",
+      "mass_gev": 162.5,
+      "source": "Particle Data Group Review of Particle Physics / MS-bar converted top-mass reference",
+      "source_version": "PDG-style top mass hierarchy reference; ASHA Gate473 raw hierarchy fixture",
+      "scale": "m_t",
+      "scheme": "MS-bar reference",
+      "uncertainty": "1.0 GeV",
+      "bridge_only": true
+    },
+    {
+      "name": "m_d_MSbar_2GeV",
+      "sector": "d",
+      "generation": 1,
+      "quark": "down",
+      "mass_gev": 0.00467,
+      "source": "Particle Data Group Review of Particle Physics",
+      "source_version": "PDG-style light-quark mass reference; ASHA Gate473 raw hierarchy fixture",
+      "scale": "2 GeV",
+      "scheme": "MS-bar",
+      "uncertainty": "+0.00048/-0.00017 GeV",
+      "bridge_only": true
+    },
+    {
+      "name": "m_s_MSbar_2GeV",
+      "sector": "d",
+      "generation": 2,
+      "quark": "strange",
+      "mass_gev": 0.0934,
+      "source": "Particle Data Group Review of Particle Physics",
+      "source_version": "PDG-style strange mass reference; ASHA Gate473 raw hierarchy fixture",
+      "scale": "2 GeV",
+      "scheme": "MS-bar",
+      "uncertainty": "0.0086 GeV",
+      "bridge_only": true
+    },
+    {
+      "name": "m_b_MSbar_mb",
+      "sector": "d",
+      "generation": 3,
+      "quark": "bottom",
+      "mass_gev": 4.18,
+      "source": "Particle Data Group Review of Particle Physics",
+      "source_version": "PDG-style bottom mass reference; ASHA Gate473 raw hierarchy fixture",
+      "scale": "m_b",
+      "scheme": "MS-bar",
+      "uncertainty": "0.03 GeV",
+      "bridge_only": true
+    }
+  ]
+}

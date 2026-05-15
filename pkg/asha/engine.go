@@ -132,7 +132,7 @@ func (e Engine) higgsSection() Section {
 }
 
 func (e Engine) familySection() Section {
-	return Section{Name: "Family/flavor frontier", Summary: "Native flavor remains 13-dimensional; quarantined K/X/Y axioms activate hierarchy, mixing, and CP capacity with 9 symbolic charged coefficients.", Quantities: e.Family.Quantities(), Checks: e.Family.Checks(), Boundaries: e.Environment.EmpiricalCoordinates}
+	return Section{Name: "Family/flavor frontier", Summary: "Gate 444 forces the primitive K_gen family axis and Generation-2 bare structural zero; native flavor values remain 13-dimensional, while K/X/Y mixing/CP coefficients stay sealed.", Quantities: e.Family.Quantities(), Checks: e.Family.Checks(), Boundaries: e.Environment.EmpiricalCoordinates}
 }
 
 func (e Engine) darkSection() Section {

@@ -191,6 +191,88 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugeeating"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugehessian"
 	"github.com/bagherbal/asha-engine/pkg/bridge/gaugekineticdiag"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2a4curvaturesquaredledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2abeliancoefficientselection"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2anomalyinflowcompatibilityclassifier"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2basisinvariance"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2bordismcobordismclassifierairlock"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2bordismcomparatorfileadapter"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2branchresiduals"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2branchtags"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ckmcommutatorpolynomial"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ckmnullmirror"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ckmnullresidual"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2coefficientledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2coefficientrayobservability"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2commonscaleledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2comparatorevaluation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2continuummatchingpermissionledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2cosmologicalf4vacuumairlock"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2curvaturecoefficientprovenance"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2eigenbasisledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2electroweakcurvatureaction"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2electroweakiksource"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2empiricaladapter"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2empiricalimportswitch"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2empiricalinterface"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ewkernelindexclosure"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ewnquotient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ewresidualgeometryairlock"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2finiteactionsecondvariation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2gravitationalindexetaairlock"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2innerfluctuationdphiprovenance"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2koideprovenance"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2leptonempiricalimportswitch"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2leptonobservedadapter"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2leptonpmnsnullresidual"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2leptonpreflight"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2lorentziancausalsignature"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2lorentzianspinoradjointairlock"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2massliftbridge"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2massmixinginvariants"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2masstoequipartition"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nativeupdownsource"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nullbaselineperturbation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nullconeikselector"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2observedcomparatoradapter"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2observedelectroweakfileadapter"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2observedelectroweakpreflight"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2observednumericaladapter"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2observedpreflight"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2observedtopologyboundaryfileadapter"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2observedtopologyboundarypreflight"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2phaseorientation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2physicalprojectionselector"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2productspectralactionkineticprojection"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2projectionbridgeairlockpreflight"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2provenancecontract"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2rankcompleteexternalledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2rayinversion"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarcovariantintertwiner"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalaredgestability"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarkineticvacuumprovenance"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarsu2provenance"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sectordeformationsource"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sectordifference"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sectormultiplex"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2specialbranchselector"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2spectralcutoffrenormalizationairlock"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2spectralmomenthierarchyairlock"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2structuralzero"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2syntheticapsindexboundaryledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2syntheticelectroweakmatchingadapter"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2syntheticgravitycosmologyadapter"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2syntheticinversion"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2topologicalanomalyledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2topologicaldeformation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2topologicalgravitycharacteristicclassledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2topologicalgravityredirect"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2topologyresidualclassifierreport"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2topologysectorclosingledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2vacuumgaugeorbitquotient"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2vacuumtilt"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2yukawaselectorairlock"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2yukawatracescalarnormalization"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generationaddressfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/geometricmeanresonance"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
@@ -275,6 +357,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/pevobservabilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/pfaffianhierarchy"
 	"github.com/bagherbal/asha-engine/pkg/bridge/physicalfinitehilbertcompletion"
+	"github.com/bagherbal/asha-engine/pkg/bridge/post444flavoratlasreconciliation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/postflavorarchitectureboard"
 	"github.com/bagherbal/asha-engine/pkg/bridge/productspectralactioncoefficients"
 	"github.com/bagherbal/asha-engine/pkg/bridge/propagatorspectrum"
@@ -338,6 +421,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/spin8trialityfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spinctwistedchirality"
 	"github.com/bagherbal/asha-engine/pkg/bridge/spontaneouscarrierseal"
+	"github.com/bagherbal/asha-engine/pkg/bridge/structuralfamilyboardexport"
 	"github.com/bagherbal/asha-engine/pkg/bridge/su2spinorlift"
 	"github.com/bagherbal/asha-engine/pkg/bridge/supportgenerationintertwiner"
 	"github.com/bagherbal/asha-engine/pkg/bridge/tauetamixingpartner"
@@ -852,6 +936,90 @@ func Run() error {
 		reviewerobjectionmatrix.ReviewerObjectionMatrixRebuttalReadinessExportTheorem(),
 		artifactindexexport.ArtifactIndexReproducibilityChecklistExportTheorem(),
 		publicationbundlepreflight.FinalPaperAssemblyPublicationBundlePreflightTheorem(),
+		generation2structuralzero.Generation2StructuralZeroIntersectionSieveTheorem(),
+		generation2massliftbridge.Generation2MassLiftBridgeStructuralZeroCompatibilitySieveTheorem(),
+		generation2phaseorientation.Generation2SignedCycleComplexPhaseOrientationSieveTheorem(),
+		generation2coefficientledger.Generation2SectorCoefficientSourceLedgerAmplitudeFirewallClosureTheorem(),
+		post444flavoratlasreconciliation.Post444FlavorFrontierAtlasReconciliationTheorem(),
+		structuralfamilyboardexport.StructuralFamilyBoardManuscriptDeltaPatchTheorem(),
+		generation2massmixinginvariants.Generation2StructuralZeroMassMixingInvariantRatioSieveTheorem(),
+		generation2specialbranchselector.Generation2TextureZeroSpecialBranchSelectorNecessaryBoundaryAuditTheorem(),
+		generation2basisinvariance.Generation2FamilyBasisInvarianceTextureGaugeArtifactAuditTheorem(),
+		generation2empiricalinterface.Generation2TextureZeroInvariantLedgerAllowedEmpiricalInterfaceTheorem(),
+		generation2coefficientrayobservability.Generation2CoefficientRayObservabilityRankAuditTheorem(),
+		generation2empiricaladapter.Generation2EmpiricalTextureAdapterDryRunFirewallTheorem(),
+		generation2rayinversion.Generation2SymbolicCoefficientRayInversionBranchCausticMapTheorem(),
+		generation2provenancecontract.Generation2EmpiricalComparatorProvenanceContractSectorSchemeLedgerTheorem(),
+		generation2comparatorevaluation.Generation2ComparatorLedgerEvaluationHarnessRedactedPhenomenologySlotTheorem(),
+		generation2branchtags.Generation2OrientedComparatorBranchTagSieveCPSignLedgerTheorem(),
+		generation2branchresiduals.Generation2BranchResolvedTextureResidualHarnessSyntheticNullMapTheorem(),
+		generation2sectormultiplex.Generation2ThreeSectorComparatorMultiplexUniversalityAssumptionAuditTheorem(),
+		generation2sectordifference.Generation2SectorDifferenceInvariantCKMInterfaceFirewallAuditTheorem(),
+		generation2eigenbasisledger.Generation2EigenbasisConventionLedgerMixingMatrixGaugeAuditTheorem(),
+		generation2ckmnullresidual.Generation2CKMNullResidualAdapterConventionReadySymbolicMapTheorem(),
+		generation2empiricalimportswitch.Generation2QuarkSectorEmpiricalImportSwitchCKMDataFirewallTheorem(),
+		generation2observedcomparatoradapter.Generation2QuarkSectorObservedComparatorAdapterCKMDataFirewallTheorem(),
+		generation2commonscaleledger.Generation2CommonScaleRunningLedgerCoefficientRayComparatorDesignTheorem(),
+		generation2syntheticinversion.Generation2CommonScaleSyntheticInversionUncertaintyPropagationHarnessTheorem(),
+		generation2observedpreflight.Generation2ObservedRankCompleteComparatorPreflightAirlockNonComputationAuditTheorem(),
+		generation2observednumericaladapter.Generation2ObservedNumericalDUDAdapterExplicitDataFileRunTheorem(),
+		generation2rankcompleteexternalledger.Generation2RankCompleteExternalLedgerAcceptanceTestTheorem(),
+		generation2masstoequipartition.Generation2MassToEquipartitionInversionEpistemologicalLoopClosureTheorem(),
+		generation2electroweakiksource.Generation2ElectroweakKOverlapSourceSearchTheorem(),
+		generation2leptonpreflight.Generation2LeptonSectorRankCompletePreflightTheorem(),
+		generation2leptonpmnsnullresidual.Generation2LeptonSectorSyntheticPMNSNullResidualTheorem(),
+		generation2leptonempiricalimportswitch.Generation2LeptonSectorEmpiricalImportSwitchPMNSDataFirewallTheorem(),
+		generation2leptonobservedadapter.Generation2LeptonObservedComparatorAdapterPMNSAirlockNonComputationTheorem(),
+		generation2nullconeikselector.Generation2AlgebraicNullConeBridgeIKSelectionTheorem(),
+		generation2nullbaselineperturbation.Generation2NullBaselinePerturbationLedgerSectorTransportAuditTheorem(),
+		generation2sectordeformationsource.Generation2NullBaselineSectorDeformationSourceSearchTheorem(),
+		generation2topologicaldeformation.Generation2FiniteAlgebraicDeformationOperatorSearchTheorem(),
+		generation2vacuumtilt.Generation2VacuumTiltVectorC3EllipticSliceFlavorCompressionAuditTheorem(),
+		generation2koideprovenance.Generation2KoideConstraintProvenanceTopologicalBaselineTheorem(),
+		generation2ckmnullmirror.Generation2UniversalNullMirrorCKMCompressionAuditTheorem(),
+		generation2ckmcommutatorpolynomial.Generation2CKMRephasingInvariantPolynomialConstraintSearchTheorem(),
+		generation2nativeupdownsource.Generation2NativeUpDownOperatorSourceSearchTheorem(),
+		generation2yukawaselectorairlock.Generation2YukawaSelectorAirlockBoundaryDecisionTheorem(),
+		generation2topologicalanomalyledger.Generation2TopologicalChargeAnomalyCancellationLedgerTheorem(),
+		generation2scalaredgestability.Generation2ScalarEdgeStabilityHiggsOneFormPositivityTheorem(),
+		generation2scalarcovariantintertwiner.Generation2ScalarCovariantDerivativeGoldstoneIntertwinerAuditTheorem(),
+		generation2electroweakcurvatureaction.Generation2FullElectroweakCurvatureActionGaugeHessianSelectionAuditTheorem(),
+		generation2abeliancoefficientselection.Generation2AbelianU1CompletionCoefficientSelectionAuditTheorem(),
+		generation2finiteactionsecondvariation.Generation2FiniteElectroweakActionSecondVariationSourceAuditTheorem(),
+		generation2scalarkineticvacuumprovenance.Generation2ScalarKineticMetricVacuumOrientationClosureAuditTheorem(),
+		generation2vacuumgaugeorbitquotient.Generation2VacuumGaugeOrbitQuotientUnitaryGaugeAuditTheorem(),
+		generation2scalarsu2provenance.Generation2ScalarSU2ComplexStructureGaugeOrbitProvenanceAuditTheorem(),
+		generation2innerfluctuationdphiprovenance.Generation2InnerFluctuationDphiProvenanceAuditTheorem(),
+		generation2productspectralactionkineticprojection.Generation2ProductSpectralActionScalarKineticProjectionAuditTheorem(),
+		generation2yukawatracescalarnormalization.Generation2YukawaTraceScalarNormalizationAirlockAuditTheorem(),
+		generation2ewnquotient.Generation2ScalarNormalizationIndependentElectroweakQuotientAuditTheorem(),
+		generation2ewkernelindexclosure.Generation2ElectroweakKernelIndexNativeClosureAuditTheorem(),
+		generation2continuummatchingpermissionledger.Generation2ContinuumMatchingPermissionLedgerAuditTheorem(),
+		generation2syntheticelectroweakmatchingadapter.Generation2SyntheticElectroweakMatchingAdapterDryRunTheorem(),
+		generation2observedelectroweakpreflight.Generation2ObservedElectroweakComparatorAirlockPreflightTheorem(),
+		generation2observedelectroweakfileadapter.Generation2ObservedElectroweakComparatorFileAdapterFirewallTheorem(),
+		generation2ewresidualgeometryairlock.Generation2ElectroweakComparatorResidualGeometryAirlockTheorem(),
+		generation2topologicalgravityredirect.Generation2TopologicalAnomaliesGravitationalSpectralRedirectTheorem(),
+		generation2curvaturecoefficientprovenance.Generation2CurvatureCoefficientProvenanceHeatKernelTraceConventionAuditTheorem(),
+		generation2a4curvaturesquaredledger.Generation2A4CurvatureSquaredTopologicalCountertermAuditTheorem(),
+		generation2cosmologicalf4vacuumairlock.Generation2CosmologicalF4VacuumEnergySubtractionAirlockAuditTheorem(),
+		generation2spectralmomenthierarchyairlock.Generation2SpectralMomentHierarchyCutoffSeparationAirlockAuditTheorem(),
+		generation2spectralcutoffrenormalizationairlock.Generation2SpectralCutoffRenormalizationAirlockComparatorTheorem(),
+		generation2syntheticgravitycosmologyadapter.Generation2BridgeOnlyGravityCosmologyAdapterDryRunTheorem(),
+		generation2topologicalgravitycharacteristicclassledger.Generation2TopologicalGravityCharacteristicClassLedgerTheorem(),
+		generation2gravitationalindexetaairlock.Generation2GravitationalIndexBoundaryEtaAirlockTheorem(),
+		generation2syntheticapsindexboundaryledger.Generation2SyntheticAPSIndexBoundaryLedgerDryRunTheorem(),
+		generation2observedtopologyboundarypreflight.Generation2ObservedTopologyBoundaryComparatorPreflightTheorem(),
+		generation2observedtopologyboundaryfileadapter.Generation2ObservedTopologyBoundaryFileAdapterFirewallTheorem(),
+		generation2bordismcobordismclassifierairlock.Generation2BordismCobordismClassifierAirlockTheorem(),
+		generation2bordismcomparatorfileadapter.Generation2BordismComparatorFileAdapterStiefelWhitneyFirewallTheorem(),
+		generation2topologyresidualclassifierreport.Generation2TopologyResidualClassifierReportNativeNonSelectionAuditTheorem(),
+		generation2anomalyinflowcompatibilityclassifier.Generation2AnomalyInflowCompatibilityClassifierForBridgeTopologyClassesTheorem(),
+		generation2topologysectorclosingledger.Generation2TopologySectorClosingLedgerAndNativeFrontierSelectionTheorem(),
+		generation2lorentziancausalsignature.Generation2LorentzianCausalSignatureProvenanceAndWickTimeFirewallAuditTheorem(),
+		generation2lorentzianspinoradjointairlock.Generation2LorentzianSpinorAdjointReflectionPositivityAirlockTheorem(),
+		generation2physicalprojectionselector.Generation2Physical3Plus1ProjectionAndInternalComplementSelectorAuditTheorem(),
+		generation2projectionbridgeairlockpreflight.Generation2ProjectionBridgeAirlockPreflightTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
 	)
 

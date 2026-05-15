@@ -35,3 +35,8 @@ The current finalized manuscript artifacts are stored in `docs/paper/final/`:
 - `asha_paper_final_manuscript.pdf` — PDF export generated from the DOCX.
 
 The manuscript source link is documented inside the paper under **Source Code and Reproducibility**. The self-authored repository entry is intentionally not included as a bibliography item; if the repository is archived later, cite the DOI/archive in the References.
+
+## Gate 449 post-444 manuscript delta
+
+- `POST444_MANUSCRIPT_DELTA.md` — source patch for updating the manuscript after Gates 444--448. It promotes only `K_gen = diag(-1,0,1)`, the Generation-2 bare structural zero, and unsigned triangular lift support as structural results. It preserves the Yukawa, CKM/PMNS, coefficient, muon/charm mass, cosmology, and dark-sector firewalls.
+

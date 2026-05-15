@@ -17,6 +17,7 @@ This manifest lists the files and workspaces needed to assemble the final paper 
 | `docs/audits/gates/gate423_registry_audit.md` | `reviewer-support` | `true` | Gate 423 | reviewer objection matrix | rebuttal boundaries | ready |
 | `docs/audits/gates/gate424_registry_audit.md` | `checklist` | `true` | Gate 424 | artifact index audit | reproducibility support | ready |
 | `docs/audits/gates/gate425_registry_audit.md` | `audit` | `true` | Gate 425 | this preflight audit | publication-support only | ready |
+| `docs/paper/POST444_MANUSCRIPT_DELTA.md` | `manuscript-delta` | `true` | Gate 449 | post-444 structural family-board manuscript patch | structural K/X wording only; no value-bearing flavor prediction | ready |
 | `docs/summaries/essential_ontological_tower_map.md` | `proof-source` | `true` | curated summary | core logical tower | non-chronological orientation only | ready |
 | `docs/summaries/gates_summary.md` | `proof-source` | `true` | curated summary | chronological gate summary | summary, not theorem replacement | ready |
 | `docs/paper/drafts/` | `manuscript` | `false` | user-supplied | working manuscript drafts | drafts checked against claim audit | workspace ready |

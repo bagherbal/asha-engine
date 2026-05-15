@@ -1,8 +1,8 @@
 package asha
 
 const (
-	RuntimeVersion = "gate425-runtime-env-scenarios-20260514"
-	LatestGate     = 425
+	RuntimeVersion = "gate529-3plus1-projection-bridge-airlock-preflight-20260515"
+	LatestGate     = 529
 	DefaultBeta    = 1.0
 	// Project convention: non-reduced Planck mass in GeV used by the Pfaffian lane.
 	DefaultPlanckMassGeV = 1.22089e19
