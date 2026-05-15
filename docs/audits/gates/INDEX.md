@@ -8,12 +8,12 @@ Rules:
 - New generated gate audits should be written here as `gateNNN_registry_audit.md`.
 - Missing numbers are allowed when no audit was generated for that gate.
 
-Total audits indexed: 236
+Total audits indexed: 314
 
 Known missing audit numbers in the current range:
 
 ```text
-191, 192, 198, 324, 329, 360, 388, 389, 390, 391, 392
+191, 192, 198, 324, 329, 360, 388, 389, 390, 391, 392, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 472, 479
 ```
 
 ## Audits
@@ -364,3 +364,25 @@ Known missing audit numbers in the current range:
 - [Gate 527 — Lorentzian Spinor Adjoint, Reflection-Positivity, and 3+1 Projection Airlock Audit](gate527_registry_audit.md)
 - [Gate 528 — Physical 3+1 Projection and Internal Complement Selector Audit](gate528_registry_audit.md)
 - [Gate 529 — 3+1 Projection and Internal Complement Bridge Airlock Preflight](gate529_registry_audit.md)
+- [Gate 530 — 3+1 Projection File Adapter and Clifford Compatibility Firewall](gate530_registry_audit.md)
+- [Gate 531 — Wick/Hilbert Fundamental-Symmetry Airlock Preflight](gate531_registry_audit.md)
+- [Gate 532 — Synthetic Fundamental-Symmetry Ledger Adapter and Positivity Residual Dry Run](gate532_registry_audit.md)
+- [Gate 533 — Osterwalder-Schrader Reflection-Positivity Kernel Airlock Preflight](gate533_registry_audit.md)
+- [Gate 534 — Synthetic OS Reflection-Positivity Kernel Adapter Dry Run](gate534_registry_audit.md)
+- [Gate 535 — OS/Wick/Hilbert Sector Closure Ledger and Frontier Map](gate535_registry_audit.md)
+- [Gate 536 — Physical Schwinger-Function Source Ledger Airlock](gate536_registry_audit.md)
+- [Gate 537 — Synthetic Schwinger-Function Source Ledger Adapter Dry Run](gate537_registry_audit.md)
+- [Gate 538 — Schwinger Source Authenticity Comparator Airlock Preflight](gate538_registry_audit.md)
+- [Gate 539 — Synthetic Source-Authenticity Ledger Adapter Rejection Dry Run](gate539_registry_audit.md)
+- [Gate 540 — Real Schwinger Source Import Switch Airlock Preflight](gate540_registry_audit.md)
+- [Gate 541 — Real-Looking Schwinger Source Negative-Control Adapter](gate541_registry_audit.md)
+- [Gate 542 — Real Source Comparator Authorization Manifest Airlock](gate542_registry_audit.md)
+- [Gate 543 — Synthetic Comparator Authorization Manifest Adapter Dry Run](gate543_registry_audit.md)
+- [Gate 544 — Real-Source Comparator Execution Harness Preflight](gate544_registry_audit.md)
+- [Gate 545 — Synthetic Comparator-Harness Result Adapter Dry Run](gate545_registry_audit.md)
+- [Gate 546 — Comparator Output Release Airlock Preflight](gate546_registry_audit.md)
+- [Gate 547 — Synthetic Release-Review Manifest Adapter Dry Run](gate547_registry_audit.md)
+- [Gate 548 — Physical Correlation Import/Release Sector Closure Ledger](gate548_registry_audit.md)
+- [Gate 549 — Physical Correlation Evidence Board Airlock](gate549_registry_audit.md)
+- [Gate 550 — Synthetic Evidence Board Adapter Dry Run](gate550_registry_audit.md)
+- [Gate 551 — Physical Correlation Evidence Board Sector Closure Ledger](gate551_registry_audit.md)

@@ -1,0 +1,75 @@
+{
+  "gate": 534,
+  "ledger_name": "synthetic_os_reflection_positivity_kernel_gate534",
+  "description": "Bridge-only synthetic Osterwalder-Schrader reflection-positivity fixture for finite adapter plumbing. This is not a physical Schwinger kernel.",
+  "gate533_airlock_reference": "GATE533-OS-REFLECTION-POSITIVITY-KERNEL-AIRLOCK-PREFLIGHT",
+  "gate532_theta_reference": "GATE532-SYNTHETIC-FUNDAMENTAL-SYMMETRY-LEDGER-ADAPTER-POSITIVITY-DRY-RUN",
+  "bridge_only": true,
+  "native_registry_write": false,
+  "synthetic_fixture": true,
+  "observed_os_loaded": false,
+  "observed_wick_loaded": false,
+  "observed_correlation_loaded": false,
+  "observed_hamiltonian_loaded": false,
+  "source": "ASHA synthetic fixture generated for Gate 534 adapter dry run",
+  "source_version": "gate534-synthetic-os-fixture-20260515",
+  "convention": "finite real Euclidean test domain; positive-time indices [0,1]; reflection swaps positive and negative mirror indices; Q_OS(f)=<theta_E f, K f>",
+  "rows": [
+    {
+      "name": "synthetic_rank2_positive_time_os_kernel",
+      "euclidean_reflection_operator": [
+        [0, 0, 1, 0],
+        [0, 0, 0, 1],
+        [1, 0, 0, 0],
+        [0, 1, 0, 0]
+      ],
+      "correlation_kernel_gram_matrix": [
+        [3.0, 0.0, 1.5, 0.25],
+        [0.0, 3.0, 0.25, 1.25],
+        [1.5, 0.25, 3.0, 0.0],
+        [0.25, 1.25, 0.0, 3.0]
+      ],
+      "positive_time_support": [0, 1],
+      "positive_time_translation_operators": [
+        [
+          [1, 0, 0, 0],
+          [0, 1, 0, 0],
+          [0, 0, 1, 0],
+          [0, 0, 0, 1]
+        ],
+        [
+          [0.5, 0, 0, 0],
+          [0, 0.75, 0, 0],
+          [0, 0, 0.5, 0],
+          [0, 0, 0, 0.75]
+        ]
+      ],
+      "test_vectors": [
+        [1, 0, 0, 0],
+        [0, 1, 0, 0],
+        [1, -0.5, 0, 0],
+        [1, 1, 0, 0],
+        [0, 0, 0, 0]
+      ],
+      "null_space_quotient_rule": "zero OS norm vectors are quotiented; default synthetic fixture has only the zero vector in the sampled null set",
+      "reconstruction_map_certificate": "synthetic certificate only: records that reconstruction would require a separate OS theorem; no physical Hilbert space is constructed",
+      "gate532_theta_compatibility": "Gate532-compatible finite reflection fixture; does not promote Θ or OS positivity to native physical Hilbert structure",
+      "wick_map_reference": "synthetic Wick reference placeholder; analytic continuation is explicitly not executed",
+      "i_epsilon_convention": "synthetic iε convention placeholder; no Lorentzian propagator or pole prescription is derived",
+      "kernel_symmetry_convention": "real symmetric reflection-covariant finite Gram kernel with R K R = K",
+      "reflection_positive_cone": "positive-time support span{e0,e1}; sampled cone vectors have no negative-time components",
+      "os_quadratic_form_definition": "Q_OS(f)=<theta_E f, K f>=(R f)^T K f on the declared finite positive-time domain",
+      "source": "ASHA synthetic fixture generated for Gate 534 adapter dry run",
+      "source_version": "gate534-synthetic-os-fixture-20260515",
+      "convention": "finite real matrix convention; comparator-only; bridge-only; no observed correlation data",
+      "uncertainty": "none for synthetic fixture; unlimited for physical interpretation",
+      "bridge_only": true,
+      "comparator_only": true,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false
+    }
+  ]
+}

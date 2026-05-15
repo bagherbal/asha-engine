@@ -1,6 +1,6 @@
 # ASHA Runtime Package
 
-This directory documents the standalone final runtime layer introduced after Gate 425.
+This directory documents the standalone final runtime layer updated through Gate 551.
 
 The historical gate packages remain as theorem/audit references. The runtime endpoint is now:
 
@@ -58,12 +58,12 @@ failed-route         rejected interpretations and firewalls
 
 It does not promote any quarantined axiom to native ASHA theorem.
 
-## Verification run — 2026-05-14
+## Verification run — 2026-05-15
 
-The runtime board was rerun across all scenarios (`all`, `native`, `higgs`, `family`, `dark-stable-thermal`, `cosmology`, `environment`, `ci`) against the current embedded Gate-425 data. The environment scenario now reports conditional numerical paths for dark-sector yield constraints, cosmological subtraction severity, holographic/dilaton scale, and vacuum-fate stress tests. These remain bridge/environmental diagnostics, not native predictions.
+The runtime marker and latest `all`/`ci` reports were refreshed against the current embedded Gate-550 data. The runtime layer remains a reporting board; Gate 551 adds no new physical constants; it validates the synthetic evidence-board manifest parser, checksum, governance metadata, and zero-native-delta path. It boards no real evidence, imports no real correlation source, and promotes no physical dynamics natively.
 
 See:
 
 ```text
-docs/runtime/reports/asha_runtime_verification_20260514.md
+docs/runtime/reports/asha_runtime_verification_20260515.md
 ```

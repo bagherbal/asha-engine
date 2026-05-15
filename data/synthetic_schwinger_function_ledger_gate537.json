@@ -1,0 +1,494 @@
+{
+  "gate": 537,
+  "ledger_name": "synthetic_schwinger_function_source_ledger_gate537",
+  "description": "Bridge-only synthetic Schwinger-function source-ledger fixture for Gate 537. This is not a physical or constructive QFT dataset.",
+  "gate536_airlock_reference": "GATE536-PHYSICAL-SCHWINGER-FUNCTION-SOURCE-LEDGER-AIRLOCK",
+  "gate534_os_adapter_reference": "GATE534-SYNTHETIC-OS-REFLECTION-POSITIVITY-KERNEL-ADAPTER-DRY-RUN",
+  "bridge_only": true,
+  "native_registry_write": false,
+  "synthetic_fixture": true,
+  "physical_schwinger_loaded": false,
+  "observed_correlation_loaded": false,
+  "constructive_measure_loaded": false,
+  "observed_wick_loaded": false,
+  "observed_hamiltonian_loaded": false,
+  "observed_causal_boundary_loaded": false,
+  "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+  "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+  "convention": "finite real Euclidean test-function reduction; positive-time support [0,1]; theta_E swaps mirror indices; Q_OS(f)=<theta_E f,Kf>; bridge-only and no-theorem-input",
+  "rows": [
+    {
+      "schema_key": "source_identifier_and_version",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": false,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for source_identifier_and_version; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "constructive_definition_or_measure",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": false,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for constructive_definition_or_measure; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "euclidean_domain_and_dimension",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": false,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for euclidean_domain_and_dimension; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "field_algebra_and_labels",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": false,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for field_algebra_and_labels; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "test_function_domain",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "finite-matrix-fixture",
+      "bridge_only": true,
+      "comparator_only": true,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for test_function_domain; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "n_point_schwinger_family",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "finite-matrix-fixture",
+      "bridge_only": true,
+      "comparator_only": true,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for n_point_schwinger_family; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "symmetry_and_permutation_convention",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": true,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for symmetry_and_permutation_convention; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "distribution_regularization_class",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": true,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for distribution_regularization_class; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "euclidean_covariance_certificate",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": true,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for euclidean_covariance_certificate; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "reflection_operator_theta_E",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "finite-matrix-fixture",
+      "bridge_only": true,
+      "comparator_only": true,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for reflection_operator_theta_E; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "os_quadratic_form_definition",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "finite-matrix-fixture",
+      "bridge_only": true,
+      "comparator_only": true,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for os_quadratic_form_definition; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "reflection_positivity_certificate",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": true,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for reflection_positivity_certificate; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "null_space_quotient_rule",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": true,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for null_space_quotient_rule; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "reconstruction_map_certificate",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": true,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for reconstruction_map_certificate; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "wick_map_and_i_epsilon_convention",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": false,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for wick_map_and_i_epsilon_convention; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "hamiltonian_spectrum_certificate",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": false,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for hamiltonian_spectrum_certificate; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "renormalization_scheme_and_scale",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": false,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for renormalization_scheme_and_scale; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "uncertainty_and_validity_domain",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": false,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for uncertainty_and_validity_domain; this row exists only to test schema parsing and firewall plumbing"
+    },
+    {
+      "schema_key": "bridge_only_no_theorem_input_tags",
+      "source": "ASHA synthetic fixture generated for Gate 537 adapter dry run",
+      "source_version": "gate537-synthetic-schwinger-fixture-20260515",
+      "convention": "finite real Euclidean source-ledger convention; bridge-only; synthetic; no theorem input",
+      "value_kind": "synthetic-placeholder",
+      "bridge_only": true,
+      "comparator_only": false,
+      "synthetic": true,
+      "observed": false,
+      "no_theorem_input": true,
+      "native_promotion": false,
+      "native_input_claim": false,
+      "value": "synthetic Gate 537 value for bridge_only_no_theorem_input_tags; this row exists only to test schema parsing and firewall plumbing"
+    }
+  ],
+  "fixture": {
+    "test_function_domain": [
+      "f_plus_0",
+      "f_plus_1",
+      "theta_f_plus_0",
+      "theta_f_plus_1"
+    ],
+    "positive_time_support": [
+      0,
+      1
+    ],
+    "reflection_operator_theta_e": [
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ]
+    ],
+    "synthetic_schwinger_gram_matrix": [
+      [
+        3.0,
+        0.0,
+        1.5,
+        0.25
+      ],
+      [
+        0.0,
+        3.0,
+        0.25,
+        1.25
+      ],
+      [
+        1.5,
+        0.25,
+        3.0,
+        0.0
+      ],
+      [
+        0.25,
+        1.25,
+        0.0,
+        3.0
+      ]
+    ],
+    "euclidean_covariance_operator": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "positive_time_translation_operators": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0.5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0.75,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0.5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0.75
+        ]
+      ]
+    ],
+    "os_test_vectors": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        -0.5,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "dummy_hamiltonian_spectrum": [
+      0.0,
+      1.0,
+      2.0
+    ],
+    "wick_map_reference": "synthetic Wick map placeholder only; analytic continuation is not executed",
+    "i_epsilon_convention": "synthetic +i\u03b5 placeholder only; no pole prescription for physical propagators is derived",
+    "null_space_quotient_rule": "zero OS norm vectors are quotiented; sampled null set contains only the zero vector",
+    "reconstruction_map_certificate": "synthetic certificate only; no physical Hilbert space is reconstructed",
+    "os_quadratic_form_definition": "Q_OS(f)=<theta_E f,Kf>=(theta_E f)^T K f on positive-time support",
+    "reflection_positivity_certificate": "synthetic finite certificate only; not a proof for physical Schwinger functions",
+    "euclidean_covariance_certificate": "synthetic identity covariance certificate; not a physical Euclidean invariance proof"
+  }
+}

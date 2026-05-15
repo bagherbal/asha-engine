@@ -1,10 +1,30 @@
 # ASHA Final Result — Formula Ledger and Boundary Board
 
-**Status:** final theorem-board ledger after Gates 0–425.  
+**Status:** final theorem-board ledger after Gates 0–551.  
 **Purpose:** compact formula-first record of the current ASHA result, including native coefficients, bridge coefficients, quarantined inputs, and explicit physical firewalls.  
 **Scope:** this document is a scientific ledger, not a narrative paper. The manuscript lives in `docs/paper/final/`.
 
 ---
+
+## Master Equation Boundary Ledger
+
+The post-551 ASHA master equation is the law/history boundary object:
+
+```math
+S_{Universe} = \text{Tr}\left( f\left(\frac{D^2}{\Lambda^2}\right) \right) + \langle \Psi, D \Psi \rangle_{OS}
+```
+
+This equation is implemented in code as `pkg/asha.BuildMasterEquationLedger()` and registered in the app through `pkg/bridge/masterequationledger`. Its purpose is not to erase the environmental frontier, but to make it explicit.
+
+Native law-space rows include the trace, the Clifford/product Dirac structure, and the matter-spinor carrier. Bridge/environmental rows include the cutoff scale, cutoff function/moments, flavor entries inside the finite Dirac operator, physical Schwinger functions, Wick/$i\epsilon$ convention, OS positivity, Hilbert reconstruction, Hamiltonian spectrum, unitary dynamics, global causality, and the arrow of time.
+
+The required invariant is:
+
+```math
+\Delta_{native}=0
+```
+
+for every bridge or environmental term. Released evidence may inform bridge boards only; it may not mutate native ASHA law.
 
 ## 0. One-line closure
 

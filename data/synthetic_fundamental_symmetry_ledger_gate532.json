@@ -1,0 +1,67 @@
+{
+  "gate": 532,
+  "ledger_name": "synthetic_fundamental_symmetry_ledger_gate532",
+  "description": "Synthetic bridge-only fundamental-symmetry fixture for testing finite Krein-to-positive-matrix plumbing after Gate 531. This fixture is comparator-only and does not claim Wick rotation, OS reconstruction, positive energy, unitarity, global hyperbolicity, or a physical state space.",
+  "projector_reference": "gate530:synthetic_3plus1_projection_ledger_gate530:synthetic_external_3plus1",
+  "bridge_only": true,
+  "native_registry_write": false,
+  "synthetic_fixture": true,
+  "observed_hilbert_loaded": false,
+  "observed_wick_loaded": false,
+  "observed_boundary_loaded": false,
+  "source": "ASHA synthetic Gate 532 fixture",
+  "source_version": "20260515-gate532-synthetic-fundamental-symmetry-v1",
+  "convention": "Cℓ(1,7) Krein metric G=diag(+1,-1,-1,-1,-1,-1,-1,-1); Θ=G; Hilbert-form matrix H=GΘ; external projector inherited from Gate 530",
+  "rows": [
+    {
+      "name": "synthetic_theta_equals_krein_metric",
+      "krein_metric_matrix": [
+        [1,0,0,0,0,0,0,0],
+        [0,-1,0,0,0,0,0,0],
+        [0,0,-1,0,0,0,0,0],
+        [0,0,0,-1,0,0,0,0],
+        [0,0,0,0,-1,0,0,0],
+        [0,0,0,0,0,-1,0,0],
+        [0,0,0,0,0,0,-1,0],
+        [0,0,0,0,0,0,0,-1]
+      ],
+      "fundamental_symmetry_matrix": [
+        [1,0,0,0,0,0,0,0],
+        [0,-1,0,0,0,0,0,0],
+        [0,0,-1,0,0,0,0,0],
+        [0,0,0,-1,0,0,0,0],
+        [0,0,0,0,-1,0,0,0],
+        [0,0,0,0,0,-1,0,0],
+        [0,0,0,0,0,0,-1,0],
+        [0,0,0,0,0,0,0,-1]
+      ],
+      "time_reflection_operator": [
+        [-1,0,0,0,0,0,0,0],
+        [0,1,0,0,0,0,0,0],
+        [0,0,1,0,0,0,0,0],
+        [0,0,0,1,0,0,0,0],
+        [0,0,0,0,1,0,0,0],
+        [0,0,0,0,0,1,0,0],
+        [0,0,0,0,0,0,1,0],
+        [0,0,0,0,0,0,0,1]
+      ],
+      "wick_map_convention": "not_selected; matrix positivity fixture only",
+      "i_epsilon_prescription": "not_supplied; outside finite comparator",
+      "reflection_positivity_certificate": "not_supplied",
+      "positive_energy_certificate": "not_supplied",
+      "global_causal_boundary_data": "not_supplied",
+      "source": "ASHA synthetic Gate 532 fixture row",
+      "source_version": "20260515-gate532-row-v1",
+      "convention": "Θ=G synthetic fundamental symmetry; H=GΘ=I; bridge-only finite matrix comparator",
+      "uncertainty": "exact synthetic diagonal fixture; no observational or continuum claim",
+      "bridge_only": true,
+      "comparator_only": true,
+      "matrix_positivity_only": true,
+      "no_theorem_input": true,
+      "synthetic": true,
+      "observed": false,
+      "native_promotion": false,
+      "native_input_claim": false
+    }
+  ]
+}

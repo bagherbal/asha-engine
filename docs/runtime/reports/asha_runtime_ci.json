@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "runtime_version": "gate425-runtime-20260514",
-    "latest_gate": 425,
+    "runtime_version": "gate551-physical-correlation-evidence-board-closure-ledger-20260515",
+    "latest_gate": 551,
     "title": "ASHA final runtime board",
     "keywords": [
       "Clifford algebra",
@@ -206,7 +206,7 @@
     },
     {
       "name": "Family/flavor frontier",
-      "summary": "Native flavor remains 13-dimensional; quarantined K/X/Y axioms activate hierarchy, mixing, and CP capacity with 9 symbolic charged coefficients.",
+      "summary": "Gate 444 forces the primitive K_gen family axis and Generation-2 bare structural zero; native flavor values remain 13-dimensional, while K/X/Y mixing/CP coefficients stay sealed.",
       "quantities": [
         {
           "symbol": "dim M_charged^native",
@@ -218,9 +218,43 @@
         {
           "symbol": "K_gen",
           "text": "diag(-1,0,1)",
-          "formula": "K_gen = diag(-1,0,1)",
+          "formula": "primitive traceless integer-spaced three-level spectrum",
+          "status": "geometrically-forced-axiom",
+          "note": "Gate 444 forced family axis; not a Yukawa prediction"
+        },
+        {
+          "symbol": "Gen2 bare level",
+          "formula": "middle eigenvalue of K_gen",
+          "status": "geometrically-forced-axiom",
+          "note": "structural zero; physical mass requires bridge"
+        },
+        {
+          "symbol": "B_lift",
+          "text": "[[0,1,1],[1,0,1],[1,1,0]]",
+          "formula": "primitive endpoint-balanced closed triangle",
+          "status": "geometrically-forced-axiom",
+          "note": "Gate 445 forced support topology; amplitude sealed"
+        },
+        {
+          "symbol": "det(K_gen+εB_lift)",
+          "text": "2ε^3",
+          "formula": "balanced off-diagonal mass-lift determinant",
           "status": "quarantined-axiom",
-          "note": "hierarchy capacity only"
+          "note": "symbolic lift only; no muon/charm mass value"
+        },
+        {
+          "symbol": "Φ_cycle",
+          "text": "arg(z12 z23 conjugate(z13))",
+          "formula": "triangular bridge rephasing invariant",
+          "status": "quarantined-axiom",
+          "note": "Gate 446: signed/complex orientation not uniquely forced"
+        },
+        {
+          "symbol": "det(K_gen+εB_Φ)",
+          "text": "2 r^3 cos(Φ) ε^3",
+          "formula": "endpoint-balanced Hermitian cycle determinant",
+          "status": "quarantined-axiom",
+          "note": "phase continuum remains; CP value not predicted"
         },
         {
           "symbol": "ρ_β",
@@ -270,7 +304,435 @@
           "symbol": "dim C_KXY^charged",
           "value": 9,
           "formula": "3 charged sectors × 3 symbolic coefficients",
-          "status": "quarantined-axiom"
+          "status": "quarantined-axiom",
+          "note": "Gate 447: amplitude firewall formally closed"
+        },
+        {
+          "symbol": "Gate448 atlas delta",
+          "text": "K_gen/Gen2 zero/X support structural; Y/phase/coefficients quarantined",
+          "formula": "post-444 flavor atlas reconciliation",
+          "status": "bridge-required",
+          "note": "registry overlay only; no flavor observable predicted"
+        },
+        {
+          "symbol": "Gate449 manuscript delta",
+          "text": "docs/paper/POST444_MANUSCRIPT_DELTA.md",
+          "formula": "structural family-board export",
+          "status": "bridge-required",
+          "note": "publication-facing patch only; final DOCX/PDF not silently rewritten"
+        },
+        {
+          "symbol": "Gate450 texture-zero identity",
+          "text": "0 = sum_i lambda_i |U_{2i}|^2",
+          "formula": "M_22=0 spectral sum rule",
+          "status": "bridge-required",
+          "note": "exact symbolic identity; not a pairwise GST ratio"
+        },
+        {
+          "symbol": "Gate450 ratio verdict",
+          "text": "FAILED_ROUTE_RATIOS_REQUIRE_EXACT_AMPLITUDES",
+          "formula": "counterexamples: same mixing/different masses and same masses/different mixing",
+          "status": "quarantined-axiom",
+          "note": "mass-angle ratios require coefficient and phase selectors"
+        },
+        {
+          "symbol": "Gate451 edge selector verdict",
+          "text": "FAILED_ROUTE_NATIVE_GEOMETRY_PRESERVES_FULL_TRIANGLE",
+          "formula": "1-3 edge allowed as DeltaK=2 integer harmonic; det(K+epsilon X_NN)=0",
+          "status": "quarantined-axiom",
+          "note": "no native nearest-neighbor/GST branch selector"
+        },
+        {
+          "symbol": "Gate451 phase selector verdict",
+          "text": "FAILED_ROUTE_NO_NATIVE_PHASE_RAY_SELECTOR",
+          "formula": "multiple nonzero-lift phase rays survive",
+          "status": "quarantined-axiom",
+          "note": "c=0 is not natively selected; CP phase remains sealed"
+        },
+        {
+          "symbol": "Gate452 basis group",
+          "text": "centralizer_U(3)(K_gen)=U(1)^3",
+          "formula": "simple spectrum centralizer preserves edge magnitudes/support",
+          "status": "bridge-required",
+          "note": "native basis freedom cannot delete 1-3 edge"
+        },
+        {
+          "symbol": "Gate452 gauge-artifact verdict",
+          "text": "FAILED_ROUTE_NEAREST_NEIGHBOR_TEXTURE_NOT_GAUGE_EQUIVALENT",
+          "formula": "triangle invariants: edges=3, cycles=1, det lift=2, ||[K,X]||_F^2=12",
+          "status": "quarantined-axiom",
+          "note": "nearest-neighbor/GST texture requires non-native projector or general U(3) rotation that breaks K_gen address"
+        },
+        {
+          "symbol": "Gate453 empirical interface",
+          "text": "CONDITIONAL_SUPPORT_TEXTURE_ZERO_EMPIRICAL_INTERFACE_DEFINED",
+          "formula": "native ledger + labelled comparator imports + rejected promotion sieve",
+          "status": "bridge-required",
+          "note": "texture-zero residuals may be computed only as explicit empirical comparators"
+        },
+        {
+          "symbol": "Gate453 GST boundary",
+          "text": "FAILED_ROUTE_GST_FRITZSCH_RELATION_REQUIRES_EXPLICIT_EMPIRICAL_BRANCH_INPUT",
+          "formula": "GST residual allowed; native GST prediction forbidden",
+          "status": "quarantined-axiom",
+          "note": "coefficient ray, phase ray, masses, CKM/PMNS values remain non-native inputs"
+        },
+        {
+          "symbol": "Gate454 ray dimension",
+          "value": 2,
+          "formula": "three real coefficients modulo absolute scale",
+          "status": "bridge-required",
+          "note": "coefficient ray is observable only through labelled empirical comparators"
+        },
+        {
+          "symbol": "Gate454 spectrum-only rank",
+          "value": 1,
+          "formula": "I_spec=2 cos(3 phi)/(alpha^2+3)^(3/2)",
+          "status": "quarantined-axiom",
+          "note": "rank one leaves one continuous ray coordinate free"
+        },
+        {
+          "symbol": "Gate454 local ray protocol",
+          "value": 2,
+          "formula": "{I_spec, I_K} with I_K=alpha/sqrt(alpha^2+3)",
+          "status": "bridge-required",
+          "note": "two labelled scalars identify the ray locally; CP orientation requires explicit branch tag"
+        },
+        {
+          "symbol": "Gate455 empirical adapter",
+          "text": "dry-run bridge firewall",
+          "formula": "accept labelled symbolic comparators; reject native promotion",
+          "status": "bridge-required",
+          "note": "no observed values imported by default"
+        },
+        {
+          "symbol": "Gate455 rejected routes",
+          "text": "spectrum-only native coefficient, GST-native, CKM/PMNS-native, missing metadata, observed dry-run import",
+          "formula": "fail-closed adapter sieve",
+          "status": "quarantined-axiom",
+          "note": "adapter cannot turn empirical comparators into native law"
+        },
+        {
+          "symbol": "Gate456 symbolic ray inverse",
+          "text": "alpha=sqrt(3) I_K/sqrt(1-I_K^2)",
+          "formula": "cos(3phi)=(3sqrt(3)/2)I_spec/(1-I_K^2)^(3/2)",
+          "status": "bridge-required",
+          "note": "exact bridge inverse from labelled comparators; no observed values imported"
+        },
+        {
+          "symbol": "Gate456 branch caustics",
+          "value": 6,
+          "formula": "phi=(± arccos(C)+2πn)/3; caustic sin(3phi)=0",
+          "status": "quarantined-axiom",
+          "note": "generic inverse has six phase branches; branch tags are required for orientation"
+        },
+        {
+          "symbol": "Gate457 provenance contract",
+          "value": 11,
+          "formula": "sector+observable+value_kind+scale+scheme+source+version+uncertainty+dimensionless+bridge_only+branch_tag",
+          "status": "bridge-required",
+          "note": "comparator imports are schema-locked before evaluation"
+        },
+        {
+          "symbol": "Gate457 import firewall",
+          "text": "explicit bridge import only; native promotion rejected",
+          "formula": "fail-closed provenance sieve",
+          "status": "quarantined-axiom",
+          "note": "untagged observed values, dimensionful masses, and native coefficient claims are rejected"
+        },
+        {
+          "symbol": "Gate458 comparator evaluation harness",
+          "text": "redacted/synthetic bridge-only evaluator",
+          "formula": "alpha=sqrt(3)I_K/sqrt(1-I_K^2); cos(3phi)=(3sqrt(3)/2)I_spec/(1-I_K^2)^(3/2)",
+          "status": "bridge-required",
+          "note": "only synthetic records are evaluated; redacted slots remain unevaluated and observed numeric values are rejected"
+        },
+        {
+          "symbol": "Gate458 domain and caustic guards",
+          "text": "|I_K|\u003c1, |cos(3phi)|\u003c=1, sin(3phi)!=0 for interior orientation",
+          "formula": "fail closed at projective boundary, phase-cosine boundary, and caustic",
+          "status": "quarantined-axiom",
+          "note": "caustics and branch ambiguity are not promoted to native phase selection"
+        },
+        {
+          "symbol": "Gate459 branch tag ledger",
+          "text": "{sigma_CP,n_C3} bridge tag",
+          "formula": "phi=(sigma_CP arccos(C)+2*pi*n_C3)/3",
+          "status": "bridge-required",
+          "note": "cosine-only gives 6 branches; CP sign only gives 3; complete bridge tag gives 1"
+        },
+        {
+          "symbol": "Gate459 native CP/C3 selector verdict",
+          "text": "FAILED_ROUTE_CP_SIGN_NOT_NATIVE; FAILED_ROUTE_C3_SHEET_NOT_NATIVE",
+          "formula": "no native selector for sign(sin(3phi)) or n_C3",
+          "status": "quarantined-axiom",
+          "note": "CKM/PMNS phases are rejected as hidden branch selectors"
+        },
+        {
+          "symbol": "Gate460 branch-resolved residual harness",
+          "text": "synthetic/null bridge-only evaluator",
+          "formula": "R22=0; RK=I_K-alpha/sqrt(alpha^2+3); Rspec=I_spec-2cos(3phi)/(alpha^2+3)^(3/2)",
+          "status": "bridge-required",
+          "note": "complete {sigma_CP,n_C3} tags allow residual diagnostics but do not import observed data"
+        },
+        {
+          "symbol": "Gate460 residual firewall",
+          "text": "FAILED_ROUTE_RESIDUALS_ARE_COMPARATOR_DIAGNOSTICS_NOT_NATIVE_OBSERVABLES",
+          "formula": "residual outputs are not masses, Yukawas, CKM/PMNS phases, or GST relations",
+          "status": "quarantined-axiom",
+          "note": "selected branch and coefficient ray remain bridge metadata"
+        },
+        {
+          "symbol": "Gate461 sector multiplex",
+          "text": "{u,d,e} bridge-only comparator ledger",
+          "formula": "sector row = (sector, I_K, I_spec, sigma_CP, n_C3, provenance, bridge_only)",
+          "status": "bridge-required",
+          "note": "each charged sector carries its own labelled bridge ray unless a bridge-only universality assumption is explicitly declared"
+        },
+        {
+          "symbol": "Gate461 universality verdict",
+          "text": "FAILED_ROUTE_CROSS_SECTOR_RAY_UNIVERSALITY_NOT_NATIVE",
+          "formula": "alpha_u,alpha_d,alpha_e and phi_u,phi_d,phi_e are not natively identified",
+          "status": "quarantined-axiom",
+          "note": "shared rays may be stress-tested as bridge assumptions but cannot reduce the 9 charged K/X/Y coefficients"
+        },
+        {
+          "symbol": "Gate462 sector-difference interface",
+          "text": "u-d relative ray is bridge-only",
+          "formula": "Delta_alpha_ud=alpha_d-alpha_u; Delta_phi_ud=wrap_pi(phi_d-phi_u)",
+          "status": "bridge-required",
+          "note": "relative ray diagnostics may feed a future CKM residual adapter but are not CKM entries"
+        },
+        {
+          "symbol": "Gate462 CKM/PMNS firewall",
+          "text": "FAILED_ROUTE_CKM_PMNS_NATIVE_PREDICTION_REJECTED",
+          "formula": "V_CKM and U_PMNS require explicit bridge comparators, provenance, and eigenbasis conventions",
+          "status": "quarantined-axiom",
+          "note": "observed CKM/PMNS imports and native mixing predictions are rejected in the native audit"
+        },
+        {
+          "symbol": "Gate463 eigenbasis convention ledger",
+          "text": "u-d bridge eigenbasis convention readiness",
+          "formula": "raw diagonalizer gauge=(U(1)^3 x S3)_u x (U(1)^3 x S3)_d",
+          "status": "bridge-required",
+          "note": "ordering, phase gauge, normalization, degeneracy policy, branch tag, and provenance are required before any CKM residual adapter"
+        },
+        {
+          "symbol": "Gate463 mixing-matrix gauge firewall",
+          "text": "FAILED_ROUTE_RAW_DIAGONALIZERS_HAVE_PHASE_GAUGE",
+          "formula": "pair phase dimension=6; pair permutation sheets=36; K_gen basis rotations rejected",
+          "status": "quarantined-axiom",
+          "note": "the convention ledger exports readiness only; CKM/PMNS entries and eigenbasis native-promotion are rejected"
+        },
+        {
+          "symbol": "Gate464 CKM-null residual adapter",
+          "text": "synthetic bridge-only residual",
+          "formula": "d_ud=sqrt((alpha_d-alpha_u)^2+4 sin^2((phi_d-phi_u)/2))",
+          "status": "bridge-required",
+          "note": "computes a convention-fixed relative-ray diagnostic only; not V_CKM and not a CKM matrix element"
+        },
+        {
+          "symbol": "Gate464 CKM residual firewall",
+          "text": "FAILED_ROUTE_CKM_MATRIX_EXPORT_REJECTED",
+          "formula": "observed CKM/PMNS import, native prediction, GST selector, raw diagonalizer, and K_gen rotation fail closed",
+          "status": "quarantined-axiom",
+          "note": "null residuals remain bridge diagnostics and cannot become native flavor observables"
+        },
+        {
+          "symbol": "Gate465 empirical import airlock",
+          "text": "CONDITIONAL_SUPPORT_EMPIRICAL_IMPORT_SWITCH_VALIDATED",
+          "formula": "empirical_import=true; required={source,scale,scheme,uncertainty}; target=quark-sector-comparator-ledger",
+          "status": "bridge-required",
+          "note": "quark-mass and CKM rows may enter only as quarantined bridge comparator records"
+        },
+        {
+          "symbol": "Gate465 native firewall",
+          "text": "FAILED_ROUTE_EMPIRICAL_DATA_NATIVE_PROMOTION_REJECTED",
+          "formula": "native_prediction/native_law/native-registry writes fail closed",
+          "status": "quarantined-axiom",
+          "note": "opened airlock does not alter K_gen, X_triangle, Y_phase, CKM/PMNS predictions, or the 9 charged coefficient seals"
+        },
+        {
+          "symbol": "Gate466 observed adapter",
+          "text": "FAILED_ROUTE_CKM_GEOMETRIC_ALIGNMENT_NOT_COMPUTABLE_FROM_MASS_SPECTRA_ONLY",
+          "formula": "PDG-style rows pass empirical_import=true but do not define {alpha_u,phi_u,alpha_d,phi_d}",
+          "status": "quarantined-axiom",
+          "note": "common-scale spectrum, I_K comparator, and branch tags are required before d_ud exists"
+        },
+        {
+          "symbol": "Gate466 d_ud",
+          "text": "undefined",
+          "formula": "d_ud=sqrt((alpha_d-alpha_u)^2+4 sin^2((phi_d-phi_u)/2))",
+          "status": "quarantined-axiom",
+          "note": "observed |V_us|≈0.225 is imported only as bridge target; comparison not computed"
+        },
+        {
+          "symbol": "Gate470 explicit data-file d_ud",
+          "text": "undefined",
+          "formula": "requires explicit I_spec, I_K, sigma_CP, n_C3 in data/pdg_observed_ledger.json",
+          "status": "quarantined-axiom",
+          "note": "checked-in PDG-style ledger lacks ASHA I_K/branch tags; Cabibbo residual not computed"
+        },
+        {
+          "symbol": "Gate471 rank-complete d_ud",
+          "text": "0.225000000000",
+          "formula": "explicit external I_spec/I_K/branch tags in data/pdg_rank_complete_ledger.json",
+          "status": "bridge-required",
+          "note": "bridge-only acceptance result; I_K and branch tags are supplied external comparators, not PDG-published invariants or native ASHA laws"
+        },
+        {
+          "symbol": "Gate471 Cabibbo residual",
+          "text": "0",
+          "formula": "|d_ud-|V_us|| using rounded prompt |V_us|=0.225",
+          "status": "bridge-required",
+          "note": "alignment of the supplied ledger, not an independent native CKM prediction"
+        },
+        {
+          "symbol": "Gate473 mass-to-equipartition verdict",
+          "text": "FAILED_ROUTE_PROJECT_ABSOLUTE_GEOMETRIC_UNIFICATION_NOT_ACHIEVED",
+          "formula": "raw masses -\u003e I_spec only; I_K and branch tags not derived",
+          "status": "quarantined-axiom",
+          "note": "extreme hierarchy does not force alpha=1; the Gate471 alignment remains an external rank-complete bridge-ledger fact"
+        },
+        {
+          "symbol": "Gate473 d_ud",
+          "text": "undefined",
+          "formula": "requires independently supplied I_K and {sigma_CP,n_C3}; raw masses cannot derive them",
+          "status": "quarantined-axiom",
+          "note": "no Cabibbo residual is computed from raw masses"
+        },
+        {
+          "symbol": "Gate474 electroweak I_K source",
+          "text": "FAILED_ROUTE_NATIVE_ELECTROWEAK_GEOMETRY_DOES_NOT_SELECT_I_K",
+          "formula": "Higgs VEV and W/Z couplings are generation-blind; PMNS/lepton data is bridge-only",
+          "status": "quarantined-axiom",
+          "note": "no native I_K=0.5 selector found in electroweak universals"
+        },
+        {
+          "symbol": "Gate474 frontier",
+          "text": "CONDITIONAL_SUPPORT_I_K_SOURCE_FRONTIER_DEFINED",
+          "formula": "required independent comparator={I_spec,I_K,sigma_CP,n_C3,metadata,bridge_only}",
+          "status": "bridge-required",
+          "note": "a lepton/PMNS-facing comparator may be tested only through the empirical airlock"
+        },
+        {
+          "symbol": "Gate475 lepton rank-complete preflight",
+          "text": "CONDITIONAL_SUPPORT_LEPTON_RANK_COMPLETE_PREFLIGHT_VALIDATED",
+          "formula": "required={e,nu,I_spec,I_K,sigma_CP,n_C3,ordering,absolute_nu_scale,uncertainty,bridge_only}",
+          "status": "bridge-required",
+          "note": "defines PMNS/lepton bridge schema only; no observed lepton data or PMNS residual is evaluated"
+        },
+        {
+          "symbol": "Gate475 PMNS firewall",
+          "text": "FAILED_ROUTE_PMNS_USED_AS_LEPTON_RAY_INPUT_REJECTED",
+          "formula": "PMNS may be residual target only, not alpha/phi/I_K coordinate input",
+          "status": "quarantined-axiom",
+          "note": "neutrino ordering, absolute scale, branch tags, and native-promotion all fail closed when missing or misrouted"
+        },
+        {
+          "symbol": "Gate476 lepton PMNS-null socket",
+          "text": "CONDITIONAL_SUPPORT_PMNS_NULL_RESIDUAL_FIREWALL_VALIDATED",
+          "formula": "d_eν=sqrt((αν-αe)^2+4sin^2((φν-φe)/2))",
+          "status": "bridge-required",
+          "note": "synthetic bridge-only e/nu residual; structurally identical to quark socket; not U_PMNS"
+        },
+        {
+          "symbol": "Gate476 synthetic d_eν",
+          "value": 0.6239621544458,
+          "formula": "synthetic rank-complete e/nu ledger",
+          "status": "bridge-required",
+          "note": "compared only to synthetic θ23-like target; no observed PMNS value imported"
+        },
+        {
+          "symbol": "Gate476 synthetic PMNS residual",
+          "value": 0.0039621544458,
+          "formula": "|d_eν - synthetic target|",
+          "status": "bridge-required",
+          "note": "diagnostic only; native-promotion and PMNS matrix export fail closed"
+        },
+        {
+          "symbol": "Gate477 lepton empirical import airlock",
+          "text": "CONDITIONAL_SUPPORT_LEPTON_EMPIRICAL_IMPORT_SWITCH_VALIDATED",
+          "formula": "empirical_import=true; required={source,scale,scheme,uncertainty,neutrino policies}; target=lepton-sector-comparator-ledger",
+          "status": "bridge-required",
+          "note": "charged-lepton, neutrino, and PMNS residual-target rows may enter only as quarantined bridge comparator records"
+        },
+        {
+          "symbol": "Gate477 PMNS firewall",
+          "text": "FAILED_ROUTE_PMNS_USED_AS_EMPIRICAL_LEPTON_RAY_INPUT_REJECTED",
+          "formula": "PMNS is residual target only; not alpha/phi/I_K source",
+          "status": "quarantined-axiom",
+          "note": "native-promotion, theorem-input, native-registry write, PMNS matrix/native prediction all fail closed"
+        },
+        {
+          "symbol": "Gate478 observed lepton data-file adapter",
+          "text": "FAILED_ROUTE_OBSERVED_LEPTON_DENU_NOT_COMPUTABLE_FROM_FILE",
+          "formula": "requires explicit I_spec, I_K, sigma_CP, n_C3 in data/lepton_observed_ledger.json",
+          "status": "quarantined-axiom",
+          "note": "checked-in lepton/PMNS-style ledger lacks ASHA I_K/branch tags; d_eν and PMNS residual are not computed"
+        },
+        {
+          "symbol": "Gate478 lepton socket equivalence",
+          "text": "quark/lepton cylinder metric identical",
+          "formula": "d_eν=sqrt((αν-αe)^2+4sin²((φν-φe)/2))",
+          "status": "bridge-required",
+          "note": "observed rows are quarantined; metric socket is structural but coordinates remain bridge-supplied"
+        },
+        {
+          "symbol": "Gate480 null bridge baseline",
+          "value": 0.5,
+          "formula": "q=a²-r²=0 ⇒ α_vac=1 ⇒ I_K=α/sqrt(α²+3)=1/2",
+          "status": "bridge-required",
+          "note": "conditional bare-vacuum baseline; not a physical sector coordinate or CKM/PMNS prediction"
+        },
+        {
+          "symbol": "Gate484 C3 tilted-slice verdict",
+          "text": "FAILED_ROUTE_TILTED_SLICE_REPARAMETERIZES_FLAVOR_MODULI",
+          "formula": "sqrt(m_i)=S_s+R_s cos(theta_i-psi_s), theta_i=theta_0+2πi/3",
+          "status": "quarantined-axiom",
+          "note": "charged leptons show a Koide shadow, but no native universal tilt ratio or cross-sector tilt vector is forced"
+        },
+        {
+          "symbol": "Gate485 null-C3 Koide baseline",
+          "text": "CONDITIONAL_SUPPORT_NULL_BOUNDARY_FORCES_R_OVER_S_SQRT2",
+          "formula": "3S²-(3/2)R²=0 ⇒ R/S=sqrt(2) ⇒ Q=2/3",
+          "status": "bridge-required",
+          "note": "native baseline shape theorem; does not derive masses, ψ phase, quark dressing, CKM, or PMNS"
+        },
+        {
+          "symbol": "Gate486 CKM null mirror audit",
+          "text": "FAILED_ROUTE_NATIVE_CKM_4_TO_2_THEOREM_NOT_PROVEN",
+          "formula": "shared null cone ⇒ bridge chart (Δα,Δφ), not invariant CKM quotient theorem",
+          "status": "quarantined-axiom",
+          "note": "requires two native rephasing-invariant polynomial constraints and up/down diagonalization operators; none derived"
+        },
+        {
+          "symbol": "Gate487 CKM commutator sieve",
+          "text": "FAILED_ROUTE_SHARED_NULL_CONE_DOES_NOT_SUPPRESS_UP_DOWN_COMMUTATOR_RANK",
+          "formula": "same null-C3 spectrum ⇒ commutator ranks {0,2,3} under bridge eigenbasis choices",
+          "status": "quarantined-axiom",
+          "note": "no Jarlskog polynomial, no two invariant constraints, no native CKM 4→2 write"
+        },
+        {
+          "symbol": "Gate467 common-scale ledger",
+          "text": "CONDITIONAL_SUPPORT_COMMON_SCALE_COMPARATOR_DESIGN_BRIDGE_ONLY_VALIDATED",
+          "formula": "required={u,d common-scale spectra, I_spec, I_K, sigma_CP, n_C3, provenance, uncertainty}",
+          "status": "bridge-required",
+          "note": "defines the rank-complete bridge data product missing from Gate466; still no numerical d_ud run"
+        },
+        {
+          "symbol": "Gate467 Cabibbo firewall",
+          "text": "FAILED_ROUTE_CABIBBO_USED_AS_RAY_INPUT_REJECTED",
+          "formula": "Cabibbo/CKM may be a residual target only, not an alpha/phi coordinate input",
+          "status": "quarantined-axiom",
+          "note": "mass-only, mixed-scale, missing-I_K, missing-branch, missing-uncertainty, and native-promotion ledgers fail closed"
+        },
+        {
+          "symbol": "Gate468 synthetic d_ud dry run",
+          "text": "CONDITIONAL_SUPPORT_COMMON_SCALE_SYNTHETIC_INVERSION_VALIDATED",
+          "formula": "d_ud=sqrt((alpha_d-alpha_u)^2+4 sin^2((phi_d-phi_u)/2))",
+          "status": "bridge-required",
+          "note": "computed only on synthetic rank-complete ledgers; not V_us, not CKM, not native"
         }
       ],
       "boundaries": [
@@ -294,6 +756,426 @@
           "detail": "dim M_charged^native=13"
         },
         {
+          "name": "K_gen primitive structural-zero axis",
+          "passed": true,
+          "detail": "Gate 444: primitive spectrum {-1,0,1}; middle bare level zero"
+        },
+        {
+          "name": "Generation-2 mass-lift bridge topology",
+          "passed": true,
+          "detail": "Gate 445: primitive closed triangle support forced; amplitude and physical mass sealed"
+        },
+        {
+          "name": "Generation-2 phase orientation firewall",
+          "passed": true,
+          "detail": "Gate 446: signed cycle and complex CP phase remain quarantined"
+        },
+        {
+          "name": "Sector coefficient amplitude firewall",
+          "passed": true,
+          "detail": "Gate 447: multiple symbolic coefficient ledgers survive; 9 K/X/Y amplitudes remain quarantined"
+        },
+        {
+          "name": "Post-444 flavor atlas reconciliation",
+          "passed": true,
+          "detail": "Gate 448: atlas updated structurally; value-bearing flavor firewall preserved"
+        },
+        {
+          "name": "Post-444 manuscript delta export",
+          "passed": true,
+          "detail": "Gate 449: structural family board exported for manuscript revision; no final binary rewrite"
+        },
+        {
+          "name": "Gate450 texture-zero ratio sieve",
+          "passed": true,
+          "detail": "Gate 450: exact M22=0 sum rule derived; GST/Fritzsch mass-angle ratio not forced without coefficient/phase selectors"
+        },
+        {
+          "name": "Gate451 special-branch selector audit",
+          "passed": true,
+          "detail": "Gate 451: no native 1-3 suppression and no native phase ray selector; GST/Fritzsch branch remains quarantined"
+        },
+        {
+          "name": "Gate452 basis-invariance gauge-artifact audit",
+          "passed": true,
+          "detail": "Gate 452: K-preserving basis changes cannot delete the 1-3 edge; nearest-neighbor texture is not a native gauge artifact"
+        },
+        {
+          "name": "Gate453 texture-zero empirical interface",
+          "passed": true,
+          "detail": "Gate 453: native texture-zero ledgers and labelled empirical comparators are allowed; silent observable promotion is rejected"
+        },
+        {
+          "name": "Gate454 coefficient-ray observability rank",
+          "passed": true,
+          "detail": "Gate 454: spectrum-only rank is one; two labelled comparator scalars give local ray observability; CP orientation needs an explicit branch tag"
+        },
+        {
+          "name": "Gate455 empirical texture adapter firewall",
+          "passed": true,
+          "detail": "Gate 455: dry-run adapter accepts labelled symbolic bridge comparators and rejects native promotion, missing metadata, and observed-value import by default"
+        },
+        {
+          "name": "Gate456 symbolic coefficient-ray inverse",
+          "passed": true,
+          "detail": "Gate 456: exact symbolic inverse map derived; generic six-branch phase ambiguity and caustics remain bridge-labelled and fail closed"
+        },
+        {
+          "name": "Gate457 empirical comparator provenance contract",
+          "passed": true,
+          "detail": "Gate 457: comparator imports require sector/scale/scheme/source/uncertainty/dimensionless bridge-only metadata before evaluation"
+        },
+        {
+          "name": "Gate458 comparator evaluation harness",
+          "passed": true,
+          "detail": "Gate 458: redacted/synthetic comparator evaluator applies the Gate456 inverse only in bridge mode; observed numeric values, domain failures, caustics, and native promotion fail closed"
+        },
+        {
+          "name": "Gate459 oriented branch tag ledger",
+          "passed": true,
+          "detail": "Gate 459: cos(3phi) gives six branches, CP sign gives three sheets, and {sigma_CP,n_C3} selects one bridge-only phase branch; no native CP/C3 selector is promoted"
+        },
+        {
+          "name": "Gate460 branch-resolved residual harness",
+          "passed": true,
+          "detail": "Gate 460: complete branch tags allow synthetic/null residual diagnostics only; observed data, native promotion, caustics, and incomplete tags fail closed"
+        },
+        {
+          "name": "Gate461 three-sector comparator multiplex",
+          "passed": true,
+          "detail": "Gate 461: u/d/e bridge rays are sector-indexed; labelled universality is bridge-only and native cross-sector ray sharing is rejected"
+        },
+        {
+          "name": "Gate462 sector-difference CKM interface firewall",
+          "passed": true,
+          "detail": "Gate 462: u-d relative-ray diagnostics are bridge-only; CKM/PMNS entries require explicit observed comparators and eigenbasis conventions and are not native predictions"
+        },
+        {
+          "name": "Gate463 eigenbasis convention ledger",
+          "passed": true,
+          "detail": "Gate 463: raw sector diagonalizers carry phase/permutation gauge; only a complete bridge-only u-d convention ledger can feed a later CKM residual adapter"
+        },
+        {
+          "name": "Gate464 CKM-null residual adapter",
+          "passed": true,
+          "detail": "Gate 464: convention-fixed u-d residual diagnostics may run only in synthetic bridge mode; V_CKM, CKM entries, observed imports, GST selectors, and native-promotion fail closed"
+        },
+        {
+          "name": "Gate465 empirical import switch",
+          "passed": true,
+          "detail": "Gate 465: empirical_import=true may admit metadated quark/CKM rows only into the quarantined comparator ledger; native-promotion and native-registry writes fail closed"
+        },
+        {
+          "name": "Gate466 observed comparator adapter",
+          "passed": true,
+          "detail": "Gate 466: observed quark/CKM rows pass the airlock, but mass spectra alone do not define ASHA cylinder coordinates; d_ud and Cabibbo comparison remain undefined and non-native"
+        },
+        {
+          "name": "Gate467 common-scale comparator ledger",
+          "passed": true,
+          "detail": "Gate 467: defines the bridge-only rank-complete common-scale u/d ledger required before d_ud may be evaluated; Cabibbo-as-coordinate and native-promotion fail closed"
+        },
+        {
+          "name": "Gate468 synthetic inversion harness",
+          "passed": true,
+          "detail": "Gate 468: rank-complete synthetic u/d ledgers invert to bridge-only rays and a d_ud interval; observed data, Cabibbo-as-coordinate, CKM matrix export, and native-promotion fail closed"
+        },
+        {
+          "name": "Gate469 observed comparator preflight",
+          "passed": true,
+          "detail": "Gate 469: observed common-scale comparator ledgers pass only as bridge-only preflight records; redacted or incomplete values do not compute d_ud, and Cabibbo/native-promotion fail closed"
+        },
+        {
+          "name": "Gate470 observed numerical data-file adapter",
+          "passed": true,
+          "detail": "Gate 470: explicit pdg_observed_ledger.json loads through the airlock, but checked-in PDG-style rows lack ASHA I_K and branch tags, so d_ud and Cabibbo residual remain undefined and non-native"
+        },
+        {
+          "name": "Gate471 rank-complete external ledger adapter",
+          "passed": true,
+          "detail": "Gate 471: explicit rank-complete external I_spec/I_K/branch-tag ledger computes d_ud and a Cabibbo residual as bridge-only diagnostics; supplied I_K/branch tags are not native or PDG-published invariants"
+        },
+        {
+          "name": "Gate473 mass-to-equipartition inversion audit",
+          "passed": true,
+          "detail": "Gate 473: raw quark masses confirm extreme hierarchy but do not force alpha=1 or derive I_K=0.5; d_ud and Cabibbo residual stay undefined without independent rank-complete bridge comparators"
+        },
+        {
+          "name": "Gate474 electroweak I_K source audit",
+          "passed": true,
+          "detail": "Gate 474: Higgs VEV and electroweak gauge couplings are generation-blind, while PMNS/lepton data remains bridge-only; no native I_K selector is found"
+        },
+        {
+          "name": "Gate475 lepton rank-complete preflight",
+          "passed": true,
+          "detail": "Gate 475: PMNS/lepton data may enter only as a rank-complete e/nu bridge preflight with I_spec, I_K, branch tags, neutrino ordering and absolute-scale policy; no PMNS residual or native prediction is computed"
+        },
+        {
+          "name": "Gate476 lepton PMNS-null residual socket",
+          "passed": true,
+          "detail": "Gate 476: synthetic rank-complete e/nu bridge rays compute d_eν with the same cylinder metric as d_ud; observed PMNS import, PMNS-as-ray, matrix export, and native-promotion fail closed"
+        },
+        {
+          "name": "Gate477 lepton empirical import switch",
+          "passed": true,
+          "detail": "Gate 477: empirical_import=true may admit metadated charged-lepton, neutrino, and PMNS residual-target rows only into the quarantined lepton comparator ledger; PMNS-as-ray, native-promotion, theorem-input, and native-registry writes fail closed"
+        },
+        {
+          "name": "Gate478 observed lepton comparator adapter",
+          "passed": true,
+          "detail": "Gate 478: explicit lepton_observed_ledger.json loads through the lepton airlock, but observed lepton/PMNS-style rows lack ASHA I_K and branch tags, so d_eν and PMNS residual remain undefined and non-native"
+        },
+        {
+          "name": "Gate480 algebraic null-cone I_K baseline",
+          "passed": true,
+          "detail": "Gate 480: declared Cℓ(1,7) null bridge q=a²-r²=0 forces α_vac=1 and I_K=1/2 as a bare vacuum baseline; physical sector coordinates, d_ud, d_eν, CKM, and PMNS remain non-native and unresolved"
+        },
+        {
+          "name": "Gate481 null-baseline perturbation transport audit",
+          "passed": true,
+          "detail": "Gate 481: I_K,vac=1/2 is accepted as a common null-vacuum baseline, but common baseline terms cancel from relative distances; only bridge-only sector perturbations remain, so physical d_ud, d_eν, CKM, and PMNS remain unresolved"
+        },
+        {
+          "name": "Gate482 null-baseline sector deformation source search",
+          "passed": true,
+          "detail": "Gate 482: existing native finite orientation, chirality, Higgs-edge, and electroweak gauge data do not source sector perturbations; a bridge-only perturbation-source ledger is preserved, while CKM/PMNS-as-source and native promotion fail closed"
+        },
+        {
+          "name": "Gate483 finite algebraic deformation operator search",
+          "passed": true,
+          "detail": "Gate 483: native color/winding topology separates quarks from leptons but is generation-blind and lacks a native map to delta_alpha/delta_phi; the topological perturbation slot remains bridge-only"
+        },
+        {
+          "name": "Gate484 vacuum tilt vector C3 elliptic slice audit",
+          "passed": true,
+          "detail": "Gate 484: C3 tilted-slice coordinates exactly represent square-root mass fingerprints and reveal a charged-lepton Koide shadow, but with independent S/R/psi per sector the construction is a reparametrization, not a native reduction of flavor moduli"
+        },
+        {
+          "name": "Gate485 Koide constraint provenance topological baseline",
+          "passed": true,
+          "detail": "Gate 485: C3 shadow orthogonality plus the Cℓ(1,7) null boundary forces R/S=sqrt(2) and Q=2/3 for a bare colorless baseline, collapsing one shape coordinate while preserving the mass, phase, quark-dressing, CKM/PMNS, and 13-moduli firewalls"
+        },
+        {
+          "name": "Gate486 universal null-mirror CKM compression audit",
+          "passed": true,
+          "detail": "Gate 486: shared null-C3 geometry permits a bridge-only (DeltaAlpha,DeltaPhi) null-mirror socket, but the native CKM 4-\u003e2 theorem fails because no up/down diagonalization operators or two rephasing-invariant polynomial constraints are derived"
+        },
+        {
+          "name": "Gate487 CKM rephasing-invariant polynomial constraint search",
+          "passed": true,
+          "detail": "Gate 487: same-null-C3 synthetic operators can have commutator ranks 0, 2, or 3 depending on bridge eigenbasis choice; the null spectrum does not derive Jarlskog or two CKM invariant polynomial constraints"
+        },
+        {
+          "name": "Gate488 native up/down operator source search",
+          "passed": true,
+          "detail": "Gate 488: native electroweak/Higgs data name up/down slots and K_gen/null-C3 give universal family structure, but no native source couples them into sector-specific family operators; CKM orientation remains quarantined behind the Yukawa airlock"
+        },
+        {
+          "name": "Gate489 Yukawa selector airlock boundary decision",
+          "passed": true,
+          "detail": "Gate 489: spectral-action, first-order, Higgs-edge, K_gen, and gauge-Hessian structures define admissible Yukawa sockets but do not select complex 3x3 up/down matrices or CKM/Jarlskog invariants; CKM orientation is formally environmental behind the airlock"
+        },
+        {
+          "name": "Gate490 topological charge anomaly cancellation ledger",
+          "passed": true,
+          "detail": "Gate 490: the one-generation discrete chiral representation ledger cancels all local/mixed gauge anomalies and clears the global SU(2) doublet parity test, while remaining independent of Yukawa texture, CKM/PMNS, masses, and Jarlskog data"
+        },
+        {
+          "name": "Gate491 scalar-edge stability and Higgs one-form positivity audit",
+          "passed": true,
+          "detail": "Gate 491: finite one-form edge support and Hilbert-Schmidt scalar kinetic trace positivity block ghost kinetic routes, while numerical Z_H, full Hessian, vacuum stability, Higgs quartic/mass, covariant derivative, and Goldstone gauge-eating remain unpromoted"
+        },
+        {
+          "name": "Gate492 scalar covariant derivative and Goldstone intertwiner audit",
+          "passed": true,
+          "detail": "Gate 492: an abstract Dphi template gives a rank-3 broken-image Goldstone diagnostic and photon-null direction, but native Dphi, canonical intertwiner, scalar SU2 action, vacuum orientation, kinetic metric, gauge Hessian/couplings, W/Z masses, and weak angle remain unpromoted"
+        },
+        {
+          "name": "Gate493 full electroweak curvature action and gauge Hessian selection audit",
+          "passed": true,
+          "detail": "Gate 493: the full {T1,T2,Z,Q} electroweak carrier closes and a positive abelian-completed quadratic family exists with diag(1,1,4) reachable at kappa_U1=6, but no finite second variation selects the abelian coefficient, gauge Hessian, weak angle, W/Z masses, or Higgs VEV"
+        },
+        {
+          "name": "Gate494 abelian U1 completion coefficient selection audit",
+          "passed": true,
+          "detail": "Gate 494: k_Y=5/3 and sin²=3/8 boundary diagnostics are confirmed, and kappa_U1=6 remains the whitening candidate, but trace normalization, count resonance, and representation metrics do not select the abelian gauge Hessian"
+        },
+        {
+          "name": "Gate495 finite electroweak action second variation source audit",
+          "passed": true,
+          "detail": "Gate 495: the legacy canonical finite-action candidate computes a dimensionless second variation with diag(1,1,4), kappa_U1=6, and a positive rank-four Hessian, but native promotion is blocked until Dphi, scalar I4 metric, vacuum orientation, and scalar SU2 action provenance close"
+        },
+        {
+          "name": "Gate496 scalar kinetic metric provenance and vacuum orientation closure audit",
+          "passed": true,
+          "detail": "Gate 496: Hilbert-Schmidt trace supplies a ghost-free scalar metric class and the finite response selects the lower vacuum plane, but active I4 normalization, residual S1 quotient, exact vacuum vector, full scalar SU2, Dphi, kappa promotion, and W/Z masses remain blocked"
+        },
+        {
+          "name": "Gate497 vacuum gauge-orbit quotient and unitary-gauge representative audit",
+          "passed": true,
+          "detail": "Gate 497: the residual lower-pair S1 is a bridge broken-gauge orbit direction, Q_em stabilizes the vacuum, and the rank-three broken orbit leaves one radial quotient mode, but native scalar SU2/Dphi/provenance and W/Z promotion remain blocked"
+        },
+        {
+          "name": "Gate498 scalar SU2 complex-structure and gauge-orbit provenance audit",
+          "passed": true,
+          "detail": "Gate 498: a compatible complex doublet and abstract SU2 socket exist, and the Gate497 Goldstone quotient remains coherent, but the anisotropic scalar response selects only pair U1/T3, not full native SU2, Dphi, kappa, or W/Z masses"
+        },
+        {
+          "name": "Gate499 inner-fluctuation Dphi provenance audit",
+          "passed": true,
+          "detail": "Gate 499: inner fluctuations structurally recover one complex Higgs doublet and the Dphi transformation socket, reconciling the scalar-response SU2 obstruction as response-level rather than representation-level; product-action kinetic projection, native Dphi action, heat-kernel coefficient, kappa, and W/Z masses remain blocked"
+        },
+        {
+          "name": "Gate500 product spectral-action scalar kinetic projection audit",
+          "passed": true,
+          "detail": "Gate 500: the CCM product spectral-action ledger reads off the symbolic scalar kinetic channel f0 a |Dphi|^2/pi^2 and canonical rescaling formula, but the coefficient depends on sealed Yukawa trace a, so scalar normalization, I4 metric, kappa, VEV, and W/Z masses remain blocked"
+        },
+        {
+          "name": "Gate501 Yukawa-trace scalar normalization airlock audit",
+          "passed": true,
+          "detail": "Gate 501: a=Tr(Y†Y) is a basis/rephasing-invariant symbolic scalar norm and CKM orientation drops out, but its numeric value depends on sealed Yukawa amplitudes; scalar normalization, kappa, VEV, and W/Z masses remain blocked"
+        },
+        {
+          "name": "Gate502 scalar-normalization-independent electroweak quotient audit",
+          "passed": true,
+          "detail": "Gate 502: after quotienting by a, f0, VEV, continuum scale, and coupling units, photon nullity, broken-rank three, charged degeneracy, and diag(1,1,4) survive only as bridge quotient data; kappa, weak angle, couplings, VEV, W/Z masses, and observed ratios remain blocked"
+        },
+        {
+          "name": "Gate503 electroweak kernel index native closure audit",
+          "passed": true,
+          "detail": "Gate 503: the Higgs-doublet representation supplies a conditional kernel index: U(1)em stabilizer dimension one, broken orbit dimension three, radial quotient dimension one; nonzero vacuum selection, diag(1,1,4) Hessian promotion, kappa, weak angle, couplings, VEV, and W/Z masses remain blocked"
+        },
+        {
+          "name": "Gate504 continuum matching permission ledger audit",
+          "passed": true,
+          "detail": "Gate 504: VEV, gauge couplings, physical weak angle, W/Z masses, and Yukawa trace normalization are permitted only as explicit bridge/environmental matching inputs or outputs with scale/scheme metadata; no numerical adapter is executed and no native electroweak scale/mass/coupling write is made"
+        },
+        {
+          "name": "Gate505 synthetic electroweak matching adapter dry-run",
+          "passed": true,
+          "detail": "Gate 505: the bridge adapter runs only on fake tagged v=2, g2=3, gY=4 inputs, yielding mW=3, mZ=5, sin²=16/25, mγ=0, and ρtree=1; all outputs remain synthetic bridge arithmetic, not observed data or native electroweak predictions"
+        },
+        {
+          "name": "Gate506 observed electroweak comparator airlock preflight",
+          "passed": true,
+          "detail": "Gate 506: observed electroweak comparator data is admitted only through a redacted bridge-only preflight schema; missing metadata, native promotion, kappa promotion, and observed W/Z-as-native-input routes are rejected; no observed numbers are imported and no adapter runs by default"
+        },
+        {
+          "name": "Gate507 observed electroweak comparator file adapter firewall",
+          "passed": true,
+          "detail": "Gate 507: the explicit electroweak comparator file adapter loads a fully tagged synthetic bridge fixture, computes tree-level W/Z/weak-angle outputs and zero synthetic residuals, preserves photon zero/rho identity, and blocks every native electroweak write"
+        },
+        {
+          "name": "Gate508 electroweak comparator residual geometry airlock",
+          "passed": true,
+          "detail": "Gate 508: file-adapter residuals are mapped against the quotient/index ledger only as bridge residual geometry; photon zero and rho=1 remain structural/bridge checks, while the synthetic 25/9 file ratio is not allowed to select the diag(1,1,4) quotient ratio or any native electroweak mass/coupling"
+        },
+        {
+          "name": "Gate509 topological anomalies and gravitational spectral redirect",
+          "passed": true,
+          "detail": "Gate 509: anomaly cancellation is reaffirmed as a discrete mass-independent topological stability theorem, while the product spectral action supplies only a structural Einstein-Hilbert curvature socket; Newton normalization, cutoff selection, f2 separation, cosmological constant, electroweak scales, and flavor moduli remain firewalled"
+        },
+        {
+          "name": "Gate510 curvature coefficient provenance and heat-kernel trace convention audit",
+          "passed": true,
+          "detail": "Gate 510: the D²/Lichnerowicz heat-kernel audit fixes the native dimensionless a2 curvature trace weight Tr_F(1)/12=8 and matches the raw Gate377 coefficient, but f2Λ², trace convention promotion, Newton normalization, cutoff selection, and cosmological f4 remain firewalled"
+        },
+        {
+          "name": "Gate511 gravitational a4 curvature-squared and topological counterterm audit",
+          "passed": true,
+          "detail": "Gate 511: the scale-independent a4 spectral-action channel classifies curvature² sockets into Gauss-Bonnet topological data and Weyl/scalar curvature² sockets, but physical higher-derivative gravity, boundary conditions, renormalization scheme, Newton normalization, and cosmological f4 remain firewalled"
+        },
+        {
+          "name": "Gate512 cosmological f4 vacuum energy and subtraction airlock audit",
+          "passed": true,
+          "detail": "Gate 512: the a0/f4 cosmological volume channel has native finite-trace prefactor Tr_F(1)/(16π²)=6/π², but the positive trace does not self-cancel and f4, cutoff, vacuum subtraction, observed dark energy, and physical cosmological constant remain firewalled"
+        },
+        {
+          "name": "Gate513 spectral moment hierarchy and cutoff-separation airlock audit",
+          "passed": true,
+          "detail": "Gate 513: the stripped a0/a2/a4 heat-kernel prefactor hierarchy is native with ratios 1/12, 1/360, and 1/30, but f2, f4, cutoff Λ, Newton normalization, vacuum subtraction, and the cosmological constant remain firewalled"
+        },
+        {
+          "name": "Gate514 spectral cutoff and renormalization airlock comparator",
+          "passed": true,
+          "detail": "Gate 514: a fail-closed redacted bridge schema for Λ, f2, f4, moment products, Planck/Newton matching, cosmological comparison, vacuum subtraction, and renormalization metadata is accepted, while all numerical adapter execution and native normalization writes remain blocked"
+        },
+        {
+          "name": "Gate516 topological gravity characteristic-class ledger",
+          "passed": true,
+          "detail": "Gate 516: scale-free Euler/Gauss-Bonnet and Pontryagin/signature sockets are native a4 topology, while specific manifold integers, eta boundary data, Newton/cutoff/cosmology normalization, and observed topology remain blocked"
+        },
+        {
+          "name": "Gate517 gravitational index and boundary eta airlock",
+          "passed": true,
+          "detail": "Gate 517: the local chiral index and APS/eta sockets are structurally present and scale-free, while global index integer, boundary eta, boundary spectrum, closed-manifold condition, gravitational theta, Newton/cutoff/cosmology normalization, and observed topology remain blocked"
+        },
+        {
+          "name": "Gate518 synthetic APS index boundary ledger dry-run",
+          "passed": true,
+          "detail": "Gate 518: fake APS rows compute ind_APS=11-(3+1)/2=9 and closed index=11 only to validate bridge plumbing; global topology, eta spectrum, Newton/cosmology normalization, and native writes remain blocked"
+        },
+        {
+          "name": "Gate519 observed topology and boundary comparator preflight",
+          "passed": true,
+          "detail": "Gate 519: a fail-closed topology/boundary comparator schema is defined for Euler, Pontryagin, signature, APS index, eta, h, and boundary condition rows, while observed values, comparator execution, and native writes remain blocked"
+        },
+        {
+          "name": "Gate520 observed topology and boundary file adapter firewall",
+          "passed": true,
+          "detail": "Gate 520: an explicit synthetic topology/boundary file passes the Gate519 airlock and computes bridge-only APS/signature residuals, while observed topology, eta, boundary spectra, and native global-topology writes remain blocked"
+        },
+        {
+          "name": "Gate521 bordism and cobordism classifier airlock",
+          "passed": true,
+          "detail": "Gate 521: oriented/spin/spin-c/boundary bordism sockets classify admissible topology constraints scale-free, but ASHA still cannot select a specific bordism class, manifold representative, characteristic numbers, eta invariant, or boundary condition"
+        },
+        {
+          "name": "Gate522 bordism comparator file adapter and Stiefel-Whitney firewall",
+          "passed": true,
+          "detail": "Gate 522: a synthetic bordism classifier file validates Stiefel-Whitney, spin/spin-c, characteristic-number, and closed-boundary metadata bridge-only, while manifold selection and native topology writes remain blocked"
+        },
+        {
+          "name": "Gate523 topology residual classifier report and native non-selection audit",
+          "passed": true,
+          "detail": "Gate 523: topology residual classes from Gate520 and Gate522 are aggregated bridge-only; zero residuals classify consistency but do not select a manifold, boundary condition, eta invariant, bordism class, or characteristic numbers"
+        },
+        {
+          "name": "Gate524 anomaly-inflow compatibility classifier",
+          "passed": true,
+          "detail": "Gate 524: local index-density, Chern-Simons transgression, APS pairing, and exact anomaly zeroes confirm anomaly-inflow capacity for bridge topology classes, while boundary selection, eta spectra, and cross-fixture native identity remain blocked"
+        },
+        {
+          "name": "Gate525 topology sector closing ledger and native frontier selection",
+          "passed": true,
+          "detail": "Gate 525: topology is closed as native local law/capacity plus bridge representatives; flavor, electroweak scale, gravity/cosmology normalization, and global-topology selection remain sealed, and the next live native frontier is Lorentzian/causal signature provenance"
+        },
+        {
+          "name": "Gate526 Lorentzian causal signature provenance and Wick/time firewall audit",
+          "passed": true,
+          "detail": "Gate 526: Cℓ(1,7) supplies a native 1+7 signature and null cone, while Wick rotation, time orientation, positive energy, real-time unitarity, global hyperbolicity, and physical 3+1 projection remain bridge obligations"
+        },
+        {
+          "name": "Gate527 Lorentzian spinor adjoint, reflection-positivity, and 3+1 projection airlock",
+          "passed": true,
+          "detail": "Gate 527: Cℓ(1,7) supplies a Lorentzian/Krein spinor-adjoint socket, but positive Hilbert reconstruction, reflection positivity, Wick continuation, positive-energy dynamics, unitarity, and physical 3+1 projection remain bridge obligations"
+        },
+        {
+          "name": "Gate528 physical 3+1 projection and internal complement selector audit",
+          "passed": true,
+          "detail": "Gate 528: Cℓ(1,7) supplies volume/chirality idempotent sockets and a bridge-consistent rank-four projector once a four-plane is chosen, but no unique Spin(1,7)-invariant vector projector selects physical 3+1 spacetime, time assignment, or a native internal four-dimensional complement"
+        },
+        {
+          "name": "Gate529 3+1 projection and internal complement bridge airlock preflight",
+          "passed": true,
+          "detail": "Gate 529: explicit 3+1 projectors and four-dimensional complements are accepted only through a fail-closed bridge schema with source, convention, bridge-only, and native-promotion rejection metadata; the projector does not grant Wick rotation, positive Hilbert space, unitary dynamics, or native internal-gauge identification"
+        },
+        {
+          "name": "Gate515 bridge-only gravity/cosmology adapter dry-run",
+          "passed": true,
+          "detail": "Gate 515: a synthetic-only gravity/cosmology adapter computes fake a2/a0/a4 coefficients and residuals to test bridge plumbing, while observed data, Newton/Planck/cosmology imports, and native normalization writes remain blocked"
+        },
+        {
           "name": "KMS family hierarchy capacity",
           "passed": true,
           "detail": "ρβ nontracial for β≠0"
@@ -311,19 +1193,54 @@
       ]
     },
     {
-      "name": "Dark-sector scenarios",
-      "summary": "Heavy finite sectors are scenario-classified. Stable thermal B-gap Majorana relics are rejected by overclosure; decay/nonthermal routes require extra history.",
+      "name": "Dark-sector conditional scenarios",
+      "summary": "The runtime now computes the viable and rejected dark-sector paths. A stable thermal B-gap Majorana relic is ruled out by overclosure; a suppressed/nonthermal or decaying route remains a conditional cosmological-history bridge.",
       "quantities": [
         {
           "symbol": "M_B",
           "value": 1467749.73718,
           "unit": "GeV",
+          "formula": "B-gap heavy Majorana scale",
           "status": "bridge-required"
         },
         {
-          "symbol": "Ω_candidate/Ω_DM",
-          "value": 13000000000000,
+          "symbol": "Ω_DM h² target",
+          "value": 0.12,
+          "formula": "observational comparator",
+          "status": "environmental"
+        },
+        {
+          "symbol": "Y_required",
+          "value": 2.979810781520093e-16,
+          "formula": "Ω h² ρ_c/(m s_0)",
+          "status": "bridge-required",
+          "note": "yield needed if B-gap particle were all dark matter"
+        },
+        {
+          "symbol": "Y_thermal",
+          "value": 0.0039014983676562576,
+          "formula": "135 ζ(3)/(8π⁴) · g/g_*S",
+          "status": "bridge-required",
+          "note": "stable relativistic thermal abundance stress test"
+        },
+        {
+          "symbol": "Ω_thermal h²",
+          "value": 1571172931591.0386,
+          "formula": "m Y_thermal s_0/ρ_c",
           "status": "failed-route"
+        },
+        {
+          "symbol": "Ω_thermal/Ω_DM",
+          "value": 13093107763258.654,
+          "formula": "stable thermal B-gap relic overclosure",
+          "status": "failed-route"
+        },
+        {
+          "symbol": "Y_required/Y_thermal",
+          "value": 7.637606121337816e-14,
+          "formula": "required suppression / dilution fraction",
+          "status": "bridge-required",
+          "note": "viable only with nonthermal production, dilution, or decay history"
         }
       ],
       "boundaries": [
@@ -345,11 +1262,82 @@
           "status": "environmental",
           "meaning": "not native ASHA output."
         }
+      ],
+      "checks": [
+        {
+          "name": "Stable thermal B-gap Majorana rejected",
+          "passed": true,
+          "detail": "overclosure ratio computed, not guessed"
+        },
+        {
+          "name": "Suppressed/nonthermal target computed",
+          "passed": true,
+          "detail": "conditional yield fraction exists, production history remains sealed"
+        }
       ]
     },
     {
-      "name": "Cosmology boundary",
-      "summary": "The spectral-action cosmological term is present, but observed cosmology requires continuum subtraction, history, or holographic/dilaton bridge data.",
+      "name": "Cosmology conditional scenarios",
+      "summary": "The runtime reports conditional cosmology numbers with warnings: bare spectral-action vacuum severity, holographic/dilaton target scales, and electroweak-vacuum tension. These are bridge diagnostics, not native predictions of dark energy.",
+      "quantities": [
+        {
+          "symbol": "ρ_bare/M_P⁴",
+          "value": 4.863416814832213,
+          "formula": "48/π²",
+          "status": "bridge-required",
+          "note": "diagnostic CCM bare vacuum convention f₄=1, Λ=M_P"
+        },
+        {
+          "symbol": "ρ_Λ/M_P⁴ target",
+          "value": 1e-120,
+          "formula": "diagnostic observed-scale comparator",
+          "status": "environmental"
+        },
+        {
+          "symbol": "counterterm severity",
+          "value": 4.863416814832213e+120,
+          "formula": "ρ_bare/ρ_target",
+          "status": "environmental"
+        },
+        {
+          "symbol": "digits cancellation",
+          "value": 120.68694149198733,
+          "formula": "log₁₀(ρ_bare/ρ_target)",
+          "status": "environmental"
+        },
+        {
+          "symbol": "L·M_P target",
+          "value": 1e+60,
+          "formula": "1/sqrt(ρ_Λ/M_P⁴)",
+          "status": "bridge-required",
+          "note": "holographic/dilaton bridge scale for 10^-120 target"
+        },
+        {
+          "symbol": "L·M_P Gate344 target",
+          "value": 1e+61,
+          "formula": "1/sqrt(10^-122)",
+          "status": "bridge-required",
+          "note": "alternate Gate-344 target convention"
+        },
+        {
+          "symbol": "(v_Pf/M_P)^4",
+          "value": 1.679361894449435e-67,
+          "formula": "ρ^4",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "EW vacuum / target",
+          "value": 1.679361894449435e+53,
+          "formula": "(v_Pf/M_P)^4 / 10^-120",
+          "status": "failed-route"
+        },
+        {
+          "symbol": "EW vacuum / Gate344 target",
+          "value": 1.679361894449435e+55,
+          "formula": "(v_Pf/M_P)^4 / 10^-122",
+          "status": "failed-route"
+        }
+      ],
       "boundaries": [
         {
           "name": "spectral-action cosmological term",
@@ -368,6 +1356,118 @@
           "formula": "(Ω_DM h², ρΛ, t_universe, η_B)",
           "status": "environmental",
           "meaning": "history/state dependent and not predicted by current law-space."
+        }
+      ],
+      "checks": [
+        {
+          "name": "Cosmological constant not solved natively",
+          "passed": true,
+          "detail": "bare spectral term needs subtraction/history rule"
+        },
+        {
+          "name": "Holographic/dilaton bridge computable",
+          "passed": true,
+          "detail": "conditional IR-UV scale is numerical but not native saturation theorem"
+        }
+      ]
+    },
+    {
+      "name": "Vacuum-fate conditional scenario",
+      "summary": "A conditional one-loop RG/bounce stress test can be computed once empirical top/Higgs inputs and the ASHA B-gap threshold jump are supplied. It is useful phenomenology, but it is not a native ASHA universe-lifetime theorem.",
+      "quantities": [
+        {
+          "symbol": "tree-pole-top-seed λ_before",
+          "value": -0.006880640805409461,
+          "formula": "one-loop RG to M_B",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "tree-pole-top-seed λ_after",
+          "value": -0.10472743301240946,
+          "formula": "λ_before + Δλ_ASHA",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "tree-pole-top-seed μ_inst",
+          "value": 576733.268667478,
+          "unit": "GeV",
+          "formula": "λ crossing scale",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "tree-pole-top-seed λ_min",
+          "value": -0.12279390797372498,
+          "formula": "conditional one-loop minimum",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "tree-pole-top-seed S_E",
+          "value": 214.33428989981536,
+          "formula": "8π²/(3|λ_min|)",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "tree-pole-top-seed log10 τ/yr",
+          "value": 55.64248618209556,
+          "formula": "conditional bounce proxy",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "one-loop-QCD-MSbar-top-seed λ_before",
+          "value": 0.032625459629777975,
+          "formula": "one-loop RG to M_B",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "one-loop-QCD-MSbar-top-seed λ_after",
+          "value": -0.06522133257722203,
+          "formula": "λ_before + Δλ_ASHA",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "one-loop-QCD-MSbar-top-seed μ_inst",
+          "value": 1467749.73718,
+          "unit": "GeV",
+          "formula": "λ crossing scale",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "one-loop-QCD-MSbar-top-seed λ_min",
+          "value": -0.07744634307299245,
+          "formula": "conditional one-loop minimum",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "one-loop-QCD-MSbar-top-seed S_E",
+          "value": 339.8345748199662,
+          "formula": "8π²/(3|λ_min|)",
+          "status": "bridge-required"
+        },
+        {
+          "symbol": "one-loop-QCD-MSbar-top-seed log10 τ/yr",
+          "value": 109.74089039318616,
+          "formula": "conditional bounce proxy",
+          "status": "bridge-required"
+        }
+      ],
+      "boundaries": [
+        {
+          "name": "vacuum lifetime",
+          "formula": "top/Higgs/RG scheme + threshold convention + bounce prefactor",
+          "status": "environmental",
+          "meaning": "conditional scenario only; no native lifetime prediction"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Vacuum-fate ensemble computed",
+          "passed": true,
+          "detail": "pole and one-loop-QCD top seeds audited"
+        },
+        {
+          "name": "Vacuum fate remains conditional",
+          "passed": true,
+          "detail": "requires empirical top/Higgs inputs and continuum RG scheme"
         }
       ]
     }
@@ -429,6 +1529,426 @@
       "detail": "dim M_charged^native=13"
     },
     {
+      "name": "K_gen primitive structural-zero axis",
+      "passed": true,
+      "detail": "Gate 444: primitive spectrum {-1,0,1}; middle bare level zero"
+    },
+    {
+      "name": "Generation-2 mass-lift bridge topology",
+      "passed": true,
+      "detail": "Gate 445: primitive closed triangle support forced; amplitude and physical mass sealed"
+    },
+    {
+      "name": "Generation-2 phase orientation firewall",
+      "passed": true,
+      "detail": "Gate 446: signed cycle and complex CP phase remain quarantined"
+    },
+    {
+      "name": "Sector coefficient amplitude firewall",
+      "passed": true,
+      "detail": "Gate 447: multiple symbolic coefficient ledgers survive; 9 K/X/Y amplitudes remain quarantined"
+    },
+    {
+      "name": "Post-444 flavor atlas reconciliation",
+      "passed": true,
+      "detail": "Gate 448: atlas updated structurally; value-bearing flavor firewall preserved"
+    },
+    {
+      "name": "Post-444 manuscript delta export",
+      "passed": true,
+      "detail": "Gate 449: structural family board exported for manuscript revision; no final binary rewrite"
+    },
+    {
+      "name": "Gate450 texture-zero ratio sieve",
+      "passed": true,
+      "detail": "Gate 450: exact M22=0 sum rule derived; GST/Fritzsch mass-angle ratio not forced without coefficient/phase selectors"
+    },
+    {
+      "name": "Gate451 special-branch selector audit",
+      "passed": true,
+      "detail": "Gate 451: no native 1-3 suppression and no native phase ray selector; GST/Fritzsch branch remains quarantined"
+    },
+    {
+      "name": "Gate452 basis-invariance gauge-artifact audit",
+      "passed": true,
+      "detail": "Gate 452: K-preserving basis changes cannot delete the 1-3 edge; nearest-neighbor texture is not a native gauge artifact"
+    },
+    {
+      "name": "Gate453 texture-zero empirical interface",
+      "passed": true,
+      "detail": "Gate 453: native texture-zero ledgers and labelled empirical comparators are allowed; silent observable promotion is rejected"
+    },
+    {
+      "name": "Gate454 coefficient-ray observability rank",
+      "passed": true,
+      "detail": "Gate 454: spectrum-only rank is one; two labelled comparator scalars give local ray observability; CP orientation needs an explicit branch tag"
+    },
+    {
+      "name": "Gate455 empirical texture adapter firewall",
+      "passed": true,
+      "detail": "Gate 455: dry-run adapter accepts labelled symbolic bridge comparators and rejects native promotion, missing metadata, and observed-value import by default"
+    },
+    {
+      "name": "Gate456 symbolic coefficient-ray inverse",
+      "passed": true,
+      "detail": "Gate 456: exact symbolic inverse map derived; generic six-branch phase ambiguity and caustics remain bridge-labelled and fail closed"
+    },
+    {
+      "name": "Gate457 empirical comparator provenance contract",
+      "passed": true,
+      "detail": "Gate 457: comparator imports require sector/scale/scheme/source/uncertainty/dimensionless bridge-only metadata before evaluation"
+    },
+    {
+      "name": "Gate458 comparator evaluation harness",
+      "passed": true,
+      "detail": "Gate 458: redacted/synthetic comparator evaluator applies the Gate456 inverse only in bridge mode; observed numeric values, domain failures, caustics, and native promotion fail closed"
+    },
+    {
+      "name": "Gate459 oriented branch tag ledger",
+      "passed": true,
+      "detail": "Gate 459: cos(3phi) gives six branches, CP sign gives three sheets, and {sigma_CP,n_C3} selects one bridge-only phase branch; no native CP/C3 selector is promoted"
+    },
+    {
+      "name": "Gate460 branch-resolved residual harness",
+      "passed": true,
+      "detail": "Gate 460: complete branch tags allow synthetic/null residual diagnostics only; observed data, native promotion, caustics, and incomplete tags fail closed"
+    },
+    {
+      "name": "Gate461 three-sector comparator multiplex",
+      "passed": true,
+      "detail": "Gate 461: u/d/e bridge rays are sector-indexed; labelled universality is bridge-only and native cross-sector ray sharing is rejected"
+    },
+    {
+      "name": "Gate462 sector-difference CKM interface firewall",
+      "passed": true,
+      "detail": "Gate 462: u-d relative-ray diagnostics are bridge-only; CKM/PMNS entries require explicit observed comparators and eigenbasis conventions and are not native predictions"
+    },
+    {
+      "name": "Gate463 eigenbasis convention ledger",
+      "passed": true,
+      "detail": "Gate 463: raw sector diagonalizers carry phase/permutation gauge; only a complete bridge-only u-d convention ledger can feed a later CKM residual adapter"
+    },
+    {
+      "name": "Gate464 CKM-null residual adapter",
+      "passed": true,
+      "detail": "Gate 464: convention-fixed u-d residual diagnostics may run only in synthetic bridge mode; V_CKM, CKM entries, observed imports, GST selectors, and native-promotion fail closed"
+    },
+    {
+      "name": "Gate465 empirical import switch",
+      "passed": true,
+      "detail": "Gate 465: empirical_import=true may admit metadated quark/CKM rows only into the quarantined comparator ledger; native-promotion and native-registry writes fail closed"
+    },
+    {
+      "name": "Gate466 observed comparator adapter",
+      "passed": true,
+      "detail": "Gate 466: observed quark/CKM rows pass the airlock, but mass spectra alone do not define ASHA cylinder coordinates; d_ud and Cabibbo comparison remain undefined and non-native"
+    },
+    {
+      "name": "Gate467 common-scale comparator ledger",
+      "passed": true,
+      "detail": "Gate 467: defines the bridge-only rank-complete common-scale u/d ledger required before d_ud may be evaluated; Cabibbo-as-coordinate and native-promotion fail closed"
+    },
+    {
+      "name": "Gate468 synthetic inversion harness",
+      "passed": true,
+      "detail": "Gate 468: rank-complete synthetic u/d ledgers invert to bridge-only rays and a d_ud interval; observed data, Cabibbo-as-coordinate, CKM matrix export, and native-promotion fail closed"
+    },
+    {
+      "name": "Gate469 observed comparator preflight",
+      "passed": true,
+      "detail": "Gate 469: observed common-scale comparator ledgers pass only as bridge-only preflight records; redacted or incomplete values do not compute d_ud, and Cabibbo/native-promotion fail closed"
+    },
+    {
+      "name": "Gate470 observed numerical data-file adapter",
+      "passed": true,
+      "detail": "Gate 470: explicit pdg_observed_ledger.json loads through the airlock, but checked-in PDG-style rows lack ASHA I_K and branch tags, so d_ud and Cabibbo residual remain undefined and non-native"
+    },
+    {
+      "name": "Gate471 rank-complete external ledger adapter",
+      "passed": true,
+      "detail": "Gate 471: explicit rank-complete external I_spec/I_K/branch-tag ledger computes d_ud and a Cabibbo residual as bridge-only diagnostics; supplied I_K/branch tags are not native or PDG-published invariants"
+    },
+    {
+      "name": "Gate473 mass-to-equipartition inversion audit",
+      "passed": true,
+      "detail": "Gate 473: raw quark masses confirm extreme hierarchy but do not force alpha=1 or derive I_K=0.5; d_ud and Cabibbo residual stay undefined without independent rank-complete bridge comparators"
+    },
+    {
+      "name": "Gate474 electroweak I_K source audit",
+      "passed": true,
+      "detail": "Gate 474: Higgs VEV and electroweak gauge couplings are generation-blind, while PMNS/lepton data remains bridge-only; no native I_K selector is found"
+    },
+    {
+      "name": "Gate475 lepton rank-complete preflight",
+      "passed": true,
+      "detail": "Gate 475: PMNS/lepton data may enter only as a rank-complete e/nu bridge preflight with I_spec, I_K, branch tags, neutrino ordering and absolute-scale policy; no PMNS residual or native prediction is computed"
+    },
+    {
+      "name": "Gate476 lepton PMNS-null residual socket",
+      "passed": true,
+      "detail": "Gate 476: synthetic rank-complete e/nu bridge rays compute d_eν with the same cylinder metric as d_ud; observed PMNS import, PMNS-as-ray, matrix export, and native-promotion fail closed"
+    },
+    {
+      "name": "Gate477 lepton empirical import switch",
+      "passed": true,
+      "detail": "Gate 477: empirical_import=true may admit metadated charged-lepton, neutrino, and PMNS residual-target rows only into the quarantined lepton comparator ledger; PMNS-as-ray, native-promotion, theorem-input, and native-registry writes fail closed"
+    },
+    {
+      "name": "Gate478 observed lepton comparator adapter",
+      "passed": true,
+      "detail": "Gate 478: explicit lepton_observed_ledger.json loads through the lepton airlock, but observed lepton/PMNS-style rows lack ASHA I_K and branch tags, so d_eν and PMNS residual remain undefined and non-native"
+    },
+    {
+      "name": "Gate480 algebraic null-cone I_K baseline",
+      "passed": true,
+      "detail": "Gate 480: declared Cℓ(1,7) null bridge q=a²-r²=0 forces α_vac=1 and I_K=1/2 as a bare vacuum baseline; physical sector coordinates, d_ud, d_eν, CKM, and PMNS remain non-native and unresolved"
+    },
+    {
+      "name": "Gate481 null-baseline perturbation transport audit",
+      "passed": true,
+      "detail": "Gate 481: I_K,vac=1/2 is accepted as a common null-vacuum baseline, but common baseline terms cancel from relative distances; only bridge-only sector perturbations remain, so physical d_ud, d_eν, CKM, and PMNS remain unresolved"
+    },
+    {
+      "name": "Gate482 null-baseline sector deformation source search",
+      "passed": true,
+      "detail": "Gate 482: existing native finite orientation, chirality, Higgs-edge, and electroweak gauge data do not source sector perturbations; a bridge-only perturbation-source ledger is preserved, while CKM/PMNS-as-source and native promotion fail closed"
+    },
+    {
+      "name": "Gate483 finite algebraic deformation operator search",
+      "passed": true,
+      "detail": "Gate 483: native color/winding topology separates quarks from leptons but is generation-blind and lacks a native map to delta_alpha/delta_phi; the topological perturbation slot remains bridge-only"
+    },
+    {
+      "name": "Gate484 vacuum tilt vector C3 elliptic slice audit",
+      "passed": true,
+      "detail": "Gate 484: C3 tilted-slice coordinates exactly represent square-root mass fingerprints and reveal a charged-lepton Koide shadow, but with independent S/R/psi per sector the construction is a reparametrization, not a native reduction of flavor moduli"
+    },
+    {
+      "name": "Gate485 Koide constraint provenance topological baseline",
+      "passed": true,
+      "detail": "Gate 485: C3 shadow orthogonality plus the Cℓ(1,7) null boundary forces R/S=sqrt(2) and Q=2/3 for a bare colorless baseline, collapsing one shape coordinate while preserving the mass, phase, quark-dressing, CKM/PMNS, and 13-moduli firewalls"
+    },
+    {
+      "name": "Gate486 universal null-mirror CKM compression audit",
+      "passed": true,
+      "detail": "Gate 486: shared null-C3 geometry permits a bridge-only (DeltaAlpha,DeltaPhi) null-mirror socket, but the native CKM 4-\u003e2 theorem fails because no up/down diagonalization operators or two rephasing-invariant polynomial constraints are derived"
+    },
+    {
+      "name": "Gate487 CKM rephasing-invariant polynomial constraint search",
+      "passed": true,
+      "detail": "Gate 487: same-null-C3 synthetic operators can have commutator ranks 0, 2, or 3 depending on bridge eigenbasis choice; the null spectrum does not derive Jarlskog or two CKM invariant polynomial constraints"
+    },
+    {
+      "name": "Gate488 native up/down operator source search",
+      "passed": true,
+      "detail": "Gate 488: native electroweak/Higgs data name up/down slots and K_gen/null-C3 give universal family structure, but no native source couples them into sector-specific family operators; CKM orientation remains quarantined behind the Yukawa airlock"
+    },
+    {
+      "name": "Gate489 Yukawa selector airlock boundary decision",
+      "passed": true,
+      "detail": "Gate 489: spectral-action, first-order, Higgs-edge, K_gen, and gauge-Hessian structures define admissible Yukawa sockets but do not select complex 3x3 up/down matrices or CKM/Jarlskog invariants; CKM orientation is formally environmental behind the airlock"
+    },
+    {
+      "name": "Gate490 topological charge anomaly cancellation ledger",
+      "passed": true,
+      "detail": "Gate 490: the one-generation discrete chiral representation ledger cancels all local/mixed gauge anomalies and clears the global SU(2) doublet parity test, while remaining independent of Yukawa texture, CKM/PMNS, masses, and Jarlskog data"
+    },
+    {
+      "name": "Gate491 scalar-edge stability and Higgs one-form positivity audit",
+      "passed": true,
+      "detail": "Gate 491: finite one-form edge support and Hilbert-Schmidt scalar kinetic trace positivity block ghost kinetic routes, while numerical Z_H, full Hessian, vacuum stability, Higgs quartic/mass, covariant derivative, and Goldstone gauge-eating remain unpromoted"
+    },
+    {
+      "name": "Gate492 scalar covariant derivative and Goldstone intertwiner audit",
+      "passed": true,
+      "detail": "Gate 492: an abstract Dphi template gives a rank-3 broken-image Goldstone diagnostic and photon-null direction, but native Dphi, canonical intertwiner, scalar SU2 action, vacuum orientation, kinetic metric, gauge Hessian/couplings, W/Z masses, and weak angle remain unpromoted"
+    },
+    {
+      "name": "Gate493 full electroweak curvature action and gauge Hessian selection audit",
+      "passed": true,
+      "detail": "Gate 493: the full {T1,T2,Z,Q} electroweak carrier closes and a positive abelian-completed quadratic family exists with diag(1,1,4) reachable at kappa_U1=6, but no finite second variation selects the abelian coefficient, gauge Hessian, weak angle, W/Z masses, or Higgs VEV"
+    },
+    {
+      "name": "Gate494 abelian U1 completion coefficient selection audit",
+      "passed": true,
+      "detail": "Gate 494: k_Y=5/3 and sin²=3/8 boundary diagnostics are confirmed, and kappa_U1=6 remains the whitening candidate, but trace normalization, count resonance, and representation metrics do not select the abelian gauge Hessian"
+    },
+    {
+      "name": "Gate495 finite electroweak action second variation source audit",
+      "passed": true,
+      "detail": "Gate 495: the legacy canonical finite-action candidate computes a dimensionless second variation with diag(1,1,4), kappa_U1=6, and a positive rank-four Hessian, but native promotion is blocked until Dphi, scalar I4 metric, vacuum orientation, and scalar SU2 action provenance close"
+    },
+    {
+      "name": "Gate496 scalar kinetic metric provenance and vacuum orientation closure audit",
+      "passed": true,
+      "detail": "Gate 496: Hilbert-Schmidt trace supplies a ghost-free scalar metric class and the finite response selects the lower vacuum plane, but active I4 normalization, residual S1 quotient, exact vacuum vector, full scalar SU2, Dphi, kappa promotion, and W/Z masses remain blocked"
+    },
+    {
+      "name": "Gate497 vacuum gauge-orbit quotient and unitary-gauge representative audit",
+      "passed": true,
+      "detail": "Gate 497: the residual lower-pair S1 is a bridge broken-gauge orbit direction, Q_em stabilizes the vacuum, and the rank-three broken orbit leaves one radial quotient mode, but native scalar SU2/Dphi/provenance and W/Z promotion remain blocked"
+    },
+    {
+      "name": "Gate498 scalar SU2 complex-structure and gauge-orbit provenance audit",
+      "passed": true,
+      "detail": "Gate 498: a compatible complex doublet and abstract SU2 socket exist, and the Gate497 Goldstone quotient remains coherent, but the anisotropic scalar response selects only pair U1/T3, not full native SU2, Dphi, kappa, or W/Z masses"
+    },
+    {
+      "name": "Gate499 inner-fluctuation Dphi provenance audit",
+      "passed": true,
+      "detail": "Gate 499: inner fluctuations structurally recover one complex Higgs doublet and the Dphi transformation socket, reconciling the scalar-response SU2 obstruction as response-level rather than representation-level; product-action kinetic projection, native Dphi action, heat-kernel coefficient, kappa, and W/Z masses remain blocked"
+    },
+    {
+      "name": "Gate500 product spectral-action scalar kinetic projection audit",
+      "passed": true,
+      "detail": "Gate 500: the CCM product spectral-action ledger reads off the symbolic scalar kinetic channel f0 a |Dphi|^2/pi^2 and canonical rescaling formula, but the coefficient depends on sealed Yukawa trace a, so scalar normalization, I4 metric, kappa, VEV, and W/Z masses remain blocked"
+    },
+    {
+      "name": "Gate501 Yukawa-trace scalar normalization airlock audit",
+      "passed": true,
+      "detail": "Gate 501: a=Tr(Y†Y) is a basis/rephasing-invariant symbolic scalar norm and CKM orientation drops out, but its numeric value depends on sealed Yukawa amplitudes; scalar normalization, kappa, VEV, and W/Z masses remain blocked"
+    },
+    {
+      "name": "Gate502 scalar-normalization-independent electroweak quotient audit",
+      "passed": true,
+      "detail": "Gate 502: after quotienting by a, f0, VEV, continuum scale, and coupling units, photon nullity, broken-rank three, charged degeneracy, and diag(1,1,4) survive only as bridge quotient data; kappa, weak angle, couplings, VEV, W/Z masses, and observed ratios remain blocked"
+    },
+    {
+      "name": "Gate503 electroweak kernel index native closure audit",
+      "passed": true,
+      "detail": "Gate 503: the Higgs-doublet representation supplies a conditional kernel index: U(1)em stabilizer dimension one, broken orbit dimension three, radial quotient dimension one; nonzero vacuum selection, diag(1,1,4) Hessian promotion, kappa, weak angle, couplings, VEV, and W/Z masses remain blocked"
+    },
+    {
+      "name": "Gate504 continuum matching permission ledger audit",
+      "passed": true,
+      "detail": "Gate 504: VEV, gauge couplings, physical weak angle, W/Z masses, and Yukawa trace normalization are permitted only as explicit bridge/environmental matching inputs or outputs with scale/scheme metadata; no numerical adapter is executed and no native electroweak scale/mass/coupling write is made"
+    },
+    {
+      "name": "Gate505 synthetic electroweak matching adapter dry-run",
+      "passed": true,
+      "detail": "Gate 505: the bridge adapter runs only on fake tagged v=2, g2=3, gY=4 inputs, yielding mW=3, mZ=5, sin²=16/25, mγ=0, and ρtree=1; all outputs remain synthetic bridge arithmetic, not observed data or native electroweak predictions"
+    },
+    {
+      "name": "Gate506 observed electroweak comparator airlock preflight",
+      "passed": true,
+      "detail": "Gate 506: observed electroweak comparator data is admitted only through a redacted bridge-only preflight schema; missing metadata, native promotion, kappa promotion, and observed W/Z-as-native-input routes are rejected; no observed numbers are imported and no adapter runs by default"
+    },
+    {
+      "name": "Gate507 observed electroweak comparator file adapter firewall",
+      "passed": true,
+      "detail": "Gate 507: the explicit electroweak comparator file adapter loads a fully tagged synthetic bridge fixture, computes tree-level W/Z/weak-angle outputs and zero synthetic residuals, preserves photon zero/rho identity, and blocks every native electroweak write"
+    },
+    {
+      "name": "Gate508 electroweak comparator residual geometry airlock",
+      "passed": true,
+      "detail": "Gate 508: file-adapter residuals are mapped against the quotient/index ledger only as bridge residual geometry; photon zero and rho=1 remain structural/bridge checks, while the synthetic 25/9 file ratio is not allowed to select the diag(1,1,4) quotient ratio or any native electroweak mass/coupling"
+    },
+    {
+      "name": "Gate509 topological anomalies and gravitational spectral redirect",
+      "passed": true,
+      "detail": "Gate 509: anomaly cancellation is reaffirmed as a discrete mass-independent topological stability theorem, while the product spectral action supplies only a structural Einstein-Hilbert curvature socket; Newton normalization, cutoff selection, f2 separation, cosmological constant, electroweak scales, and flavor moduli remain firewalled"
+    },
+    {
+      "name": "Gate510 curvature coefficient provenance and heat-kernel trace convention audit",
+      "passed": true,
+      "detail": "Gate 510: the D²/Lichnerowicz heat-kernel audit fixes the native dimensionless a2 curvature trace weight Tr_F(1)/12=8 and matches the raw Gate377 coefficient, but f2Λ², trace convention promotion, Newton normalization, cutoff selection, and cosmological f4 remain firewalled"
+    },
+    {
+      "name": "Gate511 gravitational a4 curvature-squared and topological counterterm audit",
+      "passed": true,
+      "detail": "Gate 511: the scale-independent a4 spectral-action channel classifies curvature² sockets into Gauss-Bonnet topological data and Weyl/scalar curvature² sockets, but physical higher-derivative gravity, boundary conditions, renormalization scheme, Newton normalization, and cosmological f4 remain firewalled"
+    },
+    {
+      "name": "Gate512 cosmological f4 vacuum energy and subtraction airlock audit",
+      "passed": true,
+      "detail": "Gate 512: the a0/f4 cosmological volume channel has native finite-trace prefactor Tr_F(1)/(16π²)=6/π², but the positive trace does not self-cancel and f4, cutoff, vacuum subtraction, observed dark energy, and physical cosmological constant remain firewalled"
+    },
+    {
+      "name": "Gate513 spectral moment hierarchy and cutoff-separation airlock audit",
+      "passed": true,
+      "detail": "Gate 513: the stripped a0/a2/a4 heat-kernel prefactor hierarchy is native with ratios 1/12, 1/360, and 1/30, but f2, f4, cutoff Λ, Newton normalization, vacuum subtraction, and the cosmological constant remain firewalled"
+    },
+    {
+      "name": "Gate514 spectral cutoff and renormalization airlock comparator",
+      "passed": true,
+      "detail": "Gate 514: a fail-closed redacted bridge schema for Λ, f2, f4, moment products, Planck/Newton matching, cosmological comparison, vacuum subtraction, and renormalization metadata is accepted, while all numerical adapter execution and native normalization writes remain blocked"
+    },
+    {
+      "name": "Gate516 topological gravity characteristic-class ledger",
+      "passed": true,
+      "detail": "Gate 516: scale-free Euler/Gauss-Bonnet and Pontryagin/signature sockets are native a4 topology, while specific manifold integers, eta boundary data, Newton/cutoff/cosmology normalization, and observed topology remain blocked"
+    },
+    {
+      "name": "Gate517 gravitational index and boundary eta airlock",
+      "passed": true,
+      "detail": "Gate 517: the local chiral index and APS/eta sockets are structurally present and scale-free, while global index integer, boundary eta, boundary spectrum, closed-manifold condition, gravitational theta, Newton/cutoff/cosmology normalization, and observed topology remain blocked"
+    },
+    {
+      "name": "Gate518 synthetic APS index boundary ledger dry-run",
+      "passed": true,
+      "detail": "Gate 518: fake APS rows compute ind_APS=11-(3+1)/2=9 and closed index=11 only to validate bridge plumbing; global topology, eta spectrum, Newton/cosmology normalization, and native writes remain blocked"
+    },
+    {
+      "name": "Gate519 observed topology and boundary comparator preflight",
+      "passed": true,
+      "detail": "Gate 519: a fail-closed topology/boundary comparator schema is defined for Euler, Pontryagin, signature, APS index, eta, h, and boundary condition rows, while observed values, comparator execution, and native writes remain blocked"
+    },
+    {
+      "name": "Gate520 observed topology and boundary file adapter firewall",
+      "passed": true,
+      "detail": "Gate 520: an explicit synthetic topology/boundary file passes the Gate519 airlock and computes bridge-only APS/signature residuals, while observed topology, eta, boundary spectra, and native global-topology writes remain blocked"
+    },
+    {
+      "name": "Gate521 bordism and cobordism classifier airlock",
+      "passed": true,
+      "detail": "Gate 521: oriented/spin/spin-c/boundary bordism sockets classify admissible topology constraints scale-free, but ASHA still cannot select a specific bordism class, manifold representative, characteristic numbers, eta invariant, or boundary condition"
+    },
+    {
+      "name": "Gate522 bordism comparator file adapter and Stiefel-Whitney firewall",
+      "passed": true,
+      "detail": "Gate 522: a synthetic bordism classifier file validates Stiefel-Whitney, spin/spin-c, characteristic-number, and closed-boundary metadata bridge-only, while manifold selection and native topology writes remain blocked"
+    },
+    {
+      "name": "Gate523 topology residual classifier report and native non-selection audit",
+      "passed": true,
+      "detail": "Gate 523: topology residual classes from Gate520 and Gate522 are aggregated bridge-only; zero residuals classify consistency but do not select a manifold, boundary condition, eta invariant, bordism class, or characteristic numbers"
+    },
+    {
+      "name": "Gate524 anomaly-inflow compatibility classifier",
+      "passed": true,
+      "detail": "Gate 524: local index-density, Chern-Simons transgression, APS pairing, and exact anomaly zeroes confirm anomaly-inflow capacity for bridge topology classes, while boundary selection, eta spectra, and cross-fixture native identity remain blocked"
+    },
+    {
+      "name": "Gate525 topology sector closing ledger and native frontier selection",
+      "passed": true,
+      "detail": "Gate 525: topology is closed as native local law/capacity plus bridge representatives; flavor, electroweak scale, gravity/cosmology normalization, and global-topology selection remain sealed, and the next live native frontier is Lorentzian/causal signature provenance"
+    },
+    {
+      "name": "Gate526 Lorentzian causal signature provenance and Wick/time firewall audit",
+      "passed": true,
+      "detail": "Gate 526: Cℓ(1,7) supplies a native 1+7 signature and null cone, while Wick rotation, time orientation, positive energy, real-time unitarity, global hyperbolicity, and physical 3+1 projection remain bridge obligations"
+    },
+    {
+      "name": "Gate527 Lorentzian spinor adjoint, reflection-positivity, and 3+1 projection airlock",
+      "passed": true,
+      "detail": "Gate 527: Cℓ(1,7) supplies a Lorentzian/Krein spinor-adjoint socket, but positive Hilbert reconstruction, reflection positivity, Wick continuation, positive-energy dynamics, unitarity, and physical 3+1 projection remain bridge obligations"
+    },
+    {
+      "name": "Gate528 physical 3+1 projection and internal complement selector audit",
+      "passed": true,
+      "detail": "Gate 528: Cℓ(1,7) supplies volume/chirality idempotent sockets and a bridge-consistent rank-four projector once a four-plane is chosen, but no unique Spin(1,7)-invariant vector projector selects physical 3+1 spacetime, time assignment, or a native internal four-dimensional complement"
+    },
+    {
+      "name": "Gate529 3+1 projection and internal complement bridge airlock preflight",
+      "passed": true,
+      "detail": "Gate 529: explicit 3+1 projectors and four-dimensional complements are accepted only through a fail-closed bridge schema with source, convention, bridge-only, and native-promotion rejection metadata; the projector does not grant Wick rotation, positive Hilbert space, unitary dynamics, or native internal-gauge identification"
+    },
+    {
+      "name": "Gate515 bridge-only gravity/cosmology adapter dry-run",
+      "passed": true,
+      "detail": "Gate 515: a synthetic-only gravity/cosmology adapter computes fake a2/a0/a4 coefficients and residuals to test bridge plumbing, while observed data, Newton/Planck/cosmology imports, and native normalization writes remain blocked"
+    },
+    {
       "name": "KMS family hierarchy capacity",
       "passed": true,
       "detail": "ρβ nontracial for β≠0"
@@ -446,7 +1966,527 @@
     {
       "name": "Latest gate marker",
       "passed": true,
-      "detail": "gate=425"
+      "detail": "gate=551"
+    },
+    {
+      "name": "Clifford dimension",
+      "passed": true,
+      "detail": "dim Cℓ(1,7)=2^8"
+    },
+    {
+      "name": "Exterior grade dimensions",
+      "passed": true,
+      "detail": "[1,8,28,56,70,56,28,8,1]"
+    },
+    {
+      "name": "Boolean/G2 contact vacuum",
+      "passed": true,
+      "detail": "rank(P_B)=56 rank(P_G)=14 dim K=7"
+    },
+    {
+      "name": "Scalar shape",
+      "passed": true,
+      "detail": "Tr(M_K^2)/Tr(M_K)^2"
+    },
+    {
+      "name": "Hypercharge normalization",
+      "passed": true,
+      "detail": "k_Y=5/3"
+    },
+    {
+      "name": "Boundary weak angle",
+      "passed": true,
+      "detail": "sin²θ*=3/8"
+    },
+    {
+      "name": "Gauge/Higgs inventory",
+      "passed": true,
+      "detail": "U(1)_Y × SU(2)_L × SU(3)_C + one complex Higgs doublet"
+    },
+    {
+      "name": "Pfaffian scale positive",
+      "passed": true,
+      "detail": "v_Pf computed from Planck mass bridge"
+    },
+    {
+      "name": "Higgs tree proxy",
+      "passed": true,
+      "detail": "m_H^tree ≈ 124.925 GeV under project Planck convention"
+    },
+    {
+      "name": "Majorana stable thermal relic rejected",
+      "passed": true,
+      "detail": "overcloses by ~1.3e13"
+    },
+    {
+      "name": "Native charged flavor firewall",
+      "passed": true,
+      "detail": "dim M_charged^native=13"
+    },
+    {
+      "name": "K_gen primitive structural-zero axis",
+      "passed": true,
+      "detail": "Gate 444: primitive spectrum {-1,0,1}; middle bare level zero"
+    },
+    {
+      "name": "Generation-2 mass-lift bridge topology",
+      "passed": true,
+      "detail": "Gate 445: primitive closed triangle support forced; amplitude and physical mass sealed"
+    },
+    {
+      "name": "Generation-2 phase orientation firewall",
+      "passed": true,
+      "detail": "Gate 446: signed cycle and complex CP phase remain quarantined"
+    },
+    {
+      "name": "Sector coefficient amplitude firewall",
+      "passed": true,
+      "detail": "Gate 447: multiple symbolic coefficient ledgers survive; 9 K/X/Y amplitudes remain quarantined"
+    },
+    {
+      "name": "Post-444 flavor atlas reconciliation",
+      "passed": true,
+      "detail": "Gate 448: atlas updated structurally; value-bearing flavor firewall preserved"
+    },
+    {
+      "name": "Post-444 manuscript delta export",
+      "passed": true,
+      "detail": "Gate 449: structural family board exported for manuscript revision; no final binary rewrite"
+    },
+    {
+      "name": "Gate450 texture-zero ratio sieve",
+      "passed": true,
+      "detail": "Gate 450: exact M22=0 sum rule derived; GST/Fritzsch mass-angle ratio not forced without coefficient/phase selectors"
+    },
+    {
+      "name": "Gate451 special-branch selector audit",
+      "passed": true,
+      "detail": "Gate 451: no native 1-3 suppression and no native phase ray selector; GST/Fritzsch branch remains quarantined"
+    },
+    {
+      "name": "Gate452 basis-invariance gauge-artifact audit",
+      "passed": true,
+      "detail": "Gate 452: K-preserving basis changes cannot delete the 1-3 edge; nearest-neighbor texture is not a native gauge artifact"
+    },
+    {
+      "name": "Gate453 texture-zero empirical interface",
+      "passed": true,
+      "detail": "Gate 453: native texture-zero ledgers and labelled empirical comparators are allowed; silent observable promotion is rejected"
+    },
+    {
+      "name": "Gate454 coefficient-ray observability rank",
+      "passed": true,
+      "detail": "Gate 454: spectrum-only rank is one; two labelled comparator scalars give local ray observability; CP orientation needs an explicit branch tag"
+    },
+    {
+      "name": "Gate455 empirical texture adapter firewall",
+      "passed": true,
+      "detail": "Gate 455: dry-run adapter accepts labelled symbolic bridge comparators and rejects native promotion, missing metadata, and observed-value import by default"
+    },
+    {
+      "name": "Gate456 symbolic coefficient-ray inverse",
+      "passed": true,
+      "detail": "Gate 456: exact symbolic inverse map derived; generic six-branch phase ambiguity and caustics remain bridge-labelled and fail closed"
+    },
+    {
+      "name": "Gate457 empirical comparator provenance contract",
+      "passed": true,
+      "detail": "Gate 457: comparator imports require sector/scale/scheme/source/uncertainty/dimensionless bridge-only metadata before evaluation"
+    },
+    {
+      "name": "Gate458 comparator evaluation harness",
+      "passed": true,
+      "detail": "Gate 458: redacted/synthetic comparator evaluator applies the Gate456 inverse only in bridge mode; observed numeric values, domain failures, caustics, and native promotion fail closed"
+    },
+    {
+      "name": "Gate459 oriented branch tag ledger",
+      "passed": true,
+      "detail": "Gate 459: cos(3phi) gives six branches, CP sign gives three sheets, and {sigma_CP,n_C3} selects one bridge-only phase branch; no native CP/C3 selector is promoted"
+    },
+    {
+      "name": "Gate460 branch-resolved residual harness",
+      "passed": true,
+      "detail": "Gate 460: complete branch tags allow synthetic/null residual diagnostics only; observed data, native promotion, caustics, and incomplete tags fail closed"
+    },
+    {
+      "name": "Gate461 three-sector comparator multiplex",
+      "passed": true,
+      "detail": "Gate 461: u/d/e bridge rays are sector-indexed; labelled universality is bridge-only and native cross-sector ray sharing is rejected"
+    },
+    {
+      "name": "Gate462 sector-difference CKM interface firewall",
+      "passed": true,
+      "detail": "Gate 462: u-d relative-ray diagnostics are bridge-only; CKM/PMNS entries require explicit observed comparators and eigenbasis conventions and are not native predictions"
+    },
+    {
+      "name": "Gate463 eigenbasis convention ledger",
+      "passed": true,
+      "detail": "Gate 463: raw sector diagonalizers carry phase/permutation gauge; only a complete bridge-only u-d convention ledger can feed a later CKM residual adapter"
+    },
+    {
+      "name": "Gate464 CKM-null residual adapter",
+      "passed": true,
+      "detail": "Gate 464: convention-fixed u-d residual diagnostics may run only in synthetic bridge mode; V_CKM, CKM entries, observed imports, GST selectors, and native-promotion fail closed"
+    },
+    {
+      "name": "Gate465 empirical import switch",
+      "passed": true,
+      "detail": "Gate 465: empirical_import=true may admit metadated quark/CKM rows only into the quarantined comparator ledger; native-promotion and native-registry writes fail closed"
+    },
+    {
+      "name": "Gate466 observed comparator adapter",
+      "passed": true,
+      "detail": "Gate 466: observed quark/CKM rows pass the airlock, but mass spectra alone do not define ASHA cylinder coordinates; d_ud and Cabibbo comparison remain undefined and non-native"
+    },
+    {
+      "name": "Gate467 common-scale comparator ledger",
+      "passed": true,
+      "detail": "Gate 467: defines the bridge-only rank-complete common-scale u/d ledger required before d_ud may be evaluated; Cabibbo-as-coordinate and native-promotion fail closed"
+    },
+    {
+      "name": "Gate468 synthetic inversion harness",
+      "passed": true,
+      "detail": "Gate 468: rank-complete synthetic u/d ledgers invert to bridge-only rays and a d_ud interval; observed data, Cabibbo-as-coordinate, CKM matrix export, and native-promotion fail closed"
+    },
+    {
+      "name": "Gate469 observed comparator preflight",
+      "passed": true,
+      "detail": "Gate 469: observed common-scale comparator ledgers pass only as bridge-only preflight records; redacted or incomplete values do not compute d_ud, and Cabibbo/native-promotion fail closed"
+    },
+    {
+      "name": "Gate470 observed numerical data-file adapter",
+      "passed": true,
+      "detail": "Gate 470: explicit pdg_observed_ledger.json loads through the airlock, but checked-in PDG-style rows lack ASHA I_K and branch tags, so d_ud and Cabibbo residual remain undefined and non-native"
+    },
+    {
+      "name": "Gate471 rank-complete external ledger adapter",
+      "passed": true,
+      "detail": "Gate 471: explicit rank-complete external I_spec/I_K/branch-tag ledger computes d_ud and a Cabibbo residual as bridge-only diagnostics; supplied I_K/branch tags are not native or PDG-published invariants"
+    },
+    {
+      "name": "Gate473 mass-to-equipartition inversion audit",
+      "passed": true,
+      "detail": "Gate 473: raw quark masses confirm extreme hierarchy but do not force alpha=1 or derive I_K=0.5; d_ud and Cabibbo residual stay undefined without independent rank-complete bridge comparators"
+    },
+    {
+      "name": "Gate474 electroweak I_K source audit",
+      "passed": true,
+      "detail": "Gate 474: Higgs VEV and electroweak gauge couplings are generation-blind, while PMNS/lepton data remains bridge-only; no native I_K selector is found"
+    },
+    {
+      "name": "Gate475 lepton rank-complete preflight",
+      "passed": true,
+      "detail": "Gate 475: PMNS/lepton data may enter only as a rank-complete e/nu bridge preflight with I_spec, I_K, branch tags, neutrino ordering and absolute-scale policy; no PMNS residual or native prediction is computed"
+    },
+    {
+      "name": "Gate476 lepton PMNS-null residual socket",
+      "passed": true,
+      "detail": "Gate 476: synthetic rank-complete e/nu bridge rays compute d_eν with the same cylinder metric as d_ud; observed PMNS import, PMNS-as-ray, matrix export, and native-promotion fail closed"
+    },
+    {
+      "name": "Gate477 lepton empirical import switch",
+      "passed": true,
+      "detail": "Gate 477: empirical_import=true may admit metadated charged-lepton, neutrino, and PMNS residual-target rows only into the quarantined lepton comparator ledger; PMNS-as-ray, native-promotion, theorem-input, and native-registry writes fail closed"
+    },
+    {
+      "name": "Gate478 observed lepton comparator adapter",
+      "passed": true,
+      "detail": "Gate 478: explicit lepton_observed_ledger.json loads through the lepton airlock, but observed lepton/PMNS-style rows lack ASHA I_K and branch tags, so d_eν and PMNS residual remain undefined and non-native"
+    },
+    {
+      "name": "Gate480 algebraic null-cone I_K baseline",
+      "passed": true,
+      "detail": "Gate 480: declared Cℓ(1,7) null bridge q=a²-r²=0 forces α_vac=1 and I_K=1/2 as a bare vacuum baseline; physical sector coordinates, d_ud, d_eν, CKM, and PMNS remain non-native and unresolved"
+    },
+    {
+      "name": "Gate481 null-baseline perturbation transport audit",
+      "passed": true,
+      "detail": "Gate 481: I_K,vac=1/2 is accepted as a common null-vacuum baseline, but common baseline terms cancel from relative distances; only bridge-only sector perturbations remain, so physical d_ud, d_eν, CKM, and PMNS remain unresolved"
+    },
+    {
+      "name": "Gate482 null-baseline sector deformation source search",
+      "passed": true,
+      "detail": "Gate 482: existing native finite orientation, chirality, Higgs-edge, and electroweak gauge data do not source sector perturbations; a bridge-only perturbation-source ledger is preserved, while CKM/PMNS-as-source and native promotion fail closed"
+    },
+    {
+      "name": "Gate483 finite algebraic deformation operator search",
+      "passed": true,
+      "detail": "Gate 483: native color/winding topology separates quarks from leptons but is generation-blind and lacks a native map to delta_alpha/delta_phi; the topological perturbation slot remains bridge-only"
+    },
+    {
+      "name": "Gate484 vacuum tilt vector C3 elliptic slice audit",
+      "passed": true,
+      "detail": "Gate 484: C3 tilted-slice coordinates exactly represent square-root mass fingerprints and reveal a charged-lepton Koide shadow, but with independent S/R/psi per sector the construction is a reparametrization, not a native reduction of flavor moduli"
+    },
+    {
+      "name": "Gate485 Koide constraint provenance topological baseline",
+      "passed": true,
+      "detail": "Gate 485: C3 shadow orthogonality plus the Cℓ(1,7) null boundary forces R/S=sqrt(2) and Q=2/3 for a bare colorless baseline, collapsing one shape coordinate while preserving the mass, phase, quark-dressing, CKM/PMNS, and 13-moduli firewalls"
+    },
+    {
+      "name": "Gate486 universal null-mirror CKM compression audit",
+      "passed": true,
+      "detail": "Gate 486: shared null-C3 geometry permits a bridge-only (DeltaAlpha,DeltaPhi) null-mirror socket, but the native CKM 4-\u003e2 theorem fails because no up/down diagonalization operators or two rephasing-invariant polynomial constraints are derived"
+    },
+    {
+      "name": "Gate487 CKM rephasing-invariant polynomial constraint search",
+      "passed": true,
+      "detail": "Gate 487: same-null-C3 synthetic operators can have commutator ranks 0, 2, or 3 depending on bridge eigenbasis choice; the null spectrum does not derive Jarlskog or two CKM invariant polynomial constraints"
+    },
+    {
+      "name": "Gate488 native up/down operator source search",
+      "passed": true,
+      "detail": "Gate 488: native electroweak/Higgs data name up/down slots and K_gen/null-C3 give universal family structure, but no native source couples them into sector-specific family operators; CKM orientation remains quarantined behind the Yukawa airlock"
+    },
+    {
+      "name": "Gate489 Yukawa selector airlock boundary decision",
+      "passed": true,
+      "detail": "Gate 489: spectral-action, first-order, Higgs-edge, K_gen, and gauge-Hessian structures define admissible Yukawa sockets but do not select complex 3x3 up/down matrices or CKM/Jarlskog invariants; CKM orientation is formally environmental behind the airlock"
+    },
+    {
+      "name": "Gate490 topological charge anomaly cancellation ledger",
+      "passed": true,
+      "detail": "Gate 490: the one-generation discrete chiral representation ledger cancels all local/mixed gauge anomalies and clears the global SU(2) doublet parity test, while remaining independent of Yukawa texture, CKM/PMNS, masses, and Jarlskog data"
+    },
+    {
+      "name": "Gate491 scalar-edge stability and Higgs one-form positivity audit",
+      "passed": true,
+      "detail": "Gate 491: finite one-form edge support and Hilbert-Schmidt scalar kinetic trace positivity block ghost kinetic routes, while numerical Z_H, full Hessian, vacuum stability, Higgs quartic/mass, covariant derivative, and Goldstone gauge-eating remain unpromoted"
+    },
+    {
+      "name": "Gate492 scalar covariant derivative and Goldstone intertwiner audit",
+      "passed": true,
+      "detail": "Gate 492: an abstract Dphi template gives a rank-3 broken-image Goldstone diagnostic and photon-null direction, but native Dphi, canonical intertwiner, scalar SU2 action, vacuum orientation, kinetic metric, gauge Hessian/couplings, W/Z masses, and weak angle remain unpromoted"
+    },
+    {
+      "name": "Gate493 full electroweak curvature action and gauge Hessian selection audit",
+      "passed": true,
+      "detail": "Gate 493: the full {T1,T2,Z,Q} electroweak carrier closes and a positive abelian-completed quadratic family exists with diag(1,1,4) reachable at kappa_U1=6, but no finite second variation selects the abelian coefficient, gauge Hessian, weak angle, W/Z masses, or Higgs VEV"
+    },
+    {
+      "name": "Gate494 abelian U1 completion coefficient selection audit",
+      "passed": true,
+      "detail": "Gate 494: k_Y=5/3 and sin²=3/8 boundary diagnostics are confirmed, and kappa_U1=6 remains the whitening candidate, but trace normalization, count resonance, and representation metrics do not select the abelian gauge Hessian"
+    },
+    {
+      "name": "Gate495 finite electroweak action second variation source audit",
+      "passed": true,
+      "detail": "Gate 495: the legacy canonical finite-action candidate computes a dimensionless second variation with diag(1,1,4), kappa_U1=6, and a positive rank-four Hessian, but native promotion is blocked until Dphi, scalar I4 metric, vacuum orientation, and scalar SU2 action provenance close"
+    },
+    {
+      "name": "Gate496 scalar kinetic metric provenance and vacuum orientation closure audit",
+      "passed": true,
+      "detail": "Gate 496: Hilbert-Schmidt trace supplies a ghost-free scalar metric class and the finite response selects the lower vacuum plane, but active I4 normalization, residual S1 quotient, exact vacuum vector, full scalar SU2, Dphi, kappa promotion, and W/Z masses remain blocked"
+    },
+    {
+      "name": "Gate497 vacuum gauge-orbit quotient and unitary-gauge representative audit",
+      "passed": true,
+      "detail": "Gate 497: the residual lower-pair S1 is a bridge broken-gauge orbit direction, Q_em stabilizes the vacuum, and the rank-three broken orbit leaves one radial quotient mode, but native scalar SU2/Dphi/provenance and W/Z promotion remain blocked"
+    },
+    {
+      "name": "Gate498 scalar SU2 complex-structure and gauge-orbit provenance audit",
+      "passed": true,
+      "detail": "Gate 498: a compatible complex doublet and abstract SU2 socket exist, and the Gate497 Goldstone quotient remains coherent, but the anisotropic scalar response selects only pair U1/T3, not full native SU2, Dphi, kappa, or W/Z masses"
+    },
+    {
+      "name": "Gate499 inner-fluctuation Dphi provenance audit",
+      "passed": true,
+      "detail": "Gate 499: inner fluctuations structurally recover one complex Higgs doublet and the Dphi transformation socket, reconciling the scalar-response SU2 obstruction as response-level rather than representation-level; product-action kinetic projection, native Dphi action, heat-kernel coefficient, kappa, and W/Z masses remain blocked"
+    },
+    {
+      "name": "Gate500 product spectral-action scalar kinetic projection audit",
+      "passed": true,
+      "detail": "Gate 500: the CCM product spectral-action ledger reads off the symbolic scalar kinetic channel f0 a |Dphi|^2/pi^2 and canonical rescaling formula, but the coefficient depends on sealed Yukawa trace a, so scalar normalization, I4 metric, kappa, VEV, and W/Z masses remain blocked"
+    },
+    {
+      "name": "Gate501 Yukawa-trace scalar normalization airlock audit",
+      "passed": true,
+      "detail": "Gate 501: a=Tr(Y†Y) is a basis/rephasing-invariant symbolic scalar norm and CKM orientation drops out, but its numeric value depends on sealed Yukawa amplitudes; scalar normalization, kappa, VEV, and W/Z masses remain blocked"
+    },
+    {
+      "name": "Gate502 scalar-normalization-independent electroweak quotient audit",
+      "passed": true,
+      "detail": "Gate 502: after quotienting by a, f0, VEV, continuum scale, and coupling units, photon nullity, broken-rank three, charged degeneracy, and diag(1,1,4) survive only as bridge quotient data; kappa, weak angle, couplings, VEV, W/Z masses, and observed ratios remain blocked"
+    },
+    {
+      "name": "Gate503 electroweak kernel index native closure audit",
+      "passed": true,
+      "detail": "Gate 503: the Higgs-doublet representation supplies a conditional kernel index: U(1)em stabilizer dimension one, broken orbit dimension three, radial quotient dimension one; nonzero vacuum selection, diag(1,1,4) Hessian promotion, kappa, weak angle, couplings, VEV, and W/Z masses remain blocked"
+    },
+    {
+      "name": "Gate504 continuum matching permission ledger audit",
+      "passed": true,
+      "detail": "Gate 504: VEV, gauge couplings, physical weak angle, W/Z masses, and Yukawa trace normalization are permitted only as explicit bridge/environmental matching inputs or outputs with scale/scheme metadata; no numerical adapter is executed and no native electroweak scale/mass/coupling write is made"
+    },
+    {
+      "name": "Gate505 synthetic electroweak matching adapter dry-run",
+      "passed": true,
+      "detail": "Gate 505: the bridge adapter runs only on fake tagged v=2, g2=3, gY=4 inputs, yielding mW=3, mZ=5, sin²=16/25, mγ=0, and ρtree=1; all outputs remain synthetic bridge arithmetic, not observed data or native electroweak predictions"
+    },
+    {
+      "name": "Gate506 observed electroweak comparator airlock preflight",
+      "passed": true,
+      "detail": "Gate 506: observed electroweak comparator data is admitted only through a redacted bridge-only preflight schema; missing metadata, native promotion, kappa promotion, and observed W/Z-as-native-input routes are rejected; no observed numbers are imported and no adapter runs by default"
+    },
+    {
+      "name": "Gate507 observed electroweak comparator file adapter firewall",
+      "passed": true,
+      "detail": "Gate 507: the explicit electroweak comparator file adapter loads a fully tagged synthetic bridge fixture, computes tree-level W/Z/weak-angle outputs and zero synthetic residuals, preserves photon zero/rho identity, and blocks every native electroweak write"
+    },
+    {
+      "name": "Gate508 electroweak comparator residual geometry airlock",
+      "passed": true,
+      "detail": "Gate 508: file-adapter residuals are mapped against the quotient/index ledger only as bridge residual geometry; photon zero and rho=1 remain structural/bridge checks, while the synthetic 25/9 file ratio is not allowed to select the diag(1,1,4) quotient ratio or any native electroweak mass/coupling"
+    },
+    {
+      "name": "Gate509 topological anomalies and gravitational spectral redirect",
+      "passed": true,
+      "detail": "Gate 509: anomaly cancellation is reaffirmed as a discrete mass-independent topological stability theorem, while the product spectral action supplies only a structural Einstein-Hilbert curvature socket; Newton normalization, cutoff selection, f2 separation, cosmological constant, electroweak scales, and flavor moduli remain firewalled"
+    },
+    {
+      "name": "Gate510 curvature coefficient provenance and heat-kernel trace convention audit",
+      "passed": true,
+      "detail": "Gate 510: the D²/Lichnerowicz heat-kernel audit fixes the native dimensionless a2 curvature trace weight Tr_F(1)/12=8 and matches the raw Gate377 coefficient, but f2Λ², trace convention promotion, Newton normalization, cutoff selection, and cosmological f4 remain firewalled"
+    },
+    {
+      "name": "Gate511 gravitational a4 curvature-squared and topological counterterm audit",
+      "passed": true,
+      "detail": "Gate 511: the scale-independent a4 spectral-action channel classifies curvature² sockets into Gauss-Bonnet topological data and Weyl/scalar curvature² sockets, but physical higher-derivative gravity, boundary conditions, renormalization scheme, Newton normalization, and cosmological f4 remain firewalled"
+    },
+    {
+      "name": "Gate512 cosmological f4 vacuum energy and subtraction airlock audit",
+      "passed": true,
+      "detail": "Gate 512: the a0/f4 cosmological volume channel has native finite-trace prefactor Tr_F(1)/(16π²)=6/π², but the positive trace does not self-cancel and f4, cutoff, vacuum subtraction, observed dark energy, and physical cosmological constant remain firewalled"
+    },
+    {
+      "name": "Gate513 spectral moment hierarchy and cutoff-separation airlock audit",
+      "passed": true,
+      "detail": "Gate 513: the stripped a0/a2/a4 heat-kernel prefactor hierarchy is native with ratios 1/12, 1/360, and 1/30, but f2, f4, cutoff Λ, Newton normalization, vacuum subtraction, and the cosmological constant remain firewalled"
+    },
+    {
+      "name": "Gate514 spectral cutoff and renormalization airlock comparator",
+      "passed": true,
+      "detail": "Gate 514: a fail-closed redacted bridge schema for Λ, f2, f4, moment products, Planck/Newton matching, cosmological comparison, vacuum subtraction, and renormalization metadata is accepted, while all numerical adapter execution and native normalization writes remain blocked"
+    },
+    {
+      "name": "Gate516 topological gravity characteristic-class ledger",
+      "passed": true,
+      "detail": "Gate 516: scale-free Euler/Gauss-Bonnet and Pontryagin/signature sockets are native a4 topology, while specific manifold integers, eta boundary data, Newton/cutoff/cosmology normalization, and observed topology remain blocked"
+    },
+    {
+      "name": "Gate517 gravitational index and boundary eta airlock",
+      "passed": true,
+      "detail": "Gate 517: the local chiral index and APS/eta sockets are structurally present and scale-free, while global index integer, boundary eta, boundary spectrum, closed-manifold condition, gravitational theta, Newton/cutoff/cosmology normalization, and observed topology remain blocked"
+    },
+    {
+      "name": "Gate518 synthetic APS index boundary ledger dry-run",
+      "passed": true,
+      "detail": "Gate 518: fake APS rows compute ind_APS=11-(3+1)/2=9 and closed index=11 only to validate bridge plumbing; global topology, eta spectrum, Newton/cosmology normalization, and native writes remain blocked"
+    },
+    {
+      "name": "Gate519 observed topology and boundary comparator preflight",
+      "passed": true,
+      "detail": "Gate 519: a fail-closed topology/boundary comparator schema is defined for Euler, Pontryagin, signature, APS index, eta, h, and boundary condition rows, while observed values, comparator execution, and native writes remain blocked"
+    },
+    {
+      "name": "Gate520 observed topology and boundary file adapter firewall",
+      "passed": true,
+      "detail": "Gate 520: an explicit synthetic topology/boundary file passes the Gate519 airlock and computes bridge-only APS/signature residuals, while observed topology, eta, boundary spectra, and native global-topology writes remain blocked"
+    },
+    {
+      "name": "Gate521 bordism and cobordism classifier airlock",
+      "passed": true,
+      "detail": "Gate 521: oriented/spin/spin-c/boundary bordism sockets classify admissible topology constraints scale-free, but ASHA still cannot select a specific bordism class, manifold representative, characteristic numbers, eta invariant, or boundary condition"
+    },
+    {
+      "name": "Gate522 bordism comparator file adapter and Stiefel-Whitney firewall",
+      "passed": true,
+      "detail": "Gate 522: a synthetic bordism classifier file validates Stiefel-Whitney, spin/spin-c, characteristic-number, and closed-boundary metadata bridge-only, while manifold selection and native topology writes remain blocked"
+    },
+    {
+      "name": "Gate523 topology residual classifier report and native non-selection audit",
+      "passed": true,
+      "detail": "Gate 523: topology residual classes from Gate520 and Gate522 are aggregated bridge-only; zero residuals classify consistency but do not select a manifold, boundary condition, eta invariant, bordism class, or characteristic numbers"
+    },
+    {
+      "name": "Gate524 anomaly-inflow compatibility classifier",
+      "passed": true,
+      "detail": "Gate 524: local index-density, Chern-Simons transgression, APS pairing, and exact anomaly zeroes confirm anomaly-inflow capacity for bridge topology classes, while boundary selection, eta spectra, and cross-fixture native identity remain blocked"
+    },
+    {
+      "name": "Gate525 topology sector closing ledger and native frontier selection",
+      "passed": true,
+      "detail": "Gate 525: topology is closed as native local law/capacity plus bridge representatives; flavor, electroweak scale, gravity/cosmology normalization, and global-topology selection remain sealed, and the next live native frontier is Lorentzian/causal signature provenance"
+    },
+    {
+      "name": "Gate526 Lorentzian causal signature provenance and Wick/time firewall audit",
+      "passed": true,
+      "detail": "Gate 526: Cℓ(1,7) supplies a native 1+7 signature and null cone, while Wick rotation, time orientation, positive energy, real-time unitarity, global hyperbolicity, and physical 3+1 projection remain bridge obligations"
+    },
+    {
+      "name": "Gate527 Lorentzian spinor adjoint, reflection-positivity, and 3+1 projection airlock",
+      "passed": true,
+      "detail": "Gate 527: Cℓ(1,7) supplies a Lorentzian/Krein spinor-adjoint socket, but positive Hilbert reconstruction, reflection positivity, Wick continuation, positive-energy dynamics, unitarity, and physical 3+1 projection remain bridge obligations"
+    },
+    {
+      "name": "Gate528 physical 3+1 projection and internal complement selector audit",
+      "passed": true,
+      "detail": "Gate 528: Cℓ(1,7) supplies volume/chirality idempotent sockets and a bridge-consistent rank-four projector once a four-plane is chosen, but no unique Spin(1,7)-invariant vector projector selects physical 3+1 spacetime, time assignment, or a native internal four-dimensional complement"
+    },
+    {
+      "name": "Gate529 3+1 projection and internal complement bridge airlock preflight",
+      "passed": true,
+      "detail": "Gate 529: explicit 3+1 projectors and four-dimensional complements are accepted only through a fail-closed bridge schema with source, convention, bridge-only, and native-promotion rejection metadata; the projector does not grant Wick rotation, positive Hilbert space, unitary dynamics, or native internal-gauge identification"
+    },
+    {
+      "name": "Gate515 bridge-only gravity/cosmology adapter dry-run",
+      "passed": true,
+      "detail": "Gate 515: a synthetic-only gravity/cosmology adapter computes fake a2/a0/a4 coefficients and residuals to test bridge plumbing, while observed data, Newton/Planck/cosmology imports, and native normalization writes remain blocked"
+    },
+    {
+      "name": "KMS family hierarchy capacity",
+      "passed": true,
+      "detail": "ρβ nontracial for β≠0"
+    },
+    {
+      "name": "Noncommuting capacity",
+      "passed": true,
+      "detail": "K does not commute with shift/quadrature"
+    },
+    {
+      "name": "CP capacity not CP prediction",
+      "passed": true,
+      "detail": "phase coefficients remain free"
+    },
+    {
+      "name": "Stable thermal B-gap Majorana rejected",
+      "passed": true,
+      "detail": "overclosure ratio computed, not guessed"
+    },
+    {
+      "name": "Suppressed/nonthermal target computed",
+      "passed": true,
+      "detail": "conditional yield fraction exists, production history remains sealed"
+    },
+    {
+      "name": "Cosmological constant not solved natively",
+      "passed": true,
+      "detail": "bare spectral term needs subtraction/history rule"
+    },
+    {
+      "name": "Holographic/dilaton bridge computable",
+      "passed": true,
+      "detail": "conditional IR-UV scale is numerical but not native saturation theorem"
+    },
+    {
+      "name": "Vacuum-fate ensemble computed",
+      "passed": true,
+      "detail": "pole and one-loop-QCD top seeds audited"
+    },
+    {
+      "name": "Vacuum fate remains conditional",
+      "passed": true,
+      "detail": "requires empirical top/Higgs inputs and continuum RG scheme"
     }
   ],
   "boundaries": [

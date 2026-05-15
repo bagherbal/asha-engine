@@ -1,0 +1,50 @@
+{
+  "gate": 530,
+  "ledger_name": "synthetic 3+1 projection bridge ledger",
+  "description": "Synthetic file-backed dimensional projection fixture for Gate530. The values are fake and test only projector/complement residual plumbing under the Gate529 airlock.",
+  "bridge_only": true,
+  "native_registry_write": false,
+  "synthetic_fixture": true,
+  "observed_dimension_loaded": false,
+  "source": "synthetic-gate530-fixture",
+  "source_version": "v1",
+  "convention": "basis e0..e7 with Cℓ(1,7) metric diag(+1,-1,-1,-1,-1,-1,-1,-1); P selects e0,e1,e2,e3",
+  "rows": [
+    {
+      "name": "synthetic_external_3plus1_projector",
+      "chosen_projector_matrix": [
+        [1,0,0,0,0,0,0,0],
+        [0,1,0,0,0,0,0,0],
+        [0,0,1,0,0,0,0,0],
+        [0,0,0,1,0,0,0,0],
+        [0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0]
+      ],
+      "internal_complement_projector": [
+        [0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0],
+        [0,0,0,0,1,0,0,0],
+        [0,0,0,0,0,1,0,0],
+        [0,0,0,0,0,0,1,0],
+        [0,0,0,0,0,0,0,1]
+      ],
+      "external_signature_assignment": "1+3",
+      "internal_complement_assignment": "synthetic four-dimensional complement; not native gauge space",
+      "source": "synthetic-gate530-fixture",
+      "source_version": "v1",
+      "convention": "coordinate diagonal projector in e0..e7; bridge-only dry-run; no theorem input",
+      "uncertainty": "exact synthetic integer matrix",
+      "bridge_only": true,
+      "comparator_only": true,
+      "no_theorem_input": true,
+      "synthetic": true,
+      "observed": false,
+      "native_promotion": false,
+      "native_input_claim": false
+    }
+  ]
+}

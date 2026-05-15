@@ -1,0 +1,21 @@
+package generation2reallookingschwingersourcenegativecontroladapter
+
+import "github.com/bagherbal/asha-engine/pkg/theorem"
+
+func Generation2RealLookingSchwingerSourceNegativeControlAdapterTheorem() theorem.Theorem {
+	const id = AuditID
+	const name = "Generation 2 real-looking Schwinger source negative-control adapter"
+	return theorem.Theorem{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Verify: func() theorem.Result {
+		a, err := BuildDefault()
+		if err != nil {
+			return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.FailedRoute, Checks: []theorem.Check{{Name: "construct Gate541 real-looking negative-control adapter", Passed: false, Detail: err.Error()}}}
+		}
+		checks := []theorem.Check{
+			{Name: "inherit Gate540 default-off real-source switch", Passed: a.Inheritance.Executed && a.Inheritance.Gate540SwitchDefined && a.Inheritance.Gate540SwitchDefaultOff && a.Inheritance.Gate540OperatorIntentNeeded && a.Inheritance.Gate540ComparatorBlocked && a.Inheritance.Gate540NoRealSourceImported && a.Inheritance.Gate540NativeWriteBlocked && a.Inheritance.Gate540RedirectsToGate541, Detail: FormatInheritance(a.Inheritance)},
+			{Name: "parse real-looking negative-control ledger and verify checksum", Passed: a.Import.Executed && a.Import.Loaded && a.Import.Rows == 12 && a.Import.AcceptedRows == 12 && a.Import.RejectedRows == 0 && a.Import.RequiredSchemaRowsMatched && a.Import.MetadataComplete && a.Import.AllRowsBridgeOnly && a.Import.AllRowsNoTheoremInput && a.Import.AllRowsNegativeControl && a.Import.AllRowsSourceTagged && a.Import.AllRowsConventionTagged && a.Import.ChecksumVerified && a.Import.RealLookingFixture && a.Import.NegativeControlFixture && !a.Import.DeclaredSyntheticFixture && a.Import.PhysicalSourceClaim && a.Import.NonSyntheticClaim, Detail: FormatImport(a.Import)},
+			{Name: "reject real-looking source before comparator execution", Passed: a.Rejection.Executed && a.Rejection.SourceParsed && a.Rejection.RealLookingClaimSeen && a.Rejection.PhysicalSourceClaimSeen && a.Rejection.NegativeControlFixtureSeen && a.Rejection.SwitchOff && a.Rejection.NoExplicitOperatorIntent && a.Rejection.MissingLicenseOrAccessGrant && a.Rejection.SourceURINotAuthenticated && a.Rejection.ComparatorAuthorizationMissing && a.Rejection.InsufficientProvenance && !a.Rejection.ComparatorExecutionAllowed && !a.Rejection.ComparatorExecutionPerformed && !a.Rejection.PhysicalSourceAuthenticated && !a.Rejection.PhysicalSourceImported && a.Rejection.RejectedAsPhysicalSource && a.Rejection.RejectedBeforeComparator && a.Rejection.QuarantinePreserved, Detail: FormatRejection(a.Rejection)},
+			{Name: "preserve physical-source and native-registry firewall", Passed: a.Firewall.Executed && !a.Firewall.ComparatorExecutionPerformed && !a.Firewall.RealSchwingerSourceImported && !a.Firewall.ObservedCorrelationImported && !a.Firewall.ConstructiveMeasureImported && !a.Firewall.PhysicalOSCertificateImported && !a.Firewall.PhysicalWickMapImported && !a.Firewall.PhysicalHamiltonianImported && !a.Firewall.PhysicalSchwingerDerived && !a.Firewall.OSPositivityProven && !a.Firewall.WickRotationSelected && !a.Firewall.PhysicalHilbertSpaceSelected && !a.Firewall.PositiveHamiltonianDerived && !a.Firewall.UnitaryDynamicsDerived && !a.Firewall.GlobalCausalitySelected && !a.Firewall.ArrowOfTimeSelected && !a.Firewall.NativeSchwingerFunctionWrite && !a.Firewall.NativeEuclideanMeasureWrite && !a.Firewall.NativeOSPositivityWrite && !a.Firewall.NativeWickWrite && !a.Firewall.NativeHilbertWrite && !a.Firewall.NativeHamiltonianWrite && !a.Firewall.NativeUnitaryDynamicsWrite && !a.Firewall.NativeGlobalCausalWrite && !a.Firewall.NativeTimeArrowWrite && !a.Firewall.ReopenedFlavorFirewall && !a.Firewall.ReopenedEWScaleFirewall && !a.Firewall.ReopenedGravityScaleFirewall && !a.Firewall.ReopenedTopologyFirewall && !a.Firewall.ReopenedDimensionalFirewall && !a.Firewall.ReopenedKreinHilbertFirewall && !a.Firewall.NativeRegistryWritten, Detail: FormatFirewall(a.Firewall)},
+		}
+		return theorem.Result{ID: id, Name: name, Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Checks: checks, Notes: append(statuses(), a.Truth)}
+	}}
+}
