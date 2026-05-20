@@ -17,7 +17,7 @@ func TestRuntimeReportAllPasses(t *testing.T) {
 			t.Fatalf("check failed: %+v", c)
 		}
 	}
-	if e.Metadata.LatestGate != 551 {
+	if e.Metadata.LatestGate != 684 {
 		t.Fatalf("unexpected latest gate %d", e.Metadata.LatestGate)
 	}
 }

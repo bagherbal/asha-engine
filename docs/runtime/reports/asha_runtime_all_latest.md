@@ -1,7 +1,7 @@
 # ASHA Runtime Board
 
-- Runtime: `gate551-physical-correlation-evidence-board-closure-ledger-20260515`
-- Latest gate: `551`
+- Runtime: `gate571-hopf-s7-k7-product-time-airlock-audit-20260516`
+- Latest gate: `571`
 - Scenario: `all`
 - Source: `github.com/bagherbal/asha-engine`
 
@@ -293,7 +293,7 @@ A conditional one-loop RG/bounce stress test can be computed once empirical top/
 - ✅ **KMS family hierarchy capacity** — ρβ nontracial for β≠0
 - ✅ **Noncommuting capacity** — K does not commute with shift/quadrature
 - ✅ **CP capacity not CP prediction** — phase coefficients remain free
-- ✅ **Latest gate marker** — gate=551
+- ✅ **Latest gate marker** — gate=571
 - ✅ **Clifford dimension** — dim Cℓ(1,7)=2^8
 - ✅ **Exterior grade dimensions** — [1,8,28,56,70,56,28,8,1]
 - ✅ **Boolean/G2 contact vacuum** — rank(P_B)=56 rank(P_G)=14 dim K=7

@@ -1,0 +1,15 @@
+{
+  "lambda_mz": 0.1296525650504758,
+  "y_t_mz": 0.9731919043924856,
+  "lambda_lambda12": -0.049700942077683274,
+  "y_t_lambda12": 0.4809200309718785,
+  "beta_lambda_mz": -0.0240692903177972,
+  "zero_crossing_scale_gev": 2575927.2046129573,
+  "vacuum_stability_status": "lambda_crosses_zero_before_lambda12_in_v1_approximation",
+  "approximation": "one-loop SM v1; lambda beta uses top-dominant user formula; Yukawa transport uses diagonal one-loop SM approximation and fixed CKM",
+  "statuses": [
+    "CONDITIONAL_SUPPORT_SCALAR_TRANSPORT_COMPUTED_ONE_LOOP_TOP_DOMINANT_APPROXIMATION",
+    "FIREWALL_PRESERVED_THRESHOLDS_AND_SCHEMES_EXPLICITLY_LABELED",
+    "FIREWALL_PRESERVED_NO_OBSERVED_INPUT_IMPORTED_AS_ASHA_NATIVE_DERIVATION"
+  ]
+}

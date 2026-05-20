@@ -1,0 +1,31 @@
+package generation2firsttraceresidualandquadraticspectralcorrectionaudit
+
+import (
+	"math"
+	"strings"
+
+	"github.com/bagherbal/asha-engine/pkg/theorem"
+)
+
+func Generation2FirstTraceResidualAndQuadraticSpectralCorrectionAuditTheorem() theorem.Theorem {
+	return theorem.Theorem{ID: AuditID, Name: "Gate 690 — First-Trace Residual and Quadratic Spectral Correction Audit", Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Verify: func() theorem.Result {
+		a, err := BuildDefault()
+		if err != nil {
+			return theorem.Result{ID: AuditID, Name: "Gate 690 — First-Trace Residual and Quadratic Spectral Correction Audit", Layer: theorem.LayerBridge, Status: theorem.FailedRoute, Checks: []theorem.Check{{Name: "build", Passed: false, Detail: err.Error()}}}
+		}
+		checks := []theorem.Check{
+			{Name: "inherit Gate689 first-trace functional selection", Passed: a.Inherited.FirstTraceSelectionInherited && a.Inherited.Operator == "R_split = S_split P_K7" && a.Inherited.H72Dimension == h72Dimension && a.Inherited.K7Dimension == k7Dimension && a.Inherited.FirstTraceActive && !a.Inherited.QuadraticLeadingActive && !a.Inherited.NativeFirstTraceTheorem && !a.Inherited.NativeSevenOver72Theorem && math.Abs(a.Inherited.F1-(7.0/72.0)*a.Inherited.SSplit) < residualTolerance && math.Abs(a.Inherited.F2-(7.0/72.0)*a.Inherited.SSplit*a.Inherited.SSplit) < residualTolerance && a.Inherited.Verdict == StatusGate689FirstTraceSelectionInherited, Detail: FormatInheritance(a.Inherited)},
+			{Name: "compute first-trace residual", Passed: math.Abs(a.Residual.Residual-8.525834398014336e-10) < residualTolerance && math.Abs(a.Residual.Residual-(a.Residual.DBase-a.Residual.F1)) < residualTolerance && a.Residual.ResidualTiny && a.Residual.ResidualNonzero && a.Residual.Verdict == StatusFirstTraceResidualComputed, Detail: FormatResidual(a.Residual)},
+			{Name: "compute quadratic spectral scale", Passed: math.Abs(a.Quadratic.F2-1.624013231638281e-7) < 1e-21 && a.Quadratic.F2SecondOrder && a.Quadratic.F3ThirdOrder && a.Quadratic.F2MuchLargerThanResidual && a.Quadratic.QuadraticStillNotLeading && strings.Contains(a.Quadratic.Verdict, StatusQuadraticSpectralScaleComputed) && strings.Contains(a.Quadratic.Verdict, StatusQuadraticTraceNotLeading), Detail: FormatQuadratic(a.Quadratic)},
+			{Name: "compute residual over F2 coefficient", Passed: math.Abs(a.Quadratic.ResidualOverF2-0.005249855254820553) < coefficientTolerance && a.Quadratic.ResidualOverF2Small && strings.Contains(a.Quadratic.Verdict, StatusResidualOverF2CoefficientComputed) && strings.Contains(a.Quadratic.Verdict, StatusFirstTraceResidualSecondOrderSuppressed), Detail: FormatQuadratic(a.Quadratic)},
+			{Name: "audit typed coefficient candidates without rational search", Passed: a.Coefficients.CandidateCount == 7 && a.Coefficients.KappaEClosest && a.Coefficients.KappaEOrientCloseButWorse && a.Coefficients.NoArbitraryRationalSearch && a.Coefficients.AllCandidatesAlreadyTyped && math.Abs(a.Coefficients.BestCandidateValue-kappaE) < coefficientTolerance && a.Coefficients.BestCandidate == "kappa_e" && strings.Contains(a.Coefficients.Verdict, StatusTypedCoefficientCandidatesAudited), Detail: FormatCoefficients(a.Coefficients)},
+			{Name: "compare flavor-deficit quadratic corrections", Passed: a.FlavorDeficit.KappaECloserThanF2Alone && a.FlavorDeficit.KappaEOrientCloserThanF2Alone && !a.FlavorDeficit.KappaEExact && !a.FlavorDeficit.KappaEOrientExact && a.FlavorDeficit.ResidualClueOnly && math.Abs(a.FlavorDeficit.KappaEAbsResidual-4.1201043014107086e-11) < 1e-20 && strings.Contains(a.FlavorDeficit.Verdict, StatusKappaECloseToQuadraticResidualCoefficient), Detail: FormatFlavor(a.FlavorDeficit)},
+			{Name: "audit noncircularity and dependency", Passed: a.Noncircularity.DBaseContainsKappaE && a.Noncircularity.CorrectionUsesKappaE && a.Noncircularity.KappaEExplanationPartiallyDependent && !a.Noncircularity.IndependentEvidence && !a.Noncircularity.NativeCorrectionCertified && !a.Noncircularity.PromoteCorrection && strings.Contains(a.Noncircularity.Verdict, StatusKappaEQuadraticNotIndependentlyCertified), Detail: FormatNoncircularity(a.Noncircularity)},
+			{Name: "record suppressed spectral expansion without promotion", Passed: strings.Contains(a.Expansion.FormulaWithFreeC2, "c_2") && strings.Contains(a.Expansion.FormulaWithKappaE, "kappa_e") && math.Abs(a.Expansion.ExactC2-a.Quadratic.ResidualOverF2) < coefficientTolerance && math.Abs(a.Expansion.ResidualWithExactC2) < residualTolerance && math.Abs(a.Expansion.ResidualWithKappaE-a.FlavorDeficit.KappaEResidual) < residualTolerance && a.Expansion.ExactC2IsDefinitionOnly && !a.Expansion.KappaEFormulaPromoted && !a.Expansion.ExpansionTheoremCertified && strings.Contains(a.Expansion.Verdict, StatusNoNativeSpectralExpansionTheorem), Detail: FormatExpansion(a.Expansion)},
+			{Name: "record missing first-trace and spectral-expansion theorems", Passed: len(a.Missing.Missing) == 3 && strings.Contains(a.Missing.PreciseGap, "HistoryResponseFirstTraceTheorem") && strings.Contains(a.Missing.PreciseGap, "SpectralExpansionResponseTheorem") && strings.Contains(a.Missing.Verdict, StatusNoNativeSpectralExpansionTheorem) && strings.Contains(a.Missing.Verdict, StatusNoNativeFirstTraceResponseTheorem) && strings.Contains(a.Missing.Verdict, StatusNoNativeSevenOver72Theorem), Detail: FormatMissing(a.Missing)},
+			{Name: "preserve Gate690 residual firewall", Passed: !a.Discipline.ClaimsQuadraticLeadingResponse && !a.Discipline.ClaimsKappaECorrectionCertified && !a.Discipline.ClaimsNativeSpectralExpansion && !a.Discipline.ClaimsNativeFirstTraceTheorem && !a.Discipline.ClaimsNativeSevenOver72 && !a.Discipline.ClaimsBoundaryStress && !a.Discipline.ClaimsScalarRGMatching && !a.Discipline.ClaimsHiggsMass && !a.Discipline.ClaimsGaugeUnification && !a.Discipline.ClaimsFlavorDerivation && !a.Discipline.ClaimsCKMPMNS && !a.Discipline.ClaimsProjectorActivation && !a.Discipline.PerformsArbitraryRationalSearch && a.Discipline.Verdict == StatusGate690FirstTraceResidualBoundary, Detail: FormatDiscipline(a.Discipline)},
+		}
+		notes := append(Statuses(), a.Truth)
+		return theorem.Result{ID: AuditID, Name: "Gate 690 — First-Trace Residual and Quadratic Spectral Correction Audit", Layer: theorem.LayerBridge, Status: theorem.BridgeRequired, Checks: checks, Notes: notes}
+	}}
+}

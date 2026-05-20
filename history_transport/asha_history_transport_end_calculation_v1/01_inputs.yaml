@@ -1,0 +1,209 @@
+task_name: "ASHA-HISTORY-TRANSPORT-END-CALCULATION-V1"
+mu0_name: "M_Z"
+mu0_gev: 91.1876
+asha_boundary_law:
+  k_y: 1.66666666667
+  sin2_theta_boundary: 0.375
+  canonical_boundary_relation: "g1(Lambda)=g2(Lambda), with g1^2=(5/3) gY^2"
+  finite_algebra: "A_F = C + H + M_3(C)"
+  scalar_carrier: "H_phi ~= C^2"
+  bridge_only: true
+measured:
+  G_F:
+    name: "G_F"
+    value: 1.1663787e-05
+    uncertainty: 6e-12
+    unit: "GeV^-2"
+    source_id: "NIST_CODATA_2018_GF"
+    role: "electroweak v extraction"
+    bridge_only: true
+  m_W:
+    name: "m_W"
+    value: 80.3602
+    uncertainty: 0.0099
+    unit: "GeV"
+    source_id: "CMS_2024_W_MASS"
+    role: "on-shell weak-angle and g2 extraction"
+    bridge_only: true
+  m_Z:
+    name: "m_Z"
+    value: 91.1876
+    uncertainty: 0.0021
+    unit: "GeV"
+    source_id: "PDG_2024_Z_ALPHA"
+    role: "observation scale and neutral Hessian extraction"
+    bridge_only: true
+  m_H:
+    name: "m_H"
+    value: 125.38
+    uncertainty: 0.14
+    unit: "GeV"
+    source_id: "CMS_2020_HIGGS_MASS"
+    role: "lambda extraction"
+    bridge_only: true
+  alpha_s_MZ:
+    name: "alpha_s(M_Z)"
+    value: 0.1179
+    uncertainty: 0.001
+    unit: "dimensionless"
+    scale: "M_Z"
+    scheme: "MS-bar"
+    source_id: "PDG_2024_Z_ALPHA"
+    role: "g3 extraction"
+    bridge_only: true
+fermions:
+  - name: "u"
+    mass_gev: 0.00216
+    mass_uncertainty_gev: 0.00038
+    input_scale_gev: 2
+    target_scale_gev: 91.1876
+    mass_at_mz_gev: 0.00142484053726
+    scheme: "MS-bar reference mass at 2 GeV"
+    transport: "one-loop QCD mass transport to M_Z; threshold corrections not included"
+    source_id: "PDG_2024_QUARKS"
+    bridge_only: true
+  - name: "c"
+    mass_gev: 1.27
+    mass_uncertainty_gev: 0.02
+    input_scale_gev: 1.27
+    target_scale_gev: 91.1876
+    mass_at_mz_gev: 0.77199420296
+    scheme: "MS-bar mass at mu=m_c"
+    transport: "one-loop QCD mass transport to M_Z; threshold corrections not included"
+    source_id: "PDG_2024_QUARKS"
+    bridge_only: true
+  - name: "t"
+    mass_gev: 162.5
+    mass_uncertainty_gev: 1
+    input_scale_gev: 162.5
+    target_scale_gev: 91.1876
+    mass_at_mz_gev: 169.436199193
+    scheme: "MS-bar converted top reference"
+    transport: "one-loop QCD mass transport to M_Z; top threshold convention explicit"
+    source_id: "ASHA_GATE473_PDG_STYLE_TOP_MSBAR_REFERENCE"
+    bridge_only: true
+  - name: "d"
+    mass_gev: 0.00467
+    mass_uncertainty_gev: 0.00033
+    input_scale_gev: 2
+    target_scale_gev: 91.1876
+    mass_at_mz_gev: 0.00308055801343
+    scheme: "MS-bar reference mass at 2 GeV"
+    transport: "one-loop QCD mass transport to M_Z; threshold corrections not included"
+    source_id: "PDG_2024_QUARKS"
+    bridge_only: true
+  - name: "s"
+    mass_gev: 0.0934
+    mass_uncertainty_gev: 0.006
+    input_scale_gev: 2
+    target_scale_gev: 91.1876
+    mass_at_mz_gev: 0.0616111602687
+    scheme: "MS-bar reference mass at 2 GeV"
+    transport: "one-loop QCD mass transport to M_Z; threshold corrections not included"
+    source_id: "PDG_2024_QUARKS"
+    bridge_only: true
+  - name: "b"
+    mass_gev: 4.18
+    mass_uncertainty_gev: 0.03
+    input_scale_gev: 4.18
+    target_scale_gev: 91.1876
+    mass_at_mz_gev: 3.07886034427
+    scheme: "MS-bar mass at mu=m_b"
+    transport: "one-loop QCD mass transport to M_Z; threshold corrections not included"
+    source_id: "PDG_2024_QUARKS"
+    bridge_only: true
+  - name: "e"
+    mass_gev: 0.00051099895
+    mass_uncertainty_gev: 0
+    input_scale_gev: 91.1876
+    target_scale_gev: 91.1876
+    mass_at_mz_gev: 0.00051099895
+    scheme: "charged-lepton pole mass used as v1 proxy"
+    transport: "no lepton mass running before Yukawa extraction in v1"
+    source_id: "PDG_2024_LEPTONS"
+    bridge_only: true
+  - name: "mu"
+    mass_gev: 0.1056583755
+    mass_uncertainty_gev: 0
+    input_scale_gev: 91.1876
+    target_scale_gev: 91.1876
+    mass_at_mz_gev: 0.1056583755
+    scheme: "charged-lepton pole mass used as v1 proxy"
+    transport: "no lepton mass running before Yukawa extraction in v1"
+    source_id: "PDG_2024_LEPTONS"
+    bridge_only: true
+  - name: "tau"
+    mass_gev: 1.77686
+    mass_uncertainty_gev: 0.00012
+    input_scale_gev: 91.1876
+    target_scale_gev: 91.1876
+    mass_at_mz_gev: 1.77686
+    scheme: "charged-lepton pole mass used as v1 proxy"
+    transport: "no lepton mass running before Yukawa extraction in v1"
+    source_id: "PDG_2024_LEPTONS"
+    bridge_only: true
+ckm:
+  s12: 0.22501
+  s13: 0.003732
+  s23: 0.04183
+  delta_rad: 1.147
+  source_id: "PDG_2024_CKM"
+cosmology:
+  omega_c_h2: 0.12
+  omega_b_h2: 0.0224
+  n_s: 0.965
+  tau: 0.054
+  source_id: "PLANCK_2018_LCDM"
+  bridge_only: true
+sources:
+  - id: "CMS_2024_W_MASS"
+    title: "High-precision measurement of the W boson mass with the CMS experiment at the LHC"
+    url: "https://arxiv.org/abs/2412.13872"
+    version: "arXiv:2412.13872"
+    note: "m_W = 80.3602 +/- 0.0099 GeV used as selectable W endpoint"
+  - id: "NIST_CODATA_2018_GF"
+    title: "CODATA value: Fermi coupling constant"
+    url: "https://physics.nist.gov/cgi-bin/cuu/Value?gf="
+    version: "CODATA 2018/NIST"
+    note: "G_F/(hbar c)^3 = 1.1663787(6)e-5 GeV^-2"
+  - id: "CMS_2020_HIGGS_MASS"
+    title: "A measurement of the Higgs boson mass in the diphoton decay channel"
+    url: "https://arxiv.org/abs/2002.06398"
+    version: "arXiv:2002.06398v2"
+    note: "combined CMS value m_H = 125.38 +/- 0.14 GeV"
+  - id: "PLANCK_2018_LCDM"
+    title: "Planck 2018 results. VI. Cosmological parameters"
+    url: "https://arxiv.org/abs/1807.06209"
+    version: "arXiv:1807.06209"
+    note: "base-LambdaCDM endpoint values omega_c h^2, omega_b h^2, n_s, tau"
+  - id: "PDG_2024_CKM"
+    title: "PDG 2024 Review: CKM Quark-Mixing Matrix"
+    url: "https://pdg.lbl.gov/2024/reviews/rpp2024-rev-ckm-matrix.pdf"
+    version: "PDG 2024, Phys. Rev. D 110, 030001"
+    note: "s12, s13, s23, delta and J_CKM reference"
+  - id: "PDG_2024_QUARKS"
+    title: "PDG 2024 Summary Table: Quarks"
+    url: "https://pdg.lbl.gov/2024/tables/rpp2024-sum-quarks.pdf"
+    version: "PDG 2024"
+    note: "reference quark masses and schemes; v1 runs them to M_Z with one-loop QCD and no threshold matching"
+  - id: "PDG_2024_Z_ALPHA"
+    title: "PDG 2024 physical constants / Z and alpha_s reference"
+    url: "https://pdg.lbl.gov/2024/reviews/rpp2024-rev-phys-constants.pdf"
+    version: "PDG 2024"
+    note: "m_Z and alpha_s(M_Z) endpoint values"
+  - id: "PDG_2024_LEPTONS"
+    title: "PDG 2024 lepton mass references"
+    url: "https://pdg.lbl.gov/2024/"
+    version: "PDG 2024"
+    note: "charged-lepton masses used as v1 pole-mass proxies"
+  - id: "ASHA_GATE473_PDG_STYLE_TOP_MSBAR_REFERENCE"
+    title: "ASHA Gate473 raw quark mass hierarchy fixture"
+    url: "data/pdg_raw_quark_masses_gate473.json"
+    version: "Gate473 bridge ledger"
+    note: "top MS-bar reference retained as bridge-only project input"
+warnings:
+  - "Observed inputs are bridge-only endpoints, not ASHA-native derivations."
+  - "The g1=g2 crossing is a one-loop Standard Model boundary-normalization test, not full gauge unification."
+  - "Quark masses are transported to M_Z with a v1 one-loop QCD approximation; production use requires multi-loop running and threshold matching."
+  - "Scalar and flavor upward transport are v1 one-loop approximations; full precision vacuum-stability and flavor transport are not claimed."
+  - "Planck LambdaCDM values are optional cosmology endpoints and remain sealed residual data."

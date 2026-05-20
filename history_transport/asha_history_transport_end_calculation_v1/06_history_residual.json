@@ -1,0 +1,70 @@
+{
+  "gauge": {
+    "delta_3": -0.32739043299998416,
+    "r_3": 1.0509933868964996
+  },
+  "weak_angle": {
+    "delta_sin2": -0.15162335529519477
+  },
+  "scalar": {
+    "lambda_lambda12": -0.049700942077683274,
+    "zero_crossing_scale_gev": 2575927.2046129573,
+    "vacuum_stability_status": "lambda_crosses_zero_before_lambda12_in_v1_approximation"
+  },
+  "flavor": {
+    "yukawa_hierarchy_invariants": {
+      "Y_d": {
+        "spec_y_dagger_y": [
+          6.38990497474168e-11,
+          2.5559511444355904e-8,
+          0.000050700767881714654
+        ],
+        "det_y_dagger_y": 8.2805938736736e-23,
+        "trace_y_dagger_y": 0.00005072639129220876
+      },
+      "Y_e": {
+        "spec_y_dagger_y": [
+          8.568340510162635e-12,
+          3.6632338879196217e-7,
+          0.00010360675008039684
+        ],
+        "det_y_dagger_y": 3.2519916095703437e-22,
+        "trace_y_dagger_y": 0.0001039730820375293
+      },
+      "Y_u": {
+        "spec_y_dagger_y": [
+          1.2991664519296282e-11,
+          0.0000038138375775674736,
+          0.23128407618999258
+        ],
+        "det_y_dagger_y": 1.145968615127003e-17,
+        "trace_y_dagger_y": 0.23128789004056183
+      }
+    },
+    "j_ckm": 0.000031169935287554706,
+    "koide_qe": 0.6666605114773856,
+    "residual_patterns": [
+      "Yukawa spectra remain sharply hierarchical; hierarchy is observed history data, not ASHA-native derivation.",
+      "CKM phase and Jarlskog invariant are imported endpoint data and held fixed in v1 transport.",
+      "Neutrino/PMNS sector skipped in v1 by explicit convention.",
+      "Full matrix RGE with thresholds is required before any precision flavor-boundary claim."
+    ]
+  },
+  "cosmology_optional": {
+    "omega_c_h2": 0.12,
+    "omega_b_h2": 0.0224,
+    "n_s": 0.965,
+    "tau": 0.054,
+    "source_id": "PLANCK_2018_LCDM",
+    "bridge_only": true
+  },
+  "statuses": [
+    "PASS_STRONG_COUPLING_MISMATCH_DELTA3_VISIBLE",
+    "PASS_WEAK_ANGLE_TRANSPORT_RESIDUAL_VISIBLE",
+    "CONDITIONAL_SUPPORT_SCALAR_TRANSPORT_COMPUTED_ONE_LOOP_TOP_DOMINANT_APPROXIMATION",
+    "CONDITIONAL_SUPPORT_FLAVOR_TRANSPORT_COMPUTED_DIAGONAL_ONE_LOOP_APPROXIMATION",
+    "CONDITIONAL_SUPPORT_PLANCK_LCDM_ENDPOINT_INCLUDED_AS_COSMOLOGY_SEAL",
+    "FIREWALL_PRESERVED_NO_OBSERVED_INPUT_IMPORTED_AS_ASHA_NATIVE_DERIVATION"
+  ],
+  "interpretation": "R_hist is the bridge-only fingerprint left after ASHA boundary normalization is transported to the measured endpoint; nonzero entries are history seals, not failed algebra."
+}

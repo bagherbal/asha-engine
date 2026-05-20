@@ -1,7 +1,7 @@
 # ASHA Runtime Board
 
-- Runtime: `gate551-physical-correlation-evidence-board-closure-ledger-20260515`
-- Latest gate: `551`
+- Runtime: `gate571-hopf-s7-k7-product-time-airlock-audit-20260516`
+- Latest gate: `571`
 - Scenario: `environment`
 - Source: `github.com/bagherbal/asha-engine`
 
@@ -150,7 +150,7 @@ A conditional one-loop RG/bounce stress test can be computed once empirical top/
 - ✅ **KMS family hierarchy capacity** — ρβ nontracial for β≠0
 - ✅ **Noncommuting capacity** — K does not commute with shift/quadrature
 - ✅ **CP capacity not CP prediction** — phase coefficients remain free
-- ✅ **Latest gate marker** — gate=551
+- ✅ **Latest gate marker** — gate=571
 - ✅ **Cosmological constant not solved natively** — bare spectral term needs subtraction/history rule
 - ✅ **Holographic/dilaton bridge computable** — conditional IR-UV scale is numerical but not native saturation theorem
 - ✅ **Vacuum-fate ensemble computed** — pole and one-loop-QCD top seeds audited

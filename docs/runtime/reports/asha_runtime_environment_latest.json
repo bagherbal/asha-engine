@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "runtime_version": "gate551-physical-correlation-evidence-board-closure-ledger-20260515",
-    "latest_gate": 551,
+    "runtime_version": "gate571-hopf-s7-k7-product-time-airlock-audit-20260516",
+    "latest_gate": 571,
     "title": "ASHA final runtime board",
     "keywords": [
       "Clifford algebra",
@@ -714,7 +714,7 @@
     {
       "name": "Latest gate marker",
       "passed": true,
-      "detail": "gate=551"
+      "detail": "gate=571"
     },
     {
       "name": "Cosmological constant not solved natively",
