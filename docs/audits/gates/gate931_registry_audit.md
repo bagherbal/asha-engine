@@ -1,0 +1,174 @@
+# Gate 931 — Airlock AdmissibleSupport Lattice Source Audit
+
+## Registry
+
+```text
+pkg/bridge/generation2airlockadmissiblesupportlatticesourceaudit
+```
+
+Registered theorem:
+
+```text
+generation2airlockadmissiblesupportlatticesourceaudit.Generation2AirlockAdmissibleSupportLatticeSourceAuditTheorem()
+```
+
+Layer: `BRIDGE`  
+Status: `BRIDGE_REQUIRED`
+
+## Purpose
+
+Gate 931 follows Gate 930's status:
+
+```text
+R3_ALPHA_CLOSURE_OPERATOR_EXISTS_NATIVE_SOURCE_MISSING
+```
+
+Gate 930 showed that the `AirlockSupportClosureOperator` exists as a finite bridge-level closure operator on the candidate support chain:
+
+```text
+F_0 subset F_1 subset F_2
+```
+
+Gate 931 audits whether this admissible support chain is itself source-typed by:
+
+```text
+puncture rootedness
+same-socket completion
+tensor-factor integrity
+no orphan opposite-socket fragments
+full right-rectangle saturation
+minimal chain sufficiency
+Z2 phase-orientation class descent
+```
+
+This gate does not derive `alpha_B`, does not promote native R3, does not update official ledgers, does not assign physical sectors, and does not derive individual Yukawa values.
+
+## Ambient support board
+
+```text
+H_R^ambient = C_R^2 tensor W
+C_R^2 = e_lambda plus e_barlambda
+W = P_1 plus P_3
+```
+
+Atomic cells:
+
+```text
+e_lambda tensor P_1       rank 1
+e_lambda tensor P_3       rank 3
+e_barlambda tensor P_1    rank 1
+e_barlambda tensor P_3    rank 3
+```
+
+For a phase representative:
+
+```text
+F_0 = e_phase tensor P_1
+F_1 = e_phase tensor W
+F_2 = C_R^2 tensor W
+```
+
+Ranks:
+
+```text
+rank(F_0)=1
+rank(F_1)=4
+rank(F_2)=8
+rank(F_1/F_0)=3
+rank(F_2/F_0)=7
+```
+
+## Verdict
+
+```text
+AIRLOCK_ADMISSIBLE_SUPPORT_CHAIN_SOURCE_TYPED_BY_PUNCTURE_ROOT_SAME_SOCKET_COMPLETION_AND_FULL_RECTANGLE_SATURATION_BUT_NATIVE_ADMISSIBILITY_THEOREM_MISSING
+```
+
+Classification:
+
+```text
+R3_AIRLOCK_ADMISSIBLE_SUPPORT_LATTICE_SOURCE_TYPED_NOT_NATIVE
+```
+
+Short status:
+
+```text
+R3_ALPHA_SUPPORT_LATTICE_SOURCED_NATIVE_ADMISSIBILITY_MISSING
+```
+
+## Conditional supports
+
+```text
+CONDITIONAL_SUPPORT_ADMISSIBLE_SUPPORT_CHAIN_IS_ROOTED_AT_NEUTRAL_PUNCTURE
+CONDITIONAL_SUPPORT_F0_EQUALS_PUNCTURE_BASEPOINT
+CONDITIONAL_SUPPORT_ALL_ACTIVE_TARGETS_ARE_RELATIVE_TO_F0
+CONDITIONAL_SUPPORT_SAME_SOCKET_COMPLETION_FORCES_F1_EQUALS_E_PHASE_TENSOR_W
+CONDITIONAL_SUPPORT_FIRST_NONBASE_SUPPORT_IS_EXPOSED_PHASE_FACE_COMPLETION
+CONDITIONAL_SUPPORT_F1_OVER_F0_EQUALS_E_PHASE_TENSOR_P3
+CONDITIONAL_SUPPORT_RANK_THREE_EXPOSED_TARGET_FOLLOWS_FROM_SAME_SOCKET_COMPLETION
+CONDITIONAL_SUPPORT_ADMISSIBLE_SUPPORTS_ARE_TENSOR_STRUCTURED_COMPLETIONS_NOT_ARBITRARY_SUBSPACES
+CONDITIONAL_SUPPORT_PARTIAL_OPPOSITE_SOCKET_FRAGMENTS_ARE_NOT_AIRLOCK_ADMISSIBLE
+CONDITIONAL_SUPPORT_AIRLOCK_CHAIN_PRESERVES_SOCKET_AND_W_BLOCK_INTEGRITY
+CONDITIONAL_SUPPORT_ORPHAN_OPPOSITE_SOCKET_FRAGMENTS_ARE_EXCLUDED
+CONDITIONAL_SUPPORT_ADMISSIBLE_CHAIN_HAS_NO_PARTIAL_OPPOSITE_SOCKET_LEVEL
+CONDITIONAL_SUPPORT_OPPOSITE_SOCKET_APPEARS_ONLY_AT_FULL_SATURATION_LEVEL
+CONDITIONAL_SUPPORT_FULL_PAIR_ACTIVATION_FORCES_F2_EQUALS_C_R2_TENSOR_W
+CONDITIONAL_SUPPORT_F2_IS_FULL_RIGHT_RECTANGLE_SATURATION
+CONDITIONAL_SUPPORT_F2_OVER_F0_HAS_RANK_SEVEN
+CONDITIONAL_SUPPORT_RANK_SEVEN_FULL_ENCLOSURE_TARGET_FOLLOWS_FROM_SATURATION
+CONDITIONAL_SUPPORT_F0_F1_F2_FORM_MINIMAL_SUFFICIENT_AIRLOCK_SUPPORT_CHAIN
+CONDITIONAL_SUPPORT_NO_EXTRA_INTERMEDIATE_SUPPORT_LEVEL_IS_REQUIRED
+CONDITIONAL_SUPPORT_ADMISSIBLE_LATTICE_COLLAPSES_TO_THREE_LEVEL_CHAIN
+CONDITIONAL_SUPPORT_ADMISSIBLE_SUPPORT_LATTICE_DESCENDS_TO_Z2_CLASS
+CONDITIONAL_SUPPORT_PHASE_FLIP_EXCHANGES_F0_AND_F1_REPRESENTATIVES_WHILE_FIXING_F2
+CONDITIONAL_SUPPORT_SUPPORT_RANKS_ARE_Z2_REPRESENTATIVE_INDEPENDENT
+CONDITIONAL_SUPPORT_THETA_B_Z2_AND_MU_B_RECONSTRUCTED_FROM_SOURCED_SUPPORT_LATTICE
+```
+
+## Preserved firewalls
+
+```text
+FAILED_ROUTE_PUNCTURE_ROOTEDNESS_NOT_NATIVE_SUPPORT_LATTICE_THEOREM
+FAILED_ROUTE_SAME_SOCKET_COMPLETION_NOT_NATIVE_ADMISSIBILITY_THEOREM
+FAILED_ROUTE_TENSOR_FACTOR_INTEGRITY_NOT_NATIVE_ADMISSIBILITY_THEOREM
+FAILED_ROUTE_NO_ORPHAN_FRAGMENT_RULE_NOT_NATIVE_THEOREM
+FAILED_ROUTE_FULL_RIGHT_RECTANGLE_SATURATION_NOT_NATIVE_ADMISSIBILITY_THEOREM
+FAILED_ROUTE_MINIMAL_SUFFICIENT_SUPPORT_CHAIN_NOT_NATIVE_UNIQUENESS_THEOREM
+FAILED_ROUTE_Z2_SUPPORT_LATTICE_NOT_NATIVE_GLOBAL_PHASE_THEOREM
+FAILED_ROUTE_NO_NATIVE_ADMISSIBLE_AIRLOCK_SUPPORT_LATTICE_THEOREM
+FAILED_ROUTE_ALPHA_B_REMAINS_BRIDGE_CANDIDATE_NOT_NATIVE
+FAILED_ROUTE_NOT_NATIVE_R3
+FAILED_ROUTE_FULL_A_F_DESCENT_STILL_BLOCKED
+FAILED_ROUTE_NO_GENERATION_CARRIER_MAP
+FAILED_ROUTE_NO_FLAVOR_ORIENTATION_MAP
+FAILED_ROUTE_NO_INDIVIDUAL_YUKAWA_VALUES
+FAILED_ROUTE_NO_NATIVE_YUKAWA_OPERATOR_THEOREM
+```
+
+## Strategic result
+
+Gate 931 source-types the admissible chain:
+
+```text
+A_airlock = {F_0,F_1,F_2}
+```
+
+by puncture root, same-socket completion, tensor-factor integrity, no-orphan fragments, full right-rectangle saturation, minimal sufficiency, and Z2 class descent.
+
+The new primary native gap is:
+
+```text
+AdmissibleAirlockSupportLatticeTheorem
+```
+
+or more sharply:
+
+```text
+why admissible supports are tensor-structured completions rather than arbitrary rank-compatible subspaces.
+```
+
+Next pressure gate:
+
+```text
+Gate 932 — TensorStructured AirlockSupport Admissibility Audit
+```

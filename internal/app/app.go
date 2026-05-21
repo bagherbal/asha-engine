@@ -194,27 +194,57 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2a4curvaturesquaredledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2abeliancoefficientselection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2activesevenoverseventytwoboundaryweightsourceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2admissibleairlocksupportlatticeuniquenessaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2afrepresentationsectorprojectorandaggregatecarrierpullbackaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2airlockadmissiblesupportlatticesourceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2airlockclosureaxiomsourceflaggeneratedminimalityaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2airlocksupportclosureoperatorexistenceidempotenceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2alphavariationaltraceactionsourceobstructionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2alternativegenerationcarriersearchaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2anomalyinflowcompatibilityclassifier"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2augmentedchamberdefectsplittoboundarypairresponsetransportaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2augmentedchamberdefecttraceresponseaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2augmenteddefectexactsequenceaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ba2onethirdrigidityspectralquarticproxyaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2basisinvariance"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2bernoullipayoffnormalizationandzerocomplementsupportaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2bminusltracezeroresttransferfactorizationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2booleanoctonionicintersectionsupportprojectorselectionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2booleanoctonionicsupportactivationminimalityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2bordismcobordismclassifierairlock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2bordismcomparatorfileadapter"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2bottomcolorresttripletcandidateandalphabyukawaratiofalsificationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryactivationmeasurefunctoraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryactivationmeasurenativeconstraintsourceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryactivationmeasurenaturalityanduniquenessaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryalphadomaintransportmapconstructionandobstructionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryalphaexteriorsealr3eligibilityaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryalphaincidenceflagsealclassificationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryalphanativegappriorityandcollapserouteaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryalphaoneplusthreerestsimplexandconcentrationsourceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryalphapowerresponsetransportmapaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryalphasocketranksourcereentryaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryalphasourceanddomaintransportaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryantialignmentquotienttracecouplingaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryaugmentedresponsechambernormalizationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarydegreeexposureenclosurefunctoraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarydegreetoairlockflagtargetfunctoraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarydegreetoairlockflagtargetfunctornaturalityanduniquenessaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryendpointthresholdtransportspineaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryexposureenclosuredegreetargetselectionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryexteriordegreeindexedflagquotientselectoraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryexteriordegreeresponsemapandcubicstopsourceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryexteriordegreetargetselectionmapaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryexteriorincidenceflagselectorfunctoraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryexteriortargetselectionsourcesearchaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryflavorscalarmatchingcomplementindependenceaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryfnrestpressurespurionandneffminusthreeclosureaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryfnrestpressuretestprotocolandexternalledgerpredictionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarygaugenormalizationhessianaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryhistoryresidualcubicstresspullcorrectionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryhistoryresidualsecondmomentandruntimetransportaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarypairexteriorjettruncationdegreetargetselectionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarypairfacefiltrationtargetfunctoraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarypairreadoutnaturalityandresponsepackagesealaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryquotientpayofffunctionalselectionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryquotientprojectionkernelaudit"
@@ -223,8 +253,10 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryrawmomentresponsepolynomialclosureaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundaryscalarprojectorselectorfactorizationfirewallaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarysecondmomentrestpressurecorrectionandpositivespectrumconstructionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarysplitjetresponsefunctionalaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarystresssplitlinepullbacksourceaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarystresssplitpullbackcorrectionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarysubsetairlockclosureincidencefunctoraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarytohistoryquotientresponseoperatoraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarytotracemagnituderestmapcoefficientpriorandpositivespectrumaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2boundarytotracemagnituderestmapminimalityandnogoaudit"
@@ -235,6 +267,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2branchresiduals"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2branchtags"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2canonicalamplitudeairlockaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2canonicalflavorselectorvsexternalorientationsealdecisionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2centralbaselinegaugeandscalarwallreferenceselectionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2centralscalarbaselineandupliftonlyresponseisolationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2chargedleptonfourthrootspectralfunctionaloriginaudit"
@@ -248,6 +281,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ckmnullmirror"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ckmnullresidual"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2cl17boardscalarhiggstypeledgerandoperatorairlockaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2closurefactoredboundaryactivationmeasureconsolidationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2coefficientjacobianrankoneboundarystressaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2coefficientledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2coefficientrayobservability"
@@ -266,6 +300,8 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2conditionalashahistoryresponselawclosureaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2conditionalelectroweakhiggssocketassemblyandmissingsealaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2conditionalradialhopfhistoryloopunitlawandpremiseminimalityaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2conditionalyukawatraceproxybranchclosurenextfrontieraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2conditionalyukawatraceproxyledgerofficialfreezeaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2contactformcovectorobstructionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2contactreeblawspaceclockairlockaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2continuummatchingpermissionledger"
@@ -283,7 +319,12 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2decomposedyukawatraceledgersealinterfaceaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2defectquotientresponsefibertypingaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2defecttodefecttraceoperatoraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2degreeindexedselectorfunctionhoodsourceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2degreeindexedz2airlockflagfunctoraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2dominantsocketleptocolortracecompressionmapaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2dualeventexpectationscalarruntimetransportassemblyaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2dualsealr3candidateclassificationpromotionfirewallaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2dualsealr3candidatejoppositefulldescentincidencefunctorrecheckaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2edgetrialityembeddingsealandhiggsfermionslotassignmentnogoaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2effectiveparticipationscalarproxynormalformandruntimepropagationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2eigenbasisledger"
@@ -302,28 +343,44 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ewkernelindexclosure"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ewnquotient"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ewresidualgeometryairlock"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2externalc3generationcarriersealinstallationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2externalc3sealvsparentairlockdecisionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2externalflavororientationsealinstallationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2externallowscaleyukawaratioledgerintakeanddustcapexecutionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2externalyukawainputchecklistandpatterndiagnosticairlockaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2externalyukawaledgerconventionsealandatomdataintakeaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2externalyukawamatrixsealinstallationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2fanohitchinobstructionboundaryinterfaceaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2fanonormalformhitchinmetricsymbolicidentityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ferminormalizedhiggsratioandscalecancellationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2finiteactionsecondvariation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2finitebodyaggregatetracecompressionshadowmapaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2finitecontactcochaincomplexaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2finitecontactdifferentialsourceaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2finitehiggsoneformscalarproxycoefficienttypingandfirewallaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2finiteoneformpuncturekernelweaksocketselectoraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2finiterepresentationsectorprojectorledgerconstructionobstructionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2finitespectraltripleyukawaedgetemplateandtrialitycouplingcompatibilityaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2finitetriplerepresentationcompletionandprojectorledgerdataaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2finiteyukawatraceratioonethirdshadowandtopcolordominanceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2firstordercalculationfullalgebravshiggsorientedstabilizeraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2firstorderjoppositecompatibilitycalculationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2firsttracefunctionalselectionandspectralorderaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2firsttraceresidualandquadraticspectralcorrectionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2flavorboundaryreadoutandstresspullorientationsealfactorizationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2flavorbranchcompatibilityselectoraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2flavorledgerdiagnosticpretestundertripleseal"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2flavororientationmapconstructionauditundersealedr4"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2flavororientationmappreconditionauditunderexternalc3andr3dualseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2flavororientationreadoutsourcemapandpmnsckmfirewallaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2flavorreducedscalarhiggsnormalformandkappaesubstitutionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2flavorspectralbalancefunctionaltypeadmissibilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2flavorspectralorientationbalancefunctionalaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2flavorwalldeficitkappaesourcetypeandscalarbridgedependencyaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2fourcertificatenativeclauseexecutionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2fourfoldselectororigintraceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2fullafdescenthiggsorientationsourceobstructionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2fullafdescentspontaneousorientationsealaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2fullaugmentedobserverstateselectionandbiasfirewallaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2gaugemeetingscaletrianglegeometryaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2gaugescalarboundarypairingrobustnessaudit"
@@ -333,11 +390,15 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2generationmixingoperatorsourceandflavororientationreadoutsealaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2generationoperatorsealandyukawamatrixsourceminimalityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2globalaugmentedtracekernelconditionalaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2globalphasez2equivarianceorientationgaugeaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2gravitationalindexetaairlock"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2h72defectscalartob2boundaryresponsedescentmapaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2halftraceboundarycoordinateweightaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2hierarchybreakingoperatorsealfnscalerestpressureandboundarysplitcandidateaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2higgsdimensionlesspredictionindependenceandsealdependencyaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2higgshessianspectralprojectorandradialeventreplacementaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2higgsorientationsourcecandidateweaksocketselectoraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2higgsorientedstabilizeralgebrapostorientationlayeraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2higgspotentialhessianeigenvalueandtreeproxynormalizationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2higgsquarticcoefficientairlockandlambdasymbolfirewallaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2higgsradialeventweightandphaselooptransportaudit"
@@ -362,12 +423,15 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2hodgeprojectorplanemetricratioaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2hodgestarinternaldestinationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2hodgestark7tow7leakagerankaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2hopfchiralityphaseanchortypingfirewallaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2hopfcl17phaseanchorbridgeaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2hopfs7k7producttimeairlockaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2hyperchargecolorboundarycoefficientandpositiverestcorrectionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2innerfluctuationdphiprovenance"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2internalobstructionsealclosurepivot"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2internalsu2sockettoelectroweaksu2lintertwinerairlockaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2internalu1phaselinetohyperchargelanenormalizationairlockaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2jfoppositeactionorderzerobimodulerealizationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2k7boundaryprojectionweightaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2k7complementboundarywoundmixtureobservableaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2k7eventweightandbernoulliresponseobservableaudit"
@@ -377,6 +441,9 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2k7intersectioncokerneldualityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2k7kernelcokernelindexzeroaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2k7minuscomplexstructureselectorandso3gaugefirewallaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2k7minusgenerationcarriercandidateauditunderr3dualseal"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2k7minustrialityintertwinerconstructionr4stabilizationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2k7minustrialitytracebodycouplingpreconditionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2k7nativeomegasourcesplitg2audit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2k7overlambda4boundarypairprojectionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2k7plusmaximumentropyobserverstateandradialeventweightaudit"
@@ -405,6 +472,9 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2koidewalloffsetsourcecandidateaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2koideyukawasquarerootconesealaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2lawhistorywallhierarchyandk7responsefirewallorderingaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2leftneutralkernelsingletonchiralpuncturepairaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2leptocolorfiniteactionprojectorledgeraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2leptocolorfockcarrierrepresentationsealaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2leptonempiricalimportswitch"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2leptonobservedadapter"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2leptonpmnsnullresidual"
@@ -418,19 +488,34 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2lorentziancausalsignature"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2lorentzianspinoradjointairlock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2lowscaleyukawadustcapstresstestandsectorreadingdowngradeaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2m3cfundamentaltripletfockp3carrierbridgeaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2massliftbridge"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2massmixinginvariants"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2masstoequipartition"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2masterenvironmentalhistorysealvectoraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2maximallymixedaugmentedchamberobserverstateaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2maximumentropyobserverstateselectionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2minimalfinitetriplerepresentationdatasealambientactivecarrieraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2minimalflavorhistorybranchsealclosureaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2minimalhiggssocketsealpackageandpromotionboundaryaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2minimalnulledgeorientationprincipleaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2minimalrightmodulefinitediracedgeskeletonaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2minimalrightmoduleweakdoubletsocketedgeoperatoraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2minimalrightneutralabsencesealedgeskeletonaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2minimalscalarhiggssealpackageandindependenceaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2movingu1phaselineandhyperchargenormalizationfirewallaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nativer3frontierselectionz2boundaryalphafunctorvsfullafdescentaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nativer3promotiongapaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nativereducedboundarypairresponsefunctionalaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nativethreesourcecandidateandd4su3carrierfirewallaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nativetrialityrestrictionk7minusr3tracebodyintertwinerrepairaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nativeupdownsource"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nativez2equivariantairlockfunctorandboundaryalphasourceaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2negativesectormultiplicityhitchinmetricsourceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nestedpuncturecomplementtargetselectionfunctoraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2neutralpunctureairlockunificationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2neutralpunctureairlockvariationalfunctionalaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2noncircularssplitreplacementfinitescalarproxyaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nullbaselineperturbation"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2nullconeikselector"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2observedcomparatoradapter"
@@ -443,8 +528,11 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2octonionicfanocalibrationnormalformaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2oneeighthscalarbaselineandmultiplicativecorrectionfactorizationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2oneplusthreerestsimplexsourceminimalityandexternalledgerfalsificationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2operatorlevelfinitesectorprojectorledgercompatibilityaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2operatorlevelfinitetriplematrixrealizationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2orientationbalanceinvariantmatrixformaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2orientedwalldistancehyperplaneaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2originrootedz2boundaryairlockactivationnativeclosureaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2orthogonalcokernelk7pairingaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2osreflectionpositivityairlock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2oswickhilbertsectorclosureledger"
@@ -452,7 +540,10 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2paulihopfscalarmomentmapaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2paulimomentweakplaneincidenceaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2pgtofanonormalformsourcetheoremaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2phaseanchoredneutralpunctureairlockfunctoraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2phaseorientation"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2phaseorientedneutralpunctureairlockr3sealclassificationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2phasetransportdomaincodomainrepresentationactionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2physicalcorrelationevidenceboardairlock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2physicalcorrelationevidenceclosureledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2physicalcorrelationreleaseclosureledger"
@@ -460,13 +551,23 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2physicalschwingerledgerairlock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2polecorrectionlayerdecompositionandnonfitfirewallaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2polecorrectionsealpackageandlevel1cdiagnosticboundaryaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2positivephasegeneratorcharacterweightorientationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2postorientationfinitetriplesealclassificationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2productspectralactionkineticprojection"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2projectionbridgeairlockpreflight"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2projectivefockcp3momentmapselectorgeometryaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2projectorvaluedboundaryquotientresponsetraceaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2provenancecontract"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2puncturedsocketresponsefunctionalaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2quarternormalizedphasetransportsourcetypeaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2quotientlinenormalizationandresponsecoefficientcovarianceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2r2plusplusr3firewallanddualtripletsectorledgerobstructionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2r3alphayukawatracebridgepretestexecutionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2r3alphayukawatracebridgepretestspecificationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2r3dualsealbridgetheoremfinalboundaryr4preconditionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2r3sectorledgerrequirementsunderboundaryalphasealaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2r4generationcarriercomparisonflavorformulafirewallaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2r4generationcarrierpreconditionauditunderr3dualseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2radialhiggsselfcouplingandnormalizationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2radialphasehopffiberandangularcomplementdecompositionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2radialselfcouplingratioinvariantsandconventionfirewallaudit"
@@ -479,11 +580,19 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2realschwingerimportswitchairlock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2realsourcecomparatorauthorizationairlock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2realsourcecomparatorharnessairlock"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2reducedboundarypairexteriorresponsedegreetargetselectionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2relativerestmagnitudeoperatorandboundaryalphaactivationmapaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2rightcharacterorientationandsocketordersourceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2rightcharacterphaseorientationsourceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2rightcharacterrepresentationinductioncomplexphasemoduleaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2rightleptocolorneutralsingletonpunctureedgesupportaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2rightleptocolorpuncturecomplementsocketorientationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2rightsocketcharactersplitpuncturedleptocolorcompressionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2runtimequartictohiggsmasstranslationfirewallandrequiredinputsaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarbaselineandk7boundarysplitupliftobservableaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarcanonicalnormalizationspectralquarticairlockaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarcovariantintertwiner"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalaredgesocketoperatorrealizationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalaredgestability"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarflavordeficitclosuretriangleaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarhiggsbridgesealinventoryandforecastboundaryaudit"
@@ -494,17 +603,32 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarproxytoboundarytransportspineaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarquarticcoordinateairlockaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarquaternionicmomentewcurvatureprojectionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarsourcesealclassificationr3bridgetheoremboundaryaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarsu2provenance"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarwallairlockandquotientlinegluingaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2scalarzerowallboundarywallcoordinateaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2schwingersourceauthenticityairlock"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sealedckmpmnsledgercompatibilityaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sealedepsiloneflavorwallledgerconsistencyaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sealedhiggssockettooneformscalarproxyandhistorylooptransportcompatibilityaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sealedkappaflavorledgerconsistencyaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sealedkoideshadowcompatibilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sealedspatialcp1fstcompatibilityaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sealedyukawamatrixoperatorconstructionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sectordeformationsource"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sectordifference"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sectormultiplex"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sectortraceledgermapcandidatesourceandcarriercompatibilityaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sectortraceledgermapunderboundaryalphasealaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sectortracemagnitudereadoutmapunderboundaryalphasealaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2selfconsistentrestconcentrationlawandboundaryalphamapaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sharedscalarwallunitnormalizationalignmentaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2socketcharacteridentificationedgeintertwinerpromotionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2socketmagnitudesourcebernoullibminusltransferaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2socketorderorientededgeairlockconsolidationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2socketsectortofinitesectorliftcandidateaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2socketsectorvsfinitesectorledgerboundaryaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2sockettraceatomsectortypingr3eligibilityfirewallaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2spatialcp2selectorisotropyobstructionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2spatialprojectiveorientationsealminimalityconsequenceaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2specialbranchselector"
@@ -513,11 +637,20 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2spectralcutoffrenormalizationairlock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2spectralmomenthierarchyairlock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2spectralquarticconventioncoefficientaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ssplitaddendsourcecircularitynativescalarlaneaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ssplitnativeh72scalarsourceaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ssplitnativesourceboundaryresponsescalaroriginaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ssplittoreducedboundarypairresponsetransportaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2stabilizerbranchfirstordermatrixedgeintertwineraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2stabilizerbranchfirstorderoperatorcalculationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2stabilizerbranchfirstordersupportedgecentralityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2strongcouplingthresholdresidualledgeraudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2strongthresholdsignfieldcontentviabilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2structuralzero"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2supportselectedresponseoperatorspectrumaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2symbolicdffirstorderjoppositecompatibilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2symbolicelectroweakhessianbridgeaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2symbolicfinitediracmatrixsupportfirstorderfirewallaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2synthetic3plus1projectionadapter"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2syntheticapsindexboundaryledger"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2syntheticauthorizationmanifestadapter"
@@ -532,6 +665,7 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2syntheticschwingerledgeradapter"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2syntheticsourceauthenticityadapter"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2tauetacarrierpullbackobstructionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2tensorstructuredairlocksupportadmissibilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2thetaextboundaryresponsepackageconstructionandreadoutobstructionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2threefactorscalarhiggsmasternormalformandremainingsealpriorityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2topdominancetracedeviationexpansionandnontopyukawafirewallaudit"
@@ -541,10 +675,14 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2topologicalgravityredirect"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2topologyresidualclassifierreport"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2topologysectorclosingledger"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2totalrelativetracemagnitudeoperatorandledgerconsistencyaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2tracefunctionalnontautologyaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2tracemagnitudeoperatorsealandneffsourceminimalityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2treeproxytopolemasscorrectiondependencyandfirewallaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2trialityairlockgenerationcarrierroutebifurcationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2trialitygenerationcarriercandidateauditunderr3dualseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2trialitytoyukawareadoutminimalityandnogoaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2triplesealedflavorledgerdiagnosticsynthesisaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2twistorinvariantsu2doubletsocketrepresentationaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2twistorinvariantsu2socketandmovingu1phaseaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2twistresidualcomplementanglesourceaudit"
@@ -560,12 +698,22 @@ import (
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2vevradiusairlockmusquaredconsequenceandvacuumenergyoffsetfirewallaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2vevscaleairlockanddimensionfulhiggstowerfirewallaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2weakdoubletcarrieridentityspatialcp1nonidentificationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2weakdoublethiggsorientationsealaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2wickhilbertfundamentalsymmetryairlock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2witthopfs7contactreebaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2ydaggerytracemagnitudereadoutobstructionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2yukawamatrixadmissibilityauditundertripleseal"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2yukawaselectorairlock"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2yukawatraceatomdataacquisitionandnonidentifiabilityaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2yukawatraceparticipationratioandeffectivetopcolorchannelcountaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generation2yukawatracescalarnormalization"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2z2airlockclosurefunctornativeminimalitysaturationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2z2boundaryalphaclasssealr3plateauremainingfrontieraudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2z2boundaryalphacrosslaneexclusionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2z2boundaryalphadecomposedfunctorconsolidationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2z2boundaryalphafunctorsourcedecompositionaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2z2boundaryalphar3bridgecandidateconsolidationaudit"
+	"github.com/bagherbal/asha-engine/pkg/bridge/generation2z2equivariantr3ledgerpromotionaudit"
 	"github.com/bagherbal/asha-engine/pkg/bridge/generationaddressfunctor"
 	"github.com/bagherbal/asha-engine/pkg/bridge/geometricmeanresonance"
 	"github.com/bagherbal/asha-engine/pkg/bridge/goldstone"
@@ -1606,6 +1754,154 @@ func Run() error {
 		generation2externallowscaleyukawaratioledgerintakeanddustcapexecutionaudit.Generation2ExternalLowScaleYukawaRatioLedgerIntakeAndDustCapExecutionAuditTheorem(),
 		generation2covariantphasespacecliffordsourcerouterandyukawagapaccelerationaudit.Generation2CovariantPhaseSpaceCliffordSourceRouterAndYukawaGapAccelerationAuditTheorem(),
 		generation2relativerestmagnitudeoperatorandboundaryalphaactivationmapaudit.Generation2RelativeRestMagnitudeOperatorAndBoundaryAlphaActivationMapAuditTheorem(),
+		generation2bminusltracezeroresttransferfactorizationaudit.Generation2BMinusLTraceZeroRestTransferFactorizationAuditTheorem(),
+		generation2boundaryalphasourceanddomaintransportaudit.Generation2BoundaryAlphaSourceAndDomainTransportAuditTheorem(),
+		generation2boundaryalphadomaintransportmapconstructionandobstructionaudit.Generation2BoundaryAlphaDomainTransportMapConstructionAndObstructionAuditTheorem(),
+		generation2totalrelativetracemagnitudeoperatorandledgerconsistencyaudit.Generation2TotalRelativeTraceMagnitudeOperatorAndLedgerConsistencyAuditTheorem(),
+		generation2alphavariationaltraceactionsourceobstructionaudit.Generation2AlphaVariationalTraceActionSourceObstructionAuditTheorem(),
+		generation2r2plusplusr3firewallanddualtripletsectorledgerobstructionaudit.Generation2R2PlusPlusR3FirewallAndDualTripletSectorLedgerObstructionAuditTheorem(),
+		generation2sectortraceledgermapcandidatesourceandcarriercompatibilityaudit.Generation2SectorTraceLedgerMapCandidateSourceAndCarrierCompatibilityAuditTheorem(),
+		generation2m3cfundamentaltripletfockp3carrierbridgeaudit.Generation2M3CFundamentalTripletFockP3CarrierBridgeAuditTheorem(),
+		generation2afrepresentationsectorprojectorandaggregatecarrierpullbackaudit.Generation2AFRepresentationSectorProjectorAndAggregateCarrierPullbackAuditTheorem(),
+		generation2finiterepresentationsectorprojectorledgerconstructionobstructionaudit.Generation2FiniteRepresentationSectorProjectorLedgerConstructionObstructionAuditTheorem(),
+		generation2finitetriplerepresentationcompletionandprojectorledgerdataaudit.Generation2FiniteTripleRepresentationCompletionAndProjectorLedgerDataAuditTheorem(),
+		generation2leptocolorfockcarrierrepresentationsealaudit.Generation2LeptoColorFockCarrierRepresentationSealAuditTheorem(),
+		generation2leptocolorfiniteactionprojectorledgeraudit.Generation2LeptoColorFiniteActionProjectorLedgerAuditTheorem(),
+		generation2dominantsocketleptocolortracecompressionmapaudit.Generation2DominantSocketLeptoColorTraceCompressionMapAuditTheorem(),
+		generation2rightsocketcharactersplitpuncturedleptocolorcompressionaudit.Generation2RightSocketCharacterSplitPuncturedLeptoColorCompressionAuditTheorem(),
+		generation2rightleptocolorpuncturecomplementsocketorientationaudit.Generation2RightLeptoColorPunctureComplementSocketOrientationAuditTheorem(),
+		generation2rightleptocolorneutralsingletonpunctureedgesupportaudit.Generation2RightLeptoColorNeutralSingletonPunctureEdgeSupportAuditTheorem(),
+		generation2minimalrightneutralabsencesealedgeskeletonaudit.Generation2MinimalRightNeutralAbsenceSealAndEdgeSkeletonAuditTheorem(),
+		generation2minimalrightmodulefinitediracedgeskeletonaudit.Generation2MinimalRightModuleFiniteDiracEdgeSkeletonAuditTheorem(),
+		generation2finitebodyaggregatetracecompressionshadowmapaudit.Generation2FiniteBodyAggregateTraceCompressionShadowMapAuditTheorem(),
+		generation2puncturedsocketresponsefunctionalaudit.Generation2PuncturedSocketResponseFunctionalAuditTheorem(),
+		generation2minimalrightmoduleweakdoubletsocketedgeoperatoraudit.Generation2MinimalRightModuleWeakDoubletSocketEdgeOperatorAuditTheorem(),
+		generation2symbolicfinitediracmatrixsupportfirstorderfirewallaudit.Generation2SymbolicFiniteDiracMatrixSupportFirstOrderFirewallAuditTheorem(),
+		generation2leftneutralkernelsingletonchiralpuncturepairaudit.Generation2LeftNeutralKernelSingletonChiralPuncturePairAuditTheorem(),
+		generation2symbolicdffirstorderjoppositecompatibilityaudit.Generation2SymbolicDFFirstOrderJOppositeCompatibilityAuditTheorem(),
+		generation2minimalfinitetriplerepresentationdatasealambientactivecarrieraudit.Generation2MinimalFiniteTripleRepresentationDataSealAmbientActiveCarrierAuditTheorem(),
+		generation2firstorderjoppositecompatibilitycalculationaudit.Generation2FirstOrderJOppositeCompatibilityCalculationAuditTheorem(),
+		generation2weakdoublethiggsorientationsealaudit.Generation2WeakDoubletHiggsOrientationSealAuditTheorem(),
+		generation2operatorlevelfinitetriplematrixrealizationaudit.Generation2OperatorLevelFiniteTripleMatrixRealizationAuditTheorem(),
+		generation2firstordercalculationfullalgebravshiggsorientedstabilizeraudit.Generation2FirstOrderCalculationFullAlgebraVsHiggsOrientedStabilizerAuditTheorem(),
+		generation2higgsorientedstabilizeralgebrapostorientationlayeraudit.Generation2HiggsOrientedStabilizerAlgebraPostOrientationLayerAuditTheorem(),
+		generation2stabilizerbranchfirstordermatrixedgeintertwineraudit.Generation2StabilizerBranchFirstOrderMatrixEdgeIntertwinerAuditTheorem(),
+		generation2jfoppositeactionorderzerobimodulerealizationaudit.Generation2JFOppositeActionOrderZeroBimoduleRealizationAuditTheorem(),
+		generation2stabilizerbranchfirstordersupportedgecentralityaudit.Generation2StabilizerBranchFirstOrderSupportEdgeCentralityAuditTheorem(),
+		generation2scalaredgesocketoperatorrealizationaudit.Generation2ScalarEdgeSocketOperatorRealizationAuditTheorem(),
+		generation2stabilizerbranchfirstorderoperatorcalculationaudit.Generation2StabilizerBranchFirstOrderOperatorCalculationAuditTheorem(),
+		generation2socketcharacteridentificationedgeintertwinerpromotionaudit.Generation2SocketCharacterIdentificationEdgeIntertwinerPromotionAuditTheorem(),
+		generation2postorientationfinitetriplesealclassificationaudit.Generation2PostOrientationFiniteTripleSealClassificationAuditTheorem(),
+		generation2ydaggerytracemagnitudereadoutobstructionaudit.Generation2YDaggerYTraceMagnitudeReadoutObstructionAuditTheorem(),
+		generation2socketmagnitudesourcebernoullibminusltransferaudit.Generation2SocketMagnitudeSourceBernoulliBMinusLTransferAuditTheorem(),
+		generation2boundaryalphasocketranksourcereentryaudit.Generation2BoundaryAlphaSocketRankSourceReEntryAuditTheorem(),
+		generation2boundaryalphapowerresponsetransportmapaudit.Generation2BoundaryAlphaPowerResponseTransportMapAuditTheorem(),
+		generation2boundarysplitjetresponsefunctionalaudit.Generation2BoundarySplitJetResponseFunctionalAuditTheorem(),
+		generation2boundarypairexteriorjettruncationdegreetargetselectionaudit.Generation2BoundaryPairExteriorJetTruncationDegreeTargetSelectionAuditTheorem(),
+		generation2reducedboundarypairexteriorresponsedegreetargetselectionaudit.Generation2ReducedBoundaryPairExteriorResponseDegreeTargetSelectionAuditTheorem(),
+		generation2boundaryexteriordegreetargetselectionmapaudit.Generation2BoundaryExteriorDegreeTargetSelectionMapAuditTheorem(),
+		generation2boundaryexposureenclosuredegreetargetselectionaudit.Generation2BoundaryExposureEnclosureDegreeTargetSelectionAuditTheorem(),
+		generation2boundaryalphaexteriorsealr3eligibilityaudit.Generation2BoundaryAlphaExteriorSealR3EligibilityAuditTheorem(),
+		generation2conditionalyukawatraceproxyledgerofficialfreezeaudit.Generation2ConditionalYukawaTraceProxyLedgerOfficialFreezeAuditTheorem(),
+		generation2boundaryexteriortargetselectionsourcesearchaudit.Generation2BoundaryExteriorTargetSelectionSourceSearchAuditTheorem(),
+		generation2nestedpuncturecomplementtargetselectionfunctoraudit.Generation2NestedPunctureComplementTargetSelectionFunctorAuditTheorem(),
+		generation2boundarypairfacefiltrationtargetfunctoraudit.Generation2BoundaryPairFaceFiltrationTargetFunctorAuditTheorem(),
+		generation2boundaryexteriordegreeindexedflagquotientselectoraudit.Generation2BoundaryExteriorDegreeIndexedFlagQuotientSelectorAuditTheorem(),
+		generation2boundaryexteriorincidenceflagselectorfunctoraudit.Generation2BoundaryExteriorIncidenceFlagSelectorFunctorAuditTheorem(),
+		generation2boundaryalphaincidenceflagsealclassificationaudit.Generation2BoundaryAlphaIncidenceFlagSealClassificationAuditTheorem(),
+		generation2conditionalyukawatraceproxybranchclosurenextfrontieraudit.Generation2ConditionalYukawaTraceProxyBranchClosureNextFrontierAuditTheorem(),
+		generation2r3sectorledgerrequirementsunderboundaryalphasealaudit.Generation2R3SectorLedgerRequirementsUnderBoundaryAlphaSealAuditTheorem(),
+		generation2sectortraceledgermapunderboundaryalphasealaudit.Generation2SectorTraceLedgerMapUnderBoundaryAlphaSealAuditTheorem(),
+		generation2sectortracemagnitudereadoutmapunderboundaryalphasealaudit.Generation2SectorTraceMagnitudeReadoutMapUnderBoundaryAlphaSealAuditTheorem(),
+		generation2sockettraceatomsectortypingr3eligibilityfirewallaudit.Generation2SocketTraceAtomSectorTypingR3EligibilityFirewallAuditTheorem(),
+		generation2socketsectorvsfinitesectorledgerboundaryaudit.Generation2SocketSectorVsFiniteSectorLedgerBoundaryAuditTheorem(),
+		generation2socketsectortofinitesectorliftcandidateaudit.Generation2SocketSectorToFiniteSectorLiftCandidateAuditTheorem(),
+		generation2operatorlevelfinitesectorprojectorledgercompatibilityaudit.Generation2OperatorLevelFiniteSectorProjectorLedgerCompatibilityAuditTheorem(),
+		generation2dualsealr3candidateclassificationpromotionfirewallaudit.Generation2DualSealR3CandidateClassificationPromotionFirewallAuditTheorem(),
+		generation2dualsealr3candidatejoppositefulldescentincidencefunctorrecheckaudit.Generation2DualSealR3CandidateJOppositeFullDescentIncidenceFunctorRecheckAuditTheorem(),
+		generation2fullafdescenthiggsorientationsourceobstructionaudit.Generation2FullAFDescentHiggsOrientationSourceObstructionAuditTheorem(),
+		generation2higgsorientationsourcecandidateweaksocketselectoraudit.Generation2HiggsOrientationSourceCandidateWeakSocketSelectorAuditTheorem(),
+		generation2finiteoneformpuncturekernelweaksocketselectoraudit.Generation2FiniteOneFormPunctureKernelWeakSocketSelectorAuditTheorem(),
+		generation2minimalnulledgeorientationprincipleaudit.Generation2MinimalNullEdgeOrientationPrincipleAuditTheorem(),
+		generation2neutralpunctureairlockunificationaudit.Generation2NeutralPunctureAirlockUnificationAuditTheorem(),
+		generation2neutralpunctureairlockvariationalfunctionalaudit.Generation2NeutralPunctureAirlockVariationalFunctionalAuditTheorem(),
+		generation2socketorderorientededgeairlockconsolidationaudit.Generation2SocketOrderOrientedEdgeAirlockConsolidationAuditTheorem(),
+		generation2rightcharacterorientationandsocketordersourceaudit.Generation2RightCharacterOrientationAndSocketOrderSourceAuditTheorem(),
+		generation2rightcharacterphaseorientationsourceaudit.Generation2RightCharacterPhaseOrientationSourceAuditTheorem(),
+		generation2phaseorientedneutralpunctureairlockr3sealclassificationaudit.Generation2PhaseOrientedNeutralPunctureAirlockR3SealClassificationAuditTheorem(),
+		generation2phaseanchoredneutralpunctureairlockfunctoraudit.Generation2PhaseAnchoredNeutralPunctureAirlockFunctorAuditTheorem(),
+		generation2hopfcl17phaseanchorbridgeaudit.Generation2HopfCL17PhaseAnchorBridgeAuditTheorem(),
+		generation2hopfchiralityphaseanchortypingfirewallaudit.Generation2HopfChiralityPhaseAnchorTypingFirewallAuditTheorem(),
+		generation2phasetransportdomaincodomainrepresentationactionaudit.Generation2PhaseTransportDomainCodomainRepresentationActionAuditTheorem(),
+		generation2rightcharacterrepresentationinductioncomplexphasemoduleaudit.Generation2RightCharacterRepresentationInductionComplexPhaseModuleAuditTheorem(),
+		generation2positivephasegeneratorcharacterweightorientationaudit.Generation2PositivePhaseGeneratorCharacterWeightOrientationAuditTheorem(),
+		generation2globalphasez2equivarianceorientationgaugeaudit.Generation2GlobalPhaseZ2EquivarianceOrientationGaugeAuditTheorem(),
+		generation2z2equivariantr3ledgerpromotionaudit.Generation2Z2EquivariantR3LedgerPromotionAuditTheorem(),
+		generation2nativez2equivariantairlockfunctorandboundaryalphasourceaudit.Generation2NativeZ2EquivariantAirlockFunctorAndBoundaryAlphaSourceAuditTheorem(),
+		generation2z2boundaryalphaclasssealr3plateauremainingfrontieraudit.Generation2Z2BoundaryAlphaClassSealR3PlateauRemainingFrontierAuditTheorem(),
+		generation2nativer3frontierselectionz2boundaryalphafunctorvsfullafdescentaudit.Generation2NativeR3FrontierSelectionZ2BoundaryAlphaFunctorVsFullAFDescentAuditTheorem(),
+		generation2z2boundaryalphafunctorsourcedecompositionaudit.Generation2Z2BoundaryAlphaFunctorSourceDecompositionAuditTheorem(),
+		generation2nativereducedboundarypairresponsefunctionalaudit.Generation2NativeReducedBoundaryPairResponseFunctionalAuditTheorem(),
+		generation2degreeindexedz2airlockflagfunctoraudit.Generation2DegreeIndexedZ2AirlockFlagFunctorAuditTheorem(),
+		generation2z2boundaryalphacrosslaneexclusionaudit.Generation2Z2BoundaryAlphaCrossLaneExclusionAuditTheorem(),
+		generation2ssplittoreducedboundarypairresponsetransportaudit.Generation2SSplitToReducedBoundaryPairResponseTransportAuditTheorem(),
+		generation2boundaryaugmentedresponsechambernormalizationaudit.Generation2BoundaryAugmentedResponseChamberNormalizationAuditTheorem(),
+		generation2z2boundaryalphadecomposedfunctorconsolidationaudit.Generation2Z2BoundaryAlphaDecomposedFunctorConsolidationAuditTheorem(),
+		generation2boundaryalphanativegappriorityandcollapserouteaudit.Generation2BoundaryAlphaNativeGapPriorityAndCollapseRouteAuditTheorem(),
+		generation2boundaryactivationmeasurefunctoraudit.Generation2BoundaryActivationMeasureFunctorAuditTheorem(),
+		generation2boundaryactivationmeasurenaturalityanduniquenessaudit.Generation2BoundaryActivationMeasureNaturalityAndUniquenessAuditTheorem(),
+		generation2boundaryactivationmeasurenativeconstraintsourceaudit.Generation2BoundaryActivationMeasureNativeConstraintSourceAuditTheorem(),
+		generation2degreeindexedselectorfunctionhoodsourceaudit.Generation2DegreeIndexedSelectorFunctionhoodSourceAuditTheorem(),
+		generation2boundarydegreeexposureenclosurefunctoraudit.Generation2BoundaryDegreeExposureEnclosureFunctorAuditTheorem(),
+		generation2boundarydegreetoairlockflagtargetfunctoraudit.Generation2BoundaryDegreeToAirlockFlagTargetFunctorAuditTheorem(),
+		generation2boundarydegreetoairlockflagtargetfunctornaturalityanduniquenessaudit.Generation2BoundaryDegreeToAirlockFlagTargetFunctorNaturalityAndUniquenessAuditTheorem(),
+		generation2boundarysubsetairlockclosureincidencefunctoraudit.Generation2BoundarySubsetAirlockClosureIncidenceFunctorAuditTheorem(),
+		generation2z2airlockclosurefunctornativeminimalitysaturationaudit.Generation2Z2AirlockClosureFunctorNativeMinimalitySaturationAuditTheorem(),
+		generation2airlockclosureaxiomsourceflaggeneratedminimalityaudit.Generation2AirlockClosureAxiomSourceFlagGeneratedMinimalityAuditTheorem(),
+		generation2airlocksupportclosureoperatorexistenceidempotenceaudit.Generation2AirlockSupportClosureOperatorExistenceIdempotenceAuditTheorem(),
+		generation2airlockadmissiblesupportlatticesourceaudit.Generation2AirlockAdmissibleSupportLatticeSourceAuditTheorem(),
+		generation2tensorstructuredairlocksupportadmissibilityaudit.Generation2TensorStructuredAirlockSupportAdmissibilityAuditTheorem(),
+		generation2admissibleairlocksupportlatticeuniquenessaudit.Generation2AdmissibleAirlockSupportLatticeUniquenessAuditTheorem(),
+		generation2closurefactoredboundaryactivationmeasureconsolidationaudit.Generation2ClosureFactoredBoundaryActivationMeasureConsolidationAuditTheorem(),
+		generation2z2boundaryalphar3bridgecandidateconsolidationaudit.Generation2Z2BoundaryAlphaR3BridgeCandidateConsolidationAuditTheorem(),
+		generation2r3alphayukawatracebridgepretestspecificationaudit.Generation2R3AlphaYukawaTraceBridgePreTestSpecificationAuditTheorem(),
+		generation2r3alphayukawatracebridgepretestexecutionaudit.Generation2R3AlphaYukawaTraceBridgePreTestExecutionAuditTheorem(),
+		generation2nativer3promotiongapaudit.Generation2NativeR3PromotionGapAuditTheorem(),
+		generation2originrootedz2boundaryairlockactivationnativeclosureaudit.Generation2OriginRootedZ2BoundaryAirlockActivationNativeClosureAuditTheorem(),
+		generation2fourcertificatenativeclauseexecutionaudit.Generation2FourCertificateNativeClauseExecutionAuditTheorem(),
+		generation2ssplitnativesourceboundaryresponsescalaroriginaudit.Generation2SSplitNativeSourceBoundaryResponseScalarOriginAuditTheorem(),
+		generation2augmentedchamberdefectsplittoboundarypairresponsetransportaudit.Generation2AugmentedChamberDefectSplitToBoundaryPairResponseTransportAuditTheorem(),
+		generation2h72defectscalartob2boundaryresponsedescentmapaudit.Generation2H72DefectScalarToB2BoundaryResponseDescentMapAuditTheorem(),
+		generation2ssplitnativeh72scalarsourceaudit.Generation2SSplitNativeH72ScalarSourceAuditTheorem(),
+		generation2ssplitaddendsourcecircularitynativescalarlaneaudit.Generation2SSplitAddendSourceCircularityNativeScalarLaneAuditTheorem(),
+		generation2noncircularssplitreplacementfinitescalarproxyaudit.Generation2NonCircularSSplitReplacementFiniteScalarProxyAuditTheorem(),
+		generation2scalarsourcesealclassificationr3bridgetheoremboundaryaudit.Generation2ScalarSourceSealClassificationR3BridgeTheoremBoundaryAuditTheorem(),
+		generation2fullafdescentspontaneousorientationsealaudit.Generation2FullAFDescentSpontaneousOrientationSealAuditTheorem(),
+		generation2r3dualsealbridgetheoremfinalboundaryr4preconditionaudit.Generation2R3DualSealBridgeTheoremFinalBoundaryR4PreconditionAuditTheorem(),
+		generation2r4generationcarrierpreconditionauditunderr3dualseal.Generation2R4GenerationCarrierPreconditionAuditUnderR3DualSealTheorem(),
+		generation2k7minusgenerationcarriercandidateauditunderr3dualseal.Generation2K7MinusGenerationCarrierCandidateAuditUnderR3DualSealTheorem(),
+		generation2trialitygenerationcarriercandidateauditunderr3dualseal.Generation2TrialityGenerationCarrierCandidateAuditUnderR3DualSealTheorem(),
+		generation2r4generationcarriercomparisonflavorformulafirewallaudit.Generation2R4GenerationCarrierComparisonFlavorFormulaFirewallAuditTheorem(),
+		generation2k7minustrialitytracebodycouplingpreconditionaudit.Generation2K7MinusTrialityTracebodyCouplingPreconditionAuditTheorem(),
+		generation2k7minustrialityintertwinerconstructionr4stabilizationaudit.Generation2K7MinusTrialityIntertwinerConstructionR4StabilizationAuditTheorem(),
+		generation2nativetrialityrestrictionk7minusr3tracebodyintertwinerrepairaudit.Generation2NativeTrialityRestrictionK7MinusR3TracebodyIntertwinerRepairAuditTheorem(),
+		generation2trialityairlockgenerationcarrierroutebifurcationaudit.Generation2TrialityAirlockGenerationCarrierRouteBifurcationAuditTheorem(),
+		generation2alternativegenerationcarriersearchaudit.Generation2AlternativeGenerationCarrierSearchAuditTheorem(),
+		generation2externalc3sealvsparentairlockdecisionaudit.Generation2ExternalC3SealVsParentAirlockDecisionAuditTheorem(),
+		generation2externalc3generationcarriersealinstallationaudit.Generation2ExternalC3GenerationCarrierSealInstallationAuditTheorem(),
+		generation2flavororientationmappreconditionauditunderexternalc3andr3dualseal.Generation2FlavorOrientationMapPreconditionAuditUnderExternalC3AndR3DualSealTheorem(),
+		generation2flavororientationmapconstructionauditundersealedr4.Generation2FlavorOrientationMapConstructionAuditUnderSealedR4Theorem(),
+		generation2canonicalflavorselectorvsexternalorientationsealdecisionaudit.Generation2CanonicalFlavorSelectorVsExternalOrientationSealDecisionAuditTheorem(),
+		generation2externalflavororientationsealinstallationaudit.Generation2ExternalFlavorOrientationSealInstallationAuditTheorem(),
+		generation2flavorledgerdiagnosticpretestundertripleseal.Generation2FlavorLedgerDiagnosticPretestUnderTripleSealTheorem(),
+		generation2sealedepsiloneflavorwallledgerconsistencyaudit.Generation2SealedEpsilonEFlavorWallLedgerConsistencyAuditTheorem(),
+		generation2sealedkappaflavorledgerconsistencyaudit.Generation2SealedKappaFlavorLedgerConsistencyAuditTheorem(),
+		generation2sealedkoideshadowcompatibilityaudit.Generation2SealedKoideShadowCompatibilityAuditTheorem(),
+		generation2sealedckmpmnsledgercompatibilityaudit.Generation2SealedCKMPMNSLedgerCompatibilityAuditTheorem(),
+		generation2triplesealedflavorledgerdiagnosticsynthesisaudit.Generation2TripleSealedFlavorLedgerDiagnosticSynthesisAuditTheorem(),
+		generation2yukawamatrixadmissibilityauditundertripleseal.Generation2YukawaMatrixAdmissibilityAuditUnderTripleSealTheorem(),
+		generation2externalyukawamatrixsealinstallationaudit.Generation2ExternalYukawaMatrixSealInstallationAuditTheorem(),
+		generation2sealedyukawamatrixoperatorconstructionaudit.Generation2SealedYukawaMatrixOperatorConstructionAuditTheorem(),
 		generation2twistorinvariantsu2socketandmovingu1phaseaudit.Generation2TwistorInvariantSU2SocketAndMovingU1PhaseAuditTheorem(),
 		masterequationledger.AshaMasterEquationGeometryHistoryBoundaryLedgerTheorem(),
 		cache.RuntimeFixtureCacheTheorem(),
