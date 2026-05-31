@@ -1,0 +1,10 @@
+figure: section1_measurement_ladder_cl_1_7
+signature:
+  positive: 1
+  negative: 7
+  metric_diagonal: [1, -1, -1, -1, -1, -1, -1, -1]
+exterior_grade_counts: [1, 8, 28, 56, 70, 56, 28, 8, 1]
+canvas:
+  background: "#050508"
+  aesthetic: Transcendental Geometric Minimalism
+boundary_statement: Measurement bookkeeping only; not a particle catalogue.

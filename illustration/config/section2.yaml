@@ -1,0 +1,18 @@
+figure: section2_boolean_g2_contact_vacuum
+contract:
+  accuracy: topological_and_logarithmic
+  ranks:
+    P_B: 56
+    P_G: 14
+    K_7: 7
+  scale_rule: visible_area = scale_area * ln(rank)
+  payload: K_7
+  firewall:
+    - not_literal_high_dimensional_geometry
+    - not_particle_catalogue
+    - not_scalar_or_flavor_derivation
+style:
+  canvas: '#050508'
+  PB_material: frosted_cyan_glass
+  PG_material: ethereal_gold_glass
+  K7_material: platinum_gold_payload_light

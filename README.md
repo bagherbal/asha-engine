@@ -1,6 +1,6 @@
 # ASHA Engine
 
-🚧 Under construction 🚧
+## 🚧 **Under construction** 🚧
 
 **ASHA is a theorem-gated research engine for reconstructing observed physics from a source-typed chain of geometry, algebra, physical filling, and observational transport.**
 
@@ -12,6 +12,7 @@ Theorem != Bridge != Physical filling != Diagnostic fit != Unresolved wound
 
 The current frontier is the Gate 1349 ledger: a source-typed architecture where the matter/Higgs/scale stack has become highly compressed, while Planck stiffness, the cosmological constant, Majorana phases, and a few native selector principles remain open.
 
+![ASHA Projector Universe](docs/assets/figures/asha_projector_universe_v3.png)
 
 ## One-line map
 
@@ -29,7 +30,7 @@ The project therefore does **not** claim that every number is already derived fr
 
 ## Visual atlas
 
-The current README-critical figures are programmatically generated using [Penrose](https://github.com/penrose/penrose) from source-typed contracts, not hand-placed drawings.
+The current README-critical figures are programmatically generated using from source-typed contracts, not hand-placed drawings.
 
 | Layer | Figure | Source type |
 |---|---|---|

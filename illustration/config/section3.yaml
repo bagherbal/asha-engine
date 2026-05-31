@@ -1,0 +1,20 @@
+figure: asha_readme_contact_seven_depth_triple
+readme_anchor: Contact seven and the depth triple
+accuracy: exact carrier labels and depth values; conceptual placement
+contract:
+  V8: [x0, p0, x1, p1, x2, p2, x3, p3]
+  observer_reference: x0
+  V7_contact: [p0, x1, p1, x2, p2, x3, p3]
+  decomposition:
+    - R p0
+    - Pi1 = span(x1, p1)
+    - Pi2 = span(x2, p2)
+    - Pi3 = span(x3, p3)
+  Q_contact_dim: 3
+  N_Q_diag: [1/3, 1/2, 2/3]
+  W_Q: exp(-4*pi*N_Q)
+firewalls:
+  - no particle identity assignment
+  - no flavor theorem
+  - no CKM or PMNS claim
+  - no mass eigenvalue claim
