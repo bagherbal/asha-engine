@@ -27,7 +27,29 @@ Where:
 
 The project therefore does **not** claim that every number is already derived from pure geometry. It claims that the chain from geometry to observation is now explicit, layered, falsifiable, and firewalled.
 
+## Visual atlas
+
+The current README-critical figures are programmatically generated using [Penrose](https://github.com/penrose/penrose) from source-typed contracts, not hand-placed drawings.
+
+| Layer | Figure | Source type |
+|---|---|---|
+| Measurement octave | ![Measurement Ladder Cl(1,7)](docs/assets/figures/asha_section1_measurement_ladder_cl_1_7.png) | Exact Pascal-tier Clifford/exterior-grade bookkeeping. |
+| Boolean/G2 contact vacuum | ![Boolean/G2 Contact Vacuum K7](docs/assets/figures/asha_section2_boolean_g2_contact_vacuum_k7.png) | Exact ranks with logarithmic visual area scaling. |
+| Contact depth triple | ![Contact Seven and Depth Triple](docs/assets/figures/asha_readme_contact_seven_depth_triple.png) | Exact carrier/depth labels: `V8 -> x0 reference -> V7_contact -> N_Q/W_Q`. |
+| Matter sockets/product depth | ![Matter Sockets and Product Depth](docs/assets/figures/asha_readme_matter_sockets_product_depth.png) | Exact `A_F` block counts `1,4,9` with contact-depth broadcast `N_Q=(1/3,1/2,2/3)`. |
+| Locked source alphabet | ![Locked Constants and Source Alphabet](docs/assets/figures/asha_readme_locked_constants_source_alphabet.png) | Locked `L`, `S`, finite source numbers, and coefficient firewall. |
+| Scale bridge | ![Planck-to-Electroweak Scale Bridge](docs/assets/figures/asha_readme_planck_to_electroweak_scale_bridge.png) | Exact README exponent visualized as a logarithmic Planck-to-electroweak drop. |
+| Higgs sector | ![Higgs Sector Quartic Mass Chain](docs/assets/figures/asha_readme_higgs_sector_quartic_mass_chain.png) | Exact `lambda_ASHA` and `m_H=v√(2λ)` formula chain. |
+| Charged leptons | ![Charged Lepton Anchor Shape Laws](docs/assets/figures/asha_readme_charged_lepton_anchor_shape_laws.png) | Exact tau anchor plus `K_e`/`D_e` charged-lepton shape laws. |
+| Quarks | ![Quark Lanes and Shape Laws](docs/assets/figures/asha_readme_quark_lanes_shape_laws.png) | Exact `A_t`, `A_b`, `K_u`/`D_u`, and `K_d`/`D_d` README formulas; M_Z-boundary/RG-transport firewalled. |
+| CKM mixing | ![CKM Orientation and Transport](docs/assets/figures/asha_readme_ckm_orientation_transport.png) | Exact `V_CKM=U_u†U_d`, locked boundary angles, and symbolic top-Yukawa `Γ_q` RG transport; flavor-selector firewall preserved. |
+| Neutrinos | ![Neutrino Seesaw and PMNS Firewall](docs/assets/figures/asha_readme_neutrino_seesaw_pmns_firewall.png) | Exact Type-I seesaw identity, rank-2 normal-order lane, heavy-scale bridge, and PMNS/Majorana firewall preserved. |
+| Gravity | ![Gravity Metric Projection Firewall](docs/assets/figures/asha_readme_gravity_metric_projection_firewall.png) | Exact flat metric projection `(V8,η1,7,Ω,ΠX) -> (X4,η1,3)` plus conditional Einstein-Hilbert lane; `M_P^2` and `Λ` remain firewalled source-type wounds. |
+| Low-energy action | ![Low-Energy ASHA Action Skeleton](docs/assets/figures/asha_readme_low_energy_action_skeleton.png) | Exact six-sector README action skeleton with ASHA Higgs/Yukawa insertions and inherited gravity/flavor/PMNS firewalls preserved. |
+| Theorem-level stack | ![Theorem-Level Stack](docs/assets/figures/asha_readme_theorem_level_stack.png) | Exact 12-node acyclic theorem rail with 11 forward arrows; theorem architecture remains separated from physical filling and unresolved wounds. |
+
 ---
+
 
 ## The journey from 1
 
