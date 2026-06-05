@@ -1,6 +1,6 @@
 # ASHA Engine
 
-## 🚧 **Under construction** 🚧
+Last update: [almost_toe.pdf](./lawful_almost_toe.pdf)
 
 **ASHA is a theorem-gated research engine for reconstructing observed physics from a source-typed chain of geometry, algebra, physical filling, and observational transport.**
 

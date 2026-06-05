@@ -1,0 +1,882 @@
+
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{pdflscape}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage{verbatim}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  citecolor=blue!60!black,
+  urlcolor=blue!60!black
+}
+
+\input{lawful_toe_build/macros.tex}
+
+\newcommand{\status}[1]{\textsf{#1}}
+\newcommand{\seal}{\status{physical realization seal}}
+\newcommand{\bridge}{\status{bridge hypothesis}}
+\newcommand{\sourcehyp}{\status{source hypothesis}}
+\newcommand{\std}{\status{established physics}}
+\newcommand{\wound}{\status{open wound}}
+\newcommand{\Mred}{M_{\rm P}^{\rm red}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\diag}{\operatorname{diag}}
+
+\title{\textbf{A Lawful Source-Realization Framework for Low-Energy Physical Scales}\\
+\large An ``Almost Theory of Everything'' Draft with Explicit Seals, Hypotheses, Calculations, and Falsification Targets}
+
+\author{Working scientific draft generated from a source-typed research program}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This document reconstructs a proposed source-realization framework in the most conservative scientific order available at this stage. It begins with established physics: the constants \(c,\hbar,G\), Planck units, the quantum-localization/gravitational-response interface, the Standard Model chiral socket, anomaly constraints, the seesaw rank bound, and ordinary observable transport by renormalization. It then introduces a minimal finite source kernel used as a hypothesis generator, not as a substitute for dynamics. The kernel uses an eight-dimensional phase-space carrier \(V_8=X_4\oplus P_4\), a three-generation flavor space \(F_3\), a rank-two Majorana realization, normalized traces, and target-dependent phase transport. The central nonstandard branch is deliberately labeled as a source hypothesis: it proposes a small defect parameter
+\[
+S_\star=\frac{1}{8\pi}\frac{2\cdot 7}{6\cdot 8\cdot 9-1},
+\]
+a flavor seed \(\epsilon=(9S_\star/5)^{1/4}\), and finite phase maps that generate a CKM-scale hierarchy, a charged-lepton \(C_3\) square-root cone, a rank-two neutrino spectrum, and a candidate vacuum boundary relation \(\rho_\Lambda=|M_{\nu,ee}|^4\). The document is not presented as a completed derivation of all physical reality from pure mathematics. It is a checkable source-realization model: dimensionless source geometry supplies ratios and phases, while physical realization seals supply dimensional scale, matter sockets, rank conditions, vacuum projection, and observable transport. The final tables list all numerical outputs, reference values, relative residuals, and currently unknown predictions.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Claim discipline}
+
+The purpose of this draft is not to claim that all of physics follows from pure geometry. A lawful theory of physical reality must separate at least five source types:
+\[
+\boxed{
+\text{established theorem}\neq
+\text{source hypothesis}\neq
+\text{physical realization seal}\neq
+\text{observable transport}\neq
+\text{open wound}.
+}
+\]
+This separation is central. A dimensionless mathematical structure cannot by itself create an absolute SI or natural-unit scale. A mass formula at a source scale is not automatically a pole mass. A quotient construction for vacuum energy is not automatically a gravitational dynamics. These distinctions are not weaknesses; they are what make the framework scientifically checkable.
+
+\begin{center}
+\begin{tabular}{p{0.23\linewidth}p{0.68\linewidth}}
+\toprule
+Type & Meaning in this document\\
+\midrule
+\std & Standard physics or standard mathematical fact used without novelty claim.\\
+\seal & A minimal physical input not derived here, such as \(\ell_P^2\), the Standard Model chiral socket, or a rank-two heavy-neutrino realization.\\
+\sourcehyp & A finite-dimensional or arithmetic hypothesis proposed by the framework.\\
+\bridge & A rule connecting source quantities to physical quantities, not yet derived from a full action or dynamics.\\
+\wound & A precise missing object or theorem.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The lawful maximum form is
+\[
+\boxed{
+\mathcal U_{\rm lawful}
+=
+\mathcal G_{\rm source}
++
+\mathcal R_{\rm phys}
++
+\mathcal T_{\rm obs}.
+}
+\]
+Here \(\mathcal G_{\rm source}\) is a dimensionless grammar of finite carriers, normalized traces, and phase maps. \(\mathcal R_{\rm phys}\) contains physical realization seals. \(\mathcal T_{\rm obs}\) is the renormalization, threshold, scheme, and pole-mass transport layer needed to compare source values with measured observables.
+
+\section{Established constants and the Planck interface}
+
+The established physical constants used at the root are
+\[
+c,\qquad \hbar,\qquad G.
+\]
+They define the Planck length, time, and energy:
+\[
+\ell_P=\sqrt{\frac{\hbar G}{c^3}},\qquad
+t_P=\sqrt{\frac{\hbar G}{c^5}},\qquad
+E_P=\sqrt{\frac{\hbar c^5}{G}},
+\]
+with
+\[
+E_Pt_P=\hbar.
+\]
+
+For a probe energy \(E\), define the reduced quantum localization length and a gravitational response length by
+\[
+\lambda_Q(E)=\frac{\hbar c}{E},\qquad
+r_G(E)=\frac{GE}{c^4}.
+\]
+Then
+\[
+\lambda_Q(E)r_G(E)
+=
+\frac{\hbar c}{E}\frac{GE}{c^4}
+=
+\frac{\hbar G}{c^3}
+=
+\ell_P^2.
+\]
+Likewise,
+\[
+\tau_Q(E)=\frac{\hbar}{E},\qquad
+\tau_G(E)=\frac{GE}{c^5}
+\]
+give
+\[
+\tau_Q(E)\tau_G(E)=t_P^2.
+\]
+At self-duality,
+\[
+\lambda_Q(E_P)=r_G(E_P)=\ell_P,\qquad
+\tau_Q(E_P)=\tau_G(E_P)=t_P.
+\]
+This is established dimensional physics. It says that the Planck area is the product of quantum localization and gravitational response. It does not derive the numerical value of \(\ell_P^2\) from pure dimensionless mathematics.
+
+\subsection{Dimensional no-go}
+
+If a source grammar \(\mathcal G_{\rm source}\) is dimensionless, then every pure function \(f(\mathcal G_{\rm source})\) is dimensionless. Since
+\[
+[\ell_P^2]=L^2,
+\]
+one has
+\[
+\mathcal G_{\rm source}\not\Rightarrow \ell_P^2
+\]
+unless a dimensionful physical realization seal is admitted. This is a no-go boundary, not a failure. In this framework \(\ell_P^2\), or equivalently \(\Mred\), is a \seal.
+
+We use the reduced Planck normalization
+\[
+A_{2\pi}=8\pi\ell_P^2,\qquad
+{\Mred}^2=\frac{1}{8\pi\ell_P^2}.
+\]
+The numerical calculations use the CODATA-style reduced Planck value
+\[
+\Mred=2.4353234600842885\times 10^{18}\ {\rm GeV}.
+\]
+
+\section{The phase-space carrier and the diagonal measurement sheet}
+
+The source carrier is not bare spacetime alone. It is the doubled phase-space-type carrier
+\[
+V_8=X_4\oplus P_4,
+\]
+where \(X_4\) is an event-space carrier and \(P_4\) is the conjugate response carrier. Let
+\[
+\Omega=\sum_{\mu=0}^3 dp_\mu\wedge dx^\mu.
+\]
+The diagonal measurement sheet is
+\[
+D_4=\operatorname{span}\{x_0+p_0,\ x_1+p_1,\ x_2+p_2,\ x_3+p_3\}\subset X_4\oplus P_4.
+\]
+In binary form it is the row pattern
+\[
+\begin{array}{cccc|cccc}
+1&0&0&0&1&0&0&0\\
+0&1&0&0&0&1&0&0\\
+0&0&1&0&0&0&1&0\\
+0&0&0&1&0&0&0&1.
+\end{array}
+\]
+For \(d_\mu=x_\mu+p_\mu\), one has
+\[
+\Omega(d_\mu,d_\nu)=0,
+\]
+so \(D_4\) is Lagrangian. For the time-energy socket,
+\[
+x^0=ct,\qquad p_0=\frac{E}{c},
+\]
+hence
+\[
+p_0x^0=Et.
+\]
+At the quantum action cell \(Et=\hbar\). Thus the diagonal sheet is not an arbitrary diagram: it is the finite-dimensional place where event coordinates and conjugate response form action.
+
+\section{Minimal physical realization inputs}
+
+The model uses the following minimal physical realization inputs.
+
+\subsection{Metric-area seal}
+
+The absolute area scale \(\ell_P^2\) is not derived from dimensionless source geometry. It enters as the metric-area seal.
+
+\subsection{Standard Model chiral socket}
+
+The chiral matter socket
+\[
+Q,\quad u^c,\quad d^c,\quad L,\quad e^c,\quad \nu^c,\quad H
+\]
+is treated as a physical realization input unless a future finite-matter theorem derives it. Once it is assumed, hypercharge is forced by standard anomaly and Yukawa constraints.
+
+Let
+\[
+Y(Q)=q,\quad Y(u^c)=u,\quad Y(d^c)=d,\quad
+Y(L)=\ell,\quad Y(e^c)=e,\quad Y(\nu^c)=n,\quad Y(H)=h.
+\]
+Yukawa invariance gives
+\[
+q+h+u=0,\quad q-h+d=0,\quad \ell-h+e=0,\quad \ell+h+n=0.
+\]
+The anomaly constraints include
+\[
+2q+u+d=0,\qquad 3q+\ell=0,
+\]
+\[
+6q+3u+3d+2\ell+e+n=0,
+\]
+and
+\[
+6q^3+3u^3+3d^3+2\ell^3+e^3+n^3=0.
+\]
+The solution is
+\[
+\ell=-3q,\qquad h=3q,\qquad u=-4q,\qquad d=2q,\qquad e=6q,\qquad n=0.
+\]
+With \(h=1/2\),
+\[
+Y(Q)=\frac16,\quad
+Y(u^c)=-\frac23,\quad
+Y(d^c)=\frac13,\quad
+Y(L)=-\frac12,\quad
+Y(e^c)=1,\quad
+Y(\nu^c)=0.
+\]
+This is an established conditional result: if the Standard Model chiral socket exists, its hypercharges are essentially forced. It does not prove the socket itself.
+
+\subsection{Minimal rank-two seesaw realization}
+
+A minimal two-source Type-I seesaw uses
+\[
+N_R\in\mathbb C^2,\qquad
+Y_\nu\in{\rm Mat}_{2\times3}(\mathbb C),\qquad
+M_R\in{\rm Mat}_{2\times2}(\mathbb C).
+\]
+Then
+\[
+M_\nu=-\frac{v^2}{2}Y_\nu^T M_R^{-1}Y_\nu
+\]
+satisfies
+\[
+\rank M_\nu\leq 2.
+\]
+For rank-two \(Y_\nu\),
+\[
+\rank M_\nu=2,\qquad m_1=0,\qquad m_2,m_3\neq0.
+\]
+The rank-two realization is a lawful physical seal/theorem pair. It is not forced by pure geometry here, but once admitted it has strong downstream consequences.
+
+\section{Finite source kernel}
+
+Let
+\[
+F_3\simeq\mathbb C^3,\qquad \dim F_3=3,\qquad
+\dim\End(F_3)=9.
+\]
+Let \(V_8=X_4\oplus P_4\), \(\dim V_8=8\). Fix one observer/action line \(\ell_0\subset V_8\) and define
+\[
+C_7=V_8/\ell_0,\qquad \dim C_7=7.
+\]
+In four event dimensions,
+\[
+\dim\Lambda^2X_4=\binom42=6.
+\]
+The finite defect chamber is
+\[
+\Lambda^2X_4\otimes V_8\otimes \End(F_3),
+\]
+with dimension
+\[
+6\cdot8\cdot9=432.
+\]
+Removing the scalar identity gives the traceless chamber dimension
+\[
+432-1=431.
+\]
+The rank-two Majorana defect support is
+\[
+\rank M_\nu\cdot \dim C_7=2\cdot7=14.
+\]
+Define
+\[
+L=\frac1{8\pi}.
+\]
+The central small source parameter is then
+\[
+\boxed{
+S_\star=
+L\frac{2\cdot7}{6\cdot8\cdot9-1}
+=
+\frac{14}{431}\frac1{8\pi}.
+}
+\]
+Numerically,
+\[
+S_\star=\Sval.
+\]
+Define the flavor seed
+\[
+\boxed{
+\epsilon=\left(\frac95S_\star\right)^{1/4}.
+}
+\]
+Numerically,
+\[
+\epsilon=\epsval.
+\]
+The factor \(9/5=3\cdot 3/5\) is interpreted as color multiplicity times inverse \(5/3\) hypercharge normalization. This is a source hypothesis, not established Standard Model dynamics.
+
+\section{Normalized trace phase transport}
+
+For a finite projector \(P\) on a finite carrier \(W\), define
+\[
+\tau(P;W)=\frac{\Tr P}{\dim W}.
+\]
+The framework uses a target-dependent phase transport rule:
+\[
+\Theta(\tau,T)=
+\begin{cases}
+2\pi\tau,& T=U(1)\ {\rm complex\ phase},\\
+\pi\tau,& T=\mathbb{RP}\ {\rm projective\ orientation},\\
+\tau,& T=C_3\ {\rm square\mbox{-}root\ cone\ coordinate}.
+\end{cases}
+\]
+This rule is a \bridge. It is not yet derived from a fundamental action.
+
+\subsection{The \(3/8\) phase}
+
+Let \(P_{\rm sp}\) project onto the three spatial event directions inside \(V_8\). Then
+\[
+\frac{\Tr P_{\rm sp}}{\dim V_8}=\frac38.
+\]
+For projective orientation,
+\[
+\delta_q=\pi\frac38=\frac{3\pi}{8}.
+\]
+
+\subsection{The \(2/9\) cone coordinate}
+
+The rank-two Majorana density in \(3\times3\) flavor endomorphism space is
+\[
+\theta_\ell=
+\frac{\rank M_\nu}{\dim\End(F_3)}
+=
+\frac29.
+\]
+This is used as the cone coordinate of the charged-lepton square-root mass vector.
+
+\subsection{The \(2/3\) cyclic phase and Koide cone}
+
+Let \(C_3=\langle\omega:\omega^3=1\rangle\). The nontrivial \(U(1)\) phase is
+\[
+\Phi=\frac{2\pi}{3}.
+\]
+For charged leptons, define
+\[
+q_\ell=(\sqrt{m_\tau},\sqrt{m_e},\sqrt{m_\mu})
+=q_{\mathbf 1}+q_{\mathbf 2},
+\]
+where \(q_{\mathbf 1}\parallel(1,1,1)\) and \(q_{\mathbf 2}\perp(1,1,1)\). If
+\[
+\|q_{\mathbf1}\|=\|q_{\mathbf2}\|,
+\]
+then
+\[
+\frac{m_e+m_\mu+m_\tau}
+{(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau})^2}
+=
+\frac23.
+\]
+Equivalently,
+\[
+q_k=A\left[
+1+\sqrt2\cos\left(\theta_\ell+\frac{2\pi k}{3}\right)
+\right],
+\qquad
+k=0,1,2,
+\]
+automatically lies on the Koide cone.
+
+\section{Electroweak and heavy-anchor source formulas}
+
+The electroweak source action is
+\[
+\mathcal A_{\rm EW}
+=
+-12\pi+\frac{\sqrt3}{2}+2S_\star+148S_\star^2.
+\]
+The source-level Higgs vacuum expectation value is
+\[
+v=\Mred e^{\mathcal A_{\rm EW}}.
+\]
+The Higgs quartic source bridge is
+\[
+\lambda=
+\frac38(1+L)\left(\frac13-S_\star\right).
+\]
+The tree-level Higgs mass bridge is
+\[
+m_H=v\sqrt{2\lambda}.
+\]
+Using the CODATA reduced Planck seal, the script gives
+\[
+v=\vval\ {\rm GeV},\qquad
+\lambda=\lambdaval,\qquad
+m_H=\mHval\ {\rm GeV}.
+\]
+This is not claimed as a pole-mass theorem. A loop and threshold transport layer is required.
+
+The heavy Yukawa source exponents are
+\[
+A_t=L-5S_\star+138S_\star^2,
+\]
+\[
+A_b=\frac{4\pi}{3}-56S_\star+106S_\star^2,
+\]
+\[
+A_\tau=\frac{4\pi}{3}+\frac3{10}+\frac7{72}-S_\star+\frac{99}{2}S_\star^2.
+\]
+Then
+\[
+y_t=e^{-A_t},\qquad y_b=e^{-A_b},\qquad y_\tau=e^{-A_\tau}.
+\]
+Numerically,
+\[
+y_t=\ytval,\qquad y_b=\ybval,\qquad y_\tau=\ytauval.
+\]
+
+\section{Flavor construction}
+
+\subsection{CKM orientation}
+
+Define
+\[
+s_{12}^q=\epsilon\sqrt{1+\epsilon^2},\qquad
+s_{23}^q=\frac{\sqrt3}{2}\epsilon^2,\qquad
+s_{13}^q=\frac{1}{2\sqrt2}\epsilon^3,
+\]
+and
+\[
+\delta_q=\frac{3\pi}{8}.
+\]
+The standard CKM parameterization gives
+\[
+|V_{\rm CKM}|=
+\input{lawful_toe_build/ckm_matrix.tex}
+\]
+and
+\[
+J_q=\Jqval.
+\]
+This is a source-level CKM orientation. Exact quark pole masses are not claimed because they require RG transport.
+
+\subsection{Charged-lepton cone}
+
+The charged-lepton cone uses
+\[
+\theta_\ell=\frac29
+\]
+and
+\[
+q_k=A\left[
+1+\sqrt2\cos\left(\frac29+\frac{2\pi k}{3}\right)
+\right].
+\]
+With the source-level \(\tau\) value from the heavy anchor,
+\[
+m_\tau=\mtauval\ {\rm MeV},
+\]
+the cone predicts
+\[
+m_e=\meval\ {\rm MeV},\qquad
+m_\mu=\mmuval\ {\rm MeV}.
+\]
+The residuals relative to measured charged-lepton masses are listed in Section~\ref{sec:tables}. They are at the \(10^{-4}\) level before any observable transport correction.
+
+\subsection{Rank-two neutrino branch}
+
+The dominant heavy Majorana scale is
+\[
+M_{R3}
+=
+(\sqrt{2\pi}+49S_\star+90S_\star^2)\sqrt{v\Mred},
+\]
+and
+\[
+M_{R2}
+=
+M_{R3}\frac{e^{-4\pi/3}}{4L+10S_\star}.
+\]
+Numerically,
+\[
+M_{R2}=\MRtwoval\ {\rm GeV},\qquad
+M_{R3}=\MRthreeval\ {\rm GeV}.
+\]
+The light spectrum is
+\[
+m_1=0,
+\]
+\[
+m_3=\frac{v^2e^{-2A_\tau}}{2M_{R3}},
+\qquad
+m_2=(4L+10S_\star)m_3.
+\]
+Numerically,
+\[
+m_2=\mtwoval\ {\rm eV},\qquad
+m_3=\mthreeval\ {\rm eV}.
+\]
+
+\subsection{PMNS branch}
+
+The PMNS angle skeleton is
+\[
+\theta_{12}=\frac\pi6+48S_\star,
+\]
+\[
+\theta_{13}=4L-7S_\star+4S_\star^2,
+\]
+\[
+\theta_{23}^{-}=\frac\pi4-48S_\star,\qquad
+\theta_{23}^{+}=\frac\pi4+48S_\star.
+\]
+The current branch chooses the lower octant:
+\[
+\theta_{23}=\theta_{23}^{-}.
+\]
+The phase kernel gives
+\[
+\delta_{\rm PMNS}=4\delta_q=\frac{3\pi}{2},
+\]
+and the Majorana boundary condition gives
+\[
+\alpha_{\rm eff}+2\delta_{\rm PMNS}=\frac{2\pi}{3},
+\]
+so
+\[
+\alpha_{\rm eff}=\frac{5\pi}{3}.
+\]
+The PMNS modulus is
+\[
+|U_{\rm PMNS}|=
+\input{lawful_toe_build/pmns_matrix.tex}
+\]
+
+\section{Vacuum boundary candidate}
+
+For a rank-two Majorana neutrino matrix, define
+\[
+M_\nu=U_{\rm PMNS}^*
+\diag(0,m_2,m_3)
+U_{\rm PMNS}^{\dagger}.
+\]
+The electron-boundary Majorana scalar is
+\[
+M_{\nu,ee}=e^TM_\nu e.
+\]
+Equivalently,
+\[
+M_{\nu,ee}
+=
+m_2s_{12}^2c_{13}^2e^{i\alpha}
++
+m_3s_{13}^2e^{-2i\delta}.
+\]
+With
+\[
+\Phi_{\beta\beta}=\alpha+2\delta=\frac{2\pi}{3},
+\]
+one has
+\[
+|M_{\nu,ee}|^2=a^2+b^2-ab,
+\]
+where
+\[
+a=m_2s_{12}^2c_{13}^2,\qquad b=m_3s_{13}^2.
+\]
+The calculation gives
+\[
+|M_{\nu,ee}|=\mbbval\ {\rm meV}.
+\]
+The vacuum boundary candidate is
+\[
+\boxed{
+\rho_\Lambda^{\rm cand}=|M_{\nu,ee}|^4.
+}
+\]
+Numerically,
+\[
+\rho_\Lambda^{\rm cand}=\rhoval\ {\rm eV}^4,\qquad
+\Lambda^{\rm cand}=\Lambdaval\ {\rm m}^{-2}.
+\]
+
+\subsection{Source quotient status}
+
+A formal quotient model can be written as
+\[
+C_0^{src}=\langle B_0,B_m,B_H,B_g,D\rangle,
+\]
+\[
+C_1^{src}=\langle R_0,R_m,R_H,R_g\rangle,\qquad
+\partial_{src}R_i=B_i,
+\]
+so
+\[
+H_0^{src}
+=
+C_0^{src}/\operatorname{im}\partial_{src}
+\cong
+\langle D\rangle,
+\]
+with
+\[
+D=
+\left[
+|M_{\nu,ee}|^4,\,
+(e,\nu,\Delta L=2,C_3,\Phi=2\pi/3)
+\right].
+\]
+This formal quotient is mathematically consistent. The physical assertion that gravity implements this quotient is a \seal/\bridge, not yet an established theorem.
+
+\section{Observable transport}
+
+A source-level prediction is not automatically a measured pole value. A lawful comparison requires
+\[
+\mathcal T_{\rm obs}:
+\mathcal L_{\rm source}\to\mathcal L_{\rm measured}.
+\]
+For Yukawa values this has the schematic form
+\[
+Y_f^{src}(\Lambda)
+\to
+Y_f^{\overline{\rm MS}}(\mu)
+\to
+m_f^{pole}.
+\]
+For the Higgs quartic,
+\[
+\lambda^{src}(\Lambda)
+\to
+\lambda^{\overline{\rm MS}}(\mu)
+\to
+m_H^{pole}.
+\]
+The transport layer must specify
+\[
+\Lambda_{\rm source},\quad g_1,g_2,g_3,\quad
+\text{scheme},\quad
+\text{thresholds},\quad
+\text{loop order},\quad
+\text{uncertainty propagation}.
+\]
+This paper does not claim that this layer is complete. The error table should therefore be read as a source-level test, not as a final precision electroweak fit.
+
+\section{Calculation and error tables}
+\label{sec:tables}
+
+The following values are generated by the accompanying Python script. Reference values are representative central values from CODATA, PDG, NuFIT, and Planck-2018 style sources. The relative residual is
+\[
+\frac{\text{model}-\text{reference}}{\text{reference}}.
+\]
+The status column specifies whether the residual is considered a direct failure, a source-level residual requiring transport, or a prediction.
+
+\begin{landscape}
+\small
+\begin{longtable}{p{0.17\linewidth}p{0.16\linewidth}p{0.16\linewidth}p{0.13\linewidth}p{0.32\linewidth}}
+\caption{Numerical outputs and reference comparisons.}\\
+\toprule
+Quantity & Model value & Reference value & Relative residual & Status\\
+\midrule
+\endfirsthead
+\toprule
+Quantity & Model value & Reference value & Relative residual & Status\\
+\midrule
+\endhead
+$v$ [GeV] & $246.2524$ & $246.2197$ & $1.3291\times 10^{-4}$ & source-level; CODATA Planck seal \\
+$m_H$ [GeV] & $125.3082$ & $125.2$ & $8.6400\times 10^{-4}$ & tree-level bridge; loop transport required \\
+$m_\tau$ [MeV] & $1777.096$ & $1776.86$ & $1.3291\times 10^{-4}$ & source-level edge value \\
+$m_e$ [MeV] & $0.5110309$ & $0.5109989$ & $6.2574\times 10^{-5}$ & Koide-cone source value; residual may be transport \\
+$m_\mu$ [MeV] & $105.666$ & $105.6584$ & $7.2407\times 10^{-5}$ & Koide-cone source value; residual may be transport \\
+$\sin^2\theta_{12}$ & $0.3055099$ & $0.307$ & $-0.004854$ & NuFIT comparison; source skeleton \\
+$\sin^2\theta_{13}$ & $0.02236562$ & $0.02203$ & $0.01523$ & NuFIT comparison; source skeleton \\
+$\Delta m^2_{21}$ [eV$^2$] & $7.4552354\times 10^{-5}$ & $7.4900000\times 10^{-5}$ & $-0.004641$ & NuFIT comparison \\
+$\Delta m^2_{31}$ [eV$^2$] & $0.002517699$ & $0.002513$ & $0.00187$ & NuFIT comparison \\
+$\Lambda$ [m$^{-2}$] & $1.0894847\times 10^{-52}$ & $1.0909105\times 10^{-52}$ & $-0.001307$ & Planck-2018 comparison; cosmological uncertainty dominates \\
+$\rho_\Lambda^{1/4}$ [meV] & $2.239633$ & $2.240365$ & $-3.2691\times 10^{-4}$ & dark-energy fourth-root scale \\
+$|V_{us}|$ & $0.224852$ & $0.2243$ & $0.002461$ & representative CKM comparison \\
+$|V_{cb}|$ & $0.04177046$ & $0.0415$ & $0.006517$ & representative CKM comparison \\
+$|V_{ub}|$ & $0.003745136$ & $0.00382$ & $-0.0196$ & representative CKM comparison \\
+\bottomrule
+\end{longtable}
+\normalsize
+\end{landscape}
+
+\subsection{Acceptability rubric}
+
+\begin{center}
+\begin{tabular}{p{0.24\linewidth}p{0.65\linewidth}}
+\toprule
+Case & Interpretation\\
+\midrule
+Established derivation & No novelty claimed; used as physics background.\\
+Exact source identity & Algebraically exact inside the proposed finite source kernel.\\
+Source-level residual \(10^{-4}\)-\(10^{-2}\) & Not a final measurement fit. It requires observable transport or becomes a falsification target.\\
+Anchor & A quantity used to set a sector scale, not counted as an independent prediction.\\
+Prediction & Not yet decisively known or not directly measured. Future data can kill it.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Predictions and future kill tests}
+
+\begin{longtable}{p{0.25\linewidth}p{0.30\linewidth}p{0.35\linewidth}}
+\caption{Predictions or sharp future tests.}\\
+\toprule
+Target & Model value & How it can be tested\\
+\midrule
+\endfirsthead
+\toprule
+Target & Model value & How it can be tested\\
+\midrule
+\endhead
+Lightest neutrino mass & $m_1=0$ & Can be falsified by absolute-mass data incompatible with rank two. \\
+Sum of neutrino masses & $\sum m_\nu=0.05881105\,\mathrm{eV}$ & Within current cosmological upper bounds; future tightening tests it. \\
+Atmospheric octant branch & $\theta_{23}=41.445531^\circ$; $\sin^2\theta_{23}=0.438122$ & Killed if the upper octant is established decisively. \\
+Leptonic CP phase & $\delta_{\rm PMNS}=3\pi/2$ & Future long-baseline experiments can test/exclude. \\
+Effective Majorana mass & $m_{\beta\beta}=2.239633\,\mathrm{meV}$ & Below near-term $0\nu\beta\beta$ reach; sharp long-term prediction. \\
+Heavy Majorana scales & $M_{R2}=5.546547\times 10^{9}\,\mathrm{GeV},\;M_{R3}=6.293902\times 10^{10}\,\mathrm{GeV}$ & Model-internal high-scale prediction; indirectly testable. \\
+Vacuum-boundary relation & $\rho_\Lambda=|M_{\nu,ee}|^4$ & Killed if improved neutrino and cosmology data break the relation. \\
+CKM source phase & $\delta_q=3\pi/8$ & Already close to CKM fits; refined global fits can stress it. \\
+\bottomrule
+\end{longtable}
+
+\section{What is solved, what is not solved}
+
+\subsection{Stabilized pieces}
+
+\begin{enumerate}[leftmargin=2em]
+\item The Planck interface:
+\[
+\lambda_Qr_G=\ell_P^2,\qquad \tau_Q\tau_G=t_P^2.
+\]
+\item The dimensional no-go: dimensionless source geometry cannot derive \(\ell_P^2\).
+\item The finite defect density:
+\[
+S_\star=
+\frac1{8\pi}
+\frac{2\cdot7}{6\cdot8\cdot9-1}.
+\]
+\item The flavor seed:
+\[
+\epsilon=\left(\frac95S_\star\right)^{1/4}.
+\]
+\item The phase kernel:
+\[
+\delta_q=\frac{3\pi}{8},\quad
+\theta_\ell=\frac29,\quad
+\Phi_{\beta\beta}=\frac{2\pi}{3},\quad
+\delta_{\rm PMNS}=\frac{3\pi}{2}.
+\]
+\item The charged-lepton \(C_3\) square-root cone and the rank-two Majorana branch.
+\end{enumerate}
+
+\subsection{Explicit remaining seals and wounds}
+
+\begin{enumerate}[leftmargin=2em]
+\item \(\ell_P^2\) remains a physical metric-area seal.
+\item The Standard Model chiral socket is assumed, though hypercharge follows once it is assumed.
+\item The rank-two seesaw is a minimal physical realization; a deeper origin would strengthen the model.
+\item The phase-transport rule is structured but still a bridge rule.
+\item The vacuum quotient is formal; gravitational implementation is not derived.
+\item The observable transport layer is mandatory and incomplete.
+\end{enumerate}
+
+\section{Maximum honest statement}
+
+The framework is not a completed pure-geometric Theory of Everything. Its lawful claim is weaker and more checkable:
+\[
+\boxed{
+\text{dimensionless source geometry constrains ratios and phases;}
+}
+\]
+\[
+\boxed{
+\text{physical realization seals instantiate scale, sectors, and rank;}
+}
+\]
+\[
+\boxed{
+\text{observable transport maps source quantities to measurements.}
+}
+\]
+Under this architecture, the model gives a compact source-realization account of the electroweak scale, Higgs quartic bridge, heavy Yukawa anchors, CKM hierarchy, charged-lepton cone, rank-two neutrino spectrum, PMNS branch, and a dark-energy boundary candidate. Its scientific value depends on whether the frozen rules survive improved flavor data, neutrino absolute-mass data, cosmological measurements, and a completed RG/pole-mass transport layer.
+
+\appendix
+\section{Reproducibility}
+
+All numerical values in the tables are generated by:
+\[
+\texttt{lawful\_toe\_calculations.py}.
+\]
+The script writes machine-readable data to:
+\[
+\texttt{lawful\_toe\_build/calculation\_data.json}.
+\]
+The calculation uses no fitted update after the source kernel is frozen.
+
+\section{References}
+
+\begin{thebibliography}{99}
+
+\bibitem{CODATA2022}
+P. J. Mohr, E. Tiesinga, D. B. Newell, and B. N. Taylor,
+\emph{CODATA Recommended Values of the Fundamental Physical Constants: 2022},
+arXiv:2409.03787 (2024).
+
+\bibitem{PDG2024}
+S. Navas et al. (Particle Data Group),
+\emph{Review of Particle Physics},
+Phys. Rev. D \textbf{110}, 030001 (2024).
+
+\bibitem{NuFIT60}
+I. Esteban, M. C. Gonzalez-Garcia, M. Maltoni, I. Martinez-Soler, J. P. Pinheiro, and T. Schwetz,
+\emph{NuFit-6.0: Updated global analysis of three-flavor neutrino oscillations},
+arXiv:2410.05380 (2024).
+
+\bibitem{Planck2018}
+N. Aghanim et al. (Planck Collaboration),
+\emph{Planck 2018 results. VI. Cosmological parameters},
+arXiv:1807.06209 (2018).
+
+\bibitem{CKM}
+N. Cabibbo, \emph{Unitary Symmetry and Leptonic Decays}, Phys. Rev. Lett. \textbf{10}, 531 (1963);
+M. Kobayashi and T. Maskawa, \emph{CP-Violation in the Renormalizable Theory of Weak Interaction}, Prog. Theor. Phys. \textbf{49}, 652 (1973).
+
+\bibitem{FroggattNielsen}
+C. D. Froggatt and H. B. Nielsen,
+\emph{Hierarchy of Quark Masses, Cabibbo Angles and CP Violation},
+Nucl. Phys. B \textbf{147}, 277 (1979).
+
+\bibitem{Seesaw}
+P. Minkowski,
+\emph{\(\mu\to e\gamma\) at a Rate of One Out of \(10^9\) Muon Decays?},
+Phys. Lett. B \textbf{67}, 421 (1977);
+T. Yanagida, in \emph{Proceedings of the Workshop on Unified Theory and Baryon Number in the Universe}, KEK (1979).
+
+\bibitem{Koide}
+Y. Koide,
+\emph{A fermion-boson composite model of quarks and leptons},
+Phys. Lett. B \textbf{120}, 161 (1983).
+
+\end{thebibliography}
+
+\end{document}
