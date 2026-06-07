@@ -1,8 +1,18 @@
 # ASHA Engine
-
-Last update: [almost_toe.pdf](./lawful_almost_toe.pdf)
-
 **ASHA is a theorem-gated research engine for reconstructing observed physics from a source-typed chain of geometry, algebra, physical filling, and observational transport.**
+
+## Status: Freezed under construction 🧊
+
+Visit the continuation of this project here: [MinTOE](https://github.com/bagherbal/MinTOE)
+
+The latest status of ASHA (1349-1837): [Lawful Almost Toe](./lawful_almost_toe.pdf)
+Corresponding Commit: [Last commit](https://github.com/bagherbal/asha-engine/commit/3475ea3487558c48e81ef0560e6a29e348c9436e)
+
+For the baseline of the theorems(1-1349), tested, continue this README.
+
+![ASHA Projector Universe](./docs/assets/figures/asha_projector_universe_v3.png)
+
+## Description
 
 ASHA is not a list of disconnected formulas. It is a claim-control system. Every result must be classified as one of:
 
@@ -11,8 +21,6 @@ Theorem != Bridge != Physical filling != Diagnostic fit != Unresolved wound
 ```
 
 The current frontier is the Gate 1349 ledger: a source-typed architecture where the matter/Higgs/scale stack has become highly compressed, while Planck stiffness, the cosmological constant, Majorana phases, and a few native selector principles remain open.
-
-![ASHA Projector Universe](docs/assets/figures/asha_projector_universe_v3.png)
 
 ## One-line map
 
